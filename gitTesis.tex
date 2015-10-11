@@ -1,0 +1,331 @@
+% Version 2.0
+% Encontré una platilla para tesis: http://nokyotsu.com/latex/ezthesis.html, investigarla.
+% Buen tuto: http://minisconlatex.blogspot.mx/
+% Cambiar font size: https://en.wikibooks.org/wiki/LaTeX/Fonts#Sizing_text
+% ======= Header ==================
+\documentclass[a4paper,openright,12pt]{book}% Specify format defaults [Opc: pg 10-11]
+\usepackage[spanish, es-lcroman]{babel}		% Para enumerar en roman minúsculas
+\usepackage[latin1]{inputenc}				% Para escribir símbolos no anglosajones (á, ü, ñ, ¡! ¿?...)
+\usepackage{graphicx}  						% To include figures.
+\usepackage{setspace}						% Para ajustar interlineados
+\usepackage{breakcites}						% Para que las citas se adapten al margen del texto
+\usepackage{apacite}						% Citar APA c/paréntesis
+\graphicspath{ {images/} }					% images folder en local dir
+
+% ======= Margin Config Opc1 ======
+\usepackage{anysize}
+\marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		%izq,der,top,bot
+
+% ======= Margin Config Opc2 ======
+%\usepackage{vmargin}						% To set margins.
+%\setpapersize{A4}
+%\setmarginsrb{left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
+%\setmarginsrb{3.0cm}{3.5cm}{2.5cm}{2.5cm}{10pt}{1cm}{0pt}{2cm}
+
+% ======== Document ===============
+\begin{document}
+
+% ======== Título =================
+\begin{titlepage}
+	\begin{center}
+		\begin{figure}[t]
+			\centering
+			\includegraphics[width=\textwidth]{logoUcolTesis.png}
+		\end{figure}		
+		
+		\begin{huge}
+			\textsc{\\Propuesta y Simulación de un Mecanismo de Handoff Crosslayer para Redes de Sensores Móviles.\\}	
+		\end{huge}
+	\end{center}
+	
+	\begin{Large}
+		\begin{center}
+			\textsc{\\Tesis que para obtener el grado de\\Maestro en Computación}
+		\end{center}
+	\end{Large}
+			
+	\begin{large}
+		\begin{center}
+			\textsc{\\Presenta:\\Ing. Miguel Alejandro Chavarín Hernández}
+		\end{center}
+	\end{large}
+				
+	\begin{large}
+		\begin{center}
+			\textsc{Asesores:\\D. en C. Raymundo Buenrostro Mariscal\\D. en C. Juan Antonio Guerrero Ibáñez}
+		\end{center}
+	\end{large}
+	
+	\begin{large}
+		\begin{flushright}
+			\textsc{\\Colima, Col. México, Agosto 2015}
+		\end{flushright}
+	\end{large}
+				
+\end{titlepage}
+
+% ======== Página en blanco =======
+\newpage
+$\ $
+\thispagestyle{empty}
+
+% ======== Resumen ================
+\chapter*{Resumen} 						% No agrega la palabra 'Capítulo' ni lo añade al índice	
+\addcontentsline{toc}{chapter}{Resumen} % Para que aparezca en el índice
+\markboth{Resumen}{Resumen} 			% Encabezado 
+\onehalfspace							% Inicia espaciado a 1.5
+
+Con el propósito de realizar una mejor adquisición del conocimiento referente al traspaso de red (\textit{Handoff}), es necesario tener un conocimiento previo sobre conceptos generales frecuentemente utilizados en la temática.
+\newline
+Por ello, se pretende sumergir al lector dentro del área de las tecnologías en redes inalámbricas, particularmente en las redes inalámbricas de área personal (\textit{WPAN}, por sus siglas en inglés) y sus aplicaciones, como lo representan las redes inalámbricas de sensores (\textit{WSN}, por sus siglas en inglés). 
+Como se mencionó, estos conceptos serán retomados de manera más profunda en siguientes secciones del capítulo.
+\newline
+Este documento presenta una investigación acerca de los avances tecnológicos desarrollados hacia mecanismos de \textit{handoff} que permitan comunicación continua de datos entre dispositivos móviles de la red; esto es, algoritmos que admitan continuidad de servicio de transferencia de información cuando un nodo cambia de ubicación.
+
+\textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
+
+%Inicia enumeración en romano
+\pagenumbering{roman} %Númeración en número romanos Minus. 'Roman' -> Mayus
+	\setcounter{page}{1}	%Se forza la numeración a iniciar en 1
+
+\singlespacing							% Se inicia espaciado sencillo
+
+% ======== Abstract ===============
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract} % Para que aparezca en el índice
+\markboth{Abstract}{Abstract} % Encabezado 
+
+	Descripción del resumen máximo en una cuartilla a renglón sencillo. Máximo 150 palabras.
+
+\textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
+
+% ======== Dedicatoria =============
+\chapter*{}
+\markboth{}{} % Encabezado 
+\begin{flushright}
+	\textit{Dedicado \\ a mi pequeña familia...}
+\end{flushright}
+
+% ======== Agradecimientos ==========
+\chapter*{}
+\markboth{}{} % Encabezado 
+\begin{flushright}
+	\textit{Agradecimientos.}
+\end{flushright}
+
+% ======== Indices ===================
+\tableofcontents		%Indice
+%\newpage
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de tablas} 
+\renewcommand{\listtablename}{Lista de tablas}		%Cambia el título de 'Indice de cuadros' por 'Lista de Tablas'
+\listoftables			%Indice de cuadros/tablas
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de Figuras} 
+\listoffigures			%Indice de figuras
+%\newpage				%Salto de Página
+
+\newpage
+\chapter{Introducción}
+	\pagenumbering{arabic} 	%Reinicia indice en arábigo
+	
+	En este capítulo se hace mención y breve descripción acerca del proyecto en general. 
+	Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Networks}, Redes Inalámbricas de Sensores), la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
+
+	\newpage
+	\section{Problemática}
+		El presente proyecto de tesis plantea el uso de una \textit{WSN} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
+		Sin embargo, para entender de mejor manera el proyecto y entrar en contexto con el mismo, es necesario saber y conocer algunos conceptos en la temática de las redes inalámbricas.
+		
+		De acuerdo a la Real Academia \citeA{espanola2014diccionario} una red se define como <<Conjunto de ordenadores o de equipos informáticos conectados entre sí que pueden intercambiar información>>.
+		Dicha definición se puede entender de mejor manera al referirse a la figura \ref{fig:redComputadoras}, donde se muestran múltiples dispositivos conectados entre sí, y aunque en dicha imagen no se específica el objetivo de su conexión, puede inferirse que se trata de transferencia de información.
+		\begin{figure}[htb]
+			\centering
+			\includegraphics[width=0.60\textwidth]{redComputadoras.jpg}
+			\caption{Conjunto de computadoras conectadas formando una red.}
+			\label{fig:redComputadoras}
+		\end{figure}
+		
+		Existe una característica en las redes que permite clasificarlas en dos grupos diferentes: el modo de conexión en una red.
+		En las redes alámbricas, la conexión entre los dispositivos de la red es generalmente mediante cables de cobre.
+		Por otro lado, las redes inalámbricas no utilizan medios físicos para su conexión y transfieren su información a través del aire utilizando ondas de radiofrecuencia.
+		
+		A su vez, las redes inalámbricas poseen distintos tipos de clasificaciones en función de sus múltiples características: alcance de conexión, velocidad de transferencia, topología de conexión, aplicaciones de la red, entre otras.
+		Para el presente proyecto es importante clasificar a las redes inalámbricas en función a su alcance.
+		
+		Cuando se habla del alcance de una red se hace referencia a la cobertura máxima de la misma, pudiendo tratarse de una distancia desde metros hasta kilómetros.
+		En la figura \ref{fig:networkRanges} se muestra una clasificación de las redes inalámbricas y se observa claramente que la \textit{WPAN} (siglas en inglés de \textit{Wireless Personal Area Network}, Red Inalámbrica de Área Personal) es la red de menor alcance (alcance menor a 10 metros), aunque algunos autores mencionan que existe un grupo de menor alcance: las \textit{WBAN} (siglas en inglés de \textit{Wireless Body Area Networks}, Redes Inalámbricas de Área Corporal), cuyo alcance y aplicación se limita al cuerpo de una persona \cite{Khan2012}.	
+		\begin{figure}[htb]
+			\centering
+			\includegraphics[width=0.50\textwidth]{networkRanges.png}
+			\caption{Clasificación de las redes inalámbricas en función de su alcance.}
+			\label{fig:networkRanges}
+		\end{figure}
+		\newline
+		De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el IEEE 802.15, cuya frecuencia de operación es 2.4 GHz y su objetivo en particular es el permitir una conexión sin fallas entre los dispositivos de la red y asegurar una transferencia de información continua.
+		
+		Dentro del grupo de las \textit{WPAN} se encuentran las \textit{WSN}, las cuales generalmente consisten en múltiples nodos que integran sensores, procesadores, fuentes de energía y dispositivos que permiten su comunicación con demás nodos. 
+		Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo, además de la movilidad de sus dispositivos; siendo esta última una de las que más destaca cuando se usan en el entorno de las personas. 
+		
+		Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente portables y pequeños en tamaño, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}. 
+		Por ello, las \textit{WSN} se han convertido en poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
+		
+		Aprovechando su movilidad, las \textit{WSN} también se han ganado un lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando diferentes aplicaciones (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+		
+		En este contexto, en \cite{virone2006advanced} se propone una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
+		Asimismo \citeA{yan2009experimental} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{eysenbach2001health}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
+		
+		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
+		En este escenario las \textit{WSN} tienen una cobertura limitada debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la IEEE 802.15.4, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios.
+		Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones, ni el desempeño general de la red.
+		
+		Además los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{WSN}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar IEEE 802.15.4 no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
+		Aunque por otro lado, el estándar sí cuenta con funciones y procesos que pueden ser utilizados para crear un mecanismo de \textit{handoff}.
+		
+		Este proceso de \textit{handoff} o cambio de red es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, y no asegura que el nodo móvil se libre de problemas de comunicación.
+		Por ejemplo, un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino; por ejemplo, la existencia de lentitud en el proceso genera altos tiempo de desconexión; si la aplicación no es consciente de la desconexión puede que continúe enviando datos sin considerar que probablemente no podrán ser entregados.
+		Otro caso se da cuando el nodo móvil decida cambiarse a un punto de acceso a red que tenga problemas de congestionamiento o saturación de usuarios conectados; entonces el nodo seguirá con problemas para transmitir su información al destino. 
+		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; además, sí la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{Ping-Pong}. 
+		Por esta razón, un nodo móvil necesita saber cuándo cambiarse de red, cómo ejecutar el \textit{handoff}, y a cuál punto de acceso dentro de la red es conveniente cambiarse.
+
+		En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo 3); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
+		Sin embargo, la mayoría de estos trabajos y soluciones están enfocados hacia redes celulares o redes inalámbricas tradicionales, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} las cuales, como se menciona anteriormente, generalmente utilizan IEEE 802.15.4. 
+		Además, las propuestas de mecanismos de \textit{handooff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red \textit{OSI} \cite{yemini1993osi} dentro del mecanismo de \textit{handoff}) que provocan una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.   
+		
+		Lo anterior refleja la problemática ha abordar en este trabajo de tesis: instrumentar un mecanismo que permita la movilidad de los nodos en una \textit{WSN}, que cuente con un grado de conciencia o inteligencia en su diseño para ejecutar el \textit{handoff} de forma eficiente (evitando desconexiones y traspasos abruptos e innecesarios entre dispositivos móviles en \textit{WSN}) y que además considere el tipo de aplicación presente en la red, violando el esquema de diseño de protocolos por capas mediante un diseño \textit{crosslayer} (interacción entre múltiples capas del modelo de red) \cite{srivastava2005cross}.
+		
+		Por ello, en este trabajo se propone el diseño y simulación de un mecanismo de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capas superiores.
+	
+		La propuesta misma y el diseño de la red, serán implementados y simulados con ayuda del software Network\textit{ Simulator 2} (\textit{NS2}) \cite{simulator1989ns}, por lo que todas las características y métricas a considerar han de ser correctamente definidas con el propósito de permitir que la simulación sea lo más semejante a la realidad.
+	
+	\section{Objetivos}
+		\subsection{Objetivo general}
+			Diseño y simulación de un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} que permita la comunicación continua entre los dispositivos móviles en una \textit{WSN}.
+		\subsection{Objetivos específicos}
+			\begin{itemize}
+			\item Realizar investigación sobre las diferentes clasificaciones y técnicas del \textit{handoff} tradicional y sobre el diseño de mecanismos bajo optimización \textit{crosslayer}.
+			\item Definir las funciones y parámetros que serán utilizados dentro del mecanismo de \textit{handoff} para solucionar el problema del traspaso.
+			\item Diseñar un mecanismo de \textit{handoff} \textit{crosslayer} según lo establecido en los requerimientos del punto anterior.
+			\item Diseñar el marco de evaluación para simular el comportamiento del mecanismo de \textit{handoff} \textit{crosslayer} propuesto en una \textit{WSN} con dispositivos móviles.
+			\end{itemize}
+	\section{Justificación}
+		El desarrollo del presente trabajo abonará al actual avance tecnológico en el área de las redes inalámbricas con una nueva opción para la problemática del traspaso de red mediante un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} aplicado a \textit{WSN}, beneficiando de esta manera al desarrollo de los avances tecnológicos orientados hacia \textit{WSN} y su movilidad.
+		Como se ha mencionado anteriormente, la movilidad en \textit{WSN} brinda una amplia gama de posibles aplicaciones; entre ellas, actualmente se ha destacado el creciente uso hacia el cuidado de la salud, equipando a los pacientes con nodos sensores que monitorizan sus signos vitales y transmiten los datos recolectados hacia un nodo final para el monitoreo remoto de la salud de las personas. 
+		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical, lo cual demandará mejores opciones tecnológicas que apoyen la cobertura de la salud para este sector.
+		
+		Con este mecanismo de \textit{handoff} se podrán habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos colocados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
+		
+		Este tipo de aplicaciones demanda una comunicación inteligente ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo está pensado para ofrecer un grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones. 
+		Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto las propuestas que actualmente se ofrecen.
+		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que se requiere analizar y definir cuáles capas del modelo de red se deben utilizar, qué procesos debe ejecutar el mecanismo, qué parámetros se deben considerar, y cómo se debe integrar todo lo anterior en un diseño \textit{crosslayer} para crear nuestro mecanismo de \textit{handoff}. Además, se debe diseñar el escenario de operación de forma adecuada para simularlo con parámetros reales que puedan generar resultados válidos para su implementación en la vida real.
+	\section{Hipótesis}
+		Un mecanismo de \textit{handoff} diseñado bajo la optimización \textit{crosslayer} provee un mejor desempeño que los diseñados bajo el esquema tradicional de capas independientes, ya que permite el intercambio de información entre las diferentes capas del modelo de red a diferencia del diseño aislado de capas. 
+	\section{Alcances y suposiciones}
+		El proyecto limita sus alcances a la simulación del mecanismo de \textit{handoff crosslayer} en el simulador \textit{NS2}, pues no se cuenta con los recursos necesarios para la implementación en físico del sistema planteado.
+	\section{Preguntas de investigación}
+		\begin{itemize}
+		\item ¿Qué capas del modelo de red deben ser incluidos en el mecanismo de \textit{handoff crosslayer}?
+		\item ¿Qué parámetros y/o funciones deben ser considerados en mayor medida para la elaboración de un mecanismo de \textit{handoff} que provea movilidad en \textit{WSN}?
+		\item ¿Qué módulos deben formar el protocolo de \textit{handoff} para que cumpla con las funciones de transferencia entre nodos móviles y permita la continuidad de la comunicación?
+		\end{itemize}
+	
+\newpage
+\chapter{Esquema de fundamentos}
+Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. 
+\newpage
+
+	\section{Transferencia de red (\textit{handoff})}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+	
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+	 
+	\section{Clasificación del \textit{handoff}}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		 
+		\subsection{Redes involucradas}
+		Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+		Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			  
+		\subsection{Número de conexiones}
+		Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+		Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			  
+		\subsection{Control del \textit{handoff}}
+		Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+		Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			  
+	\section{Problemáticas que conlleva el \textit{handoff}}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+	
+	\section{Importancia del \textit{handoff}}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		 
+	\section{Estrategia de diseño \textit{crosslayer}}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.	
+	
+\chapter{Trabajos relacionados}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+	
+\newpage
+	\section{Celular}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+	\section{\textit{WLAN}}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		 
+	\section{WSN}
+	Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+			
+	Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. 
+
+\chapter{Desarrollo de protocolo de \textit{handoff}}
+Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+
+\chapter{Evaluación y análisis de resultados}
+Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+	
+\chapter{Conclusiones y recomendaciones}
+Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+		
+Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+
+%\newpage
+%Anexos
+\appendix
+\chapter{Anexos}\label{aped.A}
+
+%\newpage
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}
+%\bibliographystyle{apalike}		%Referencia formato APA c/corchetes
+\bibliographystyle{apacite}			%Referencia formato APA clásico
+\bibliography{gitTesis.bib}			%Archivo .bib
+
+\end{document}
+
+

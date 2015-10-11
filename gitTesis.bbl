@@ -1,0 +1,331 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{de los Angeles Cosio Leon}%
+, Hipolito%
+\BCBL {}\ \BBA {} Garcia%
+}{%
+{de los Angeles Cosio Leon}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+DelosAngelesCosioLeon}
+\APACinsertmetastar {%
+DelosAngelesCosioLeon}%
+\begin{APACrefauthors}%
+{de los Angeles Cosio Leon}, M.%
+, Hipolito, J.%
+\BCBL {}\ \BBA {} Garcia, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Security and Privacy Survey for WSN in e-Health
+  Applications}} {{A Security and Privacy Survey for WSN in e-Health
+  Applications}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Electronics, Robotics and Automotive Mechanics
+  Conference, 2009. CERMA '09.} {Electronics, robotics and automotive mechanics
+  conference, 2009. cerma '09.}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CERMA.2009.47} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Espa\~{n}ola%
+}{%
+Espa\~{n}ola%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+espanola2014diccionario}
+\APACinsertmetastar {%
+espanola2014diccionario}%
+\begin{APACrefauthors}%
+Espa\~{n}ola, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Diccionario de la lengua espa\~{n}ola}} {{Diccionario
+  de la lengua espa\~{n}ola}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Barcelona: Espa\{\~{n}\}a Libros}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eysenbach%
+}{%
+Eysenbach%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+eysenbach2001health}
+\APACinsertmetastar {%
+eysenbach2001health}%
+\begin{APACrefauthors}%
+Eysenbach, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{What is e-health?}} {{What is e-health?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of medical Internet research}{3}{2}{}.
+\newblock
+\begin{APACrefURL} \url{http://www.jmir.org/2001/2/e20/} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2196/jmir.3.2.e20} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Garc\'{\i}a%
+, Ibarg\"{u}engoytia%
+, Garc\'{\i}a%
+\BCBL {}\ \BBA {} P\'{e}rez%
+}{%
+Garc\'{\i}a%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Garcia-hernandez2007}
+\APACinsertmetastar {%
+Garcia-hernandez2007}%
+\begin{APACrefauthors}%
+Garc\'{\i}a, C.%
+, Ibarg\"{u}engoytia, P.%
+, Garc\'{\i}a, J.%
+\BCBL {}\ \BBA {} P\'{e}rez, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Networks and Applications : a Survey}}
+  {{Wireless Sensor Networks and Applications : a Survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computer Science}{7}{3}{264--273}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MC.2002.1039518} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+\ \BBA {} Yuce%
+}{%
+Khan%
+\ \BBA {} Yuce%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Khan2012}
+\APACinsertmetastar {%
+Khan2012}%
+\begin{APACrefauthors}%
+Khan, J\BPBI Y.%
+\BCBT {}\ \BBA {} Yuce, M\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Body Area Network(WBAN) for Medical
+  Applications}} {{Wireless Body Area Network(WBAN) for Medical
+  Applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Medical Systems}{36}{3}{1441--1457}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Saranya%
+\ \BBA {} Pugazendi%
+}{%
+Saranya%
+\ \BBA {} Pugazendi%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Saranya2014}
+\APACinsertmetastar {%
+Saranya2014}%
+\begin{APACrefauthors}%
+Saranya, R.%
+\BCBT {}\ \BBA {} Pugazendi, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Survey on Co-existence Mechanisms in WLAN and WPAN
+  Devices}} {{A Survey on Co-existence Mechanisms in WLAN and WPAN
+  Devices}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Advanced Research in Computer
+  Engineering \& Technology (IJARCET)}{3}{9}{2967--2972}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silva%
+, {Sa Silva}%
+\BCBL {}\ \BBA {} Boavida%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Silva2014}
+\APACinsertmetastar {%
+Silva2014}%
+\begin{APACrefauthors}%
+Silva, R.%
+, {Sa Silva}, J.%
+\BCBL {}\ \BBA {} Boavida, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility in wireless sensor networks - Survey and
+  proposal}} {{Mobility in wireless sensor networks - Survey and
+  proposal}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{52}{}{1--20}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2014.05.008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Simulator%
+}{%
+Simulator%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+simulator1989ns}
+\APACinsertmetastar {%
+simulator1989ns}%
+\begin{APACrefauthors}%
+Simulator, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+\APACrefbtitle {ns-2.} {ns-2.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Srivastava%
+\ \BBA {} Motani%
+}{%
+Srivastava%
+\ \BBA {} Motani%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+srivastava2005cross}
+\APACinsertmetastar {%
+srivastava2005cross}%
+\begin{APACrefauthors}%
+Srivastava, V.%
+\BCBT {}\ \BBA {} Motani, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design: a survey and the road ahead}}
+  {{Cross-layer design: a survey and the road ahead}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Magazine, IEEE}{43}{12}{112--119}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Virone%
+\ \protect \BOthers {.}}{%
+Virone%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+virone2006advanced}
+\APACinsertmetastar {%
+virone2006advanced}%
+\begin{APACrefauthors}%
+Virone, G.%
+, Wood, A.%
+, Selavo, L.%
+, Cao, Q.%
+, Fang, L.%
+, Doan, T.%
+\BDBL {}Stankovic, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An advanced wireless sensor network for health
+  monitoring}} {{An advanced wireless sensor network for health
+  monitoring}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Transdisciplinary Conference on Distributed Diagnosis
+  and Home Healthcare (D2H2)} {Transdisciplinary conference on distributed
+  diagnosis and home healthcare (d2h2)}\ (\BPGS\ 2--4).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yan%
+, Xu%
+\BCBL {}\ \BBA {} Gidlund%
+}{%
+Yan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+yan2009experimental}
+\APACinsertmetastar {%
+yan2009experimental}%
+\begin{APACrefauthors}%
+Yan, H.%
+, Xu, Y.%
+\BCBL {}\ \BBA {} Gidlund, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Experimental e-health applications in wireless sensor
+  networks}} {{Experimental e-health applications in wireless sensor
+  networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Communications and Mobile Computing, 2009. CMC'09. WRI
+  International Conference on} {Communications and mobile computing, 2009.
+  cmc'09. wri international conference on}\ (\BVOL~1, \BPGS\ 563--567).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yemini%
+}{%
+Yemini%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+yemini1993osi}
+\APACinsertmetastar {%
+yemini1993osi}%
+\begin{APACrefauthors}%
+Yemini, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The OSI network management model}} {{The OSI network
+  management model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
