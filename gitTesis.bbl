@@ -33,9 +33,9 @@ DelosAngelesCosioLeon}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Espa\~{n}ola%
+Espa{\~{n}}ola%
 }{%
-Espa\~{n}ola%
+Espa{\~{n}}ola%
 }{%
 {\protect \APACyear {2014}}%
 }]{%
@@ -43,16 +43,16 @@ espanola2014diccionario}
 \APACinsertmetastar {%
 espanola2014diccionario}%
 \begin{APACrefauthors}%
-Espa\~{n}ola, R\BPBI A.%
+Espa{\~{n}}ola, R\BPBI A.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Diccionario de la lengua espa\~{n}ola}} {{Diccionario
-  de la lengua espa\~{n}ola}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Diccionario de la lengua espa{\~{n}}ola}} {{Diccionario
+  de la lengua espa{\~{n}}ola}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Barcelona: Espa\{\~{n}\}a Libros}{}{}{}.
+\APACjournalVolNumPages{Barcelona: Espa{\{}{\~{n}}{\}}a Libros}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -82,12 +82,12 @@ Eysenbach, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Garc\'{\i}a%
-, Ibarg\"{u}engoytia%
-, Garc\'{\i}a%
-\BCBL {}\ \BBA {} P\'{e}rez%
+Garc{\'{\i}}a%
+, Ibarg{\"{u}}engoytia%
+, Garc{\'{\i}}a%
+\BCBL {}\ \BBA {} P{\'{e}}rez%
 }{%
-Garc\'{\i}a%
+Garc{\'{\i}}a%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2007}}%
 }]{%
@@ -95,10 +95,10 @@ Garcia-hernandez2007}
 \APACinsertmetastar {%
 Garcia-hernandez2007}%
 \begin{APACrefauthors}%
-Garc\'{\i}a, C.%
-, Ibarg\"{u}engoytia, P.%
-, Garc\'{\i}a, J.%
-\BCBL {}\ \BBA {} P\'{e}rez, J.%
+Garc{\'{\i}}a, C.%
+, Ibarg{\"{u}}engoytia, P.%
+, Garc{\'{\i}}a, J.%
+\BCBL {}\ \BBA {} P{\'{e}}rez, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -140,6 +140,108 @@ Khan, J\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Makaya%
+\ \BBA {} Pierre%
+}{%
+Makaya%
+\ \BBA {} Pierre%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Makaya2008}
+\APACinsertmetastar {%
+Makaya2008}%
+\begin{APACrefauthors}%
+Makaya, C.%
+\BCBT {}\ \BBA {} Pierre, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{mar}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Analytical Framework for Performance Evaluation of
+  IPv6-Based mobility Management Protocols}} {{An Analytical Framework for
+  Performance Evaluation of IPv6-Based mobility Management Protocols}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Wireless
+  Communications}{7}{3}{972--983}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4472015}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TWC.2008.060725} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nasser%
+, Hasswa%
+\BCBL {}\ \BBA {} Hassanein%
+}{%
+Nasser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Nasser2006}
+\APACinsertmetastar {%
+Nasser2006}%
+\begin{APACrefauthors}%
+Nasser, N.%
+, Hasswa, A.%
+\BCBL {}\ \BBA {} Hassanein, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoffs in fourth generation heterogeneous networks}}
+  {{Handoffs in fourth generation heterogeneous networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{44}{10}{96--103}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1710420}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MCOM.2006.1710420} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pahlavan%
+\ \protect \BOthers {.}}{%
+Pahlavan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Pahlavan2000}
+\APACinsertmetastar {%
+Pahlavan2000}%
+\begin{APACrefauthors}%
+Pahlavan, K.%
+, Krishnamurthy, P.%
+, Hatami, A.%
+, Ylianttila, M.%
+, Makela, J.%
+, Pichna, R.%
+\BCBL {}\ \BBA {} Vallstron, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoff in hybrid mobile data networks}} {{Handoff in
+  hybrid mobile data networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Personal Communications}{7}{2}{34--47}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/98.839330} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Saranya%
 \ \BBA {} Pugazendi%
 }{%
@@ -164,7 +266,7 @@ Saranya, R.%
   Devices}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{International Journal of Advanced Research in Computer
-  Engineering \& Technology (IJARCET)}{3}{9}{2967--2972}.
+  Engineering {\&} Technology (IJARCET)}{3}{9}{2967--2972}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
