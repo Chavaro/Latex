@@ -9,9 +9,9 @@
 \contentsline {subsection}{\numberline {1.2.1}Objetivo general}{6}
 \contentsline {subsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{6}
 \contentsline {section}{\numberline {1.3}Justificaci\'on}{6}
-\contentsline {section}{\numberline {1.4}Hip\'otesis}{7}
-\contentsline {section}{\numberline {1.5}Alcances y suposiciones}{7}
-\contentsline {section}{\numberline {1.6}Preguntas de investigaci\'on}{7}
+\contentsline {section}{\numberline {1.4}Preguntas de investigaci\'on}{7}
+\contentsline {section}{\numberline {1.5}Limitaciones y suposiciones}{7}
+\contentsline {section}{\numberline {1.6}Organizaci\'on del documento}{7}
 \contentsline {chapter}{\numberline {2}Esquema de fundamentos}{9}
 \contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{10}
 \contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{10}
@@ -19,8 +19,8 @@
 \contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{13}
 \contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{14}
 \contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{15}
-\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff} - CONTINUAR}{17}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{17}
+\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{17}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{18}
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{21}
 \contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{22}
 \contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{22}
