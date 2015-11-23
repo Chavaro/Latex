@@ -17,19 +17,19 @@
 \contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{10}
 \contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{10}
 \contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{13}
-\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{13}
-\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{14}
-\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff} - CONTINUAR}{16}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{16}
-\contentsline {chapter}{\numberline {3}Trabajos relacionados}{19}
-\contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{20}
-\contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{20}
-\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{20}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{21}
-\contentsline {section}{\numberline {4.1}An\'alisis de Problem\'atica}{22}
-\contentsline {section}{\numberline {4.2}Dise\~no de Soluci\'on}{22}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{23}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{25}
-\contentsline {chapter}{\numberline {A}Anexos}{27}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}
-\contentsline {section}{Referencias}{29}
+\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{14}
+\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{15}
+\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff} - CONTINUAR}{17}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{17}
+\contentsline {chapter}{\numberline {3}Trabajos relacionados}{21}
+\contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{22}
+\contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{22}
+\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{22}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{23}
+\contentsline {section}{\numberline {4.1}An\'alisis de Problem\'atica}{24}
+\contentsline {section}{\numberline {4.2}Dise\~no de Soluci\'on}{24}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{25}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{27}
+\contentsline {chapter}{\numberline {A}Anexos}{29}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{31}
+\contentsline {section}{Referencias}{31}

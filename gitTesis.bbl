@@ -33,6 +33,42 @@ Ahmed, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Chowdhury%
+\ \BBA {} Gregory%
+}{%
+Chowdhury%
+\ \BBA {} Gregory%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Chowdhury2012}
+\APACinsertmetastar {%
+Chowdhury2012}%
+\begin{APACrefauthors}%
+Chowdhury, A\BPBI S.%
+\BCBT {}\ \BBA {} Gregory, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{dec}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{UMTS and WiMAX handover performance comparison}} {{UMTS
+  and WiMAX handover performance comparison}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2012 15th International Conference on Computer and
+  Information Technology (ICCIT)} {2012 15th international conference on
+  computer and information technology (iccit)}\ (\BPGS\ 332--337).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6509794}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICCITechn.2012.6509794} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {de los Angeles Cosio Leon}%
 , Hipolito%
 \BCBL {}\ \BBA {} Garcia%
@@ -291,6 +327,36 @@ Gu, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/APCC.2010.5680000} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kassar%
+, Kervella%
+\BCBL {}\ \BBA {} Pujolle%
+}{%
+Kassar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Kassar2008}
+\APACinsertmetastar {%
+Kassar2008}%
+\begin{APACrefauthors}%
+Kassar, M.%
+, Kervella, B.%
+\BCBL {}\ \BBA {} Pujolle, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An overview of vertical handover decision strategies in
+  heterogeneous wireless networks}} {{An overview of vertical handover decision
+  strategies in heterogeneous wireless networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{31}{10}{2607--2620}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2008.01.044} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -883,6 +949,40 @@ Yemini, Y.%
   management model}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zdarsky%
+\ \BBA {} Schmitt%
+}{%
+Zdarsky%
+\ \BBA {} Schmitt%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Zdarsky2004}
+\APACinsertmetastar {%
+Zdarsky2004}%
+\begin{APACrefauthors}%
+Zdarsky, F.%
+\BCBT {}\ \BBA {} Schmitt, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handover in mobile communication networks: who is in
+  control anyway?}} {{Handover in mobile communication networks: who is in
+  control anyway?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings. 30th Euromicro Conference,
+  2004.}{}{}{205--212}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/freeabs{\_}all.jsp?arnumber=1333373}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/EURMIC.2004.1333373} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

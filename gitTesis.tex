@@ -314,18 +314,45 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Otro tipo de clasificaciones del \textit{handoff} es en función al número de conexiones que un nodo puede mantener o establecer. De acuerdo a \citeA{Nasser2006}, existen tres tipos.
 		
 		\begin{itemize}
-			\item \textit{Hard}: Se dice que en un \textit{hard handoff}, un nodo libera el enlace que tiene con una BS, para establecer una nueva conexión hacia una nueva BS. 
+			\item \textit{Hard}: Se dice que en un \textit{hard handoff}, un nodo libera el enlace que tiene con una BS, para establecer una nueva conexión hacia una nueva BS.
+			Este mecanismo puede observarse en la fig \ref{fig:hoHard}, tomada de \cite{Chowdhury2012}.
+						
 			Esto define que a un nodo móvil le es posible establecer una sola conexión a una BS en todo momento. A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
+			
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=5cm,height=3cm]{hoHard.png}
+					\caption{Mecanismo tipo \textit{hard handoff}.}
+					\label{fig:hoHard}
+				\end{figure}
 
 			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la BS \cite{Etworks2004}.
+			Este tipo de \textit{handoff}, puede ser observado en la fig \ref{fig:hoSoft}, tomada de \cite{Chowdhury2012}.
 			Para ello, debe tenerse en cuenta que el nodo móvil debe estar moviéndose entre el área de cobertura de dos celdas.
 			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la BS \cite{Ramachandran2006}.
 			
-			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo AP.
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=5cm,height=3cm]{hoSoft.png}
+					\caption{Mecanismo tipo \textit{soft handoff}.}
+					\label{fig:hoSoft}
+				\end{figure}
+			
+			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo AP. Dicho de otra manera, la principal diferencia entre un mecanismo tipo \textit{soft} y uno tipo \textit{softer} reside en que el nodo móvil está ubicado dentro del área de cobertura de dos sectores de un mismo AP o BS \cite{Chowdhury2012}, tal y como se muestra en la figura \ref{fig:hoSofter}, tomada del trabajo del mismo autor.
+			
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=5cm,height=3cm]{hoSofter.png}
+					\caption{Mecanismo tipo \textit{softer handoff}.}
+					\label{fig:hoSofter}
+				\end{figure}
+			
 		\end{itemize}
 			  
 		\subsection{Control del \textit{handoff}}
-		Un aspecto muy importante sobre los mecanismos de \textit{handoff} es la toma de decisiones sobre cómo y cuándo ejecutar dichos mecanismos. 
+		Un aspecto muy importante sobre los mecanismos de \textit{handoff} es la toma de decisiones sobre cómo y cuándo ejecutar dichos mecanismos.
+		Ya que, sin importar el tipo de \textit{handoff} del que se trate, la decisión de ejecución del mecanismo de \textit{handoff} \cite{Zdarsky2004} reside en una entidad de red o en el nodo móvil mismo.
+		
 		De acuerdo a \citeA{Pahlavan2000}, es posible clasificar al \textit{handoff} con base en dónde se origina el mecanismo de decisión o control de \textit{handoff}. 
 		
 		Entonces, una tercera clasificación de los mecanismos de \textit{handoff} define que éstos pueden ser:
@@ -333,19 +360,30 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 				\item{Controlado-por-Móvil}, \item{Controlado-por-Red}, o \item{Asistido-por-Móvil}. 
 			\end{itemize}
 		
-		El mecanismo de decisión puede estar ubicado en una entidad de la red (como en voz celular), o en el mismo nodo móvil (como en el caso de WLANs). 
-		En este contexto, estos casos corresponden a \textit{controlado-por-red} y \textit{controlado-por-móvil}, respectivamente. 
-		Por último, para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como GPRS, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
+		Entonces, el mecanismo de decisión puede estar ubicado en una entidad de la red (como en voz celular), o en el mismo nodo móvil (como en el caso de WLANs), en este contexto, estos casos corresponden a \textit{controlado-por-red} y \textit{controlado-por-móvil}, respectivamente. 
+		Para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como GPRS, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
 		
-		Tal y como se indica en cada caso, en la decisión del proceso pueden intervenir el nodo móvil, entidades de la red en la que se da el cambio de conexión, y tanto la entidad de red como el nodo móvil.
+		Sin embargo, otros trabajos agregan un cuarto miembro a esta clasificación.
+					\begin{itemize}
+						\item Asistido-por-Red
+					\end{itemize}
+
+		En este nuevo caso, la red reúne información que le puede ser de utilidad al nodo móvil para ejecutar un mecanismo de \textit{handoff} \cite{Kassar2008}. 
+		
+		En resumen, en un tipo \textit{controlado-por-red} la entidad de red es quien lleva el control principal sobre el \textit{hadoff}.
+		En un tipo \textit{controlado-por-móvil}, el nodo móvil se ve obligado a tomar sus propias decisiones con base en mediciones o análisis propios.
+		En un \textit{handoff asistido-por-móvil}, información o mediciones tomadas por el nodo móvil sirven de apoyo y son usadas por la red.
+		Finalmente, cuando la red es quien brinda información al nodo móvil para que éste las utilice en su decisión de \textit{handoff}, se trata de un mecanismo tipo \textit{asistido-por-red}.
+		
+		Entonces, tal y como se indica en cada caso, en la decisión del proceso pueden intervenir el nodo móvil, entidades de la red en la que se da el cambio de conexión, y tanto la entidad de red como el nodo móvil.
 			
 	\section{Problemáticas que conlleva el \textit{handoff}}
 	De acuerdo a \citeA{Pahlavan2000}, existe una gran cantidad de temas relacionados a los mecanismos de \textit{handoff}, como se muestra en la figura \ref{fig:hoIssues} tomada del mismo artículo, estos temas pueden clasificarse en dos categorías:
 	
-	\begin{itemize}
-		\item Arquitectura: Son aquellas cuestiones en las que se consideran temas relacionados con la metodología, control y elementos de \textit{software} o \textit{hardware} involucrados en el nuevo ruteo de la conexión.
-		\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
-	\end{itemize}
+		\begin{itemize}
+			\item Arquitectura: Son aquellas cuestiones en las que se consideran temas relacionados con la metodología, control y elementos de \textit{software} o \textit{hardware} involucrados en el nuevo ruteo de la conexión.
+			\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
+		\end{itemize}
 	
 		\begin{figure}[h]
 			\centering
@@ -362,7 +400,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	El efecto \textit{ping-pong} es un fenómeno muy común en las redes móviles, éste puede causar ineficiencia y degrado del desempeño de la red. 
 	Parámetros tales como cobertura, área de ubicación del usuario y su movimiento y velocidad son algunas de las principales consideraciones que pueden ocasionar la existencia del efecto \textit{ping-pong} \cite{Ghanem2012}.
-	Esta situación es común, dado que algunos algoritmos utilizan el RSSI (siglas en inglés de \textit{Received Signal Strength Indicator}) como criterio de decisión para la ejecución de los mecanismos de \textit{handoff}, y el utilizar estas mediciones instantáneas conlleva en el fenómeno de ejecución frecuente de mecanismos de \textit{handoff} \cite{Yang2004}.
+	Esta situación es común, dado que algunos algoritmos utilizan el RSSI (siglas en inglés de \textit{Received Signal Strength Indicator}, Indicador de Fuerza de Señal Recibida) como criterio de decisión para la ejecución de los mecanismos de \textit{handoff}, y el utilizar estas mediciones instantáneas conlleva en el fenómeno de ejecución frecuente de mecanismos de \textit{handoff} \cite{Yang2004}.
 	En otras palabras, se trata de ejecuciones innecesarias de \textit{handoff} durante un corto intervalo de tiempo \cite{Gu2010}. 
 	
 	Con el fin de otorgar una idea más clara del efecto \textit{ping-pong}, suponga el caso de un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B como se muestra en la figura \ref{fig:hoExample}, en ese momento a causa de una pobre decisión de \textit{handoff}, el nodo decide cambiarse a la red B. 

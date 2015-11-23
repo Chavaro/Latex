@@ -12,7 +12,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 129 of file gitTesis.bib.bib
+Repeated entry---line 231 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
@@ -35,45 +35,45 @@ Warning--I didn't find a database entry for "fotouhi2012smart"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
-You've used 29 entries,
+You've used 32 entries,
             6951 wiz_defined-function locations,
-            1504 strings with 17566 characters,
-and the built_in function-call counts, 57440 in all, are:
-= -- 6976
-> -- 519
-< -- 2727
-+ -- 2774
-- -- 60
-* -- 3784
-:= -- 10303
-add.period$ -- 123
-call.type$ -- 29
-change.case$ -- 509
+            1526 strings with 18335 characters,
+and the built_in function-call counts, 63654 in all, are:
+= -- 7754
+> -- 571
+< -- 3015
++ -- 3060
+- -- 66
+* -- 4190
+:= -- 11403
+add.period$ -- 137
+call.type$ -- 32
+change.case$ -- 563
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 1612
-empty$ -- 2309
-format.name$ -- 888
-if$ -- 10879
+cite$ -- 66
+duplicate$ -- 1778
+empty$ -- 2559
+format.name$ -- 968
+if$ -- 12077
 int.to.chr$ -- 0
-int.to.str$ -- 87
+int.to.str$ -- 96
 missing$ -- 0
-newline$ -- 802
-num.names$ -- 232
-pop$ -- 982
+newline$ -- 890
+num.names$ -- 256
+pop$ -- 1092
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 142
 quote$ -- 0
-skip$ -- 3692
+skip$ -- 4097
 stack$ -- 0
-substring$ -- 3001
-swap$ -- 967
-text.length$ -- 83
+substring$ -- 3321
+swap$ -- 1068
+text.length$ -- 97
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2576
+type$ -- 2880
 warning$ -- 2
-while$ -- 316
+while$ -- 345
 width$ -- 0
-write$ -- 1018
+write$ -- 1127
 (There was 1 error message)

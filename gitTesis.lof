@@ -7,11 +7,14 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Horizontal \textit {handoff}.}}{11}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Vertical \textit {handoff}.}}{12}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Clasificaci\'on del \textit {handoff} seg\'un las redes involucradas.}}{12}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Temas importantes involucrados en un mecanismo de \textit {handoff}. \textbf {HACER UNA PROPIA}}}{14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Ejemplo de ejecuci\'on de un mecanismo de \textit {handoff}. \textbf {HACER UNA PROPIA}}}{15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Distribuci\'on de capas del Modelo OSI.}}{17}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo OSI tradicional y \textit {crosslayer}.}}{18}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.}}{18}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mecanismo tipo \textit {hard handoff}.}}{13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mecanismo tipo \textit {soft handoff}.}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Mecanismo tipo \textit {softer handoff}.}}{14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Temas importantes involucrados en un mecanismo de \textit {handoff}. \textbf {HACER UNA PROPIA}}}{16}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Ejemplo de ejecuci\'on de un mecanismo de \textit {handoff}. \textbf {HACER UNA PROPIA}}}{17}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Distribuci\'on de capas del Modelo OSI.}}{18}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo OSI tradicional y \textit {crosslayer}.}}{18}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.}}{19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
