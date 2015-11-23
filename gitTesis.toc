@@ -5,9 +5,9 @@
 \contentsline {chapter}{Lista de Figuras}{xiii}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
 \contentsline {section}{\numberline {1.1}Problem\'atica}{2}
-\contentsline {section}{\numberline {1.2}Objetivos}{5}
-\contentsline {subsection}{\numberline {1.2.1}Objetivo general}{5}
-\contentsline {subsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{5}
+\contentsline {section}{\numberline {1.2}Objetivos}{6}
+\contentsline {subsection}{\numberline {1.2.1}Objetivo general}{6}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{6}
 \contentsline {section}{\numberline {1.3}Justificaci\'on}{6}
 \contentsline {section}{\numberline {1.4}Hip\'otesis}{7}
 \contentsline {section}{\numberline {1.5}Alcances y suposiciones}{7}
@@ -16,18 +16,20 @@
 \contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{10}
 \contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{10}
 \contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{10}
-\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{11}
-\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{11}
-\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{11}
-\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{12}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer}}{12}
-\contentsline {chapter}{\numberline {3}Trabajos relacionados}{13}
-\contentsline {section}{\numberline {3.1}Celular}{14}
-\contentsline {section}{\numberline {3.2}\textit {WLAN}}{14}
-\contentsline {section}{\numberline {3.3}WSN}{14}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{15}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{17}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{19}
-\contentsline {chapter}{\numberline {A}Anexos}{21}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{23}
-\contentsline {section}{Referencias}{23}
+\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{13}
+\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{13}
+\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff} - CONTINUAR}{14}
+\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff} - CONTINUAR}{15}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{15}
+\contentsline {chapter}{\numberline {3}Trabajos relacionados}{19}
+\contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{20}
+\contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{20}
+\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{20}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{21}
+\contentsline {section}{\numberline {4.1}An\'alisis de Problem\'atica}{22}
+\contentsline {section}{\numberline {4.2}Dise\~no de Soluci\'on}{22}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{23}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{25}
+\contentsline {chapter}{\numberline {A}Anexos}{27}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}
+\contentsline {section}{Referencias}{29}

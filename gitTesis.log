@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  14 OCT 2015 11:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  22 NOV 2015 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -297,149 +297,344 @@ LaTeX Info: Redefining \% on input line 176.
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
  [4]
-LaTeX Info: Redefining \. on input line 210.
-LaTeX Info: Redefining \% on input line 210.
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
  [5]
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
+LaTeX Info: Redefining \. on input line 226.
+LaTeX Info: Redefining \% on input line 226.
  [6]
-LaTeX Info: Redefining \. on input line 234.
-LaTeX Info: Redefining \% on input line 234.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
  [7]
-LaTeX Info: Redefining \. on input line 235.
-LaTeX Info: Redefining \% on input line 235.
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
  [8
 
 ]
 Cap\'{\i }tulo 2.
-[9] <images/fig01.png, id=94, 676.77844pt x 269.50688pt>
-File: images/fig01.png Graphic file (type png)
+[9] <images/hoClasificacion.png, id=94, 676.77844pt x 269.50688pt>
+File: images/hoClasificacion.png Graphic file (type png)
 
-<use images/fig01.png>
-Package pdftex.def Info: images/fig01.png used on input line 252.
-(pdftex.def)             Requested size: 441.0264pt x 142.26634pt.
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
- [10 <./images/fig01.png>]
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
- [11]
-LaTeX Info: Redefining \. on input line 289.
-LaTeX Info: Redefining \% on input line 289.
- [12]
-Cap\'{\i }tulo 3.
-[13
+<use images/hoClasificacion.png>
+Package pdftex.def Info: images/hoClasificacion.png used on input line 267.
+(pdftex.def)             Requested size: 441.0264pt x 184.94418pt.
 
-]
-LaTeX Info: Redefining \. on input line 310.
-LaTeX Info: Redefining \% on input line 310.
- [14]
-Cap\'{\i }tulo 4.
-[15
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/hoHorizontal.png, id=95, 201.75375pt x 173.14688pt>
+File: images/hoHorizontal.png Graphic file (type png)
+
+<use images/hoHorizontal.png>
+Package pdftex.def Info: images/hoHorizontal.png used on input line 281.
+(pdftex.def)             Requested size: 184.94458pt x 142.2667pt.
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+ [10]
+<images/hoVertical.png, id=99, 403.5075pt x 350.05782pt>
+File: images/hoVertical.png Graphic file (type png)
+
+<use images/hoVertical.png>
+Package pdftex.def Info: images/hoVertical.png used on input line 291.
+(pdftex.def)             Requested size: 142.26411pt x 142.26404pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
+[11 <./images/hoClasificacion.png> <./images/hoHorizontal.png>]
+<images/hoTypes.png, id=105, 957.5775pt x 409.53pt>
+File: images/hoTypes.png Graphic file (type png)
+ <use images/hoTypes.png>
+Package pdftex.def Info: images/hoTypes.png used on input line 308.
+(pdftex.def)             Requested size: 369.88853pt x 199.1717pt.
 LaTeX Info: Redefining \. on input line 315.
 LaTeX Info: Redefining \% on input line 315.
- [16
+
+[12 <./images/hoVertical.png> <./images/hoTypes.png>]
+LaTeX Info: Redefining \. on input line 339.
+LaTeX Info: Redefining \% on input line 339.
+ [13]
+<images/hoIssues.png, id=113, 873.2625pt x 533.995pt>
+File: images/hoIssues.png Graphic file (type png)
+
+<use images/hoIssues.png>
+Package pdftex.def Info: images/hoIssues.png used on input line 352.
+(pdftex.def)             Requested size: 369.88577pt x 199.17207pt.
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
+ [14 <./images/hoIssues.png>]
+
+LaTeX Warning: Citation `mcnair_migration_2004' undefined on input line 365.
+
+
+LaTeX Warning: Citation `ghanem2012reducing' undefined on input line 368.
+
+
+LaTeX Warning: Citation `jaheon_gu_mobility-based_2010' undefined on input line
+ 369.
+
+
+LaTeX Warning: Citation `villar2011handoff' undefined on input line 374.
+
+
+Overfull \hbox (8.69064pt too wide) in paragraph at lines 376--376
+[]\OT1/cmr/bx/n/17.28 Estrategia de di-se~no \OT1/cmr/bx/it/17.28 cross-la-yer 
+\OT1/cmr/bx/n/17.28 - CON-TI-NUAR 
+ []
+
+
+LaTeX Warning: Citation `melodia2006state' undefined on input line 377.
+
+
+LaTeX Warning: Citation `briscoe2000understanding' undefined on input line 378.
+
+
+<images/OSImodel.png, id=117, 124.465pt x 170.6375pt>
+File: images/OSImodel.png Graphic file (type png)
+
+<use images/OSImodel.png>
+Package pdftex.def Info: images/OSImodel.png used on input line 381.
+(pdftex.def)             Requested size: 64.01947pt x 85.36018pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `bisnik2005protocol' undefined on input line 387.
+
+LaTeX Info: Redefining \. on input line 388.
+LaTeX Info: Redefining \% on input line 388.
+[15] <images/fig06.png, id=122, 411.5375pt x 702.625pt>
+File: images/fig06.png Graphic file (type png)
+ <use images/fig06.png>
+Package pdftex.def Info: images/fig06.png used on input line 391.
+(pdftex.def)             Requested size: 170.7158pt x 284.5294pt.
+
+
+LaTeX Warning: Citation `bertsekas_data_1992' undefined on input line 397.
+
+
+LaTeX Warning: Citation `raisinghani_cross-layer_2004' undefined on input line 
+397.
+
+
+LaTeX Warning: Citation `srivastava_cross-layer_2005' undefined on input line 3
+98.
+
+LaTeX Info: Redefining \. on input line 399.
+LaTeX Info: Redefining \% on input line 399.
+[16 <./images/OSImodel.png> <./images/fig06.png>]
+<images/hoCrosslayer.png, id=126, 945.5325pt x 539.01375pt>
+File: images/hoCrosslayer.png Graphic file (type png)
+
+<use images/hoCrosslayer.png>
+Package pdftex.def Info: images/hoCrosslayer.png used on input line 402.
+(pdftex.def)             Requested size: 441.02428pt x 199.16876pt.
+LaTeX Info: Redefining \. on input line 411.
+LaTeX Info: Redefining \% on input line 411.
+ [17 <./images/hoCrosslayer.png>]
+LaTeX Info: Redefining \. on input line 412.
+LaTeX Info: Redefining \% on input line 412.
+ [18]
+Cap\'{\i }tulo 3.
+[19
 
 ]
+
+LaTeX Warning: Citation `nasser_handoffs_2006' undefined on input line 419.
+
+
+LaTeX Warning: Citation `kim_qos-aware_2010' undefined on input line 422.
+
+
+LaTeX Warning: Citation `min_liu_performance_2008' undefined on input line 422.
+
+
+
+LaTeX Warning: Citation `ramachandran_make-before-break_2006' undefined on inpu
+t line 422.
+
+
+LaTeX Warning: Citation `ahmed_enabling_2014' undefined on input line 423.
+
+
+LaTeX Warning: Citation `xiaodong2006survey' undefined on input line 423.
+
+
+LaTeX Warning: Citation `hutchison_experimental_2006' undefined on input line 4
+23.
+
+
+LaTeX Warning: Citation `fotouhi2012smart' undefined on input line 426.
+
+LaTeX Info: Redefining \. on input line 428.
+LaTeX Info: Redefining \% on input line 428.
+[20]
+Cap\'{\i }tulo 4.
+[21
+
+]
+LaTeX Info: Redefining \. on input line 449.
+LaTeX Info: Redefining \% on input line 449.
+ [22]
 Cap\'{\i }tulo 5.
-[17]
-LaTeX Info: Redefining \. on input line 320.
-LaTeX Info: Redefining \% on input line 320.
- [18
+[23
+
+]
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
+ [24
 
 ]
 Cap\'{\i }tulo 6.
-[19]
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
- [20
+[25]
+LaTeX Info: Redefining \. on input line 464.
+LaTeX Info: Redefining \% on input line 464.
+ [26
 
 ]
 Ap\'{e}ndice A.
-[21]
-LaTeX Info: Redefining \. on input line 331.
-LaTeX Info: Redefining \% on input line 331.
- [22
+[27]
+LaTeX Info: Redefining \. on input line 467.
+LaTeX Info: Redefining \% on input line 467.
+ [28
 
 ] (./gitTesis.bbl
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+Underfull \hbox (badness 10000) in paragraph at lines 78--91
+[]\OT1/cmr/m/n/12 Dictionary, M.  (2015).  \OT1/cmr/m/it/12 Han-do-ver de-fi-ni
+-tion and sy-nonyms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--91
+\OT1/cmr/m/it/12 | Mac-mi-llan Dic-tio-nary.  \OT1/cmr/m/n/12 Des-car-ga-do 201
+5-10-28, de
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
 
-Underfull \hbox (badness 1043) in paragraph at lines 155--175
+Underfull \hbox (badness 1043) in paragraph at lines 235--255
 \OT1/cmr/m/n/12 man-ce Eva-lua-tion of IPv6-Based mo-bi-lity Ma-na-ge-ment Pro-
 to-cols.  \OT1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--175
+Underfull \hbox (badness 10000) in paragraph at lines 235--255
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=447
 2015
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--208
+Underfull \hbox (badness 10000) in paragraph at lines 269--288
 []\OT1/cmr/m/n/12 Nasser, N., Hass-wa, A., y Has-sa-nein, H.  (2006, oct).  Han
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--208
+Underfull \hbox (badness 10000) in paragraph at lines 269--288
 \OT1/cmr/m/n/12 doffs in fourth ge-ne-ra-tion he-te-ro-ge-neo-us net-works.  \O
 T1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--208
+Underfull \hbox (badness 10000) in paragraph at lines 269--288
 \OT1/cmr/m/it/12 Com-mu-ni-ca-tions Ma-ga-zi-ne\OT1/cmr/m/n/12 , \OT1/cmr/m/it/
 12 44\OT1/cmr/m/n/12 (10), 96--103.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 189--208
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 269--288
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1710420
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 220--243
-\OT1/cmr/m/n/12 na, R., y Valls-tron, J.  (2000, apr).  Han-doff in hy-brid mo-
-bi-le da-ta
+Underfull \hbox (badness 5504) in paragraph at lines 300--323
+[]\OT1/cmr/m/n/12 Pahlavan, K., Krish-na-murthy, P., Ha-ta-mi, A., Yliant-ti-la
+, M., Ma-ke-la, J.,
  []
 
 
-Overfull \hbox (8.25717pt too wide) in paragraph at lines 220--243
+Underfull \hbox (badness 3792) in paragraph at lines 300--323
+\OT1/cmr/m/n/12 Pich-na, R., y Valls-tron, J.  (2000, apr).  Han-doff in hy-bri
+d mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--323
+\OT1/cmr/m/n/12 bi-le da-ta net-works.  \OT1/cmr/m/it/12 IEEE Per-so-nal Com-mu
+-ni-ca-tions\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 7\OT1/cmr/m/n/12 (2), 34--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--323
+\OT1/cmr/m/n/12 47.  Des-car-ga-do de \OT1/cmtt/m/n/12 http://dx.doi.org/10.108
+0/01422419908228843
+ []
+
+
+Overfull \hbox (8.25717pt too wide) in paragraph at lines 300--323
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 839330
  []
 
-LaTeX Info: Redefining \. on input line 409.
-LaTeX Info: Redefining \% on input line 409.
-[23])
-LaTeX Info: Redefining \. on input line 337.
-LaTeX Info: Redefining \% on input line 337.
- [24] (./gitTesis.aux
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
+[29]
+Underfull \hbox (badness 1072) in paragraph at lines 395--415
+[]\OT1/cmr/m/n/12 Siddiqui, F., y Zea-dally, S.  (2008, apr).  An ef-fi-cient w
+i-re-less net-work dis-
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 395--415
+\OT1/cmr/m/n/12 de \OT1/cmtt/m/n/12 http://www.emeraldinsight.com/doi/abs/10.11
+08/17427370810873101
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 505--524
+\OT1/cmr/m/n/12 net-works.  \OT1/cmr/m/it/12 The Se-cond An-nual In-ter-na-tio-
+nal Con-fe-ren-ce on Mo-bi-le and
+ []
+
+
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 505--524
+\OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
+1541004
+ []
+
+)
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
+ [30] (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) )
+)
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 76 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2934 strings out of 493304
- 40960 string characters out of 6139871
- 110711 words of memory out of 5000000
- 6335 multiletter control sequences out of 15000+600000
+ 3069 strings out of 493304
+ 43930 string characters out of 6139871
+ 113591 words of memory out of 5000000
+ 6463 multiletter control sequences out of 15000+600000
  11813 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,6n,26p,678b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,26p,1015b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -449,10 +644,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on gitTesis.pdf (40 pages, 357609 bytes).
+Output written on gitTesis.pdf (46 pages, 755846 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -133,8 +133,8 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	En este capítulo se hace mención y breve descripción acerca del proyecto en general. 
 	Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Networks}, Redes Inalámbricas de Sensores), la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
-
 	\newpage
+	
 	\section{Problemática}
 		El presente proyecto de tesis plantea el uso de una \textit{WSN} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
 		Sin embargo, para entender de mejor manera el proyecto y entrar en contexto con el mismo, es necesario saber y conocer algunos conceptos en la temática de las redes inalámbricas.
@@ -200,6 +200,9 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 		La propuesta misma y el diseño de la red, serán implementados y simulados con ayuda del software Network\textit{ Simulator 2} (\textit{NS2}) \cite{simulator1989ns}, por lo que todas las características y métricas a considerar han de ser correctamente definidas con el propósito de permitir que la simulación sea lo más semejante a la realidad.
 	
+	%Salto de página
+	\newpage
+	
 	\section{Objetivos}
 		\subsection{Objetivo general}
 			Diseño y simulación de un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} que permita la comunicación continua entre los dispositivos móviles en una \textit{WSN}.
@@ -233,90 +236,223 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 \newpage
 \chapter{Esquema de fundamentos}
-\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-		
-\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+
+	En este capítulo se muestran y describen brevemente los avances y logros realizados en el área de redes, enfocados hacia mecanismos de \textit{handoff}. 
+	
+	Para ello se muestra, en sus diferentes secciones, aspectos relacionados al tema: definiciones, clasificaciones, problemáticas e importancia; así como la estrategia de diseño \textit{crosslayer} como concepto. 
+	Con esto se pretende colocar en contexto al lector, presentando el estado del arte actual; validando a su vez, la innovación del proyecto propuesto.
 \newpage
 
 	\section{Transferencia de red (\textit{handoff})}
+	El término \textit{handoff} o \textit{handover} hace referencia a la acción de dar la responsabilidad sobre algo a alguien más, según define el \textit{Macmillan Dictionary} \citeyear{MacmillanDic}.
+	\newline
 	El <<\textit{handoff}>>, <<\textit{handover}>>, <<traspaso>> o <<transferencia de red>> se refieren al movimiento de un nodo móvil entre dos puntos de acceso, esto es, el proceso de terminar una conexión existente y obtener una nueva conexión \cite{Makaya2008}.
-	Dicho de otra manera: el \textit{handoff} es la transición de la señal de transmisión entre diferentes celdas; estos mecanismos de \textit{handoff} deben cumplir con ciertas características (\textbf{las cuales serán mencionadas y analizadas de manera más detalladas en el capítulo X}), como una baja latencia y una baja pérdida de paquetes.
-	
+	Dicho de otra manera: el \textit{handoff} es la transición o traspaso de la señal de transmisión entre diferentes celdas.
 	En principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} (siglas en ingles de \textit{Access Point},Punto de Acceso) de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
-	Entonces, \textit{handoff} es el mecanismo mediante el cual, una conexión activa entre un nodo o \textit{host} (del inglés, anfitrión) móvil y una terminal o \textit{host} correspondiente es transferida desde un \textit{AP} a la red fija u otra \cite{Pahlavan2000}.
+	Entonces, \textit{handoff} es el mecanismo mediante el cual una conexión activa entre un nodo o \textit{host} (del inglés, anfitrión) móvil y una terminal o \textit{host} correspondiente es transferida desde un \textit{AP} a la red fija u otra \cite{Pahlavan2000}.
+
+	Estos mecanismos de \textit{handoff} deben cumplir con características de acuerdo a la aplicación o tarea en ejecución, pues existen diferentes requerimientos en aplicaciones de salud de pacientes críticos que en aquellas de vigilancia de territorios; sin embargo, algunas de las características o requerimientos comúnmente establecidos son una baja latencia en la red y una baja pérdida de paquetes, por mencionar algunos.
+	
+	Como se ha mencionado anteriormente, los mecanismos de \textit{handoff} existen en aquellas redes inalámbricas en las cuales sus miembros poseen capacidades para cambiar de posición y se les permite ejecutar dicho movimiento, llegando incluso a salir del rango de cobertura de sus celdas o APs.
+	Dada esta descripción, se cubren diferentes tecnologías de comunicación inalámbricas en las que existen los mecanismos de \textit{handoff}, como aquellas tecnologías de comunicación celular, de área local o de área personal (por mencionar algunas).
 	 
 	\section{Clasificación del \textit{handoff}}
-	Este mecanismo se clasifica basado en función de varios factores; estos factores pueden apreciarse en la figura \ref{fig:hoClasificacion}:
+	Así como diferentes tecnologías de comunicación poseen mecanismos de \textit{handoff}, así también existen diferentes clasificaciones para estos tipos de mecanismos.
+	Esta clasificación se ha realizado en función de varios factores; algunos de ellos pueden apreciarse en la figura \ref{fig:hoClasificacion}, basada en \cite{Nasser2006}.
+
+	Para los propósitos del presente documento, basta con explicar solo algunas de las clasificaciones: de acuerdo a la tecnología de redes, número de conexiones involucradas y al control del \textit{handoff}.
+	
 		\begin{figure}[h]
 		\centering
-		\includegraphics[width=\textwidth,height=5cm]{fig01.png}
-		\caption{Clasificación del Handoff, Basado en } \cite{Nasser2006} %\cite{Nasser2006}
+		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
+		%\caption{Clasificación del Handoff, Basado en } \cite{Nasser2006}
+		\caption{Clasificación del \textit{handoff}. \textbf{HACER UNA PROPIA}}
 		\label{fig:hoClasificacion}
 		\end{figure}
-	
-		Para los propósitos del documento, basta con explicar solo algunas de las clasificaciones: De acuerdo a la tecnología de redes y al número de conexiones involucradas.
 		 
 		\subsection{Redes involucradas}
-		\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-				
-		\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			  
+		De acuerdo a \citeA{VanQuang2012}, existen dos tipos de mecanismos de \textit{handoff} si se clasifican en función a los tipos de tecnologías de comunicación que se encuentran involucradas en la red: \textit{handoffs} horizontal y vertical.
+		
+		\begin{itemize}
+		\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un BS, pero a su vez entra al área de cobertura de otra BS del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
+		Este proceso se muestra en la figura \ref{fig:hoHorizontal}, tomada de \cite{Siddiqui2008}.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=6.5cm,height=5cm]{hoHorizontal.png}
+%				\caption{Horizontal \textit{handoff}. Tomada de } \cite{Siddiqui2008}.
+				\caption{Horizontal \textit{handoff}.}
+				\label{fig:hoHorizontal}
+			\end{figure}
+		
+		\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una BS a otra BS trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
+		Por ejemplo, el cambio de una señal de transmisión de una BS IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=5cm,height=5cm]{hoVertical.png}
+				%\caption{Vertical \textit{handoff}. Tomada de }\cite{Siddiqui2008}.
+				\caption{Vertical \textit{handoff}.}
+				\label{fig:hoVertical}
+			\end{figure}
+		\end{itemize}
+		
+		Sin embargo, otros autores describen una tercera clasificación: el \textit{handoff} diagonal. 
+		Aunque en artículos como el de \citeA{Stuedi2005} se da una visión diferente al \textit{handoff} (donde se visualiza desde el aspecto de cambios de ruta y/o capa MAC), el concepto final es el mismo.
+		\begin{itemize}
+		\item Diagonal: Un mecanismo de este tipo existe cuando se ejecutan en simultaneidad, mecanismos verticales y horizontales. Esto puede ocurrir al cambiar de una tecnología a otra incluida dentro del mismo estándar, por ejemplo cambiar de IEEE 802.11p a IEEE 802.11b \cite{Ahmed2014}.
+		\end{itemize}
+		
+		Un resumen representativo de las clasificaciones antes mencionadas se muestra en la figura \ref{fig:hoTypes}, tomada de \cite{Ahmed2014}.
+		
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=13cm,height=7cm]{hoTypes.png}
+				\caption{Clasificación del \textit{handoff} según las redes involucradas.}
+				\label{fig:hoTypes}
+			\end{figure}
+					  
 		\subsection{Número de conexiones}
-		\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-				
-		\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+		Otro tipo de clasificaciones del \textit{handoff} es en función al número de conexiones que un nodo puede mantener o establecer. De acuerdo a \citeA{Nasser2006}, existen tres tipos.
+		
+		\begin{itemize}
+			\item \textit{Hard}: Se dice que en un \textit{hard handoff}, un nodo libera el enlace que tiene con una BS, para establecer una nueva conexión hacia una nueva BS. 
+			Esto define que a un nodo móvil le es posible establecer una sola conexión a una BS en todo momento. A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
+
+			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la BS \cite{Etworks2004}.
+			Para ello, debe tenerse en cuenta que el nodo móvil debe estar moviéndose entre el área de cobertura de dos celdas.
+			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la BS \cite{Ramachandran2006}.
+			
+			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo AP.
+		\end{itemize}
 			  
 		\subsection{Control del \textit{handoff}}
-		\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-				
-		\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			  
-	\section{Problemáticas que conlleva el \textit{handoff}}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+		Un aspecto muy importante sobre los mecanismos de \textit{handoff} es la toma de decisiones sobre cómo y cuándo ejecutar dichos mecanismos. 
+		De acuerdo a \citeA{Pahlavan2000}, es posible clasificar al \textit{handoff} con base en dónde se origina el mecanismo de decisión o control de \textit{handoff}. 
+		
+		Entonces, una tercera clasificación de los mecanismos de \textit{handoff} define que éstos pueden ser:
+			\begin{itemize}
+				\item{Controlado-por-Móvil}, \item{Controlado-por-Red}, o \item{Asistido-por-Móvil}. 
+			\end{itemize}
+		
+		El mecanismo de decisión puede estar ubicado en una entidad de la red (como en voz celular), o en el mismo nodo móvil (como en el caso de WLANs). 
+		En este contexto, estos casos corresponden a \textit{controlado-por-red} y \textit{controlado-por-móvil}, respectivamente. 
+		Por último, para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como GPRS, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
+		
+		Tal y como se indica en cada caso, en la decisión del proceso pueden intervenir el nodo móvil, entidades de la red en la que se da el cambio de conexión, y tanto la entidad de red como el nodo móvil.
 			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	\section{Problemáticas que conlleva el \textit{handoff} - CONTINUAR}
+	De acuerdo a \citeA{Pahlavan2000}, existe una gran cantidad de temas relacionados a los mecanismos de \textit{handoff}, como se muestra en la figura \ref{fig:hoIssues} tomada del mismo artículo, estos temas pueden clasificarse en dos categorías:
 	
-	\section{Importancia del \textit{handoff}}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	\begin{itemize}
+		\item Arquitectura: Son aquellas cuestiones en las que se consideran temas relacionados con la metodología, control y elementos de \textit{software} o \textit{hardware} involucrados en el nuevo ruteo de la conexión.
+		\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
+	\end{itemize}
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=13cm,height=7cm]{hoIssues.png}
+			\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}. \textbf{HACER UNA PROPIA}}
+			\label{fig:hoIssues}
+		\end{figure}
+	
+	Sin embargo, otros autores consideran que las problemáticas que conlleva el \textit{handoff} generalmente repercuten en dos cuestiones: el cómo y el cuándo se han de ejecutar estos mecanismos.
+	
+	Por ejemplo, 
+	
+	
+	 fusionar con lo que sigue 
+	 
+	 
+	\textit{Decisión Handoff}: Durante el proceso de Handoff, la decisión de handoff es el paso más importante pues afecta la comunicación del Host Móvil \cite{mcnair_migration_2004}. 
+	Una decisión de handoff incorrecta puede degradar la calidad de servicio del tráfico e incluso romper con la comunicación actual, pues un nodo móvil debe considerar, sino todos, bastantes aspectos del entorno; por ejemplo, debe considerar cuál red le ofrece una mayor cobertura, cuál red le ofrece un menor congestionamiento y qué red otorga en general mayores beneficios, además debe considerar cuál es el momento adecuado para ejecutar el mecanismo de handoff, pues cambiarse de red en un momento inoportuno puede ocasionar que se sufra del efecto Ping-Pong.
+	
+	\textit{Efecto Ping-pong}: El efecto ping-pong es un fenómeno muy común en las redes móviles, el cual puede causar ineficiencia y degrado del desempeño de la red. Parámetros de cobertura, área de ubicación del usuario y su movimiento y velocidad son las principales consideraciones que pueden causar el efecto ping-pong \cite{ghanem2012reducing}. 
+	En otras palabras, se trata de ejecuciones innecesarias de handoff durante un corto intervalo de tiempo \cite{jaheon_gu_mobility-based_2010}. Con el fin de otorgar una idea más clara de lo que es el efecto ping-pong, supóngase un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B, en ese momento, a causa de una pobre decisión de handoff, el nodo decide cambiarse a la red B. 
+	A partir de este momento, el nodo entra en conflicto de decisión, pues ahora intenta regresar a formar parte de la red A. 
+	Este proceso puede llegar a ejecutarse múltiples veces si no se cuenta con una conciencia del entorno para el nodo móvil que le permita llevar a cabo mejores decisiones de handoff.
+	
+	\section{Importancia del \textit{handoff} - CONTINUAR}
+	Buscando dar solución a estas necesidades de movilidad que presentan los usuarios se han desarrollado técnicas como el Handoff, que permiten a los usuarios de los sistemas de comunicaciones desplazarse libremente entre redes de acceso basadas en distintas tecnologías inalámbricas \cite{villar2011handoff}. Busca hacer un amplio uso de la infraestructura desplegada, y en algunos casos, optimizar el acceso de los distintos usuarios de acuerdo con los tipos de servicios que estos requieren.
 		 
-	\section{Estrategia de diseño \textit{crosslayer}}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}	
+	\section{Estrategia de diseño \textit{crosslayer} - CONTINUAR}
+	En la actualidad, existe una gran variedad de investigaciones y desarrollo de protocolos y aplicaciones orientadas a las WSN \cite{melodia2006state}; sin embargo, la gran mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo OSI. 
+	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}, tomada de \cite{briscoe2000understanding}.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=2.25cm,height=3cm]{OSImodel.png}
+			%\caption{Distribución de capas del Modelo OSI. Tomada de } %\cite{briscoe2000understanding}}
+			\caption{Distribución de capas del Modelo OSI.} %
+			\label{fig:OSImodel}
+		\end{figure}
+		
+	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{melodia2006state}; por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. Estas estrategias han sido llamadas como \textit{estrategias de diseño crosslayer} y su comportamiento puede apreciarse en la figura \ref{fig:OSIcrosslayer}, tomada de \cite{bisnik2005protocol} .
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=6cm,height=10cm]{fig06.png}
+			%\caption{Diferencia de operación y filosofía entre el modelo OSI tradicional y crosslayer. Tomada de }  %\cite{bisnik2005protocol}}
+			\caption{Diferencia de operación y filosofía entre el modelo OSI tradicional y \textit{crosslayer}.}
+			\label{fig:OSIcrosslayer}
+		\end{figure}
 	
-\chapter{Trabajos relacionados}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	Los mecanismos de handoff implementan diferentes criterios para determinar el momento o situación oportuna para ejecutar el traspaso de una red a otra. Sin embargo, la manera común y general de realizar estos mecanismos se basa en trabajar siempre exclusivamente en una de las capas del modelo OSI \cite{bertsekas_data_1992}. La estrategia de diseño entre capas (Crosslayer) rompe con esos esquemas de trabajo y propone la implementación de un trabajo colectivo entre múltiples capas; dígase capa de Transporte y capa de Control de Acceso al Medio (MAC), por ejemplo. En donde se permite una comunicación directa entre protocolos de diferentes capas, o compartiendo variables de las mismas. Existen muchas propuestas de diseño crosslayer en la literatura; los autores en \cite{raisinghani_cross-layer_2004} presentan un estudio de varias propuestas de diseño crosslayer.\\
+	En \cite{srivastava_cross-layer_2005} se propone una clasificación del crosslayer, en las que se muestran las posibles interacciones entre capas, ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. Del mismo modo, se hace una diferencia en función a la orientación o sentido del crosslayer; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. Estas propuestas pueden apreciarse de mejor manera en la figura \ref{fig:hoCrosslayer} tomada de \cite{srivastava_cross-layer_2005}, donde cada rectángulo representa una capa del modelo OSI.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth,height=7cm]{hoCrosslayer.png}
+			%\caption{Distintos tipo de propuestas de diseño crosslayer. Tomada de } %\cite{srivastava_cross-layer_2005}}
+			\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
+			\label{fig:hoCrosslayer}
+		\end{figure}
+	
+	Después de la investigación realizada, es posible aproximarse a la idea de en un futuro la mayoría (sino todos) de los mecanismos de \textit{handoff} tenderán hacia un diseño \textit{crosslayer} dadas las bondades que éste ofrece, entre las que destaca el tener una mayor o más amplia visión del entorno, y no solo enfocarse en una capa. 
+	De acuerdo a ello, emergen algunas preguntas: ¿Cuáles serán los diseños crosslayer con mayor impacto en el desempeño de la red? ¿En cuáles de ellos habrá que enfocar el desarrollo? ¿Cómo se permitirá la coexistencia de diferentes diseños crosslayer? ¿Cuáles capas y qué parámetros ofrecen una mejor conciencia del entorno y permiten un eficiente mecanismo de traspaso?.
+	Esta última cuestión define el área de oportunidad que este proyecto busca aprovechar, por lo que es necesario ahondar la investigación en el tema y propulsar el desarrollo de propuestas, con el fin de definir estas variables y un mejor diseño crosslayer.
 	
 \newpage
-	\section{Celular}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+\chapter{Trabajos relacionados}
+	A continuación, se presentan algunos trabajos relacionados. 
+	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}.
+	
+\newpage
+	\section{Celular - CONTINUAR}
+	En \cite{mcnair_migration_2004,nasser_handoffs_2006}, se aborda la temática de las redes de comunicación celular de cuarta generación. Para las cuales se pretenden desarrollar nuevas estrategias de decisión para el mecanismo de traspaso para los dispositivos móviles en la red. Muestra de ello, son las propuesta presentadas por dichos autores, en las que se han desarrollado diferentes funciones con distintos criterios de decisión de para la ejecución de un handoff vertical (VHDF, por sus siglas en inglés). En el primer caso, dicha decisión se basa en criterios ponderados en relación a los tipos de servicio, costo, condiciones de la red, desempeño del sistema, condiciones de los nodos móviles y preferencias del usuario; en el segundo caso, se da importancia mayor a parámetros de red como: costo de servicio, seguridad, consumo de energía, condiciones de la red y desempeño de la red; todo ello con el fin de ofrecer un criterio de handoff de mayor eficiencia.
 		
-	\section{\textit{WLAN}}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	\section{\textit{WLAN} - CONTINUAR}
+	En WLAN también existe el problema de handoff, puesto que puede existir movilidad entre los dispositivos de la red. Por ello, en \cite{kim_qos-aware_2010,min_liu_performance_2008,ramachandran_make-before-break_2006} se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia la calidad del servicio.\\
+	Los autores en \cite{ahmed_enabling_2014,xiaodong2006survey} proveen al lector sobre conceptos relacionados en la temática del handoff en WLANs en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de handoff. Además, en \cite{hutchison_experimental_2006} se realizan experimentos utilizando Protocolos de Transferencia de Archivos (FTP) y aplicaciones de Voz IP (VoIP) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
 		 
-	\section{WSN}
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}} 
+	\section{\textit{WSN} - CONTINUAR}
+	Según se menciona en \cite{fotouhi2012smart}, al diseñar un mecanismo de handoff para WSNs, existen consideraciones diferentes que deben atenderse: el hard handoff por ejemplo, puesto que en WSNs los radios solo poseen usar un canal a la vez; así como los enlaces de baja potencia y desconfiables, dado que son críticos para evitar la problemática del efecto ping-pong. 
 
+\newpage
 \chapter{Desarrollo de protocolo de \textit{handoff}}
 \textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 		
 \textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+\newpage
 
+	\section{Análisis de Problemática}	
+	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+			
+	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	
+	\section{Diseño de Solución}
+	Mecanismo de \textit{handoff} horizontal, \textit{hard} (\textit{break-before-make}), asistido-por-móvil; dado que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar IEEE 802.15.4, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
+	Y finalmente, al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se trata de un tipo asistido-por-móvil.
+	
+	
+	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+			
+	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+
+\newpage
 \chapter{Evaluación y análisis de resultados}
 \textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 		
 \textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 	
+\newpage
 \chapter{Conclusiones y recomendaciones}
 \textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 		

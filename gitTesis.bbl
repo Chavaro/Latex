@@ -1,6 +1,38 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Ahmed%
+, Boulahia%
+\BCBL {}\ \BBA {} Ga{\"{\i}}ti%
+}{%
+Ahmed%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Ahmed2014}
+\APACinsertmetastar {%
+Ahmed2014}%
+\begin{APACrefauthors}%
+Ahmed, A.%
+, Boulahia, L\BPBI M.%
+\BCBL {}\ \BBA {} Ga{\"{\i}}ti, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Enabling vertical handover decisions in heterogeneous
+  wireless networks: A state-of-the-art and a classification}} {{Enabling
+  vertical handover decisions in heterogeneous wireless networks: A
+  state-of-the-art and a classification}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{16}{2}{776--811}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {de los Angeles Cosio Leon}%
 , Hipolito%
 \BCBL {}\ \BBA {} Garcia%
@@ -33,6 +65,31 @@ DelosAngelesCosioLeon}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dictionary%
+}{%
+Dictionary%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+MacmillanDic}
+\APACinsertmetastar {%
+MacmillanDic}%
+\begin{APACrefauthors}%
+Dictionary, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{Handover definition and synonyms | Macmillan Dictionary}.}
+  {{Handover definition and synonyms | Macmillan Dictionary}.}
+\newblock
+\begin{APACrefURL}
+  [{2015-10-28}]\url{http://www.macmillandictionary.com/dictionary/british/handover}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Espa{\~{n}}ola%
 }{%
 Espa{\~{n}}ola%
@@ -53,6 +110,29 @@ Espa{\~{n}}ola, R\BPBI A.%
   de la lengua espa{\~{n}}ola}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Barcelona: Espa{\{}{\~{n}}{\}}a Libros}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Etworks%
+}{%
+Etworks%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Etworks2004}
+\APACinsertmetastar {%
+Etworks2004}%
+\begin{APACrefauthors}%
+Etworks, L\BPBI A\BPBI C\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Communications a S Urvey of T Opologies and}}
+  {{Communications a S Urvey of T Opologies and}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications}{6}{3}{18--31}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -234,11 +314,41 @@ Pahlavan, K.%
 \newblock
 \APACjournalVolNumPages{IEEE Personal Communications}{7}{2}{34--47}.
 \newblock
-\begin{APACrefURL}
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
+\begin{APACrefURL} \url{http://dx.doi.org/10.1080/01422419908228843
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/98.839330} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ramachandran%
+, Rangarajan%
+, Lin%
+\BCBL {}\ \BBA {} Laboratories%
+}{%
+Ramachandran%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Ramachandran2006}
+\APACinsertmetastar {%
+Ramachandran2006}%
+\begin{APACrefauthors}%
+Ramachandran, K.%
+, Rangarajan, S.%
+, Lin, J\BPBI C.%
+\BCBL {}\ \BBA {} Laboratories, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Make-Before-Break MAC Layer Handoff in 802 . 11
+  Wireless Networks}} {{Make-Before-Break MAC Layer Handoff in 802 . 11
+  Wireless Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{00}{c}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -267,6 +377,40 @@ Saranya, R.%
 \newblock
 \APACjournalVolNumPages{International Journal of Advanced Research in Computer
   Engineering {\&} Technology (IJARCET)}{3}{9}{2967--2972}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siddiqui%
+\ \BBA {} Zeadally%
+}{%
+Siddiqui%
+\ \BBA {} Zeadally%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Siddiqui2008}
+\APACinsertmetastar {%
+Siddiqui2008}%
+\begin{APACrefauthors}%
+Siddiqui, F.%
+\BCBT {}\ \BBA {} Zeadally, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An efficient wireless network discovery scheme for
+  heterogeneous access environments}} {{An efficient wireless network discovery
+  scheme for heterogeneous access environments}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Pervasive Computing and
+  Communications}{4}{1}{50--60}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.emeraldinsight.com/doi/abs/10.1108/17427370810873101}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1108/17427370810873101} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -343,6 +487,70 @@ Srivastava, V.%
   {{Cross-layer design: a survey and the road ahead}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Communications Magazine, IEEE}{43}{12}{112--119}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stuedi%
+\ \BBA {} Alonso%
+}{%
+Stuedi%
+\ \BBA {} Alonso%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Stuedi2005}
+\APACinsertmetastar {%
+Stuedi2005}%
+\begin{APACrefauthors}%
+Stuedi, P.%
+\BCBT {}\ \BBA {} Alonso, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Transparent heterogeneous mobile ad hoc networks}}
+  {{Transparent heterogeneous mobile ad hoc networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Second Annual International Conference on Mobile
+  and Ubiquitous Systems: Networking and Services}{}{5005}{237--246}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1541004}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MOBIQUITOUS.2005.63} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Van Quang}%
+, Prasad%
+\BCBL {}\ \BBA {} Niemegeers%
+}{%
+{Van Quang}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+VanQuang2012}
+\APACinsertmetastar {%
+VanQuang2012}%
+\begin{APACrefauthors}%
+{Van Quang}, B.%
+, Prasad, R\BPBI V.%
+\BCBL {}\ \BBA {} Niemegeers, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey on handoffs - Lessons for 60 GHz based
+  wireless systems}} {{A survey on handoffs - Lessons for 60 GHz based wireless
+  systems}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{14}{1}{64--86}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2011.101310.00005} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

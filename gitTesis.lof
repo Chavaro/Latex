@@ -3,7 +3,14 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Conjunto de computadoras conectadas formando una red.}}{2}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Clasificaci\'on de las redes inal\'ambricas en funci\'on de su alcance.}}{3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Clasificaci\'on del Handoff, Basado en }}{10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Clasificaci\'on del \textit {handoff}. \textbf {HACER UNA PROPIA}}}{11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Horizontal \textit {handoff}.}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Vertical \textit {handoff}.}}{12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Clasificaci\'on del \textit {handoff} seg\'un las redes involucradas.}}{12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Temas importantes involucrados en un mecanismo de \textit {handoff}. \textbf {HACER UNA PROPIA}}}{14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Distribuci\'on de capas del Modelo OSI.}}{16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo OSI tradicional y \textit {crosslayer}.}}{16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.}}{17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
