@@ -33,6 +33,35 @@ Ahmed, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Berghaus%
+\ \BBA {} Back%
+}{%
+Berghaus%
+\ \BBA {} Back%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+Berghaus2016}
+\APACinsertmetastar {%
+Berghaus2016}%
+\begin{APACrefauthors}%
+Berghaus, S.%
+\BCBT {}\ \BBA {} Back, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Requirements Elicitation and Utilization Scenarios for
+  In-Car Use of Wearable Devices}} {{Requirements Elicitation and Utilization
+  Scenarios for In-Car Use of Wearable Devices}}.{\BBCQ}
+\newblock
+
+\newblock
+\begin{APACrefDOI} \doi{10.1109/HICSS.2015.127} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chowdhury%
 \ \BBA {} Gregory%
 }{%
@@ -123,6 +152,30 @@ Dictionary, M.%
 \begin{APACrefURL}
   [{2015-10-28}]\url{http://www.macmillandictionary.com/dictionary/british/handover}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Engineering%
+}{%
+Engineering%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Engineering2011}
+\APACinsertmetastar {%
+Engineering2011}%
+\begin{APACrefauthors}%
+Engineering, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Efficient Fast Handoff Scheme with Network Mobility
+  in Heterogeneous Networks}} {{An Efficient Fast Handoff Scheme with Network
+  Mobility in Heterogeneous Networks}}.{\BBCQ}
+\newblock
+
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -295,6 +348,40 @@ Ghanem, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gruebler%
+\ \BBA {} Suzuki%
+}{%
+Gruebler%
+\ \BBA {} Suzuki%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Gruebler2014}
+\APACinsertmetastar {%
+Gruebler2014}%
+\begin{APACrefauthors}%
+Gruebler, A.%
+\BCBT {}\ \BBA {} Suzuki, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Design of a Wearable Device for Reading Positive
+  Expressions from Facial EMG Signals}} {{Design of a Wearable Device for
+  Reading Positive Expressions from Facial EMG Signals}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Affective
+  Computing}{PP}{99}{1--1}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6778017}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TAFFC.2014.2313557} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Gu%
 , Bae%
 \BCBL {}\ \BBA {} Chung%
@@ -327,6 +414,39 @@ Gu, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/APCC.2010.5680000} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+H{\"{o}}flinger%
+\ \protect \BOthers {.}}{%
+H{\"{o}}flinger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Hoflinger2012}
+\APACinsertmetastar {%
+Hoflinger2012}%
+\begin{APACrefauthors}%
+H{\"{o}}flinger, F.%
+, Zhang, R.%
+, Hoppe, J.%
+, Bannoura, A.%
+, Reindl, L\BPBI M.%
+, Wendeberg, J.%
+\BDBL {}Schindelhauer, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Acoustic Self-calibrating System for Indoor Smartphone
+  Tracking (ASSIST)}} {{Acoustic Self-calibrating System for Indoor Smartphone
+  Tracking (ASSIST)}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2012 International Conference on Indoor Positioning and
+  Indoor Navigation (IPIN)}{}{November}{1--9}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IPIN.2012.6418877} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -826,6 +946,33 @@ VanQuang2012}%
   Tutorials}{14}{1}{64--86}.
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2011.101310.00005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Villar%
+}{%
+Villar%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Villar2009}
+\APACinsertmetastar {%
+Villar2009}%
+\begin{APACrefauthors}%
+Villar, H\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoff Vertical : Aproximaciones Cross-Layer}}
+  {{Handoff Vertical : Aproximaciones Cross-Layer}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{1}{Noviembre}{1--9}.
+\newblock
+\begin{APACrefURL}
+  \url{https://revistas.upb.edu.co/index.php/telecomunicaciones/article/view/1251}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

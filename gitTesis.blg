@@ -12,11 +12,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 231 of file gitTesis.bib.bib
+Repeated entry---line 183 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "villar2011handoff"
 Warning--I didn't find a database entry for "melodia2006state"
 Warning--I didn't find a database entry for "briscoe2000understanding"
 Warning--I didn't find a database entry for "bisnik2005protocol"
@@ -33,47 +32,50 @@ Warning--I didn't find a database entry for "xiaodong2006survey"
 Warning--I didn't find a database entry for "hutchison_experimental_2006"
 Warning--I didn't find a database entry for "fotouhi2012smart"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Berghaus2016
+Warning--No journal in Engineering2011
 Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
-You've used 32 entries,
+Warning--No journal in Villar2009
+You've used 37 entries,
             6951 wiz_defined-function locations,
-            1526 strings with 18335 characters,
-and the built_in function-call counts, 63654 in all, are:
-= -- 7754
-> -- 571
-< -- 3015
-+ -- 3060
-- -- 66
-* -- 4190
-:= -- 11403
-add.period$ -- 137
-call.type$ -- 32
-change.case$ -- 563
+            1559 strings with 19467 characters,
+and the built_in function-call counts, 73329 in all, are:
+= -- 8919
+> -- 646
+< -- 3514
++ -- 3561
+- -- 76
+* -- 4850
+:= -- 13253
+add.period$ -- 156
+call.type$ -- 37
+change.case$ -- 648
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 1778
-empty$ -- 2559
-format.name$ -- 968
-if$ -- 12077
+cite$ -- 79
+duplicate$ -- 2027
+empty$ -- 2928
+format.name$ -- 1102
+if$ -- 13863
 int.to.chr$ -- 0
-int.to.str$ -- 96
+int.to.str$ -- 111
 missing$ -- 0
-newline$ -- 890
-num.names$ -- 256
-pop$ -- 1092
+newline$ -- 1022
+num.names$ -- 296
+pop$ -- 1208
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 162
 quote$ -- 0
-skip$ -- 4097
+skip$ -- 4728
 stack$ -- 0
-substring$ -- 3321
-swap$ -- 1068
-text.length$ -- 97
+substring$ -- 3859
+swap$ -- 1217
+text.length$ -- 107
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2880
-warning$ -- 2
-while$ -- 345
+type$ -- 3280
+warning$ -- 5
+while$ -- 388
 width$ -- 0
-write$ -- 1127
+write$ -- 1285
 (There was 1 error message)
