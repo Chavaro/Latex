@@ -12,13 +12,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 130 of file gitTesis.bib.bib
+Repeated entry---line 129 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "mcnair_migration_2004"
-Warning--I didn't find a database entry for "ghanem2012reducing"
-Warning--I didn't find a database entry for "jaheon_gu_mobility-based_2010"
 Warning--I didn't find a database entry for "villar2011handoff"
 Warning--I didn't find a database entry for "melodia2006state"
 Warning--I didn't find a database entry for "briscoe2000understanding"
@@ -26,6 +23,7 @@ Warning--I didn't find a database entry for "bisnik2005protocol"
 Warning--I didn't find a database entry for "bertsekas_data_1992"
 Warning--I didn't find a database entry for "raisinghani_cross-layer_2004"
 Warning--I didn't find a database entry for "srivastava_cross-layer_2005"
+Warning--I didn't find a database entry for "mcnair_migration_2004"
 Warning--I didn't find a database entry for "nasser_handoffs_2006"
 Warning--I didn't find a database entry for "kim_qos-aware_2010"
 Warning--I didn't find a database entry for "min_liu_performance_2008"
@@ -35,46 +33,47 @@ Warning--I didn't find a database entry for "xiaodong2006survey"
 Warning--I didn't find a database entry for "hutchison_experimental_2006"
 Warning--I didn't find a database entry for "fotouhi2012smart"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
-You've used 22 entries,
+You've used 29 entries,
             6951 wiz_defined-function locations,
-            1447 strings with 15686 characters,
-and the built_in function-call counts, 40812 in all, are:
-= -- 4994
-> -- 367
-< -- 1832
-+ -- 1835
-- -- 44
-* -- 2624
-:= -- 7168
-add.period$ -- 93
-call.type$ -- 22
-change.case$ -- 385
+            1504 strings with 17566 characters,
+and the built_in function-call counts, 57440 in all, are:
+= -- 6976
+> -- 519
+< -- 2727
++ -- 2774
+- -- 60
+* -- 3784
+:= -- 10303
+add.period$ -- 123
+call.type$ -- 29
+change.case$ -- 509
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 1142
-empty$ -- 1708
-format.name$ -- 618
-if$ -- 7867
+cite$ -- 60
+duplicate$ -- 1612
+empty$ -- 2309
+format.name$ -- 888
+if$ -- 10879
 int.to.chr$ -- 0
-int.to.str$ -- 66
+int.to.str$ -- 87
 missing$ -- 0
-newline$ -- 585
-num.names$ -- 176
-pop$ -- 752
+newline$ -- 802
+num.names$ -- 232
+pop$ -- 982
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 128
 quote$ -- 0
-skip$ -- 2714
+skip$ -- 3692
 stack$ -- 0
-substring$ -- 2003
-swap$ -- 707
-text.length$ -- 64
+substring$ -- 3001
+swap$ -- 967
+text.length$ -- 83
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1952
-warning$ -- 1
-while$ -- 221
+type$ -- 2576
+warning$ -- 2
+while$ -- 316
 width$ -- 0
-write$ -- 729
+write$ -- 1018
 (There was 1 error message)

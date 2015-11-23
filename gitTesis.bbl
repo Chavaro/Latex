@@ -162,6 +162,40 @@ Eysenbach, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fotouhi%
+, Zuniga%
+, Alves%
+, Koubaa%
+\BCBL {}\ \BBA {} Marron%
+}{%
+Fotouhi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Fotouhi2012}
+\APACinsertmetastar {%
+Fotouhi2012}%
+\begin{APACrefauthors}%
+Fotouhi, H.%
+, Zuniga, M.%
+, Alves, M.%
+, Koubaa, A.%
+\BCBL {}\ \BBA {} Marron, P\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Smart-HOP: A Reliable Handoff Mechanism For Mobile
+  Wireless Sensor Networks}} {{Smart-HOP: A Reliable Handoff Mechanism For
+  Mobile Wireless Sensor Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Ewsn'12}{}{}{2--16}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-642-28169-3{\_}9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Garc{\'{\i}}a%
 , Ibarg{\"{u}}engoytia%
 , Garc{\'{\i}}a%
@@ -193,6 +227,73 @@ Garc{\'{\i}}a, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ghanem%
+, Alradwan%
+, Motermawy%
+\BCBL {}\ \BBA {} Ahmad%
+}{%
+Ghanem%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Ghanem2012}
+\APACinsertmetastar {%
+Ghanem2012}%
+\begin{APACrefauthors}%
+Ghanem, K.%
+, Alradwan, H.%
+, Motermawy, A.%
+\BCBL {}\ \BBA {} Ahmad, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Reducing Ping-Pong Handover Effects In Intra E- UTRA
+  Networks}} {{Reducing Ping-Pong Handover Effects In Intra E- UTRA
+  Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{1--5}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CSNDSP.2012.6292642} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gu%
+, Bae%
+\BCBL {}\ \BBA {} Chung%
+}{%
+Gu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Gu2010}
+\APACinsertmetastar {%
+Gu2010}%
+\begin{APACrefauthors}%
+Gu, J.%
+, Bae, S.%
+\BCBL {}\ \BBA {} Chung, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility-based handover decision mechanism to relieve
+  ping-pong effect in cellular networks}} {{Mobility-based handover decision
+  mechanism to relieve ping-pong effect in cellular networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{16th Asia-Pacific Conference on Communications
+  (APCC)}{}{}{487--491}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=5680000}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/APCC.2010.5680000} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Khan%
 \ \BBA {} Yuce%
 }{%
@@ -217,6 +318,80 @@ Khan, J\BPBI Y.%
   Applications}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Medical Systems}{36}{3}{1441--1457}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+, Kim%
+, Jeong%
+\BCBL {}\ \BBA {} Kang%
+}{%
+Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Lee2011}
+\APACinsertmetastar {%
+Lee2011}%
+\begin{APACrefauthors}%
+Lee, D\BHBI K.%
+, Kim, T\BHBI H.%
+, Jeong, S\BHBI Y.%
+\BCBL {}\ \BBA {} Kang, S\BHBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{sep}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A three-tier middleware architecture supporting
+  bidirectional location tracking of numerous mobile nodes under legacy WSN
+  environment}} {{A three-tier middleware architecture supporting bidirectional
+  location tracking of numerous mobile nodes under legacy WSN
+  environment}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Systems Architecture}{57}{8}{735--748}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1383762111000804}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.sysarc.2011.05.004} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liu%
+, Harn%
+\BCBL {}\ \BBA {} Chang%
+}{%
+Liu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Liu2015}
+\APACinsertmetastar {%
+Liu2015}%
+\begin{APACrefauthors}%
+Liu, Y.%
+, Harn, L.%
+\BCBL {}\ \BBA {} Chang, C\BHBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Novel Verifiable Secret Sharing Mechanism Using
+  Theory of Numbers and a method for Sharing Secrets}} {{A Novel Verifiable
+  Secret Sharing Mechanism Using Theory of Numbers and a method for Sharing
+  Secrets}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Communication
+  Systems}{23}{5}{553--568}.
+\newblock
+\begin{APACrefURL}
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/dac.2760/epdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/dac} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -251,6 +426,40 @@ Makaya, C.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/TWC.2008.060725} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McNair%
+\ \BBA {} {Fang Zhu}%
+}{%
+McNair%
+\ \BBA {} {Fang Zhu}%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+McNair2004}
+\APACinsertmetastar {%
+McNair2004}%
+\begin{APACrefauthors}%
+McNair, J.%
+\BCBT {}\ \BBA {} {Fang Zhu}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Migration toward 4G wireless communications - Vertical
+  handoffs in fourth-generation multinetwork environments}} {{Migration toward
+  4G wireless communications - Vertical handoffs in fourth-generation
+  multinetwork environments}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{11}{3}{8--15}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1308935}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2004.1308935} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -613,6 +822,44 @@ Yan, H.%
 \BIn{} \APACrefbtitle {Communications and Mobile Computing, 2009. CMC'09. WRI
   International Conference on} {Communications and mobile computing, 2009.
   cmc'09. wri international conference on}\ (\BVOL~1, \BPGS\ 563--567).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
+, Song%
+, Owens%
+, Cosmas%
+\BCBL {}\ \BBA {} Itagaki%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Yang2004}
+\APACinsertmetastar {%
+Yang2004}%
+\begin{APACrefauthors}%
+Yang, X\BPBI D.%
+, Song, Y\BPBI H.%
+, Owens, T\BPBI J.%
+, Cosmas, J.%
+\BCBL {}\ \BBA {} Itagaki, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Seamless Soft Handover In DVB-H Networks}} {{Seamless
+  Soft Handover In DVB-H Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Software, Telecommunications
+  and Computer Networks 2004.} {International conference on software,
+  telecommunications and computer networks 2004.}
+\newblock
+\APACaddressPublisher{Split, Croatia, 2004.}{Softcom committees}.
+\newblock
+\begin{APACrefURL} \url{http://bura.brunel.ac.uk/handle/2438/2490}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

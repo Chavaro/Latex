@@ -339,7 +339,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		
 		Tal y como se indica en cada caso, en la decisión del proceso pueden intervenir el nodo móvil, entidades de la red en la que se da el cambio de conexión, y tanto la entidad de red como el nodo móvil.
 			
-	\section{Problemáticas que conlleva el \textit{handoff} - CONTINUAR}
+	\section{Problemáticas que conlleva el \textit{handoff}}
 	De acuerdo a \citeA{Pahlavan2000}, existe una gran cantidad de temas relacionados a los mecanismos de \textit{handoff}, como se muestra en la figura \ref{fig:hoIssues} tomada del mismo artículo, estos temas pueden clasificarse en dos categorías:
 	
 	\begin{itemize}
@@ -356,20 +356,32 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	Sin embargo, otros autores consideran que las problemáticas que conlleva el \textit{handoff} generalmente repercuten en dos cuestiones: el cómo y el cuándo se han de ejecutar estos mecanismos.
 	
-	Por ejemplo, 
+	Por ejemplo \citeA{McNair2004} dicen que durante un proceso de \textit{handoff}, la decisión de éste es el paso más importante, pues afecta la comunicación del nodo móvil.
+	Una decisión de \textit{handoff} incorrecta puede degradar la calidad de servicio del tráfico de información e incluso romper con la comunicación actual, pues un nodo móvil debe considerar aspectos del entorno; por ejemplo, cuál red ofrece una mayor cobertura, cuál red ofrece un menor congestionamiento y cuál red otorga, en general, mayores beneficios.
+	Además debe considerar cuál es el momento adecuado para ejecutar el mecanismo de \textit{handoff}, pues realizar un traspaso de red en un momento inoportuno puede ocasionar que se sufra de problemas como el llamado efecto \textit{ping-pong}, consumo innecesario de energía y/o pérdida de paquetes.
 	
+	El efecto \textit{ping-pong} es un fenómeno muy común en las redes móviles, éste puede causar ineficiencia y degrado del desempeño de la red. 
+	Parámetros tales como cobertura, área de ubicación del usuario y su movimiento y velocidad son algunas de las principales consideraciones que pueden ocasionar la existencia del efecto \textit{ping-pong} \cite{Ghanem2012}.
+	Esta situación es común, dado que algunos algoritmos utilizan el RSSI (siglas en inglés de \textit{Received Signal Strength Indicator}) como criterio de decisión para la ejecución de los mecanismos de \textit{handoff}, y el utilizar estas mediciones instantáneas conlleva en el fenómeno de ejecución frecuente de mecanismos de \textit{handoff} \cite{Yang2004}.
+	En otras palabras, se trata de ejecuciones innecesarias de \textit{handoff} durante un corto intervalo de tiempo \cite{Gu2010}. 
 	
-	 fusionar con lo que sigue 
-	 
-	 
-	\textit{Decisión Handoff}: Durante el proceso de Handoff, la decisión de handoff es el paso más importante pues afecta la comunicación del Host Móvil \cite{mcnair_migration_2004}. 
-	Una decisión de handoff incorrecta puede degradar la calidad de servicio del tráfico e incluso romper con la comunicación actual, pues un nodo móvil debe considerar, sino todos, bastantes aspectos del entorno; por ejemplo, debe considerar cuál red le ofrece una mayor cobertura, cuál red le ofrece un menor congestionamiento y qué red otorga en general mayores beneficios, además debe considerar cuál es el momento adecuado para ejecutar el mecanismo de handoff, pues cambiarse de red en un momento inoportuno puede ocasionar que se sufra del efecto Ping-Pong.
+	Con el fin de otorgar una idea más clara del efecto \textit{ping-pong}, suponga el caso de un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B como se muestra en la figura \ref{fig:hoExample}, en ese momento a causa de una pobre decisión de \textit{handoff}, el nodo decide cambiarse a la red B. 
 	
-	\textit{Efecto Ping-pong}: El efecto ping-pong es un fenómeno muy común en las redes móviles, el cual puede causar ineficiencia y degrado del desempeño de la red. Parámetros de cobertura, área de ubicación del usuario y su movimiento y velocidad son las principales consideraciones que pueden causar el efecto ping-pong \cite{ghanem2012reducing}. 
-	En otras palabras, se trata de ejecuciones innecesarias de handoff durante un corto intervalo de tiempo \cite{jaheon_gu_mobility-based_2010}. Con el fin de otorgar una idea más clara de lo que es el efecto ping-pong, supóngase un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B, en ese momento, a causa de una pobre decisión de handoff, el nodo decide cambiarse a la red B. 
-	A partir de este momento, el nodo entra en conflicto de decisión, pues ahora intenta regresar a formar parte de la red A. 
-	Este proceso puede llegar a ejecutarse múltiples veces si no se cuenta con una conciencia del entorno para el nodo móvil que le permita llevar a cabo mejores decisiones de handoff.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=10cm,height=6.5cm]{hoExample.png}
+			\caption{Ejemplo de ejecución de un mecanismo de \textit{handoff}. \textbf{HACER UNA PROPIA}}
+			\label{fig:hoExample}
+		\end{figure}
+
+	A partir de este momento el nodo entra en conflicto de decisión, pues ahora intenta regresar a formar parte de la red A debido al mismo criterio tomado anteriormente. 
+	Este proceso puede llegar a ejecutarse múltiples veces si no se cuenta con una conciencia del entorno para el nodo móvil que le permita llevar a cabo mejores decisiones de \textit{handoff}.
 	
+	Por esta razón los nuevos algoritmos como los presentados por \citeA{Fotouhi2012}, \citeA{Lee2011} y \citeA{Liu2015} cuyo criterio de decisión se basa en la lectura del RSSI, utilizan diferentes métodos y algoritmos sobre estas lecturas para permitir una posterior ejecución del mecanismo de \textit{handoff}.
+	Asimismo algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.
+	
+	Finalmente, dado que la ejecución frecuente de los mecanismos de \textit{handoff} ocasiona grandes consumos innecesarios de energía (críticos sobre todo para nodos cuyas fuentes de energía son limitadas, como baterías), elefecto ping-pong debeser reducido al mínimo posible durante la etapa de decisión de \textit{handoff} \cite{Yang2004}.
+		
 	\section{Importancia del \textit{handoff} - CONTINUAR}
 	Buscando dar solución a estas necesidades de movilidad que presentan los usuarios se han desarrollado técnicas como el Handoff, que permiten a los usuarios de los sistemas de comunicaciones desplazarse libremente entre redes de acceso basadas en distintas tecnologías inalámbricas \cite{villar2011handoff}. Busca hacer un amplio uso de la infraestructura desplegada, y en algunos casos, optimizar el acceso de los distintos usuarios de acuerdo con los tipos de servicios que estos requieren.
 		 
