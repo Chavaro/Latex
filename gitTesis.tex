@@ -190,13 +190,23 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; además, sí la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{Ping-Pong}. 
 		Por esta razón, un nodo móvil necesita saber cuándo cambiarse de red, cómo ejecutar el \textit{handoff}, y a cuál punto de acceso dentro de la red es conveniente cambiarse.
 
-		En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo 3); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
+		En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo \textit{Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
 		Sin embargo, la mayoría de estos trabajos y soluciones están enfocados hacia redes celulares o redes inalámbricas tradicionales, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} las cuales, como se menciona anteriormente, generalmente utilizan IEEE 802.15.4. 
-		Además, las propuestas de mecanismos de \textit{handooff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red \textit{OSI} \cite{yemini1993osi} dentro del mecanismo de \textit{handoff}) que provocan una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.   
+		
+		%Aquí se pueden mencionar diferencias entre handoff en 15.4 y otras tecnologías; sin mencionar crosslayer
+		Por ejemplo, en el trabajo realizado por \citeA{Gu2010} se desarrolla un mecanismo para la predicción del movimiento de un nodo móvil, para que con ello el sistema pueda inferir hacia dónde se está dirigiendo un nodo.
+		Además de esta predicción, el nodo realiza comparaciones entre la calidad de la señal recibida de la \textit{BS} a la que pertenece actualmente y contra la de otras candidatas a ser su nueva \textit{BS}.
+		Sin embargo; este mecanismo está desarrollado para redes con tecnología celulares, por lo que es posible incluso que el nodo móvil pertenezca a dos celdas simultáneamente.
+		Esto no es posible en redes que trabajan bajo el estándar IEEE 802.15.4.
+		
+		Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño tradicional aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red \textit{OSI} \cite{yemini1993osi} dentro del mecanismo de \textit{handoff}), lo cual provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}. 
+		
+		Por ejemplo, de acuerdo a \citeA{MinLiu2008}, los algoritmos tradicionales de \textit{handoff} generalmente basan su mecanismo en una comparación de umbrales entre una o más métricas específicas para tomar la decisión de ejecutar el traspaso de red.
+		Donde algunas de las métricas más comunes son el \textit{RSSI} (siglas en inglés de \textit{Received Signal Strength Indicator}, Indicador de Fuerza de Señal Recibida), \textit{SIR} (siglas en inglés de \textit{Signal-to-Interference Ratio}, Relación Señal a Interferencia) y el BER (siglas en inglés de \textit{Bit Error Rate}, Tasa de Error Binario).
 		
 		Lo anterior refleja la problemática ha abordar en este trabajo de tesis: instrumentar un mecanismo que permita la movilidad de los nodos en una \textit{WSN}, que cuente con un grado de conciencia o inteligencia en su diseño para ejecutar el \textit{handoff} de forma eficiente (evitando desconexiones y traspasos abruptos e innecesarios entre dispositivos móviles en \textit{WSN}) y que además considere el tipo de aplicación presente en la red, violando el esquema de diseño de protocolos por capas mediante un diseño \textit{crosslayer} (interacción entre múltiples capas del modelo de red) \cite{srivastava2005cross}.
 		
-		Por ello, en este trabajo se propone el diseño y simulación de un mecanismo de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capas superiores.
+		Por ello, en este trabajo se propone el diseño y simulación de un mecanismo de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar Relacionde sobremanera a la comunicación continua de la red y sus aplicaciones de capas superiores.
 	
 		La propuesta misma y el diseño de la red, son implementados y simulados con ayuda del \textit{software Network Simulator 2} (\textit{NS2}) \cite{simulator1989ns}, por lo que todas las características y métricas consideradas son definidas con el propósito de permitir que la simulación sea lo más semejante a la realidad.
 	
@@ -218,6 +228,13 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Como se ha mencionado anteriormente, la movilidad en \textit{WSN} brinda una amplia gama de posibles aplicaciones; entre ellas, actualmente se ha destacado el creciente uso hacia el cuidado de la salud, equipando a los pacientes con nodos sensores que monitorizan sus signos vitales y transmiten los datos recolectados hacia un nodo final para el monitoreo remoto de la salud de las personas. 
 		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical, lo cual demandará mejores opciones tecnológicas que apoyen la cobertura de la salud para este sector.
 		
+		
+		% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+		% Arriba: Citar, referencias.
+		% Aqui mencionar sobre trabajos de wsn handoff en salud
+		% Finalmente, mencionar HaDaS
+		% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+		
 		Con este mecanismo de \textit{handoff} se podrán habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos colocados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
 		
 		Este tipo de aplicaciones demanda una comunicación inteligente ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo está pensado para ofrecer un grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones. 
@@ -234,7 +251,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	\section{Limitaciones y suposiciones}
 		El proyecto limita sus alcances a la simulación del mecanismo de \textit{handoff crosslayer} en el simulador \textit{NS2}, pues no se cuenta con los recursos necesarios para la implementación en físico del sistema planteado.
 		
-		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada por el trabajo (\textbf{TESIS DEL DOC RAYMUNDO}), se dan por aceptados los resultados obtenidos en él y se toman los mismos como base para la presente investigación.
+		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada en el trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él y se toman los mismos como base para la presente investigación.
 		
 	\section{Organización del documento}
 		En el capítulo 1, Introducción, se dan al lector conceptos bases para la comprensión de los capítulos siguientes. También se ...
@@ -258,7 +275,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 
 	Estos mecanismos de \textit{handoff} deben cumplir con características de acuerdo a la aplicación o tarea en ejecución, pues existen diferentes requerimientos en aplicaciones de salud de pacientes críticos que en aquellas de vigilancia de territorios; sin embargo, algunas de las características o requerimientos comúnmente establecidos son una baja latencia en la red y una baja pérdida de paquetes, por mencionar algunos.
 	
-	Como se ha mencionado anteriormente, los mecanismos de \textit{handoff} existen en aquellas redes inalámbricas en las cuales sus miembros poseen capacidades para cambiar de posición y se les permite ejecutar dicho movimiento, llegando incluso a salir del rango de cobertura de sus celdas o APs.
+	Como se ha mencionado anteriormente, los mecanismos de \textit{handoff} existen en aquellas redes inalámbricas en las cuales sus miembros poseen capacidades para cambiar de posición y se les permite ejecutar dicho movimiento, llegando incluso a salir del rango de cobertura de sus celdas o \textit{APs}.
 	Dada esta descripción, se cubren diferentes tecnologías de comunicación inalámbricas en las que existen los mecanismos de \textit{handoff}, como aquellas tecnologías de comunicación celular, de área local o de área personal (por mencionar algunas).
 	 
 	\section{Clasificación del \textit{handoff}}
@@ -279,7 +296,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		De acuerdo a \citeA{VanQuang2012}, existen dos tipos de mecanismos de \textit{handoff} si se clasifican en función a los tipos de tecnologías de comunicación que se encuentran involucradas en la red: \textit{handoffs} horizontal y vertical.
 		
 		\begin{itemize}
-		\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un BS, pero a su vez entra al área de cobertura de otra BS del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
+		\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un \textit{BS}, pero a su vez entra al área de cobertura de otra \textit{BS} del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
 		Este proceso se muestra en la figura \ref{fig:hoHorizontal}, tomada de \cite{Siddiqui2008}.
 			\begin{figure}[h]
 				\centering
@@ -289,8 +306,8 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 				\label{fig:hoHorizontal}
 			\end{figure}
 		
-		\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una BS a otra BS trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
-		Por ejemplo, el cambio de una señal de transmisión de una BS IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
+		\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una \textit{BS} a otra \textit{BS} trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
+		Por ejemplo, el cambio de una señal de transmisión de una \textit{BS} IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=5cm,height=5cm]{hoVertical.png}
@@ -319,10 +336,10 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Otro tipo de clasificaciones del \textit{handoff} es en función al número de conexiones que un nodo puede mantener o establecer. De acuerdo a \citeA{Nasser2006}, existen tres tipos.
 		
 		\begin{itemize}
-			\item \textit{Hard}: Se dice que en un \textit{hard handoff}, un nodo libera el enlace que tiene con una BS, para establecer una nueva conexión hacia una nueva BS.
-			Este mecanismo puede observarse en la fig \ref{fig:hoHard}, tomada de \cite{Chowdhury2012}.
+			\item \textit{Hard}: Se dice que en un \textit{hard handoff}, un nodo libera el enlace que tiene con una \textit{BS}, para establecer una nueva conexión hacia una nueva \textit{BS}.
+			Este mecanismo puede observarse en la figura \ref{fig:hoHard}, tomada de \cite{Chowdhury2012}.
 						
-			Esto define que a un nodo móvil le es posible establecer una sola conexión a una BS en todo momento. A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
+			Esto define que a un nodo móvil le es posible establecer una sola conexión a una \textit{BS} en todo momento. A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
 			
 				\begin{figure}[h]
 					\centering
@@ -331,10 +348,10 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 					\label{fig:hoHard}
 				\end{figure}
 
-			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la BS \cite{Etworks2004}.
+			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la \textit{BS} \cite{Etworks2004}.
 			Este tipo de \textit{handoff}, puede ser observado en la fig \ref{fig:hoSoft}, tomada de \cite{Chowdhury2012}.
 			Para ello, debe tenerse en cuenta que el nodo móvil debe estar moviéndose entre el área de cobertura de dos celdas.
-			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la BS \cite{Ramachandran2006}.
+			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la \textit{BS} \cite{Ramachandran2006}.
 			
 				\begin{figure}[h]
 					\centering
@@ -343,7 +360,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 					\label{fig:hoSoft}
 				\end{figure}
 			
-			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo AP. Dicho de otra manera, la principal diferencia entre un mecanismo tipo \textit{soft} y uno tipo \textit{softer} reside en que el nodo móvil está ubicado dentro del área de cobertura de dos sectores de un mismo AP o BS \cite{Chowdhury2012}, tal y como se muestra en la figura \ref{fig:hoSofter}, tomada del trabajo del mismo autor.
+			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo \textit{AP}. Dicho de otra manera, la principal diferencia entre un mecanismo tipo \textit{soft} y uno tipo \textit{softer} reside en que el nodo móvil está ubicado dentro del área de cobertura de dos sectores de un mismo \textit{AP} o \textit{BS} \cite{Chowdhury2012}, tal y como se muestra en la figura \ref{fig:hoSofter}, tomada del trabajo del mismo autor.
 			
 				\begin{figure}[h]
 					\centering
@@ -405,7 +422,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	El efecto \textit{ping-pong} es un fenómeno muy común en las redes móviles, éste puede causar ineficiencia y degrado del desempeño de la red. 
 	Parámetros tales como cobertura, área de ubicación del usuario y su movimiento y velocidad son algunas de las principales consideraciones que pueden ocasionar la existencia del efecto \textit{ping-pong} \cite{Ghanem2012}.
-	Esta situación es común, dado que algunos algoritmos utilizan el RSSI (siglas en inglés de \textit{Received Signal Strength Indicator}, Indicador de Fuerza de Señal Recibida) como criterio de decisión para la ejecución de los mecanismos de \textit{handoff}, y el utilizar estas mediciones instantáneas conlleva en el fenómeno de ejecución frecuente de mecanismos de \textit{handoff} \cite{Yang2004}.
+	Esta situación es común, dado que algunos algoritmos utilizan el RSSI como criterio de decisión para la ejecución de los mecanismos de \textit{handoff}, y el utilizar estas mediciones instantáneas conlleva en el fenómeno de ejecución frecuente de mecanismos de \textit{handoff} \cite{Yang2004}.
 	En otras palabras, se trata de ejecuciones innecesarias de \textit{handoff} durante un corto intervalo de tiempo \cite{Gu2010}. 
 	
 	Con el fin de otorgar una idea más clara del efecto \textit{ping-pong}, suponga el caso de un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B como se muestra en la figura \ref{fig:hoExample}, en ese momento a causa de una pobre decisión de \textit{handoff}, el nodo decide cambiarse a la red B. 
@@ -432,7 +449,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	El integrar mecanismos de \textit{handoff} dentro del sistema de red, permite hacer un amplio uso de la infraestructura desplegada, y en algunos casos, optimizar el acceso de los distintos usuarios de acuerdo con los tipos de servicios que estos requieren.
 	
-	Asimismo, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{Engineering2011}, lo que resulta en un problema menos para el usuario móvil al no preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o APs.
+	Asimismo, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{Engineering2011}, lo que resulta en un problema menos para el usuario móvil al no preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o \textit{APs}.
 		 
 	\section{Estrategia de diseño \textit{crosslayer} - CONTINUAR}
 	En la actualidad, existe una gran variedad de investigaciones y desarrollo de protocolos y aplicaciones orientadas a las WSN \cite{melodia2006state}; sin embargo, la gran mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo OSI. 

@@ -62,6 +62,43 @@ Berghaus, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Buenrostro-Mariscal%
+\ \protect \BOthers {.}}{%
+Buenrostro-Mariscal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Buenrostro-Mariscal2015}
+\APACinsertmetastar {%
+Buenrostro-Mariscal2015}%
+\begin{APACrefauthors}%
+Buenrostro-Mariscal, R.%
+, Cosio-Leon, M.%
+, Nieto-Hipolito, J\BHBI I.%
+, Guerrero-Ibanez, J\BHBI A.%
+, Vazquez-Briseno, M.%
+\BCBL {}\ \BBA {} Sanchez-Lopez, J\BHBI d\BHBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{WSN-HaDaS: A Cross-Layer Handoff Management Protocol
+  for Wireless Sensor Networks, a Practical Approach to Mobility}} {{WSN-HaDaS:
+  A Cross-Layer Handoff Management Protocol for Wireless Sensor Networks, a
+  Practical Approach to Mobility}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEICE Transactions on
+  Communications}{E98.B}{7}{1333--1344}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.jstage.jst.go.jp/article/transcom/E98.B/7/E98.B{\_}1333/{\_}article}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1587/transcom.E98.B.1333} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chowdhury%
 \ \BBA {} Gregory%
 }{%
@@ -646,6 +683,43 @@ McNair, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/MWC.2004.1308935} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Min Liu}%
+, {Zhongcheng Li}%
+, {Xiaobing Guo}%
+\BCBL {}\ \BBA {} Dutkiewicz%
+}{%
+{Min Liu}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+MinLiu2008}
+\APACinsertmetastar {%
+MinLiu2008}%
+\begin{APACrefauthors}%
+{Min Liu}%
+, {Zhongcheng Li}%
+, {Xiaobing Guo}%
+\BCBL {}\ \BBA {} Dutkiewicz, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Performance Analysis and Optimization of Handoff
+  Algorithms in Heterogeneous Wireless Networks}} {{Performance Analysis and
+  Optimization of Handoff Algorithms in Heterogeneous Wireless
+  Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Mobile Computing}{7}{7}{846--857}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4359007}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TMC.2007.70768} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
