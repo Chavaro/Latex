@@ -10,6 +10,7 @@
 \usepackage{setspace}						% Para ajustar interlineados
 \usepackage{breakcites}						% Para que las citas se adapten al margen del texto
 \usepackage{apacite}						% Citar APA c/paréntesis
+\usepackage{multicol}						% Permite seccionas en columnas
 \graphicspath{ {images/} }					% images folder en local dir
 
 % ======= Margin Config Opc1 ======
@@ -250,7 +251,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		
 		\begin{figure}[htb]
 			\centering
-			\includegraphics[width=\textwidth]{bioMeasurements.png}
+			\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
 			\caption{Requerimientos de mediciones biomédicas.}
 			\label{fig:bioMeasurements}
 		\end{figure}
@@ -279,10 +280,55 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	\section{Limitaciones y suposiciones}
 		El proyecto limita sus alcances a la simulación del mecanismo de \textit{handoff crosslayer} en el simulador \textit{NS2}, pues no se cuenta con los recursos necesarios para la implementación en físico del sistema planteado.
 		
-		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada en el trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él y se toman los mismos como base para la presente investigación.
+		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada en el trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él.
 		
+		Además, estos resultados son tomados como base para la presente investigación, dado que dicho trabajo ya ha sido evaluado en distintas etapas para su posterior publicación.
+		
+	\newpage
 	\section{Organización del documento}
-		En el capítulo 1, Introducción, se dan al lector conceptos bases para la comprensión de los capítulos siguientes. También se ...
+		La estructura de este documento de tesis es la siguiente:
+
+			% first column
+			\begin{minipage}[t]{0.5\textwidth}
+				\begin{itemize}
+					\item \textbf{Introducción}
+					\\
+					 	
+					\item \textbf{Esquema de fundamentos}
+					\\
+					
+					\item \textbf{Trabajos relacionados}
+					\\
+					
+					\item \textbf{Desarrollo de protocolo de \textit{handoff}}
+					\\
+					
+					\item \textbf{Evaluación y análisis de resultados}	
+					
+					\item \textbf{Conclusiones y recomendaciones}
+				\end{itemize}
+			\end{minipage}
+			% VERY important here is that there is no space between the /end{minipage} and the next \begin{minipage} (obviously not counting comments). Otherwise LaTeX will not render the columns side by side.
+			%second column
+			\begin{minipage}[t]{0.5\textwidth}
+			El Capítulo 1 da introducción a la Tesis.
+			\newline
+			
+			El Capítulo 2 da una introducción al \textit{handoff}, las \textit{WSN} y el concepto \textit{crosslayer}.
+			\newline
+			
+			El Capítulo 3 detalla algunos trabajos relacionados a esta Tesis.
+			\newline
+			
+			El Capítulo 4 presenta el desarrollo del protocolo propuesto de \textit{handoff}
+			\newline
+			
+			El Capítulo 5 evalúa y analiza el algoritmo implementado.
+			\newline
+			
+			El Capitulo 6 concluye la Tesis con conclusiones y recomendaciones.
+			
+			\end{minipage}
 	
 \newpage
 \chapter{Esquema de fundamentos}

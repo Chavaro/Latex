@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 16:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -96,49 +96,97 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibitemsep=\skip46
 \biblabelsep=\skip47
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count93
+\mult@box=\box26
+\multicol@leftmargin=\dimen106
+\c@unbalance=\count94
+\c@collectmore=\count95
+\doublecol@number=\count96
+\multicoltolerance=\count97
+\multicolpretolerance=\count98
+\full@width=\dimen107
+\page@free=\dimen108
+\premulticols=\dimen109
+\postmulticols=\dimen110
+\multicolsep=\skip48
+\multicolbaselineskip=\skip49
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count99
+\c@finalcolumnbadness=\count100
+\last@try=\dimen111
+\multicolovershoot=\dimen112
+\multicolundershoot=\dimen113
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count101
+)
 (/usr/share/texlive/texmf-dist/tex/latex/anysize/anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
 
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen106
-\@Rightmargin=\dimen107
-\@Topmargin=\dimen108
-\@Bottommargin=\dimen109
+\@Leftmargin=\dimen114
+\@Rightmargin=\dimen115
+\@Topmargin=\dimen116
+\@Bottommargin=\dimen117
 ) (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `gitTesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen110
-\scratchbox=\box26
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\scratchcounter=\count102
+\scratchdimen=\dimen118
+\scratchbox=\box52
+\nofMPsegments=\count103
+\nofMParguments=\count104
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen111
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen119
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -188,7 +236,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@maskedRefs=\count99
+\c@maskedRefs=\count108
 
 (/usr/share/texlive/texmf-dist/tex/latex/apacite/spanish.apc
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -199,7 +247,7 @@ LaTeX Info: Redefining \BHBI on input line 139.
 File: images/logoUcolTesis.png Graphic file (type png)
 
 <use images/logoUcolTesis.png>
-Package pdftex.def Info: images/logoUcolTesis.png used on input line 33.
+Package pdftex.def Info: images/logoUcolTesis.png used on input line 34.
 (pdftex.def)             Requested size: 441.01773pt x 206.10628pt.
  [1
 
@@ -207,21 +255,21 @@ Package pdftex.def Info: images/logoUcolTesis.png used on input line 33.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logoUcolTesis.png
 >]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 69.
+(Font)              <12> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 69.
+(Font)              <8> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 69.
+(Font)              <6> on input line 70.
  [2] [1
 
 ]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
  [2
 
 ] [3]
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
  [4
 
 ] [5] [6
@@ -236,8 +284,8 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write3
 \openout3 = `gitTesis.toc'.
 
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
  [10] (./gitTesis.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -249,8 +297,8 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 ]
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
  [12
 
 ] (./gitTesis.lof
@@ -263,15 +311,15 @@ LaTeX Info: Redefining \% on input line 1.
  [13
 
 ]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
 
 [14
 
 ]
 Cap\'{\i }tulo 1.
 [1]
-LaTeX Font Info:    Try loading font information for U+lasy on input line 142.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 143.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -279,57 +327,116 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 File: images/redComputadoras.jpg Graphic file (type jpg)
 
 <use images/redComputadoras.jpg>
-Package pdftex.def Info: images/redComputadoras.jpg used on input line 146.
+Package pdftex.def Info: images/redComputadoras.jpg used on input line 147.
 (pdftex.def)             Requested size: 264.61333pt x 186.01723pt.
 
 <images/networkRanges.png, id=66, 564.6696pt x 283.7802pt>
 File: images/networkRanges.png Graphic file (type png)
 
 <use images/networkRanges.png>
-Package pdftex.def Info: images/networkRanges.png used on input line 162.
+Package pdftex.def Info: images/networkRanges.png used on input line 163.
 (pdftex.def)             Requested size: 220.50887pt x 110.82104pt.
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
  [2 <./images/redComputadoras.jpg>]
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
  [3 <./images/networkRanges.png>]
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
  [4]
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
  [5]
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
  [6]
 <images/bioMeasurements.png, id=85, 985.6825pt x 376.40625pt>
 File: images/bioMeasurements.png Graphic file (type png)
 
 <use images/bioMeasurements.png>
-Package pdftex.def Info: images/bioMeasurements.png used on input line 253.
-(pdftex.def)             Requested size: 441.01773pt x 168.41634pt.
-LaTeX Info: Redefining \. on input line 259.
-LaTeX Info: Redefining \% on input line 259.
+Package pdftex.def Info: images/bioMeasurements.png used on input line 254.
+(pdftex.def)             Requested size: 441.02626pt x 199.17271pt.
+LaTeX Info: Redefining \. on input line 260.
+LaTeX Info: Redefining \% on input line 260.
  [7]
-LaTeX Info: Redefining \. on input line 269.
-LaTeX Info: Redefining \% on input line 269.
+LaTeX Info: Redefining \. on input line 270.
+LaTeX Info: Redefining \% on input line 270.
  [8 <./images/bioMeasurements.png>]
 LaTeX Info: Redefining \. on input line 287.
 LaTeX Info: Redefining \% on input line 287.
 
 [9]
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
- [10
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
+
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 317--319
+[]\OT1/cmr/m/n/12 El Cap^^S^^Ptu-lo 2 da una in-tro-duc-ci^^Son al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
+
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 320--322
+[]\OT1/cmr/m/n/12 El Cap^^S^^Ptu-lo 3 de-ta-lla al-gu-nos tra-ba-jos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+
+Overfull \hbox (20.2359pt too wide) in paragraph at lines 292--332
+[][] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+[10]
 Cap\'{\i }tulo 2.
-[11] <images/hoClasificacion.png, id=102, 676.77844pt x 269.50688pt>
+[11
+
+] <images/hoClasificacion.png, id=102, 676.77844pt x 269.50688pt>
 File: images/hoClasificacion.png Graphic file (type png)
 
 <use images/hoClasificacion.png>
-Package pdftex.def Info: images/hoClasificacion.png used on input line 317.
+Package pdftex.def Info: images/hoClasificacion.png used on input line 363.
 (pdftex.def)             Requested size: 441.0264pt x 184.94418pt.
 
 
@@ -339,212 +446,212 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/hoHorizontal.png Graphic file (type png)
 
 <use images/hoHorizontal.png>
-Package pdftex.def Info: images/hoHorizontal.png used on input line 331.
+Package pdftex.def Info: images/hoHorizontal.png used on input line 377.
 (pdftex.def)             Requested size: 184.94458pt x 142.2667pt.
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
  [12]
 <images/hoVertical.png, id=107, 403.5075pt x 350.05782pt>
 File: images/hoVertical.png Graphic file (type png)
 
 <use images/hoVertical.png>
-Package pdftex.def Info: images/hoVertical.png used on input line 341.
+Package pdftex.def Info: images/hoVertical.png used on input line 387.
 (pdftex.def)             Requested size: 142.26411pt x 142.26404pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 350.
-LaTeX Info: Redefining \% on input line 350.
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
 [13 <./images/hoClasificacion.png> <./images/hoHorizontal.png>]
 <images/hoTypes.png, id=113, 957.5775pt x 409.53pt>
 File: images/hoTypes.png Graphic file (type png)
  <use images/hoTypes.png>
-Package pdftex.def Info: images/hoTypes.png used on input line 358.
+Package pdftex.def Info: images/hoTypes.png used on input line 404.
 (pdftex.def)             Requested size: 369.88853pt x 199.1717pt.
-LaTeX Info: Redefining \. on input line 365.
-LaTeX Info: Redefining \% on input line 365.
+LaTeX Info: Redefining \. on input line 411.
+LaTeX Info: Redefining \% on input line 411.
 
 [14 <./images/hoVertical.png> <./images/hoTypes.png>]
 <images/hoHard.png, id=118, 433.62pt x 167.62625pt>
 File: images/hoHard.png Graphic file (type png)
  <use images/hoHard.png>
-Package pdftex.def Info: images/hoHard.png used on input line 374.
+Package pdftex.def Info: images/hoHard.png used on input line 420.
 (pdftex.def)             Requested size: 142.26135pt x 85.35779pt.
 
 <images/hoSoft.png, id=119, 429.605pt x 182.6825pt>
 File: images/hoSoft.png Graphic file (type png)
  <use images/hoSoft.png>
-Package pdftex.def Info: images/hoSoft.png used on input line 386.
+Package pdftex.def Info: images/hoSoft.png used on input line 432.
 (pdftex.def)             Requested size: 142.26172pt x 85.35902pt.
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 438.
+LaTeX Info: Redefining \% on input line 438.
 
 [15 <./images/hoHard.png> <./images/hoSoft.png>]
 <images/hoSofter.png, id=124, 473.77pt x 147.55125pt>
 File: images/hoSofter.png Graphic file (type png)
 
 <use images/hoSofter.png>
-Package pdftex.def Info: images/hoSofter.png used on input line 395.
+Package pdftex.def Info: images/hoSofter.png used on input line 441.
 (pdftex.def)             Requested size: 142.26222pt x 85.35913pt.
-LaTeX Info: Redefining \. on input line 427.
-LaTeX Info: Redefining \% on input line 427.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
  [16 <./images/hoSofter.png>]
 <images/hoIssues.png, id=128, 873.2625pt x 533.995pt>
 File: images/hoIssues.png Graphic file (type png)
 
 <use images/hoIssues.png>
-Package pdftex.def Info: images/hoIssues.png used on input line 440.
+Package pdftex.def Info: images/hoIssues.png used on input line 486.
 (pdftex.def)             Requested size: 369.88577pt x 199.17207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 455.
-LaTeX Info: Redefining \% on input line 455.
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
 [17] <images/hoExample.png, id=132, 701.62125pt x 401.5pt>
 File: images/hoExample.png Graphic file (type png)
 
 <use images/hoExample.png>
-Package pdftex.def Info: images/hoExample.png used on input line 460.
+Package pdftex.def Info: images/hoExample.png used on input line 506.
 (pdftex.def)             Requested size: 284.52975pt x 184.94954pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 473.
-LaTeX Info: Redefining \% on input line 473.
+LaTeX Info: Redefining \. on input line 519.
+LaTeX Info: Redefining \% on input line 519.
 [18 <./images/hoIssues.png>]
-Overfull \hbox (8.69064pt too wide) in paragraph at lines 482--482
+Overfull \hbox (8.69064pt too wide) in paragraph at lines 528--528
 []\OT1/cmr/bx/n/17.28 Estrategia de di-se~no \OT1/cmr/bx/it/17.28 cross-la-yer 
 \OT1/cmr/bx/n/17.28 - CON-TI-NUAR 
  []
 
 
-LaTeX Warning: Citation `melodia2006state' undefined on input line 483.
+LaTeX Warning: Citation `melodia2006state' undefined on input line 529.
 
 
-LaTeX Warning: Citation `briscoe2000understanding' undefined on input line 484.
+LaTeX Warning: Citation `briscoe2000understanding' undefined on input line 530.
 
 
 <images/OSImodel.png, id=136, 124.465pt x 170.6375pt>
 File: images/OSImodel.png Graphic file (type png)
 
 <use images/OSImodel.png>
-Package pdftex.def Info: images/OSImodel.png used on input line 487.
+Package pdftex.def Info: images/OSImodel.png used on input line 533.
 (pdftex.def)             Requested size: 64.01947pt x 85.36018pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 492.
-LaTeX Info: Redefining \% on input line 492.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
  [19 <./images/hoExample.png>]
 
-LaTeX Warning: Citation `bisnik2005protocol' undefined on input line 493.
+LaTeX Warning: Citation `bisnik2005protocol' undefined on input line 539.
 
 <images/fig06.png, id=140, 411.5375pt x 702.625pt>
 File: images/fig06.png Graphic file (type png)
  <use images/fig06.png>
-Package pdftex.def Info: images/fig06.png used on input line 497.
+Package pdftex.def Info: images/fig06.png used on input line 543.
 (pdftex.def)             Requested size: 170.7158pt x 284.5294pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `bertsekas_data_1992' undefined on input line 503.
+LaTeX Warning: Citation `bertsekas_data_1992' undefined on input line 549.
 
 
 LaTeX Warning: Citation `raisinghani_cross-layer_2004' undefined on input line 
-503.
+549.
 
 
 LaTeX Warning: Citation `srivastava_cross-layer_2005' undefined on input line 5
-04.
+50.
 
 <images/hoCrosslayer.png, id=141, 945.5325pt x 539.01375pt>
 File: images/hoCrosslayer.png Graphic file (type png)
 
 <use images/hoCrosslayer.png>
-Package pdftex.def Info: images/hoCrosslayer.png used on input line 508.
+Package pdftex.def Info: images/hoCrosslayer.png used on input line 554.
 (pdftex.def)             Requested size: 441.02428pt x 199.16876pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 517.
-LaTeX Info: Redefining \% on input line 517.
+LaTeX Info: Redefining \. on input line 563.
+LaTeX Info: Redefining \% on input line 563.
 [20 <./images/OSImodel.png>]
-LaTeX Info: Redefining \. on input line 518.
-LaTeX Info: Redefining \% on input line 518.
+LaTeX Info: Redefining \. on input line 564.
+LaTeX Info: Redefining \% on input line 564.
  [21 <./images/fig06.png>]
-LaTeX Info: Redefining \. on input line 519.
-LaTeX Info: Redefining \% on input line 519.
+LaTeX Info: Redefining \. on input line 565.
+LaTeX Info: Redefining \% on input line 565.
  [22 <./images/hoCrosslayer.png>]
 Cap\'{\i }tulo 3.
 [23
 
 ]
 
-LaTeX Warning: Citation `mcnair_migration_2004' undefined on input line 525.
+LaTeX Warning: Citation `mcnair_migration_2004' undefined on input line 571.
 
 
-LaTeX Warning: Citation `nasser_handoffs_2006' undefined on input line 525.
+LaTeX Warning: Citation `nasser_handoffs_2006' undefined on input line 571.
 
 
-LaTeX Warning: Citation `kim_qos-aware_2010' undefined on input line 528.
+LaTeX Warning: Citation `kim_qos-aware_2010' undefined on input line 574.
 
 
-LaTeX Warning: Citation `min_liu_performance_2008' undefined on input line 528.
+LaTeX Warning: Citation `min_liu_performance_2008' undefined on input line 574.
 
 
 
 LaTeX Warning: Citation `ramachandran_make-before-break_2006' undefined on inpu
-t line 528.
+t line 574.
 
 
-LaTeX Warning: Citation `ahmed_enabling_2014' undefined on input line 529.
+LaTeX Warning: Citation `ahmed_enabling_2014' undefined on input line 575.
 
 
-LaTeX Warning: Citation `xiaodong2006survey' undefined on input line 529.
+LaTeX Warning: Citation `xiaodong2006survey' undefined on input line 575.
 
 
 LaTeX Warning: Citation `hutchison_experimental_2006' undefined on input line 5
-29.
+75.
 
 
-LaTeX Warning: Citation `fotouhi2012smart' undefined on input line 532.
+LaTeX Warning: Citation `fotouhi2012smart' undefined on input line 578.
 
-LaTeX Info: Redefining \. on input line 534.
-LaTeX Info: Redefining \% on input line 534.
+LaTeX Info: Redefining \. on input line 580.
+LaTeX Info: Redefining \% on input line 580.
 [24]
 Cap\'{\i }tulo 4.
 [25
 
 ]
-LaTeX Info: Redefining \. on input line 555.
-LaTeX Info: Redefining \% on input line 555.
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
  [26]
 Cap\'{\i }tulo 5.
 [27
 
 ]
-LaTeX Info: Redefining \. on input line 562.
-LaTeX Info: Redefining \% on input line 562.
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
  [28
 
 ]
 Cap\'{\i }tulo 6.
 [29]
-LaTeX Info: Redefining \. on input line 570.
-LaTeX Info: Redefining \% on input line 570.
+LaTeX Info: Redefining \. on input line 616.
+LaTeX Info: Redefining \% on input line 616.
  [30
 
 ]
 Ap\'{e}ndice A.
 [31]
-LaTeX Info: Redefining \. on input line 573.
-LaTeX Info: Redefining \% on input line 573.
+LaTeX Info: Redefining \. on input line 619.
+LaTeX Info: Redefining \% on input line 619.
  [32
 
 ] (./gitTesis.bbl
@@ -854,8 +961,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1398--1418
  []
 
 )
-LaTeX Info: Redefining \. on input line 579.
-LaTeX Info: Redefining \% on input line 579.
+LaTeX Info: Redefining \. on input line 625.
+LaTeX Info: Redefining \% on input line 625.
  [36] (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
@@ -866,13 +973,13 @@ LaTeX Warning: There were undefined references.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 76 (\begingroup)
+### semi simple group (level 1) entered at line 77 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3211 strings out of 493304
- 46251 string characters out of 6139871
- 115391 words of memory out of 5000000
- 6600 multiletter control sequences out of 15000+600000
+ 3304 strings out of 493304
+ 47677 string characters out of 6139871
+ 119283 words of memory out of 5000000
+ 6689 multiletter control sequences out of 15000+600000
  11813 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,6n,26p,1015b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -885,7 +992,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on gitTesis.pdf (52 pages, 1075860 bytes).
+Output written on gitTesis.pdf (52 pages, 1076789 bytes).
 PDF statistics:
  231 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams

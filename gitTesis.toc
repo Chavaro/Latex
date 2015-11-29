@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.3}Justificaci\'on}{7}
 \contentsline {section}{\numberline {1.4}Preguntas de investigaci\'on}{9}
 \contentsline {section}{\numberline {1.5}Limitaciones y suposiciones}{9}
-\contentsline {section}{\numberline {1.6}Organizaci\'on del documento}{9}
+\contentsline {section}{\numberline {1.6}Organizaci\'on del documento}{10}
 \contentsline {chapter}{\numberline {2}Esquema de fundamentos}{11}
 \contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{12}
 \contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{12}
