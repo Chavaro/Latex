@@ -1258,6 +1258,40 @@ Virone, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wong%
+, Espinoza%
+\BCBL {}\ \BBA {} Palloni%
+}{%
+Wong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Wong2007}
+\APACinsertmetastar {%
+Wong2007}%
+\begin{APACrefauthors}%
+Wong, R.%
+, Espinoza, M.%
+\BCBL {}\ \BBA {} Palloni, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adultos mayores mexicanos en contexto
+  socioecon{\'{o}}mico amplio: salud y envejecimiento}} {{Adultos mayores
+  mexicanos en contexto socioecon{\'{o}}mico amplio: salud y
+  envejecimiento}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Salud P{\'{u}}blica de M{\'{e}}xico}{49}{Instituto
+  Nacional de Salud P{\'{u}}blica}{436--447}.
+\newblock
+\begin{APACrefURL}
+  \url{http://europa.sim.ucm.es/compludoc/AA?articuloId=750850}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Yan%
 , Xu%
 \BCBL {}\ \BBA {} Gidlund%

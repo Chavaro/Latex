@@ -248,7 +248,6 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		También menciona que, desde el punto de vista de redes inalámbricas, existen múltiples problemáticas debido a la naturaleza de las señales y el ambiente en que se encuentran, como \textit{multipath}, interferencias y disturbios en la señal.
 		Asimismo, plantea los requerimientos de red con respecto a las señales o parámetros que se estén monitorizando del paciente, tal y como se muestra en la figura \ref{fig:bioMeasurements}, tomada del mismo trabajo.
 		
-		
 		\begin{figure}[htb]
 			\centering
 			\includegraphics[width=\textwidth]{bioMeasurements.png}
@@ -256,21 +255,19 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 			\label{fig:bioMeasurements}
 		\end{figure}
 		
-		
-		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical, lo cual demandará mejores opciones tecnológicas que apoyen la cobertura de la salud para este sector.
-		
-		
-		% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-		% Arriba: Citar, referencias.
-		% Aqui mencionar sobre trabajos de wsn handoff en salud
-		% Finalmente, mencionar HaDaS
-		% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical y en consecuencia existirá una mayor necesidad de atención hacia este grupo social \cite{Wong2007}.
 		
 		Con este mecanismo de \textit{handoff} se podrán habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos colocados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
 		
-		Este tipo de aplicaciones demanda una comunicación inteligente ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo está pensado para ofrecer un grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones. 
+		Este tipo de aplicaciones demanda comunicación inteligente, ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo utiliza como base o punto de partida al protocolo de \textit{handoff WSN-HaDaS} (mencionado en la sección de Problemática).
+		Este protocolo ya ofrece características de diseño \textit{crosslayer}, con ello se infiere que posee una mayor conciencia del entorno de aplicación dado que no limita sus decisiones a parámetros de una sola capa del modelo de red \textit{OSI}.
+		Bajo este esquema, el protocolo \textit{WSN-Hadas} demostró presentar tiempos de retardo reducidos dado que se implementa dentro de un mecanismo de comunicación estándar.
+		
+		Utilizando este protocolo como punto de partida, la nueva propuesta está pensada para ofrecer un mayor grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones. 
 		Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto las propuestas que actualmente se ofrecen.
-		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que se requiere analizar y definir cuáles capas del modelo de red se deben utilizar, qué procesos debe ejecutar el mecanismo, qué parámetros se deben considerar, y cómo se debe integrar todo lo anterior en un diseño \textit{crosslayer} para crear nuestro mecanismo de \textit{handoff}. Además, se debe diseñar el escenario de operación de forma adecuada para simularlo con parámetros reales que puedan generar resultados válidos para su implementación en la vida real.
+		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que se requiere analizar y definir cuáles capas del modelo de red se deben utilizar, qué procesos debe ejecutar el mecanismo, qué parámetros se deben considerar, y cómo se debe integrar todo lo anterior en un diseño \textit{crosslayer} para crear nuestro mecanismo de \textit{handoff}. 
+		
+		Además, se debe diseñar el escenario de operación de forma adecuada para simularlo con parámetros reales que puedan generar resultados válidos para su implementación en la vida real.
 		
 	\section{Preguntas de investigación}
 		\begin{itemize}
