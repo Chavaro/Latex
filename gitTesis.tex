@@ -179,15 +179,17 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		
 		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
 		En este escenario las \textit{WSN} tienen una cobertura limitada debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la IEEE 802.15.4, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios.
+		
 		Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones, ni el desempeño general de la red.
 		
 		Además los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{WSN}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar IEEE 802.15.4 no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
 		Aunque por otro lado, el estándar sí cuenta con funciones y procesos que pueden ser utilizados para crear un mecanismo de \textit{handoff}.
 		
 		Este proceso de \textit{handoff} o cambio de red es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, y no asegura que el nodo móvil se libre de problemas de comunicación.
-		Por ejemplo, un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino; por ejemplo, la existencia de lentitud en el proceso genera altos tiempo de desconexión; si la aplicación no es consciente de la desconexión puede que continúe enviando datos sin considerar que probablemente no podrán ser entregados.
-		Otro caso se da cuando el nodo móvil decida cambiarse a un punto de acceso a red que tenga problemas de congestionamiento o saturación de usuarios conectados; entonces el nodo seguirá con problemas para transmitir su información al destino. 
-		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; además, sí la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{Ping-Pong}. 
+		
+		Un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino; por ejemplo, la existencia de lentitud en el proceso genera altos tiempo de desconexión; si la aplicación no es consciente de la desconexión puede que continúe enviando datos sin considerar que probablemente no podrán ser entregados.
+		Otro caso se da cuando el nodo móvil decide cambiarse a un punto de acceso a la red que tiene problemas de congestionamiento o saturación de usuarios conectados; entonces el nodo seguirá con problemas para transmitir su información al destino. 
+		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; además, si la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{ping-pong}. 
 		Por esta razón, un nodo móvil necesita saber cuándo cambiarse de red, cómo ejecutar el \textit{handoff}, y a cuál punto de acceso dentro de la red es conveniente cambiarse.
 
 		En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo \textit{Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
@@ -204,9 +206,23 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Por ejemplo, de acuerdo a \citeA{MinLiu2008}, los algoritmos tradicionales de \textit{handoff} generalmente basan su mecanismo en una comparación de umbrales entre una o más métricas específicas para tomar la decisión de ejecutar el traspaso de red.
 		Donde algunas de las métricas más comunes son el \textit{RSSI} (siglas en inglés de \textit{Received Signal Strength Indicator}, Indicador de Fuerza de Señal Recibida), \textit{SIR} (siglas en inglés de \textit{Signal-to-Interference Ratio}, Relación Señal a Interferencia) y el BER (siglas en inglés de \textit{Bit Error Rate}, Tasa de Error Binario).
 		
+		%Aquí mencionar sobre handoff en 15.4 con crosslayer
+		Este tipo de criterios son limitados y no consideran aspectos e información relevante localizada en otras capas que pueden resultar de utilidad para la toma de decisiones de \textit{handoff}. 
+		Por ejemplo, en la propuesta de \citeA{Ahmad2007} se aplica el diseño crosslayer para un \textit{handoff} vertical en donde consideran aspectos provenientes de la capa de aplicación e información de la capa de enlace.
+		Con ello, se crean perfiles de acuerdo a la aplicación permitiendo la consideración de aplicaciones en función a lo crítico de las mismas y ofreciendo prioridades; lo cual arrojó resultados favorables comparando su propuesta contra un mismo procedimiento sin su algoritmo.
+		
+		En el trabajo desarrollado por \citeA{Shi2009}, se aplica el diseño \textit{crosslayer} en \textit{WSN} con el propósito de eficientar y reducir el consumo de energía puesto que éste es una limitante crítica en este tipo de redes.
+		Esto mediante la combinación de información originaria de las capas física, de control de acceso al medio y de red.
+		
+		Del mismo modo, \citeA{Tang2010} extienden los alcances de su trabajo anterior \cite{QiulingTang2005} integrando un diseño \textit{crosslayer} con el objetivo de analizar el consumo de energía generado por un modelo de eficiencia energética, pero ahora considerando aspectos de las capas de transporte, acceso al medio, red, enlace, física, y demás aspectos.
+		
+		Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un protocolo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
+		Este protocolo opera en las capas de transporte y de control de acceso al medio, interactuando con el mecanismo de envío de información \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con ello posee la ventaja de ser capaz de detener o reactivar el envió de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
+		
 		Lo anterior refleja la problemática ha abordar en este trabajo de tesis: instrumentar un mecanismo que permita la movilidad de los nodos en una \textit{WSN}, que cuente con un grado de conciencia o inteligencia en su diseño para ejecutar el \textit{handoff} de forma eficiente (evitando desconexiones y traspasos abruptos e innecesarios entre dispositivos móviles en \textit{WSN}) y que además considere el tipo de aplicación presente en la red, violando el esquema de diseño de protocolos por capas mediante un diseño \textit{crosslayer} (interacción entre múltiples capas del modelo de red) \cite{srivastava2005cross}.
 		
-		Por ello, en este trabajo se propone el diseño y simulación de un mecanismo de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar Relacionde sobremanera a la comunicación continua de la red y sus aplicaciones de capas superiores.
+		Por ello, en este trabajo se propone el diseño y simulación de un mecanismo de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar de sobremanera la comunicación continua de la red y sus aplicaciones de capas superiores.
+		Ello mediante la adaptación del protocolo de \textit{handoff WSN-HaDaS} \cite{Buenrostro-Mariscal2015}, expandientdo las consideraciones establecidas en él con el objetivo de obtener un mejor resultado al brindarle una mayor conciencia de su entorno de red.
 	
 		La propuesta misma y el diseño de la red, son implementados y simulados con ayuda del \textit{software Network Simulator 2} (\textit{NS2}) \cite{simulator1989ns}, por lo que todas las características y métricas consideradas son definidas con el propósito de permitir que la simulación sea lo más semejante a la realidad.
 	
@@ -225,7 +241,22 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 			\end{itemize}
 	\section{Justificación}
 		El desarrollo del presente trabajo abonará al actual avance tecnológico en el área de las redes inalámbricas con una nueva opción para la problemática del traspaso de red mediante un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} aplicado a \textit{WSN}, beneficiando de esta manera al desarrollo de los avances tecnológicos orientados hacia \textit{WSN} y su movilidad.
+		
 		Como se ha mencionado anteriormente, la movilidad en \textit{WSN} brinda una amplia gama de posibles aplicaciones; entre ellas, actualmente se ha destacado el creciente uso hacia el cuidado de la salud, equipando a los pacientes con nodos sensores que monitorizan sus signos vitales y transmiten los datos recolectados hacia un nodo final para el monitoreo remoto de la salud de las personas. 
+		
+		De acuerdo a \citeA{Arnon2003}, la implementación de \textit{WSN} en ambientes hospitalarios resulta beneficioso tanto para pacientes como para el cuerpo médico puesto que puede reducir tiempos de instalación del paciente y sumando tiempos de monitorización de su salud.
+		También menciona que, desde el punto de vista de redes inalámbricas, existen múltiples problemáticas debido a la naturaleza de las señales y el ambiente en que se encuentran, como \textit{multipath}, interferencias y disturbios en la señal.
+		Asimismo, plantea los requerimientos de red con respecto a las señales o parámetros que se estén monitorizando del paciente, tal y como se muestra en la figura \ref{fig:bioMeasurements}, tomada del mismo trabajo.
+		
+		
+		\begin{figure}[htb]
+			\centering
+			\includegraphics[width=\textwidth]{bioMeasurements.png}
+			\caption{Requerimientos de mediciones biomédicas.}
+			\label{fig:bioMeasurements}
+		\end{figure}
+		
+		
 		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical, lo cual demandará mejores opciones tecnológicas que apoyen la cobertura de la salud para este sector.
 		
 		

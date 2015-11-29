@@ -12,7 +12,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 219 of file gitTesis.bib.bib
+Repeated entry---line 233 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
@@ -36,46 +36,47 @@ Warning--No journal in Berghaus2016
 Warning--No journal in Engineering2011
 Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
+Warning--No journal in Tang2010
 Warning--No journal in Villar2009
-You've used 39 entries,
+You've used 44 entries,
             6951 wiz_defined-function locations,
-            1576 strings with 20280 characters,
-and the built_in function-call counts, 78610 in all, are:
-= -- 9522
-> -- 696
-< -- 3819
-+ -- 3885
-- -- 86
-* -- 5238
-:= -- 14299
-add.period$ -- 164
-call.type$ -- 39
-change.case$ -- 684
+            1614 strings with 21648 characters,
+and the built_in function-call counts, 90114 in all, are:
+= -- 10918
+> -- 804
+< -- 4396
++ -- 4458
+- -- 102
+* -- 6011
+:= -- 16371
+add.period$ -- 188
+call.type$ -- 44
+change.case$ -- 773
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 2183
-empty$ -- 3110
-format.name$ -- 1197
-if$ -- 14777
+cite$ -- 94
+duplicate$ -- 2503
+empty$ -- 3550
+format.name$ -- 1376
+if$ -- 16927
 int.to.chr$ -- 0
-int.to.str$ -- 117
+int.to.str$ -- 132
 missing$ -- 0
-newline$ -- 1085
-num.names$ -- 312
-pop$ -- 1269
+newline$ -- 1240
+num.names$ -- 352
+pop$ -- 1477
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 194
 quote$ -- 0
-skip$ -- 5012
+skip$ -- 5723
 stack$ -- 0
-substring$ -- 4204
-swap$ -- 1304
-text.length$ -- 116
+substring$ -- 4816
+swap$ -- 1492
+text.length$ -- 139
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3440
-warning$ -- 5
-while$ -- 421
+type$ -- 3968
+warning$ -- 6
+while$ -- 486
 width$ -- 0
-write$ -- 1369
+write$ -- 1572
 (There was 1 error message)

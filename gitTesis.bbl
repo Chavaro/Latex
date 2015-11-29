@@ -1,6 +1,37 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Ahmad%
+, Akbar%
+\BCBL {}\ \BBA {} Qadir%
+}{%
+Ahmad%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Ahmad2007}
+\APACinsertmetastar {%
+Ahmad2007}%
+\begin{APACrefauthors}%
+Ahmad, S\BPBI Z.%
+, Akbar, M\BPBI S.%
+\BCBL {}\ \BBA {} Qadir, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Cross-Layer Vertical Handover Decision Model for
+  Heterogeneous Wireless Networks}} {{A Cross-Layer Vertical Handover Decision
+  Model for Heterogeneous Wireless Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2007 Innovations in Information Technologies
+  (IIT)}{}{}{441--445}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IIT.2007.4430456} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ahmed%
 , Boulahia%
 \BCBL {}\ \BBA {} Ga{\"{\i}}ti%
@@ -30,6 +61,38 @@ Ahmed, A.%
   Tutorials}{16}{2}{776--811}.
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Arnon%
+, Bhastekar%
+, Kedar%
+\BCBL {}\ \BBA {} Tauber%
+}{%
+Arnon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Arnon2003}
+\APACinsertmetastar {%
+Arnon2003}%
+\begin{APACrefauthors}%
+Arnon, S.%
+, Bhastekar, D.%
+, Kedar, D.%
+\BCBL {}\ \BBA {} Tauber, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A comparative study of wireless communication network
+  configurations for medical applications}} {{A comparative study of wireless
+  communication network configurations for medical applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Ieee Wireless Communications}{10}{1}{56--61}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2003.1182112} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -783,11 +846,51 @@ Pahlavan, K.%
 \newblock
 \APACjournalVolNumPages{IEEE Personal Communications}{7}{2}{34--47}.
 \newblock
-\begin{APACrefURL} \url{http://dx.doi.org/10.1080/01422419908228843
-  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/98.839330} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis%
+\BCBL {}\ \BBA {} {Tuanfa Qin}%
+}{%
+{Qiuling Tang}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+QiulingTang2005}
+\APACinsertmetastar {%
+QiulingTang2005}%
+\begin{APACrefauthors}%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis, G.%
+\BCBL {}\ \BBA {} {Tuanfa Qin}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}} {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {MILCOM 2005 - 2005 IEEE Military Communications
+  Conference} {Milcom 2005 - 2005 ieee military communications conference}\
+  (\BPGS\ 1--7).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1606004}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MILCOM.2005.1606004} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -846,6 +949,43 @@ Saranya, R.%
 \newblock
 \APACjournalVolNumPages{International Journal of Advanced Research in Computer
   Engineering {\&} Technology (IJARCET)}{3}{9}{2967--2972}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shi%
+\ \BBA {} Fapojuwo%
+}{%
+Shi%
+\ \BBA {} Fapojuwo%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Shi2009}
+\APACinsertmetastar {%
+Shi2009}%
+\begin{APACrefauthors}%
+Shi, L.%
+\BCBT {}\ \BBA {} Fapojuwo, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Energy Efficient and Delay Optimized TDMA Scheduling
+  for Clustered Wireless Sensor Networks}} {{Energy Efficient and Delay
+  Optimized TDMA Scheduling for Clustered Wireless Sensor Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 IEEE Wireless Communications and Networking
+  Conference} {2009 ieee wireless communications and networking conference}\
+  (\BPGS\ 1--6).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4917709}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WCNC.2009.4917709} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -989,6 +1129,42 @@ Stuedi, P.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/MOBIQUITOUS.2005.63} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tang%
+, Sun%
+, Wen%
+\BCBL {}\ \BBA {} Liang%
+}{%
+Tang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Tang2010}
+\APACinsertmetastar {%
+Tang2010}%
+\begin{APACrefauthors}%
+Tang, Q.%
+, Sun, C.%
+, Wen, H.%
+\BCBL {}\ \BBA {} Liang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer energy efficiency analysis and optimization
+  in WSN}} {{Cross-layer energy efficiency analysis and optimization in
+  WSN}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{138 --142}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/login.jsp?tp={\&}arnumber=5461522{\&}url=http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=5461522}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICNSC.2010.5461522} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
