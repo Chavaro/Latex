@@ -12,7 +12,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 233 of file gitTesis.bib.bib
+Repeated entry---line 369 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
@@ -40,7 +40,7 @@ Warning--No journal in Tang2010
 Warning--No journal in Villar2009
 You've used 46 entries,
             6951 wiz_defined-function locations,
-            1630 strings with 22144 characters,
+            1630 strings with 22188 characters,
 and the built_in function-call counts, 93670 in all, are:
 = -- 11337
 > -- 833

@@ -264,7 +264,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		Este protocolo ya ofrece características de diseño \textit{crosslayer}, con ello se infiere que posee una mayor conciencia del entorno de aplicación dado que no limita sus decisiones a parámetros de una sola capa del modelo de red \textit{OSI}.
 		Bajo este esquema, el protocolo \textit{WSN-Hadas} demostró presentar tiempos de retardo reducidos dado que se implementa dentro de un mecanismo de comunicación estándar.
 		
-		Utilizando este protocolo como punto de partida, la nueva propuesta está pensada para ofrecer un mayor grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones. 
+		Utilizando este protocolo como punto de partida, la nueva propuesta está pensada para ofrecer un mayor grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones.
 		Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto las propuestas que actualmente se ofrecen.
 		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que se requiere analizar y definir cuáles capas del modelo de red se deben utilizar, qué procesos debe ejecutar el mecanismo, qué parámetros se deben considerar, y cómo se debe integrar todo lo anterior en un diseño \textit{crosslayer} para crear nuestro mecanismo de \textit{handoff}. 
 		
@@ -302,7 +302,8 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 					
 					\item \textbf{Metodología de investigación}
 					\\
-					
+					.
+					\\
 					\item \textbf{Desarrollo de protocolo de \textit{handoff}}
 					\\
 					
@@ -702,14 +703,59 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	A continuación, se detallan cada una de las etapas mostradas en la anterior metodología:
 	
 	\begin{enumerate}
-		\item ¿Qué se quiere simular?: En esta etapa...
-		\item ¿Qué se quiere obtener de la simulación?
-		\item ¿Qué aspectos se quieren simular?
-		\item ¿Qué parámetros de entrada y salida se requieren?
-		\item Definir \textit{testbed} o topología a simular.
-		\item Definir las estadísticas a medir.
-		\item Redefinir tiempos, variables o estadísticas.
-		\item Documentación y resultados.
+		\item \textbf{¿Qué se quiere simular?}: En esta etapa se plantea un panorama general de lo que se pretende simular, con el objetivo de partir de lo general hacia lo específico.
+		En este caso, la simulación plantea una \textit{WSN} con nodos móviles y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
+		\item \textbf{¿Qué se quiere obtener de la simulación?}: De ella, se busca el permitir analizar el efecto del \textit{handoff} en el rendimiento de la red.
+		\item \textbf{¿Qué aspectos se quieren simular?}: Se consideraron a los tiempos de conexión y reconexión como aspectos de simulación relevantes; así como la cantidad de paquetes perdidos y entregados y el retardo promedio de paquetes entregados.
+		Asimismo, se plantea el movimiento de nodos dentro de una misma celda, y a través de múltiples celdas.
+		\item \textbf{¿Qué parámetros de entrada y salida se requieren?}:
+		\newline
+		Los parámetros de \textit{entrada} se muestran en seguida:
+			\begin{itemize}
+				\item Nodos móviles
+				\item Nodos fijos
+				\item Roles de nodos
+				\item Tasa de transmisión
+				\item Tamaño de paquete
+				\item Velocidad de movimiento de nodos
+				\item Potencia de transmisión
+				\item Sensibilidad de recepción
+				\item Ubicación de nodos fijos
+			\end{itemize}
+		Del mismo modo, los parámetros de \textit{salida} requeridos se muestran a continuación:
+			\begin{itemize}
+				\item Consumo de energía/batería
+				\item Paquetes entregados/perdidos
+				\item Tiempos de conexión/reconexión
+			\end{itemize}	
+		
+		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{WSN} describe un árbol jerárquico.
+		Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
+		
+		El primer rol es el \textit{SN} (iniciales en inglés de \textit{Sink Node}, Nodo Receptor), bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
+		
+		El rol de \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
+		
+		Un tercer rol es el de \textit{MN} (iniciales en inglés de \textit{Mobile Node}, Nodo Móvil), el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{MN} es el enviar información hacia el \textit{SN}, ello a través de los \textit{CH}.
+		
+		De este rol puede desprenderse un subrol, dado que no todos los \textit{MN} se mueven a través de las celdas. 
+		Un \textit{MN} normal solo presenta movimiento dentro del alcance de un mismo \textit{CH}; sin embargo un \textit{WN} (iniciales en inglés de \textit{Wild Node}, Nodo Salvaje) es capaz de moverse de un \textit{cluster} a otro.
+		
+		Además, se determinó un tráfico contínuo generado con un tamaño constante. 
+		Ello bajo una \textit{WSN} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
+		
+		\item \textbf{Definir las estadísticas a medir}: Las estadísticas planteadas para su medición, observación y análisis son las siguientes:
+			\begin{itemize}
+				\item Latencia extremo-a-extremo.
+				\item Paquetes perdidos/entregados.
+				\item Retardo promedio de paquetes entregados.
+			\end{itemize}
+		
+		\item \textbf{Redefinir tiempos, variables o estadísticas}: Esta etapa es un caso opcional, y se aborda en situaciones tales que el análisis de los resultados obtenidos en la simulación propongan oportunidades de mejora.
+		Sin embargo, el tiempo propuesto de simulación es de dos minutos.
+		
+		\item \textbf{Documentación y resultados}: Una vez obtenidos los resultados esperados, y siendo ellos positivos, se continuó hacia la documentación de los mismos.
+		
 	\end{enumerate}
 	
 	\section{Análisis de Resultados}	

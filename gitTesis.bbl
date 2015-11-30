@@ -875,8 +875,8 @@ Pahlavan, K.%
 \newblock
 \APACjournalVolNumPages{IEEE Personal Communications}{7}{2}{34--47}.
 \newblock
-\begin{APACrefURL}
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
+\begin{APACrefURL} \url{http://dx.doi.org/10.1080/01422419908228843
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/98.839330} \end{APACrefDOI}
