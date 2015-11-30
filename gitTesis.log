@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 22:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,43 +684,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 661--664
 
  []
 
-LaTeX Info: Redefining \. on input line 678.
-LaTeX Info: Redefining \% on input line 678.
-[28 <./images/journals.png>]
-LaTeX Info: Redefining \. on input line 692.
-LaTeX Info: Redefining \% on input line 692.
- [29]
-LaTeX Info: Redefining \. on input line 698.
-LaTeX Info: Redefining \% on input line 698.
- [30]
-Cap\'{\i }tulo 5.
-[31
 
-]
-LaTeX Info: Redefining \. on input line 705.
-LaTeX Info: Redefining \% on input line 705.
+Underfull \hbox (badness 10000) in paragraph at lines 665--669
+
+ []
+
+LaTeX Info: Redefining \. on input line 675.
+LaTeX Info: Redefining \% on input line 675.
+[28 <./images/journals.png>]
+<images/simPlaneacion.png, id=177, 651.3936pt x 463.4916pt>
+File: images/simPlaneacion.png Graphic file (type png)
+
+<use images/simPlaneacion.png>
+Package pdftex.def Info: images/simPlaneacion.png used on input line 697.
+(pdftex.def)             Requested size: 341.4401pt x 284.53996pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 703.
+LaTeX Info: Redefining \% on input line 703.
+[29]
+LaTeX Info: Redefining \. on input line 717.
+LaTeX Info: Redefining \% on input line 717.
+ [30 <./images/simPlaneacion.png>]
+LaTeX Info: Redefining \. on input line 720.
+LaTeX Info: Redefining \% on input line 720.
+ [31]
+LaTeX Info: Redefining \. on input line 721.
+LaTeX Info: Redefining \% on input line 721.
  [32
 
 ]
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 5.
 [33]
-LaTeX Info: Redefining \. on input line 711.
-LaTeX Info: Redefining \% on input line 711.
+LaTeX Info: Redefining \. on input line 727.
+LaTeX Info: Redefining \% on input line 727.
  [34
 
 ]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [35]
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
+LaTeX Info: Redefining \. on input line 733.
+LaTeX Info: Redefining \% on input line 733.
  [36
 
 ]
-Ap\'{e}ndice A.
+Cap\'{\i }tulo 7.
 [37]
-LaTeX Info: Redefining \. on input line 722.
-LaTeX Info: Redefining \% on input line 722.
+LaTeX Info: Redefining \. on input line 741.
+LaTeX Info: Redefining \% on input line 741.
  [38
+
+]
+Ap\'{e}ndice A.
+[39]
+LaTeX Info: Redefining \. on input line 744.
+LaTeX Info: Redefining \% on input line 744.
+ [40
 
 ] (./gitTesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 167--192
@@ -785,7 +806,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
 LaTeX Info: Redefining \. on input line 381.
 LaTeX Info: Redefining \% on input line 381.
- [39]
+ [41]
 Underfull \hbox (badness 1308) in paragraph at lines 461--478
 []\OT1/cmr/m/n/12 Ghanem, K., Al-rad-wan, H., Mo-ter-mawy, A., y Ah-mad, A.  (2
 012).  Re-du-
@@ -865,7 +886,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 725--745
 
 LaTeX Info: Redefining \. on input line 745.
 LaTeX Info: Redefining \% on input line 745.
-[40]
+[42]
 Underfull \hbox (badness 3158) in paragraph at lines 759--779
 \OT1/cmr/m/n/12 ni-ca-tions - Ver-ti-cal han-doffs in fourth-generation mul-ti-
 net-work en-vi-ron-
@@ -954,7 +975,7 @@ Underfull \vbox (badness 1072) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 1053.
 LaTeX Info: Redefining \% on input line 1053.
- [41]
+ [43]
 Underfull \hbox (badness 1769) in paragraph at lines 1143--1162
 \OT1/cmr/m/n/12 net-works.  \OT1/cmr/m/it/12 The Se-cond An-nual In-ter-na-tio-
 nal Con-fe-ren-ce on Mo-bi-le and
@@ -1033,10 +1054,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1427--1447
 
 LaTeX Info: Redefining \. on input line 1447.
 LaTeX Info: Redefining \% on input line 1447.
-[42])
-LaTeX Info: Redefining \. on input line 728.
-LaTeX Info: Redefining \% on input line 728.
- [43] (./gitTesis.aux
+[44])
+LaTeX Info: Redefining \. on input line 750.
+LaTeX Info: Redefining \% on input line 750.
+ [45] (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -1049,10 +1070,10 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 77 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3327 strings out of 493304
- 48189 string characters out of 6139871
- 119413 words of memory out of 5000000
- 6709 multiletter control sequences out of 15000+600000
+ 3333 strings out of 493304
+ 48340 string characters out of 6139871
+ 119424 words of memory out of 5000000
+ 6714 multiletter control sequences out of 15000+600000
  11813 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,6n,26p,1015b,722s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1065,10 +1086,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on gitTesis.pdf (59 pages, 1338485 bytes).
+Output written on gitTesis.pdf (61 pages, 1404428 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 268 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
