@@ -64,6 +64,35 @@ Ahmed, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Araujo Alonso}%
+}{%
+{Araujo Alonso}%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+AraujoAlonso2011}
+\APACinsertmetastar {%
+AraujoAlonso2011}%
+\begin{APACrefauthors}%
+{Araujo Alonso}, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{nov}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Las revisiones sistem{\'{a}}ticas (I)}} {{Las
+  revisiones sistem{\'{a}}ticas (I)}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Medwave}{11}{11}{}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.medwave.cl/link.cgi/Medwave/Series/MBE01/5220}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5867/medwave.2011.11.5220} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Arnon%
 , Bhastekar%
 , Kedar%

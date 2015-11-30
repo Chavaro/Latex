@@ -38,45 +38,45 @@ Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
 Warning--No journal in Tang2010
 Warning--No journal in Villar2009
-You've used 45 entries,
+You've used 46 entries,
             6951 wiz_defined-function locations,
-            1623 strings with 21959 characters,
-and the built_in function-call counts, 92224 in all, are:
-= -- 11165
-> -- 823
-< -- 4511
-+ -- 4569
-- -- 104
-* -- 6163
-:= -- 16780
-add.period$ -- 192
-call.type$ -- 45
-change.case$ -- 790
+            1630 strings with 22144 characters,
+and the built_in function-call counts, 93670 in all, are:
+= -- 11337
+> -- 833
+< -- 4568
++ -- 4616
+- -- 106
+* -- 6255
+:= -- 17024
+add.period$ -- 196
+call.type$ -- 46
+change.case$ -- 809
 chr.to.int$ -- 0
-cite$ -- 96
-duplicate$ -- 2559
-empty$ -- 3631
-format.name$ -- 1408
-if$ -- 17312
+cite$ -- 98
+duplicate$ -- 2598
+empty$ -- 3707
+format.name$ -- 1422
+if$ -- 17603
 int.to.chr$ -- 0
-int.to.str$ -- 135
+int.to.str$ -- 138
 missing$ -- 0
-newline$ -- 1268
-num.names$ -- 360
-pop$ -- 1502
+newline$ -- 1294
+num.names$ -- 368
+pop$ -- 1524
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 204
 quote$ -- 0
-skip$ -- 5848
+skip$ -- 5962
 stack$ -- 0
-substring$ -- 4933
-swap$ -- 1528
-text.length$ -- 141
+substring$ -- 4985
+swap$ -- 1554
+text.length$ -- 145
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4048
+type$ -- 4128
 warning$ -- 6
-while$ -- 498
+while$ -- 505
 width$ -- 0
-write$ -- 1609
+write$ -- 1637
 (There was 1 error message)

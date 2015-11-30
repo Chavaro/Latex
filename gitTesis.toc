@@ -27,11 +27,14 @@
 \contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{24}
 \contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{25}
 \contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a}{26}
-\contentsline {section}{\numberline {4.2}An\'alisis de Problem\'atica}{27}
-\contentsline {section}{\numberline {4.3}Dise\~no de Soluci\'on}{27}
-\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{29}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{31}
-\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{33}
-\contentsline {chapter}{\numberline {A}Anexos}{35}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{37}
-\contentsline {section}{Referencias}{37}
+\contentsline {section}{\numberline {4.2}Revisi\'on de Bibliograf\IeC {\'\i }a}{27}
+\contentsline {section}{\numberline {4.3}An\'alisis de Mecanismos}{28}
+\contentsline {section}{\numberline {4.4}Dise\~no de Soluci\'on}{28}
+\contentsline {section}{\numberline {4.5}Implementaci\'on en Simulador}{29}
+\contentsline {section}{\numberline {4.6}An\'alisis de Resultados}{29}
+\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{31}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{33}
+\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{35}
+\contentsline {chapter}{\numberline {A}Anexos}{37}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{39}
+\contentsline {section}{Referencias}{39}

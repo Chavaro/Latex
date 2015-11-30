@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 18:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.14)  29 NOV 2015 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,351 +647,387 @@ Package pdftex.def Info: images/metologia.png used on input line 596.
 LaTeX Info: Redefining \. on input line 619.
 LaTeX Info: Redefining \% on input line 619.
  [26 <./images/metologia.png>]
-LaTeX Info: Redefining \. on input line 630.
-LaTeX Info: Redefining \% on input line 630.
- [27]
-LaTeX Info: Redefining \. on input line 631.
-LaTeX Info: Redefining \% on input line 631.
- [28
+<images/revSistematica.png, id=166, 383.9946pt x 359.4228pt>
+File: images/revSistematica.png Graphic file (type png)
 
-]
+<use images/revSistematica.png>
+Package pdftex.def Info: images/revSistematica.png used on input line 625.
+(pdftex.def)             Requested size: 227.62709pt x 199.16393pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--633
+
+ []
+
+<images/journals.png, id=167, 614.7768pt x 277.9986pt>
+File: images/journals.png Graphic file (type png)
+
+<use images/journals.png>
+Package pdftex.def Info: images/journals.png used on input line 639.
+(pdftex.def)             Requested size: 341.43967pt x 142.26945pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--644
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 652.
+LaTeX Info: Redefining \% on input line 652.
+[27 <./images/revSistematica.png>]
+LaTeX Info: Redefining \. on input line 670.
+LaTeX Info: Redefining \% on input line 670.
+ [28 <./images/journals.png>]
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
+ [29]
+LaTeX Info: Redefining \. on input line 685.
+LaTeX Info: Redefining \% on input line 685.
+ [30]
 Cap\'{\i }tulo 5.
-[29]
-LaTeX Info: Redefining \. on input line 637.
-LaTeX Info: Redefining \% on input line 637.
- [30
+[31
 
 ]
-Cap\'{\i }tulo 6.
-[31]
-LaTeX Info: Redefining \. on input line 643.
-LaTeX Info: Redefining \% on input line 643.
+LaTeX Info: Redefining \. on input line 692.
+LaTeX Info: Redefining \% on input line 692.
  [32
 
 ]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [33]
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
+LaTeX Info: Redefining \. on input line 698.
+LaTeX Info: Redefining \% on input line 698.
  [34
 
 ]
-Ap\'{e}ndice A.
+Cap\'{\i }tulo 7.
 [35]
-LaTeX Info: Redefining \. on input line 654.
-LaTeX Info: Redefining \% on input line 654.
+LaTeX Info: Redefining \. on input line 706.
+LaTeX Info: Redefining \% on input line 706.
  [36
 
+]
+Ap\'{e}ndice A.
+[37]
+LaTeX Info: Redefining \. on input line 709.
+LaTeX Info: Redefining \% on input line 709.
+ [38
+
 ] (./gitTesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 138--163
+Underfull \hbox (badness 10000) in paragraph at lines 167--192
 []\OT1/cmr/m/n/12 Buenrostro-Mariscal, R., Cosio-Leon, M., Nieto-Hipolito, J.-I
 ., Guerrero-
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 138--163
+Underfull \hbox (badness 2698) in paragraph at lines 167--192
 \OT1/cmr/m/n/12 Ibanez, J.-A., Vazquez-Briseno, M., y Sanchez-Lopez, J.-d.-D.  
 (2015).
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 138--163
+Underfull \hbox (badness 5161) in paragraph at lines 167--192
 \OT1/cmr/m/n/12 WSN-HaDaS: A Cross-Layer Han-doff Ma-na-ge-ment Pro-to-col for 
 Wi-re-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 138--163
+Underfull \hbox (badness 1546) in paragraph at lines 167--192
 \OT1/cmr/m/n/12 less Sen-sor Net-works, a Prac-ti-cal Ap-proach to Mo-bi-lity. 
  \OT1/cmr/m/it/12 IEI-CE Tran-
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 138--163
+Underfull \hbox (badness 7522) in paragraph at lines 167--192
 \OT1/cmr/m/it/12 sac-tions on Com-mu-ni-ca-tions\OT1/cmr/m/n/12 , \OT1/cmr/m/it
 /12 E98.B\OT1/cmr/m/n/12 (7), 1333--1344.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (35.67418pt too wide) in paragraph at lines 138--163
+Overfull \hbox (35.67418pt too wide) in paragraph at lines 167--192
 \OT1/cmtt/m/n/12 https://www.jstage.jst.go.jp/article/transcom/E98.B/7/E98.B[]1
 333/[]article
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--199
+Underfull \hbox (badness 10000) in paragraph at lines 206--228
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=650
 9794
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--256
+Underfull \hbox (badness 10000) in paragraph at lines 272--285
 []\OT1/cmr/m/n/12 Dictionary, M.  (2015).  \OT1/cmr/m/it/12 Han-do-ver de-fi-ni
 -tion and sy-nonyms
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--256
+Underfull \hbox (badness 10000) in paragraph at lines 272--285
 \OT1/cmr/m/it/12 | Mac-mi-llan Dic-tio-nary.  \OT1/cmr/m/n/12 Des-car-ga-do 201
 5-10-28, de
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 301.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 330.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 301.
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
- [37]
-Underfull \hbox (badness 1308) in paragraph at lines 432--449
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
+ [39]
+Underfull \hbox (badness 1308) in paragraph at lines 461--478
 []\OT1/cmr/m/n/12 Ghanem, K., Al-rad-wan, H., Mo-ter-mawy, A., y Ah-mad, A.  (2
 012).  Re-du-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 463--483
+Underfull \hbox (badness 3291) in paragraph at lines 492--512
 []\OT1/cmr/m/n/12 Gruebler, A., y Su-zu-ki, K.  (2014).  De-sign of a Wea-ra-bl
 e De-vi-ce for
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 463--483
+Underfull \hbox (badness 2680) in paragraph at lines 492--512
 \OT1/cmr/m/n/12 Reading Po-si-ti-ve Ex-pres-sions from Fa-cial EMG Sig-nals.  \
 OT1/cmr/m/it/12 IEEE Tran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--483
+Underfull \hbox (badness 10000) in paragraph at lines 492--512
 \OT1/cmr/m/it/12 sac-tions on Af-fec-ti-ve Com-pu-ting\OT1/cmr/m/n/12 , \OT1/cm
 r/m/it/12 PP\OT1/cmr/m/n/12 (99), 1--1.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 463--483
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 6778017
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 497--518
+Underfull \hbox (badness 2111) in paragraph at lines 526--547
 []\OT1/cmr/m/n/12 Gu, J., Bae, S., y Chung, M.  (2010).  Mobility-based han-do-
 ver de-ci-sion
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 497--518
+Underfull \hbox (badness 1436) in paragraph at lines 526--547
 \OT1/cmr/m/n/12 me-cha-nism to re-lie-ve ping-pong ef-fect in ce-llu-lar net-wo
 rks.  \OT1/cmr/m/it/12 16th Asia-
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 623--646
+Underfull \hbox (badness 3965) in paragraph at lines 652--675
 []\OT1/cmr/m/n/12 Lee, D.-K., Kim, T.-H., Jeong, S.-Y., y Kang, S.-J.  (2011, s
 ep).  A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--646
+Underfull \hbox (badness 10000) in paragraph at lines 652--675
 \OT1/cmr/m/n/12 three-tier midd-le-wa-re ar-chi-tec-tu-re sup-por-ting bi-di-re
 c-tio-nal lo-ca-tion
  []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 623--646
+Underfull \hbox (badness 5985) in paragraph at lines 652--675
 \OT1/cmr/m/n/12 trac-king of nu-me-rous mo-bi-le no-des un-der le-gacy WSN en-v
 i-ron-ment.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--646
+Underfull \hbox (badness 10000) in paragraph at lines 652--675
 \OT1/cmr/m/it/12 Jour-nal of Sys-tems Ar-chi-tec-tu-re\OT1/cmr/m/n/12 , \OT1/cm
 r/m/it/12 57\OT1/cmr/m/n/12 (8), 735--748.  Des-car-ga-do de
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 696--716
+Underfull \hbox (badness 1043) in paragraph at lines 725--745
 \OT1/cmr/m/n/12 man-ce Eva-lua-tion of IPv6-Based mo-bi-lity Ma-na-ge-ment Pro-
 to-cols.  \OT1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--716
+Underfull \hbox (badness 10000) in paragraph at lines 725--745
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=447
 2015
  []
 
-LaTeX Info: Redefining \. on input line 726.
-LaTeX Info: Redefining \% on input line 726.
-[38]
-Underfull \hbox (badness 3158) in paragraph at lines 730--750
+LaTeX Info: Redefining \. on input line 745.
+LaTeX Info: Redefining \% on input line 745.
+[40]
+Underfull \hbox (badness 3158) in paragraph at lines 759--779
 \OT1/cmr/m/n/12 ni-ca-tions - Ver-ti-cal han-doffs in fourth-generation mul-ti-
 net-work en-vi-ron-
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 730--750
+Underfull \hbox (badness 1931) in paragraph at lines 759--779
 \OT1/cmr/m/n/12 ments.  \OT1/cmr/m/it/12 IEEE Wi-re-less Com-mu-ni-ca-tions\OT1
 /cmr/m/n/12 , \OT1/cmr/m/it/12 11\OT1/cmr/m/n/12 (3), 8--15.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 730--750
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 759--779
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1308935
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 765--787
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 794--816
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 4359007
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--820
+Underfull \hbox (badness 10000) in paragraph at lines 830--849
 []\OT1/cmr/m/n/12 Nasser, N., Hass-wa, A., y Has-sa-nein, H.  (2006, oct).  Han
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--820
+Underfull \hbox (badness 10000) in paragraph at lines 830--849
 \OT1/cmr/m/n/12 doffs in fourth ge-ne-ra-tion he-te-ro-ge-neo-us net-works.  \O
 T1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--820
+Underfull \hbox (badness 10000) in paragraph at lines 830--849
 \OT1/cmr/m/it/12 Com-mu-ni-ca-tions Ma-ga-zi-ne\OT1/cmr/m/n/12 , \OT1/cmr/m/it/
 12 44\OT1/cmr/m/n/12 (10), 96--103.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 801--820
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 830--849
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1710420
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 832--855
+Underfull \hbox (badness 1571) in paragraph at lines 861--884
 \OT1/cmr/m/n/12 na, R., y Valls-tron, J.  (2000, apr).  Han-doff in hy-brid mo-
 bi-le da-ta
  []
 
 
-Overfull \hbox (8.25717pt too wide) in paragraph at lines 832--855
+Overfull \hbox (8.25717pt too wide) in paragraph at lines 861--884
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 839330
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 870--895
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 899--924
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1606004
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 967--990
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 996--1019
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 4917709
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1004--1024
+Underfull \hbox (badness 1072) in paragraph at lines 1033--1053
 []\OT1/cmr/m/n/12 Siddiqui, F., y Zea-dally, S.  (2008, apr).  An ef-fi-cient w
 i-re-less net-work dis-
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 1004--1024
+Underfull \hbox (badness 4467) in paragraph at lines 1033--1053
 \OT1/cmr/m/n/12 de \OT1/cmtt/m/n/12 http://www.emeraldinsight.com/doi/abs/10.11
 08/17427370810873101
  []
 
-LaTeX Info: Redefining \. on input line 1054.
-LaTeX Info: Redefining \% on input line 1054.
-[39]
-Underfull \hbox (badness 1769) in paragraph at lines 1114--1133
+
+Underfull \vbox (badness 1072) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1053.
+LaTeX Info: Redefining \% on input line 1053.
+ [41]
+Underfull \hbox (badness 1769) in paragraph at lines 1143--1162
 \OT1/cmr/m/n/12 net-works.  \OT1/cmr/m/it/12 The Se-cond An-nual In-ter-na-tio-
 nal Con-fe-ren-ce on Mo-bi-le and
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1114--1133
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1143--1162
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1541004
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 1148--1169
+Underfull \hbox (badness 1215) in paragraph at lines 1177--1198
 []\OT1/cmr/m/n/12 Tang, Q., Sun, C., Wen, H., y Liang, Y.  (2010).  Cross-layer
  energy ef-fi-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 1148--1169
+Underfull \hbox (badness 1442) in paragraph at lines 1177--1198
 \OT1/cmr/m/n/12 ciency analy-sis and op-ti-mi-za-tion in WSN. , 138 --142.  Des
 -car-ga-do de
  []
 
 
-Overfull \hbox (364.67834pt too wide) in paragraph at lines 1148--1169
+Overfull \hbox (364.67834pt too wide) in paragraph at lines 1177--1198
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5461522&
 url=http://ieeexplore.ieee.org/xpls/abs[]all.jsp?arnumber=5461522
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1212--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1256
 []\OT1/cmr/m/n/12 Villar, H. F.  (2009).  Han-doff Ver-ti-cal : Apro-xi-ma-cio-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1212--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1256
 \OT1/cmr/m/n/12 nes Cross-Layer. , \OT1/cmr/m/it/12 1\OT1/cmr/m/n/12 (Noviembre
 ), 1--9.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (45.30719pt too wide) in paragraph at lines 1212--1227
+Overfull \hbox (45.30719pt too wide) in paragraph at lines 1241--1256
 \OT1/cmtt/m/n/12 https://revistas.upb.edu.co/index.php/telecomunicaciones/artic
 le/view/1251
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1212--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1418
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1447
 []\OT1/cmr/m/n/12 Zdarsky, F., y Sch-mitt, J.  (2004).  Han-do-ver in mo-bi-le 
 com-mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1418
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1447
 \OT1/cmr/m/n/12 ni-ca-tion net-works: who is in con-trol any-way?  \OT1/cmr/m/i
 t/12 Pro-cee-dings.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1418
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1447
 \OT1/cmr/m/it/12 30th Eu-ro-mi-cro Con-fe-ren-ce, 2004.\OT1/cmr/m/n/12 , 205--2
 12.  Des-car-ga-do de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1418
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1447
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/freeabs[]all.jsp?arnumber=13333
 73
  []
 
-)
-LaTeX Info: Redefining \. on input line 660.
-LaTeX Info: Redefining \% on input line 660.
- [40] (./gitTesis.aux
+LaTeX Info: Redefining \. on input line 1447.
+LaTeX Info: Redefining \% on input line 1447.
+[42])
+LaTeX Info: Redefining \. on input line 715.
+LaTeX Info: Redefining \% on input line 715.
+ [43] (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -1004,13 +1040,13 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 77 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3310 strings out of 493304
- 47804 string characters out of 6139871
- 119294 words of memory out of 5000000
- 6694 multiletter control sequences out of 15000+600000
+ 3327 strings out of 493304
+ 48189 string characters out of 6139871
+ 119413 words of memory out of 5000000
+ 6709 multiletter control sequences out of 15000+600000
  11813 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,6n,26p,1015b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,26p,1015b,722s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -1020,10 +1056,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on gitTesis.pdf (56 pages, 1114555 bytes).
+Output written on gitTesis.pdf (59 pages, 1337424 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 259 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
