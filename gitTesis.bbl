@@ -883,6 +883,35 @@ Pahlavan, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Pollini%
+}{%
+Pollini%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+Pollini1996}
+\APACinsertmetastar {%
+Pollini1996}%
+\begin{APACrefauthors}%
+Pollini, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Trends in handover design}} {{Trends in handover
+  design}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{34}{3}{82--90}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=486807}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/35.486807} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Qiuling Tang}%
 , {Liuqing Yang}%
 , Giannakis%

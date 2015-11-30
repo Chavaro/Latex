@@ -12,7 +12,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Repeated entry---line 369 of file gitTesis.bib.bib
+Repeated entry---line 434 of file gitTesis.bib.bib
  : @article{Pahlavan2000
  :                      ,
 I'm skipping whatever remains of this entry
@@ -22,8 +22,6 @@ Warning--I didn't find a database entry for "bisnik2005protocol"
 Warning--I didn't find a database entry for "bertsekas_data_1992"
 Warning--I didn't find a database entry for "raisinghani_cross-layer_2004"
 Warning--I didn't find a database entry for "srivastava_cross-layer_2005"
-Warning--I didn't find a database entry for "mcnair_migration_2004"
-Warning--I didn't find a database entry for "nasser_handoffs_2006"
 Warning--I didn't find a database entry for "kim_qos-aware_2010"
 Warning--I didn't find a database entry for "min_liu_performance_2008"
 Warning--I didn't find a database entry for "ramachandran_make-before-break_2006"
@@ -38,45 +36,45 @@ Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
 Warning--No journal in Tang2010
 Warning--No journal in Villar2009
-You've used 46 entries,
+You've used 47 entries,
             6951 wiz_defined-function locations,
-            1630 strings with 22188 characters,
-and the built_in function-call counts, 93670 in all, are:
-= -- 11337
-> -- 833
-< -- 4568
-+ -- 4616
-- -- 106
-* -- 6255
-:= -- 17024
-add.period$ -- 196
-call.type$ -- 46
-change.case$ -- 809
+            1637 strings with 22300 characters,
+and the built_in function-call counts, 95004 in all, are:
+= -- 11499
+> -- 843
+< -- 4613
++ -- 4653
+- -- 108
+* -- 6338
+:= -- 17230
+add.period$ -- 200
+call.type$ -- 47
+change.case$ -- 826
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 2598
-empty$ -- 3707
-format.name$ -- 1422
-if$ -- 17603
+cite$ -- 100
+duplicate$ -- 2637
+empty$ -- 3781
+format.name$ -- 1436
+if$ -- 17882
 int.to.chr$ -- 0
-int.to.str$ -- 138
+int.to.str$ -- 141
 missing$ -- 0
-newline$ -- 1294
-num.names$ -- 368
-pop$ -- 1524
+newline$ -- 1320
+num.names$ -- 376
+pop$ -- 1545
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 208
 quote$ -- 0
-skip$ -- 5962
+skip$ -- 6074
 stack$ -- 0
-substring$ -- 4985
-swap$ -- 1554
-text.length$ -- 145
+substring$ -- 5027
+swap$ -- 1582
+text.length$ -- 147
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4128
+type$ -- 4208
 warning$ -- 6
-while$ -- 505
+while$ -- 510
 width$ -- 0
-write$ -- 1637
+write$ -- 1665
 (There was 1 error message)

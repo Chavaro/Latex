@@ -24,17 +24,17 @@
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{23}
 \contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{24}
 \contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{24}
-\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{24}
-\contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{25}
-\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a}{26}
-\contentsline {section}{\numberline {4.2}Revisi\'on de Bibliograf\IeC {\'\i }a}{27}
-\contentsline {section}{\numberline {4.3}An\'alisis de Mecanismos}{29}
-\contentsline {section}{\numberline {4.4}Dise\~no de Soluci\'on}{29}
-\contentsline {section}{\numberline {4.5}Implementaci\'on en Simulador}{29}
-\contentsline {section}{\numberline {4.6}An\'alisis de Resultados}{32}
-\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{33}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{35}
-\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{37}
-\contentsline {chapter}{\numberline {A}Anexos}{39}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{41}
-\contentsline {section}{Referencias}{41}
+\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{25}
+\contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{27}
+\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a}{28}
+\contentsline {section}{\numberline {4.2}Revisi\'on de Bibliograf\IeC {\'\i }a}{29}
+\contentsline {section}{\numberline {4.3}An\'alisis de Mecanismos}{31}
+\contentsline {section}{\numberline {4.4}Dise\~no de Soluci\'on}{31}
+\contentsline {section}{\numberline {4.5}Implementaci\'on en Simulador}{31}
+\contentsline {section}{\numberline {4.6}An\'alisis de Resultados}{34}
+\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{35}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{37}
+\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{39}
+\contentsline {chapter}{\numberline {A}Anexos}{41}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{43}
+\contentsline {section}{Referencias}{43}
