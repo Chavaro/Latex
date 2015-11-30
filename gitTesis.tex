@@ -300,6 +300,9 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 					\item \textbf{Trabajos relacionados}
 					\\
 					
+					\item \textbf{Metodología de investigación}
+					\\
+					
 					\item \textbf{Desarrollo de protocolo de \textit{handoff}}
 					\\
 					
@@ -320,13 +323,16 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 			El Capítulo 3 detalla algunos trabajos relacionados a esta Tesis.
 			\newline
 			
-			El Capítulo 4 presenta el desarrollo del protocolo propuesto de \textit{handoff}
+			El Capítulo 4 se muestra la metodología utilizada para el proceso de investigación de esta Tesis.
 			\newline
 			
-			El Capítulo 5 evalúa y analiza el algoritmo implementado.
+			El Capítulo 5 presenta el desarrollo del protocolo propuesto de \textit{handoff}
 			\newline
 			
-			El Capitulo 6 concluye la Tesis con conclusiones y recomendaciones.
+			El Capítulo 6 evalúa y analiza el algoritmo implementado.
+			\newline
+			
+			El Capitulo 7 concluye la Tesis con conclusiones y recomendaciones.
 			
 			\end{minipage}
 	
@@ -362,7 +368,7 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 		\centering
 		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
 		%\caption{Clasificación del Handoff, Basado en } \cite{Nasser2006}
-		\caption{Clasificación del \textit{handoff}. \textbf{HACER UNA PROPIA}}
+		\caption{Clasificación del \textit{handoff}.}
 		\label{fig:hoClasificacion}
 		\end{figure}
 		 
@@ -578,12 +584,35 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	Según se menciona en \cite{fotouhi2012smart}, al diseñar un mecanismo de handoff para WSNs, existen consideraciones diferentes que deben atenderse: el hard handoff por ejemplo, puesto que en WSNs los radios solo poseen usar un canal a la vez; así como los enlaces de baja potencia y desconfiables, dado que son críticos para evitar la problemática del efecto ping-pong. 
 
 \newpage
-\chapter{Desarrollo de protocolo de \textit{handoff}}
-\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
-		
-\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+\chapter{Metodologia de Investigación}
+En este capítulo se aborda y explica a detalle la metodología aplicada para el desarrollo del protocolo propuesto en el presente trabajo de investigación, realizando un énfasis especial en la revisión del estado del arte (Esquema de Fundamentos) realizada, pues con ella se plantearon las bases para el diseño del mecanismo de \textit{handoff}.
 \newpage
 
+	\section{Metodología}
+	Para el desarrollo de esta investigación se propuso la metodología mostrada en la figura \ref{fig:metologia}:
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=10cm,height=7cm]{metologia.png}
+			\caption{Metodología de investigación propuesta}
+			\label{fig:metologia}
+		\end{figure}
+		
+	De acuerdo a dicha metodología, a estrategia a seguir se describe de la siguiente manera:
+	
+	\begin{itemize}
+		\item Revisión de Bibliografía: En esta etapa se realizó la documentación sobre el tema, así como la comprensión y familiarización de conceptos.
+		
+		\item Análisis de Mecanismos: En esta fase se analizaron los trabajos relacionados al tema, con enfoca especial hacia el protocolo base, \textit{WSN-HaDaS}.
+		
+		\item Diseño de Solución: Esta etapa corresponde a las actividades realizadas para el diseño del mecanismo propuesto. Esto con base a las conclusiones obtenidas de la etapa anterior.
+		
+		\item Implementación en Simulador: Una vez diseñada la propuesta, se prosiguió a su implementación en el simulador.
+		
+		\item Análisis de Resultados: Finalmente, durante esta etapa se analizaron los resultados obtenidos en la etapa anterior.
+		
+	\end{itemize}
+	
 	\section{Análisis de Problemática}	
 	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 			
@@ -595,6 +624,12 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	
 	
 	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+			
+	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+
+\newpage
+\chapter{Desarrollo de protocolo de \textit{handoff}}
+\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 			
 	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
 
