@@ -12,11 +12,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
+Warning--I didn't find a database entry for "srivastava2005cross"
 Warning--I didn't find a database entry for "Etworks2004"
-Warning--I didn't find a database entry for "bertsekas_data_1992"
-Warning--I didn't find a database entry for "raisinghani_cross-layer_2004"
-Warning--I didn't find a database entry for "srivastava_cross-layer_2005"
-Warning--I didn't find a database entry for "fotouhi2012smart"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Berghaus2016
 Warning--No journal in Engineering2011
@@ -24,45 +21,45 @@ Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
 Warning--No journal in Tang2010
 Warning--No journal in Villar2009
-You've used 52 entries,
+You've used 55 entries,
             6951 wiz_defined-function locations,
-            1667 strings with 23359 characters,
-and the built_in function-call counts, 105277 in all, are:
-= -- 12701
-> -- 937
-< -- 5136
-+ -- 5177
-- -- 118
-* -- 7046
-:= -- 19144
-add.period$ -- 220
-call.type$ -- 52
-change.case$ -- 913
+            1687 strings with 23893 characters,
+and the built_in function-call counts, 110439 in all, are:
+= -- 13329
+> -- 989
+< -- 5343
++ -- 5385
+- -- 124
+* -- 7376
+:= -- 19983
+add.period$ -- 232
+call.type$ -- 55
+change.case$ -- 964
 chr.to.int$ -- 0
-cite$ -- 110
-duplicate$ -- 2940
-empty$ -- 4189
-format.name$ -- 1604
-if$ -- 19775
+cite$ -- 116
+duplicate$ -- 3110
+empty$ -- 4431
+format.name$ -- 1692
+if$ -- 20809
 int.to.chr$ -- 0
-int.to.str$ -- 156
+int.to.str$ -- 165
 missing$ -- 0
-newline$ -- 1462
-num.names$ -- 416
-pop$ -- 1674
+newline$ -- 1547
+num.names$ -- 440
+pop$ -- 1766
 preamble$ -- 1
-purify$ -- 230
+purify$ -- 242
 quote$ -- 0
-skip$ -- 6719
+skip$ -- 7062
 stack$ -- 0
-substring$ -- 5591
-swap$ -- 1766
-text.length$ -- 159
+substring$ -- 5822
+swap$ -- 1870
+text.length$ -- 165
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4608
+type$ -- 4848
 warning$ -- 6
-while$ -- 577
+while$ -- 608
 width$ -- 0
-write$ -- 1849
-(There were 11 warnings)
+write$ -- 1958
+(There were 8 warnings)

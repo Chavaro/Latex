@@ -154,6 +154,32 @@ Berghaus, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bertsekas%
+, Gallager%
+\BCBL {}\ \BBA {} Humblet%
+}{%
+Bertsekas%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1992}}%
+}]{%
+Bertsekas1992}
+\APACinsertmetastar {%
+Bertsekas1992}%
+\begin{APACrefauthors}%
+Bertsekas, D.%
+, Gallager, R.%
+\BCBL {}\ \BBA {} Humblet, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {{Data networks}} {{Data networks}}\ (\PrintOrdinal{2}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Prentice-Hall International New Jersey}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bisnik%
 }{%
 Bisnik%
@@ -1043,6 +1069,39 @@ QiulingTang2005}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Raisinghani%
+\ \BBA {} Iyer%
+}{%
+Raisinghani%
+\ \BBA {} Iyer%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Raisinghani2004}
+\APACinsertmetastar {%
+Raisinghani2004}%
+\begin{APACrefauthors}%
+Raisinghani, V\BPBI T.%
+\BCBT {}\ \BBA {} Iyer, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design optimizations in wireless protocol
+  stacks}} {{Cross-layer design optimizations in wireless protocol
+  stacks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{27}{8}{720--724}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0140366403002913}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2003.10.011} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ramachandran%
 , Rangarajan%
 , Lin%
@@ -1202,6 +1261,39 @@ Silva, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Silva%
+, Silva%
+\BCBL {}\ \BBA {} Boavida%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Silva2012}
+\APACinsertmetastar {%
+Silva2012}%
+\begin{APACrefauthors}%
+Silva, R.%
+, Silva, J\BPBI S.%
+\BCBL {}\ \BBA {} Boavida, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A proposal for proxy-based mobility in WSNs}} {{A
+  proposal for proxy-based mobility in WSNs}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{35}{10}{1200--1216}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140366412000825}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2012.03.005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Simulator%
 }{%
 Simulator%
@@ -1230,9 +1322,9 @@ Srivastava%
 }{%
 {\protect \APACyear {2005}}%
 }]{%
-srivastava2005cross}
+Srivastava2005}
 \APACinsertmetastar {%
-srivastava2005cross}%
+Srivastava2005}%
 \begin{APACrefauthors}%
 Srivastava, V.%
 \BCBT {}\ \BBA {} Motani, M.%
