@@ -154,6 +154,57 @@ Berghaus, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bisnik%
+}{%
+Bisnik%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Bisnik2005}
+\APACinsertmetastar {%
+Bisnik2005}%
+\begin{APACrefauthors}%
+Bisnik, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Protocol Design for Wireless Ad hoc Networks : The
+  Cross-Layer Paradigm}} {{Protocol Design for Wireless Ad hoc Networks : The
+  Cross-Layer Paradigm}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Teknik Rapor, Rensselaer Polytechnic
+  Institute}{}{}{1--10}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Briscoe%
+}{%
+Briscoe%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+Briscoe2000}
+\APACinsertmetastar {%
+Briscoe2000}%
+\begin{APACrefauthors}%
+Briscoe, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Understanding the OSI 7-layer model}} {{Understanding
+  the OSI 7-layer model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PC Network Advisor}{120}{120}{2000--2003}.
+\newblock
+\begin{APACrefURL} \url{http://enhanceedu.iiit.ac.in/ttp/images/5/5c/Osi.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Buenrostro-Mariscal%
 \ \protect \BOthers {.}}{%
 Buenrostro-Mariscal%
@@ -328,29 +379,6 @@ Espa{\~{n}}ola, R\BPBI A.%
   de la lengua espa{\~{n}}ola}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Barcelona: Espa{\{}{\~{n}}{\}}a Libros}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Etworks%
-}{%
-Etworks%
-}{%
-{\protect \APACyear {2004}}%
-}]{%
-Etworks2004}
-\APACinsertmetastar {%
-Etworks2004}%
-\begin{APACrefauthors}%
-Etworks, L\BPBI A\BPBI C\BPBI N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2004}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Communications a S Urvey of T Opologies and}}
-  {{Communications a S Urvey of T Opologies and}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Communications}{6}{3}{18--31}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -636,6 +664,38 @@ Khan, J\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kim%
+, Han%
+, Han%
+\BCBL {}\ \BBA {} Member%
+}{%
+Kim%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Kim2010}
+\APACinsertmetastar {%
+Kim2010}%
+\begin{APACrefauthors}%
+Kim, T.%
+, Han, S\BHBI w.%
+, Han, Y.%
+\BCBL {}\ \BBA {} Member, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A QoS-Aware Vertical Handoff Algorithm Based on Service
+  History Information}} {{A QoS-Aware Vertical Handoff Algorithm Based on
+  Service History Information}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE communications letters}{14}{6}{527--529}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/LCOMM.2010.06.100176} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lee%
 , Kim%
 , Jeong%
@@ -775,6 +835,37 @@ McNair, J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/MWC.2004.1308935} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Melodia%
+, Vuran%
+\BCBL {}\ \BBA {} Pompili%
+}{%
+Melodia%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Melodia2006}
+\APACinsertmetastar {%
+Melodia2006}%
+\begin{APACrefauthors}%
+Melodia, T.%
+, Vuran, M.%
+\BCBL {}\ \BBA {} Pompili, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The state of the art in cross-layer design for wireless
+  sensor networks}} {{The state of the art in cross-layer design for wireless
+  sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Wireless Systems and Network {\ldots}}{}{}{78--92}.
+\newblock
+\begin{APACrefURL} \url{http://link.springer.com/chapter/10.1007/11750673{\_}7}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1226,6 +1317,40 @@ Tang, Q.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Tsukamoto%
+, Yamaguchi%
+, Kashihara%
+\BCBL {}\ \BBA {} Oie%
+}{%
+Tsukamoto%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Tsukamoto2007}
+\APACinsertmetastar {%
+Tsukamoto2007}%
+\begin{APACrefauthors}%
+Tsukamoto, K.%
+, Yamaguchi, T.%
+, Kashihara, S.%
+\BCBL {}\ \BBA {} Oie, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Experimental Evaluation of Decision Criteria for WLAN
+  Handover: Signal Strength and Frame Retransmission}} {{Experimental
+  Evaluation of Decision Criteria for WLAN Handover: Signal Strength and Frame
+  Retransmission}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEICE Transactions on
+  Communications}{E90-B}{12}{3579--3590}.
+\newblock
+\begin{APACrefDOI} \doi{10.1093/ietcom/e90-b.l2.3579} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Van Quang}%
 , Prasad%
 \BCBL {}\ \BBA {} Niemegeers%
@@ -1380,13 +1505,48 @@ Yan, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Yang%
+X.~Yang%
+, Vare%
+\BCBL {}\ \BBA {} Owens%
+}{%
+X.~Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Yang2006}
+\APACinsertmetastar {%
+Yang2006}%
+\begin{APACrefauthors}%
+Yang, X.%
+, Vare, J.%
+\BCBL {}\ \BBA {} Owens, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey of handover algorithms in DVB-H}} {{A survey
+  of handover algorithms in DVB-H}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys {\&}
+  Tutorials}{8}{4}{16--29}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/abstractKeywords.jsp?arnumber=4062837+
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4062837}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/COMST.2006.283819} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X\BPBI D.~Yang%
 , Song%
 , Owens%
 , Cosmas%
 \BCBL {}\ \BBA {} Itagaki%
 }{%
-Yang%
+X\BPBI D.~Yang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2004}}%
 }]{%

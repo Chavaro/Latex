@@ -20,9 +20,9 @@
 \contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{16}
 \contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{17}
 \contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{19}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - CONTINUAR}{20}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - Agregar}{19}
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{23}
-\contentsline {section}{\numberline {3.1}Celular - CONTINUAR}{24}
+\contentsline {section}{\numberline {3.1}Celular}{24}
 \contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{24}
 \contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{25}
 \contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{27}
