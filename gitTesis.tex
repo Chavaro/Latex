@@ -609,12 +609,13 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 	Por ello, en la investigación realizada por \citeA{Kim2010,MinLiu2008,Ramachandran2006} se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia la calidad del servicio.
 	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo.
 	
-	Los autores en \cite{Ahmed2014,Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
+	En su respectivo trabajo de investigación, \citeA{Ahmed2014,Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
 	
-	Además, en \cite{Tsukamoto2007} se realizan experimentos utilizando Protocolos de Transferencia de Archivos (FTP) y aplicaciones de Voz IP (VoIP) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
+	Además, en la investigación presentada por \citeA{Tsukamoto2007} se realizan experimentos utilizando \textit{FTP} (siglas en inglés de \textit{File Transfer Protocol}, Protocolo de Transferencia de Archivos) y aplicaciones de Voz IP (\textit{VoIP}) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
 		 
 	\section{\textit{WSN} - CONTINUAR}
-	Según se menciona en \cite{fotouhi2012smart}, al diseñar un mecanismo de handoff para WSNs, existen consideraciones diferentes que deben atenderse: el hard handoff por ejemplo, puesto que en WSNs los radios solo poseen usar un canal a la vez; así como los enlaces de baja potencia y desconfiables, dado que son críticos para evitar la problemática del efecto ping-pong. 
+	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen usar un canal a la vez.
+	También deben considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
 
 \newpage
 \chapter{Metodologia de Investigación}
@@ -715,10 +716,21 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	\end{itemize}
 		
 	\section{Análisis de Mecanismos}	
-	\textbf{Aquí, hablar sobre los top 3 mecanismos de HO encontrados, resaltando los beneficios de WSN-HaDaS.}
+	De acuerdo a los algoritmos consultados, en general aquellos que se han diseñado bajo un esquema \textit{crosslayer} presentan mejor desempeño contra aquellos desarrollados bajo el esquema tradicional de diseño en una sola capa.
+	Por ello, se consideró analizar las características y estrategias de funcionamiento de aquellos mecanismos de \textit{handoff crosslayer} como candidatos a ser el protocolo base del propuesto en este trabajo.
+	De dichas investigaciones, se optó por la selección del protocolo de \textit{handoff crosslayer WSN-HaDaS}.
+	
+	Ello debido a que presenta resultados que benefician el desempeño de la red, además de tener la particularidad de integrarse dentro de un mecanismo de comunicación estándar, disminuyendo así tiempos de ejecución.
+	Asimismo, su característica de dividir el proceso de traspaso de red en dos entidades (una de decisión, y otra de ejecución) resulta provechoso para su uso como punto de partida para esta investigación.
 	
 	\section{Diseño de Solución}
-	\textbf{Partiendo de WSN-HaDaS como base, mencionar las modificaciones a realizar: Consideraciones de otras capas y parámetros como de congestión de red.}
+	El diseño base del protocolo es tomado del protocolo \textit{WSN-HaDaS} por considerar aspectos de diferentes capas del modelo \textit{OSI}.
+	Además de ofrecer la capacidad de trabajar al mecanismo de \textit{handoff} en dos secciones: el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de \textit{Handoff}) y el \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Gatillo de Monitoreo de \textit{Handoff}).
+	
+	Sin embargo, este protocolo se modificó con el objetivo de expandir sus consideraciones; es decir, brindar al mecanismo una mayor visión del contexto de la red.
+	Esto al tomar parámetros provenientes de la capa de aplicación, transporte y control de acceso al medio.
+	
+	Estos aspectos y demás criterios agregados se detallan en el capítulo <<Desarrollo de protocolo \textit{handoff}>>.
 	
 	\section{Implementación en Simulador}	
 	Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
@@ -791,9 +803,9 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	\end{enumerate}
 	
 	\section{Análisis de Resultados}	
-	\textbf{\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	\textit{Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}
 			
-	\textbf{\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}}
+	\textit{Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.}
 
 \newpage
 \chapter{Desarrollo de protocolo de \textit{handoff}}
