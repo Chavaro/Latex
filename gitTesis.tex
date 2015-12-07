@@ -11,6 +11,8 @@
 \usepackage{breakcites}						% Para que las citas se adapten al margen del texto
 \usepackage{apacite}						% Citar APA c/paréntesis
 \usepackage{multicol}						% Permite seccionas en columnas
+\usepackage{datetime}						% Para personalizar fechas
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
 \graphicspath{ {images/} }					% images folder en local dir
 
 % ======= Margin Config Opc1 ======
@@ -35,7 +37,7 @@
 		\end{figure}		
 		
 		\begin{huge}
-			\textsc{\\Propuesta y Simulación de un Mecanismo de Handoff Crosslayer para Redes de Sensores Móviles.\\}	
+			\textsc{\\Propuesta de un Mecanismo de Handoff Crosslayer para proveer movilidad en Redes de Sensores Inalámbricas.\\}	
 		\end{huge}
 	\end{center}
 	
@@ -59,7 +61,8 @@
 	
 	\begin{large}
 		\begin{flushright}
-			\textsc{\\Colima, Col. México, Agosto 2015}
+%			\textsc{\\Colima, Col. México, \today}		% Con día
+			\textsc{\\Colima, Col. México, \mydate\today}	%Sin día
 		\end{flushright}
 	\end{large}
 				
@@ -76,11 +79,6 @@ $\ $
 \markboth{Resumen}{Resumen} 			% Encabezado 
 \onehalfspace							% Inicia espaciado a 1.5
 
-Con el propósito de realizar una mejor adquisición del conocimiento referente al traspaso de red (\textit{Handoff}), es necesario tener un conocimiento previo sobre conceptos generales frecuentemente utilizados en la temática.
-\newline
-Por ello, se pretende sumergir al lector dentro del área de las tecnologías en redes inalámbricas, particularmente en las redes inalámbricas de área personal (\textit{WPAN}, por sus siglas en inglés) y sus aplicaciones, como lo representan las redes inalámbricas de sensores (\textit{WSN}, por sus siglas en inglés). 
-Como se mencionó, estos conceptos serán retomados de manera más profunda en siguientes secciones del capítulo.
-\newline
 Este documento presenta una investigación acerca de los avances tecnológicos desarrollados hacia mecanismos de \textit{handoff} que permitan comunicación continua de datos entre dispositivos móviles de la red; esto es, algoritmos que admitan continuidad de servicio de transferencia de información cuando un nodo cambia de ubicación.
 
 \textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
@@ -131,6 +129,12 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 \newpage
 \chapter{Introducción}
 	\pagenumbering{arabic} 	%Reinicia indice en arábigo
+	Con el propósito de realizar una mejor adquisición del conocimiento referente al traspaso de red (\textit{Handoff}), es necesario tener un conocimiento previo sobre conceptos generales frecuentemente utilizados en la temática.
+	\newline
+	Por ello, se pretende sumergir al lector dentro del área de las tecnologías en redes inalámbricas, particularmente en las redes inalámbricas de área personal (\textit{WPAN}, por sus siglas en inglés) y sus aplicaciones, como lo representan las redes inalámbricas de sensores (\textit{WSN}, por sus siglas en inglés). 
+	Como se mencionó, estos conceptos serán retomados de manera más profunda en siguientes secciones del capítulo.
+	\newline
+	
 	
 	En este capítulo se hace mención y breve descripción acerca del proyecto en general. 
 	Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Networks}, Redes Inalámbricas de Sensores), la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
