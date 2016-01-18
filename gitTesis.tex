@@ -80,6 +80,7 @@ $\ $
 \onehalfspace							% Inicia espaciado a 1.5
 
 Este documento presenta una investigación acerca de los avances tecnológicos desarrollados hacia mecanismos de \textit{handoff} que permitan comunicación continua de datos entre dispositivos móviles de la red; esto es, algoritmos que admitan continuidad de servicio de transferencia de información cuando un nodo cambia de ubicación.
+\\
 
 \textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
 
@@ -94,9 +95,10 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 \addcontentsline{toc}{chapter}{Abstract} % Para que aparezca en el índice
 \markboth{Abstract}{Abstract} % Encabezado 
 
-	Descripción del resumen máximo en una cuartilla a renglón sencillo. Máximo 150 palabras.
+This document presents an investigation about the developed technological progresses on handoff mechanisms which allow continuous data communication between mobile devices within the network; this is, algorithms that allow the continuity of services of information transferring when a node changes its location.
+\\
 
-\textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
+\textbf{Key words:} \textit{Handoff, Crosslayer, WSN}.
 
 % ======== Dedicatoria =============
 \chapter*{}
@@ -118,11 +120,12 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Lista de tablas} 
-\renewcommand{\listtablename}{Lista de tablas}		%Cambia el título de 'Indice de cuadros' por 'Lista de Tablas'
+\renewcommand{\listtablename}{Tablas}		%Cambia el título de 'Indice de cuadros' por 'Lista de Tablas'
 \listoftables			%Indice de cuadros/tablas
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Lista de Figuras} 
+\renewcommand{\listoffigures}{Figuras}			%Indice de figuras
 \listoffigures			%Indice de figuras
 %\newpage				%Salto de Página
 
@@ -741,7 +744,7 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	Asimismo, su característica de dividir el proceso de traspaso de red en dos entidades (una de decisión, y otra de ejecución) resulta provechoso para su uso como punto de partida para esta investigación.
 	
 	\section{Diseño de Solución}
-	El diseño base del protocolo es tomado del protocolo \textit{WSN-HaDaS} por considerar aspectos de diferentes capas del modelo \textit{OSI}.
+	El diseño base es tomado del protocolo \textit{WSN-HaDaS} por considerar aspectos de diferentes capas del modelo \textit{OSI}.
 	Además de ofrecer la capacidad de trabajar al mecanismo de \textit{handoff} en dos secciones: el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de \textit{Handoff}) y el \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Gatillo de Monitoreo de \textit{Handoff}).
 	
 	Sin embargo, este protocolo se modificó con el objetivo de expandir sus consideraciones; es decir, brindar al mecanismo una mayor visión del contexto de la red.
@@ -752,7 +755,8 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	\section{Implementación en Simulador}	
 	Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
 	
-	Esta etapa a su vez, requirió de una planeación o metodología a seguir, la cual se presenta en  la figura \ref{fig:simPlaneacion}.
+	Esta etapa a su vez, requirió de una planeación o metodología a seguir. 
+	Ésta se ha tomado de \citeA{OpnetWork2013}, y funge como base para el desarrollo de la simulación, dicha metodología se presenta en  la figura \ref{fig:simPlaneacion}.
 	
 	\begin{figure}[h]
 		\centering
