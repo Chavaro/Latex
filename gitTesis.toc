@@ -5,36 +5,36 @@
 \contentsline {chapter}{Lista de Figuras}{xiii}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
 \contentsline {section}{\numberline {1.1}Problem\'atica}{2}
-\contentsline {section}{\numberline {1.2}Objetivos}{7}
-\contentsline {subsection}{\numberline {1.2.1}Objetivo general}{7}
-\contentsline {subsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{7}
-\contentsline {section}{\numberline {1.3}Justificaci\'on}{7}
-\contentsline {section}{\numberline {1.4}Preguntas de investigaci\'on}{9}
-\contentsline {section}{\numberline {1.5}Limitaciones y suposiciones}{9}
-\contentsline {section}{\numberline {1.6}Organizaci\'on del documento}{10}
-\contentsline {chapter}{\numberline {2}Esquema de fundamentos}{11}
-\contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{12}
-\contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{12}
-\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{12}
-\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{15}
-\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{16}
-\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{17}
-\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{19}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - Agregar}{19}
-\contentsline {chapter}{\numberline {3}Trabajos relacionados}{23}
-\contentsline {section}{\numberline {3.1}Celular}{24}
-\contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{24}
-\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{25}
-\contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{27}
-\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a}{28}
-\contentsline {section}{\numberline {4.2}Revisi\'on de Bibliograf\IeC {\'\i }a}{29}
-\contentsline {section}{\numberline {4.3}An\'alisis de Mecanismos}{31}
-\contentsline {section}{\numberline {4.4}Dise\~no de Soluci\'on}{32}
-\contentsline {section}{\numberline {4.5}Implementaci\'on en Simulador}{32}
-\contentsline {section}{\numberline {4.6}An\'alisis de Resultados}{34}
-\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{37}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{39}
-\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{41}
-\contentsline {chapter}{\numberline {A}Anexos}{43}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{45}
-\contentsline {section}{Referencias}{45}
+\contentsline {section}{\numberline {1.2}Objetivos}{8}
+\contentsline {subsection}{\numberline {1.2.1}Objetivo general}{8}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{8}
+\contentsline {section}{\numberline {1.3}Justificaci\'on}{8}
+\contentsline {section}{\numberline {1.4}Preguntas de investigaci\'on}{10}
+\contentsline {section}{\numberline {1.5}Limitaciones y suposiciones}{10}
+\contentsline {section}{\numberline {1.6}Organizaci\'on del documento}{11}
+\contentsline {chapter}{\numberline {2}Esquema de fundamentos}{13}
+\contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{14}
+\contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{14}
+\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{14}
+\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{17}
+\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{18}
+\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{19}
+\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{21}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - Agregar}{21}
+\contentsline {chapter}{\numberline {3}Trabajos relacionados}{25}
+\contentsline {section}{\numberline {3.1}Celular}{26}
+\contentsline {section}{\numberline {3.2}\textit {WLAN} - CONTINUAR}{26}
+\contentsline {section}{\numberline {3.3}\textit {WSN} - CONTINUAR}{27}
+\contentsline {chapter}{\numberline {4}Metodologia de Investigaci\'on}{29}
+\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a}{30}
+\contentsline {section}{\numberline {4.2}Revisi\'on de Bibliograf\IeC {\'\i }a}{31}
+\contentsline {section}{\numberline {4.3}An\'alisis de Mecanismos}{33}
+\contentsline {section}{\numberline {4.4}Dise\~no de Soluci\'on}{34}
+\contentsline {section}{\numberline {4.5}Implementaci\'on en Simulador}{34}
+\contentsline {section}{\numberline {4.6}An\'alisis de Resultados}{36}
+\contentsline {chapter}{\numberline {5}Desarrollo de protocolo de \textit {handoff}}{39}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on y an\'alisis de resultados}{41}
+\contentsline {chapter}{\numberline {7}Conclusiones y recomendaciones}{43}
+\contentsline {chapter}{\numberline {A}Anexos}{45}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{47}
+\contentsline {section}{Referencias}{47}

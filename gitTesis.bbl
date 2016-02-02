@@ -830,6 +830,42 @@ Makaya, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Man%
+\ \BBA {} Committee%
+}{%
+Man%
+\ \BBA {} Committee%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+Man2006}
+\APACinsertmetastar {%
+Man2006}%
+\begin{APACrefauthors}%
+Man, L\BPBI a\BPBI N.%
+\BCBT {}\ \BBA {} Committee, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {{IEEE Standard for Information technology- Telecommunications
+  and information exchange between systems- Local and metropolitan area
+  networks- Specific requirements--Part 15.4: Wireless MAC and PHY
+  Specifications for Low-Rate WPANs}} {{IEEE Standard for Information
+  technology- Telecommunications and information exchange between systems-
+  Local and metropolitan area networks- Specific requirements--Part 15.4:
+  Wireless MAC and PHY Specifications for Low-Rate WPANs}}\ (\BVOL\ 2006)\
+  (\BNUM\ September).
+\newblock
+\begin{APACrefURL}
+  \url{http://www.mendeley.com/research/ieee-standard-for-information-technology-telecommunications-and-information-exchange-between-systems-local-and-metropolitan-area-networks-specific-requirements-part-154-wireless-medium-access-control-mac-and-physical-layer}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IEEESTD.2006.232110} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 McNair%
 \ \BBA {} {Fang Zhu}%
 }{%
@@ -1530,9 +1566,9 @@ Virone%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2006}}%
 }]{%
-virone2006advanced}
+Virone2006}
 \APACinsertmetastar {%
-virone2006advanced}%
+Virone2006}%
 \begin{APACrefauthors}%
 Virone, G.%
 , Wood, A.%

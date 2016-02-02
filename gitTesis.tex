@@ -125,23 +125,34 @@ This document presents an investigation about the developed technological progre
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Lista de Figuras} 
-\renewcommand{\listoffigures}{Figuras}			%Indice de figuras
+\renewcommand{\listfigurename}{Figuras}			%Indice de figuras
 \listoffigures			%Indice de figuras
 %\newpage				%Salto de Página
 
 \newpage
 \chapter{Introducción}
 	\pagenumbering{arabic} 	%Reinicia indice en arábigo
-	Con el propósito de realizar una mejor adquisición del conocimiento referente al traspaso de red (\textit{Handoff}), es necesario tener un conocimiento previo sobre conceptos generales frecuentemente utilizados en la temática.
-	\newline
-	Por ello, se pretende sumergir al lector dentro del área de las tecnologías en redes inalámbricas, particularmente en las redes inalámbricas de área personal (\textit{WPAN}, por sus siglas en inglés) y sus aplicaciones, como lo representan las redes inalámbricas de sensores (\textit{WSN}, por sus siglas en inglés). 
-	Como se mencionó, estos conceptos serán retomados de manera más profunda en siguientes secciones del capítulo.
-	\newline
+	El presente proyecto de tesis plantea el uso de una \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Network}, Red Inalámbrica de Sensores), dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente.
+	Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo de implementación, además de la movilidad de sus dispositivos; siendo esta última una de las que más destacan cuando se usan en el entorno de las personas.
 	
+	Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente pequeños en tamaño y portables, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}.
+	Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones ni el desempeño general de la red.
 	
-	En este capítulo se hace mención y breve descripción acerca del proyecto en general. 
-	Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Networks}, Redes Inalámbricas de Sensores), la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
-	\newpage
+	Precisamente aprovechando su movilidad, las \textit{WSN} se han estado ganando su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon}, desarrollando diferentes aplicaciones con el objetivo de vigilar el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+	En \cite{Virone2006} se propone una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
+	Asimismo en \cite{yan2009experimental} se implementa un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health}, distribuyendo múltiples nodos en un hogar, para proveer de información a los enfermeros, doctores o encargados de los pacientes.
+
+	Es importante destacar que la movilidad de los usuarios   exige que éstos se muevan en libertad dentro de un espacio u área de monitorización, por ejemplo un hospital o casa habitación.  
+	En este escenario de uso las \textit{WSN} tienen una cobertura limitada, debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), lo cual exige la necesidad de instalar varios puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios. 
+	Sin embargo, los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplaza por todo el área de la \textit{WSN}, resultando en la desconexión del dispositivo de la red ya que el estándar \textit{IEEE 802.15.4} no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handoff} o traspaso al nuevo punto de acceso por sí mismo. 
+	Sin embargo, sí cuenta con algunas funciones y procesos que se pueden utilizar para crear un mecanismo de \textit{handoff}. 
+	Este proceso es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, ya que un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino. 
+	Por ejemplo, si el proceso del mecanismo de \textit{handoff} es lento, puede generar altos tiempo de desconexión y si la aplicación no es consciente de la desconexión puede seguir enviando datos que no podrán ser entregados.
+	En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas en el la sección \textit{Capítulo III. Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
+	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstas se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} que utilizan \textit{IEEE 802.15.4}. 
+	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red OSI dentro del mecanismo de \textit{handoff}) que provocan una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
+	Por ello, en este trabajo, se propone un mecanismo para ofrecer un proceso de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capa superior. 
+	La propuesta misma y el diseño de la red, serán simulados con ayuda del \textit{software NS2} \cite{simulator1989ns}, por lo que todas las características y métricas a considerar han de ser correctamente definidas con el propósito de permitir que su simulación sea lo más cercana a la realidad.
 	
 	\section{Problemática}
 		El presente proyecto de tesis plantea el uso de una \textit{WSN} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
@@ -182,7 +193,7 @@ This document presents an investigation about the developed technological progre
 		
 		Aprovechando su movilidad, las \textit{WSN} también se han ganado un lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando diferentes aplicaciones (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
 		
-		En este contexto, \citeA{virone2006advanced} proponen una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
+		En este contexto, \citeA{Virone2006} proponen una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
 		Asimismo \citeA{yan2009experimental} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{eysenbach2001health}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
 		
 		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
@@ -293,6 +304,9 @@ This document presents an investigation about the developed technological progre
 		
 	\newpage
 	\section{Organización del documento}
+		En esta sección se hace mención y breve descripción acerca del proyecto en general. 
+		Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN}, la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
+		// 	
 		La estructura de este documento de tesis es la siguiente:
 
 			% first column
