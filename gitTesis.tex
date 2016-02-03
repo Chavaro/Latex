@@ -162,7 +162,7 @@ This document presents an investigation about the developed technological progre
 		Dicha definición se puede entender de mejor manera al referirse a la figura \ref{fig:redComputadoras}, donde se muestran múltiples dispositivos conectados entre sí, y aunque en dicha imagen no se específica el objetivo de su conexión, puede inferirse que se trata de transferencia de información.
 		\begin{figure}[htb]
 			\centering
-			\includegraphics[width=0.60\textwidth]{redComputadoras.jpg}
+			\includegraphics[width=0.50\textwidth]{redComputadoras.png}
 			\caption{Conjunto de computadoras conectadas formando una red.}
 			\label{fig:redComputadoras}
 		\end{figure}
@@ -306,73 +306,35 @@ This document presents an investigation about the developed technological progre
 	\section{Organización del documento}
 		En esta sección se hace mención y breve descripción acerca del proyecto en general. 
 		Para ello se muestra, en sus diferentes secciones, las razones por las cuales se desarrolla el proyecto; esto es, se describe la problemática actual en las \textit{WSN}, la justificación del proyecto, los objetivos planteados, los alcances y supuestos del mismo, y finalmente la organización general del documento.
-		// 	
+			
 		La estructura de este documento de tesis es la siguiente:
 
-			% first column
-			\begin{minipage}[t]{0.5\textwidth}
-				\begin{itemize}
-					\item \textbf{Introducción}
-					\\
-					 	
-					\item \textbf{Esquema de fundamentos}
-					\\
-					
-					\item \textbf{Trabajos relacionados}
-					\\
-					
-					\item \textbf{Metodología de investigación}
-					\\
-					.
-					\\
-					\item \textbf{Desarrollo de protocolo de \textit{handoff}}
-					\\
-					
-					\item \textbf{Evaluación y análisis de resultados}	
-					
-					\item \textbf{Conclusiones y recomendaciones}
-				\end{itemize}
-			\end{minipage}
-			% VERY important here is that there is no space between the /end{minipage} and the next \begin{minipage} (obviously not counting comments). Otherwise LaTeX will not render the columns side by side.
-			%second column
-			\begin{minipage}[t]{0.5\textwidth}
-			El Capítulo 1 da introducción a la Tesis.
-			\newline
-			
-			El Capítulo 2 da una introducción al \textit{handoff}, las \textit{WSN} y el concepto \textit{crosslayer}.
-			\newline
-			
-			El Capítulo 3 detalla algunos trabajos relacionados a esta Tesis.
-			\newline
-			
-			El Capítulo 4 se muestra la metodología utilizada para el proceso de investigación de esta Tesis.
-			\newline
-			
-			El Capítulo 5 presenta el desarrollo del protocolo propuesto de \textit{handoff}
-			\newline
-			
-			El Capítulo 6 evalúa y analiza el algoritmo implementado.
-			\newline
-			
-			El Capitulo 7 concluye la Tesis con conclusiones y recomendaciones.
-			
-			\end{minipage}
+		El Capítulo 1 da introducción al trabajo de Tesis, mencionando la problemática, objetivos, justificación, preguntas de investigación y finalmente las limitaciones y suposiciones del proyecto.
+		El Capítulo 2 comprende una introducción a conceptos como el \textit{handoff}, las \textit{WSN} y el diseño \textit{crosslayer}.
+		En el Capítulo 3 se detallan distintos trabajos e investigaciones relacionadas al área de enfoque de este trabajo de Tesis.
+		En el Capítulo 4 se muestra la metodología utilizada para el proceso de investigación de esta Tesis.
+		El Capítulo 5 presenta el desarrollo del protocolo propuesto de \textit{handoff}.
+		En el Capítulo 6 se evalúa y analiza dicho algoritmo simulado.
+		Finalmente, en el Capítulo 7 se concluye la Tesis haciendo mención a conclusiones y recomendaciones asociadas al trabajo desarrollado en este proyecto.
 	
 \newpage
 \chapter{Esquema de fundamentos}
 
-	En este capítulo se describen brevemente los avances y logros realizados en el área de redes, enfocados hacia mecanismos de \textit{handoff}. 
+	En este capítulo se describen los avances y logros realizados en el área de redes, enfocados hacia mecanismos de \textit{handoff}. 
 	
 	Para ello se muestra, en sus diferentes secciones, aspectos relacionados al tema: definiciones, clasificaciones, problemáticas e importancia; así como la estrategia de diseño \textit{crosslayer} como concepto. 
 	Con esto se pretende colocar en contexto al lector, presentando el estado del arte actual; validando a su vez, la innovación del proyecto propuesto.
 \newpage
 
 	\section{Transferencia de red (\textit{handoff})}
-	El término \textit{handoff} o \textit{handover} hace referencia a la acción de dar la responsabilidad sobre algo a alguien más, según define el \textit{Macmillan Dictionary} \citeyear{MacmillanDic}.
-	\newline
-	El <<\textit{handoff}>>, <<\textit{handover}>>, <<traspaso>> o <<transferencia de red>> se refieren al movimiento de un nodo móvil entre dos puntos de acceso, esto es, el proceso de terminar una conexión existente y obtener una nueva conexión \cite{Makaya2008}.
+	El término \textit{handoff} o \textit{handover}, según el contexto, tiene un significado distinto; sin embargo tiende hacia una misma acción.
+	El \textit{Macmillan Dictionary} \citeyear{MacmillanDic} define al \textit{handoff} como la acción de dar la responsabilidad sobre algo a alguien más.
+	Esto es, la responsabilidad de una entidad pasa a ser ahora de otra entidad.
+	Ejemplo de ello es el \textit{handoff} en medicina, en donde se refiere a la transferencia de responsabilidad de un doctor, equipo o clínica sobre un paciente hacia otro doctor, equipo o clínica \cite{Dunn2008}.
+	
+	Ahora, en el caso de las redes inalámbricas, el <<\textit{handoff}>>, <<\textit{handover}>>, <<traspaso>> o <<transferencia de red>> se refieren al movimiento de un nodo móvil entre dos puntos de acceso, esto es, el proceso de terminar una conexión existente y obtener una nueva conexión \cite{Makaya2008}.
 	Dicho de otra manera: el \textit{handoff} es la transición o traspaso de la señal de transmisión entre diferentes celdas.
-	En principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} (siglas en ingles de \textit{Access Point},Punto de Acceso) de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
+	En un principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} (siglas en ingles de \textit{Access Point},Punto de Acceso) de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
 	Entonces, \textit{handoff} es el mecanismo mediante el cual una conexión activa entre un nodo o \textit{host} (del inglés, anfitrión) móvil y una terminal o \textit{host} correspondiente es transferida desde un \textit{AP} a la red fija u otra \cite{Pahlavan2000}.
 
 	Estos mecanismos de \textit{handoff} deben cumplir con características de acuerdo a la aplicación o tarea en ejecución, pues existen diferentes requerimientos en aplicaciones de salud de pacientes críticos que en aquellas de vigilancia de territorios; sin embargo, algunas de las características o requerimientos comúnmente establecidos son una baja latencia en la red y una baja pérdida de paquetes, por mencionar algunos.
@@ -511,8 +473,8 @@ This document presents an investigation about the developed technological progre
 	
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=13cm,height=7cm]{hoIssues.png}
-			\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}. \textbf{HACER UNA PROPIA}}
+			\includegraphics[width=12cm,height=6cm]{hoIssues.jpg}
+			\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}.}
 			\label{fig:hoIssues}
 		\end{figure}
 	

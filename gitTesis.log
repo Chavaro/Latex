@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.13)  2 FEB 2016 14:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.13)  3 FEB 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,12 +401,12 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 161.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<images/redComputadoras.jpg, id=65, 572.49176pt x 402.4447pt>
-File: images/redComputadoras.jpg Graphic file (type jpg)
+<images/redComputadoras.png, id=65, 238.8925pt x 224.84pt>
+File: images/redComputadoras.png Graphic file (type png)
 
-<use images/redComputadoras.jpg>
-Package pdftex.def Info: images/redComputadoras.jpg used on input line 165.
-(pdftex.def)             Requested size: 264.61333pt x 186.01723pt.
+<use images/redComputadoras.png>
+Package pdftex.def Info: images/redComputadoras.png used on input line 165.
+(pdftex.def)             Requested size: 220.50887pt x 207.53802pt.
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
  [2]
@@ -418,12 +418,13 @@ Package pdftex.def Info: images/networkRanges.png used on input line 181.
 (pdftex.def)             Requested size: 220.50887pt x 110.82104pt.
 LaTeX Info: Redefining \. on input line 190.
 LaTeX Info: Redefining \% on input line 190.
- [3 <./images/redComputadoras.jpg>]
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
- [4 <./images/networkRanges.png>]
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
+ [3 <./images/redComputadoras.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+
+[4 <./images/networkRanges.png>]
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
  [5]
 
 LaTeX Warning: Citation `srivastava2005cross' undefined on input line 241.
@@ -449,80 +450,11 @@ LaTeX Info: Redefining \. on input line 305.
 LaTeX Info: Redefining \% on input line 305.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
-
- []
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 342--344
-[]\OT1/cmr/m/n/12 El Cap^^S^^Ptu-lo 2 da una in-tro-duc-ci^^Son al
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--344
-
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 345--347
-[]\OT1/cmr/m/n/12 El Cap^^S^^Ptu-lo 3 de-ta-lla al-gu-nos tra-ba-jos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--347
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--353
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
-
- []
-
-
-Overfull \hbox (20.2359pt too wide) in paragraph at lines 313--360
-[][] [] 
- []
-
-LaTeX Info: Redefining \. on input line 361.
-LaTeX Info: Redefining \% on input line 361.
-[11]
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
+ [11]
+LaTeX Info: Redefining \. on input line 321.
+LaTeX Info: Redefining \% on input line 321.
  [12
 
 ]
@@ -531,111 +463,121 @@ Cap\'{\i }tulo 2.
 File: images/hoClasificacion.png Graphic file (type png)
 
 <use images/hoClasificacion.png>
-Package pdftex.def Info: images/hoClasificacion.png used on input line 391.
+Package pdftex.def Info: images/hoClasificacion.png used on input line 353.
 (pdftex.def)             Requested size: 441.0264pt x 184.94418pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/hoHorizontal.png, id=109, 201.75375pt x 173.14688pt>
+LaTeX Info: Redefining \. on input line 361.
+LaTeX Info: Redefining \% on input line 361.
+[14] <images/hoHorizontal.png, id=112, 201.75375pt x 173.14688pt>
 File: images/hoHorizontal.png Graphic file (type png)
 
 <use images/hoHorizontal.png>
-Package pdftex.def Info: images/hoHorizontal.png used on input line 405.
+Package pdftex.def Info: images/hoHorizontal.png used on input line 367.
 (pdftex.def)             Requested size: 184.94458pt x 142.2667pt.
-LaTeX Info: Redefining \. on input line 410.
-LaTeX Info: Redefining \% on input line 410.
- [14]
+
 <images/hoVertical.png, id=113, 403.5075pt x 350.05782pt>
 File: images/hoVertical.png Graphic file (type png)
 
 <use images/hoVertical.png>
-Package pdftex.def Info: images/hoVertical.png used on input line 415.
+Package pdftex.def Info: images/hoVertical.png used on input line 377.
 (pdftex.def)             Requested size: 142.26411pt x 142.26404pt.
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
+ [15 <./images/hoClasificacion.png> <./images/hoHorizontal.png>] <images/hoType
+s.png, id=120, 957.5775pt x 409.53pt>
+File: images/hoTypes.png Graphic file (type png)
+
+<use images/hoTypes.png>
+Package pdftex.def Info: images/hoTypes.png used on input line 394.
+(pdftex.def)             Requested size: 369.88853pt x 199.1717pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 424.
-LaTeX Info: Redefining \% on input line 424.
-[15 <./images/hoClasificacion.png> <./images/hoHorizontal.png>]
-<images/hoTypes.png, id=120, 957.5775pt x 409.53pt>
-File: images/hoTypes.png Graphic file (type png)
- <use images/hoTypes.png>
-Package pdftex.def Info: images/hoTypes.png used on input line 432.
-(pdftex.def)             Requested size: 369.88853pt x 199.1717pt.
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
-
-[16 <./images/hoVertical.png> <./images/hoTypes.png>]
-<images/hoHard.png, id=125, 433.62pt x 167.62625pt>
+<images/hoHard.png, id=121, 433.62pt x 167.62625pt>
 File: images/hoHard.png Graphic file (type png)
  <use images/hoHard.png>
-Package pdftex.def Info: images/hoHard.png used on input line 448.
+Package pdftex.def Info: images/hoHard.png used on input line 410.
 (pdftex.def)             Requested size: 142.26135pt x 85.35779pt.
 
 
-LaTeX Warning: Citation `Etworks2004' undefined on input line 453.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: Citation `Etworks2004' undefined on input line 415.
+
+LaTeX Info: Redefining \. on input line 419.
+LaTeX Info: Redefining \% on input line 419.
+[16 <./images/hoVertical.png>]
 <images/hoSoft.png, id=126, 429.605pt x 182.6825pt>
 File: images/hoSoft.png Graphic file (type png)
  <use images/hoSoft.png>
-Package pdftex.def Info: images/hoSoft.png used on input line 460.
+Package pdftex.def Info: images/hoSoft.png used on input line 422.
 (pdftex.def)             Requested size: 142.26172pt x 85.35902pt.
-LaTeX Info: Redefining \. on input line 466.
-LaTeX Info: Redefining \% on input line 466.
-
-[17 <./images/hoHard.png> <./images/hoSoft.png>]
-<images/hoSofter.png, id=130, 473.77pt x 147.55125pt>
-File: images/hoSofter.png Graphic file (type png)
-
-<use images/hoSofter.png>
-Package pdftex.def Info: images/hoSofter.png used on input line 469.
-(pdftex.def)             Requested size: 142.26222pt x 85.35913pt.
-LaTeX Info: Redefining \. on input line 501.
-LaTeX Info: Redefining \% on input line 501.
- [18 <./images/hoSofter.png>]
-<images/hoIssues.png, id=134, 873.2625pt x 533.995pt>
-File: images/hoIssues.png Graphic file (type png)
-
-<use images/hoIssues.png>
-Package pdftex.def Info: images/hoIssues.png used on input line 514.
-(pdftex.def)             Requested size: 369.88577pt x 199.17207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 529.
-LaTeX Info: Redefining \% on input line 529.
-[19] <images/hoExample.png, id=138, 701.62125pt x 401.5pt>
+<images/hoSofter.png, id=127, 473.77pt x 147.55125pt>
+File: images/hoSofter.png Graphic file (type png)
+
+<use images/hoSofter.png>
+Package pdftex.def Info: images/hoSofter.png used on input line 431.
+(pdftex.def)             Requested size: 142.26222pt x 85.35913pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
+[17 <./images/hoTypes.png> <./images/hoHard.png>]
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+ [18 <./images/hoSoft.png> <./images/hoSofter.png>] <images/hoIssues.jpg, id=13
+4, 1148.29pt x 473.77pt>
+File: images/hoIssues.jpg Graphic file (type jpg)
+
+<use images/hoIssues.jpg>
+Package pdftex.def Info: images/hoIssues.jpg used on input line 476.
+(pdftex.def)             Requested size: 341.4234pt x 170.71611pt.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
+ [19 <./images/hoIssues.jpg>]
+<images/hoExample.png, id=138, 701.62125pt x 401.5pt>
 File: images/hoExample.png Graphic file (type png)
 
 <use images/hoExample.png>
-Package pdftex.def Info: images/hoExample.png used on input line 534.
+Package pdftex.def Info: images/hoExample.png used on input line 496.
 (pdftex.def)             Requested size: 284.52975pt x 142.26698pt.
-LaTeX Info: Redefining \. on input line 541.
-LaTeX Info: Redefining \% on input line 541.
- [20 <./images/hoIssues.png> <./images/hoExample.png>]
-LaTeX Info: Redefining \. on input line 559.
-LaTeX Info: Redefining \% on input line 559.
+
+Underfull \vbox (badness 5036) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 503.
+LaTeX Info: Redefining \% on input line 503.
+ [20 <./images/hoExample.png>]
+LaTeX Info: Redefining \. on input line 521.
+LaTeX Info: Redefining \% on input line 521.
  [21] <images/OSImodel.png, id=146, 124.465pt x 170.6375pt>
 File: images/OSImodel.png Graphic file (type png)
 
 <use images/OSImodel.png>
-Package pdftex.def Info: images/OSImodel.png used on input line 562.
+Package pdftex.def Info: images/OSImodel.png used on input line 524.
 (pdftex.def)             Requested size: 64.01947pt x 85.36018pt.
  <images/fig06.png, id=147, 411.5375pt x 702.625pt>
 File: images/fig06.png Graphic file (type png)
 
 <use images/fig06.png>
-Package pdftex.def Info: images/fig06.png used on input line 573.
+Package pdftex.def Info: images/fig06.png used on input line 535.
 (pdftex.def)             Requested size: 170.7158pt x 284.5294pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (21.65755pt too wide) in paragraph at lines 583--584
+Overfull \hbox (21.65755pt too wide) in paragraph at lines 545--546
 []\OT1/cmr/m/n/12 Existen mu-chas pro-pues-tas de di-se~no \OT1/cmr/m/it/12 cro
 ss-la-yer \OT1/cmr/m/n/12 en la li-te-ra-tu-ra; por ejem-plo []Raisinghani
  []
@@ -644,29 +586,29 @@ ss-la-yer \OT1/cmr/m/n/12 en la li-te-ra-tu-ra; por ejem-plo []Raisinghani
 File: images/hoCrosslayer.png Graphic file (type png)
 
 <use images/hoCrosslayer.png>
-Package pdftex.def Info: images/hoCrosslayer.png used on input line 591.
+Package pdftex.def Info: images/hoCrosslayer.png used on input line 553.
 (pdftex.def)             Requested size: 441.02428pt x 256.0753pt.
-LaTeX Info: Redefining \. on input line 599.
-LaTeX Info: Redefining \% on input line 599.
+LaTeX Info: Redefining \. on input line 561.
+LaTeX Info: Redefining \% on input line 561.
  [22 <./images/OSImodel.png>]
-LaTeX Info: Redefining \. on input line 608.
-LaTeX Info: Redefining \% on input line 608.
+LaTeX Info: Redefining \. on input line 570.
+LaTeX Info: Redefining \% on input line 570.
  [23 <./images/fig06.png>]
-LaTeX Info: Redefining \. on input line 609.
-LaTeX Info: Redefining \% on input line 609.
+LaTeX Info: Redefining \. on input line 571.
+LaTeX Info: Redefining \% on input line 571.
  [24 <./images/hoCrosslayer.png>]
 Cap\'{\i }tulo 3.
 [25
 
 ]
-LaTeX Info: Redefining \. on input line 636.
-LaTeX Info: Redefining \% on input line 636.
+LaTeX Info: Redefining \. on input line 598.
+LaTeX Info: Redefining \% on input line 598.
  [26]
-LaTeX Info: Redefining \. on input line 654.
-LaTeX Info: Redefining \% on input line 654.
+LaTeX Info: Redefining \. on input line 616.
+LaTeX Info: Redefining \% on input line 616.
  [27]
-LaTeX Info: Redefining \. on input line 655.
-LaTeX Info: Redefining \% on input line 655.
+LaTeX Info: Redefining \. on input line 617.
+LaTeX Info: Redefining \% on input line 617.
  [28
 
 ]
@@ -675,19 +617,19 @@ Cap\'{\i }tulo 4.
 File: images/metologia.png Graphic file (type png)
 
 <use images/metologia.png>
-Package pdftex.def Info: images/metologia.png used on input line 664.
+Package pdftex.def Info: images/metologia.png used on input line 626.
 (pdftex.def)             Requested size: 284.53154pt x 199.16858pt.
-LaTeX Info: Redefining \. on input line 687.
-LaTeX Info: Redefining \% on input line 687.
+LaTeX Info: Redefining \. on input line 649.
+LaTeX Info: Redefining \% on input line 649.
  [30 <./images/metologia.png>]
 <images/revSistematica.png, id=179, 383.9946pt x 359.4228pt>
 File: images/revSistematica.png Graphic file (type png)
 
 <use images/revSistematica.png>
-Package pdftex.def Info: images/revSistematica.png used on input line 693.
+Package pdftex.def Info: images/revSistematica.png used on input line 655.
 (pdftex.def)             Requested size: 227.62709pt x 199.16393pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--701
+Underfull \hbox (badness 10000) in paragraph at lines 660--663
 
  []
 
@@ -695,91 +637,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 698--701
 File: images/journals.png Graphic file (type png)
 
 <use images/journals.png>
-Package pdftex.def Info: images/journals.png used on input line 707.
+Package pdftex.def Info: images/journals.png used on input line 669.
 (pdftex.def)             Requested size: 341.43967pt x 142.26945pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--712
+Underfull \hbox (badness 10000) in paragraph at lines 664--674
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
+LaTeX Info: Redefining \. on input line 681.
+LaTeX Info: Redefining \% on input line 681.
 [31 <./images/revSistematica.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 724--728
+Underfull \hbox (badness 10000) in paragraph at lines 686--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--732
+Underfull \hbox (badness 10000) in paragraph at lines 691--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--737
+Underfull \hbox (badness 10000) in paragraph at lines 695--699
 
  []
 
-LaTeX Info: Redefining \. on input line 743.
-LaTeX Info: Redefining \% on input line 743.
+LaTeX Info: Redefining \. on input line 705.
+LaTeX Info: Redefining \% on input line 705.
 [32 <./images/journals.png>]
-LaTeX Info: Redefining \. on input line 763.
-LaTeX Info: Redefining \% on input line 763.
+LaTeX Info: Redefining \. on input line 725.
+LaTeX Info: Redefining \% on input line 725.
  [33]
 <images/simPlaneacion.png, id=193, 651.3936pt x 463.4916pt>
 File: images/simPlaneacion.png Graphic file (type png)
 
 <use images/simPlaneacion.png>
-Package pdftex.def Info: images/simPlaneacion.png used on input line 777.
+Package pdftex.def Info: images/simPlaneacion.png used on input line 739.
 (pdftex.def)             Requested size: 341.4401pt x 284.53996pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 797.
-LaTeX Info: Redefining \% on input line 797.
+LaTeX Info: Redefining \. on input line 759.
+LaTeX Info: Redefining \% on input line 759.
 [34]
-LaTeX Info: Redefining \. on input line 815.
-LaTeX Info: Redefining \% on input line 815.
+LaTeX Info: Redefining \. on input line 777.
+LaTeX Info: Redefining \% on input line 777.
  [35 <./images/simPlaneacion.png>]
-LaTeX Info: Redefining \. on input line 844.
-LaTeX Info: Redefining \% on input line 844.
+LaTeX Info: Redefining \. on input line 806.
+LaTeX Info: Redefining \% on input line 806.
  [36]
-LaTeX Info: Redefining \. on input line 845.
-LaTeX Info: Redefining \% on input line 845.
+LaTeX Info: Redefining \. on input line 807.
+LaTeX Info: Redefining \% on input line 807.
  [37]
-LaTeX Info: Redefining \. on input line 846.
-LaTeX Info: Redefining \% on input line 846.
+LaTeX Info: Redefining \. on input line 808.
+LaTeX Info: Redefining \% on input line 808.
  [38
 
 ]
 Cap\'{\i }tulo 5.
 [39]
-LaTeX Info: Redefining \. on input line 852.
-LaTeX Info: Redefining \% on input line 852.
+LaTeX Info: Redefining \. on input line 814.
+LaTeX Info: Redefining \% on input line 814.
  [40
 
 ]
 Cap\'{\i }tulo 6.
 [41]
-LaTeX Info: Redefining \. on input line 858.
-LaTeX Info: Redefining \% on input line 858.
+LaTeX Info: Redefining \. on input line 820.
+LaTeX Info: Redefining \% on input line 820.
  [42
 
 ]
 Cap\'{\i }tulo 7.
 [43]
-LaTeX Info: Redefining \. on input line 866.
-LaTeX Info: Redefining \% on input line 866.
+LaTeX Info: Redefining \. on input line 828.
+LaTeX Info: Redefining \% on input line 828.
  [44
 
 ]
 Ap\'{e}ndice A.
 [45]
-LaTeX Info: Redefining \. on input line 869.
-LaTeX Info: Redefining \% on input line 869.
+LaTeX Info: Redefining \. on input line 831.
+LaTeX Info: Redefining \% on input line 831.
  [46
 
 ] (./gitTesis.bbl
@@ -848,98 +790,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--362
 5-10-28, de
  []
 
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
+LaTeX Info: Redefining \. on input line 372.
+LaTeX Info: Redefining \% on input line 372.
 [47]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 407.
+Underfull \hbox (badness 2913) in paragraph at lines 376--394
+[]\OT1/cmr/m/n/12 Dunn, W., y Murphy, J. G.  (2008, jul).  The Pa-tient Han-dof
+f: Me-di-
+ []
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+
+Underfull \hbox (badness 2990) in paragraph at lines 376--394
+\OT1/cmr/m/n/12 ci-ne's For-mu-la One Mo-ment.  \OT1/cmr/m/it/12 Chest\OT1/cmr/
+m/n/12 , \OT1/cmr/m/it/12 134\OT1/cmr/m/n/12 (1), 9--12.  Des-car-ga-do de
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 407.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
 
-Underfull \hbox (badness 1308) in paragraph at lines 515--532
+Underfull \hbox (badness 1308) in paragraph at lines 547--564
 []\OT1/cmr/m/n/12 Ghanem, K., Al-rad-wan, H., Mo-ter-mawy, A., y Ah-mad, A.  (2
 012).  Re-du-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 546--566
+Underfull \hbox (badness 3291) in paragraph at lines 578--598
 []\OT1/cmr/m/n/12 Gruebler, A., y Su-zu-ki, K.  (2014).  De-sign of a Wea-ra-bl
 e De-vi-ce for
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 546--566
+Underfull \hbox (badness 2680) in paragraph at lines 578--598
 \OT1/cmr/m/n/12 Reading Po-si-ti-ve Ex-pres-sions from Fa-cial EMG Sig-nals.  \
 OT1/cmr/m/it/12 IEEE Tran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--566
+Underfull \hbox (badness 10000) in paragraph at lines 578--598
 \OT1/cmr/m/it/12 sac-tions on Af-fec-ti-ve Com-pu-ting\OT1/cmr/m/n/12 , \OT1/cm
 r/m/it/12 PP\OT1/cmr/m/n/12 (99), 1--1.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 546--566
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 578--598
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 6778017
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 580--601
+Underfull \hbox (badness 2111) in paragraph at lines 612--633
 []\OT1/cmr/m/n/12 Gu, J., Bae, S., y Chung, M.  (2010).  Mobility-based han-do-
 ver de-ci-sion
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 580--601
+Underfull \hbox (badness 1436) in paragraph at lines 612--633
 \OT1/cmr/m/n/12 me-cha-nism to re-lie-ve ping-pong ef-fect in ce-llu-lar net-wo
 rks.  \OT1/cmr/m/it/12 16th Asia-
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 738--761
+Underfull \hbox (badness 3954) in paragraph at lines 770--793
 []\OT1/cmr/m/n/12 Lee, D.-K., Kim, T.-H., Jeong, S.-Y., y Kang, S.-J.  (2011, s
 ep).  A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--761
+Underfull \hbox (badness 10000) in paragraph at lines 770--793
 \OT1/cmr/m/n/12 three-tier midd-le-wa-re ar-chi-tec-tu-re sup-por-ting bi-di-re
 c-tio-nal lo-ca-tion
  []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 738--761
+Underfull \hbox (badness 5985) in paragraph at lines 770--793
 \OT1/cmr/m/n/12 trac-king of nu-me-rous mo-bi-le no-des un-der le-gacy WSN en-v
 i-ron-ment.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--761
+Underfull \hbox (badness 10000) in paragraph at lines 770--793
 \OT1/cmr/m/it/12 Jour-nal of Sys-tems Ar-chi-tec-tu-re\OT1/cmr/m/n/12 , \OT1/cm
 r/m/it/12 57\OT1/cmr/m/n/12 (8), 735--748.  Des-car-ga-do de
  []
 
-LaTeX Info: Redefining \. on input line 761.
-LaTeX Info: Redefining \% on input line 761.
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
 [48]
-Underfull \hbox (badness 1043) in paragraph at lines 811--831
+Underfull \hbox (badness 1043) in paragraph at lines 843--863
 \OT1/cmr/m/n/12 man-ce Eva-lua-tion of IPv6-Based mo-bi-lity Ma-na-ge-ment Pro-
 to-cols.  \OT1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--831
+Underfull \hbox (badness 10000) in paragraph at lines 843--863
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=447
 2015
  []
 
 
-Overfull \hbox (1162.98274pt too wide) in paragraph at lines 845--867
+Overfull \hbox (1162.98274pt too wide) in paragraph at lines 877--899
 \OT1/cmtt/m/n/12 http://www.mendeley.com/research/ieee-standard-for-information
 -technology-telecommunications-and-information-exchange-between-systems-local-a
 nd-metropolitan-area-networks-specific-requirements-part-154-wireless-medium-ac
@@ -947,79 +900,79 @@ cess-control-mac-and-physical-layer
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 881--901
+Underfull \hbox (badness 3158) in paragraph at lines 913--933
 \OT1/cmr/m/n/12 ni-ca-tions - Ver-ti-cal han-doffs in fourth-generation mul-ti-
 net-work en-vi-ron-
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 881--901
+Underfull \hbox (badness 1931) in paragraph at lines 913--933
 \OT1/cmr/m/n/12 ments.  \OT1/cmr/m/it/12 IEEE Wi-re-less Com-mu-ni-ca-tions\OT1
 /cmr/m/n/12 , \OT1/cmr/m/it/12 11\OT1/cmr/m/n/12 (3), 8--15.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 881--901
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 913--933
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1308935
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 947--969
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 979--1001
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 4359007
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--1002
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1034
 []\OT1/cmr/m/n/12 Nasser, N., Hass-wa, A., y Has-sa-nein, H.  (2006, oct).  Han
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--1002
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1034
 \OT1/cmr/m/n/12 doffs in fourth ge-ne-ra-tion he-te-ro-ge-neo-us net-works.  \O
 T1/cmr/m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--1002
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1034
 \OT1/cmr/m/it/12 Com-mu-ni-ca-tions Ma-ga-zi-ne\OT1/cmr/m/n/12 , \OT1/cmr/m/it/
 12 44\OT1/cmr/m/n/12 (10), 96--103.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 983--1002
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1015--1034
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1710420
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 1037--1060
+Underfull \hbox (badness 5490) in paragraph at lines 1069--1092
 []\OT1/cmr/m/n/12 Pahlavan, K., Krish-na-murthy, P., Ha-ta-mi, A., Yliant-ti-la
 , M., Ma-ke-la, J.,
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 1037--1060
+Underfull \hbox (badness 3792) in paragraph at lines 1069--1092
 \OT1/cmr/m/n/12 Pich-na, R., y Valls-tron, J.  (2000, apr).  Han-doff in hy-bri
 d mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1060
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1092
 \OT1/cmr/m/n/12 bi-le da-ta net-works.  \OT1/cmr/m/it/12 IEEE Per-so-nal Com-mu
 -ni-ca-tions\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 7\OT1/cmr/m/n/12 (2), 34--
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1060
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1092
 \OT1/cmr/m/n/12 47.  Des-car-ga-do de \OT1/cmtt/m/n/12 http://dx.doi.org/10.108
 0/01422419908228843
  []
 
 
-Overfull \hbox (8.25717pt too wide) in paragraph at lines 1037--1060
+Overfull \hbox (8.25717pt too wide) in paragraph at lines 1069--1092
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 839330
  []
@@ -1027,152 +980,152 @@ Overfull \hbox (8.25717pt too wide) in paragraph at lines 1037--1060
 
 Underfull \vbox (badness 1072) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1068.
-LaTeX Info: Redefining \% on input line 1068.
+LaTeX Info: Redefining \. on input line 1092.
+LaTeX Info: Redefining \% on input line 1092.
  [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1121
 []\OT1/cmr/m/n/12 Pollini, G.  (1996).  Trends in han-do-ver de-sign.  \OT1/cmr
 /m/it/12 IEEE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1121
 \OT1/cmr/m/it/12 Com-mu-ni-ca-tions Ma-ga-zi-ne\OT1/cmr/m/n/12 , \OT1/cmr/m/it/
 12 34\OT1/cmr/m/n/12 (3), 82--90.  Des-car-ga-do de
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 1072--1089
+Underfull \hbox (badness 1946) in paragraph at lines 1104--1121
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpls/abs[]all.jsp?arnumber=486807  
  \OT1/cmr/m/n/12 doi:
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1104--1129
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1136--1161
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1606004
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1143--1162
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1194
 \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S014036640300
 2913
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1234--1257
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1266--1289
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 4917709
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1271--1291
+Underfull \hbox (badness 1072) in paragraph at lines 1303--1323
 []\OT1/cmr/m/n/12 Siddiqui, F., y Zea-dally, S.  (2008, apr).  An ef-fi-cient w
 i-re-less net-work dis-
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 1271--1291
+Underfull \hbox (badness 4467) in paragraph at lines 1303--1323
 \OT1/cmr/m/n/12 de \OT1/cmtt/m/n/12 http://www.emeraldinsight.com/doi/abs/10.11
 08/17427370810873101
  []
 
-
-Underfull \hbox (badness 1769) in paragraph at lines 1414--1433
+LaTeX Info: Redefining \. on input line 1442.
+LaTeX Info: Redefining \% on input line 1442.
+[50]
+Underfull \hbox (badness 1769) in paragraph at lines 1446--1465
 \OT1/cmr/m/n/12 net-works.  \OT1/cmr/m/it/12 The Se-cond An-nual In-ter-na-tio-
 nal Con-fe-ren-ce on Mo-bi-le and
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1414--1433
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1446--1465
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 1541004
  []
 
-LaTeX Info: Redefining \. on input line 1433.
-LaTeX Info: Redefining \% on input line 1433.
-[50]
-Underfull \hbox (badness 1215) in paragraph at lines 1448--1469
+
+Underfull \hbox (badness 1215) in paragraph at lines 1480--1501
 []\OT1/cmr/m/n/12 Tang, Q., Sun, C., Wen, H., y Liang, Y.  (2010).  Cross-layer
  energy ef-fi-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 1448--1469
+Underfull \hbox (badness 1442) in paragraph at lines 1480--1501
 \OT1/cmr/m/n/12 ciency analy-sis and op-ti-mi-za-tion in WSN. , 138 --142.  Des
 -car-ga-do de
  []
 
 
-Overfull \hbox (364.67834pt too wide) in paragraph at lines 1448--1469
+Overfull \hbox (364.67834pt too wide) in paragraph at lines 1480--1501
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5461522&
 url=http://ieeexplore.ieee.org/xpls/abs[]all.jsp?arnumber=5461522
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1578--1593
 []\OT1/cmr/m/n/12 Villar, H. F.  (2009).  Han-doff Ver-ti-cal : Apro-xi-ma-cio-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1578--1593
 \OT1/cmr/m/n/12 nes Cross-Layer. , \OT1/cmr/m/it/12 1\OT1/cmr/m/n/12 (Noviembre
 ), 1--9.  Des-car-ga-do de
  []
 
 
-Overfull \hbox (45.30719pt too wide) in paragraph at lines 1546--1561
+Overfull \hbox (45.30719pt too wide) in paragraph at lines 1578--1593
 \OT1/cmtt/m/n/12 https://revistas.upb.edu.co/index.php/telecomunicaciones/artic
 le/view/1251
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1578--1593
 
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1671--1692
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1703--1724
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/abstractKeywords.jsp?arnumber=4
 062837+
  []
 
 
-Overfull \hbox (14.43217pt too wide) in paragraph at lines 1671--1692
+Overfull \hbox (14.43217pt too wide) in paragraph at lines 1703--1724
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=
 4062837
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1787
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1819
 []\OT1/cmr/m/n/12 Zdarsky, F., y Sch-mitt, J.  (2004).  Han-do-ver in mo-bi-le 
 com-mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1787
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1819
 \OT1/cmr/m/n/12 ni-ca-tion net-works: who is in con-trol any-way?  \OT1/cmr/m/i
 t/12 Pro-cee-dings.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1787
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1819
 \OT1/cmr/m/it/12 30th Eu-ro-mi-cro Con-fe-ren-ce, 2004.\OT1/cmr/m/n/12 , 205--2
 12.  Des-car-ga-do de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1787
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1819
 \OT1/cmtt/m/n/12 http://ieeexplore.ieee.org/xpl/freeabs[]all.jsp?arnumber=13333
 73
  []
 
-LaTeX Info: Redefining \. on input line 1788.
-LaTeX Info: Redefining \% on input line 1788.
+LaTeX Info: Redefining \. on input line 1819.
+LaTeX Info: Redefining \% on input line 1819.
 [51])
-LaTeX Info: Redefining \. on input line 875.
-LaTeX Info: Redefining \% on input line 875.
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
  [52] (./gitTesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
@@ -1186,10 +1139,10 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 80 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4349 strings out of 493304
- 61245 string characters out of 6139871
- 151580 words of memory out of 5000000
- 7680 multiletter control sequences out of 15000+600000
+ 4355 strings out of 493304
+ 61327 string characters out of 6139871
+ 151677 words of memory out of 5000000
+ 7686 multiletter control sequences out of 15000+600000
  11813 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,6n,26p,1117b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1203,7 +1156,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on gitTesis.pdf (68 pages, 1431103 bytes).
+Output written on gitTesis.pdf (68 pages, 1327746 bytes).
 PDF statistics:
  294 PDF objects out of 1000 (max. 8388607)
  183 compressed objects within 2 object streams

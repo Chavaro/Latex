@@ -361,6 +361,38 @@ Dictionary, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dunn%
+\ \BBA {} Murphy%
+}{%
+Dunn%
+\ \BBA {} Murphy%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Dunn2008}
+\APACinsertmetastar {%
+Dunn2008}%
+\begin{APACrefauthors}%
+Dunn, W.%
+\BCBT {}\ \BBA {} Murphy, J\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Patient Handoff: Medicine's Formula One Moment}}
+  {{The Patient Handoff: Medicine's Formula One Moment}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chest}{134}{1}{9--12}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0012369208601397}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1378/chest.08-0998} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Engineering%
 }{%
 Engineering%

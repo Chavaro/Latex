@@ -15,8 +15,8 @@
 \contentsline {chapter}{\numberline {2}Esquema de fundamentos}{13}
 \contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{14}
 \contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{14}
-\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{14}
-\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{17}
+\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{15}
+\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{16}
 \contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{18}
 \contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{19}
 \contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{21}
