@@ -423,9 +423,9 @@ Espa{\~{n}}ola%
 }{%
 {\protect \APACyear {2014}}%
 }]{%
-espanola2014diccionario}
+Rae2014}
 \APACinsertmetastar {%
-espanola2014diccionario}%
+Rae2014}%
 \begin{APACrefauthors}%
 Espa{\~{n}}ola, R\BPBI A.%
 \end{APACrefauthors}%
@@ -436,7 +436,7 @@ Espa{\~{n}}ola, R\BPBI A.%
 {\BBOQ}\APACrefatitle {{Diccionario de la lengua espa{\~{n}}ola}} {{Diccionario
   de la lengua espa{\~{n}}ola}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Barcelona: Espa{\{}{\~{n}}{\}}a Libros}{}{}{}.
+\APACjournalVolNumPages{Barcelona: Espa{\~{n}}a Libros}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -446,9 +446,9 @@ Eysenbach%
 }{%
 {\protect \APACyear {2001}}%
 }]{%
-eysenbach2001health}
+Eysenbach2001}
 \APACinsertmetastar {%
-eysenbach2001health}%
+Eysenbach2001}%
 \begin{APACrefauthors}%
 Eysenbach, G.%
 \end{APACrefauthors}%
@@ -1391,9 +1391,9 @@ Simulator%
 }{%
 {\protect \APACyear {1989}}%
 }]{%
-simulator1989ns}
+Ns1989}
 \APACinsertmetastar {%
-simulator1989ns}%
+Ns1989}%
 \begin{APACrefauthors}%
 Simulator, N.%
 \end{APACrefauthors}%
@@ -1666,9 +1666,9 @@ Yan%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2009}}%
 }]{%
-yan2009experimental}
+Yan2009}
 \APACinsertmetastar {%
-yan2009experimental}%
+Yan2009}%
 \begin{APACrefauthors}%
 Yan, H.%
 , Xu, Y.%
@@ -1758,29 +1758,6 @@ Yang, X\BPBI D.%
 \newblock
 \begin{APACrefURL} \url{http://bura.brunel.ac.uk/handle/2438/2490}
   \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Yemini%
-}{%
-Yemini%
-}{%
-{\protect \APACyear {1993}}%
-}]{%
-yemini1993osi}
-\APACinsertmetastar {%
-yemini1993osi}%
-\begin{APACrefauthors}%
-Yemini, Y.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1993}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The OSI network management model}} {{The OSI network
-  management model}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
