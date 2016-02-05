@@ -12,8 +12,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
-Warning--I didn't find a database entry for "Yemini1993"
-Warning--I didn't find a database entry for "srivastava2005cross"
 Warning--I didn't find a database entry for "Etworks2004"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Berghaus2016
@@ -22,45 +20,45 @@ Warning--No journal in Ghanem2012
 Warning--No journal in Ramachandran2006
 Warning--No journal in Tang2010
 Warning--No journal in Villar2009
-You've used 57 entries,
+You've used 58 entries,
             6951 wiz_defined-function locations,
-            1713 strings with 24703 characters,
-and the built_in function-call counts, 116101 in all, are:
-= -- 14047
-> -- 1030
-< -- 5683
-+ -- 5723
-- -- 130
-* -- 7757
-:= -- 21159
-add.period$ -- 242
-call.type$ -- 57
-change.case$ -- 1001
+            1716 strings with 24743 characters,
+and the built_in function-call counts, 117416 in all, are:
+= -- 14209
+> -- 1040
+< -- 5727
++ -- 5764
+- -- 132
+* -- 7835
+:= -- 21374
+add.period$ -- 246
+call.type$ -- 58
+change.case$ -- 1018
 chr.to.int$ -- 0
-cite$ -- 120
-duplicate$ -- 3219
-empty$ -- 4596
-format.name$ -- 1740
-if$ -- 21827
+cite$ -- 122
+duplicate$ -- 3255
+empty$ -- 4664
+format.name$ -- 1754
+if$ -- 22096
 int.to.chr$ -- 0
-int.to.str$ -- 171
+int.to.str$ -- 174
 missing$ -- 0
-newline$ -- 1603
-num.names$ -- 456
-pop$ -- 1872
+newline$ -- 1625
+num.names$ -- 464
+pop$ -- 1892
 preamble$ -- 1
-purify$ -- 252
+purify$ -- 256
 quote$ -- 0
-skip$ -- 7355
+skip$ -- 7467
 stack$ -- 0
-substring$ -- 6212
-swap$ -- 1930
-text.length$ -- 187
+substring$ -- 6258
+swap$ -- 1956
+text.length$ -- 189
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 5072
+type$ -- 5152
 warning$ -- 6
-while$ -- 626
+while$ -- 631
 width$ -- 0
-write$ -- 2026
-(There were 9 warnings)
+write$ -- 2050
+(There were 7 warnings)

@@ -11,6 +11,7 @@
 \usepackage{setspace}						% Para ajustar interlineados
 \usepackage{breakcites}						% Para que las citas se adapten al margen del texto
 \usepackage{apacite}						% Citar APA c/paréntesis
+\usepackage{lipsum}							% Texto relleno - %http://ctan.org/pkg/lipsum
 %\usepackage{multicol}						% Permite seccionas en columnas
 \usepackage{datetime}						% Para personalizar fechas
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
@@ -29,44 +30,49 @@
 % ======== Document ===============
 \begin{document}
 
-% ======== Título =================
-\begin{titlepage}
+% ======== Portada =================
+\begin{titlepage}					%Imagen fea de Telemática
 	\begin{center}
 		\begin{figure}[t]
 			\centering
 			\includegraphics[width=\textwidth]{logoUcolTesis.png}
 		\end{figure}		
 		
-		\begin{huge}
-			\textsc{\\Propuesta de un Mecanismo de Handoff Crosslayer para proveer movilidad en Redes de Sensores Inalámbricas.\\}	
+		\begin{huge}				% Título de proyecto
+			\textsc{\newline Propuesta de un Mecanismo de Handoff Crosslayer para proveer movilidad en Redes de Sensores Inalámbricas}	
 		\end{huge}
 	\end{center}
 	
-	\begin{Large}
-		\begin{center}
-			\textsc{\\Tesis que para obtener el grado de\\Maestro en Computación}
-		\end{center}
-	\end{Large}
-			
-	\begin{large}
-		\begin{center}
-			\textsc{\\Presenta:\\Ing. Miguel Alejandro Chavarín Hernández}
-		\end{center}
-	\end{large}
-				
-	\begin{large}
-		\begin{center}
-			\textsc{Asesores:\\D. en C. Raymundo Buenrostro Mariscal\\D. en C. Juan Antonio Guerrero Ibáñez}
-		\end{center}
-	\end{large}
+	\begin{spacing}{1.0}			% Tesis que para...
+		\begin{Large}
+			\begin{center}
+				\textsc{Tesis que para obtener el grado de \linebreak Maestro en Computación}
+			\end{center}
+		\end{Large}	
+	\end{spacing}
 	
-	\begin{large}
+	\begin{spacing}{1.0}			% Presenta: Ing. Miguel...
+		\begin{Large}
+			\begin{center}
+				\textsc{Presenta:\linebreak Ing. Miguel Alejandro Chavarín Hernández}
+			\end{center}
+		\end{Large}	
+	\end{spacing}
+	
+	\begin{spacing}{1.0}			% Asesores
+		\begin{large}
+			\begin{center}
+				\textsc{Asesores:\linebreak D. en C. Raymundo Buenrostro Mariscal\linebreak D. en C. Juan Antonio Guerrero Ibáñez}
+			\end{center}
+		\end{large}
+	\end{spacing}
+	
+	\begin{large}					% Lugar y Fecha
 		\begin{flushright}
-%			\textsc{\\Colima, Col. México, \today}		% Con día
-			\textsc{\\Colima, Col. México, \mydate\today}	%Sin día
+			\textsc{\newline Colima, Col. México, \today}		% Con día
+%			\textsc{\newline Colima, Col. México, \mydate\today}	%Sin día
 		\end{flushright}
-	\end{large}
-				
+	\end{large}			
 \end{titlepage}
 
 % ======== Página en blanco =======
@@ -81,7 +87,6 @@ $\ $
 \onehalfspace							% Inicia espaciado a 1.5
 
 Este documento presenta una investigación acerca de los avances tecnológicos desarrollados hacia mecanismos de \textit{handoff} que permitan comunicación continua de datos entre dispositivos móviles de la red; esto es, algoritmos que admitan continuidad de servicio de transferencia de información cuando un nodo cambia de ubicación.
-\\
 
 \textbf{Palabras Clave:} \textit{Handoff, Crosslayer, WSN}.
 
@@ -97,16 +102,18 @@ Este documento presenta una investigación acerca de los avances tecnológicos des
 \markboth{Abstract}{Abstract} % Encabezado 
 
 This document presents an investigation about the developed technological progresses on handoff mechanisms which allow continuous data communication between mobile devices within the network; this is, algorithms that allow the continuity of services of information transferring when a node changes its location.
-\\
 
 \textbf{Key words:} \textit{Handoff, Crosslayer, WSN}.
 
 % ======== Dedicatoria =============
 \chapter*{}
 \markboth{}{} % Encabezado 
-\begin{flushright}
-	\textit{Dedicado \\ a mi pequeña familia...}
-\end{flushright}
+	\begin{flushright}
+		\textit{Dedicado}
+	\end{flushright}
+	\begin{flushright}
+		\textit{a mi pequeña familia...}
+	\end{flushright}
 
 % ======== Agradecimientos ==========
 \chapter*{}
@@ -116,19 +123,19 @@ This document presents an investigation about the developed technological progre
 \end{flushright}
 
 % ======== Indices ===================
-\tableofcontents		%Indice
-%\newpage
+\renewcommand\contentsname{Índice}			%Cambiar el título del 'Índice'
+\tableofcontents							%Indice
+%\addtocontents{toc}{~\hfill\textbf{Página}\par}	%Agregar el Texto -Página- a los números No funciona correctamente
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Lista de tablas} 
 \renewcommand{\listtablename}{Tablas}		%Cambia el título de 'Indice de cuadros' por 'Lista de Tablas'
-\listoftables			%Indice de cuadros/tablas
+\listoftables								%Indice de cuadros/tablas
 
 \cleardoublepage
-\addcontentsline{toc}{chapter}{Lista de Figuras} 
+\addcontentsline{toc}{chapter}{Lista de figuras} 
 \renewcommand{\listfigurename}{Figuras}			%Indice de figuras
-\listoffigures			%Indice de figuras
-%\newpage				%Salto de Página
+\listoffigures									%Indice de figuras
 
 \newpage
 \chapter{Introducción}\label{ch:Introduccion}
@@ -164,7 +171,7 @@ This document presents an investigation about the developed technological progre
 		
 		De acuerdo a la Real Academia \citeA{Rae2014} una red se define como <<Conjunto de ordenadores o de equipos informáticos conectados entre sí que pueden intercambiar información>>.
 		Dicha definición se puede entender de mejor manera al referirse a la figura \ref{fig:redComputadoras}, donde se muestran múltiples dispositivos conectados entre sí, y aunque en dicha imagen no se específica el objetivo de su conexión, puede inferirse que se trata de transferencia de información.
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.3\textwidth]{redComputadoras.png}
 			\caption{Conjunto de computadoras conectadas formando una red.}
@@ -254,29 +261,18 @@ This document presents an investigation about the developed technological progre
 		
 		De acuerdo a \citeA{Arnon2003}, la implementación de \textit{WSN} en ambientes hospitalarios resulta beneficioso tanto para los pacientes como para el cuerpo médico puesto que puede reducir tiempos de instalación del paciente y sumando tiempos de monitorización de su salud.
 		También menciona que, desde el punto de vista de redes inalámbricas, existen múltiples problemáticas debido a la naturaleza de las señales y el ambiente en que se encuentran, como \textit{multipath}, interferencias y disturbios en la señal.
-		Asimismo, plantea los requerimientos de red con respecto a las señales o parámetros que se estén monitorizando del paciente, tal y como se muestra en la figura \ref{fig:bioMeasurements}, tomada del mismo trabajo.
-		
-		\begin{figure}[htb]
-			\centering
-			\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
-			\caption{Requerimientos de mediciones biomédicas.}
-			\label{fig:bioMeasurements}
-		\end{figure}
-		
-		Por ello, el mecanismo que ha proponer impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical y en consecuencia existirá una mayor necesidad de atención hacia este grupo social \cite{Wong2007}.
+		Asimismo, plantea los requerimientos de red con respecto a las señales o parámetros que se estén monitorizando del paciente.
+				
+		Por ello, el mecanismo que se propone impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical y en consecuencia existirá una mayor necesidad de atención hacia este grupo social \cite{Wong2007}.
 		
 		Con este mecanismo de \textit{handoff} se podrán habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos colocados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
 		
-		Este tipo de aplicaciones demanda comunicación inteligente, ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo utiliza como base o punto de partida al protocolo de \textit{handoff WSN-HaDaS} (mencionado en la sección de Problemática).
-		Este protocolo ya ofrece características de diseño \textit{crosslayer}, con ello se infiere que posee una mayor conciencia del entorno de aplicación dado que no limita sus decisiones a parámetros de una sola capa del modelo de red \textit{OSI}.
-		Bajo este esquema, el protocolo \textit{WSN-Hadas} demostró presentar tiempos de retardo reducidos dado que se implementa dentro de un mecanismo de comunicación estándar.
+		Este tipo de aplicaciones demanda una comunicación inteligente, pues es utilizada para transportar datos críticos (parámetros de salud de pacientes), por ello este mecanismo está pensado para que ofrezca un cierto grado de conciencia del entorno y de la aplicación o el topo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones.
+		Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto a las propuestas que actualmente se ofrecen.
 		
-		Utilizando este protocolo como punto de partida, la nueva propuesta está pensada para ofrecer un mayor grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones.
-		Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto las propuestas que actualmente se ofrecen.
-		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que se requiere analizar y definir cuáles capas del modelo de red se deben utilizar, qué procesos debe ejecutar el mecanismo, qué parámetros se deben considerar, y cómo se debe integrar todo lo anterior en un diseño \textit{crosslayer} para crear nuestro mecanismo de \textit{handoff}. 
-		
-		Además, se debe diseñar el escenario de operación de forma adecuada para simularlo con parámetros reales que puedan generar resultados válidos para su implementación en la vida real.
-		
+		Por lo tanto, crear este tipo de mecanismos con las expectativas propuestas, representa un reto académico para el proponente, puesto que requiere analizar y definir las capas del modelo de redes que se deben utilizar, qué procesos debe ejecutar dicho mecanismo, qué parámetros considerar y cómo debe integrarse todo lo anterior en un diseño \textit{crosslayer}, con el fin de crear un mecanismo propio de \textit{handoff}.
+		Además, se debe diseñar el escenario de operación de forma adecuada para simularlo con parámetro reales que puedan generar resultados válidos para su implementación en la vida real.
+				
 	\section{Preguntas de investigación}
 		\begin{itemize}
 		\item ¿Qué capas del modelo de red deben ser incluidos en el mecanismo de \textit{handoff crosslayer}?
@@ -287,7 +283,7 @@ This document presents an investigation about the developed technological progre
 	\section{Limitaciones y suposiciones}
 		El proyecto limita sus alcances a la simulación del mecanismo de \textit{handoff crosslayer} en el \textit{software Network Simulator 2} (\textit{NS2}) \cite{Ns1989}, pues no se cuenta con los recursos necesarios para la implementación en físico del sistema planteado.
 		
-		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada en el trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él.
+		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada y publicada del trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él.
 		Además, estos resultados son tomados como base para la presente investigación, dado que dicho trabajo ya ha sido evaluado en distintas etapas para su publicación.
 		
 	\newpage
@@ -336,7 +332,7 @@ This document presents an investigation about the developed technological progre
 
 	Para los propósitos del presente documento, basta con explicar solo algunas de las clasificaciones: de acuerdo a la tecnología de redes, número de conexiones involucradas y al control del \textit{handoff}.
 	
-		\begin{figure}[h]
+		\begin{figure}[ht]
 		\centering
 		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
 		%\caption{Clasificación del Handoff, Basado en } \cite{Nasser2006}
@@ -350,7 +346,7 @@ This document presents an investigation about the developed technological progre
 		\begin{itemize}
 		\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un \textit{BS}, pero a su vez entra al área de cobertura de otra \textit{BS} del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
 		Este proceso se muestra en la figura \ref{fig:hoHorizontal}, tomada de \cite{Siddiqui2008}.
-			\begin{figure}[h]
+			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=6.5cm,height=5cm]{hoHorizontal.png}
 %				\caption{Horizontal \textit{handoff}. Tomada de } \cite{Siddiqui2008}.
@@ -360,7 +356,7 @@ This document presents an investigation about the developed technological progre
 		
 		\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una \textit{BS} a otra \textit{BS} trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
 		Por ejemplo, el cambio de una señal de transmisión de una \textit{BS} IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
-			\begin{figure}[h]
+			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=5cm,height=5cm]{hoVertical.png}
 				%\caption{Vertical \textit{handoff}. Tomada de }\cite{Siddiqui2008}.
@@ -377,7 +373,7 @@ This document presents an investigation about the developed technological progre
 		
 		Un resumen representativo de las clasificaciones antes mencionadas se muestra en la figura \ref{fig:hoTypes}, tomada de \cite{Ahmed2014}.
 		
-			\begin{figure}[h]
+			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=13cm,height=7cm]{hoTypes.png}
 				\caption{Clasificación del \textit{handoff} según las redes involucradas.}
@@ -393,19 +389,19 @@ This document presents an investigation about the developed technological progre
 						
 			Esto define que a un nodo móvil le es posible establecer una sola conexión a una \textit{BS} en todo momento. A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
 			
-				\begin{figure}[h]
+				\begin{figure}[ht]
 					\centering
 					\includegraphics[width=5cm,height=3cm]{hoHard.png}
 					\caption{Mecanismo tipo \textit{hard handoff}.}
 					\label{fig:hoHard}
 				\end{figure}
 
-			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la \textit{BS} \cite{Etworks2004}.
+			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la \textit{BS} \cite{Nasser2006}.
 			Este tipo de \textit{handoff}, puede ser observado en la fig \ref{fig:hoSoft}, tomada de \cite{Chowdhury2012}.
 			Para ello, debe tenerse en cuenta que el nodo móvil debe estar moviéndose entre el área de cobertura de dos celdas.
 			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la \textit{BS} \cite{Ramachandran2006}.
 			
-				\begin{figure}[h]
+				\begin{figure}[ht]
 					\centering
 					\includegraphics[width=5cm,height=3cm]{hoSoft.png}
 					\caption{Mecanismo tipo \textit{soft handoff}.}
@@ -414,7 +410,7 @@ This document presents an investigation about the developed technological progre
 			
 			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo \textit{AP}. Dicho de otra manera, la principal diferencia entre un mecanismo tipo \textit{soft} y uno tipo \textit{softer} reside en que el nodo móvil está ubicado dentro del área de cobertura de dos sectores de un mismo \textit{AP} o \textit{BS} \cite{Chowdhury2012}, tal y como se muestra en la figura \ref{fig:hoSofter}, tomada del trabajo del mismo autor.
 			
-				\begin{figure}[h]
+				\begin{figure}[ht]
 					\centering
 					\includegraphics[width=5cm,height=3cm]{hoSofter.png}
 					\caption{Mecanismo tipo \textit{softer handoff}.}
@@ -459,7 +455,7 @@ This document presents an investigation about the developed technological progre
 			\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
 		\end{itemize}
 	
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=12cm,height=6cm]{hoIssues.jpg}
 			\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}.}
@@ -479,7 +475,7 @@ This document presents an investigation about the developed technological progre
 	
 	Con el fin de otorgar una idea más clara del efecto \textit{ping-pong}, suponga el caso de un nodo móvil perteneciente a una red A y ubicado justamente dentro del área de cobertura de dos redes A y B como se muestra en la figura \ref{fig:hoExample}, en ese momento a causa de una pobre decisión de \textit{handoff}, el nodo decide cambiarse a la red B. 
 	
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=10cm,height=9cm]{hoExample.jpg}
 			\caption{Ejemplo de ejecución de un mecanismo de \textit{handoff}.}
@@ -507,7 +503,7 @@ This document presents an investigation about the developed technological progre
 	En la actualidad, existe una gran variedad de investigaciones y desarrollos de protocolos y aplicaciones orientadas a las \textit{WSN} \cite{Melodia2006}; sin embargo, la gran mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo \textit{OSI}. 
 	
 	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}, tomada de \cite{Briscoe2000}.
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=2.25cm,height=3cm]{OSImodel.png}
 			%\caption{Distribución de capas del Modelo OSI. Tomada de } %\cite{briscoe2000understanding}}
@@ -518,7 +514,7 @@ This document presents an investigation about the developed technological progre
 	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{Melodia2006}; por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. 
 	Estas estrategias han sido llamadas \textit{estrategias de diseño crosslayer} y su comportamiento puede apreciarse en la figura \ref{fig:OSIcrosslayer}, tomada de \cite{Bisnik2005} .
 		
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=6cm,height=10cm]{fig06.png}
 			%\caption{Diferencia de operación y filosofía entre el modelo OSI tradicional y crosslayer. Tomada de }  %\cite{bisnik2005protocol}}
@@ -530,7 +526,7 @@ This document presents an investigation about the developed technological progre
 	Sin embargo, la manera común y general de realizar estos mecanismos se basa en trabajar siempre exclusivamente en una de las capas del modelo \textit{OSI} \cite{Bertsekas1992}. La estrategia de diseño colaborativo entre capas (\textit{crosslayer}) rompe con esos esquemas de trabajo y propone la implementación de un trabajo colectivo entre múltiples capas; dígase capa de Transporte y capa de Control de Acceso al Medio (MAC), por ejemplo. 
 	En donde se permite una comunicación directa entre protocolos de diferentes capas, o compartiendo variables de las mismas. 
 	
-	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; por ejemplo \citeA{Raisinghani2004} presentan un estudio de varias propuestas desarrolladas bajo este tipo de diseño.
+	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; por ejemplo, en el trabajo realizado por \citeA{Raisinghani2004} se presenta un estudio de varias propuestas desarrolladas bajo este tipo de diseño.
 	
 	En \cite{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas, ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. 
 	Del mismo modo, se hace una diferencia en función a la orientación o sentido del \textit{crosslayer}; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. 
@@ -572,6 +568,17 @@ This document presents an investigation about the developed technological progre
 	
 	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un protocolo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
 	Este protocolo opera en las capas de transporte y de control de acceso al medio, interactuando con el mecanismo de envío de información \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con ello posee la ventaja de ser capaz de detener o reactivar el envió de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
+	
+	% % % % % % % % % % % % % % % % % % % % % %
+	
+	% % % % % % % % % % Viene de Justificacion
+		\begin{figure}[htb]
+			\centering
+			\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
+			\caption{Requerimientos de mediciones biomédicas. ES DE cite[Arnon2003]}
+			\label{fig:bioMeasurements}
+		\end{figure}
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \newpage
 	\section{Celular}
@@ -617,12 +624,23 @@ This document presents an investigation about the developed technological progre
 \newpage
 \chapter{Metodologia de Investigación}\label{ch:Metodologia}
 En este capítulo se aborda y explica a detalle la metodología aplicada para el desarrollo del protocolo propuesto en el presente trabajo de investigación, realizando un énfasis especial en la revisión del estado del arte (Esquema de Fundamentos) realizada, pues con ella se plantearon las bases para el diseño del mecanismo de \textit{handoff}.
+
+
+% % % % % % Ponerlo en otro lado, ¿metodología?
+Este tipo de aplicaciones demanda comunicación inteligente, ya que es utilizada para trasportar datos críticos (la salud de los pacientes), por ello este mecanismo utiliza como base o punto de partida al protocolo de \textit{handoff WSN-HaDaS} (mencionado en la sección de Problemática).
+Este protocolo ya ofrece características de diseño \textit{crosslayer}, con ello se infiere que posee una mayor conciencia del entorno de aplicación dado que no limita sus decisiones a parámetros de una sola capa del modelo de red \textit{OSI}.
+Bajo este esquema, el protocolo \textit{WSN-Hadas} demostró presentar tiempos de retardo reducidos dado que se implementa dentro de un mecanismo de comunicación estándar.
+
+Utilizando este protocolo como punto de partida, la nueva propuesta está pensada para ofrecer un mayor grado de conciencia del entorno y la aplicación o tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones.
+Posicionando en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto las propuestas que actualmente se ofrecen. 
+% % % % % % % % % % % % % % % % % % % % % % % %
+
 \newpage
 
 	\section{Metodología}
 	Para el desarrollo de esta investigación se propuso la metodología mostrada en la figura \ref{fig:metologia}:
 	
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=10cm,height=7cm]{metologia.png}
 			\caption{Metodología de investigación propuesta}
@@ -651,7 +669,7 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	Ejemplo de ella es la revisión sistemática propuesta por \citeA{AraujoAlonso2011}, la cual plantea las etapas o pasos mostrados en la figura \ref{fig:revSistematica} basados en los principios del método científico.
 	Y que, aunque esta metodología se está pensada para su aplicación al estudio de la salud, permite ser aplicable a otras áreas de investigación como la presentada en este proyecto de tesis.
 	
-	\begin{figure}[h]
+	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=8cm,height=7cm]{revSistematica.png}
 		\caption{Metodología de revisión sistemática.}
@@ -659,50 +677,49 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	\end{figure}
 	
 	El primero de estos pasos hace referencia a la formulación del objetivo de la investigación.
-	Este paso ha sido cubierto y descrito en el Capítulo 1.
-	\\
+	Este paso ha sido cubierto y descrito en el Capítulo \ref{ch:Introduccion}.
 	
 	El segundo de estos pasos habla sobre la <<Definición de fuentes y métodos de búsqueda>>.
 	En este caso, no se especificaron fuentes exclusivas de consulta con el objetivo de no limitar precisamente el banco de datos de información a consultar.
 	Sin embargo, algunas de las fuentes de información más consultadas se muestran en la figura \ref{fig:journals}.
-	\begin{figure}[h]
+	
+	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=12cm,height=5cm]{journals.png}
 		\caption{Algunas fuentes de investigación consultadas.}
 		\label{fig:journals}
 	\end{figure}
-	\\
 	
 	Sobre la <<Definición y aplicación de criterios de selección>>, una lista de las \textit{key words} (del inglés, palabras clave) utilizadas se muestra enseguida.
 	Estas palabras clave fueron utilizadas en inglés por ser éste el idioma universal, y dado que la gran mayoría de las investigaciones y trabajos consultados se desarrollaron en dicho idioma. 
+	
+	\newpage
 	Además, fueron utilizadas de manera aleatoria; es decir, en algunas ocasiones se combinaron unas de ellas, y en otras se aplicó otra combinación de las mismas.
 	
 	\begin{itemize}
-		\item \textit{handoff} o \textit{handover}
+		\item \textit{Handoff} o \textit{Handover}
 		\item \textit{WSN}
-		\item \textit{crosslayer} o \textit{cross layer}
+		\item \textit{Crosslayer} o \textit{Cross layer}
 		\item \textit{802.15.4}
 	\end{itemize}
 	
 	Sobre los resultados que arrojó cada una de las bases de datos en su momento, se filtraron solo los resultados más relevantes de acuerdo a la misma base de datos.
 	Este proceso busca aquellos trabajos de investigación que han sido descargados o consultados una mayor cantidad de veces.
 	Con ello, se aseguró tomar como referencia investigaciones reconocidas.
-	\\
 	
 	Sobre el proceso de <<Análisis de los estudios>>, se filtraron los resultados arrojados no solo por relevancia, sino también se consideró la fecha de publicación como criterio puesto que la investigación buscó tomar como marco de referencia las últimas investigaciones realizadas en el tiempo.
 	No obstante, en ocasiones existieron referencias con fuerte valor reconocido, los cuales se decidieron no filtrar y mantenerlas como investigaciones de apoyo.
-	\\
 	
 	También, debe mencionarse que de los trabajos encontrados, se aplicó una post clasificación de los mismos.
 	Separando las investigaciones por tecnología inalámbrica utilizada en la red, tipo de \textit{handoff}, existencia de diseño \textit{crosslayer} y aplicación. 
 	Aplicando con esta actividad la etapa de <<Síntesis de resultados>>.
-	\\
 	
+	\newpage
 	Finalmente durante la etapa de <<Conclusiones e inferencias>>, se tomó lectura de dichos trabajos de investigación encontrados (artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras) y fue posible producir las siguientes conclusiones:
 	
 	\begin{itemize}
 		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS}.
-		\item La latencia, throughput end-to-end y la tasa de entrega de paquetes, son en general las principales métricas a beneficiar con los mecanismos propuestos.
+		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes, son en general las principales métricas a beneficiar con los mecanismos propuestos.
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en eficiencia.
 		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la capa \textit{MAC} como integrante escencial del criterio.
 		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS} (como su implementación dentro de un mecanismo estándar de comunicación como el \textit{TCP}), resulta el mejor candidato como protocolo base.
@@ -735,7 +752,7 @@ En este capítulo se aborda y explica a detalle la metodología aplicada para el d
 	Esta etapa a su vez, requirió de una planeación o metodología a seguir. 
 	Ésta se ha tomado de \citeA{OpnetWork2013}, y funge como base para el desarrollo de la simulación, dicha metodología se presenta en  la figura \ref{fig:simPlaneacion}.
 	
-	\begin{figure}[h]
+	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=12cm,height=10cm]{simPlaneacion.png}
 		\caption{Algunas fuentes de investigación consultadas.}

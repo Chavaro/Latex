@@ -1761,6 +1761,29 @@ Yang, X\BPBI D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Yemini%
+}{%
+Yemini%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+Yemini1993}
+\APACinsertmetastar {%
+Yemini1993}%
+\begin{APACrefauthors}%
+Yemini, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The OSI network management model}} {{The OSI network
+  management model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Zdarsky%
 \ \BBA {} Schmitt%
 }{%
