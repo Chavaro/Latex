@@ -6,29 +6,30 @@
 \documentclass[a4paper,openright,12pt]{book}% Specify format defaults [Opc: pg 10-11]
 \usepackage[spanish, es-lcroman]{babel}		% Para enumerar en roman minúsculas
 \usepackage[latin1]{inputenc}				% Para escribir símbolos no anglosajones (á, ü, ñ, ¡! ¿?...)
-\usepackage[hidelinks]{hyperref}						% Para generar links en el pdf
-\usepackage{graphicx}  						% To include figures.
-\usepackage{setspace}						% Para ajustar interlineados
-\usepackage{breakcites}						% Para que las citas se adapten al margen del texto
-\usepackage{apacite}						% Citar APA c/paréntesis
-\usepackage{lipsum}							% Texto relleno - %http://ctan.org/pkg/lipsum
-%\usepackage{multicol}						% Permite seccionas en columnas
-\usepackage{datetime}						% Para personalizar fechas
+\usepackage[hidelinks]{hyperref}			% Para generar links en el pdf - https://www.ctan.org/pkg/hyperref
+\usepackage{graphicx}  						% To include figures - https://www.ctan.org/pkg/graphicx
+\usepackage{setspace}						% Para ajustar interlineados - https://www.ctan.org/pkg/setspace
+\usepackage{breakcites}						% Para adaptar citas al margen del texto - https://www.ctan.org/pkg/breakcites
+\usepackage{apacite}						% Citar APA c/paréntesis - https://www.ctan.org/pkg/apacite
+\usepackage{lipsum}							% Texto relleno - http://ctan.org/pkg/lipsum
+%\usepackage{multicol}						% Permite seccionas en columnas - https://www.ctan.org/pkg/multicol
+\usepackage{datetime}						% Para personalizar fechas - https://www.ctan.org/pkg/datetime
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
 \graphicspath{ {images/} }					% images folder en local dir
 
 % ======= Margin Config Opc1 ======
-\usepackage{anysize}
+\usepackage{anysize}						% https://www.ctan.org/pkg/anysize
 \marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		%izq,der,top,bot
 
 % ======= Margin Config Opc2 ======
-%\usepackage{vmargin}						% To set margins.
+%\usepackage{vmargin}						% To set margins - https://www.ctan.org/pkg/vmargin
 %\setpapersize{A4}
 %\setmarginsrb{left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
 %\setmarginsrb{3.0cm}{3.5cm}{2.5cm}{2.5cm}{10pt}{1cm}{0pt}{2cm}
 
 % ======== Document ===============
 \begin{document}
+\renewcommand{\BOthers}[1]{et al.\hbox{}}	% Sustituir <<y cols.>> por <<et. al>>
 
 % ======== Portada =================
 \begin{titlepage}					%Imagen fea de Telemática
@@ -138,24 +139,41 @@ This document presents an investigation about the developed technological progre
 \chapter{Introducción}\label{ch:Introduccion}
 	\pagenumbering{arabic} 	%Reinicia indice en arábigo
 	El presente proyecto de tesis plantea el uso de una \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Network}, Red Inalámbrica de Sensores), dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente.
-	Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo de implementación, además de la movilidad de sus dispositivos; siendo esta última una de las que más destacan cuando se usan en el entorno de las personas.
+	% % % % % % % % % % % % % % PARAFRASEADO DE LO REPETIDO
+	Dentro de las características con las que cuenta una \textit{WSN} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
 	
-	Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente pequeños en tamaño y portables, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}.
-	Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones ni el desempeño general de la red.
+	Esto infiere que los miembros, dispositivos o nodos de una \textit{WSN} son, en general, de tamaño reducido y portables, pudiendo ser fácilmente acoplados a usuarios móviles \cite{Silva2014}.
+	Por ello, es necesario ofrecer a las \textit{WSN} mecanismos que apoyen y mejoren eficientemente la movilidad en sus dispositivos; ello sin afectar las aplicaciones ni el desempeño general de la red.
 	
-	Precisamente aprovechando su movilidad, las \textit{WSN} se han estado ganando su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon}, desarrollando diferentes aplicaciones con el objetivo de vigilar el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
-	En \cite{Virone2006} se propone una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
-	Asimismo en \cite{Yan2009} se implementa un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health}, distribuyendo múltiples nodos en un hogar, para proveer de información a los enfermeros, doctores o encargados de los pacientes.
-
-	Es importante destacar que la movilidad de los usuarios   exige que éstos se muevan en libertad dentro de un espacio u área de monitorización, por ejemplo un hospital o casa habitación.  
+	Debido a dicha movilidad y los beneficios que ello conlleva, las \textit{WSN} han logrado posicionarse en el desarrollo de aplicaciones orientadas al cuidado de la salud \cite{DelosAngelesCosioLeon}, al desarrollar múltiples aplicaciones para el monitoreo de variables que permitan una constante vigilancia del estado de salud de pacientes, siendo en la mayoría adultos mayores.
+	En el trabajo realizado por \citeA{Virone2006}, se describe y propone una red, en la cual se plantea como objetivo la adquisición de parámetros físicos, siendo algunos de ellos la temperatura y ubicación de los pacientes.
+	
+	Es importante destacar que la movilidad de los usuarios   exige que éstos puedan realizarlo en libertad dentro de un espacio u área de monitorización, por ejemplo un hospital o casa habitación.  
 	En este escenario de uso las \textit{WSN} tienen una cobertura limitada, debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), lo cual exige la necesidad de instalar varios puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios. 
 	Sin embargo, los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplaza por todo el área de la \textit{WSN}, resultando en la desconexión del dispositivo de la red ya que el estándar \textit{IEEE 802.15.4} no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handoff} o traspaso al nuevo punto de acceso por sí mismo. 
 	Sin embargo, sí cuenta con algunas funciones y procesos que se pueden utilizar para crear un mecanismo de \textit{handoff}. 
 	
+	
+	% % % % % % % % % % % % % % REPETIDO EN PROBLEMÁTICA
+%	Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo de implementación, además de la movilidad de sus dispositivos; siendo esta última una de las que más destacan cuando se usan en el entorno de las personas.
+	
+%	Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente pequeños en tamaño y portables, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}.
+%	Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones ni el desempeño general de la red.
+	
+%	Precisamente aprovechando su movilidad, las \textit{WSN} se han ganado su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon}, desarrollando diferentes aplicaciones con el objetivo de vigilar el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+%	En \cite{Virone2006} se propone una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
+%	Asimismo en \cite{Yan2009} se implementa un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health}, distribuyendo múltiples nodos en un hogar, para proveer de información a los enfermeros, doctores o encargados de los pacientes.
+
+	Es importante destacar que la movilidad de los usuarios   exige que éstos puedan realizarlo en libertad dentro de un espacio u área de monitorización, por ejemplo un hospital o casa habitación.  
+	En este escenario de uso las \textit{WSN} tienen una cobertura limitada, debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), lo cual exige la necesidad de instalar varios puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios. 
+	Sin embargo, los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplaza por todo el área de la \textit{WSN}, resultando en la desconexión del dispositivo de la red ya que el estándar \textit{IEEE 802.15.4} no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handoff} o traspaso al nuevo punto de acceso por sí mismo. 
+	Sin embargo, sí cuenta con algunas funciones y procesos que se pueden utilizar para crear un mecanismo de \textit{handoff}. 
+	% % % % % % % % % % % % % % % % % % % % % % % % % % %
+	
 	Este proceso es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, ya que un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino. 
 	Por ejemplo, si el proceso del mecanismo de \textit{handoff} es lento, puede generar altos tiempo de desconexión y si la aplicación no es consciente de la desconexión puede seguir enviando datos que no podrán ser entregados.
 	
-	En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas en el la sección \textit{Capítulo \ref{ch:Trabajos}. Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
+	En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
 	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstas se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} que utilizan \textit{IEEE 802.15.4}. 
 	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red OSI dentro del mecanismo de \textit{handoff}) que provocan una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
 	
@@ -193,16 +211,16 @@ This document presents an investigation about the developed technological progre
 		\newline
 		De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el IEEE 802.15, cuya frecuencia de operación es 2.4 GHz y su objetivo en particular es el permitir una conexión sin fallas entre los dispositivos de la red y asegurar una transferencia de información continua.
 		
-		Dentro del grupo de las \textit{WPAN} se encuentran las \textit{WSN}, las cuales generalmente consisten en múltiples nodos que integran sensores, procesadores, fuentes de energía y dispositivos que permiten su comunicación con demás nodos. 
+		Dentro del grupo de las \textit{WPAN} se encuentran las \textit{WSN}, las cuales generalmente consisten en múltiples nodos que integran sensores, procesadores, fuentes de energía y dispositivos que permiten su comunicación con los demás nodos. 
 		Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo, además de la movilidad de sus dispositivos; siendo esta última una de las que más destaca cuando se usan en el entorno de las personas. 
 		
 		Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente portables y pequeños en tamaño, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}. 
 		Por ello, las \textit{WSN} se han convertido en poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
 		
-		Aprovechando su movilidad, las \textit{WSN} también se han ganado un lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando diferentes aplicaciones (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+		Aprovechando su movilidad, las \textit{WSN} también se han ganado un lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando múltiples de ellas (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
 		
 		En este contexto, \citeA{Virone2006} proponen una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
-		Asimismo \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
+		Asimismo, \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
 		
 		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
 		En este escenario las \textit{WSN} tienen una cobertura limitada debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la IEEE 802.15.4, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios \cite{Buenrostro-Mariscal2015}.
