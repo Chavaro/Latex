@@ -156,7 +156,7 @@ This document presents an investigation about the developed technological progre
 	
 	En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
 	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstas se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} que utilizan \textit{IEEE 802.15.4}. 
-	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red OSI dentro del mecanismo de \textit{handoff}) que provocan una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
+	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de red OSI (siglas en inglés de \textit{Open System Interconnection},Interconexión de Sistema Abierto) dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
 	
 	Por ello, en este trabajo se propone un mecanismo para ofrecer un proceso de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores del modelo de red para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capa superior. 
 	La propuesta misma y el diseño de la red, serán simulados con ayuda del \textit{software NS2} \cite{Ns1989}, por lo que todas las características y métricas a considerar han de ser correctamente definidas con el propósito de permitir que su simulación sea lo más cercana a la realidad. 
@@ -348,7 +348,7 @@ This document presents an investigation about the developed technological progre
 	Con esto se pretende colocar en contexto al lector, presentando el estado del arte actual; validando a su vez, la innovación del proyecto propuesto.
 \newpage
 
-	\section{Transferencia de red (\textit{handoff})}
+	\section{Transferencia de red (\textit{handoff})}\label{sec:Transferencia}
 	El término \textit{handoff} o \textit{handover}, según el contexto, tiene un significado distinto; sin embargo tiende hacia una misma acción.
 	El \textit{Macmillan Dictionary} \citeyear{MacmillanDic} define al \textit{handoff} como la acción de dar la responsabilidad sobre algo a alguien más.
 	Esto es, la responsabilidad de una entidad pasa a ser ahora de otra entidad.
@@ -364,34 +364,34 @@ This document presents an investigation about the developed technological progre
 	Como se ha mencionado anteriormente, los mecanismos de \textit{handoff} existen en aquellas redes inalámbricas en las cuales sus miembros poseen capacidades para cambiar de posición y se les permite ejecutar dicho movimiento, llegando incluso a salir del rango de cobertura de sus celdas o \textit{APs}.
 	Dada esta descripción, se cubren diferentes tecnologías de comunicación inalámbricas en las que existen los mecanismos de \textit{handoff}, como aquellas tecnologías de comunicación celular, de área local o de área personal (por mencionar algunas).
 	 
-	\section{Clasificación del \textit{handoff}}
+	\section{Clasificación del \textit{handoff}}\label{sec:Clasificacion}
 	Así como diferentes tecnologías de comunicación poseen mecanismos de \textit{handoff}, así también existen diferentes clasificaciones para estos tipos de mecanismos.
 	Esta clasificación se ha realizado en función de varios factores; algunos de ellos pueden apreciarse en la figura \ref{fig:hoClasificacion}, basada en \cite{Nasser2006}.
 
 	Para los propósitos del presente documento basta con explicar solo algunas de las clasificaciones, de acuerdo a: la tecnología de redes involucrada, número de conexiones involucradas y al control del \textit{handoff}.
 	
-		\begin{figure}[ht]
+	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
 		\caption{Clasificación del \textit{handoff}.}
 		\label{fig:hoClasificacion}
-		\end{figure}
+	\end{figure}
 		 
 		\subsection{Redes involucradas}
 		De acuerdo a \citeA{VanQuang2012}, existen dos tipos de mecanismos de \textit{handoff} si se clasifican en función a los tipos de tecnologías de comunicación que se encuentran involucradas en la red: \textit{handoff} horizontal y \textit{handoff} vertical.
 		
 		\begin{itemize}
-		\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un \textit{BS}, pero a su vez entra al área de cobertura de otra \textit{BS} del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
-		Este proceso se muestra en la figura \ref{fig:hoHorizontal}, tomada de \cite{Siddiqui2008}.
+			\item Horizontal: El \textit{handoff} horizontal existe cuando un nodo móvil se encuentra saliendo de los límites de cobertura de un \textit{BS}, pero a su vez entra al área de cobertura de otra \textit{BS} del mismo sistema trabajando con la misma tecnología de comunicación, por ejemplo celular 4G \cite{VanQuang2012}.
+			Este proceso se muestra en la figura \ref{fig:hoHorizontal}, tomada de \cite{Siddiqui2008}.
 			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=6.5cm,height=5cm]{hoHorizontal.png}
 				\caption{Horizontal \textit{handoff}.}
 				\label{fig:hoHorizontal}
 			\end{figure}
-		
-		\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una \textit{BS} a otra \textit{BS} trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
-		Por ejemplo, el cambio de una señal de transmisión de una \textit{BS} IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
+			
+			\item Vertical: A diferencia del horizontal, un \textit{handoff} vertical ocurre cuando un nodo cambia su conexión de una \textit{BS} a otra \textit{BS} trabajando con diferente tecnología de comunicación inalámbrica  \cite{Nasser2006}. 
+			Por ejemplo, el cambio de una señal de transmisión de una \textit{BS} IEEE 802.11b a una celular; como se muestra en la figura \ref{fig:hoVertical}, tomada de \cite{Siddiqui2008}.
 			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=4.5cm,height=5cm]{hoVertical.png}
@@ -403,17 +403,18 @@ This document presents an investigation about the developed technological progre
 		Sin embargo, otros autores describen una tercera clasificación: el \textit{handoff} diagonal. 
 		Aunque en trabajos como el de \citeA{Stuedi2005} se da una visión diferente al \textit{handoff} (donde se visualiza desde el aspecto de cambios de ruta y/o capa MAC), el concepto final es el mismo.
 		\begin{itemize}
-		\item Diagonal: Un mecanismo de este tipo existe cuando se ejecutan en simultaneidad, mecanismos verticales y horizontales. Esto puede ocurrir al cambiar de una tecnología a otra incluida dentro del mismo estándar, por ejemplo cambiar de IEEE 802.11p a IEEE 802.11b \cite{Ahmed2014}.
+			\item Diagonal: Un mecanismo de este tipo existe cuando se ejecutan en simultaneidad, mecanismos verticales y horizontales. 
+			Esto puede ocurrir al cambiar de una tecnología a otra incluida dentro del mismo estándar, por ejemplo cambiar de IEEE 802.11p a IEEE 802.11b \cite{Ahmed2014}.
 		\end{itemize}
 		
 		Un resumen representativo de las clasificaciones antes mencionadas se muestra en la figura \ref{fig:hoTypes}, basada en \cite{Ahmed2014}.
 		
-			\begin{figure}[ht]
-				\centering
-				\includegraphics[width=10cm,height=6cm]{hoTypes.jpg}
-				\caption{Clasificación del \textit{handoff} según las redes involucradas.}
-				\label{fig:hoTypes}
-			\end{figure}
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=10cm,height=6cm]{hoTypes.jpg}
+			\caption{Clasificación del \textit{handoff} según las redes involucradas.}
+			\label{fig:hoTypes}
+		\end{figure}
 					  
 		\subsection{Número de conexiones}
 		Otro tipo de clasificaciones del \textit{handoff} es en función al número de conexiones que un nodo puede mantener o establecer. De acuerdo a \citeA{Nasser2006}, existen tres tipos.
@@ -424,34 +425,34 @@ This document presents an investigation about the developed technological progre
 			Esto define que a un nodo móvil le es imposible establecer más de una sola conexión a una \textit{BS} en todo momento. 
 			A este tipo de \textit{handoffs}, también se les hace llamar conexiones \textit{break-before-make}, que en inglés describe que es necesario romper la conexión actual antes de establecer una nueva \cite{Nasser2006}.
 			
-				\begin{figure}[ht]
-					\centering
-					\includegraphics[width=5cm,height=3cm]{hoHard.png}
-					\caption{Mecanismo tipo \textit{hard handoff}.}
-					\label{fig:hoHard}
-				\end{figure}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=5cm,height=3cm]{hoHard.png}
+				\caption{Mecanismo tipo \textit{hard handoff}.}
+				\label{fig:hoHard}
+			\end{figure}
 
 			\item \textit{Soft}: Contrario a un mecanismo \textit{hard handoff}, un tipo \textit{soft} describe que los enlaces o conexiones son agregados o liberados de tal manera que siempre existe al menos un enlace del nodo hacia la \textit{BS} \cite{Nasser2006}.
 			Este tipo de \textit{handoff}, puede ser observado en la fig \ref{fig:hoSoft}, tomada de \cite{Chowdhury2012}.
 			Para ello, debe tenerse en cuenta que el nodo móvil debe estar moviéndose entre el área de cobertura de dos celdas.
 			A este tipo de conexiones se les llama también \textit{make-before-break}, puesto que describen la capacidad de poder establecer una conexión antes de liberar otra, dando a entender que se pueden disponer de al menos dos conexiones simultáneas del nodo a la \textit{BS} \cite{Ramachandran2006}.
 			
-				\begin{figure}[ht]
-					\centering
-					\includegraphics[width=5cm,height=3cm]{hoSoft.png}
-					\caption{Mecanismo tipo \textit{soft handoff}.}
-					\label{fig:hoSoft}
-				\end{figure}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=5cm,height=3cm]{hoSoft.png}
+				\caption{Mecanismo tipo \textit{soft handoff}.}
+				\label{fig:hoSoft}
+			\end{figure}
 			
 			\item \textit{Softer}: Un mecanismo de \textit{handoff softer} es muy similar al \textit{soft}, con la diferencia de que el nodo móvil cambia conexiones entre enlaces de radio que pertenecen al mismo \textit{AP}. 
 			Dicho de otra manera, la principal diferencia entre un mecanismo tipo \textit{soft} y uno tipo \textit{softer} reside en que el nodo móvil está ubicado dentro del área de cobertura de dos sectores de un mismo \textit{AP} o \textit{BS} \cite{Chowdhury2012}, tal y como se muestra en la figura \ref{fig:hoSofter}, tomada del trabajo del mismo autor.
 			
-				\begin{figure}[ht]
-					\centering
-					\includegraphics[width=6cm,height=3cm]{hoSofter.png}
-					\caption{Mecanismo tipo \textit{softer handoff}.}
-					\label{fig:hoSofter}
-				\end{figure}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=6cm,height=3cm]{hoSofter.png}
+				\caption{Mecanismo tipo \textit{softer handoff}.}
+				\label{fig:hoSofter}
+			\end{figure}
 			
 		\end{itemize}
 			  
@@ -462,17 +463,17 @@ This document presents an investigation about the developed technological progre
 		De acuerdo a \citeA{Pahlavan2000}, es posible clasificar al \textit{handoff} con base en dónde se origina el mecanismo de decisión o control de \textit{handoff}. 
 		
 		Entonces, una tercera clasificación de los mecanismos de \textit{handoff} define que éstos pueden ser:
-			\begin{itemize}
-				\item{Controlado-por-Móvil}, \item{Controlado-por-Red}, o \item{Asistido-por-Móvil}. 
-			\end{itemize}
+		\begin{itemize}
+			\item{Controlado-por-Móvil}, \item{Controlado-por-Red}, o \item{Asistido-por-Móvil}. 
+		\end{itemize}
 		
 		Entonces, el mecanismo de decisión puede ubicarse en una entidad de la red (como en voz celular) cuando se es \textit{controlado-por-red}; o en el mismo nodo móvil (como en el caso de WLANs) cuando es \textit{controlado-por-móvil}.
 		Para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como GPRS, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
 		
 		Sin embargo, existen otros trabajos que agregan un cuarto miembro a esta clasificación.
-					\begin{itemize}
-						\item Asistido-por-Red
-					\end{itemize}
+		\begin{itemize}
+			\item Asistido-por-Red
+		\end{itemize}
 
 		En este nuevo caso, la red reúne información que le puede ser de utilidad al nodo móvil para ejecutar un mecanismo de \textit{handoff} \cite{Kassar2008}. 
 		
@@ -483,20 +484,20 @@ This document presents an investigation about the developed technological progre
 		
 		Entonces, tal y como se indica en cada caso, en la decisión del proceso pueden intervenir el nodo móvil, entidades de la red en la que se da el cambio de conexión, y/o tanto la entidad de red como el nodo móvil.
 			
-	\section{Problemáticas que conlleva el \textit{handoff}}
+	\section{Problemáticas que conlleva el \textit{handoff}}\label{sec:ProblematicasHO}
 	De acuerdo a \citeA{Pahlavan2000}, existe una gran cantidad de temas relacionados a los mecanismos de \textit{handoff}, como se muestra en la figura \ref{fig:hoIssues}, basada en el mismo artículo, estos temas pueden clasificarse en dos categorías:
 	
-		\begin{itemize}
-			\item Arquitectura: Son aquellas cuestiones en las que se consideran temas relacionados con la metodología, control y elementos de \textit{software} o \textit{hardware} involucrados en el nuevo ruteo de la conexión.
-			\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
-		\end{itemize}
-	
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=12cm,height=6cm]{hoIssues.jpg}
-			\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}.}
-			\label{fig:hoIssues}
-		\end{figure}
+	\begin{itemize}
+		\item Arquitectura: Son aquellas cuestiones en las que se consideran temas relacionados con la metodología, control y elementos de \textit{software} o \textit{hardware} involucrados en el nuevo ruteo de la conexión.
+		\item Tiempo de decisión: Estos temas se refieren a los algoritmos, métricas usadas por los mismos, y las metodologías de evaluación del desempeño.
+	\end{itemize}
+
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=12cm,height=6cm]{hoIssues.jpg}
+		\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}.}
+		\label{fig:hoIssues}
+	\end{figure}
 	
 	Sin embargo, otros autores consideran que las problemáticas que conlleva el \textit{handoff} generalmente repercuten en dos cuestiones: el cómo y el cuándo se han de ejecutar estos mecanismos.
 	
@@ -521,19 +522,19 @@ This document presents an investigation about the developed technological progre
 	%			\label{fig:hoExample}
 	%		\end{figure}
 	
-			\begin{figure}[ht]
-				\centering
-				\includegraphics[width=10cm,height=7cm]{hoPingPong.png}
-				\caption{Ejemplo del efecto \textit{ping-pong} en la ejecución de un mecanismo de \textit{handoff}.}
-				\label{fig:hoPingPong}
-			\end{figure}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=10cm,height=7cm]{hoPingPong.png}
+		\caption{Ejemplo del efecto \textit{ping-pong} en la ejecución de un mecanismo de \textit{handoff}.}
+		\label{fig:hoPingPong}
+	\end{figure}
 			
 	En resumen, dado que la ejecución frecuente de los mecanismos de \textit{handoff} ocasiona grandes consumos innecesarios de energía (críticos sobre todo para nodos cuyas fuentes de poder son limitadas, como baterías), el efecto \textit{ping-pong} debe ser reducido al mínimo posible durante la etapa de decisión de \textit{handoff} \cite{Yang2004}.
 	
 	Por esta razón los nuevos algoritmos como los presentados por \citeA{Fotouhi2012}, \citeA{Lee2011} y \citeA{Liu2015} cuyo criterio de decisión se basa en la lectura del RSSI, utilizan diferentes métodos y algoritmos sobre estas lecturas para permitir una posterior ejecución del mecanismo de \textit{handoff}.
 	Asimismo algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.	
 		
-	\section{Importancia del \textit{handoff}}
+	\section{Importancia del \textit{handoff}}\label{sec:Importancia}
 	Buscando dar solución a las necesidades de movilidad que presentan los usuarios de redes inalámbricas, se han desarrollado técnicas como el \textit{handoff}, que permiten a los usuarios de los sistemas de comunicaciones inalámbricas desplazarse libremente entre puntos de acceso de la red basadas en distintas tecnologías inalámbricas \cite{Villar2009}. 
 	
 	El uso de la telefonía celular, los dispositivos \textit{wearables} (del inglés, vestibles) y los dispositivos móviles (\textit{laptops}, \textit{gadgets}) son cada día más comunes y generales, puesto que muchos avances y desarrollos tecnológicos se han enfocado hacia aplicaciones con estos dispositivos \cite{Gruebler2014}, \cite{Hoflinger2012}, \cite{Berghaus2016}.
@@ -550,48 +551,77 @@ This document presents an investigation about the developed technological progre
 	El integrar mecanismos de \textit{handoff} dentro del sistema de red, permite hacer un amplio uso de la infraestructura desplegada, y en algunos casos, optimizar el acceso de los distintos usuarios de acuerdo con los tipos de servicios que estos requieren. 
 	El objetivo principal de la integración de estos mecanismos es que el usuario no detecte mayores cambios al ejecutarse el \textit{handoff}; así como buscar que las redes permanezcan funcionando con la misma eficiencia antes, después y durante el proceso de \textit{handoff}.
 		
-	Asimismo, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{Engineering2011}, lo que resulta en un problema menos para el usuario móvil al no tener que preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o \textit{APs}.
+	Asimismo, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{WuBaojiang2011}, lo que resulta en un problema menos para el usuario móvil al no tener que preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o \textit{APs}.
 	Con lo anterior, se ha dejado muestra que el incluir mecanismos de \textit{handoff} en la red proporciona ventajosas características.
 
-	\section{Estrategia de diseño \textit{crosslayer} - \textbf{Agregar}}
-	En la actualidad, existe una gran variedad de investigaciones y desarrollos de protocolos y aplicaciones orientadas a las \textit{WSN} \cite{Melodia2006}; sin embargo, la mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo \textit{OSI}. 
+	\section{Estrategia de diseño \textit{crosslayer} - \textbf{Agregar}}\label{sec:Crosslayer}
+	En la actualidad, existe una gran variedad de investigaciones y desarrollos de protocolos y aplicaciones orientadas a las \textit{WSN} \cite{Melodia2006}; sin embargo, la mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo \textit{OSI} \cite{Zimmermann1980}. 
 	
 	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}.
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=7cm,height=5cm]{OSImodel.png}
-			\caption{Distribución de capas del Modelo OSI.}
-			\label{fig:OSImodel}
-		\end{figure}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=9cm,height=6cm]{OSImodel.png}
+		\caption{Distribución de capas del Modelo \textit{OSI}.}
+		\label{fig:OSImodel}
+	\end{figure}
+	
+	De acuerdo a \citeA{Buenrostro-Mariscal2014}, el trabajar bajo este esquema tradicional de un diseño modular por capas, brinda principalmente las siguientes ventajas: 
+	\begin{itemize}
+		\item Cada módulo define claramente sus funciones y procedimientos propios para habilitar la independencia de capa.
+		\item Facilita la implementación y mantenimiento.
+		\item La estandarización asegura que exista una inter-operabilidad entre los variados sistemas que se encuentran integrados o incorporados a la red; i.e, todos los elementos de la red han respetado el mismo diseño modular y pueden operar entre ellos.
+	\end{itemize}
+	
+	Aunque este mismo esquema padece de deficiencias, limitaciones o restricciones \cite{Buenrostro-Mariscal2014}, algunas de las cuales se muestran a continuación:
+	\begin{itemize}
+		\item El modelo de capas \textit{OSI} fue diseñado para redes cableadas y estáticas, por lo que el dinamismo (movilidad y desconexiones/conexiones de los nodos) de las redes inalámbricas es una característica no prevista.
+		\item Los dispositivos de una red inalámbrica tienen generalmente recursos limitados (energía, procesamiento, almacenamiento), por lo que sus protocolos de comunicaciones deben adaptarse continuamente a su entorno. Un diseño tradicional de capas no permite esta adaptación periódica.
+		\item El trabajar por capas independientes y cerradas entre sí, limita la conciencia del entorno de la red por parte de los nodos.
+		\item El mantener este esquema estrictamente por capas, limita mejoras e innovación a los protocolos de comunicación para las condiciones y requerimientos actuales de una red inalámbrica.
+	\end{itemize}
+	
+	En la figura \ref{fig:OSImodel}, también es posible observar que las primeras cuatro capas del modelo se agrupan dentro del llamado \textit{stack} (del inglés, pila) de Protocolos de Comunicaciones; puesto que dichas capas son las encargadas de la comunicación por el medio físico, así como de la interacción entre los mecanismos de transmisión extremo a extremo \cite{Akyildiz2010}.		
 		
-	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{Melodia2006}; por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. 
-	Estas estrategias han sido llamadas \textit{estrategias de diseño crosslayer} y su comportamiento puede apreciarse en la figura \ref{fig:OSIcrosslayer}, tomada de \cite{Bisnik2005} .
+	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{Melodia2006}.
+	Asimismo, se menciona que el diseño de protocolos bajo este tipo de modelos no son apropiados para obtener funcionalidad eficiente en redes inalámbricas \cite{Edirisinghe2014,Wang2003,Stine2007}.
+	Por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. 
+	Éstas han sido llamadas \textit{estrategias de diseño crosslayer} y su comportamiento puede apreciarse en la figura \ref{fig:OSIcrosslayer}, tomada de \cite{Bisnik2005}.
 		
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=6cm,height=10cm]{fig06.png}
-			\caption{Diferencia de operación y filosofía entre el modelo OSI tradicional y \textit{crosslayer}.}
-			\label{fig:OSIcrosslayer}
-		\end{figure}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=6cm,height=10cm]{fig06.png}
+		\caption{Diferencia de operación y filosofía entre el modelo \textit{OSI} tradicional y \textit{crosslayer}.}
+		\label{fig:OSIcrosslayer}
+	\end{figure}
+	
+	Investigadores como \citeA{Fu2014} determinan que el establecer una estrategia de trabajo \textit{crosslayer} asegura un mejor desempeño puesto que:
+	\begin{itemize}
+		\item No rompe con la estructura estandarizada por capas del modelo de red, sino que permite la interacción entre capas no adyacentes.
+		\item Permite que las capas compartan información (e.g., parámetros, estado actual, etc.) propia a las demás capas, para que ellas puedan ajustar su comportamiento.
+		\item Al controlar el envío de información de una capa a otra, es posible compensar el desempeño y confiablidad de la red (incremento de \textit{throughput}, reducción de latencia y del \textit{BER}(siglas en inglés de \textit{Bit Error Rate}, Tasa de Error de Bits).
+	\end{itemize}
 	
 	Los mecanismos de \textit{handoff} implementan diferentes criterios para determinar el momento o situación oportuna para ejecutar el traspaso de una red a otra. 
-	Sin embargo, la manera común y general de realizar estos mecanismos se basa en trabajar siempre exclusivamente en una de las capas del modelo \textit{OSI} \cite{Bertsekas1992}. La estrategia de diseño colaborativo entre capas (\textit{crosslayer}) rompe con esos esquemas de trabajo y propone la implementación de un trabajo colectivo entre múltiples capas; dígase capa de Transporte y capa de Control de Acceso al Medio (MAC), por ejemplo. 
+	Sin embargo, la manera común y general de realizar estos mecanismos se basa en trabajar siempre exclusivamente en una de las capas del modelo \textit{OSI} \cite{Bertsekas1992}. 
+	La estrategia de diseño colaborativo entre capas (\textit{crosslayer}) rompe con esos esquemas de trabajo y propone la implementación de un trabajo colectivo entre múltiples capas; dígase capa de Transporte y subcapa de \textit{MAC} (siglas en inglés de \textit{Medium Access Control}, Control de Acceso al Medio), por ejemplo. 
 	En donde se permite una comunicación directa entre protocolos de diferentes capas, o compartiendo variables de las mismas. 
 	
-	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; por ejemplo, en el trabajo realizado por \citeA{Raisinghani2004} se presenta un estudio de varias propuestas desarrolladas bajo este tipo de diseño.
+	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; \citeA{Raisinghani2004} presenta un estudio donde describe varias de las propuestas desarrolladas para redes inalámbricas bajo este tipo de diseño.
 	
-	En \cite{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas, ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. 
+	Así también, en la investigación realizada por \citeA{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas: ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. 
 	Del mismo modo, se hace una diferencia en función a la orientación o sentido del \textit{crosslayer}; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. 
 	Estas propuestas pueden apreciarse de mejor manera en la figura \ref{fig:hoCrosslayer} tomada de \cite{Srivastava2005}, donde cada rectángulo representa una capa del modelo \textit{OSI}.
-		
-		\begin{figure}[htb]
-			\centering
-			\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
-			%\caption{Distintos tipo de propuestas de diseño crosslayer. Tomada de } %\cite{srivastava_cross-layer_2005}}
-			\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
-			\label{fig:hoCrosslayer}
-		\end{figure}
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
+		\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
+		\label{fig:hoCrosslayer}
+	\end{figure}
+
+
 	
+	% % % % % % % % % % % % % % Con esto inicia el cierre de la sección
+
 	Después de la investigación realizada, es posible aproximarse a la idea de que en un futuro la mayoría (sino todos) de los mecanismos de \textit{handoff} tenderán hacia un diseño \textit{crosslayer} dadas las bondades que éste ofrece, entre las que destaca el tener una mayor o más amplia visión del entorno, y no solo enfocarse en una capa. 
 	De acuerdo a ello, emergen algunas preguntas: 
 	\begin{itemize}
@@ -603,19 +633,18 @@ This document presents an investigation about the developed technological progre
 	
 	Esta última cuestión define el área de oportunidad que este proyecto busca aprovechar, por lo que es necesario ahondar la investigación en el tema y propulsar el desarrollo de propuestas, con el fin de definir estas variables y un mejor diseño \textit{crosslayer}.
 	
-	
-	% % % % % % Viene de Metodología -  Poner en Contexto
-	Finalmente durante la etapa de <<Conclusiones e inferencias>>, se tomó lectura de dichos trabajos de investigación encontrados (artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras) y fue posible producir las siguientes conclusiones:
+	\section{Resumen e Inferencias}\label{sec:Inferencias}
+	Durante la investigación y estudio del Esquema de Fundamentos antes mostrado, se realizó una lectura y análisis de los múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y fue posible producir las siguientes conclusiones:
 	
 	\begin{itemize}
 		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS}.
-		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes, son en general las principales métricas a beneficiar con los mecanismos propuestos.
-		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en eficiencia.
-		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la capa \textit{MAC} como integrante escencial del criterio.
-		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS} (como su implementación dentro de un mecanismo estándar de comunicación como el \textit{TCP}), resulta el mejor candidato como protocolo base.
+		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
+		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
+		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio.
+%		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta el mejor candidato como protocolo base.
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar IEEE 802.15.4, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
-		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo asistido-por-móvil.
+		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
+		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
 	\end{itemize}
 	% % % % % % % % % % % % % % % % 
 \newpage
