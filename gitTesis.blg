@@ -12,51 +12,74 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: gitTesis.bib.bib
+Repeated entry---line 107 of file gitTesis.bib.bib
+ : @article{Zimmermann1980
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 123 of file gitTesis.bib.bib
+ : @phdthesis{Buenrostro-Mariscal2014
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 131 of file gitTesis.bib.bib
+ : @article{Fu2014
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 148 of file gitTesis.bib.bib
+ : @article{Edirisinghe2014
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 164 of file gitTesis.bib.bib
+ : @inproceedings{Stine2007
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 179 of file gitTesis.bib.bib
+ : @inproceedings{Wang2003
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 211 of file gitTesis.bib.bib
+ : @book{Akyildiz2010
+ :                   ,
+I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No journal in Berghaus2016
-Warning--No journal in Ghanem2012
-Warning--No journal in Ramachandran2006
-Warning--No journal in Tang2010
-Warning--No journal in Villar2009
-You've used 64 entries,
+You've used 66 entries,
             6951 wiz_defined-function locations,
-            1765 strings with 26637 characters,
-and the built_in function-call counts, 130966 in all, are:
-= -- 15913
-> -- 1149
-< -- 6368
-+ -- 6368
-- -- 148
-* -- 8709
-:= -- 23756
-add.period$ -- 277
-call.type$ -- 64
-change.case$ -- 1133
+            1792 strings with 28065 characters,
+and the built_in function-call counts, 137037 in all, are:
+= -- 16755
+> -- 1197
+< -- 6619
++ -- 6605
+- -- 150
+* -- 9064
+:= -- 24730
+add.period$ -- 293
+call.type$ -- 66
+change.case$ -- 1179
 chr.to.int$ -- 0
-cite$ -- 133
-duplicate$ -- 3596
-empty$ -- 5213
-format.name$ -- 1913
-if$ -- 24705
+cite$ -- 132
+duplicate$ -- 3737
+empty$ -- 5452
+format.name$ -- 1952
+if$ -- 25940
 int.to.chr$ -- 0
-int.to.str$ -- 192
+int.to.str$ -- 198
 missing$ -- 0
-newline$ -- 1808
-num.names$ -- 512
-pop$ -- 2166
+newline$ -- 1878
+num.names$ -- 528
+pop$ -- 2365
 preamble$ -- 1
-purify$ -- 290
+purify$ -- 306
 quote$ -- 0
-skip$ -- 8351
+skip$ -- 8728
 stack$ -- 0
-substring$ -- 6926
-swap$ -- 2179
-text.length$ -- 232
+substring$ -- 7233
+swap$ -- 2279
+text.length$ -- 271
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 5888
-warning$ -- 5
-while$ -- 697
+type$ -- 6304
+warning$ -- 0
+while$ -- 721
 width$ -- 0
-write$ -- 2273
-(There were 5 warnings)
+write$ -- 2353
+(There were 7 error messages)
