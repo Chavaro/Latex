@@ -23,14 +23,14 @@
 \contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{21}{section.2.4}
 \contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer} - \textbf {Agregar}}{22}{section.2.5}
 \contentsline {section}{\numberline {2.6}Resumen e Inferencias}{26}{section.2.6}
-\contentsline {chapter}{\numberline {3}Trabajos relacionados}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Celular}{28}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {WLAN} - \textbf {CONTINUAR}}{29}{section.3.2}
-\contentsline {section}{\numberline {3.3}\textit {WSN} - \textbf {CONTINUAR}}{29}{section.3.3}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Implementaci\'on en Simulador}{32}{section.4.1}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{37}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{39}{chapter.6}
-\contentsline {chapter}{\numberline {A}Anexos}{41}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{43}{appendix.Alph1}
-\contentsline {section}{Referencias}{43}{section*.8}
+\contentsline {chapter}{\numberline {3}Trabajos relacionados}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Celular}{30}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {WLAN} - \textbf {CONTINUAR}}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}\textit {WSN} - \textbf {CONTINUAR}}{31}{section.3.3}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Implementaci\'on en Simulador}{34}{section.4.1}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{39}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{41}{chapter.6}
+\contentsline {chapter}{\numberline {A}Anexos}{43}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{45}{appendix.Alph1}
+\contentsline {section}{Referencias}{45}{section*.8}

@@ -557,7 +557,7 @@ This document presents an investigation about the developed technological progre
 	\section{Estrategia de diseño \textit{crosslayer} - \textbf{Agregar}}\label{sec:Crosslayer}
 	En la actualidad, existe una gran variedad de investigaciones y desarrollos de protocolos y aplicaciones orientadas a las \textit{WSN} \cite{Melodia2006}; sin embargo, la mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo \textit{OSI} \cite{Zimmermann1980}. 
 	
-	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}.
+	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}; asimismo es posible observar que las primeras cuatro capas del modelo se agrupan dentro del llamado \textit{stack} (del inglés, pila) de Protocolos de Comunicaciones; puesto que dichas capas son las encargadas de la comunicación por el medio físico, así como de la interacción entre los mecanismos de transmisión extremo a extremo \cite{Akyildiz2010}.
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=9cm,height=6cm]{OSImodel.png}
@@ -580,8 +580,6 @@ This document presents an investigation about the developed technological progre
 		\item El mantener este esquema estrictamente por capas, limita mejoras e innovación a los protocolos de comunicación para las condiciones y requerimientos actuales de una red inalámbrica.
 	\end{itemize}
 	
-	En la figura \ref{fig:OSImodel}, también es posible observar que las primeras cuatro capas del modelo se agrupan dentro del llamado \textit{stack} (del inglés, pila) de Protocolos de Comunicaciones; puesto que dichas capas son las encargadas de la comunicación por el medio físico, así como de la interacción entre los mecanismos de transmisión extremo a extremo \cite{Akyildiz2010}.		
-		
 	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{Melodia2006}.
 	Asimismo, se menciona que el diseño de protocolos bajo este tipo de modelos no son apropiados para obtener funcionalidad eficiente en redes inalámbricas \cite{Edirisinghe2014,Wang2003,Stine2007}.
 	Por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. 
@@ -598,25 +596,43 @@ This document presents an investigation about the developed technological progre
 	\begin{itemize}
 		\item No rompe con la estructura estandarizada por capas del modelo de red, sino que permite la interacción entre capas no adyacentes.
 		\item Permite que las capas compartan información (e.g., parámetros, estado actual, etc.) propia a las demás capas, para que ellas puedan ajustar su comportamiento.
-		\item Al controlar el envío de información de una capa a otra, es posible compensar el desempeño y confiablidad de la red (incremento de \textit{throughput}, reducción de latencia y del \textit{BER}(siglas en inglés de \textit{Bit Error Rate}, Tasa de Error de Bits).
+		\item Al controlar el envío de información de una capa a otra, es posible compensar el desempeño y confiablidad de la red (incremento de \textit{throughput}, reducción de latencia y del \textit{BER} (siglas en inglés de \textit{Bit Error Rate}, Tasa de Error de Bits).
 	\end{itemize}
 	
+	Es necesario entender y dejar en claro que el diseño \textit{crosslayer} no es equivalente a sustituir el modelo por capas.
+	Dado es el caso del trabajo realizado por \citeA{Braden2003}, quienes desarrollaron un esquema que sustituye al modelo por capas, y en su lugar proponen uno basado en roles.
+	En el cual, se tuvieron que rediseñar las cabeceras de los paquetes de datos que se envían de una capa a otra, o en este caso de un rol a otro rol, entre demás acciones.
+	Este tipo de desarrollos representan una mayor dificultad de diseño e implementación en comparación del diseño \textit{crosslayer}, y conceptualmente hablando no representan un diseño bajo el esquema \textit{crosslayer}.
+	
+	En su investigación, \citeA{Srivastava2005} plantea un ejemplo básico para dejar en claro el esquema \textit{crosslayer}. 
+	Ellos describen un modelo hipotético compuesto por tres capas llamadas $L_1$, $L_2$ y $L_3$, donde $L_1$ es la capa más baja, y $L_3$ es la capa en la cima.
+	En esta arquitectura, es apreciable que no existe interfaz alguna entre $L_3$ y $L_1$; sin embargo, existe la posibilidad que un protocolo sea diseñado de tal manera que requiera que $L_1$ transfiera un parámetro a $L_3$ durante el tiempo de ejecución de dicho protocolo.
+	Ello hace necesaria una nueva interfaz entre ellos, y por ende viola el concepto del modelo por capas.
+	Alternativamente, se puede considerar a $L_2$ y $L_1$ como una sola capa, y de esta manera diseñar un protocolo conjunto para esta "súper capa".
+	Otra opción es diseñar el protocolo en $L_3$, considerando al proceso siendo ejecutado en $L_1$, renunciando al hecho de diseñar protocolos para cada capa independiente.
+	Todos estos casos son ejemplos de un diseño \textit{crosslayer} con respecto al modelo de tres capas en cuestión.
+	
+	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; \citeA{Raisinghani2004} presenta un estudio donde describe varias de las propuestas desarrolladas para redes inalámbricas bajo este tipo de diseño.
+	
+		\begin{figure}[htb]
+			\centering
+			\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
+			\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
+			\label{fig:hoCrosslayer}
+		\end{figure}
+	
+	Así también, en la investigación realizada por \citeA{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas: ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. 
+	Del mismo modo, se hace una diferencia en función a la orientación o sentido del \textit{crosslayer}; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. 
+	Estas propuestas pueden apreciarse de mejor manera en la figura \ref{fig:hoCrosslayer} tomada de \cite{Srivastava2005}, donde cada rectángulo representa una capa del modelo \textit{OSI}.
+		
+	% % % % % % % CROSSLAYER EN HANDOFF
 	Los mecanismos de \textit{handoff} implementan diferentes criterios para determinar el momento o situación oportuna para ejecutar el traspaso de una red a otra. 
 	Sin embargo, la manera común y general de realizar estos mecanismos se basa en trabajar siempre exclusivamente en una de las capas del modelo \textit{OSI} \cite{Bertsekas1992}. 
 	La estrategia de diseño colaborativo entre capas (\textit{crosslayer}) rompe con esos esquemas de trabajo y propone la implementación de un trabajo colectivo entre múltiples capas; dígase capa de Transporte y subcapa de \textit{MAC} (siglas en inglés de \textit{Medium Access Control}, Control de Acceso al Medio), por ejemplo. 
 	En donde se permite una comunicación directa entre protocolos de diferentes capas, o compartiendo variables de las mismas. 
 	
-	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; \citeA{Raisinghani2004} presenta un estudio donde describe varias de las propuestas desarrolladas para redes inalámbricas bajo este tipo de diseño.
-	
-	Así también, en la investigación realizada por \citeA{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas: ya sea una interfaz nueva entre capas separadas, o una unión entre capas adyacentes. 
-	Del mismo modo, se hace una diferencia en función a la orientación o sentido del \textit{crosslayer}; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. 
-	Estas propuestas pueden apreciarse de mejor manera en la figura \ref{fig:hoCrosslayer} tomada de \cite{Srivastava2005}, donde cada rectángulo representa una capa del modelo \textit{OSI}.
-	\begin{figure}[htb]
-		\centering
-		\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
-		\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
-		\label{fig:hoCrosslayer}
-	\end{figure}
+
+
 
 
 	
