@@ -347,9 +347,8 @@ This document presents an investigation about the developed technological progre
 	
 	Para ello se muestra, en sus diferentes secciones, aspectos relacionados al tema: definiciones, clasificaciones, problemáticas e importancia; así como la estrategia de diseño \textit{crosslayer} como concepto. 
 	Con esto se pretende colocar en contexto al lector, presentando el estado del arte actual; validando a su vez, la innovación del proyecto propuesto.
-%\newpage	%Este \newpage causa conflictos
-%\pagebreak	%Este \pagebreak causa conflictos
 
+	\newpage
 	\section{Transferencia de red (\textit{handoff})}\label{sec:Transferencia}
 	El término \textit{handoff} o \textit{handover}, según el contexto, tiene un significado distinto; sin embargo tiende hacia una misma acción.
 	El \textit{Macmillan Dictionary} \citeyear{MacmillanDic} define al \textit{handoff} como la acción de dar la responsabilidad sobre algo a alguien más.
@@ -365,21 +364,19 @@ This document presents an investigation about the developed technological progre
 	
 	Como se ha mencionado anteriormente, los mecanismos de \textit{handoff} existen en aquellas redes inalámbricas en las cuales sus miembros poseen capacidades para cambiar de posición y se les permite ejecutar dicho movimiento, llegando incluso a salir del rango de cobertura de sus celdas o \textit{APs}.
 	Dada esta descripción, se cubren diferentes tecnologías de comunicación inalámbricas en las que existen los mecanismos de \textit{handoff}, como aquellas tecnologías de comunicación celular, de área local o de área personal (por mencionar algunas).
-	 
+	
+	\newpage
 	\section{Clasificación del \textit{handoff}}\label{sec:Clasificacion}
 	Así como diferentes tecnologías de comunicación poseen mecanismos de \textit{handoff}, así también existen diferentes clasificaciones para estos tipos de mecanismos.
 	Esta clasificación se ha realizado en función de varios factores; algunos de ellos pueden apreciarse en la figura \ref{fig:hoClasificacion}, basada en \cite{Nasser2006}.
 
 	Para los propósitos del presente documento basta con explicar solo algunas de las clasificaciones, de acuerdo a: la tecnología de redes involucrada, número de conexiones involucradas y al control del \textit{handoff}.
-	
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
 		\caption{Clasificación del \textit{handoff}.}
 		\label{fig:hoClasificacion}
 	\end{figure}
-	
-	\newpage	%Para ajuste solamente
 		 
 		\subsection{Redes involucradas}
 		De acuerdo a \citeA{VanQuang2012}, existen dos tipos de mecanismos de \textit{handoff} si se clasifican en función a los tipos de tecnologías de comunicación que se encuentran involucradas en la red: \textit{handoff} horizontal y \textit{handoff} vertical.
@@ -538,6 +535,7 @@ This document presents an investigation about the developed technological progre
 	Por esta razón los nuevos algoritmos como los presentados por \citeA{Fotouhi2012}, \citeA{Lee2011} y \citeA{Liu2015} cuyo criterio de decisión se basa en la lectura del RSSI, utilizan diferentes métodos y algoritmos sobre estas lecturas para permitir una posterior ejecución del mecanismo de \textit{handoff}.
 	Asimismo algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.	
 		
+	\newpage
 	\section{Importancia del \textit{handoff}}\label{sec:Importancia}
 	Buscando dar solución a las necesidades de movilidad que presentan los usuarios de redes inalámbricas, se han desarrollado técnicas como el \textit{handoff}, que permiten a los usuarios de los sistemas de comunicaciones inalámbricas desplazarse libremente entre puntos de acceso de la red basadas en distintas tecnologías inalámbricas \cite{Villar2009}. 
 	
@@ -591,7 +589,7 @@ This document presents an investigation about the developed technological progre
 		
 	\begin{figure}[ht]
 		\centering
-		\includegraphics[width=6cm,height=10cm]{fig06.png}
+		\includegraphics[width=8cm,height=11cm]{fig06.png}
 		\caption{Diferencia de operación y filosofía entre el modelo \textit{OSI} tradicional y \textit{crosslayer}.}
 		\label{fig:OSIcrosslayer}
 	\end{figure}
@@ -635,7 +633,18 @@ This document presents an investigation about the developed technological progre
 	En donde se permite una comunicación directa entre protocolos de diferentes capas, o compartiendo variables de las mismas.
 	Ejemplo de ellos se describe en la investigación realizada por \citeA{Thaalbi2014}, quienes proponen un mecanismo de \textit{handoff} vertical bajo el esquema \textit{crosslayer} en donde se involucran interacciones entra las capas de Aplicación, Transporte, Red y la subcapa \textit{MAC}; siendo éstas explotadas para obtener información precisa sobre el desempeño de la red actual, el desempeño de redes alternativas y los requerimientos de la Aplicación.
 	
+	En su propuesta, \citeA{Ahmad2007} aplican el diseño \textit{crosslayer} para el desarrollo de un \textit{handoff} vertical en donde consideran aspectos provenientes de la capa de Aplicación y de Enlace.
+	Con ello, se crean perfiles de acuerdo a la aplicación permitiendo su consideración en función a lo crítico de las mismas y ofreciendo prioridades; lo cual arrojó resultados favorables comparando su propuesta contra un mismo procedimiento sin su algoritmo.
+	
+	En el trabajo desarrollado por \citeA{Shi2009}, se aplica el diseño \textit{crosslayer} en \textit{WSN} con el propósito de eficientar y reducir el consumo de energía (puesto que éste es una limitante crítica en este tipo de redes).
+	Esto mediante la combinación de información originaria de las capas Física, Red y la subcapa \textit{MAC}.
+	
+	Del mismo modo, \citeA{Tang2010} extienden los alcances de su trabajo anterior \cite{QiulingTang2005} integrando un diseño \textit{crosslayer} con el objetivo de analizar el consumo de energía generado por un modelo de eficiencia energética, pero ahora considerando aspectos de las capas de Transporte, Red, Enlace (subcapa \textit{MAC}) y Física.
+	
 	De la misma manera \citeA{Sinky2013}, presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual buscan aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámteros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
+	
+	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
+	Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envio de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 	
 	Al igual que los anteriores, diversas investigaciones se han desarrollado en los últimos años, buscando evidenciar que el desarrollo de protocolos de comunicación trabajando en cooperación entre las capas del modelo de red, presenta grandes ventajas a comparación del modelo tradicional.	
 	
@@ -656,63 +665,48 @@ This document presents an investigation about the developed technological progre
 	Durante la investigación y estudio del Esquema de Fundamentos antes mostrado, se realizó una lectura y análisis de los múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y fue posible producir las siguientes conclusiones:
 	
 	\begin{itemize}
-		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS}.
+		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
 		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
 		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
-%		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta el mejor candidato como protocolo base.
+		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
 		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
 		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
 	\end{itemize}
-	% % % % % % % % % % % % % % % % 
+
 \newpage
 \chapter{Trabajos relacionados}\label{ch:Trabajos}
 	A continuación, se presenta un breve capítulo sobre algunos trabajos relacionados. 
 	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}.
-	
-	
-	% % % % % % % % % Viene de Problemática - Adecuar
-	Por ejemplo, en la propuesta de \citeA{Ahmad2007} se aplica el diseño crosslayer para un \textit{handoff} vertical en donde consideran aspectos provenientes de la capa de aplicación e información de la capa de enlace.
-	Con ello, se crean perfiles de acuerdo a la aplicación permitiendo la consideración de aplicaciones en función a lo crítico de las mismas y ofreciendo prioridades; lo cual arrojó resultados favorables comparando su propuesta contra un mismo procedimiento sin su algoritmo.
-	
-	En el trabajo desarrollado por \citeA{Shi2009}, se aplica el diseño \textit{crosslayer} en \textit{WSN} con el propósito de eficientar y reducir el consumo de energía puesto que éste es una limitante crítica en este tipo de redes.
-	Esto mediante la combinación de información originaria de las capas física, de control de acceso al medio y de red.
-	
-	Del mismo modo, \citeA{Tang2010} extienden los alcances de su trabajo anterior \cite{QiulingTang2005} integrando un diseño \textit{crosslayer} con el objetivo de analizar el consumo de energía generado por un modelo de eficiencia energética, pero ahora considerando aspectos de las capas de transporte, acceso al medio, red, enlace, física, y demás aspectos.
-	
-	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un protocolo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
-	Este protocolo opera en las capas de transporte y de control de acceso al medio, interactuando con el mecanismo de envío de información \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con ello posee la ventaja de ser capaz de detener o reactivar el envió de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
-	
-	% % % % % % % % % % % % % % % % % % % % % %
-	
-	% % % % % % % % % % Viene de Justificacion
-		\begin{figure}[htb]
-			\centering
-			\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
-			\caption{Requerimientos de mediciones biomédicas. \textbf{ES DE cite[Arnon2003]}}
-			\label{fig:bioMeasurements}
-		\end{figure}
-	% % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \newpage
-	\section{Celular}
+	\section{Celular}\label{sec:Celular}
 	El término \textit{handoff} o \textit{handover} se utilizó primeramente en redes de comunicación celulares y satelitales, con el propósito de permitir movilidad entre los usuarios \cite{Pollini1996}.
-	En las comunicaciones por tecnología celular o satelital, el \textit{handoff} permite al usuario recibir un servicio de comunicación continuo incluso al moverse entre diferentes celdas o alcances de distintos \textit{APs}, sin que él lo note.
-	Esta característica y el hecho que el servicio de telefonía móvil es en la actualidad más una necesidad que un lujo, muchos avances tecnológicos hacia el beneficio de estas tecnologías han sido desarrollados.
+	En las comunicaciones por tecnología celular o satelital, el \textit{handoff} permite al usuario recibir un servicio de comunicación continuo incluso al moverse entre diferentes celdas o área de cobertura de distintos \textit{APs}, sin que éste lo note.
 	
-	En los trabajos desarrollados por \citeA{McNair2004,Nasser2006}, se aborda la temática de las redes de comunicación celular \textit{4G} (de cuarta generación). 
+	Esta característica y el hecho que el servicio de telefonía móvil es en la actualidad más una necesidad que un lujo, ha alentado el desarrollo de muchos avances tecnológicos hacia el beneficio de estas tecnologías.
+	En la investigación de \citeA{Carneiro2004}, se menciona que con el objetivo de hacer frente a los problemas de bajo rendimiento en los enlaces inalámbricas y terminales móviles, se necesita una arquitectura de protocolo que considere interacciones entre capas (\textit{crosslayer}).
+	
+	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}.
+	Esta estrategia plantea una unión de la segunda y tercer capa, reordenando y combinando los mensajes de señalización.
+	
+	Asimismo, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
+	
+	En los trabajos desarrollados por \citeA{McNair2004,Nasser2006}, se aborda la temática de las redes de comunicación celular \textit{4G}. 
 	Para las cuales se pretenden desarrollar nuevas estrategias de decisión para el mecanismo de \textit{handoff} para los dispositivos móviles en la red.
 	Muestra de ello, son las propuestas presentadas por dichos autores, en las que se han desarrollado diferentes funciones con distintos criterios de decisión de para la ejecución de un \textit{handoff vertical}.
-	
-	En el primer caso, dicha decisión se basa en criterios ponderados en relación a los tipos de servicio, costo, condiciones de la red, desempeño del sistema, estado de los nodos móviles y preferencias del usuario; en el segundo caso, se da importancia mayor a parámetros de red como: costo de servicio, seguridad, consumo de energía, condiciones de la red y desempeño de la red; todo ello con el fin de ofrecer un criterio con mayor alcance y capaz de brindar un \textit{handoff} de mayor eficiencia.
-	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red.
+	En el caso de \citeA{McNair2004}, dicha decisión se basa en criterios ponderados en relación a los tipos de servicio, costo, condiciones de la red, desempeño del sistema, estado de los nodos móviles y preferencias del usuario.
+	Con ello se asenta que entre los objetivos de su trabajo fue el beneficiar el \textit{QoS} en aplicaciones de telefonía celular.
+	Por otro lado, \citeA{Nasser2006} dan importancia mayor a parámetros de red como: costo de servicio, seguridad, consumo de energía, condiciones de la red y desempeño de la red; todo ello con el fin de ofrecer un criterio con mayor alcance y capaz de brindar un \textit{handoff} de mayor eficiencia.
+
+	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
 	\section{\textit{WLAN} - \textbf{CONTINUAR}}
 	A diferencia de las redes satelitales y celulares, las \textit{WLAN} poseen un menor rango de cobertura; sin embargo esta característica no las exime de la necesidad de mecanismos de \textit{handoff}.
 	Es decir, en \textit{WLAN} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
 	
-	Por ello, en la investigación realizada por \citeA{Kim2010,MinLiu2008,Ramachandran2006} se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia la calidad del servicio.
+	Por ello, en la investigación realizada por \citeA{Kim2010,MinLiu2008,Ramachandran2006} se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia el \textit{QoS}.
 	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo.
 	
 	En su respectivo trabajo de investigación, \citeA{Ahmed2014,Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
@@ -733,6 +727,15 @@ This document presents an investigation about the developed technological progre
 	the long-made promise of WSN deployment in scenarios as critical
 	and important as military, health or transport scenarios, for which
 	the number of real implementations is still very low.
+	
+		% % % % % % % % % % Viene de Justificacion
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
+				\caption{Requerimientos de mediciones biomédicas. \textbf{ES DE cite[Arnon2003]}}
+				\label{fig:bioMeasurements}
+			\end{figure}
+		% % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	
 	
 
@@ -797,8 +800,6 @@ This document presents an investigation about the developed technological progre
 %	
 %	Sobre la <<Definición y aplicación de criterios de selección>>, una lista de las \textit{key words} (del inglés, palabras clave) utilizadas se muestra enseguida.
 %	Estas palabras clave fueron utilizadas en inglés por ser éste el idioma universal, y dado que la gran mayoría de las investigaciones y trabajos consultados se desarrollaron en dicho idioma. 
-%	
-%	\newpage
 %	Además, fueron utilizadas de manera aleatoria; es decir, en algunas ocasiones se combinaron unas de ellas, y en otras se aplicó otra combinación de las mismas.
 %	
 %	\begin{itemize}

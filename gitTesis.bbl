@@ -113,13 +113,17 @@ Arnon, S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2003}{}{}.
+\APACrefYearMonthDay{2003}{feb}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{A comparative study of wireless communication network
   configurations for medical applications}} {{A comparative study of wireless
   communication network configurations for medical applications}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Ieee Wireless Communications}{10}{1}{56--61}.
+\APACjournalVolNumPages{IEEE Wireless Communications}{10}{1}{56--61}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1182112}
+  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/MWC.2003.1182112} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -314,6 +318,77 @@ Buenrostro-Mariscal, R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1587/transcom.E98.B.1333} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Carneiro%
+, Ruela%
+\BCBL {}\ \BBA {} Ricardo%
+}{%
+Carneiro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Carneiro2004}
+\APACinsertmetastar {%
+Carneiro2004}%
+\begin{APACrefauthors}%
+Carneiro, G.%
+, Ruela, J.%
+\BCBL {}\ \BBA {} Ricardo, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design in 4G wireless terminals}}
+  {{Cross-layer design in 4G wireless terminals}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{11}{2}{7--13}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1295732}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2004.1295732} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Cai%
+, Sofia%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Chen2007}
+\APACinsertmetastar {%
+Chen2007}%
+\begin{APACrefauthors}%
+Chen, L\BPBI C\BPBI L.%
+, Cai, X\BPBI C\BPBI X.%
+, Sofia, R.%
+\BCBL {}\ \BBA {} Huang, Z\BPBI H\BPBI Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{sep}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Cross-layer Fast Handover Scheme For Mobile WiMAX}}
+  {{A Cross-layer Fast Handover Scheme For Mobile WiMAX}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {66th IEEE Vehicular Technology Conference (VTC-07)}
+  {66th ieee vehicular technology conference (vtc-07)}\ (\BPGS\ 1578--1582).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4349984}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/VETECF.2007.335} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -767,6 +842,40 @@ H{\"{o}}flinger, F.%
   Indoor Navigation (IPIN)}{}{November}{1--9}.
 \newblock
 \begin{APACrefDOI} \doi{10.1109/IPIN.2012.6418877} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jo%
+\ \BBA {} Cho%
+}{%
+Jo%
+\ \BBA {} Cho%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Jo2008}
+\APACinsertmetastar {%
+Jo2008}%
+\begin{APACrefauthors}%
+Jo, J.%
+\BCBT {}\ \BBA {} Cho, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer optimized vertical handover schemes between
+  mobile WiMAX and 3G networks}} {{Cross-layer optimized vertical handover
+  schemes between mobile WiMAX and 3G networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{KSII Transactions on Internet and Information
+  Systems}{2}{4}{171--183}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ksii.cafe24.com/download.jsp?filename=TIIS{\_}Vol2No4P1Aug08.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3837/tiis.2008.04.001} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1225,6 +1334,43 @@ Pollini, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Qi Wang}%
+\ \BBA {} Abu-Rgheff%
+}{%
+{Qi Wang}%
+\ \BBA {} Abu-Rgheff%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+Wang2003}
+\APACinsertmetastar {%
+Wang2003}%
+\begin{APACrefauthors}%
+{Qi Wang}%
+\BCBT {}\ \BBA {} Abu-Rgheff, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer signalling for next-generation wireless
+  systems}} {{Cross-layer signalling for next-generation wireless
+  systems}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2003 IEEE Wireless Communications and Networking, 2003.
+  WCNC 2003.} {2003 ieee wireless communications and networking, 2003. wcnc
+  2003.}\ (\BVOL~2, \BPGS\ 1084--1089).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1200522}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WCNC.2003.1200522} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Qiuling Tang}%
 , {Liuqing Yang}%
 , Giannakis%
@@ -1453,13 +1599,17 @@ Silva, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2014}{}{}.
+\APACrefYearMonthDay{2014}{oct}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Mobility in wireless sensor networks - Survey and
   proposal}} {{Mobility in wireless sensor networks - Survey and
   proposal}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Computer Communications}{52}{}{1--20}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140366414001911}
+  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.comcom.2014.05.008} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -1483,7 +1633,7 @@ Silva, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2012}{}{}.
+\APACrefYearMonthDay{2012}{jun}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{A proposal for proxy-based mobility in WSNs}} {{A
   proposal for proxy-based mobility in WSNs}}.{\BBCQ}
@@ -1584,23 +1734,28 @@ Stine%
 }{%
 Stine%
 }{%
-{\protect \APACyear {2007}}%
+{\protect \APACyear {2006}}%
 }]{%
 Stine2007}
 \APACinsertmetastar {%
 Stine2007}%
 \begin{APACrefauthors}%
-Stine, J\BPBI A.%
+Stine, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2007}{}{}.
+\APACrefYearMonthDay{2006}{oct}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Cross-layer design of MANETs: The only Option}}
-  {{Cross-layer design of MANETs: The only Option}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Cross-Layer Design of MANETs: The Only Option}}
+  {{Cross-Layer Design of MANETs: The Only Option}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Proceedings - IEEE Military Communications Conference
-  MILCOM}{}{}{}.
+\BIn{} \APACrefbtitle {MILCOM 2006} {Milcom 2006}\ (\BPGS\ 1--7).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4086836}
+  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/MILCOM.2006.302250} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -1842,36 +1997,6 @@ Virone, G.%
 \BIn{} \APACrefbtitle {Transdisciplinary Conference on Distributed Diagnosis
   and Home Healthcare (D2H2)} {Transdisciplinary conference on distributed
   diagnosis and home healthcare (d2h2)}\ (\BPGS\ 2--4).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Wang%
-\ \BBA {} Abu-Rgheff%
-}{%
-Wang%
-\ \BBA {} Abu-Rgheff%
-}{%
-{\protect \APACyear {2003}}%
-}]{%
-Wang2003}
-\APACinsertmetastar {%
-Wang2003}%
-\begin{APACrefauthors}%
-Wang, Q.%
-\BCBT {}\ \BBA {} Abu-Rgheff, M\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2003}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Cross-layer signalling for next-generation wireless
-  systems}} {{Cross-layer signalling for next-generation wireless
-  systems}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{IEEE Wireless Communications and Networking Conference,
-  WCNC}{2}{C}{1084--1089}.
-\newblock
-\begin{APACrefDOI} \doi{10.1109/WCNC.2003.1200522} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
