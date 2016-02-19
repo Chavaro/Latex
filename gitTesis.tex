@@ -468,8 +468,8 @@ This document presents an investigation about the developed technological progre
 			\item{Controlado-por-Móvil}, \item{Controlado-por-Red}, o \item{Asistido-por-Móvil}. 
 		\end{itemize}
 		
-		Entonces, el mecanismo de decisión puede ubicarse en una entidad de la red (como en voz celular) cuando se es \textit{controlado-por-red}; o en el mismo nodo móvil (como en el caso de WLANs) cuando es \textit{controlado-por-móvil}.
-		Para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como GPRS, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
+		Entonces, el mecanismo de decisión puede ubicarse en una entidad de la red (como en voz celular) cuando se es \textit{controlado-por-red}; o en el mismo nodo móvil cuando es \textit{controlado-por-móvil}, como en el caso de \textit{WLANs} (siglas en ingles de \textit{Wireless Local Area Networks}, Redes Inalámbricas de Área Local).
+		Para ejemplificar un caso \textit{asistido-por-móvil} puede tomarse como referencia el caso de tecnologías celulares como \textit{GPRS}, donde la información enviada por un nodo móvil puede ser utilizada por una entidad de red para tomar la decisión de \textit{handoff} \cite{Pahlavan2000}.
 		
 		Sin embargo, existen otros trabajos que agregan un cuarto miembro a esta clasificación.
 		\begin{itemize}
@@ -703,15 +703,33 @@ This document presents an investigation about the developed technological progre
 	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
 	\section{\textit{WLAN} - \textbf{CONTINUAR}}
-	A diferencia de las redes satelitales y celulares, las \textit{WLAN} poseen un menor rango de cobertura; sin embargo esta característica no las exime de la necesidad de mecanismos de \textit{handoff}.
-	Es decir, en \textit{WLAN} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
+	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
+	Las redes \textit{WLAN} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
+	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos móviles; i.e., celulares, \textit{tablets}, \textit{laptops} y computadoras.
+	Asimismo, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
+	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan solo estar dentro de su área de cobertura.
 	
-	Por ello, en la investigación realizada por \citeA{Kim2010,MinLiu2008,Ramachandran2006} se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia el \textit{QoS}.
-	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo.
+	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes; aún mientras cambian de ubicación y se trasladan a lo largo del día.
+	Sin considerar que a diferencia de las redes satelitales y celulares, las \textit{WLAN} poseen un menor rango de cobertura.
+	Por dicha razón, las \textit{WLAN} no se encuentran exentas de la necesidad de mecanismos de \textit{handoff}.
+	Es decir, en \textit{WLAN} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
+	Según \citeA{Pack2007}, el soporte a estos mecanismos y su desarrollo se ha tornado en uno de los principales y más importantes aspectos en la tecnología \textit{WLAN}.
+	
+	% % % % % Handoff
+	As described in [6], the handoff process in IEEE 802.11 networks
+	can be divided into two steps: discovery and reauthentication
+	
 	
 	En su respectivo trabajo de investigación, \citeA{Ahmed2014,Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
 	
 	Además, en la investigación presentada por \citeA{Tsukamoto2007} se realizan experimentos utilizando \textit{FTP} (siglas en inglés de \textit{File Transfer Protocol}, Protocolo de Transferencia de Archivos) y aplicaciones de Voz IP (\textit{VoIP}) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
+	
+	
+	% % % % % Esto es QoS
+	Por ello, en la investigación realizada por \citeA{Kim2010}; \citeA{MinLiu2008}; y \citeA{Ramachandran2006}, se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia el \textit{QoS}.
+	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo.
+	
+
 		 
 	\section{\textit{WSN} - \textbf{CONTINUAR}}
 	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen usar un canal a la vez.
@@ -727,6 +745,16 @@ This document presents an investigation about the developed technological progre
 	the long-made promise of WSN deployment in scenarios as critical
 	and important as military, health or transport scenarios, for which
 	the number of real implementations is still very low.
+	
+	
+	% % % % % % % % %
+	
+		De la misma manera \citeA{Sinky2013}, presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual buscan aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámteros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
+		
+		Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
+		Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envio de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
+		
+	% % % % % % % % %
 	
 		% % % % % % % % % % Viene de Justificacion
 			\begin{figure}[ht]
