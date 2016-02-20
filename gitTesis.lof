@@ -17,9 +17,13 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo \textit {OSI} tradicional y \textit {crosslayer}.}}{26}{figure.2.11}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.}}{28}{figure.2.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Requerimientos de mediciones biom\'edicas. \textbf {ES DE cite[Arnon2003]}}}{38}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitectura de la red m\'ovil \textit {WiMAX} en t\'erminos de dispositivos y sus funciones.}}{34}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Caracter\IeC {\'\i }sticas deseables de \textit {handoff}.}}{35}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Caracter\IeC {\'\i }sticas deseables de \textit {handoff}.}}{36}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Fases generales de un mecanismo de \textit {handoff}.}}{37}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Requerimientos de mediciones biom\'edicas. \textbf {ES DE cite[Arnon2003]}}}{39}{figure.3.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Algunas fuentes de investigaci\'on consultadas.}}{40}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Algunas fuentes de investigaci\'on consultadas.}}{42}{figure.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

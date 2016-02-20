@@ -185,7 +185,7 @@ This document presents an investigation about the developed technological progre
 		
 		Cuando se habla del alcance de una red se hace referencia a la cobertura máxima de la misma, pudiendo tratarse de una distancia desde metros hasta kilómetros.
 		En la figura \ref{fig:networkRanges} se muestra una clasificación de las redes inalámbricas y se observa claramente que la \textit{WPAN} (siglas en inglés de \textit{Wireless Personal Area Network}, Red Inalámbrica de Área Personal) es la red de menor alcance (alcance menor a 10 metros), aunque algunos autores mencionan que existe un grupo de menor alcance: las \textit{WBAN} (siglas en inglés de \textit{Wireless Body Area Networks}, Redes Inalámbricas de Área Corporal), cuyo alcance y aplicación se limita al cuerpo de una persona \cite{Khan2012}.	
-		\begin{figure}[htb]
+		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.50\textwidth]{networkRanges.png}
 			\caption{Clasificación de las redes inalámbricas en función de su alcance.}
@@ -612,12 +612,12 @@ This document presents an investigation about the developed technological progre
 	
 	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; \citeA{Raisinghani2004} presenta un estudio donde describe varias de las propuestas desarrolladas para redes inalámbricas bajo este tipo de diseño.
 	
-		\begin{figure}[htb]
-			\centering
-			\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
-			\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
-			\label{fig:hoCrosslayer}
-		\end{figure}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
+		\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
+		\label{fig:hoCrosslayer}
+	\end{figure}
 	
 	Así también, en la investigación realizada por \citeA{Srivastava2005} se propone una clasificación del \textit{crosslayer}, en las que se muestran las posibles interacciones entre capas: ya sea el diseño de una interfaz nueva entre capas separadas (Figura \ref{fig:hoCrosslayer} A-C), una unión de capas adyacentes (Figura \ref{fig:hoCrosslayer} D), o el diseño de protocolos en donde exista consideración entre capas no adyacentes sin la creación de interfaces entre ellas (Figura \ref{fig:hoCrosslayer} E). 
 	Del mismo modo, se hace una diferencia en función a la orientación o sentido del \textit{crosslayer}; esto es, si la interfaz va de capas inferiores a superiores, de superiores a inferiores, o si se trata de un flujo iterativo. 
@@ -674,7 +674,7 @@ This document presents an investigation about the developed technological progre
 \newpage
 \chapter{Trabajos relacionados}\label{ch:Trabajos}
 	A continuación, se presenta un breve capítulo sobre algunos trabajos relacionados. 
-	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}.
+	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}, mencionando las principales características de dichos trabajos de investigación y resaltando la implementación de diseños \textit{crosslayer} en sus trabajos.
 
 \newpage
 	\section{Redes Celulares}\label{sec:Celular}
@@ -684,24 +684,46 @@ This document presents an investigation about the developed technological progre
 	Esta característica y el hecho que el servicio de telefonía móvil es en la actualidad más una necesidad que un lujo, ha alentado el desarrollo de muchos avances tecnológicos hacia el beneficio de estas tecnologías.
 	En la investigación de \citeA{Carneiro2004}, se menciona que con el objetivo de hacer frente a los problemas de bajo rendimiento en los enlaces inalámbricas y terminales móviles, se necesita una arquitectura de protocolo que considere interacciones entre capas (\textit{crosslayer}).
 	
-	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}.
+	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}, como se muestra en la Figura \ref{fig:mobileWiMAX}, tomada del mismo trabajo.
 	Esta estrategia plantea una unión de la segunda y tercer capa, reordenando y combinando los mensajes de señalización.
-	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=11cm,height=9cm]{mobileWiMAX.png}
+		\caption{Arquitectura de la red móvil \textit{WiMAX} en términos de dispositivos y sus funciones.}
+		\label{fig:mobileWiMAX}
+	\end{figure}
+
 	Asimismo, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
 	
 	En los trabajos desarrollados por \citeA{McNair2004,Nasser2006}, se aborda la temática de las redes de comunicación celular \textit{4G}. 
 	Para las cuales se pretenden desarrollar nuevas estrategias de decisión para el mecanismo de \textit{handoff} para los dispositivos móviles en la red.
 	Muestra de ello, son las propuestas presentadas por dichos autores, en las que se han desarrollado diferentes funciones con distintos criterios de decisión de para la ejecución de un \textit{handoff vertical}.
+	
 	En el caso de \citeA{McNair2004}, dicha decisión se basa en criterios ponderados en relación a los tipos de servicio, costo, condiciones de la red, desempeño del sistema, estado de los nodos móviles y preferencias del usuario.
 	Con ello se asenta que entre los objetivos de su trabajo fue el beneficiar el \textit{QoS} en aplicaciones de telefonía celular.
+	
 	Por otro lado, \citeA{Nasser2006} dan importancia mayor a parámetros de red como: costo de servicio, seguridad, consumo de energía, condiciones de la red y desempeño de la red; todo ello con el fin de ofrecer un criterio con mayor alcance y capaz de brindar un \textit{handoff} de mayor eficiencia.
+	En su investigación, también plantea una serie de características que considera deseables en cualquier mecanismo de \textit{handoff}, dichas se muestran en la figura \ref{fig:hoCaracteristicas} basada en su trabajo.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=10cm,height=6cm]{hoCaracteristicas.png}
+		\caption{Características deseables de \textit{handoff}.}
+		\label{fig:hoCaracteristicas}
+	\end{figure}
 
 	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
 	\section{\textit{WLANs}}
 	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
 	Las redes \textit{WLAN} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
-	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos móviles; i.e., celulares, \textit{tablets}, \textit{laptops} y computadoras.
+	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos móviles; i.e., celulares, \textit{tablets}, \textit{laptops} y computadoras (Figura \ref{fig:wlanNetwork}).
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=10cm,height=6cm]{wlanNetwork.png}
+		\caption{Características deseables de \textit{handoff}.}
+		\label{fig:wlanNetwork}
+	\end{figure}
+	
 	Asimismo, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
 	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan solo estar dentro de su área de cobertura.
 	
@@ -712,7 +734,14 @@ This document presents an investigation about the developed technological progre
 	Según \citeA{Pack2007}, el soporte a estos mecanismos y su desarrollo se ha tornado en uno de los principales y más importantes aspectos en la tecnología \textit{WLAN}.
 	Al respecto, \citeA{Arbaugh2002} definen que, a diferencia de la tecnología celular, el proceso de \textit{handoff} en redes \textit{WLAN} (específicamente menciona las redes \textit{IEEE 802.11}) puede dividirse en dos pasos: el descubrimiento y la reautenticación.
 	
-	Con respecto al trabajo anterior, \citeA{Ahmed2014} definen que en general, los procesos de \textit{handoff} consisten de tres etapas principales: Medición e iniciación de \textit{handoff}, Decisión de \textit{handoff} y Ejecución de \textit{handoff}. 
+	Con respecto al trabajo anterior, \citeA{Ahmed2014} definen que en general, los procesos de \textit{handoff} consisten de tres etapas principales: Medición e iniciación de \textit{handoff}, Decisión de \textit{handoff} y Ejecución de \textit{handoff}, ellos se explica en la figura \ref{fig:hoFases}.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=12cm,height=3cm]{hoFases.png}
+		\caption{Fases generales de un mecanismo de \textit{handoff}.}
+		\label{fig:hoFases}
+	\end{figure}
+	 
 	Además de dicha aclaración en su trabajo de investigación, \citeA{Ahmed2014}, así como \citeA{Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones, propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
 	Ello busca establecer un esquema que defina qué parámetros deberían considerarse al diseñar mecanismo de \textit{handoff} para redes \textit{WLAN}.
 	
@@ -733,7 +762,9 @@ This document presents an investigation about the developed technological progre
 	
 	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{WLAN} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además  afectar de manera mínima aspectos de \textit{QoS} de la red.
 		 
-	\section{\textit{WSNs} - \textbf{CONTINUAR}}
+	\section{\textit{WSNs} - \textbf{En Proceso}}
+	Las \textit{WSNs} son redes
+	
 	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen usar un canal a la vez.
 	También deben considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
 	
