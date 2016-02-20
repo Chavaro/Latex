@@ -1,7 +1,3 @@
-% Version 2.0
-% Encontré una platilla para tesis: http://nokyotsu.com/latex/ezthesis.html, investigarla.
-% Buen tuto: http://minisconlatex.blogspot.mx/
-% Cambiar font size: https://en.wikibooks.org/wiki/LaTeX/Fonts#Sizing_text
 % ======= Header ==================
 \documentclass[a4paper,openright,12pt]{book}% Specify format defaults [Opc: pg 10-11]
 \usepackage[spanish, es-lcroman]{babel}		% Para enumerar en roman minúsculas
@@ -681,7 +677,7 @@ This document presents an investigation about the developed technological progre
 	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}.
 
 \newpage
-	\section{Celular}\label{sec:Celular}
+	\section{Redes Celulares}\label{sec:Celular}
 	El término \textit{handoff} o \textit{handover} se utilizó primeramente en redes de comunicación celulares y satelitales, con el propósito de permitir movilidad entre los usuarios \cite{Pollini1996}.
 	En las comunicaciones por tecnología celular o satelital, el \textit{handoff} permite al usuario recibir un servicio de comunicación continuo incluso al moverse entre diferentes celdas o área de cobertura de distintos \textit{APs}, sin que éste lo note.
 	
@@ -702,7 +698,7 @@ This document presents an investigation about the developed technological progre
 
 	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
-	\section{\textit{WLAN} - \textbf{CONTINUAR}}
+	\section{\textit{WLANs}}
 	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
 	Las redes \textit{WLAN} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
 	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos móviles; i.e., celulares, \textit{tablets}, \textit{laptops} y computadoras.
@@ -714,24 +710,30 @@ This document presents an investigation about the developed technological progre
 	Por dicha razón, las \textit{WLAN} no se encuentran exentas de la necesidad de mecanismos de \textit{handoff}.
 	Es decir, en \textit{WLAN} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
 	Según \citeA{Pack2007}, el soporte a estos mecanismos y su desarrollo se ha tornado en uno de los principales y más importantes aspectos en la tecnología \textit{WLAN}.
+	Al respecto, \citeA{Arbaugh2002} definen que, a diferencia de la tecnología celular, el proceso de \textit{handoff} en redes \textit{WLAN} (específicamente menciona las redes \textit{IEEE 802.11}) puede dividirse en dos pasos: el descubrimiento y la reautenticación.
 	
-	% % % % % Handoff
-	As described in [6], the handoff process in IEEE 802.11 networks
-	can be divided into two steps: discovery and reauthentication
+	Con respecto al trabajo anterior, \citeA{Ahmed2014} definen que en general, los procesos de \textit{handoff} consisten de tres etapas principales: Medición e iniciación de \textit{handoff}, Decisión de \textit{handoff} y Ejecución de \textit{handoff}. 
+	Además de dicha aclaración en su trabajo de investigación, \citeA{Ahmed2014}, así como \citeA{Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones, propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
+	Ello busca establecer un esquema que defina qué parámetros deberían considerarse al diseñar mecanismo de \textit{handoff} para redes \textit{WLAN}.
 	
+	Agregando a este tema, \citeA{Tsukamoto2007} presentan en su investigación los resultados obtenidos de la realización de múltiples experimentos utilizando \textit{FTP} (siglas en inglés de \textit{File Transfer Protocol}, Protocolo de Transferencia de Archivos) y aplicaciones de \textit{VoIP} (siglas en inglés de \textit{Voice over IP}, Voz sobre IP o Voz IP) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
 	
-	En su respectivo trabajo de investigación, \citeA{Ahmed2014,Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{WLANs} en sus respectivas investigaciones; tales como conceptos, clasificaciones propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
+	Los trabajos anteriores permiten entender que existe la necesidad de mejorar los mecanismos de \textit{handoff} en este tipo de redes, y dejan en claro que los investigadores están tomando medidas en el asunto, buscando y proponiendo alternativas para mejorar o sustituir los mecanismos actuales.
 	
-	Además, en la investigación presentada por \citeA{Tsukamoto2007} se realizan experimentos utilizando \textit{FTP} (siglas en inglés de \textit{File Transfer Protocol}, Protocolo de Transferencia de Archivos) y aplicaciones de Voz IP (\textit{VoIP}) con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
-	
+	Sin embargo, los trabajos antes mencionados atacan la problemática del proceso de \textit{handoff}, buscando reducir el tiempo del mismo y no se preocupan por cómo afecta ello a la aplicación de la red durante dicho proceso.
 	
 	% % % % % Esto es QoS
-	Por ello, en la investigación realizada por \citeA{Kim2010}; \citeA{MinLiu2008}; y \citeA{Ramachandran2006}, se describen soluciones a problemáticas existentes en dichas redes, sobretodo haciendo un enfoque hacia el \textit{QoS}.
-	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo.
+	Por ello, en la investigación realizada por \citeA{Kim2010}; \citeA{MinLiu2008}; y \citeA{Ramachandran2006}, se describen soluciones haciendo un enfoque hacia el \textit{QoS}.
+	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo; por ejemplo: ancho de banda disponible, retrasos de tiempo, tasa de datos, costo, entre otros.
 	
-
+	Una mayor cantidad de parámetros pueden resultar en decisiones más inteligentes.
+	\citeA{ChengWeiLee2005} proponen una técnica de \textit{handoff} pendiente del ancho de banda disponible en la \textit{WLAN} (utilizando herramientas definidas en el estándar \textit{IEEE 802.11e}), ello se aúna al criterio de \textit{RSSI} tradicional en decisiones de \textit{handoff}.
+	
+	Particularmente en el trabajo de \citeA{Kim2010}, se propone la consideración del historial de servicio del tráfico del usuario, resultando en un mejor desempeño (menores ejecuciones de \textit{handoff}) de acuerdo a sus pruebas.
+	
+	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{WLAN} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además  afectar de manera mínima aspectos de \textit{QoS} de la red.
 		 
-	\section{\textit{WSN} - \textbf{CONTINUAR}}
+	\section{\textit{WSNs} - \textbf{CONTINUAR}}
 	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen usar un canal a la vez.
 	También deben considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
 	
@@ -956,8 +958,6 @@ This document presents an investigation about the developed technological progre
 			\item \textbf{Documentación y resultados}: Una vez obtenidos los resultados esperados, y siendo ellos positivos, se continuó hacia la documentación de los mismos.
 		\end{enumerate}
 	% % % % % % % % % % % % % % %
-	
-	\lipsum[1-3]		%Texto de relleno (3 párrafos)
 
 \newpage
 \chapter{Evaluación y análisis de resultados}\label{ch:Evaluacion}

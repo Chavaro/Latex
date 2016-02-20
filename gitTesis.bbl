@@ -34,7 +34,7 @@ Ahmad, S\BPBI Z.%
 \bibitem [\protect \citeauthoryear {%
 Ahmed%
 , Boulahia%
-\BCBL {}\ \BBA {} Ga??ti%
+\BCBL {}\ \BBA {} Gaiti%
 }{%
 Ahmed%
 \ \protect \BOthers {.}}{%
@@ -46,19 +46,23 @@ Ahmed2014}%
 \begin{APACrefauthors}%
 Ahmed, A.%
 , Boulahia, L\BPBI M.%
-\BCBL {}\ \BBA {} Ga??ti, D.%
+\BCBL {}\ \BBA {} Gaiti, D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2014}{}{}.
+\APACrefYearMonthDay{2014}{jan}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Enabling vertical handover decisions in heterogeneous
-  wireless networks: A state-of-the-art and a classification}} {{Enabling
-  vertical handover decisions in heterogeneous wireless networks: A
-  state-of-the-art and a classification}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Enabling Vertical Handover Decisions in Heterogeneous
+  Wireless Networks: A State-of-the-Art and A Classification}} {{Enabling
+  Vertical Handover Decisions in Heterogeneous Wireless Networks: A
+  State-of-the-Art and A Classification}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{IEEE Communications Surveys and
+\APACjournalVolNumPages{IEEE Communications Surveys {\&}
   Tutorials}{16}{2}{776--811}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6587998}
+  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -881,12 +885,49 @@ Khan, J\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lee%
+C\BPBI W.~Lee%
+, Chen%
+, Chen%
+\BCBL {}\ \BBA {} Sun%
+}{%
+C\BPBI W.~Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+ChengWeiLee2005}
+\APACinsertmetastar {%
+ChengWeiLee2005}%
+\begin{APACrefauthors}%
+Lee, C\BPBI W.%
+, Chen, L\BPBI M.%
+, Chen, M\BPBI C.%
+\BCBL {}\ \BBA {} Sun, Y\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{nov}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Journal on Selected Areas in
+  Communications}{23}{11}{2118--2127}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D\BPBI K.~Lee%
 , Kim%
 , Jeong%
 \BCBL {}\ \BBA {} Kang%
 }{%
-Lee%
+D\BPBI K.~Lee%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
 }]{%
@@ -1162,6 +1203,39 @@ Melodia, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Mishra%
+, Shin%
+\BCBL {}\ \BBA {} Arbaugh%
+}{%
+Mishra%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Arbaugh2002}
+\APACinsertmetastar {%
+Arbaugh2002}%
+\begin{APACrefauthors}%
+Mishra, A.%
+, Shin, M.%
+\BCBL {}\ \BBA {} Arbaugh, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An empirical analysis of the IEEE 802.11 MAC layer
+  handoff process}} {{An empirical analysis of the IEEE 802.11 MAC layer
+  handoff process}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM SIGCOMM Computer Communication Review}{33}{2}{93}.
+\newblock
+\begin{APACrefURL} \url{http://portal.acm.org/citation.cfm?doid=956981.956990}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/956981.956990} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nasser%
 , Hasswa%
 \BCBL {}\ \BBA {} Hassanein%
@@ -1267,9 +1341,9 @@ Pahlavan, K.%
 , Krishnamurthy, P.%
 , Hatami, A.%
 , Ylianttila, M.%
-, Makela, J\BPBI P.%
+, Makela, J.%
 , Pichna, R.%
-\BCBL {}\ \BBA {} Vallstr??m, J.%
+\BCBL {}\ \BBA {} Vallstron, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
