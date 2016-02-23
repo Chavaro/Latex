@@ -13,24 +13,25 @@
 \contentsline {section}{\numberline {1.5}Limitaciones y suposiciones}{10}{section.1.5}
 \contentsline {section}{\numberline {1.6}Metodolog\IeC {\'\i }a}{11}{section.1.6}
 \contentsline {section}{\numberline {1.7}Organizaci\'on del documento}{12}{section.1.7}
-\contentsline {chapter}{\numberline {2}Esquema de fundamentos}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{14}{section.2.1}
-\contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{15}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{17}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{19}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{20}{section.2.3}
-\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{23}{section.2.4}
-\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer}}{24}{section.2.5}
-\contentsline {section}{\numberline {2.6}Resumen e Inferencias}{30}{section.2.6}
+\contentsline {chapter}{\numberline {2}Esquema de fundamentos}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Transferencia de red (\textit {handoff})}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Clasificaci\'on del \textit {handoff}}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Redes involucradas}{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}N\'umero de conexiones}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Control del \textit {handoff}}{21}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{22}{section.2.3}
+\contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer}}{26}{section.2.5}
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{33}{chapter.3}
 \contentsline {section}{\numberline {3.1}Redes Celulares}{34}{section.3.1}
 \contentsline {section}{\numberline {3.2}\textit {WLANs}}{36}{section.3.2}
 \contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{38}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{40}{section.3.4}
 \contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Implementaci\'on en Simulador}{42}{section.4.1}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{45}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{47}{chapter.6}
-\contentsline {chapter}{\numberline {A}Anexos}{49}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{51}{appendix.Alph1}
-\contentsline {section}{Referencias}{51}{section*.8}
+\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{42}{section.4.1}
+\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{43}{section.4.2}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{47}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{49}{chapter.6}
+\contentsline {chapter}{\numberline {A}Anexos}{51}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{53}{appendix.Alph1}
+\contentsline {section}{Referencias}{53}{section*.8}

@@ -2225,11 +2225,49 @@ Yan, H\BPBI Y\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-X.~Yang%
+Yang%
+, Song%
+, Owens%
+, Cosmas%
+\BCBL {}\ \BBA {} Itagaki%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Yang2004}
+\APACinsertmetastar {%
+Yang2004}%
+\begin{APACrefauthors}%
+Yang, X.%
+, Song, Y.%
+, Owens, T\BPBI J.%
+, Cosmas, J.%
+\BCBL {}\ \BBA {} Itagaki, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Seamless Soft Handover In DVB-H Networks}} {{Seamless
+  Soft Handover In DVB-H Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Software, Telecommunications
+  and Computer Networks 2004.} {International conference on software,
+  telecommunications and computer networks 2004.}
+\newblock
+\APACaddressPublisher{Split, Croatia, 2004.}{Softcom committees}.
+\newblock
+\begin{APACrefURL} \url{http://bura.brunel.ac.uk/handle/2438/2490}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
 , V{\"{a}}re%
 \BCBL {}\ \BBA {} Owens%
 }{%
-X.~Yang%
+Yang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2006}}%
 }]{%
@@ -2257,44 +2295,6 @@ Yang, X.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/COMST.2006.283819} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-X\BPBI D.~Yang%
-, Song%
-, Owens%
-, Cosmas%
-\BCBL {}\ \BBA {} Itagaki%
-}{%
-X\BPBI D.~Yang%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2004}}%
-}]{%
-Yang2004}
-\APACinsertmetastar {%
-Yang2004}%
-\begin{APACrefauthors}%
-Yang, X\BPBI D.%
-, Song, Y\BPBI H.%
-, Owens, T\BPBI J.%
-, Cosmas, J.%
-\BCBL {}\ \BBA {} Itagaki, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2004}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Seamless Soft Handover In DVB-H Networks}} {{Seamless
-  Soft Handover In DVB-H Networks}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {International Conference on Software, Telecommunications
-  and Computer Networks 2004.} {International conference on software,
-  telecommunications and computer networks 2004.}
-\newblock
-\APACaddressPublisher{Split, Croatia, 2004.}{Softcom committees}.
-\newblock
-\begin{APACrefURL} \url{http://bura.brunel.ac.uk/handle/2438/2490}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -15,42 +15,42 @@ Database file #1: gitTesis.bib.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 72 entries,
             6951 wiz_defined-function locations,
-            1849 strings with 30324 characters,
-and the built_in function-call counts, 154411 in all, are:
-= -- 19072
+            1849 strings with 30336 characters,
+and the built_in function-call counts, 153893 in all, are:
+= -- 18992
 > -- 1348
-< -- 7327
-+ -- 7628
+< -- 7311
++ -- 7572
 - -- 146
-* -- 10140
-:= -- 27474
+* -- 10116
+:= -- 27392
 add.period$ -- 323
 call.type$ -- 72
 change.case$ -- 1306
 chr.to.int$ -- 0
 cite$ -- 144
-duplicate$ -- 4359
-empty$ -- 6077
-format.name$ -- 2163
-if$ -- 29330
+duplicate$ -- 4323
+empty$ -- 6069
+format.name$ -- 2155
+if$ -- 29242
 int.to.chr$ -- 0
 int.to.str$ -- 216
 missing$ -- 0
 newline$ -- 2091
 num.names$ -- 576
-pop$ -- 2675
+pop$ -- 2667
 preamble$ -- 1
 purify$ -- 352
 quote$ -- 0
-skip$ -- 9720
+skip$ -- 9704
 stack$ -- 0
-substring$ -- 8503
-swap$ -- 2597
+substring$ -- 8427
+swap$ -- 2585
 text.length$ -- 346
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 6976
 warning$ -- 0
-while$ -- 831
+while$ -- 823
 width$ -- 0
 write$ -- 2617

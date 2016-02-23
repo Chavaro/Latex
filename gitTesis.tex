@@ -24,6 +24,10 @@
 %\setmarginsrb{left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
 %\setmarginsrb{3.0cm}{3.5cm}{2.5cm}{2.5cm}{10pt}{1cm}{0pt}{2cm}
 
+% ======= Numeración de Figuras ======
+\usepackage{chngcntr}	%Numeración - https://www.ctan.org/pkg/chngcntr
+\counterwithout{figure}{chapter}
+
 % ======== Document ===============
 \begin{document}
 \renewcommand{\BOthers}[1]{et al.\hbox{}}	% Sustituir <<y cols.>> por <<et. al>>
@@ -155,7 +159,7 @@ This document presents an investigation about the developed technological progre
 	Este proceso es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, ya que un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino. 
 	Por ejemplo, si el proceso del mecanismo de \textit{handoff} es lento, puede generar altos tiempo de desconexión y si la aplicación no es consciente de la desconexión puede seguir enviando datos que no podrán ser entregados.
 	
-	En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
+	En la literatura existen varios trabajos que proponen mecanismos para realizar este proceso de \textit{handoff} (los cuales se abordan en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
 	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstas se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} que utilizan \textit{IEEE 802.15.4}. 
 	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de red OSI (siglas en inglés de \textit{Open System Interconnection},Interconexión de Sistema Abierto) dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
 	
@@ -198,29 +202,29 @@ This document presents an investigation about the developed technological progre
 		Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo, además de la movilidad de sus dispositivos; siendo esta última una de las que más destaca cuando se usan en el entorno de las personas. 
 		
 		Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente portables y pequeños en tamaño, pueden ser fácilmente acoplados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}. 
-		Por ello, las \textit{WSN} se han convertido en poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
+		Por ello, las \textit{WSN} son ahora poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
 		
-		Aprovechando su movilidad, las \textit{WSN} también se han ganado un lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando múltiples de ellas (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+		Aprovechando su movilidad, las \textit{WSN} también ganaron su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando múltiples de ellas (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
 		
 		En este contexto, \citeA{Virone2006} proponen una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
-		Asimismo, \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
+		Del mismo modo, \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
 		
 		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
 		En este escenario las \textit{WSN} tienen una cobertura limitada debido a que ésta fue creada para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la IEEE 802.15.4, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios \cite{Buenrostro-Mariscal2015}.
 		
 		Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones, ni el desempeño general de la red.
 		
-		Además los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{WSN}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar IEEE 802.15.4 no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
+		Igualmente los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{WSN}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar IEEE 802.15.4 no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
 		Aunque por otro lado, el estándar sí cuenta con funciones y procesos que pueden ser utilizados para crear un mecanismo de \textit{handoff}.
 		
 		Este proceso de \textit{handoff} o cambio de red es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, y no asegura que el nodo móvil se libre de problemas de comunicación.
 		
 		Un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino; por ejemplo, la existencia de lentitud en el proceso genera altos tiempo de desconexión; si la aplicación no es consciente de la desconexión puede que continúe enviando datos sin considerar que probablemente no podrán ser entregados.
 		Otro caso se da cuando el nodo móvil decide cambiarse a un punto de acceso a la red que tiene problemas de congestionamiento o saturación de usuarios conectados; entonces el nodo seguirá con problemas para transmitir su información al destino. 
-		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; además, si la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{ping-pong}. 
+		Otro posible problema es un cambio anticipado a otro punto de acceso, por una lectura temporal de una mala calidad de enlace con su actual punto de acceso (posiblemente ocasionada por problemas de desvanecimiento de la potencia de transmisión debido a obstáculos), que lo obligaría a cambiarse sin necesitarlo; incluso, si la nueva conexión resulta débil (por estar muy alejado del nuevo punto de acceso) el nodo móvil tendrá que cambiarse nuevamente al punto de acceso más cercano (que por lo general será el punto donde estaba originalmente conectado), provocando un problema de cambios innecesarios y rebotes llamado efecto \textit{ping-pong}. 
 		Por esta razón, un nodo móvil necesita saber cuándo cambiarse de red, cómo ejecutar el \textit{handoff}, y a cuál punto de acceso dentro de la red es conveniente cambiarse.
 
-		En la literatura existen varios trabajos que han propuesto mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo \textit{Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
+		En la literatura existen varios trabajos que proponen mecanismos para realizar este proceso de \textit{handoff} (las cuales serán abordadas detalladamente en el capítulo \textit{Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
 		Sin embargo, la mayoría de estos trabajos y soluciones están enfocados hacia redes celulares o redes inalámbricas tradicionales, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} las cuales, como se menciona anteriormente, generalmente utilizan \textit{IEEE 802.15.4}. 
 		
 		Por ejemplo, en el trabajo realizado por \citeA{Gu2010} se desarrolla un mecanismo para la predicción del movimiento de un nodo móvil, para que con ello el sistema pueda inferir hacia dónde se está dirigiendo un nodo.
@@ -253,7 +257,7 @@ This document presents an investigation about the developed technological progre
 			\end{itemize}
 			
 	\section{Justificación}\label{sec:Justificacion}
-		El desarrollo del presente trabajo abonará al actual avance tecnológico en el área de las redes inalámbricas con una nueva opción para la problemática del traspaso de red mediante un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} aplicado a \textit{WSN}, beneficiando de esta manera al desarrollo de los avances tecnológicos orientados hacia \textit{WSN} y su movilidad.
+		El desarrollo del presente trabajo abona al actual avance tecnológico en el área de las redes inalámbricas con una nueva opción para la problemática del traspaso de red mediante un mecanismo de \textit{handoff} diseñado bajo optimización \textit{crosslayer} aplicado a \textit{WSN}, beneficiando de esta manera al desarrollo de los avances tecnológicos orientados hacia \textit{WSN} y su movilidad.
 		
 		Como se ha mencionado anteriormente, la movilidad en \textit{WSN} brinda una amplia gama de posibles aplicaciones; entre ellas, actualmente se ha destacado el creciente uso hacia el cuidado de la salud, equipando a los pacientes con nodos sensores que monitorizan sus signos vitales y transmiten los datos recolectados hacia un nodo final para el monitoreo remoto de la salud de las personas. 
 		
@@ -261,9 +265,9 @@ This document presents an investigation about the developed technological progre
 		También menciona que, desde el punto de vista de redes inalámbricas, existen múltiples problemáticas debido a la naturaleza de las señales y el ambiente en que se encuentran, como \textit{multipath}, interferencias y disturbios en la señal.
 		Asimismo, plantea los requerimientos de red con respecto a las señales o parámetros que se estén monitorizando del paciente.
 				
-		Por ello, el mecanismo que se propone impactará benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical y en consecuencia existirá una mayor necesidad de atención hacia este grupo social \cite{Wong2007}.
+		Por ello, el mecanismo que se propone tiene el potencial de impactar benéficamente en este sector, ya que el proyecto está enfocado hacia el área de cuidados a la salud en pacientes de edad avanzada (geriatría), tema de gran atención en México, puesto que en los próximos años la cantidad de personas de edad avanzada tendrá un crecimiento radical y en consecuencia existirá una mayor necesidad de atención hacia este grupo social \cite{Wong2007}.
 		
-		Con este mecanismo de \textit{handoff} se podrán habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos ubicados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
+		Con este mecanismo de \textit{handoff} se pueden habilitar nuevas aplicaciones de salud, para equipar  hospitales, centros de cuidados y hogares con dispositivos fijos ubicados estratégicamente, y nodos móviles colocados en los pacientes para realizar la monitorización de signos vitales sin limitar su movilidad dentro de dichos espacios y evitar la desconexión de los usuarios de la red. 
 		
 		Este tipo de aplicaciones demanda una comunicación inteligente, pues es utilizada para transportar datos críticos (parámetros de salud de pacientes), por ello este mecanismo está pensado para que ofrezca un cierto grado de conciencia del entorno y de la aplicación o el tipo de tráfico que transporta, con el propósito final de ejecutar dicho mecanismo de una manera eficiente y oportuna a las necesidades de las aplicaciones; Posicionando, con ello, en un buen nivel la utilidad esperada del mecanismo de \textit{handoff} propuesto con respecto a las que actualmente se ofrecen.
 		
@@ -288,7 +292,7 @@ This document presents an investigation about the developed technological progre
 	\section{Preguntas de investigación}\label{sec:Preguntas}
 		De acuerdo a la problemática anteriormente planteada, así como a los objetivos enlistados, se proponen las siguientes preguntas de investigación:
 		\begin{itemize}
-		\item ¿Qué capas del modelo de red deben ser incluidos en el mecanismo de \textit{handoff crosslayer}?
+		\item ¿Qué capas del modelo de red deben ser incluidas en el mecanismo de \textit{handoff crosslayer}?
 		\item ¿Qué parámetros y/o funciones deben ser considerados en mayor medida para la elaboración de un mecanismo de \textit{handoff} que provea movilidad en \textit{WSN}?
 		\item ¿Qué módulos deben formar el protocolo de \textit{handoff} para que cumpla con las funciones de transferencia entre nodos móviles y permita la continuidad de la comunicación?
 		\end{itemize}
@@ -296,8 +300,8 @@ This document presents an investigation about the developed technological progre
 	\section{Limitaciones y suposiciones}\label{sec:Limitaciones}
 		El proyecto limita sus alcances a la simulación del mecanismo de \textit{handoff crosslayer} en el \textit{software Network Simulator 2} (\textit{NS2}) \cite{Ns1989}, pues no se cuenta con los recursos necesarios para la implementación en físico del sistema planteado.
 		
-		Asimismo, puesto que se trata de un proyecto que da continuidad a la investigación realizada y publicada del trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él.
-		Además, estos resultados son tomados como base para la presente investigación, dado que dicho trabajo ya ha sido evaluado en distintas etapas para su publicación.
+		Además, puesto que se trata de un proyecto que da continuidad a la investigación realizada y publicada del trabajo de \citeA{Buenrostro-Mariscal2015}, se dan por aceptados los resultados obtenidos en él.
+		Asimismo, estos resultados son tomados como base para la presente investigación, dado que dicho trabajo ya ha sido evaluado en distintas etapas para su publicación.
 		
 	\section{Metodología}\label{sec:Metodologia}
 		Con el propósito de cumplir con cada uno de los objetivos descritos anteriormente, se ha propuesto la metodología mostrada en la figura \ref{fig:metologia}, como camino a seguir para el desarrollo de esta investigación:
@@ -310,15 +314,22 @@ This document presents an investigation about the developed technological progre
 				
 		De acuerdo a dicha metodología, a estrategia a seguir se describe de la siguiente manera:
 			\begin{itemize}
-				\item Revisión de Bibliografía: En esta etapa se realizó la documentación sobre el tema, así como la comprensión y familiarización de conceptos.
+				\item Revisión de Bibliografía: En esta etapa se realizó la documentación sobre el tema, así como la comprensión y familiarización de conceptos. 
+				Esta etapa se documenta en el Capítulo \ref{ch:Esquema}.
 				
-				\item Análisis de Mecanismos: En esta fase se analizaron los trabajos relacionados al tema, con enfoca especial hacia el protocolo base, \textit{WSN-HaDaS}.
+				\item Análisis de Mecanismos: En esta fase se analizaron trabajos relacionados al tema, con enfoque especial hacia el protocolo base, \textit{WSN-HaDaS}. 
+				Estos trabajos se muestran en el Capítulo \ref{ch:Trabajos}.
 				
-				\item Diseño de Solución: Esta etapa corresponde a las actividades realizadas para el diseño del mecanismo propuesto. Esto con base a las conclusiones obtenidas de la etapa anterior.
+				\item Diseño de Solución: Esta etapa corresponde a las actividades realizadas para el diseño del mecanismo propuesto de \textit{handoff}. 
+				Esto con base a las conclusiones obtenidas de la etapa anterior.
+				Dicho proceso se describe en la sección \ref{sec:Diseno} del Capítulo \ref{ch:Desarrollo}.
 				
-				\item Implementación en Simulador: Una vez diseñada la propuesta, se prosiguió a su implementación en el simulador.
+				\item Implementación en Simulador: Una vez diseñada la propuesta de este trabajo de tesis, se prosiguió a su implementación en el simulador.
+				Dicho proceso se describe en la sección \ref{sec:Implementacion} del Capítulo \ref{ch:Desarrollo}.
 				
-				\item Análisis de Resultados: Finalmente, durante esta etapa se analizaron los resultados obtenidos en la etapa anterior, de acuerdo a métricas y casos de estudio definidos.	
+				\item Análisis de Resultados: Finalmente, durante esta etapa se analizaron los resultados obtenidos en la fase anterior, de acuerdo a métricas y casos de estudio definidos.
+				Dicho proceso es descrito en el Capítulo \ref{ch:Evaluacion}.
+				
 			\end{itemize}
 
 	\section{Organización del documento}\label{sec:Organizacion}
@@ -331,11 +342,12 @@ This document presents an investigation about the developed technological progre
 		
 		En el Capítulo \ref{ch:Trabajos} se detallan distintos trabajos e investigaciones relacionadas al área de enfoque de este trabajo de Tesis, así como descripciones sobre sus similitudes y diferencias. Este estudio del estado del arte permite analizar soluciones actuales, así como encontrar y proponer mejoras.
 		
-		El Capítulo \ref{ch:Desarrollo} presenta el protocolo propuesto de \textit{handoff} para resolver la problemática planteada. Asimismo se presenta su diseño, desarrollo e implementación en el simulador.
+		El Capítulo \ref{ch:Desarrollo} presenta el protocolo propuesto de \textit{handoff} para resolver la problemática planteada. Igualmente se presenta su diseño, desarrollo e implementación en el simulador.
 		
-		En el Capítulo \ref{ch:Evaluacion} se evalúa y analiza el desempeño del protocolo propuesto de acuerdo a la simulación. Para lo cual, se describe el desarrollo de simulación, escenario, métricas, casos de estudio y resultados obtenidos.
+		En el Capítulo \ref{ch:Evaluacion} se evalúa y analiza el desempeño del protocolo propuesto de acuerdo a la simulación. 
+		Para lo cual, se describen la ejecución de la simulación, el escenario, métricas, casos de estudio y resultados obtenidos.
 
-		Finalmente, en el Capítulo \ref{ch:Conclusiones} se concluye la Tesis haciendo mención a conclusiones y recomendaciones generales asociadas al trabajo desarrollado en este proyecto. Asimismo, se hace énfasis en los beneficios obtenidos con la aportación de este trabajo de tesis, y propone trabajo a futuro dentro del contexto de este proyecto.
+		Finalmente, en el Capítulo \ref{ch:Conclusiones} se concluye la Tesis haciendo mención a conclusiones y recomendaciones generales asociadas al trabajo desarrollado en este proyecto. Además, se hace énfasis en los beneficios obtenidos con la aportación de este trabajo de tesis, y propone trabajo a futuro dentro del contexto de este proyecto.
 	
 \newpage
 \chapter{Esquema de fundamentos}\label{ch:Esquema}
@@ -425,7 +437,7 @@ This document presents an investigation about the developed technological progre
 			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=6cm,height=4cm]{hoHard.png}
-				\caption{Mecanismo tipo \textit{hard handoff}.}
+				\caption{Mecanismo tipo \textit{hard handoff}.\textbf{HACER PROPIA}}
 				\label{fig:hoHard}
 			\end{figure}
 
@@ -437,7 +449,7 @@ This document presents an investigation about the developed technological progre
 			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=8cm,height=5cm]{hoSoft.png}
-				\caption{Mecanismo tipo \textit{soft handoff}.}
+				\caption{Mecanismo tipo \textit{soft handoff}.\textbf{HACER PROPIA}}
 				\label{fig:hoSoft}
 			\end{figure}
 			
@@ -447,7 +459,7 @@ This document presents an investigation about the developed technological progre
 			\begin{figure}[ht]
 				\centering
 				\includegraphics[width=8cm,height=4cm]{hoSofter.png}
-				\caption{Mecanismo tipo \textit{softer handoff}.}
+				\caption{Mecanismo tipo \textit{softer handoff}.\textbf{HACER PROPIA}}
 				\label{fig:hoSofter}
 			\end{figure}
 			
@@ -491,16 +503,16 @@ This document presents an investigation about the developed technological progre
 
 	\begin{figure}[ht]
 		\centering
-		\includegraphics[width=12cm,height=6cm]{hoIssues.jpg}
+		\includegraphics[width=\textwidth,height=8cm]{hoIssues.jpg}
 		\caption{Temas importantes involucrados en un mecanismo de \textit{handoff}.}
 		\label{fig:hoIssues}
 	\end{figure}
 	
-	Sin embargo, otros autores consideran que las problemáticas que conlleva el \textit{handoff} generalmente repercuten en dos cuestiones: el cómo y el cuándo se han de ejecutar estos mecanismos.
+	Sin embargo, otros autores consideran que las problemáticas que conlleva el \textit{handoff} generalmente repercuten en dos cuestiones: el cómo y el cuándo se deben ejecutar estos mecanismos.
 	
 	Por ejemplo \citeA{McNair2004} dicen que durante un proceso de \textit{handoff}, la decisión sobre éste es el paso más importante, pues afecta la comunicación del nodo móvil.
 	Una decisión de \textit{handoff} incorrecta puede degradar la calidad de servicio del tráfico de información e incluso romper con la comunicación actual, pues idealmente un nodo móvil debe considerar tantos aspectos del entorno como le sea posible; por ejemplo, cuál red ofrece una mayor cobertura, cuál red ofrece un menor congestionamiento y cuál red otorga, en general, mayores beneficios.
-	Además debe considerar cuál es el momento adecuado para ejecutar el mecanismo de \textit{handoff}, pues realizar un traspaso de red en un momento inoportuno puede ocasionar que se sufra de problemas como el llamado efecto \textit{ping-pong}, así como el consumo innecesario de energía y/o pérdida de paquetes.
+	De igual modo debe considerar cuál es el momento adecuado para ejecutar el mecanismo de \textit{handoff}, pues realizar un traspaso de red en un momento inoportuno puede ocasionar que se sufra de problemas como el llamado efecto \textit{ping-pong}, así como el consumo innecesario de energía y/o pérdida de paquetes.
 	
 	El efecto \textit{ping-pong} es un fenómeno muy común en las redes móviles, éste puede causar ineficiencia y degrado del desempeño de la red. 
 	Parámetros tales como cobertura, área de ubicación del usuario y su movimiento y velocidad son algunas de las principales consideraciones que pueden ocasionar la existencia del efecto \textit{ping-pong} \cite{Ghanem2012}.
@@ -529,7 +541,7 @@ This document presents an investigation about the developed technological progre
 	En resumen, dado que la ejecución frecuente de los mecanismos de \textit{handoff} ocasiona grandes consumos innecesarios de energía (críticos sobre todo para nodos cuyas fuentes de poder son limitadas, como baterías), el efecto \textit{ping-pong} debe ser reducido al mínimo posible durante la etapa de decisión de \textit{handoff} \cite{Yang2004}.
 	
 	Por esta razón los nuevos algoritmos como los presentados por \citeA{Fotouhi2012}, \citeA{Lee2011} y \citeA{Liu2015} cuyo criterio de decisión se basa en la lectura del RSSI, utilizan diferentes métodos y algoritmos sobre estas lecturas para permitir una posterior ejecución del mecanismo de \textit{handoff}.
-	Asimismo algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.	
+	Incluso algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.	
 		
 	\newpage
 	\section{Importancia del \textit{handoff}}\label{sec:Importancia}
@@ -549,17 +561,17 @@ This document presents an investigation about the developed technological progre
 	El integrar mecanismos de \textit{handoff} dentro del sistema de red, permite hacer un amplio uso de la infraestructura desplegada, y en algunos casos, optimizar el acceso de los distintos usuarios de acuerdo con los tipos de servicios que estos requieren. 
 	El objetivo principal de la integración de estos mecanismos es que el usuario no detecte mayores cambios al ejecutarse el \textit{handoff}; así como buscar que las redes permanezcan funcionando con la misma eficiencia antes, después y durante el proceso de \textit{handoff}.
 		
-	Asimismo, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{WuBaojiang2011}, lo que resulta en un problema menos para el usuario móvil al no tener que preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o \textit{APs}.
+	Todavía, conforme se desarrollan nuevos avances en el tema, estos mecanismos se vuelven cada vez más rápidos e imperceptibles para el usuario \cite{WuBaojiang2011}, lo que resulta en un problema menos para el usuario móvil al no tener que preocuparse por acceder a una nueva red en situaciones de movilidad entre celdas o \textit{APs}.
 	Con lo anterior, se ha dejado muestra que el incluir mecanismos de \textit{handoff} en la red proporciona ventajosas características.
 
 	\section{Estrategia de diseño \textit{crosslayer}}\label{sec:Crosslayer}
 	En la actualidad, existe una gran variedad de investigaciones y desarrollos de protocolos y aplicaciones orientadas a las \textit{WSN} \cite{Melodia2006}; sin embargo, la mayoría de ellas han sido desarrolladas bajo el concepto tradicional de protocolos por capas del modelo \textit{OSI} \cite{Zimmermann1980}. 
 	
-	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}; asimismo es posible observar que las primeras cuatro capas del modelo se agrupan dentro del llamado \textit{stack} (del inglés, pila) de Protocolos de Comunicaciones; puesto que dichas capas son las encargadas de la comunicación por el medio físico, así como de la interacción entre los mecanismos de transmisión extremo a extremo \cite{Akyildiz2010}.
+	Dicho concepto define siete capas que describen cómo interaccionan las aplicaciones que se ejecutan en dispositivos de red, las cuales pueden apreciarse mejor en la figura \ref{fig:OSImodel}; además es posible observar que las primeras cuatro capas del modelo se agrupan dentro del llamado \textit{stack} (del inglés, pila) de Protocolos de Comunicaciones; puesto que dichas capas son las encargadas de la comunicación por el medio físico, así como de la interacción entre los mecanismos de transmisión extremo a extremo \cite{Akyildiz2010}.
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=9cm,height=6cm]{OSImodel.png}
-		\caption{Distribución de capas del Modelo \textit{OSI}.}
+		\caption{Distribución de capas del Modelo \textit{OSI}.\textbf{Pon la buena xD}}
 		\label{fig:OSImodel}
 	\end{figure}
 	
@@ -579,7 +591,7 @@ This document presents an investigation about the developed technological progre
 	\end{itemize}
 	
 	Aún cuando estos desarrollos han alcanzado un gran desempeño en términos de métricas relacionadas a cada una de las capas individuales, no han sido optimizadas en conjunto para maximizar el desempeño general de la red \cite{Melodia2006}.
-	Asimismo, se menciona que el diseño de protocolos bajo este tipo de modelos no son apropiados para obtener funcionalidad eficiente en redes inalámbricas \cite{Edirisinghe2014,Wang2003,Stine2007}.
+	Incluso se menciona que el diseño de protocolos bajo este tipo de modelos no son apropiados para obtener funcionalidad eficiente en redes inalámbricas \cite{Edirisinghe2014,Wang2003,Stine2007}.
 	Por ello han surgido nuevas propuestas que permiten la relación y el trabajo en conjunto de las distintas capas y proponen el desempeño adaptativo y eficiente de las mismas al compartirse información relevante entre ellas. 
 	Éstas han sido llamadas \textit{estrategias de diseño crosslayer} y su comportamiento puede apreciarse en la figura \ref{fig:OSIcrosslayer}, tomada de \cite{Bisnik2005}.
 		
@@ -657,19 +669,19 @@ This document presents an investigation about the developed technological progre
 	
 	Esta última cuestión define el área de oportunidad que este proyecto busca aprovechar, por lo que es necesario ahondar la investigación en el tema y propulsar el desarrollo de propuestas, con el fin de definir estas variables y un mejor diseño \textit{crosslayer}.
 	
-	\section{Resumen e Inferencias}\label{sec:Inferencias}
-	Durante la investigación y estudio del Esquema de Fundamentos antes mostrado, se realizó una lectura y análisis de los múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y fue posible producir las siguientes conclusiones:
-	
-	\begin{itemize}
-		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
-		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
-		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
-		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
-		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
-		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
-		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
-	\end{itemize}
+%	\section{Resumen e Inferencias}\label{sec:Inferencias}
+%	Durante la investigación y estudio del Esquema de Fundamentos antes mostrado, se realizó una lectura y análisis de los múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y fue posible producir las siguientes conclusiones:
+%	
+%	\begin{itemize}
+%		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
+%		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
+%		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
+%		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
+%		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
+%		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
+%		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
+%		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
+%	\end{itemize}
 
 \newpage
 \chapter{Trabajos relacionados}\label{ch:Trabajos}
@@ -693,7 +705,7 @@ This document presents an investigation about the developed technological progre
 		\label{fig:mobileWiMAX}
 	\end{figure}
 
-	Asimismo, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
+	Además, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
 	
 	En los trabajos desarrollados por \citeA{McNair2004,Nasser2006}, se aborda la temática de las redes de comunicación celular \textit{4G}. 
 	Para las cuales se pretenden desarrollar nuevas estrategias de decisión para el mecanismo de \textit{handoff} para los dispositivos móviles en la red.
@@ -716,15 +728,15 @@ This document presents an investigation about the developed technological progre
 	\section{\textit{WLANs}}
 	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
 	Las redes \textit{WLAN} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
-	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos móviles; i.e., celulares, \textit{tablets}, \textit{laptops} y computadoras (Figura \ref{fig:wlanNetwork}).
+	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11}) en sus hogares, e integran a la red sus dispositivos, entre los cuales exsiten dispositivos móviles; e.g., celulares, \textit{tablets} y \textit{laptops} (Figura \ref{fig:wlanNetwork}).
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=10cm,height=6cm]{wlanNetwork.png}
-		\caption{Características deseables de \textit{handoff}.}
+		\caption{Ejemplo de red doméstica \textit{WLAN} (\textit{WiFi}, en este caso).}
 		\label{fig:wlanNetwork}
 	\end{figure}
 	
-	Asimismo, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
+	Aunado a ello, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
 	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan solo estar dentro de su área de cobertura.
 	
 	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes; aún mientras cambian de ubicación y se trasladan a lo largo del día.
@@ -797,206 +809,116 @@ This document presents an investigation about the developed technological progre
 				\label{fig:bioMeasurements}
 			\end{figure}
 		% % % % % % % % % % % % % % % % % % % % % % % % % % % %
-	
-	
 
 \newpage
-%\chapter{Metodologia de Investigación}\label{ch:Metodologia}
-%En este capítulo se aborda y explica a detalle la metodología aplicada para el desarrollo del protocolo propuesto en el presente trabajo de investigación, realizando un énfasis especial en la revisión del estado del arte (Esquema de Fundamentos) realizada, pues con ella se plantearon las bases para el diseño del mecanismo de \textit{handoff}.
-%
-%\newpage
-%
-%	\section{Metodología}
-%	Para el desarrollo de esta investigación se propuso la metodología mostrada en la figura \ref{fig:metologia}:
-%	
-%		\begin{figure}[ht]
-%			\centering
-%			\includegraphics[width=10cm,height=7cm]{metologia.png}
-%			\caption{Metodología de investigación propuesta}
-%			\label{fig:metologia}
-%		\end{figure}
-%		
-%	De acuerdo a dicha metodología, a estrategia a seguir se describe de la siguiente manera:
-%	
-%	\begin{itemize}
-%		\item Revisión de Bibliografía: En esta etapa se realizó la documentación sobre el tema, así como la comprensión y familiarización de conceptos.
-%		
-%		\item Análisis de Mecanismos: En esta fase se analizaron los trabajos relacionados al tema, con enfoca especial hacia el protocolo base, \textit{WSN-HaDaS}.
-%		
-%		\item Diseño de Solución: Esta etapa corresponde a las actividades realizadas para el diseño del mecanismo propuesto. Esto con base a las conclusiones obtenidas de la etapa anterior.
-%		
-%		\item Implementación en Simulador: Una vez diseñada la propuesta, se prosiguió a su implementación en el simulador.
-%		
-%		\item Análisis de Resultados: Finalmente, durante esta etapa se analizaron los resultados obtenidos en la etapa anterior.
-%		
-%	\end{itemize}
+\section{Resumen e Inferencias}\label{sec:Inferencias}
+	Durante la investigación y estudio de las secciones de Esquema de Fundamentos (Capítulo \ref{ch:Esquema}) y Trabajos Relacionados (Capítulo \ref{ch:Trabajos}), se realizó una lectura y análisis de múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y con ello fue posible producir las siguientes conclusiones:
 	
-%	\section{Revisión de Bibliografía}	
-%	La revisión bibliográfica o del estado del arte se refiere a la búsqueda y análisis de todos aquellos trabajos, o al menos los más relevantes, que se han hecho en el área de la temática de la investigación, en este caso del \textit{handoff}.
-%	
-%	Sin embargo, un revisión de tan basta información requiere una metodología propia para su análisis.
-%	Ejemplo de ella es la revisión sistemática propuesta por \citeA{AraujoAlonso2011}, la cual plantea las etapas o pasos mostrados en la figura \ref{fig:revSistematica} basados en los principios del método científico.
-%	Y que, aunque esta metodología se está pensada para su aplicación al estudio de la salud, permite ser aplicable a otras áreas de investigación como la presentada en este proyecto de tesis.
-%	
-%	\begin{figure}[ht]
-%		\centering
-%		\includegraphics[width=8cm,height=7cm]{revSistematica.png}
-%		\caption{Metodología de revisión sistemática.}
-%		\label{fig:revSistematica}
-%	\end{figure}
-%	
-%	El primero de estos pasos hace referencia a la formulación del objetivo de la investigación.
-%	Este paso ha sido cubierto y descrito en el Capítulo \ref{ch:Introduccion}.
-%	
-%	El segundo de estos pasos habla sobre la <<Definición de fuentes y métodos de búsqueda>>.
-%	En este caso, no se especificaron fuentes exclusivas de consulta con el objetivo de no limitar precisamente el banco de datos de información a consultar.
-%	Sin embargo, algunas de las fuentes de información más consultadas se muestran en la figura \ref{fig:journals}.
-%	
-%	\begin{figure}[ht]
-%		\centering
-%		\includegraphics[width=12cm,height=5cm]{journals.png}
-%		\caption{Algunas fuentes de investigación consultadas.}
-%		\label{fig:journals}
-%	\end{figure}
-%	
-%	Sobre la <<Definición y aplicación de criterios de selección>>, una lista de las \textit{key words} (del inglés, palabras clave) utilizadas se muestra enseguida.
-%	Estas palabras clave fueron utilizadas en inglés por ser éste el idioma universal, y dado que la gran mayoría de las investigaciones y trabajos consultados se desarrollaron en dicho idioma. 
-%	Además, fueron utilizadas de manera aleatoria; es decir, en algunas ocasiones se combinaron unas de ellas, y en otras se aplicó otra combinación de las mismas.
-%	
-%	\begin{itemize}
-%		\item \textit{Handoff} o \textit{Handover}
-%		\item \textit{WSN}
-%		\item \textit{Crosslayer} o \textit{Cross layer}
-%		\item \textit{802.15.4}
-%	\end{itemize}
-%	
-%	Sobre los resultados que arrojó cada una de las bases de datos en su momento, se filtraron solo los resultados más relevantes de acuerdo a la misma base de datos.
-%	Este proceso busca aquellos trabajos de investigación que han sido descargados o consultados una mayor cantidad de veces.
-%	Con ello, se aseguró tomar como referencia investigaciones reconocidas.
-%	
-%	Sobre el proceso de <<Análisis de los estudios>>, se filtraron los resultados arrojados no solo por relevancia, sino también se consideró la fecha de publicación como criterio puesto que la investigación buscó tomar como marco de referencia las últimas investigaciones realizadas en el tiempo.
-%	No obstante, en ocasiones existieron referencias con fuerte valor reconocido, los cuales se decidieron no filtrar y mantenerlas como investigaciones de apoyo.
-%	
-%	También, debe mencionarse que de los trabajos encontrados, se aplicó una post clasificación de los mismos.
-%	Separando las investigaciones por tecnología inalámbrica utilizada en la red, tipo de \textit{handoff}, existencia de diseño \textit{crosslayer} y aplicación. 
-%	Aplicando con esta actividad la etapa de <<Síntesis de resultados>>.
-%	
-%	\newpage
-%	Finalmente durante la etapa de <<Conclusiones e inferencias>>, se tomó lectura de dichos trabajos de investigación encontrados (artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras) y fue posible producir las siguientes conclusiones:
-%	
-%	\begin{itemize}
-%		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS}.
-%		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes, son en general las principales métricas a beneficiar con los mecanismos propuestos.
-%		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en eficiencia.
-%		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la capa \textit{MAC} como integrante escencial del criterio.
-%		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS} (como su implementación dentro de un mecanismo estándar de comunicación como el \textit{TCP}), resulta el mejor candidato como protocolo base.
-%		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-%		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar IEEE 802.15.4, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
-%		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo asistido-por-móvil.
-%		
-%	\end{itemize}
-		
-%	\section{Análisis de Mecanismos}	
-%	De acuerdo a los algoritmos consultados, en general aquellos que se han diseñado bajo un esquema \textit{crosslayer} presentan mejor desempeño contra aquellos desarrollados bajo el esquema tradicional de diseño en una sola capa.
-%	Por ello, se consideró analizar las características y estrategias de funcionamiento de aquellos mecanismos de \textit{handoff crosslayer} como candidatos a ser el protocolo base del propuesto en este trabajo.
-%	De dichas investigaciones, se optó por la selección del protocolo de \textit{handoff crosslayer WSN-HaDaS}.
-%	
-%	Ello debido a que presenta resultados que benefician el desempeño de la red, además de tener la particularidad de integrarse dentro de un mecanismo de comunicación estándar, disminuyendo así tiempos de ejecución.
-%	Asimismo, su característica de dividir el proceso de traspaso de red en dos entidades (una de decisión, y otra de ejecución) resulta provechoso para su uso como punto de partida para esta investigación.
-%	
-%	\section{Diseño de Solución}
-%	El diseño base es tomado del protocolo \textit{WSN-HaDaS} por considerar aspectos de diferentes capas del modelo \textit{OSI}.
-%	Además de ofrecer la capacidad de trabajar al mecanismo de \textit{handoff} en dos secciones: el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de \textit{Handoff}) y el \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Gatillo de Monitoreo de \textit{Handoff}).
-%	
-%	Sin embargo, este protocolo se modificó con el objetivo de expandir sus consideraciones; es decir, brindar al mecanismo una mayor visión del contexto de la red.
-%	Esto al tomar parámetros provenientes de la capa de aplicación, transporte y control de acceso al medio.
-%	
-%	Estos aspectos y demás criterios agregados se detallan en el capítulo <<Desarrollo de protocolo \textit{handoff}>>.	
+	\begin{itemize}
+		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
+		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
+		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
+		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
+		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
+		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
+		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
+		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
+	\end{itemize}
 
 \newpage
 \chapter{Desarrollo de protocolo de \textit{handoff}}\label{ch:Desarrollo}
 	\lipsum[1]		%Texto de relleno (3 párrafos)
 	\newpage
 
+	\section{Diseño de Protocolo de \textit{Handoff}}\label{sec:Diseno}
+	Aquí se describe el proceso del diseño del algoritmo o protocolo de \textit{handoff}.
+	\lipsum[1]		%Texto de relleno (3 párrafos)
+	\newpage
+
 	% % % % % Viene de Metodología
-		\section{Implementación en Simulador}	
-		Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
+	\section{Implementación en Simulador}\label{sec:Implementacion}
+	Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
+	
+	Esta etapa a su vez, requirió de una planeación o metodología a seguir. 
+	Ésta se ha tomado de \citeA{OpnetWork2013}, y funge como base para el desarrollo de la simulación, dicha metodología se presenta en  la figura \ref{fig:simPlaneacion}.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=12cm,height=10cm]{simPlaneacion.png}
+		\caption{Algunas fuentes de investigación consultadas.}
+		\label{fig:simPlaneacion}
+	\end{figure}
+	
+	A continuación, se detallan cada una de las etapas mostradas en la anterior metodología:
+	
+	\begin{enumerate}
+		\item \textbf{¿Qué se quiere simular?}: En esta etapa se plantea un panorama general de lo que se pretende simular, con el objetivo de partir de lo general hacia lo específico.
+		En este caso, la simulación plantea una \textit{WSN} con nodos móviles y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
+		\item \textbf{¿Qué se quiere obtener de la simulación?}: De ella, se busca el permitir analizar el efecto del \textit{handoff} en el rendimiento de la red.
+		\item \textbf{¿Qué aspectos se quieren simular?}: Se consideraron a los tiempos de conexión y reconexión como aspectos de simulación relevantes; así como la cantidad de paquetes perdidos y entregados y el retardo promedio de paquetes entregados.
+		Además, se plantea el movimiento de nodos dentro de una misma celda, y a través de múltiples celdas.
+		\item \textbf{¿Qué parámetros de entrada y salida se requieren?}:
+		\newline
+		Los parámetros de \textit{entrada} se muestran en seguida:
+			\begin{itemize}
+				\item Nodos móviles
+				\item Nodos fijos
+				\item Roles de nodos
+				\item Tasa de transmisión
+				\item Tamaño de paquete
+				\item Velocidad de movimiento de nodos
+				\item Potencia de transmisión
+				\item Sensibilidad de recepción
+				\item Ubicación de nodos fijos
+			\end{itemize}
+		Del mismo modo, los parámetros de \textit{salida} requeridos se muestran a continuación:
+			\begin{itemize}
+				\item Consumo de energía/batería
+				\item Paquetes entregados/perdidos
+				\item Tiempos de conexión/reconexión
+			\end{itemize}	
 		
-		Esta etapa a su vez, requirió de una planeación o metodología a seguir. 
-		Ésta se ha tomado de \citeA{OpnetWork2013}, y funge como base para el desarrollo de la simulación, dicha metodología se presenta en  la figura \ref{fig:simPlaneacion}.
+		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{WSN} describe un árbol jerárquico.
+		Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
 		
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=12cm,height=10cm]{simPlaneacion.png}
-			\caption{Algunas fuentes de investigación consultadas.}
-			\label{fig:simPlaneacion}
-		\end{figure}
+		El primer rol es el \textit{SN} (iniciales en inglés de \textit{Sink Node}, Nodo Receptor), bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
 		
-		A continuación, se detallan cada una de las etapas mostradas en la anterior metodología:
+		El rol de \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
 		
-		\begin{enumerate}
-			\item \textbf{¿Qué se quiere simular?}: En esta etapa se plantea un panorama general de lo que se pretende simular, con el objetivo de partir de lo general hacia lo específico.
-			En este caso, la simulación plantea una \textit{WSN} con nodos móviles y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
-			\item \textbf{¿Qué se quiere obtener de la simulación?}: De ella, se busca el permitir analizar el efecto del \textit{handoff} en el rendimiento de la red.
-			\item \textbf{¿Qué aspectos se quieren simular?}: Se consideraron a los tiempos de conexión y reconexión como aspectos de simulación relevantes; así como la cantidad de paquetes perdidos y entregados y el retardo promedio de paquetes entregados.
-			Asimismo, se plantea el movimiento de nodos dentro de una misma celda, y a través de múltiples celdas.
-			\item \textbf{¿Qué parámetros de entrada y salida se requieren?}:
-			\newline
-			Los parámetros de \textit{entrada} se muestran en seguida:
-				\begin{itemize}
-					\item Nodos móviles
-					\item Nodos fijos
-					\item Roles de nodos
-					\item Tasa de transmisión
-					\item Tamaño de paquete
-					\item Velocidad de movimiento de nodos
-					\item Potencia de transmisión
-					\item Sensibilidad de recepción
-					\item Ubicación de nodos fijos
-				\end{itemize}
-			Del mismo modo, los parámetros de \textit{salida} requeridos se muestran a continuación:
-				\begin{itemize}
-					\item Consumo de energía/batería
-					\item Paquetes entregados/perdidos
-					\item Tiempos de conexión/reconexión
-				\end{itemize}	
+		Un tercer rol es el de \textit{MN} (iniciales en inglés de \textit{Mobile Node}, Nodo Móvil), el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{MN} es el enviar información hacia el \textit{SN}, ello a través de los \textit{CH}.
+		
+		De este rol puede desprenderse un subrol, dado que no todos los \textit{MN} se mueven a través de las celdas. 
+		Un \textit{MN} normal solo presenta movimiento dentro del alcance de un mismo \textit{CH}; sin embargo un \textit{WN} (iniciales en inglés de \textit{Wild Node}, Nodo Salvaje) es capaz de moverse de un \textit{cluster} a otro.
+		
+		Además, se determinó un tráfico contínuo generado con un tamaño constante. 
+		Ello bajo una \textit{WSN} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
+		
+		\item \textbf{Definir las estadísticas a medir}: Algunas de las estadísticas planteadas para su medición, observación y análisis son las siguientes:
+			\begin{itemize}
+				\item Latencia extremo-a-extremo.
+				\item Paquetes perdidos/entregados.
+				\item Retardo promedio de paquetes entregados.
+			\end{itemize}
 			
-			\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{WSN} describe un árbol jerárquico.
-			Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
-			
-			El primer rol es el \textit{SN} (iniciales en inglés de \textit{Sink Node}, Nodo Receptor), bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
-			
-			El rol de \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
-			
-			Un tercer rol es el de \textit{MN} (iniciales en inglés de \textit{Mobile Node}, Nodo Móvil), el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{MN} es el enviar información hacia el \textit{SN}, ello a través de los \textit{CH}.
-			
-			De este rol puede desprenderse un subrol, dado que no todos los \textit{MN} se mueven a través de las celdas. 
-			Un \textit{MN} normal solo presenta movimiento dentro del alcance de un mismo \textit{CH}; sin embargo un \textit{WN} (iniciales en inglés de \textit{Wild Node}, Nodo Salvaje) es capaz de moverse de un \textit{cluster} a otro.
-			
-			Además, se determinó un tráfico contínuo generado con un tamaño constante. 
-			Ello bajo una \textit{WSN} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
-			
-			\item \textbf{Definir las estadísticas a medir}: Las estadísticas planteadas para su medición, observación y análisis son las siguientes:
-				\begin{itemize}
-					\item Latencia extremo-a-extremo.
-					\item Paquetes perdidos/entregados.
-					\item Retardo promedio de paquetes entregados.
-				\end{itemize}
-			
-			\item \textbf{Redefinir tiempos, variables o estadísticas}: Esta etapa es un caso opcional, y se aborda en situaciones tales que el análisis de los resultados obtenidos en la simulación propongan oportunidades de mejora.
-			Sin embargo, el tiempo propuesto de simulación es de dos minutos.
-			
-			\item \textbf{Documentación y resultados}: Una vez obtenidos los resultados esperados, y siendo ellos positivos, se continuó hacia la documentación de los mismos.
-		\end{enumerate}
+		Una descripción completa y justificación de las mismas se explica en el Capítulo \ref{ch:Evaluacion}.
+		
+		\item \textbf{Redefinir tiempos, variables o estadísticas}: Esta etapa es un caso opcional, y se aborda en situaciones tales que el análisis de los resultados obtenidos en la simulación propongan oportunidades de mejora.
+		Sin embargo, el tiempo propuesto de simulación es de dos minutos.
+		
+		\item \textbf{Documentación y resultados}: Una vez obtenidos resultados, se continuó hacia el análisis de ellos y la documentación de los mismos.
+	\end{enumerate}
 	% % % % % % % % % % % % % % %
 
 \newpage
 \chapter{Evaluación y análisis de resultados}\label{ch:Evaluacion}
-	\lipsum[1-3]		%Texto de relleno (3 párrafos)
+	En este capítulo, se describe claramente el escenario de pruebas, métricas, ejecución de simulación y los resultados obtenidos.
+	Así como un análisis de los resultados obtenidos.
+	
+	\lipsum[1-2]		%Texto de relleno (3 párrafos)
 	
 \newpage
 \chapter{Conclusiones y recomendaciones}\label{ch:Conclusiones}
-	\lipsum[1-3]		%Texto de relleno (3 párrafos)
+	\lipsum[1-2]		%Texto de relleno (3 párrafos)
 
 %\newpage
 %Anexos
