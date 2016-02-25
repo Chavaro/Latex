@@ -22,16 +22,16 @@
 \contentsline {section}{\numberline {2.3}Problem\'aticas que conlleva el \textit {handoff}}{22}{section.2.3}
 \contentsline {section}{\numberline {2.4}Importancia del \textit {handoff}}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer}}{26}{section.2.5}
-\contentsline {chapter}{\numberline {3}Trabajos relacionados}{33}{chapter.3}
-\contentsline {section}{\numberline {3.1}Redes Celulares}{34}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {WLANs}}{36}{section.3.2}
-\contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{38}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{40}{section.3.4}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{43}{section.4.2}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{47}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{49}{chapter.6}
-\contentsline {chapter}{\numberline {A}Anexos}{51}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{53}{appendix.Alph1}
-\contentsline {section}{Referencias}{53}{section*.8}
+\contentsline {chapter}{\numberline {3}Trabajos relacionados}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Redes Celulares}{36}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {WLANs}}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{40}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{42}{section.3.4}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{45}{section.4.2}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{49}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{51}{chapter.6}
+\contentsline {chapter}{\numberline {A}Anexos}{53}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{55}{appendix.Alph1}
+\contentsline {section}{Referencias}{55}{section*.8}
