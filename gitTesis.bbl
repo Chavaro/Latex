@@ -399,6 +399,43 @@ Chen, L\BPBI C\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Cheng Wei Lee}%
+, {Li Ming Chen}%
+, {Meng Chang Chen}%
+\BCBL {}\ \BBA {} {Yeali Sunny Sun}%
+}{%
+{Cheng Wei Lee}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+ChengWeiLee2005}
+\APACinsertmetastar {%
+ChengWeiLee2005}%
+\begin{APACrefauthors}%
+{Cheng Wei Lee}%
+, {Li Ming Chen}%
+, {Meng Chang Chen}%
+\BCBL {}\ \BBA {} {Yeali Sunny Sun}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{nov}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Journal on Selected Areas in
+  Communications}{23}{11}{2118--2128}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chowdhury%
 \ \BBA {} Gregory%
 }{%
@@ -885,49 +922,12 @@ Khan, J\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-C\BPBI W.~Lee%
-, Chen%
-, Chen%
-\BCBL {}\ \BBA {} Sun%
-}{%
-C\BPBI W.~Lee%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2005}}%
-}]{%
-ChengWeiLee2005}
-\APACinsertmetastar {%
-ChengWeiLee2005}%
-\begin{APACrefauthors}%
-Lee, C\BPBI W.%
-, Chen, L\BPBI M.%
-, Chen, M\BPBI C.%
-\BCBL {}\ \BBA {} Sun, Y\BPBI S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{nov}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
-  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
-  based on mobile IPv6}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{IEEE Journal on Selected Areas in
-  Communications}{23}{11}{2118--2127}.
-\newblock
-\begin{APACrefURL}
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-D\BPBI K.~Lee%
+Lee%
 , Kim%
 , Jeong%
 \BCBL {}\ \BBA {} Kang%
 }{%
-D\BPBI K.~Lee%
+Lee%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
 }]{%
@@ -1391,6 +1391,46 @@ Pollini, G\BPBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis%
+\BCBL {}\ \BBA {} {Tuanfa Qin}%
+}{%
+{Qiuling Tang}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+QiulingTang2005}
+\APACinsertmetastar {%
+QiulingTang2005}%
+\begin{APACrefauthors}%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis, G.%
+\BCBL {}\ \BBA {} {Tuanfa Qin}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}} {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {MILCOM 2005 - 2005 IEEE Military Communications
+  Conference} {Milcom 2005 - 2005 ieee military communications conference}\
+  (\BVOL~6, \BPGS\ 1--7).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1606004}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MILCOM.2005.1606004} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Raisinghani%
 \ \BBA {} Iyer%
 }{%
@@ -1807,51 +1847,12 @@ Taehoon, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Q.~Tang%
-, Yang%
-, Giannakis%
-\BCBL {}\ \BBA {} Qin%
-}{%
-Q.~Tang%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2007}}%
-}]{%
-QiulingTang2005}
-\APACinsertmetastar {%
-QiulingTang2005}%
-\begin{APACrefauthors}%
-Tang, Q.%
-, Yang, L.%
-, Giannakis, G.%
-\BCBL {}\ \BBA {} Qin, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Battery Power Efficiency of PPM and FSK in Wireless
-  Sensor Networks}} {{Battery Power Efficiency of PPM and FSK in Wireless
-  Sensor Networks}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {IEEE Transactions on Wireless Communications} {Ieee
-  transactions on wireless communications}\ (\BVOL~6, \BPGS\ 1308--1319).
-\newblock
-\APACaddressPublisher{}{IEEE}.
-\newblock
-\begin{APACrefURL}
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4155670}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1109/TWC.2007.348327} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Q\BPBI T\BPBI Q.~Tang%
+Tang%
 , Sun%
 , Wen%
 \BCBL {}\ \BBA {} Liang%
 }{%
-Q\BPBI T\BPBI Q.~Tang%
+Tang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2010}}%
 }]{%
@@ -1859,10 +1860,10 @@ Tang2010}
 \APACinsertmetastar {%
 Tang2010}%
 \begin{APACrefauthors}%
-Tang, Q\BPBI T\BPBI Q.%
-, Sun, C\BPBI S\BPBI C.%
-, Wen, H\BPBI W\BPBI H.%
-\BCBL {}\ \BBA {} Liang, Y\BPBI L\BPBI Y.%
+Tang, Q.%
+, Sun, C.%
+, Wen, H.%
+\BCBL {}\ \BBA {} Liang, Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -1872,9 +1873,9 @@ Tang, Q\BPBI T\BPBI Q.%
   in WSN}} {{Cross-layer energy efficiency analysis and optimization in
   WSN}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {Networking, Sensing and Control (ICNSC), 2010
-  International Conference on} {Networking, sensing and control (icnsc), 2010
-  international conference on}\ (\BPGS\ 138--142).
+\BIn{} \APACrefbtitle {2010 International Conference on Networking, Sensing and
+  Control (ICNSC)} {2010 international conference on networking, sensing and
+  control (icnsc)}\ (\BPGS\ 138--142).
 \newblock
 \APACaddressPublisher{}{IEEE}.
 \newblock

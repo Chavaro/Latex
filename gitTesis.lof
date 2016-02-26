@@ -14,15 +14,17 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Temas importantes involucrados en un mecanismo de \textit {handoff}.}}{23}{figure.2.11}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Arquitecturas de Handoff}}}{23}{figure.2.11}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tiempos de Decisi\'on de Handoff}}}{23}{figure.2.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Ejemplo del efecto \textit {ping-pong} en la ejecuci\'on de un mecanismo de \textit {handoff}.}}{31}{figure.2.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.2.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.2.12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{31}{figure.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Distribuci\'on de capas del Modelo \textit {OSI}.\textbf {Pon la buena xD}}}{32}{figure.2.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo \textit {OSI} tradicional y \textit {crosslayer}.}}{32}{figure.2.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.}}{33}{figure.2.15}
+\contentsline {figure}{\numberline {12}{\ignorespaces Ejemplo del efecto \textit {ping-pong} en la ejecuci\'on de un mecanismo de \textit {handoff}.}}{25}{figure.2.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conexi\'on de \textit {MN} al \textit {AP} A}}}{25}{figure.2.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Liberaci\'on de conexi\'on de \textit {MN} al \textit {AP} A y establecimiento de conexi\'on del \textit {MN} al \textit {AP} B}}}{25}{figure.2.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Liberaci\'on de conexi\'on del \textit {MN} al \textit {AP} B y nueva conexi\'on de \textit {MN} al \textit {AP} A}}}{25}{figure.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Distribuci\'on de capas del Modelo \textit {OSI}.}}{27}{figure.2.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diferencia de operaci\'on y filosof\IeC {\'\i }a entre el modelo \textit {OSI} tradicional y \textit {crosslayer}.}}{29}{figure.2.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modelo \textit {OSI}}}}{29}{figure.2.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Modelo \textit {Crosslayer}}}}{29}{figure.2.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Distintos tipo de propuestas de dise\~no \textit {crosslayer}.\textbf {EDITAR}}}{30}{figure.2.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {16}{\ignorespaces Arquitectura de la red m\'ovil \textit {WiMAX} en t\'erminos de dispositivos y sus funciones.}}{36}{figure.3.16}
+\contentsline {figure}{\numberline {16}{\ignorespaces Arquitectura de la red m\'ovil \textit {WiMAX} en t\'erminos de dispositivos y sus funciones. \textbf {EDITAR}}}{36}{figure.3.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Caracter\IeC {\'\i }sticas deseables de \textit {handoff}.}}{37}{figure.3.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces Ejemplo de red dom\'estica \textit {WLAN} (\textit {WiFi}, en este caso).}}{38}{figure.3.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces Fases generales de un mecanismo de \textit {handoff}.}}{39}{figure.3.19}
