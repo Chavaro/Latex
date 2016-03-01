@@ -24,14 +24,14 @@
 \contentsline {section}{\numberline {2.5}Estrategia de dise\~no \textit {crosslayer}}{27}{section.2.5}
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Redes Celulares}{36}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {WLANs}}{38}{section.3.2}
+\contentsline {section}{\numberline {3.2}\textit {WLANs}}{37}{section.3.2}
 \contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{40}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{42}{section.3.4}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{45}{section.4.2}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{49}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{51}{chapter.6}
-\contentsline {chapter}{\numberline {A}Anexos}{53}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{55}{appendix.Alph1}
-\contentsline {section}{Referencias}{55}{section*.8}
+\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{43}{section.3.4}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{46}{section.4.1}
+\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{47}{section.4.2}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{51}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{53}{chapter.6}
+\contentsline {chapter}{\numberline {A}Anexos}{55}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{57}{appendix.Alph1}
+\contentsline {section}{Referencias}{57}{section*.8}

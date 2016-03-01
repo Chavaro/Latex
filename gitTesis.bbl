@@ -230,6 +230,44 @@ Braden, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bruce%
+, {Gi-Hyun Hwang}%
+\BCBL {}\ \BBA {} {Hoon Jae Lee}%
+}{%
+Bruce%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Bruce2013}
+\APACinsertmetastar {%
+Bruce2013}%
+\begin{APACrefauthors}%
+Bruce, N.%
+, {Gi-Hyun Hwang}%
+\BCBL {}\ \BBA {} {Hoon Jae Lee}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A hybrid and fast authentication protocol for handoff
+  support in e-healthcare systems among WSNs}} {{A hybrid and fast
+  authentication protocol for handoff support in e-healthcare systems among
+  WSNs}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2013 International Conference on ICT Convergence (ICTC)}
+  {2013 international conference on ict convergence (ictc)}\ (\BPGS\ 72--77).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6675309}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICTC.2013.6675309} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Buchli%
 , Sutton%
 \BCBL {}\ \BBA {} Beutel%

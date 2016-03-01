@@ -695,14 +695,14 @@ This document presents an investigation about the developed technological progre
 	Esta característica y el hecho que el servicio de telefonía móvil es en la actualidad más una necesidad que un lujo, ha alentado el desarrollo de muchos avances tecnológicos hacia el beneficio de estas tecnologías.
 	En la investigación de \citeA{Carneiro2004}, se menciona que con el objetivo de hacer frente a los problemas de bajo rendimiento en los enlaces inalámbricas y terminales móviles, se necesita una arquitectura de protocolo que considere interacciones entre capas (\textit{crosslayer}).
 	
-	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}, como se muestra en la Figura \ref{fig:mobileWiMAX}, tomada del mismo trabajo.
+	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}, % como se muestra en la Figura \ref{fig:mobileWiMAX}, tomada del mismo trabajo.
 	Esta estrategia plantea una unión de la segunda y tercer capa, reordenando y combinando los mensajes de señalización.
-	\begin{figure}[ht]
-		\centering
-		\includegraphics[width=11cm,height=9cm]{mobileWiMAX.png}
-		\caption{Arquitectura de la red móvil \textit{WiMAX} en términos de dispositivos y sus funciones. \textbf{EDITAR}}
-		\label{fig:mobileWiMAX}
-	\end{figure}
+%	\begin{figure}[ht]
+%		\centering
+%		\includegraphics[width=11cm,height=9cm]{mobileWiMAX.png}
+%		\caption{Arquitectura de la red móvil \textit{WiMAX} en términos de dispositivos y sus funciones. \textbf{EDITAR}}
+%		\label{fig:mobileWiMAX}
+%	\end{figure}
 
 	Además, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
 	
@@ -773,24 +773,46 @@ This document presents an investigation about the developed technological progre
 	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{WLAN} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además  afectar de manera mínima aspectos de \textit{QoS} de la red.
 		 
 	\section{\textit{WSNs} - \textbf{En Proceso}}
-	Las \textit{WSNs} son redes
+	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 GHz.	
+	Las \textit{WSNs} están dentro de las \textit{WPANs}, y como tal comparten un mismo objetivo: el proveer una conexión a prueba de fallas entre los dispositivos conectados en la red.
+
+	A diferencia de otro tipos de redes, las \textit{WSNs} generalmente se constituyen de dispositivos con limitantes en recursos (energía y procesamiento, por ejemplo); sin embargo, cuentan con la característica de ser conmúnmente pequeños en tamaño y la capacidad de ser móviles, por lo que es posible integrarlos o incorporarlos a entidades móviles como robots o pacientes que requieren atención constante.
+	Dicha característica representa una de sus mayores ventajas \cite{Silva2014}.
+
+%	\newpage
+	Además, en su trabajo de investigación	\citeA{Silva2014} clasifican al movimiento que presentado por un dispositivo de acuerdo a las siguientes tres categorías:
+	\begin{itemize}
+		\item Aleatorio: El nodo móvil cambia su ubicación de manera aleatoria dentro de un área bajo consideración.
+		\item Pre-definido: El nodo móvil se mueve a lo largo de una trayectoria definida a velocidad conocida, alcanzando puntos establecidos en tiempos establecidos.
+		\item Controlado: El movimiento del nodo móvil es controlado por una entidad externa en tiempo real.
+	\end{itemize}
 	
-	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen usar un canal a la vez.
-	También deben considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
+	El problema es que los estándares actuales no dan un soporte eficiente a la movilidad, y esto plantea obstáculos considerables para su uso en \textit{WSNs}, especialmente si se trata de aplicaciones críticas que requieren un alto nivel de confiabilidad y desempeño, según detallan \citeA{Silva2012} en su trabajo de investigación.
 	
-	El hecho es que los estándares actuales no dan un soporte eficiente a la movilidad, y esto plantea obstáculos considerables para su uso en \textit{WSNs}, especialmente si se trata de aplicaciones críticas que requieren un alto nivel de confiabilidad y desempeño, según detallan \citeA{Silva2012} en su trabajo de investigación.
+	También \citeA{Bruce2013} apoyan esta idea argumentando que el soporte hacia la confiabilidad de comunicaciones en tiempo real para \textit{WSN} en aplicaciones de salud (\textit{e-Health}) no es práctico con el uso de los protocolos contemporáneos en \textit{WSNs} con movilidad en sus nodos, ya que ellos no permiten lograr los requerimientos en confiabilidad bajo esta movilidad.
+
+	Por ello, el diseño de mecanismos de \textit{handoff} que permitan a los dispositivos involucrados en la red desplazarse sin afectar el desempeño de la red es necesario en \textit{WSNs}.
+		
+	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen una antena, y por ello pueden establecer como máximo una sola conexión en todo momento.
+	También debe considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
 	
-	The fact is that current standards do not efficiently support
-	mobility, and this poses considerable obstacles to their use in
-	WSNs, especially if they are being used for critical applications
-	requiring high levels of reliability and performance. If achieved,
-	adequate mobility support would be fundamental for fulfilling
-	the long-made promise of WSN deployment in scenarios as critical
-	and important as military, health or transport scenarios, for which
-	the number of real implementations is still very low.
+	Con esto en mente, diversas investigaciones se han desarrollado con el propósito de ofrecer una alternativa para solucionar el problema de falta de mecanismos de \textit{handoff} en \textit{WSNs}, tanto con diseños tradicionales por capas como con diseños \textit{crosslayer}.
+	
+	% % % % % % % % % % % % HANDOFF EN WSN % % % % % % % % % % % %
+	Muestra de ello es la propuesta de \citeA{Bruce2013}, quienes bajo un esquema de diseño tradicional por capas, proponen un mecanismo de \textit{handoff} basado en dos conceptos, la medición del \textit{RSSI} y la  criptografía de claves públicas.
+	
+	% % % % % % % ADECUAR Y REFERENCIAR MAS - SILVA2012
+	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de\textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de Internet Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
+	\textit{IPv6} demuestra ser una opción viable dado que tiene un soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{WSNs} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
+	Para ello se integra también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{WSNs}.
+
+	
+	\citeA{Silva2012} proponen a su vez un mecanismo de \textit{handoff} basado en \textit{proxy}.
+	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que en este caso utilizan \textit{MIPv6}, y quienes durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso, así como de energía.
+	% % % % % %
 	
 	
-	% % % % % % % % %
+	% % % % % % % % % HANDOFF CROSSLAYER EN WSN % % % % % % % % % %
 	
 		De la misma manera \citeA{Sinky2013}, presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual buscan aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámteros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
 		
