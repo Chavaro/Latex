@@ -289,12 +289,13 @@ Buchli, B.%
 \APACrefYear{2012}.
 \newblock
 \APACrefbtitle {{Wireless Sensor Networks}} {{Wireless Sensor Networks}}\
-  (\PrintOrdinal{1}\ \BEd, \BVOL\ 7158)\ (\BNUM~2).
+  (\PrintOrdinal{1}\ \BEd, \BVOL\ 7158; G\BPBI P.~Picco\ \BBA {} W.~Heinzelman,
+  \BEDS{})\ (\BNUM~2).
 \newblock
-\APACaddressPublisher{}{John Wiley {\&} Sons}.
+\APACaddressPublisher{Berlin, Heidelberg}{Springer Berlin Heidelberg}.
 \newblock
-\begin{APACrefURL} \url{http://dl.acm.org/citation.cfm?id=2187181.2187197}
-  \end{APACrefURL}
+\begin{APACrefURL} \url{http://dl.acm.org/citation.cfm?id=2187181.2187197
+  http://link.springer.com/10.1007/978-3-642-28169-3} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-642-28169-3} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -719,6 +720,40 @@ Fu, B.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2013.081313.00231} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Garc{\'{i}}a-Hern{\'{a}}ndez%
+, Ibarg{\"{u}}engoytia-Gonz{\'{a}}lez%
+, Garc{\'{i}}a-Hern{\'{a}}ndez%
+\BCBL {}\ \BBA {} P{\'{e}}rez-D{\'{i}}az%
+}{%
+Garc{\'{i}}a-Hern{\'{a}}ndez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Garcia-hernandez2007}
+\APACinsertmetastar {%
+Garcia-hernandez2007}%
+\begin{APACrefauthors}%
+Garc{\'{i}}a-Hern{\'{a}}ndez, C.%
+, Ibarg{\"{u}}engoytia-Gonz{\'{a}}lez, P.%
+, Garc{\'{i}}a-Hern{\'{a}}ndez, J.%
+\BCBL {}\ \BBA {} P{\'{e}}rez-D{\'{i}}az, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Networks and Applications: a Survey}}
+  {{Wireless Sensor Networks and Applications: a Survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IJCSNS International Journal of Computer Science and
+  Network Security}{7}{3}{264--273}.
+\newblock
+\begin{APACrefURL}
+  \url{http://campus.cva.itesm.mx/jdperez/documentos/IJCSNS-WSN-publicado-03-2007.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1241,6 +1276,43 @@ Melodia, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Mendo%
+, Silva%
+\BCBL {}\ \BBA {} Boavi%
+}{%
+Mendo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Mendo2010}
+\APACinsertmetastar {%
+Mendo2010}%
+\begin{APACrefauthors}%
+Mendo, R.%
+, Silva, J.%
+\BCBL {}\ \BBA {} Boavi, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{dec}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{MIPv6 Soft Hand-off for Multi-Sink Wireless Sensor
+  Networks}} {{MIPv6 Soft Hand-off for Multi-Sink Wireless Sensor
+  Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Smart Wireless Sensor Networks} {Smart wireless sensor
+  networks}\ (\BVOL~6, \BPGS\ 147--156).
+\newblock
+\APACaddressPublisher{}{InTech}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.intechopen.com/books/smart-wireless-sensor-networks/mipv6-soft-hand-off-for-multi-sink-wireless-sensor-networks}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5772/13654} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mishra%
 , Shin%
 \BCBL {}\ \BBA {} Arbaugh%
@@ -1499,6 +1571,38 @@ Raisinghani, V\BPBI T.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.comcom.2003.10.011} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raja%
+\ \BBA {} Su%
+}{%
+Raja%
+\ \BBA {} Su%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Raja2009}
+\APACinsertmetastar {%
+Raja2009}%
+\begin{APACrefauthors}%
+Raja, A.%
+\BCBT {}\ \BBA {} Su, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{mar}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility handling in MAC for wireless ad hoc networks}}
+  {{Mobility handling in MAC for wireless ad hoc networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Wireless Communications and Mobile
+  Computing}{9}{3}{303--311}.
+\newblock
+\begin{APACrefURL} \url{http://eprints.soton.ac.uk/266684/
+  http://doi.wiley.com/10.1002/wcm.613} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/wcm.613} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2166,34 +2270,6 @@ Wong, R.%
 \begin{APACrefURL}
   \url{http://europa.sim.ucm.es/compludoc/AA?articuloId=750850}
   \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Wood%
-\ \BBA {} Stankovic%
-}{%
-Wood%
-\ \BBA {} Stankovic%
-}{%
-{\protect \APACyear {2002}}%
-}]{%
-Garcia-hernandez2007}
-\APACinsertmetastar {%
-Garcia-hernandez2007}%
-\begin{APACrefauthors}%
-Wood, A\BPBI D.%
-\BCBT {}\ \BBA {} Stankovic, J\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2002}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Denial of service in sensor networks}} {{Denial of
-  service in sensor networks}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Computer}{35}{10}{54--62}.
-\newblock
-\begin{APACrefDOI} \doi{10.1109/MC.2002.1039518} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

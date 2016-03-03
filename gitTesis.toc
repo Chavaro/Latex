@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.1}Redes Celulares}{36}{section.3.1}
 \contentsline {section}{\numberline {3.2}\textit {WLANs}}{37}{section.3.2}
 \contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{40}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{43}{section.3.4}
+\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{44}{section.3.4}
 \contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{46}{section.4.1}
 \contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{47}{section.4.2}

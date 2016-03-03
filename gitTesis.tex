@@ -1,6 +1,6 @@
 % ======= Header ==================
 \documentclass[a4paper,openright,12pt]{book}% Specify format defaults [Opc: pg 10-11]
-\usepackage[spanish, es-lcroman]{babel}		% Minus Roman Enumeration
+\usepackage[spanish, es-lcroman, es-tabla]{babel}
 \usepackage[latin1]{inputenc}				% Para escribir símbolos no anglosajones (á, ü, ñ, ¡! ¿?...)
 \usepackage[hidelinks]{hyperref}			% Hyperlinks in pdf - https://www.ctan.org/pkg/hyperref
 \usepackage{graphicx}  						% To include figures - https://www.ctan.org/pkg/graphicx
@@ -12,10 +12,15 @@
 \usepackage{lipsum}							% Texto relleno - http://ctan.org/pkg/lipsum
 %\usepackage{minitoc}						% Mini indice - https://www.ctan.org/pkg/minitoc
 %\usepackage{multicol}						% Permite seccionas en columnas - https://www.ctan.org/pkg/multicol
+\usepackage{multirow}						% Para las tablas
+\usepackage{array}
+\usepackage{booktabs}
+\raggedbottom								% Evitar destribución de espacios en blanco
 \usepackage{anysize}						% Margin configuration - https://www.ctan.org/pkg/anysize
 \marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		% izq,der,top,bot
 \usepackage{chngcntr}						% Figure Enumeration - https://www.ctan.org/pkg/chngcntr
-\counterwithout{figure}{chapter}			% Dont mind the chapters
+\counterwithout{figure}{chapter}			% Dont mind the chapters for figure counting
+\counterwithout{table}{chapter}				% Dont mind the chapters
 \usepackage{datetime}						% Para personalizar fechas - https://www.ctan.org/pkg/datetime
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
 \graphicspath{ {images/} }					% images folder en local dir
@@ -536,7 +541,7 @@ This document presents an investigation about the developed technological progre
 	En resumen, dado que la ejecución frecuente de los mecanismos de \textit{handoff} ocasiona grandes consumos innecesarios de energía (críticos sobre todo para nodos cuyas fuentes de poder son limitadas, como baterías), el efecto \textit{ping-pong} debe reducirse al mínimo posible durante la etapa de decisión de \textit{handoff} \cite{Yang2004}.
 	
 	Por esta razón los nuevos algoritmos como los presentados por \citeA{Fotouhi2012}, \citeA{Lee2011} y \citeA{Liu2015} cuyo criterio de decisión se basa en la lectura del RSSI, utilizan diferentes métodos y algoritmos sobre estas lecturas para permitir una posterior ejecución del mecanismo de \textit{handoff}.
-	Incluso algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000}.	
+	Incluso algunos parámetros adicionales como margen de histéresis, temporizadores de asentamiento, y promedios, deben considerarse con el objetivo de evitar este efecto \cite{Pahlavan2000,Pollini1996}.	
 		
 	\newpage
 	\section{Importancia del \textit{handoff}}\label{sec:Importancia}
@@ -770,13 +775,20 @@ This document presents an investigation about the developed technological progre
 	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{WLAN} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además  afectar de manera mínima aspectos de \textit{QoS} de la red.
 		 
 	\section{\textit{WSNs} - \textbf{En Proceso}}
-	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 GHz.	
+	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 GHz.
+	Aunque los avances en investigación y desarrollo se han enfocado hacia el uso del estándar \textit{IEEE 802.15.4}, por su bajo consumo energético, bajo costo y su baja tasa de datos necesaria para conectar por primera vez aquellos dispositivos sin conexión a la red \cite{Garcia-hernandez2007}.
+	
 	Las \textit{WSNs} están dentro de las \textit{WPANs}, y como tal comparten un mismo objetivo: el proveer una conexión a prueba de fallas entre los dispositivos conectados en la red.
 
 	A diferencia de otro tipos de redes, las \textit{WSNs} generalmente se constituyen de dispositivos con limitantes en recursos (energía y procesamiento, por ejemplo); sin embargo, cuentan con la característica de ser conmúnmente pequeños en tamaño y la capacidad de ser móviles, por lo que es posible integrarlos o incorporarlos a entidades móviles como robots o pacientes que requieren atención constante.
 	Dicha característica representa una de sus mayores ventajas \cite{Silva2014}.
 
-%	\newpage
+	En su trabajo de investigación, \citeA{Raja2009} proponen que la movilidad de los nodos se clasificar en dos tipos:
+	\begin{itemize}
+		\item Débil: Se refiere a los nodos que se integran a la red, salen de ella, o mueren y deben ser reemplazados.
+		\item Fuerte: Se refiere a un desplazamiento físico de los nodos, quienes se mueven a través de la red (por ejemplo, al integrarse a una entidad móvil).
+	\end{itemize}
+
 	Además, en su trabajo de investigación	\citeA{Silva2014} clasifican al movimiento que presentado por un dispositivo de acuerdo a las siguientes tres categorías:
 	\begin{itemize}
 		\item Aleatorio: El nodo móvil cambia su ubicación de manera aleatoria dentro de un área bajo consideración.
@@ -788,6 +800,42 @@ This document presents an investigation about the developed technological progre
 	
 	También \citeA{Bruce2013} apoyan esta idea argumentando que el soporte hacia la confiabilidad de comunicaciones en tiempo real para \textit{WSN} en aplicaciones de salud (\textit{e-Health}) no es práctico con el uso de los protocolos contemporáneos en \textit{WSNs} con movilidad en sus nodos, ya que ellos no permiten lograr los requerimientos en confiabilidad bajo esta movilidad.
 
+	Debe dejarse en claro la importancia que las \textit{WSNs} han adquirido dada su versatilidad en múltiples aplicaciones, algunas de ellas pueden observarse en la Tabla \ref{tabla:wsnAplicaciones}, basada en el trabajo de investigación de \citeA{Garcia-hernandez2007}.
+	
+	\begin{table}[htbp]
+		\begin{center}
+			\caption{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit{WSNs}.}
+			\label{tabla:wsnAplicaciones}
+			\begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\arraybackslash}m{11.5cm} }
+				\hline
+				\textbf{Aplicaciones} & \textbf{Motes, Sensores de Polvo Inteligentes y Redes de Sensores Inalámbricas}\\
+				\hline \hline
+				En general & 
+				Monitoreo de entornos interiores/exteriores, seguridad y seguimiento, salud y monitoreo del bienestar, monitoreo de energía, localización de inventario, automatización de industrias y procesos, y monitoreo estructural y sísmico. 
+				\\ \hline
+								
+				Para monitoreo industrial y de vibraciones & 
+				Telemetría de planta, mediciones de cumplimiento y calidad, supervisión de superposición, sistemas SCADA, diagnóstico de máquinas, monitoreo de desempeño de aguas residuales y tanques, monitoreo de línea eléctrica y monitoreo de desempeño automotriz.
+				\\ \hline
+				
+				Para pruebas y mediciones & 
+				Medición de vibraciones y vida de máquinas, prueba/calificación de productos, e investigación científica. Hay varias categorías de productos con sensores: Acelerómetros, sensores de vibración, sensores de inercia, sensores de inclinación/ángulo, sensores magnéticos, accesorios de adquisición de datos y adquisición de datos inalámbricos y distribuidos.
+				\\ \hline
+				
+				Para inalámbricas avanzadas &
+				Small size, low cost, unobtrusive, unattended, wireless, onboard processing and communications, dynamic reprogramming, development of dense wireless sensor networks and message hopping.
+				\\ \hline
+				
+				Tarjetas de sensores disponibles & 
+				Light and Temperature, Acceleration/Vibration (2-Axis), Acoustic, Magnetometer, Weather Monitoring and GPS.
+				\\ \hline				
+						
+			\end{tabular}
+		\end{center}
+	\end{table}
+	
+	% % % % % % % % % % % % % CONTINUAR HABLANDO DE WSN EN SALUD RESALTANDO LA NECESIDAD DEL HANDOFF
+
 	Por ello, el diseño de mecanismos de \textit{handoff} que permitan a los dispositivos involucrados en la red desplazarse sin afectar el desempeño de la red es necesario en \textit{WSNs}.
 		
 	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen una antena, y por ello pueden establecer como máximo una sola conexión en todo momento.
@@ -795,19 +843,15 @@ This document presents an investigation about the developed technological progre
 	
 	Con esto en mente, diversas investigaciones se han desarrollado con el propósito de ofrecer una alternativa para solucionar el problema de falta de mecanismos de \textit{handoff} en \textit{WSNs}, tanto con diseños tradicionales por capas como con diseños \textit{crosslayer}.
 	
-	% % % % % % % % % % % % HANDOFF EN WSN % % % % % % % % % % % %
+	% % % % % % % % % % % % HANDOFF TRADICIONAL EN WSN % % % % % % % % % % % %
 	Muestra de ello es la propuesta de \citeA{Bruce2013}, quienes bajo un esquema de diseño tradicional por capas, proponen un mecanismo de \textit{handoff} basado en dos conceptos, la medición del \textit{RSSI} y la  criptografía de claves públicas.
 	
-	% % % % % % % ADECUAR Y REFERENCIAR MAS - SILVA2012
-	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de\textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de Internet Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
+	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de\textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de \textit{Internet} Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
 	\textit{IPv6} demuestra ser una opción viable dado que tiene un soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{WSNs} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
-	Para ello se integra también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{WSNs}.
-
+	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{WSNs} \cite{Mendo2010}.
 	
-	\citeA{Silva2012} proponen a su vez un mecanismo de \textit{handoff} basado en \textit{proxy}.
-	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que en este caso utilizan \textit{MIPv6}, y quienes durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso, así como de energía.
-	% % % % % %
-	
+	En este contexto, \citeA{Silva2012} proponen un mecanismo de \textit{handoff} basado en \textit{proxy}.
+	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso, así como de energía dada la complejidad de utilizar \textit{MIPv6}.
 	
 	% % % % % % % % % HANDOFF CROSSLAYER EN WSN % % % % % % % % % %
 	
