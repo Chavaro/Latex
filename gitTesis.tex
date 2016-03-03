@@ -1,34 +1,30 @@
 % ======= Header ==================
 \documentclass[a4paper,openright,12pt]{book}% Specify format defaults [Opc: pg 10-11]
-\usepackage[spanish, es-lcroman]{babel}		% Para enumerar en roman minúsculas
+\usepackage[spanish, es-lcroman]{babel}		% Minus Roman Enumeration
 \usepackage[latin1]{inputenc}				% Para escribir símbolos no anglosajones (á, ü, ñ, ¡! ¿?...)
-\usepackage[hidelinks]{hyperref}			% Para generar links en el pdf - https://www.ctan.org/pkg/hyperref
+\usepackage[hidelinks]{hyperref}			% Hyperlinks in pdf - https://www.ctan.org/pkg/hyperref
 \usepackage{graphicx}  						% To include figures - https://www.ctan.org/pkg/graphicx
-\usepackage{float}							% To use [H] for figure location 
-\usepackage{subfigure} 						% To include subfigures - https://www.ctan.org/pkg/subfigure
-\usepackage{setspace}						% Para ajustar interlineados - https://www.ctan.org/pkg/setspace
-\usepackage{breakcites}						% Para adaptar citas al margen del texto - https://www.ctan.org/pkg/breakcites
+\usepackage{float}							% Allow use of [H] for figure location - https://www.ctan.org/pkg/float
+\usepackage{subfigure} 						% Include subfigures - https://www.ctan.org/pkg/subfigure
+\usepackage{setspace}						% Ajustar interlineados - https://www.ctan.org/pkg/setspace
+\usepackage{breakcites}						% Adaptar citas al margen del texto - https://www.ctan.org/pkg/breakcites
 \usepackage{apacite}						% Citar APA c/paréntesis - https://www.ctan.org/pkg/apacite
 \usepackage{lipsum}							% Texto relleno - http://ctan.org/pkg/lipsum
 %\usepackage{minitoc}						% Mini indice - https://www.ctan.org/pkg/minitoc
 %\usepackage{multicol}						% Permite seccionas en columnas - https://www.ctan.org/pkg/multicol
+\usepackage{anysize}						% Margin configuration - https://www.ctan.org/pkg/anysize
+\marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		% izq,der,top,bot
+\usepackage{chngcntr}						% Figure Enumeration - https://www.ctan.org/pkg/chngcntr
+\counterwithout{figure}{chapter}			% Dont mind the chapters
 \usepackage{datetime}						% Para personalizar fechas - https://www.ctan.org/pkg/datetime
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
 \graphicspath{ {images/} }					% images folder en local dir
-
-% ======= Margin Config Opc1 ======
-\usepackage{anysize}						% https://www.ctan.org/pkg/anysize
-\marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		%izq,der,top,bot
 
 % ======= Margin Config Opc2 ======
 %\usepackage{vmargin}						% To set margins - https://www.ctan.org/pkg/vmargin
 %\setpapersize{A4}
 %\setmarginsrb{left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
 %\setmarginsrb{3.0cm}{3.5cm}{2.5cm}{2.5cm}{10pt}{1cm}{0pt}{2cm}
-
-% ======= Numeración de Figuras ======
-\usepackage{chngcntr}	%Numeración - https://www.ctan.org/pkg/chngcntr
-\counterwithout{figure}{chapter}
 
 % ======== Document ===============
 \begin{document}
@@ -41,10 +37,11 @@
 			\centering
 			\includegraphics[width=\textwidth]{logoUcolTesis.png}
 		\end{figure}		
-		
-		\begin{huge}				% Título de proyecto
-			\textsc{\newline Propuesta de un Mecanismo de Handoff Crosslayer para proveer movilidad en Redes de Sensores Inalámbricas}	
-		\end{huge}
+		\begin{spacing}{1.5}
+			\begin{huge}			% Título de proyecto
+				\textsc{\newline Propuesta de un Mecanismo de Handoff Crosslayer para proveer movilidad en Redes de Sensores Inalámbricas}	
+			\end{huge}
+		\end{spacing}
 	\end{center}
 	
 	\begin{spacing}{1.0}			% Tesis que para...
@@ -310,7 +307,7 @@ This document presents an investigation about the developed technological progre
 		Con el propósito de cumplir con cada uno de los objetivos descritos anteriormente, se propuso la metodología mostrada en la Figura \ref{fig:metologia}, como camino a seguir para el desarrollo de esta investigación:
 			\begin{figure}[ht]
 				\centering
-				\includegraphics[width=10cm,height=7cm]{metologia.png}
+				\includegraphics[width=12cm,height=8cm]{metologia.png}
 				\caption{Metodología de investigación propuesta}
 				\label{fig:metologia}
 			\end{figure}
@@ -625,8 +622,8 @@ This document presents an investigation about the developed technological progre
 	Existen muchas propuestas de diseño \textit{crosslayer} en la literatura; \citeA{Raisinghani2004} presenta un estudio donde describe varias de las propuestas desarrolladas para redes inalámbricas bajo este tipo de diseño.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=9cm]{hoCrosslayer.png}
-		\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.\textbf{EDITAR}}
+		\includegraphics[width=\textwidth,height=8cm]{hoCrosslayer.png}
+		\caption{Distintos tipo de propuestas de diseño \textit{crosslayer}.}
 		\label{fig:hoCrosslayer}
 	\end{figure}
 	
@@ -948,10 +945,7 @@ This document presents an investigation about the developed technological progre
 %\newpage
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Bibliografía}
-%\bibliographystyle{apalike}		%Referencia formato APA c/corchetes
 \bibliographystyle{apacite}			%Referencia formato APA clásico
 \bibliography{gitTesis.bib}			%Archivo .bib
 
 \end{document}
-
-
