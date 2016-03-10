@@ -32,11 +32,11 @@ Ahmad, S\BPBI Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Ahmed%
+A.~Ahmed%
 , Boulahia%
 \BCBL {}\ \BBA {} Gaiti%
 }{%
-Ahmed%
+A.~Ahmed%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2014}}%
 }]{%
@@ -65,6 +65,67 @@ Ahmed, A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~Ahmed%
+}{%
+M.~Ahmed%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Ahmed2012}
+\APACinsertmetastar {%
+Ahmed2012}%
+\begin{APACrefauthors}%
+Ahmed, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Network: An Emerging Technology}}
+  {{Wireless Sensor Network: An Emerging Technology}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IOSR Journal of Electronics and Communication
+  Engineering}{2}{4}{01--04}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.iosrjournals.org/iosr-jece/papers/vol2-issue4/A0240104.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.9790/2834-0240104} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Alemdar%
+\ \BBA {} Ersoy%
+}{%
+Alemdar%
+\ \BBA {} Ersoy%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Alemdar2010}
+\APACinsertmetastar {%
+Alemdar2010}%
+\begin{APACrefauthors}%
+Alemdar, H.%
+\BCBT {}\ \BBA {} Ersoy, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless sensor networks for healthcare: A survey}}
+  {{Wireless sensor networks for healthcare: A survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Networks}{54}{15}{2688--2710}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.comnet.2010.05.003}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comnet.2010.05.003} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2433,6 +2494,40 @@ Yemini, Y.%
   management model}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yun%
+, Khan%
+\BCBL {}\ \BBA {} Han%
+}{%
+Yun%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Yun2015}
+\APACinsertmetastar {%
+Yun2015}%
+\begin{APACrefauthors}%
+Yun, J.%
+, Khan, M.%
+\BCBL {}\ \BBA {} Han, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Fast Handoff Scheme for Streaming Service in Wireless
+  Sensor Networks}} {{A Fast Handoff Scheme for Streaming Service in Wireless
+  Sensor Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Distributed Sensor
+  Networks}{2015}{}{1--10}.
+\newblock
+\begin{APACrefURL} \url{http://www.hindawi.com/journals/ijdsn/2015/183802/
+  http://dl.acm.org/citation.cfm?id=2810827.2810828} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1155/2015/183802} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
