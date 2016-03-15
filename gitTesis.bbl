@@ -461,6 +461,31 @@ Carneiro, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+CDC%
+}{%
+CDC%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+CDC2016}
+\APACinsertmetastar {%
+CDC2016}%
+\begin{APACrefauthors}%
+CDC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {{Sudden Infant Death Syndrome (SIDS) and Sudden, Unexpected
+  Infant Death (SUID)}.} {{Sudden Infant Death Syndrome (SIDS) and Sudden,
+  Unexpected Infant Death (SUID)}.}
+\newblock
+\begin{APACrefURL} [{2016-03-15}]\url{http://www.cdc.gov/SIDS/index.htm}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chen%
 , Cai%
 , Sofia%
@@ -533,6 +558,39 @@ ChengWeiLee2005}%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Choi%
+, Kim%
+, Baek%
+\BCBL {}\ \BBA {} Kwon%
+}{%
+Choi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+Choi2005}
+\APACinsertmetastar {%
+Choi2005}%
+\begin{APACrefauthors}%
+Choi, J\BPBI Y.%
+, Kim, H\BPBI S.%
+, Baek, I.%
+\BCBL {}\ \BBA {} Kwon, W\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cell based energy density aware routing: A new protocol
+  for improving the lifetime of wireless sensor networks}} {{Cell based energy
+  density aware routing: A new protocol for improving the lifetime of wireless
+  sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{28}{11}{1293--1302}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2004.11.005} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1056,6 +1114,36 @@ Khan, J\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kulkarni%
+, Iyer%
+\BCBL {}\ \BBA {} Rosenberg%
+}{%
+Kulkarni%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Kulkarni2006}
+\APACinsertmetastar {%
+Kulkarni2006}%
+\begin{APACrefauthors}%
+Kulkarni, S.%
+, Iyer, a.%
+\BCBL {}\ \BBA {} Rosenberg, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An address-light, integrated MAC and routing protocol
+  for wireless sensor networks}} {{An address-light, integrated MAC and routing
+  protocol for wireless sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE/ACM Transactions on Networking}{14}{4}{1--29}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TNET.2006.880163} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lee%
 , Kim%
 , Jeong%
@@ -1334,6 +1422,39 @@ Melodia, T.%
 \newblock
 \begin{APACrefURL} \url{http://link.springer.com/chapter/10.1007/11750673{\_}7}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mendes%
+\ \BBA {} Rodrigues%
+}{%
+Mendes%
+\ \BBA {} Rodrigues%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Mendes2011}
+\APACinsertmetastar {%
+Mendes2011}%
+\begin{APACrefauthors}%
+Mendes, L\BPBI D\BPBI P.%
+\BCBT {}\ \BBA {} Rodrigues, J\BPBI J\BPBI P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey on cross-layer solutions for wireless sensor
+  networks}} {{A survey on cross-layer solutions for wireless sensor
+  networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Network and Computer
+  Applications}{34}{2}{523--534}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.jnca.2010.11.009}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jnca.2010.11.009} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1732,6 +1853,43 @@ Saranya, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Shapiro-Mendoza%
+, Tomashek%
+, Anderson%
+\BCBL {}\ \BBA {} Wingo%
+}{%
+Shapiro-Mendoza%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Shapiro-Mendoza2006}
+\APACinsertmetastar {%
+Shapiro-Mendoza2006}%
+\begin{APACrefauthors}%
+Shapiro-Mendoza, C\BPBI K.%
+, Tomashek, K\BPBI M.%
+, Anderson, R\BPBI N.%
+\BCBL {}\ \BBA {} Wingo, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{feb}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Recent national trends in sudden, unexpected infant
+  deaths: More evidence supporting a change in classification or reporting}}
+  {{Recent national trends in sudden, unexpected infant deaths: More evidence
+  supporting a change in classification or reporting}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Journal of Epidemiology}{163}{8}{762--769}.
+\newblock
+\begin{APACrefURL}
+  \url{http://aje.oxfordjournals.org/cgi/doi/10.1093/aje/kwj117}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/aje/kwj117} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Shi%
 \ \BBA {} Fapojuwo%
 }{%
@@ -1766,6 +1924,38 @@ Shi, L.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/WCNC.2009.4917709} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shu%
+\ \BBA {} Krunz%
+}{%
+Shu%
+\ \BBA {} Krunz%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Shu2009}
+\APACinsertmetastar {%
+Shu2009}%
+\begin{APACrefauthors}%
+Shu, T.%
+\BCBT {}\ \BBA {} Krunz, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Energy-efficient power/rate control and scheduling in
+  hybrid TDMA/CDMA wireless sensor networks}} {{Energy-efficient power/rate
+  control and scheduling in hybrid TDMA/CDMA wireless sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Networks}{53}{9}{1395--1408}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.comnet.2009.01.006}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comnet.2009.01.006} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1867,6 +2057,38 @@ Silva, R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.comcom.2012.03.005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silva%
+, Zinonos%
+, Silva%
+\BCBL {}\ \BBA {} Vassiliou%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Silva2011}
+\APACinsertmetastar {%
+Silva2011}%
+\begin{APACrefauthors}%
+Silva, R.%
+, Zinonos, Z.%
+, Silva, J\BPBI S.%
+\BCBL {}\ \BBA {} Vassiliou, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility in WSNs for critical applications}} {{Mobility
+  in WSNs for critical applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings - IEEE Symposium on Computers and
+  Communications}{}{}{451--456}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ISCC.2011.5983878} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2494,6 +2716,39 @@ Yemini, Y.%
   management model}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yuan%
+, Yang%
+, He%
+\BCBL {}\ \BBA {} He%
+}{%
+Yuan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Yuan2006}
+\APACinsertmetastar {%
+Yuan2006}%
+\begin{APACrefauthors}%
+Yuan, Y.%
+, Yang, Z.%
+, He, Z.%
+\BCBL {}\ \BBA {} He, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An integrated energy aware wireless transmission system
+  for QoS provisioning in wireless sensor network}} {{An integrated energy
+  aware wireless transmission system for QoS provisioning in wireless sensor
+  network}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{29}{2}{162--172}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2005.05.015} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

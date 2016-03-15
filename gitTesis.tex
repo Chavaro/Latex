@@ -774,7 +774,7 @@ This document presents an investigation about the developed technological progre
 	
 	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{WLAN} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además  afectar de manera mínima aspectos de \textit{QoS} de la red.
 		 
-	\section{\textit{WSNs} - \textbf{En Proceso}}
+	\section{\textit{WSNs}}
 	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 GHz.
 	Aunque los avances en investigación y desarrollo se han enfocado hacia el uso del estándar \textit{IEEE 802.15.4}, por su bajo consumo energético, bajo costo y su baja tasa de datos necesaria para conectar por primera vez aquellos dispositivos sin conexión a la red \cite{Garcia-hernandez2007}.
 	
@@ -796,27 +796,6 @@ This document presents an investigation about the developed technological progre
 		\item Controlado: El movimiento del nodo móvil es controlado por una entidad externa en tiempo real.
 	\end{itemize}
 	
-	El problema es que los estándares actuales no dan un soporte eficiente a la movilidad, y esto plantea obstáculos considerables para su uso en \textit{WSNs}, especialmente si se trata de aplicaciones críticas que requieren un alto nivel de confiabilidad y desempeño, según detallan \citeA{Silva2012} en su trabajo de investigación.
-	
-	También \citeA{Bruce2013} apoyan esta idea argumentando que el soporte hacia la confiabilidad de comunicaciones en tiempo real para \textit{WSN} en aplicaciones de salud (\textit{e-Health}) no es práctico con el uso de los protocolos contemporáneos en \textit{WSNs} con movilidad en sus nodos, ya que ellos no permiten lograr los requerimientos en confiabilidad bajo esta movilidad.
-	Sin embargo, ello no ha detenido el uso de \textit{WSNs} en aplicaciones enfocadas hacia el cuidado de la salud. 
-	En la Figura \ref{fig:wsnTypical} puede verse un escenario típico de \textit{WSN} en aplicaciones enfocadas hacia el monitoreo o cuidado de la salud.	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=14cm,height=8cm]{wsnTypical.jpg}
-		\caption{Ejemplo de un escenario simple de \textit{WSN} en aplicaciones de cuidado de la salud.}
-		\label{fig:wsnTypical}
-	\end{figure}
-	
-	Las aplicaciones médicas de las \textit{WSNs} buscan mejorar los servicios actuales de monitoreo y cuidado de la salud, especialmente aquellos para adultos mayores, niños y enfermos crónicos.
-	Estos sistemas ofrecen varias ventajas en su implementación, siendo una de las más importantes la capacidad de un monitoreo remoto.
-	Con el monitoreo remoto es posible identificar condiciones de emergencia y con ello permitir una vida más sencilla e independiente a pacientes que de otra manera necesitarían una persona a su cuidado constante \cite{Alemdar2010}.
-	
-	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{WSN}: <<sensado de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
-	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
-
-% % % % % ----> CONTINUAR HABLANDO DE WSN EN SALUD RESALTANDO LA NECESIDAD DEL HANDOFF
-
 	Debe dejarse en claro la importancia que las \textit{WSNs} han adquirido dada su versatilidad en múltiples aplicaciones, algunas de ellas pueden observarse en la Tabla \ref{tabla:wsnAplicaciones}, basada en el trabajo de investigación de \citeA{Garcia-hernandez2007}.
 	
 	\begin{table}[h]
@@ -851,7 +830,56 @@ This document presents an investigation about the developed technological progre
 		\end{center}
 	\end{table}
 	\normalsize
+	
+	El problema es que los estándares actuales no dan un soporte eficiente a la movilidad, y esto plantea obstáculos considerables para su uso en \textit{WSNs}, especialmente si se trata de aplicaciones críticas que requieren un alto nivel de confiabilidad y desempeño, según detallan \citeA{Silva2012} en su trabajo de investigación.
+	
+	También \citeA{Bruce2013} apoyan esta idea argumentando que el soporte hacia la confiabilidad de comunicaciones en tiempo real para \textit{WSN} en aplicaciones de salud (\textit{e-Health}) no es práctico con el uso de los protocolos contemporáneos en \textit{WSNs} con movilidad en sus nodos, ya que ellos no permiten lograr los requerimientos en confiabilidad bajo esta movilidad.
+	Sin embargo, ello no ha detenido el uso de \textit{WSNs} en aplicaciones enfocadas hacia el cuidado de la salud. 
+	
+	Las aplicaciones médicas de las \textit{WSNs} buscan mejorar los servicios actuales de monitoreo y cuidado de la salud, especialmente aquellos para adultos mayores, niños y enfermos crónicos.
+	Estos sistemas ofrecen varias ventajas en su implementación, siendo una de las más importantes la capacidad de un monitoreo remoto.
+	Con el monitoreo remoto es posible identificar condiciones de emergencia y con ello permitir una vida más sencilla e independiente a pacientes que de otra manera necesitarían una persona a su cuidado constante \cite{Alemdar2010}.
+	
+	En la Figura \ref{fig:wsnTypical} puede verse un escenario típico de \textit{WSN} en aplicaciones enfocadas hacia el monitoreo o cuidado de la salud.
+	Dicha figura, muestra que el escenario generalmente se compone de cinco subsistemas:
+	\begin{itemize}
+		\item \textit{BAN} (siglas en inglés de \textit{Body Area Network}, Red de Área Corporal): Este subsistema se compone de la red de sensores que los pacientes llevan consigo.
+		\item \textit{PAN} (siglas en inglés de \textit{Personal Area Network}, Red de Área Personal): Este subsistema se compone de la red de sensores ubicados en el escenario para el control del escenario y monitoreo o localización de los pacientes (cámaras, termómetros, barómetros, entre otros).
+		\item \textit{Gateway} (del inglés, Vía de Acceso): Este subsistema es responsable de permitir la conexión entre la \textit{BAN} y/o \textit{PAN} hacia la \textit{WAN}. Generalmente son \textit{smartphones}, computadoras, o nodos específicos para la tarea.
+		\item \textit{WAN} (siglas en inglés de \textit{Wide Area Network}, Red de Área Amplia): Este subsistema permite que la \textit{WSN} pueda realizar un monitoreo remoto. Muchas veces, la \textit{WAN} incluye tecnologías de comunicación satelitáles.
+		\item Aplicación de usuario final: Este último subsistema es el encargado de procesar (Aplicación) y mostrar la información al usuario final (cuidadores o personal médico) mediante una \textit{GUI} (siglas en inglés de \textit{General User Interface}, Interfaz General de Usuario).
+	\end{itemize}
+	
+	El poder visualizar el escenario de una \textit{WSN}, aplicada a cuestiones de cuidado o monitoreo de salud, como una composición de subsistemas permite a los diseñadores definir requisitos específicos para cada uno de ellos, así como visualizar posibles debilidades en el sistema \cite{Alemdar2010}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=14cm,height=8.5cm]{wsnTypical.jpg}
+		\caption{Ejemplo de un escenario simple de \textit{WSN} en aplicaciones de cuidado de la salud.}
+		\label{fig:wsnTypical}
+	\end{figure}
+	
+	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{WSN}: <<sensado de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
+	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
 
+	Asimismo, \citeA{Ahmed2012} enlista una serie de aplicaciones de las \textit{WSN} en salud, entre las que destacan:
+	\begin{itemize}
+		\item Monitoreo de víctimas en catástrofes masivas: Permite mantener informadas a las diferentes agrupaciones de atención a desastres, como la Cruz Roja, sobre nuevos incidentes o zonas que requieren mayor atención.
+		\item Monitoreo del sueño: Se refiere en sí al cuidado de la posición en que se duerme y la frecuencia respiratoria. 
+		Este tipo de aplicaciones se enfocan más hacia los infantes, pues son susceptibles al \textit{SUIDS} (siglas en inglés de \textit{Sudden Unexpected Infant Death Syndrome}, Síndrome de Repentina Muerte Inesperada de Infante) que provoca más de 3,500 muertes de infantes en Estados Unidos al año \cite{CDC2016,Shapiro-Mendoza2006}.
+		\item Monitoreo de personal de rescate: Son aplicaciones que permiten monitorizar parámetros vitales del personal de rescate, como bomberos, durante dichas acciones de rescate.
+	\end{itemize}
+	
+	De acuerdo a la investigación desarrollada por \citeA{Arnon2003}, las aplicaciones médicas (monitorización de adultos mayores, o pacientes enfermos que requieren una vigilancia constante) generalmente se ocupan del monitoreo de siete parámetros vitales: Electrocardiograma (\textit{ECG}), ritmo cardíaco, sonido cardíaco, electroencefalograma (\textit{EEG}), electromiograma (\textit{EMG}), ritmo respiratorio y temperatura corporal.
+	Es importante tener siempre en cuenta que el monitoreo de múltiples variables, y siendo éstas tan críticas, conlleva preparar al sistema o red para ofrecer eficiencia y rendimiento, pero sobre todo confiabilidad de datos. 
+	En la Figura \ref{fig:bioMeasurements} se muestra un análisis detallado de los requerimientos de red para la transmisión de estas siete variables, reflejando lo crítico de este tipo de aplicaciones.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
+		\caption{Requerimientos de mediciones biomédicas.}
+		\label{fig:bioMeasurements}
+	\end{figure}
+
+	De cualquier modo, en todas estas aplicaciones (y demás no mencionadas), se requiere libertad de movimiento del objeto a monitorizar (pacientes, infantes, personal).
 	Por ello, el diseño de mecanismos de \textit{handoff} que permitan a los dispositivos involucrados en la red desplazarse sin afectar el desempeño de la red es necesario en \textit{WSNs}.
 		
 	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen una antena, y por ello pueden establecer como máximo una sola conexión en todo momento.
@@ -870,25 +898,40 @@ This document presents an investigation about the developed technological progre
 	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{WSNs} \cite{Mendo2010}.
 	
 	En este contexto, \citeA{Silva2012} proponen un mecanismo de \textit{handoff} basado en \textit{proxy}.
-	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso, así como de energía dada la complejidad de utilizar \textit{MIPv6}.
+	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso así como de energía, dada la complejidad de utilizar \textit{MIPv6}.
 	
 	% % % % % % % % % HANDOFF CROSSLAYER EN WSN % % % % % % % % % %
+	Según \citeA{Mendes2011}, la implementación de estrategias de diseño \textit{crosslayer} para optimización de \textit{WSNs} generalmente tiene propósitos comunes:
+	\begin{itemize}
+		\item La reducción de consumo energético \cite{Kulkarni2006}
+		\item Una mayor eficiencia en ruteo \cite{Choi2005}
+		\item El proveimiento de \textit{QoS} \cite{Yuan2006}
+		\item La programación óptima \cite{Shu2009}
+	\end{itemize}
+
+	Además, ejemplifica dos interacciones \textit{crosslayer} comunes en \textit{WSNs}, una para cuestiones de \textit{QoS} y otra para \textit{CSI} (siglas en inglés de \textit{Channel State Information}, Información del Estado del Canal), las cuales son mostradas en la Figura \ref{fig:OSIcrosslayerExamples}.
+	En el primer caso, menciona que ?a interacción común es entre las capas de Aplicación y la subcapa \textit{MAC} ubicada en la capa de Enlace; de esta manera, la subcapa \textit{MAC} puede ejecutar una programación más eficiente de la aplicación en ejecución.
+	En el segundo caso, la capa Física otorga información a la capa de Red para que el protocolo de ruteo evite el uso de rutas con canales en mal estado.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=14cm,height=8.5cm]{OSIcrosslayerExamples.jpg}
+		\caption{Ejemplo de un escenario simple de \textit{WSN} en aplicaciones de cuidado de la salud.}
+		\label{fig:OSIcrosslayerExamples}
+	\end{figure}
+
+	\citeA{Melodia2006} ofrecen en su investigación una clasificación similar, donde separan las interacciones de entre capas más comunes en \textit{WSNs}.
+	Muestran, por ejemplo, que la unión entre las capas Física y Enlace (\textit{MAC}) se realiza para investigaciones relacionadas a cuestiones de energía.
+
+	Por otro lado, los mecanismos de \textit{handoff} también se han propuesto bajo estrategias de diseño \textit{crosslayer}.
 	
-		De la misma manera \citeA{Sinky2013}, presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual buscan aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámteros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
-		
-		Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
-		Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envio de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
-		
-	% % % % % % % % %
+	Una de estas propuestas fue sugerida por \citeA{Sinky2013}, quienes presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual proponen aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámetros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
 	
-		% % % % % % % % % % Viene de Justificacion
-			\begin{figure}[ht]
-				\centering
-				\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
-				\caption{Requerimientos de mediciones biomédicas. \textbf{ES DE cite[Arnon2003]}}
-				\label{fig:bioMeasurements}
-			\end{figure}
-		% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	\citeA{Silva2011} a su vez proponen el intercambio de información de las capas de Transporte y la subcapa \textit{MAC} para mejorar aspectos de movilidad en \textit{WSNs}.
+	Con esta unión de capas y el intercambio de mensajes entre los nodos de la red, permiten la creación y uso de mecanismos controlados de \textit{soft handoff} y de \textit{hard handoff}.
+	
+	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
+	Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 
 \newpage
 \section{Resumen e Inferencias}\label{sec:Inferencias}
@@ -899,7 +942,7 @@ This document presents an investigation about the developed technological progre
 		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
 		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
-		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
+		\item Dadas las cara \textbf{ES DE cite[Arnon2003]}cterísticas del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
 		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
 		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.

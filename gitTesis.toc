@@ -25,13 +25,13 @@
 \contentsline {chapter}{\numberline {3}Trabajos relacionados}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Redes Celulares}{36}{section.3.1}
 \contentsline {section}{\numberline {3.2}\textit {WLANs}}{37}{section.3.2}
-\contentsline {section}{\numberline {3.3}\textit {WSNs} - \textbf {En Proceso}}{40}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{45}{section.3.4}
-\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{47}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{48}{section.4.1}
-\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{49}{section.4.2}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{53}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{55}{chapter.6}
-\contentsline {chapter}{\numberline {A}Anexos}{57}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{59}{appendix.Alph1}
-\contentsline {section}{Referencias}{59}{section*.8}
+\contentsline {section}{\numberline {3.3}\textit {WSNs}}{40}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resumen e Inferencias}{48}{section.3.4}
+\contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\~no de Protocolo de \textit {Handoff}}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Implementaci\'on en Simulador}{51}{section.4.2}
+\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{55}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{57}{chapter.6}
+\contentsline {chapter}{\numberline {A}Anexos}{59}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{61}{appendix.Alph1}
+\contentsline {section}{Referencias}{61}{section*.8}
