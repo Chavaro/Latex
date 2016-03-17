@@ -917,7 +917,7 @@ This document presents an investigation about the developed technological progre
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=11cm,height=7cm]{OSIcrosslayerExamples.jpg}
-		\caption{Ejemplo de un escenario simple de \textit{WSN} en aplicaciones de cuidado de la salud.}
+		\caption{Ejemplo de interacciones \textit{crosslayer} y sus objetivos.}
 		\label{fig:OSIcrosslayerExamples}
 	\end{figure}
 
@@ -955,20 +955,40 @@ This document presents an investigation about the developed technological progre
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
 		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples conexiones, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
 		Además, puesto que utiliza información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
-		Finalmente, al considerar el uso de parámetros de la subcapa \textit{MAC} y la capa de Aplicación, se clasifica a la propuesta como un mecanismo de \textit{handoff} diseñado bajo estrategia \textit{crosslayer}.
+		Finalmente, al considerar el uso de parámetros de la subcapa \textit{MAC}, la capa de Transporte y la capa de Aplicación, se clasifica a la propuesta como un mecanismo de \textit{handoff} diseñado bajo estrategia \textit{crosslayer}.
 	\end{itemize}
 
 \newpage
 \chapter{Desarrollo de protocolo de \textit{handoff}}\label{ch:Desarrollo}
-	\lipsum[1]		%Texto de relleno (3 párrafos)
+	En este capítulo, se presentan los cimientos, descripción y desarrollo del protocolo propuesto.
+	
+	Tal y como se menciona en capítulos anteriores, este protocolo se basa en la investigación y mecanismo propuesto por \citeA{Buenrostro-Mariscal2015} (\textit{WSN-HaDaS}), por lo que se ha destinado una sección a su descripción.
+	
+	Se ha destinado también una sección en la que se describen las propuestas de mejora y las adecuaciones a dicho mecanismo base, las cuales resultan en el nuevo protocolo propuesto por este trabajo de Tesis.
+	
+	Finalmente, se destina una sección para la descripción del proceso y la estrategia de implementación de la propuesta en el simulador \textit{NS2}.
+	
 	\newpage
-
+	\section{Protocolo \textit{WSN-HaDaS}}\label{sec:wsnHadas}
+	Aquí se describe el protocolo \textit{WSN-HaDaS}.
+	
+		\subsection{Descripción general}
+		\lipsum[1]		%Texto de relleno (3 párrafos)
+		
+		\subsection{\textit{MHT}}
+		\lipsum[1]		%Texto de relleno (3 párrafos)
+		
+		\subsection{\textit{HEP}}
+		\lipsum[1]		%Texto de relleno (3 párrafos)
+		
+	
+	\newpage
 	\section{Diseño de Protocolo de \textit{Handoff}}\label{sec:Diseno}
 	Aquí se describe el proceso del diseño del algoritmo o protocolo de \textit{handoff}.
+	
 	\lipsum[1]		%Texto de relleno (3 párrafos)
-	\newpage
 
-	% % % % % Viene de Metodología
+	\newpage
 	\section{Implementación en Simulador}\label{sec:Implementacion}
 	Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
 
@@ -978,7 +998,7 @@ This document presents an investigation about the developed technological progre
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=12cm,height=10cm]{simPlaneacion.png}
-		\caption{Algunas fuentes de investigación consultadas.}
+		\caption{Metodología de simulación.}
 		\label{fig:simPlaneacion}
 	\end{figure}
 	
