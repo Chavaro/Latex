@@ -783,17 +783,17 @@ This document presents an investigation about the developed technological progre
 	A diferencia de otro tipos de redes, las \textit{WSNs} generalmente se constituyen de dispositivos con limitantes en recursos (energía y procesamiento, por ejemplo); sin embargo, cuentan con la característica de ser conmúnmente pequeños en tamaño y la capacidad de ser móviles, por lo que es posible integrarlos o incorporarlos a entidades móviles como robots o pacientes que requieren atención constante.
 	Dicha característica representa una de sus mayores ventajas \cite{Silva2014}.
 
-	En su trabajo de investigación, \citeA{Raja2009} proponen que la movilidad de los nodos se clasificar en dos tipos:
+	En su trabajo de investigación, \citeA{Raja2009} proponen que la movilidad de los nodos se clasifique en dos tipos:
 	\begin{itemize}
-		\item Débil: Se refiere a los nodos que se integran a la red, salen de ella, o mueren y deben ser reemplazados.
+		\item Débil: Se refiere a aquella que presentan los nodos que se integran a la red, salen de ella, o mueren y deben ser reemplazados.
 		\item Fuerte: Se refiere a un desplazamiento físico de los nodos, quienes se mueven a través de la red (por ejemplo, al integrarse a una entidad móvil).
 	\end{itemize}
 
-	Además, en su trabajo de investigación	\citeA{Silva2014} clasifican al movimiento que presentado por un dispositivo de acuerdo a las siguientes tres categorías:
+	Además, en su trabajo de investigación, \citeA{Silva2014} clasifican al movimiento presentado por un dispositivo de acuerdo a las siguientes tres categorías:
 	\begin{itemize}
 		\item Aleatorio: El nodo móvil cambia su ubicación de manera aleatoria dentro de un área bajo consideración.
 		\item Pre-definido: El nodo móvil se mueve a lo largo de una trayectoria definida a velocidad conocida, alcanzando puntos establecidos en tiempos establecidos.
-		\item Controlado: El movimiento del nodo móvil es controlado por una entidad externa en tiempo real.
+		\item Controlado: El movimiento del nodo móvil se controla por una entidad externa en tiempo real.
 	\end{itemize}
 	
 	Debe dejarse en claro la importancia que las \textit{WSNs} han adquirido dada su versatilidad en múltiples aplicaciones, algunas de ellas pueden observarse en la Tabla \ref{tabla:wsnAplicaciones}, basada en el trabajo de investigación de \citeA{Garcia-hernandez2007}.
@@ -846,7 +846,7 @@ This document presents an investigation about the developed technological progre
 		\item \textit{BAN} (siglas en inglés de \textit{Body Area Network}, Red de Área Corporal): Este subsistema se compone de la red de sensores que los pacientes llevan consigo.
 		\item \textit{PAN} (siglas en inglés de \textit{Personal Area Network}, Red de Área Personal): Este subsistema se compone de la red de sensores ubicados en el escenario para el control del escenario y monitoreo o localización de los pacientes (cámaras, termómetros, barómetros, entre otros).
 		\item \textit{Gateway} (del inglés, Vía de Acceso): Este subsistema es responsable de permitir la conexión entre la \textit{BAN} y/o \textit{PAN} hacia la \textit{WAN}. Generalmente son \textit{smartphones}, computadoras, o nodos específicos para la tarea.
-		\item \textit{WAN} (siglas en inglés de \textit{Wide Area Network}, Red de Área Amplia): Este subsistema permite que la \textit{WSN} pueda realizar un monitoreo remoto. Muchas veces, la \textit{WAN} incluye tecnologías de comunicación satelitáles.
+		\item \textit{WAN} (siglas en inglés de \textit{Wide Area Network}, Red de Área Amplia): Este subsistema permite que la \textit{WSN} pueda realizar un monitoreo remoto. Muchas veces, la \textit{WAN} incluye tecnologías de comunicación satelitales.
 		\item Aplicación de usuario final: Este último subsistema es el encargado de procesar (Aplicación) y mostrar la información al usuario final (cuidadores o personal médico) mediante una \textit{GUI} (siglas en inglés de \textit{General User Interface}, Interfaz General de Usuario).
 	\end{itemize}
 	
@@ -858,31 +858,31 @@ This document presents an investigation about the developed technological progre
 		\label{fig:wsnTypical}
 	\end{figure}
 	
-	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{WSN}: <<sensado de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
+	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{WSN}: <<monitorización de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
 	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
-
-	Asimismo, \citeA{Ahmed2012} enlista una serie de aplicaciones de las \textit{WSN} en salud, entre las que destacan:
+	Ademas, enlista una serie de aplicaciones de las \textit{WSN} en salud, entre las que destacan:
 	\begin{itemize}
 		\item Monitoreo de víctimas en catástrofes masivas: Permite mantener informadas a las diferentes agrupaciones de atención a desastres, como la Cruz Roja, sobre nuevos incidentes o zonas que requieren mayor atención.
 		\item Monitoreo del sueño: Se refiere en sí al cuidado de la posición en que se duerme y la frecuencia respiratoria. 
 		Este tipo de aplicaciones se enfocan más hacia los infantes, pues son susceptibles al \textit{SUIDS} (siglas en inglés de \textit{Sudden Unexpected Infant Death Syndrome}, Síndrome de Repentina Muerte Inesperada de Infante) que provoca más de 3,500 muertes de infantes en Estados Unidos al año \cite{CDC2016,Shapiro-Mendoza2006}.
-		\item Monitoreo de personal de rescate: Son aplicaciones que permiten monitorizar parámetros vitales del personal de rescate, como bomberos, durante dichas acciones de rescate.
+		\item Monitoreo de personal de rescate: Son aplicaciones que permiten monitorizar parámetros vitales del personal de rescate, como bomberos, durante acciones de rescate.
 	\end{itemize}
 	
 	De acuerdo a la investigación desarrollada por \citeA{Arnon2003}, las aplicaciones médicas (monitorización de adultos mayores, o pacientes enfermos que requieren una vigilancia constante) generalmente se ocupan del monitoreo de siete parámetros vitales: Electrocardiograma (\textit{ECG}), ritmo cardíaco, sonido cardíaco, electroencefalograma (\textit{EEG}), electromiograma (\textit{EMG}), ritmo respiratorio y temperatura corporal.
 	Es importante tener siempre en cuenta que el monitoreo de múltiples variables, y siendo éstas tan críticas, conlleva preparar al sistema o red para ofrecer eficiencia y rendimiento, pero sobre todo confiabilidad de datos. 
-	En la Figura \ref{fig:bioMeasurements} se muestra un análisis detallado de los requerimientos de red para la transmisión de estas siete variables, reflejando lo crítico de este tipo de aplicaciones.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\textwidth,height=7cm]{bioMeasurements.png}
+	En la Tabla \ref{tabla:bioMeasurements}, \citeA{Arnon2003} muestran un análisis detallado de los requerimientos de red para la transmisión de estas siete variables, reflejando lo crítico de este tipo de aplicaciones.
+	En dicho análisis, a cada paciente se le implementó uno o varios sensores de las siete variables antes mencionadas.
+	
+	\begin{table}[H]
 		\caption{Requerimientos de mediciones biomédicas.}
-		\label{fig:bioMeasurements}
-	\end{figure}
+		\label{tabla:bioMeasurements}
+		\includegraphics[width=\textwidth,height=6.5cm]{bioMeasurements01.png}
+	\end{table}
 
-	De cualquier modo, en todas estas aplicaciones (y demás no mencionadas), se requiere libertad de movimiento del objeto a monitorizar (pacientes, infantes, personal).
+	De cualquier modo, en todas estas aplicaciones (y otras no mencionadas), se requiere libertad de movimiento del objeto a monitorizar (pacientes, infantes, personal).
 	Por ello, el diseño de mecanismos de \textit{handoff} que permitan a los dispositivos involucrados en la red desplazarse sin afectar el desempeño de la red es necesario en \textit{WSNs}.
 		
-	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen una antena, y por ello pueden establecer como máximo una sola conexión en todo momento.
+	Según menciona \citeA{Fotouhi2012}, al diseñar un mecanismo de \textit{handoff} para \textit{WSNs}, existen consideraciones diferentes que deben atenderse: el \textit{hard handoff} por ejemplo; puesto que en \textit{WSNs} los radios sólo poseen una antena, y por ello sólo pueden establecer como máximo una conexión en todo momento.
 	También debe considerarse el efecto de enlaces de baja potencia y/o desconfiables, dado que son críticos para evitar la problemática del efecto \textit{ping-pong}. 
 	
 	Con esto en mente, diversas investigaciones se han desarrollado con el propósito de ofrecer una alternativa para solucionar el problema de falta de mecanismos de \textit{handoff} en \textit{WSNs}, tanto con diseños tradicionales por capas como con diseños \textit{crosslayer}.
@@ -891,10 +891,10 @@ This document presents an investigation about the developed technological progre
 	Muestra de ello es la propuesta de \citeA{Bruce2013}, quienes bajo un esquema de diseño tradicional por capas, proponen un mecanismo de \textit{handoff} basado en dos conceptos, la medición del \textit{RSSI} y la criptografía de claves públicas.
 	
 	Por su parte, \citeA{Yun2015} proponen una nueva estrategia de \textit{handoff} utilizando el \textit{LQI} (siglas en inglés de \textit{Link Quality Indicator}, Indicador de Calidad de Enlace) como parámetro de evaluación.
-	Dicha estrategia plantea el escaneo continuo del \textit{LQI} de los paquetes tipo \textit{beacon} recibidos por los nodos coordinadores de la \textit{WSN}, de esta manera el nodo móvil no requiere realizar un escaneo completo al ejecutar un \textit{handoff}, reduciendo significativamente el tiempo de traspaso.
+	Dicha estrategia plantea el escaneo continuo del \textit{LQI} de los paquetes tipo \textit{beacon} (paquetes de datos con información sobre los \textit{APs} o nodos coordinadores) enviados por los nodos coordinadores de la \textit{WSN}, de esta manera el nodo móvil no requiere realizar un escaneo completo al ejecutar un \textit{handoff}, reduciendo significativamente el tiempo de traspaso.
 	
-	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de\textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de \textit{Internet} Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
-	\textit{IPv6} demuestra ser una opción viable dado que tiene un soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{WSNs} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
+	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de \textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de \textit{Internet} Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
+	Se toma a \textit{IPv6} como base dado que demuestra ser una opción viable al tener soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{WSNs} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
 	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{WSNs} \cite{Mendo2010}.
 	
 	En este contexto, \citeA{Silva2012} proponen un mecanismo de \textit{handoff} basado en \textit{proxy}.
@@ -909,8 +909,9 @@ This document presents an investigation about the developed technological progre
 		\item La programación óptima \cite{Shu2009}
 	\end{itemize}
 
-	Además, ejemplifica dos interacciones \textit{crosslayer} comunes en \textit{WSNs}, una para cuestiones de \textit{QoS} y otra para \textit{CSI} (siglas en inglés de \textit{Channel State Information}, Información del Estado del Canal), las cuales son mostradas en la Figura \ref{fig:OSIcrosslayerExamples}.
-	En el primer caso, menciona que ?a interacción común es entre las capas de Aplicación y la subcapa \textit{MAC} ubicada en la capa de Enlace; de esta manera, la subcapa \textit{MAC} puede ejecutar una programación más eficiente de la aplicación en ejecución.
+	Además, ejemplifica dos interacciones \textit{crosslayer} comunes en \textit{WSNs}, una para cuestiones de \textit{QoS} y otra para \textit{CSI} (siglas en inglés de \textit{Channel State Information}, Información del Estado del Canal), las cuales se muestran en la Figura \ref{fig:OSIcrosslayerExamples}.
+	En el primer caso, menciona que la interacción común es entre las capas de Aplicación y la subcapa \textit{MAC} ubicada en la capa de Enlace.
+	De esta manera, la subcapa \textit{MAC} puede ejecutar una programación más eficiente de la aplicación en ejecución.
 	En el segundo caso, la capa Física otorga información a la capa de Red para que el protocolo de ruteo evite el uso de rutas con canales en mal estado.
 
 	\begin{figure}[H]
@@ -925,27 +926,36 @@ This document presents an investigation about the developed technological progre
 
 	Por otro lado, los mecanismos de \textit{handoff} también se han propuesto bajo estrategias de diseño \textit{crosslayer}.
 	
-	Una de estas propuestas fue sugerida por \citeA{Sinky2013}, quienes presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con el cual proponen aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámetros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
+	Una de estas propuestas fue sugerida por \citeA{Sinky2013}, quienes presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{TCP} (siglas en inglés de \textit{Transmission Control Protocol}, Protocolo de Control de Transmisión), con ello proponen aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámetros de \textit{TCP} para mejoras la calidad de servicio durante el traspaso de red.
 	
 	\citeA{Silva2011} a su vez proponen el intercambio de información de las capas de Transporte y la subcapa \textit{MAC} para mejorar aspectos de movilidad en \textit{WSNs}.
 	Con esta unión de capas y el intercambio de mensajes entre los nodos de la red, permiten la creación y uso de mecanismos controlados de \textit{soft handoff} y de \textit{hard handoff}.
 	
 	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
 	Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
+	
+	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{WSNs} y su importancia en múltiples áreas: milicia, vigilancia, cuidad de la salud, localización de personal, entre otras.
+	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{WSN}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad; puesto que a diferencia de otros estándares, el \textit{IEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{WSNs}.
 
 \newpage
 \section{Resumen e Inferencias}\label{sec:Inferencias}
 	Durante la investigación y estudio de las secciones de Esquema de Fundamentos (Capítulo \ref{ch:Esquema}) y Trabajos Relacionados (Capítulo \ref{ch:Trabajos}), se realizó una lectura y análisis de múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y con ello fue posible producir las siguientes conclusiones:
 	
 	\begin{itemize}
-		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
+		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en inglés de \textit{Quality of Service}, Calidad de Servicio) y reducir el tiempo necesario para la ejecución del \textit{handoff}.
+		
 		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
+		
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
-		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
-		\item Dadas las cara \textbf{ES DE cite[Arnon2003]}cterísticas del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
+		
+		\item En su mayoría, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación, así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
+		
+		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
+		
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
-		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
+		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples conexiones, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
+		Además, puesto que utiliza información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
+		Finalmente, al considerar el uso de parámetros de la subcapa \textit{MAC} y la capa de Aplicación, se clasifica a la propuesta como un mecanismo de \textit{handoff} diseñado bajo estrategia \textit{crosslayer}.
 	\end{itemize}
 
 \newpage
@@ -961,7 +971,7 @@ This document presents an investigation about the developed technological progre
 	% % % % % Viene de Metodología
 	\section{Implementación en Simulador}\label{sec:Implementacion}
 	Uno de los puntos clave de este proyecto es el uso de un simulador de redes para la implementación del mecanismo diseñado y análisis de comportamiento y resultados.
-	
+
 	Esta etapa a su vez, requirió de una planeación o metodología a seguir. 
 	Ésta se ha tomado de \citeA{OpnetWork2013}, y funge como base para el desarrollo de la simulación, dicha metodología se presenta en  la Figura \ref{fig:simPlaneacion}.
 	
