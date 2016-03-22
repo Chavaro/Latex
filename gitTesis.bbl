@@ -1,0 +1,2852 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Ahmad%
+, Akbar%
+\BCBL {}\ \BBA {} Qadir%
+}{%
+Ahmad%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Ahmad2007}
+\APACinsertmetastar {%
+Ahmad2007}%
+\begin{APACrefauthors}%
+Ahmad, S\BPBI Z.%
+, Akbar, M\BPBI S.%
+\BCBL {}\ \BBA {} Qadir, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Cross-Layer Vertical Handover Decision Model for
+  Heterogeneous Wireless Networks}} {{A Cross-Layer Vertical Handover Decision
+  Model for Heterogeneous Wireless Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2007 Innovations in Information Technologies
+  (IIT)}{}{}{441--445}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IIT.2007.4430456} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+A.~Ahmed%
+, Boulahia%
+\BCBL {}\ \BBA {} Gaiti%
+}{%
+A.~Ahmed%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Ahmed2014}
+\APACinsertmetastar {%
+Ahmed2014}%
+\begin{APACrefauthors}%
+Ahmed, A.%
+, Boulahia, L\BPBI M.%
+\BCBL {}\ \BBA {} Gaiti, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Enabling Vertical Handover Decisions in Heterogeneous
+  Wireless Networks: A State-of-the-Art and A Classification}} {{Enabling
+  Vertical Handover Decisions in Heterogeneous Wireless Networks: A
+  State-of-the-Art and A Classification}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys {\&}
+  Tutorials}{16}{2}{776--811}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6587998}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~Ahmed%
+}{%
+M.~Ahmed%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Ahmed2012}
+\APACinsertmetastar {%
+Ahmed2012}%
+\begin{APACrefauthors}%
+Ahmed, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Network: An Emerging Technology}}
+  {{Wireless Sensor Network: An Emerging Technology}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IOSR Journal of Electronics and Communication
+  Engineering}{2}{4}{01--04}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.iosrjournals.org/iosr-jece/papers/vol2-issue4/A0240104.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.9790/2834-0240104} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Alemdar%
+\ \BBA {} Ersoy%
+}{%
+Alemdar%
+\ \BBA {} Ersoy%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Alemdar2010}
+\APACinsertmetastar {%
+Alemdar2010}%
+\begin{APACrefauthors}%
+Alemdar, H.%
+\BCBT {}\ \BBA {} Ersoy, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless sensor networks for healthcare: A survey}}
+  {{Wireless sensor networks for healthcare: A survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Networks}{54}{15}{2688--2710}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.comnet.2010.05.003}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comnet.2010.05.003} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Arnon%
+, Bhastekar%
+, Kedar%
+\BCBL {}\ \BBA {} Tauber%
+}{%
+Arnon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Arnon2003}
+\APACinsertmetastar {%
+Arnon2003}%
+\begin{APACrefauthors}%
+Arnon, S.%
+, Bhastekar, D.%
+, Kedar, D.%
+\BCBL {}\ \BBA {} Tauber, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{feb}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A comparative study of wireless communication network
+  configurations for medical applications}} {{A comparative study of wireless
+  communication network configurations for medical applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{10}{1}{56--61}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1182112}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2003.1182112} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berghaus%
+\ \BBA {} Back%
+}{%
+Berghaus%
+\ \BBA {} Back%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Berghaus2016}
+\APACinsertmetastar {%
+Berghaus2016}%
+\begin{APACrefauthors}%
+Berghaus, S.%
+\BCBT {}\ \BBA {} Back, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Requirements elicitation and utilization scenarios for
+  in-car use of wearable devices}} {{Requirements elicitation and utilization
+  scenarios for in-car use of wearable devices}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the Annual Hawaii International
+  Conference on System Sciences} {Proceedings of the annual hawaii
+  international conference on system sciences}\ (\BVOL\ 2015-March, \BPGS\
+  1028--1037).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7069932}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/HICSS.2015.127} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bertsekas%
+\ \BBA {} Gallager%
+}{%
+Bertsekas%
+\ \BBA {} Gallager%
+}{%
+{\protect \APACyear {1987}}%
+}]{%
+Bertsekas1992}
+\APACinsertmetastar {%
+Bertsekas1992}%
+\begin{APACrefauthors}%
+Bertsekas, D\BPBI P.%
+\BCBT {}\ \BBA {} Gallager, R\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1987}.
+\newblock
+\APACrefbtitle {{Data networks}} {{Data networks}}\ (\PrintOrdinal{2}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Prentice-Hall International New Jersey}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.pearsonhighered.com/educator/product/Data-Networks/9780132009164.page}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bisnik%
+}{%
+Bisnik%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Bisnik2005}
+\APACinsertmetastar {%
+Bisnik2005}%
+\begin{APACrefauthors}%
+Bisnik, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Protocol Design for Wireless Ad hoc Networks : The
+  Cross-Layer Paradigm}} {{Protocol Design for Wireless Ad hoc Networks : The
+  Cross-Layer Paradigm}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Teknik Rapor, Rensselaer Polytechnic
+  Institute}{}{}{1--10}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Braden%
+, Faber%
+\BCBL {}\ \BBA {} Handley%
+}{%
+Braden%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Braden2003}
+\APACinsertmetastar {%
+Braden2003}%
+\begin{APACrefauthors}%
+Braden, R.%
+, Faber, T.%
+\BCBL {}\ \BBA {} Handley, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{From protocol stack to protocol heap: role-based
+  architecture}} {{From protocol stack to protocol heap: role-based
+  architecture}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SIGCOMM Comput. Commun. Rev.}{33}{1}{17--22}.
+\newblock
+\begin{APACrefURL}
+  \url{http://portal.acm.org/citation.cfm?id=774763.774765$\backslash$nhttp://portal.acm.org/ft{\_}gateway.cfm?id=774765{\&}type=pdf{\&}coll=GUIDE{\&}dl=GUIDE{\&}CFID=51810956{\&}CFTOKEN=36743601}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/774763.774765} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bruce%
+, {Gi-Hyun Hwang}%
+\BCBL {}\ \BBA {} {Hoon Jae Lee}%
+}{%
+Bruce%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Bruce2013}
+\APACinsertmetastar {%
+Bruce2013}%
+\begin{APACrefauthors}%
+Bruce, N.%
+, {Gi-Hyun Hwang}%
+\BCBL {}\ \BBA {} {Hoon Jae Lee}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A hybrid and fast authentication protocol for handoff
+  support in e-healthcare systems among WSNs}} {{A hybrid and fast
+  authentication protocol for handoff support in e-healthcare systems among
+  WSNs}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2013 International Conference on ICT Convergence (ICTC)}
+  {2013 international conference on ict convergence (ictc)}\ (\BPGS\ 72--77).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6675309}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICTC.2013.6675309} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Buchli%
+, Sutton%
+\BCBL {}\ \BBA {} Beutel%
+}{%
+Buchli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Akyildiz2010}
+\APACinsertmetastar {%
+Akyildiz2010}%
+\begin{APACrefauthors}%
+Buchli, B.%
+, Sutton, F.%
+\BCBL {}\ \BBA {} Beutel, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {{Wireless Sensor Networks}} {{Wireless Sensor Networks}}\
+  (\PrintOrdinal{1}\ \BEd, \BVOL\ 7158; G\BPBI P.~Picco\ \BBA {} W.~Heinzelman,
+  \BEDS{})\ (\BNUM~2).
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer Berlin Heidelberg}.
+\newblock
+\begin{APACrefURL} \url{http://dl.acm.org/citation.cfm?id=2187181.2187197
+  http://link.springer.com/10.1007/978-3-642-28169-3} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-642-28169-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Buenrostro-Mariscal%
+}{%
+Buenrostro-Mariscal%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Buenrostro-Mariscal2014}
+\APACinsertmetastar {%
+Buenrostro-Mariscal2014}%
+\begin{APACrefauthors}%
+Buenrostro-Mariscal, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\unskip\
+\newblock
+\APACrefbtitle {{Protocolo de Transporte para el Control de Congesti{\'{o}}n
+  bajo Dise{\~{n}}o Cross-layer, consiente del QoS de las Aplicaciones en Redes
+  Inal{\'{a}}mbricas IEEE 802.15.4}} {{Protocolo de Transporte para el Control
+  de Congesti{\'{o}}n bajo Dise{\~{n}}o Cross-layer, consiente del QoS de las
+  Aplicaciones en Redes Inal{\'{a}}mbricas IEEE 802.15.4}}\
+  \APACtypeAddressSchool {Doctorado}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{Universidad Aut{\'{o}}noma de Baja California}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Buenrostro-Mariscal%
+\ \protect \BOthers {.}}{%
+Buenrostro-Mariscal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Buenrostro-Mariscal2015}
+\APACinsertmetastar {%
+Buenrostro-Mariscal2015}%
+\begin{APACrefauthors}%
+Buenrostro-Mariscal, R.%
+, Cosio-Leon, M.%
+, Nieto-Hipolito, J\BHBI I.%
+, Guerrero-Ibanez, J\BHBI A.%
+, Vazquez-Briseno, M.%
+\BCBL {}\ \BBA {} Sanchez-Lopez, J\BHBI d\BHBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{WSN-HaDaS: A Cross-Layer Handoff Management Protocol
+  for Wireless Sensor Networks, a Practical Approach to Mobility}} {{WSN-HaDaS:
+  A Cross-Layer Handoff Management Protocol for Wireless Sensor Networks, a
+  Practical Approach to Mobility}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEICE Transactions on
+  Communications}{E98.B}{7}{1333--1344}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.jstage.jst.go.jp/article/transcom/E98.B/7/E98.B{\_}1333/{\_}article}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1587/transcom.E98.B.1333} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Carneiro%
+, Ruela%
+\BCBL {}\ \BBA {} Ricardo%
+}{%
+Carneiro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Carneiro2004}
+\APACinsertmetastar {%
+Carneiro2004}%
+\begin{APACrefauthors}%
+Carneiro, G.%
+, Ruela, J.%
+\BCBL {}\ \BBA {} Ricardo, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design in 4G wireless terminals}}
+  {{Cross-layer design in 4G wireless terminals}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{11}{2}{7--13}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1295732}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2004.1295732} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+CDC%
+}{%
+CDC%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+CDC2016}
+\APACinsertmetastar {%
+CDC2016}%
+\begin{APACrefauthors}%
+CDC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {{Sudden Infant Death Syndrome (SIDS) and Sudden, Unexpected
+  Infant Death (SUID)}.} {{Sudden Infant Death Syndrome (SIDS) and Sudden,
+  Unexpected Infant Death (SUID)}.}
+\newblock
+\begin{APACrefURL} [{2016-03-15}]\url{http://www.cdc.gov/SIDS/index.htm}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Cai%
+, Sofia%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Chen2007}
+\APACinsertmetastar {%
+Chen2007}%
+\begin{APACrefauthors}%
+Chen, L\BPBI C\BPBI L.%
+, Cai, X\BPBI C\BPBI X.%
+, Sofia, R.%
+\BCBL {}\ \BBA {} Huang, Z\BPBI H\BPBI Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{sep}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Cross-layer Fast Handover Scheme For Mobile WiMAX}}
+  {{A Cross-layer Fast Handover Scheme For Mobile WiMAX}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {66th IEEE Vehicular Technology Conference (VTC-07)}
+  {66th ieee vehicular technology conference (vtc-07)}\ (\BPGS\ 1578--1582).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4349984}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/VETECF.2007.335} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Cheng Wei Lee}%
+, {Li Ming Chen}%
+, {Meng Chang Chen}%
+\BCBL {}\ \BBA {} {Yeali Sunny Sun}%
+}{%
+{Cheng Wei Lee}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+ChengWeiLee2005}
+\APACinsertmetastar {%
+ChengWeiLee2005}%
+\begin{APACrefauthors}%
+{Cheng Wei Lee}%
+, {Li Ming Chen}%
+, {Meng Chang Chen}%
+\BCBL {}\ \BBA {} {Yeali Sunny Sun}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{nov}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Journal on Selected Areas in
+  Communications}{23}{11}{2118--2128}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Choi%
+, Kim%
+, Baek%
+\BCBL {}\ \BBA {} Kwon%
+}{%
+Choi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+Choi2005}
+\APACinsertmetastar {%
+Choi2005}%
+\begin{APACrefauthors}%
+Choi, J\BPBI Y.%
+, Kim, H\BPBI S.%
+, Baek, I.%
+\BCBL {}\ \BBA {} Kwon, W\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cell based energy density aware routing: A new protocol
+  for improving the lifetime of wireless sensor networks}} {{Cell based energy
+  density aware routing: A new protocol for improving the lifetime of wireless
+  sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{28}{11}{1293--1302}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2004.11.005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chowdhury%
+\ \BBA {} Gregory%
+}{%
+Chowdhury%
+\ \BBA {} Gregory%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Chowdhury2012}
+\APACinsertmetastar {%
+Chowdhury2012}%
+\begin{APACrefauthors}%
+Chowdhury, A\BPBI S.%
+\BCBT {}\ \BBA {} Gregory, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{dec}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{UMTS and WiMAX handover performance comparison}} {{UMTS
+  and WiMAX handover performance comparison}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceeding of the 15th International Conference on
+  Computer and Information Technology, ICCIT 2012} {Proceeding of the 15th
+  international conference on computer and information technology, iccit 2012}\
+  (\BPGS\ 332--337).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6509794}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICCITechn.2012.6509794} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dictionary%
+}{%
+Dictionary%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+MacmillanDic}
+\APACinsertmetastar {%
+MacmillanDic}%
+\begin{APACrefauthors}%
+Dictionary, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{Handover definition and synonyms | Macmillan Dictionary}.}
+  {{Handover definition and synonyms | Macmillan Dictionary}.}
+\newblock
+\begin{APACrefURL}
+  [{2015-10-28}]\url{http://www.macmillandictionary.com/dictionary/british/handover}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dunn%
+\ \BBA {} Murphy%
+}{%
+Dunn%
+\ \BBA {} Murphy%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Dunn2008}
+\APACinsertmetastar {%
+Dunn2008}%
+\begin{APACrefauthors}%
+Dunn, W.%
+\BCBT {}\ \BBA {} Murphy, J\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The patient handoff: Medicine's formula one moment}}
+  {{The patient handoff: Medicine's formula one moment}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chest}{134}{1}{9--12}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0012369208601397}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1378/chest.08-0998} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Edirisinghe%
+\ \BBA {} Zaslavsky%
+}{%
+Edirisinghe%
+\ \BBA {} Zaslavsky%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Edirisinghe2014}
+\APACinsertmetastar {%
+Edirisinghe2014}%
+\begin{APACrefauthors}%
+Edirisinghe, R.%
+\BCBT {}\ \BBA {} Zaslavsky, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer contextual interactions in wireless
+  networks}} {{Cross-layer contextual interactions in wireless
+  networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{16}{2}{1114--1134}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6657500}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2013.101813.00023} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Espa{\~{n}}ola%
+}{%
+Espa{\~{n}}ola%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Rae2014}
+\APACinsertmetastar {%
+Rae2014}%
+\begin{APACrefauthors}%
+Espa{\~{n}}ola, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Diccionario de la lengua espa{\~{n}}ola}} {{Diccionario
+  de la lengua espa{\~{n}}ola}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Barcelona: Espa{\~{n}}a Libros}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eysenbach%
+}{%
+Eysenbach%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Eysenbach2001}
+\APACinsertmetastar {%
+Eysenbach2001}%
+\begin{APACrefauthors}%
+Eysenbach, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{What is e-health?}} {{What is e-health?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Medical Internet Research}{3}{2}{1--5}.
+\newblock
+\begin{APACrefURL} \url{http://www.jmir.org/2001/2/e20/} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2196/jmir.3.2.e20} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fotouhi%
+, Zuniga%
+, Alves%
+, Koubaa%
+\BCBL {}\ \BBA {} Marron%
+}{%
+Fotouhi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Fotouhi2012}
+\APACinsertmetastar {%
+Fotouhi2012}%
+\begin{APACrefauthors}%
+Fotouhi, H.%
+, Zuniga, M.%
+, Alves, M.%
+, Koubaa, A.%
+\BCBL {}\ \BBA {} Marron, P\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Smart-HOP: A Reliable Handoff Mechanism For Mobile
+  Wireless Sensor Networks}} {{Smart-HOP: A Reliable Handoff Mechanism For
+  Mobile Wireless Sensor Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Ewsn'12}{}{}{2--16}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-642-28169-3_9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fu%
+, Xiao%
+, Deng%
+\BCBL {}\ \BBA {} Zeng%
+}{%
+Fu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Fu2014}
+\APACinsertmetastar {%
+Fu2014}%
+\begin{APACrefauthors}%
+Fu, B.%
+, Xiao, Y.%
+, Deng, H\BPBI J.%
+\BCBL {}\ \BBA {} Zeng, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey of cross-layer designs in wireless networks}}
+  {{A survey of cross-layer designs in wireless networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{16}{1}{110--126}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=6587995
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6587995}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2013.081313.00231} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Garc{\'{i}}a-Hern{\'{a}}ndez%
+, Ibarg{\"{u}}engoytia-Gonz{\'{a}}lez%
+, Garc{\'{i}}a-Hern{\'{a}}ndez%
+\BCBL {}\ \BBA {} P{\'{e}}rez-D{\'{i}}az%
+}{%
+Garc{\'{i}}a-Hern{\'{a}}ndez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Garcia-hernandez2007}
+\APACinsertmetastar {%
+Garcia-hernandez2007}%
+\begin{APACrefauthors}%
+Garc{\'{i}}a-Hern{\'{a}}ndez, C.%
+, Ibarg{\"{u}}engoytia-Gonz{\'{a}}lez, P.%
+, Garc{\'{i}}a-Hern{\'{a}}ndez, J.%
+\BCBL {}\ \BBA {} P{\'{e}}rez-D{\'{i}}az, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Networks and Applications: a Survey}}
+  {{Wireless Sensor Networks and Applications: a Survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IJCSNS International Journal of Computer Science and
+  Network Security}{7}{3}{264--273}.
+\newblock
+\begin{APACrefURL}
+  \url{http://campus.cva.itesm.mx/jdperez/documentos/IJCSNS-WSN-publicado-03-2007.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ghanem%
+, Alradwan%
+, Motermawy%
+\BCBL {}\ \BBA {} Ahmad%
+}{%
+Ghanem%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Ghanem2012}
+\APACinsertmetastar {%
+Ghanem2012}%
+\begin{APACrefauthors}%
+Ghanem, K.%
+, Alradwan, H.%
+, Motermawy, A.%
+\BCBL {}\ \BBA {} Ahmad, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Reducing ping-pong handover effects in intra EUTRA
+  networks}} {{Reducing ping-pong handover effects in intra EUTRA
+  networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 2012 8th International Symposium on
+  Communication Systems, Networks and Digital Signal Processing, CSNDSP 2012}
+  {Proceedings of the 2012 8th international symposium on communication
+  systems, networks and digital signal processing, csndsp 2012}\ (\BPGS\ 1--5).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6292642}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CSNDSP.2012.6292642} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gruebler%
+\ \BBA {} Suzuki%
+}{%
+Gruebler%
+\ \BBA {} Suzuki%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Gruebler2014}
+\APACinsertmetastar {%
+Gruebler2014}%
+\begin{APACrefauthors}%
+Gruebler, A.%
+\BCBT {}\ \BBA {} Suzuki, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Design of a wearable device for reading positive
+  expressions from facial EMG signals}} {{Design of a wearable device for
+  reading positive expressions from facial EMG signals}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Affective
+  Computing}{5}{3}{227--237}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6778017}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TAFFC.2014.2313557} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gu%
+, Bae%
+, Chung%
+, Cheon%
+\BCBL {}\ \BBA {} Park%
+}{%
+Gu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Gu2010}
+\APACinsertmetastar {%
+Gu2010}%
+\begin{APACrefauthors}%
+Gu, J.%
+, Bae, S\BPBI J.%
+, Chung, M\BPBI Y.%
+, Cheon, K\BPBI Y.%
+\BCBL {}\ \BBA {} Park, A\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility-based handover decision mechanism to relieve
+  ping-pong effect in cellular networks}} {{Mobility-based handover decision
+  mechanism to relieve ping-pong effect in cellular networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2010 16th Asia-Pacific Conference on Communications,
+  APCC 2010}{}{}{487--491}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=5680000}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/APCC.2010.5680000} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoflinger%
+\ \protect \BOthers {.}}{%
+Hoflinger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Hoflinger2012}
+\APACinsertmetastar {%
+Hoflinger2012}%
+\begin{APACrefauthors}%
+Hoflinger, F.%
+, Zhang, R.%
+, Hoppe, J.%
+, Bannoura, A.%
+, Reindl, L\BPBI M.%
+, Wendeberg, J.%
+\BDBL {}Schindelhauer, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Acoustic Self-calibrating System for Indoor Smartphone
+  Tracking (ASSIST)}} {{Acoustic Self-calibrating System for Indoor Smartphone
+  Tracking (ASSIST)}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2012 International Conference on Indoor Positioning and
+  Indoor Navigation, IPIN 2012 - Conference Proceedings}{}{November}{1--9}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IPIN.2012.6418877} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jo%
+\ \BBA {} Cho%
+}{%
+Jo%
+\ \BBA {} Cho%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Jo2008}
+\APACinsertmetastar {%
+Jo2008}%
+\begin{APACrefauthors}%
+Jo, J.%
+\BCBT {}\ \BBA {} Cho, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer optimized vertical handover schemes between
+  mobile WiMAX and 3G networks}} {{Cross-layer optimized vertical handover
+  schemes between mobile WiMAX and 3G networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{KSII Transactions on Internet and Information
+  Systems}{2}{4}{171--183}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ksii.cafe24.com/download.jsp?filename=TIIS{\_}Vol2No4P1Aug08.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3837/tiis.2008.04.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kassar%
+, Kervella%
+\BCBL {}\ \BBA {} Pujolle%
+}{%
+Kassar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Kassar2008}
+\APACinsertmetastar {%
+Kassar2008}%
+\begin{APACrefauthors}%
+Kassar, M.%
+, Kervella, B.%
+\BCBL {}\ \BBA {} Pujolle, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An overview of vertical handover decision strategies in
+  heterogeneous wireless networks}} {{An overview of vertical handover decision
+  strategies in heterogeneous wireless networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{31}{10}{2607--2620}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2008.01.044} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+\ \BBA {} Yuce%
+}{%
+Khan%
+\ \BBA {} Yuce%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Khan2012}
+\APACinsertmetastar {%
+Khan2012}%
+\begin{APACrefauthors}%
+Khan, J\BPBI Y.%
+\BCBT {}\ \BBA {} Yuce, M\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Body Area Network(WBAN) for Medical
+  Applications}} {{Wireless Body Area Network(WBAN) for Medical
+  Applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Medical Systems}{36}{3}{1441--1457}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kulkarni%
+, Iyer%
+\BCBL {}\ \BBA {} Rosenberg%
+}{%
+Kulkarni%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Kulkarni2006}
+\APACinsertmetastar {%
+Kulkarni2006}%
+\begin{APACrefauthors}%
+Kulkarni, S.%
+, Iyer, a.%
+\BCBL {}\ \BBA {} Rosenberg, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An address-light, integrated MAC and routing protocol
+  for wireless sensor networks}} {{An address-light, integrated MAC and routing
+  protocol for wireless sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE/ACM Transactions on Networking}{14}{4}{1--29}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TNET.2006.880163} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+, Kim%
+, Jeong%
+\BCBL {}\ \BBA {} Kang%
+}{%
+Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Lee2011}
+\APACinsertmetastar {%
+Lee2011}%
+\begin{APACrefauthors}%
+Lee, D\BPBI K.%
+, Kim, T\BPBI H.%
+, Jeong, S\BPBI Y.%
+\BCBL {}\ \BBA {} Kang, S\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{sep}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A three-tier middleware architecture supporting
+  bidirectional location tracking of numerous mobile nodes under legacy WSN
+  environment}} {{A three-tier middleware architecture supporting bidirectional
+  location tracking of numerous mobile nodes under legacy WSN
+  environment}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Systems Architecture}{57}{8}{735--748}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1383762111000804}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.sysarc.2011.05.004} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Leon%
+, Hipolito%
+\BCBL {}\ \BBA {} Garcia%
+}{%
+Leon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+DelosAngelesCosioLeon}
+\APACinsertmetastar {%
+DelosAngelesCosioLeon}%
+\begin{APACrefauthors}%
+Leon, M\BPBI d\BPBI l\BPBI A\BPBI C.%
+, Hipolito, J\BPBI I\BPBI N.%
+\BCBL {}\ \BBA {} Garcia, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{sep}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Security and Privacy Survey for WSN in e-Health
+  Applications}} {{A Security and Privacy Survey for WSN in e-Health
+  Applications}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 Electronics, Robotics and Automotive Mechanics
+  Conference (CERMA)} {2009 electronics, robotics and automotive mechanics
+  conference (cerma)}\ (\BPGS\ 125--130).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5342002}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CERMA.2009.47} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lin%
+\ \BBA {} Lee%
+}{%
+Lin%
+\ \BBA {} Lee%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Liu2015}
+\APACinsertmetastar {%
+Liu2015}%
+\begin{APACrefauthors}%
+Lin, C\BPBI S.%
+\BCBT {}\ \BBA {} Lee, I\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Applying multiple description coding to enhance the
+  streaming scalability on CDN-P2P network}} {{Applying multiple description
+  coding to enhance the streaming scalability on CDN-P2P network}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Communication
+  Systems}{23}{5}{553--568}.
+\newblock
+\begin{APACrefURL}
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/dac.2760/epdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/dac} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liu%
+, Li%
+, Guo%
+\BCBL {}\ \BBA {} Dutkiewicz%
+}{%
+Liu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+MinLiu2008}
+\APACinsertmetastar {%
+MinLiu2008}%
+\begin{APACrefauthors}%
+Liu, M.%
+, Li, Z.%
+, Guo, X.%
+\BCBL {}\ \BBA {} Dutkiewicz, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{jul}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Performance analysis and optimization of handoff
+  algorithms in heterogeneous wireless networks}} {{Performance analysis and
+  optimization of handoff algorithms in heterogeneous wireless
+  networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Mobile Computing}{7}{7}{846--857}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4359007}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TMC.2007.70768} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Makaya%
+\ \BBA {} Pierre%
+}{%
+Makaya%
+\ \BBA {} Pierre%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Makaya2008}
+\APACinsertmetastar {%
+Makaya2008}%
+\begin{APACrefauthors}%
+Makaya, C.%
+\BCBT {}\ \BBA {} Pierre, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{mar}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An analytical framework for performance evaluation of
+  IPv6-based mobility management protocols}} {{An analytical framework for
+  performance evaluation of IPv6-based mobility management protocols}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Wireless
+  Communications}{7}{3}{972--983}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4472015}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TWC.2008.060725} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Man%
+\ \BBA {} Committee%
+}{%
+Man%
+\ \BBA {} Committee%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+Man2006}
+\APACinsertmetastar {%
+Man2006}%
+\begin{APACrefauthors}%
+Man, L\BPBI a\BPBI N.%
+\BCBT {}\ \BBA {} Committee, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {{IEEE Standard for Information technology- Telecommunications
+  and information exchange between systems- Local and metropolitan area
+  networks- Specific requirements--Part 15.4: Wireless MAC and PHY
+  Specifications for Low-Rate WPANs}} {{IEEE Standard for Information
+  technology- Telecommunications and information exchange between systems-
+  Local and metropolitan area networks- Specific requirements--Part 15.4:
+  Wireless MAC and PHY Specifications for Low-Rate WPANs}}\ (\BVOL\ 2006)\
+  (\BNUM\ September).
+\newblock
+\begin{APACrefURL}
+  \url{http://www.mendeley.com/research/ieee-standard-for-information-technology-telecommunications-and-information-exchange-between-systems-local-and-metropolitan-area-networks-specific-requirements-part-154-wireless-medium-access-control-mac-and-physical-layer}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IEEESTD.2006.232110} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McNair%
+\ \BBA {} Zhu%
+}{%
+McNair%
+\ \BBA {} Zhu%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+McNair2004}
+\APACinsertmetastar {%
+McNair2004}%
+\begin{APACrefauthors}%
+McNair, J.%
+\BCBT {}\ \BBA {} Zhu, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Vertical handoffs in fourth-generation multinetwork
+  environments}} {{Vertical handoffs in fourth-generation multinetwork
+  environments}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{11}{3}{8--15}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1308935}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MWC.2004.1308935} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Melodia%
+, Vuran%
+\BCBL {}\ \BBA {} Pompili%
+}{%
+Melodia%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Melodia2006}
+\APACinsertmetastar {%
+Melodia2006}%
+\begin{APACrefauthors}%
+Melodia, T.%
+, Vuran, M.%
+\BCBL {}\ \BBA {} Pompili, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The state of the art in cross-layer design for wireless
+  sensor networks}} {{The state of the art in cross-layer design for wireless
+  sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Wireless Systems and Network {\ldots}}{}{}{78--92}.
+\newblock
+\begin{APACrefURL} \url{http://link.springer.com/chapter/10.1007/11750673{\_}7}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mendes%
+\ \BBA {} Rodrigues%
+}{%
+Mendes%
+\ \BBA {} Rodrigues%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Mendes2011}
+\APACinsertmetastar {%
+Mendes2011}%
+\begin{APACrefauthors}%
+Mendes, L\BPBI D\BPBI P.%
+\BCBT {}\ \BBA {} Rodrigues, J\BPBI J\BPBI P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey on cross-layer solutions for wireless sensor
+  networks}} {{A survey on cross-layer solutions for wireless sensor
+  networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Network and Computer
+  Applications}{34}{2}{523--534}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.jnca.2010.11.009}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jnca.2010.11.009} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mendo%
+, Silva%
+\BCBL {}\ \BBA {} Boavi%
+}{%
+Mendo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Mendo2010}
+\APACinsertmetastar {%
+Mendo2010}%
+\begin{APACrefauthors}%
+Mendo, R.%
+, Silva, J.%
+\BCBL {}\ \BBA {} Boavi, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{dec}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{MIPv6 Soft Hand-off for Multi-Sink Wireless Sensor
+  Networks}} {{MIPv6 Soft Hand-off for Multi-Sink Wireless Sensor
+  Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Smart Wireless Sensor Networks} {Smart wireless sensor
+  networks}\ (\BVOL~6, \BPGS\ 147--156).
+\newblock
+\APACaddressPublisher{}{InTech}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.intechopen.com/books/smart-wireless-sensor-networks/mipv6-soft-hand-off-for-multi-sink-wireless-sensor-networks}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5772/13654} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mishra%
+, Shin%
+\BCBL {}\ \BBA {} Arbaugh%
+}{%
+Mishra%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Arbaugh2002}
+\APACinsertmetastar {%
+Arbaugh2002}%
+\begin{APACrefauthors}%
+Mishra, A.%
+, Shin, M.%
+\BCBL {}\ \BBA {} Arbaugh, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An empirical analysis of the IEEE 802.11 MAC layer
+  handoff process}} {{An empirical analysis of the IEEE 802.11 MAC layer
+  handoff process}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM SIGCOMM Computer Communication Review}{33}{2}{93}.
+\newblock
+\begin{APACrefURL} \url{http://portal.acm.org/citation.cfm?doid=956981.956990}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/956981.956990} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nasser%
+, Hasswa%
+\BCBL {}\ \BBA {} Hassanein%
+}{%
+Nasser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Nasser2006}
+\APACinsertmetastar {%
+Nasser2006}%
+\begin{APACrefauthors}%
+Nasser, N.%
+, Hasswa, A.%
+\BCBL {}\ \BBA {} Hassanein, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoffs in fourth generation heterogeneous networks}}
+  {{Handoffs in fourth generation heterogeneous networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{44}{10}{96--103}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1710420}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MCOM.2006.1710420} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+OpnetWork%
+}{%
+OpnetWork%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+OpnetWork2013}
+\APACinsertmetastar {%
+OpnetWork2013}%
+\begin{APACrefauthors}%
+OpnetWork.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Principios B{\'{a}}sicos de Simulaci{\'{o}}n}}
+  {{Principios B{\'{a}}sicos de Simulaci{\'{o}}n}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Opnetwork 2013.} {Opnetwork 2013.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pack%
+, Choi%
+, Kwon%
+\BCBL {}\ \BBA {} Choi%
+}{%
+Pack%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Pack2007}
+\APACinsertmetastar {%
+Pack2007}%
+\begin{APACrefauthors}%
+Pack, S.%
+, Choi, J.%
+, Kwon, T.%
+\BCBL {}\ \BBA {} Choi, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Fast-handoff support in IEEE 802.11 wireless networks}}
+  {{Fast-handoff support in IEEE 802.11 wireless networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{\ldots} Surveys {\&} Tutorials, IEEE}{9}{1}{1--25}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=4198183}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/COMST.2007.358968} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pahlavan%
+\ \protect \BOthers {.}}{%
+Pahlavan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Pahlavan2000}
+\APACinsertmetastar {%
+Pahlavan2000}%
+\begin{APACrefauthors}%
+Pahlavan, K.%
+, Krishnamurthy, P.%
+, Hatami, A.%
+, Ylianttila, M.%
+, Makela, J.%
+, Pichna, R.%
+\BCBL {}\ \BBA {} Vallstron, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoff in hybrid mobile data networks}} {{Handoff in
+  hybrid mobile data networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Personal Communications}{7}{2}{34--47}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1080/01422419908228843
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=839330}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/98.839330} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pollini%
+}{%
+Pollini%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+Pollini1996}
+\APACinsertmetastar {%
+Pollini1996}%
+\begin{APACrefauthors}%
+Pollini, G\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Trends in Handover design}} {{Trends in Handover
+  design}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{34}{3}{82--90}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=486807}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/35.486807} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis%
+\BCBL {}\ \BBA {} {Tuanfa Qin}%
+}{%
+{Qiuling Tang}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+QiulingTang2005}
+\APACinsertmetastar {%
+QiulingTang2005}%
+\begin{APACrefauthors}%
+{Qiuling Tang}%
+, {Liuqing Yang}%
+, Giannakis, G.%
+\BCBL {}\ \BBA {} {Tuanfa Qin}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}} {{Battery Power Efficiency of PPM and FSK in Wireless
+  Sensor Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {MILCOM 2005 - 2005 IEEE Military Communications
+  Conference} {Milcom 2005 - 2005 ieee military communications conference}\
+  (\BVOL~6, \BPGS\ 1--7).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1606004}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MILCOM.2005.1606004} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raisinghani%
+\ \BBA {} Iyer%
+}{%
+Raisinghani%
+\ \BBA {} Iyer%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Raisinghani2004}
+\APACinsertmetastar {%
+Raisinghani2004}%
+\begin{APACrefauthors}%
+Raisinghani, V\BPBI T.%
+\BCBT {}\ \BBA {} Iyer, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design optimizations in wireless protocol
+  stacks}} {{Cross-layer design optimizations in wireless protocol
+  stacks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{27}{8}{720--724}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0140366403002913}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2003.10.011} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raja%
+\ \BBA {} Su%
+}{%
+Raja%
+\ \BBA {} Su%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Raja2009}
+\APACinsertmetastar {%
+Raja2009}%
+\begin{APACrefauthors}%
+Raja, A.%
+\BCBT {}\ \BBA {} Su, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{mar}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility handling in MAC for wireless ad hoc networks}}
+  {{Mobility handling in MAC for wireless ad hoc networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Wireless Communications and Mobile
+  Computing}{9}{3}{303--311}.
+\newblock
+\begin{APACrefURL} \url{http://eprints.soton.ac.uk/266684/
+  http://doi.wiley.com/10.1002/wcm.613} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/wcm.613} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ramachandran%
+, Rangarajan%
+\BCBL {}\ \BBA {} Lin%
+}{%
+Ramachandran%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Ramachandran2006}
+\APACinsertmetastar {%
+Ramachandran2006}%
+\begin{APACrefauthors}%
+Ramachandran, K.%
+, Rangarajan, S.%
+\BCBL {}\ \BBA {} Lin, J\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Make-before-break MAC layer handoff in 802.11 wireless
+  networks}} {{Make-before-break MAC layer handoff in 802.11 wireless
+  networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {IEEE International Conference on Communications} {Ieee
+  international conference on communications}\ (\BVOL~10, \BPGS\ 4818--4823).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4024800}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICC.2006.255402} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Saranya%
+\ \BBA {} Pugazendi%
+}{%
+Saranya%
+\ \BBA {} Pugazendi%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Saranya2014}
+\APACinsertmetastar {%
+Saranya2014}%
+\begin{APACrefauthors}%
+Saranya, R.%
+\BCBT {}\ \BBA {} Pugazendi, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Survey on Co-existence Mechanisms in WLAN and WPAN
+  Devices}} {{A Survey on Co-existence Mechanisms in WLAN and WPAN
+  Devices}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Advanced Research in Computer
+  Engineering {\&} Technology (IJARCET)}{3}{9}{2967--2972}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shapiro-Mendoza%
+, Tomashek%
+, Anderson%
+\BCBL {}\ \BBA {} Wingo%
+}{%
+Shapiro-Mendoza%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Shapiro-Mendoza2006}
+\APACinsertmetastar {%
+Shapiro-Mendoza2006}%
+\begin{APACrefauthors}%
+Shapiro-Mendoza, C\BPBI K.%
+, Tomashek, K\BPBI M.%
+, Anderson, R\BPBI N.%
+\BCBL {}\ \BBA {} Wingo, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{feb}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Recent national trends in sudden, unexpected infant
+  deaths: More evidence supporting a change in classification or reporting}}
+  {{Recent national trends in sudden, unexpected infant deaths: More evidence
+  supporting a change in classification or reporting}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Journal of Epidemiology}{163}{8}{762--769}.
+\newblock
+\begin{APACrefURL}
+  \url{http://aje.oxfordjournals.org/cgi/doi/10.1093/aje/kwj117}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/aje/kwj117} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shi%
+\ \BBA {} Fapojuwo%
+}{%
+Shi%
+\ \BBA {} Fapojuwo%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Shi2009}
+\APACinsertmetastar {%
+Shi2009}%
+\begin{APACrefauthors}%
+Shi, L.%
+\BCBT {}\ \BBA {} Fapojuwo, A\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Energy efficient and delay optimized TDMA scheduling
+  for clustered wireless sensor networks}} {{Energy efficient and delay
+  optimized TDMA scheduling for clustered wireless sensor networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {IEEE Wireless Communications and Networking Conference,
+  WCNC} {Ieee wireless communications and networking conference, wcnc}\ (\BPGS\
+  1--6).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4917709}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WCNC.2009.4917709} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shu%
+\ \BBA {} Krunz%
+}{%
+Shu%
+\ \BBA {} Krunz%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Shu2009}
+\APACinsertmetastar {%
+Shu2009}%
+\begin{APACrefauthors}%
+Shu, T.%
+\BCBT {}\ \BBA {} Krunz, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Energy-efficient power/rate control and scheduling in
+  hybrid TDMA/CDMA wireless sensor networks}} {{Energy-efficient power/rate
+  control and scheduling in hybrid TDMA/CDMA wireless sensor networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Networks}{53}{9}{1395--1408}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.comnet.2009.01.006}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comnet.2009.01.006} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siddiqui%
+\ \BBA {} Zeadally%
+}{%
+Siddiqui%
+\ \BBA {} Zeadally%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Siddiqui2008}
+\APACinsertmetastar {%
+Siddiqui2008}%
+\begin{APACrefauthors}%
+Siddiqui, F.%
+\BCBT {}\ \BBA {} Zeadally, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An efficient wireless network discovery scheme for
+  heterogeneous access environments}} {{An efficient wireless network discovery
+  scheme for heterogeneous access environments}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Pervasive Computing and
+  Communications}{4}{1}{50--60}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.emeraldinsight.com/doi/abs/10.1108/17427370810873101}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1108/17427370810873101} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silva%
+, {Sa Silva}%
+\BCBL {}\ \BBA {} Boavida%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Silva2014}
+\APACinsertmetastar {%
+Silva2014}%
+\begin{APACrefauthors}%
+Silva, R.%
+, {Sa Silva}, J.%
+\BCBL {}\ \BBA {} Boavida, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility in wireless sensor networks - Survey and
+  proposal}} {{Mobility in wireless sensor networks - Survey and
+  proposal}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{52}{}{1--20}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140366414001911}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2014.05.008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silva%
+, Silva%
+\BCBL {}\ \BBA {} Boavida%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Silva2012}
+\APACinsertmetastar {%
+Silva2012}%
+\begin{APACrefauthors}%
+Silva, R.%
+, Silva, J\BPBI S.%
+\BCBL {}\ \BBA {} Boavida, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A proposal for proxy-based mobility in WSNs}} {{A
+  proposal for proxy-based mobility in WSNs}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{35}{10}{1200--1216}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140366412000825}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2012.03.005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silva%
+, Zinonos%
+, Silva%
+\BCBL {}\ \BBA {} Vassiliou%
+}{%
+Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Silva2011}
+\APACinsertmetastar {%
+Silva2011}%
+\begin{APACrefauthors}%
+Silva, R.%
+, Zinonos, Z.%
+, Silva, J\BPBI S.%
+\BCBL {}\ \BBA {} Vassiliou, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mobility in WSNs for critical applications}} {{Mobility
+  in WSNs for critical applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings - IEEE Symposium on Computers and
+  Communications}{}{}{451--456}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ISCC.2011.5983878} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Simulator%
+}{%
+Simulator%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+Ns1989}
+\APACinsertmetastar {%
+Ns1989}%
+\begin{APACrefauthors}%
+Simulator, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+\APACrefbtitle {ns-2.} {ns-2.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sinky%
+\ \BBA {} Hamdaoui%
+}{%
+Sinky%
+\ \BBA {} Hamdaoui%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+Sinky2013}
+\APACinsertmetastar {%
+Sinky2013}%
+\begin{APACrefauthors}%
+Sinky, H.%
+\BCBT {}\ \BBA {} Hamdaoui, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{dec}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-Layer Assisted TCP for Seamless Handoff in
+  Heterogeneous Mobile Wireless Systems}} {{Cross-Layer Assisted TCP for
+  Seamless Handoff in Heterogeneous Mobile Wireless Systems}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2013 IEEE Global Communications Conference (GLOBECOM)}
+  {2013 ieee global communications conference (globecom)}\ (\BPGS\ 4947--4952).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6855740}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/GLOCOMW.2013.6855740} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Srivastava%
+\ \BBA {} Motani%
+}{%
+Srivastava%
+\ \BBA {} Motani%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Srivastava2005}
+\APACinsertmetastar {%
+Srivastava2005}%
+\begin{APACrefauthors}%
+Srivastava, V.%
+\BCBT {}\ \BBA {} Motani, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design: a survey and the road ahead}}
+  {{Cross-layer design: a survey and the road ahead}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Magazine, IEEE}{43}{12}{112--119}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MCOM.2005.1561928} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stine%
+}{%
+Stine%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Stine2007}
+\APACinsertmetastar {%
+Stine2007}%
+\begin{APACrefauthors}%
+Stine, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer design of MANETs: The only Option}}
+  {{Cross-layer design of MANETs: The only Option}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings - IEEE Military Communications Conference
+  MILCOM} {Proceedings - ieee military communications conference milcom}\
+  (\BPGS\ 1--7).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4086836}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MILCOM.2006.302250} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stuedi%
+\ \BBA {} Alonso%
+}{%
+Stuedi%
+\ \BBA {} Alonso%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Stuedi2005}
+\APACinsertmetastar {%
+Stuedi2005}%
+\begin{APACrefauthors}%
+Stuedi, P.%
+\BCBT {}\ \BBA {} Alonso, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Transparent heterogeneous mobile ad hoc networks}}
+  {{Transparent heterogeneous mobile ad hoc networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Second Annual International Conference on Mobile
+  and Ubiquitous Systems: Networking and Services}{}{5005}{237--246}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1541004}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MOBIQUITOUS.2005.63} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Taehoon%
+, Sang-wook%
+\BCBL {}\ \BBA {} Youngnam%
+}{%
+Taehoon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Kim2010}
+\APACinsertmetastar {%
+Kim2010}%
+\begin{APACrefauthors}%
+Taehoon, K.%
+, Sang-wook, H.%
+\BCBL {}\ \BBA {} Youngnam, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A QoS-aware vertical handoff algorithm based on service
+  history information}} {{A QoS-aware vertical handoff algorithm based on
+  service history information}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Letters, IEEE}{14}{6}{527--529}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/LCOMM.2010.06.100176} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tang%
+, Sun%
+, Wen%
+\BCBL {}\ \BBA {} Liang%
+}{%
+Tang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Tang2010}
+\APACinsertmetastar {%
+Tang2010}%
+\begin{APACrefauthors}%
+Tang, Q.%
+, Sun, C.%
+, Wen, H.%
+\BCBL {}\ \BBA {} Liang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer energy efficiency analysis and optimization
+  in WSN}} {{Cross-layer energy efficiency analysis and optimization in
+  WSN}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2010 International Conference on Networking, Sensing and
+  Control (ICNSC)} {2010 international conference on networking, sensing and
+  control (icnsc)}\ (\BPGS\ 138--142).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/login.jsp?tp={\&}arnumber=5461522{\&}url=http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=5461522
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5461522}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICNSC.2010.5461522} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thaalbi%
+\ \BBA {} Tabbane%
+}{%
+Thaalbi%
+\ \BBA {} Tabbane%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Thaalbi2014}
+\APACinsertmetastar {%
+Thaalbi2014}%
+\begin{APACrefauthors}%
+Thaalbi, M.%
+\BCBT {}\ \BBA {} Tabbane, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Improving vertical handover over heterogeneous
+  technologies using a cross layer framework}} {{Improving vertical handover
+  over heterogeneous technologies using a cross layer framework}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings - 16th IEEE International Conference on High
+  Performance Computing and Communications, HPCC 2014, 11th IEEE International
+  Conference on Embedded Software and Systems, ICESS 2014 and 6th International
+  Symposium on Cyberspace Safety and Security} {Proceedings - 16th ieee
+  international conference on high performance computing and communications,
+  hpcc 2014, 11th ieee international conference on embedded software and
+  systems, icess 2014 and 6th international symposium on cyberspace safety and
+  security}\ (\BPGS\ 1170--1176).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7056890}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/HPCC.2014.191} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tsukamoto%
+, Yamaguchi%
+, Kashihara%
+\BCBL {}\ \BBA {} Oie%
+}{%
+Tsukamoto%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Tsukamoto2007}
+\APACinsertmetastar {%
+Tsukamoto2007}%
+\begin{APACrefauthors}%
+Tsukamoto, K.%
+, Yamaguchi, T.%
+, Kashihara, S.%
+\BCBL {}\ \BBA {} Oie, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Experimental evaluation of decision criteria for WLAN
+  handover: Signal strength and frame retransmission}} {{Experimental
+  evaluation of decision criteria for WLAN handover: Signal strength and frame
+  retransmission}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEICE Transactions on
+  Communications}{E90-B}{12}{3579--3590}.
+\newblock
+\begin{APACrefDOI} \doi{10.1093/ietcom/e90-b.l2.3579} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Van Quang}%
+, Prasad%
+\BCBL {}\ \BBA {} Niemegeers%
+}{%
+{Van Quang}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+VanQuang2012}
+\APACinsertmetastar {%
+VanQuang2012}%
+\begin{APACrefauthors}%
+{Van Quang}, B.%
+, Prasad, R\BPBI V.%
+\BCBL {}\ \BBA {} Niemegeers, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey on handoffs - Lessons for 60 GHz based
+  wireless systems}} {{A survey on handoffs - Lessons for 60 GHz based wireless
+  systems}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{14}{1}{64--86}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/SURV.2011.101310.00005} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Villar%
+}{%
+Villar%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Villar2009}
+\APACinsertmetastar {%
+Villar2009}%
+\begin{APACrefauthors}%
+Villar, H\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handoff Vertical : Aproximaciones Cross-Layer}}
+  {{Handoff Vertical : Aproximaciones Cross-Layer}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Revista en Telecomunicaciones e
+  Inform{\'{a}}tica}{1}{Noviembre}{1--9}.
+\newblock
+\begin{APACrefURL}
+  \url{https://revistas.upb.edu.co/index.php/telecomunicaciones/article/view/1251}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Virone%
+\ \protect \BOthers {.}}{%
+Virone%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Virone2006}
+\APACinsertmetastar {%
+Virone2006}%
+\begin{APACrefauthors}%
+Virone, G.%
+, Wood, a.%
+, Selavo, L.%
+, Cao, Q.%
+, Fang, L.%
+, Doan, T.%
+\BDBL {}Stankovic, J\BPBI a.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Advanced Wireless Sensor Network for Health
+  Monitoring}} {{An Advanced Wireless Sensor Network for Health
+  Monitoring}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Transdisciplinary Conference on Distributed Diagnosis
+  and Home Healthcare (D2H2)} {Transdisciplinary conference on distributed
+  diagnosis and home healthcare (d2h2)}\ (\BPGS\ 2--5).
+\newblock
+\begin{APACrefURL}
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.64.7346{\&}rep=rep1{\&}type=pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1.1.64.7346} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wang%
+\ \BBA {} Abu-Rgheff%
+}{%
+Wang%
+\ \BBA {} Abu-Rgheff%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+Wang2003}
+\APACinsertmetastar {%
+Wang2003}%
+\begin{APACrefauthors}%
+Wang, Q.%
+\BCBT {}\ \BBA {} Abu-Rgheff, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Cross-layer signalling for next-generation wireless
+  systems}} {{Cross-layer signalling for next-generation wireless
+  systems}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {IEEE Wireless Communications and Networking Conference,
+  WCNC} {Ieee wireless communications and networking conference, wcnc}\
+  (\BVOL~2, \BPGS\ 1084--1089).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1200522}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WCNC.2003.1200522} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wong%
+, Espinoza%
+\BCBL {}\ \BBA {} Palloni%
+}{%
+Wong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Wong2007}
+\APACinsertmetastar {%
+Wong2007}%
+\begin{APACrefauthors}%
+Wong, R.%
+, Espinoza, M.%
+\BCBL {}\ \BBA {} Palloni, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adultos mayores mexicanos en contexto
+  socioecon{\'{o}}mico amplio}} {{Adultos mayores mexicanos en contexto
+  socioecon{\'{o}}mico amplio}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Salud P{\'{u}}blica de M{\'{e}}xico}{49}{Instituto
+  Nacional de Salud P{\'{u}}blica}{436--447}.
+\newblock
+\begin{APACrefURL}
+  \url{http://europa.sim.ucm.es/compludoc/AA?articuloId=750850}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wu%
+}{%
+Wu%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+WuBaojiang2011}
+\APACinsertmetastar {%
+WuBaojiang2011}%
+\begin{APACrefauthors}%
+Wu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An efficient fast handoff scheme with network mobility
+  in heterogeneous networks}} {{An efficient fast handoff scheme with network
+  mobility in heterogeneous networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 2011 6th International ICST
+  Conference on Communications and Networking in China, CHINACOM 2011}
+  {Proceedings of the 2011 6th international icst conference on communications
+  and networking in china, chinacom 2011}\ (\BPGS\ 887--892).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6158280}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ChinaCom.2011.6158280} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yan%
+, Xu%
+\BCBL {}\ \BBA {} Gidlund%
+}{%
+Yan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+Yan2009}
+\APACinsertmetastar {%
+Yan2009}%
+\begin{APACrefauthors}%
+Yan, H\BPBI Y\BPBI H.%
+, Xu, Y\BPBI X\BPBI Y.%
+\BCBL {}\ \BBA {} Gidlund, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Experimental e-Health Applications in Wireless Sensor
+  Networks}} {{Experimental e-Health Applications in Wireless Sensor
+  Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 WRI International Conference on Communications and
+  Mobile Computing} {2009 wri international conference on communications and
+  mobile computing}\ (\BVOL~1, \BPGS\ 563--567).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CMC.2009.206} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
+, Song%
+, Owens%
+, Cosmas%
+\BCBL {}\ \BBA {} Itagaki%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Yang2004}
+\APACinsertmetastar {%
+Yang2004}%
+\begin{APACrefauthors}%
+Yang, X.%
+, Song, Y.%
+, Owens, T\BPBI J.%
+, Cosmas, J.%
+\BCBL {}\ \BBA {} Itagaki, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Seamless Soft Handover In DVB-H Networks}} {{Seamless
+  Soft Handover In DVB-H Networks}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Software, Telecommunications
+  and Computer Networks 2004.} {International conference on software,
+  telecommunications and computer networks 2004.}
+\newblock
+\APACaddressPublisher{Split, Croatia, 2004.}{Softcom committees}.
+\newblock
+\begin{APACrefURL} \url{http://bura.brunel.ac.uk/handle/2438/2490}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
+, V{\"{a}}re%
+\BCBL {}\ \BBA {} Owens%
+}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Yang2006}
+\APACinsertmetastar {%
+Yang2006}%
+\begin{APACrefauthors}%
+Yang, X.%
+, V{\"{a}}re, J.%
+\BCBL {}\ \BBA {} Owens, T\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{jan}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey of handover algorithms in DVB-H}} {{A survey
+  of handover algorithms in DVB-H}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys and
+  Tutorials}{8}{4}{16--29}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/abstractKeywords.jsp?arnumber=4062837+
+  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4062837}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/COMST.2006.283819} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yemini%
+}{%
+Yemini%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+Yemini1993}
+\APACinsertmetastar {%
+Yemini1993}%
+\begin{APACrefauthors}%
+Yemini, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The OSI network management model}} {{The OSI network
+  management model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications Magazine, IEEE}{31}{5}{20--29}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yuan%
+, Yang%
+, He%
+\BCBL {}\ \BBA {} He%
+}{%
+Yuan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Yuan2006}
+\APACinsertmetastar {%
+Yuan2006}%
+\begin{APACrefauthors}%
+Yuan, Y.%
+, Yang, Z.%
+, He, Z.%
+\BCBL {}\ \BBA {} He, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An integrated energy aware wireless transmission system
+  for QoS provisioning in wireless sensor network}} {{An integrated energy
+  aware wireless transmission system for QoS provisioning in wireless sensor
+  network}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Communications}{29}{2}{162--172}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.comcom.2005.05.015} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yun%
+, Khan%
+\BCBL {}\ \BBA {} Han%
+}{%
+Yun%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Yun2015}
+\APACinsertmetastar {%
+Yun2015}%
+\begin{APACrefauthors}%
+Yun, J.%
+, Khan, M.%
+\BCBL {}\ \BBA {} Han, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Fast Handoff Scheme for Streaming Service in Wireless
+  Sensor Networks}} {{A Fast Handoff Scheme for Streaming Service in Wireless
+  Sensor Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Distributed Sensor
+  Networks}{2015}{}{1--10}.
+\newblock
+\begin{APACrefURL} \url{http://www.hindawi.com/journals/ijdsn/2015/183802/
+  http://dl.acm.org/citation.cfm?id=2810827.2810828} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1155/2015/183802} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zdarsky%
+\ \BBA {} Schmitt%
+}{%
+Zdarsky%
+\ \BBA {} Schmitt%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Zdarsky2004}
+\APACinsertmetastar {%
+Zdarsky2004}%
+\begin{APACrefauthors}%
+Zdarsky, F.%
+\BCBT {}\ \BBA {} Schmitt, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handover in mobile communication networks: who is in
+  control anyway?}} {{Handover in mobile communication networks: who is in
+  control anyway?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings. 30th Euromicro Conference,
+  2004.}{}{}{205--212}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/xpl/freeabs{\_}all.jsp?arnumber=1333373}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/EURMIC.2004.1333373} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zimmermann%
+}{%
+Zimmermann%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+Zimmermann1980}
+\APACinsertmetastar {%
+Zimmermann1980}%
+\begin{APACrefauthors}%
+Zimmermann, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{apr}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{OSI Reference Model-The ISO Model of Architecture for
+  Open Systems Interconnection}} {{OSI Reference Model-The ISO Model of
+  Architecture for Open Systems Interconnection}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Communications}{28}{4}{425--432}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1094702}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TCOM.1980.1094702} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: gitTesis.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: gitTesis.bib.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 86 entries,
+            6951 wiz_defined-function locations,
+            1962 strings with 34340 characters,
+and the built_in function-call counts, 182475 in all, are:
+= -- 22319
+> -- 1610
+< -- 8822
++ -- 8919
+- -- 194
+* -- 12124
+:= -- 32797
+add.period$ -- 383
+call.type$ -- 86
+change.case$ -- 1554
+chr.to.int$ -- 0
+cite$ -- 172
+duplicate$ -- 5051
+empty$ -- 7221
+format.name$ -- 2586
+if$ -- 34537
+int.to.chr$ -- 0
+int.to.str$ -- 258
+missing$ -- 0
+newline$ -- 2502
+num.names$ -- 690
+pop$ -- 3093
+preamble$ -- 1
+purify$ -- 416
+quote$ -- 0
+skip$ -- 11496
+stack$ -- 0
+substring$ -- 9828
+swap$ -- 3069
+text.length$ -- 402
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 8224
+warning$ -- 0
+while$ -- 979
+width$ -- 0
+write$ -- 3141
