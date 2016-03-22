@@ -697,20 +697,14 @@ This document presents an investigation about the developed technological progre
 	Esta característica y el hecho que el servicio de telefonía móvil es en la actualidad más una necesidad que un lujo, ha alentado el desarrollo de muchos avances tecnológicos hacia el beneficio de estas tecnologías.
 	En la investigación de \citeA{Carneiro2004}, se menciona que con el objetivo de hacer frente a los problemas de bajo rendimiento en los enlaces inalámbricas y terminales móviles, se necesita una arquitectura de protocolo que considere interacciones entre capas (\textit{crosslayer}).
 	
-	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}, % como se muestra en la Figura \ref{fig:mobileWiMAX}, tomada del mismo trabajo.
+	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre tecnologías \textit{WiMax} y \textit{3G}.
 	Esta estrategia plantea una unión de la segunda y tercer capa, reordenando y combinando los mensajes de señalización.
-%	\begin{figure}[ht]
-%		\centering
-%		\includegraphics[width=11cm,height=9cm]{mobileWiMAX.png}
-%		\caption{Arquitectura de la red móvil \textit{WiMAX} en términos de dispositivos y sus funciones. \textbf{EDITAR}}
-%		\label{fig:mobileWiMAX}
-%	\end{figure}
 
 	Además, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{MAC} entre las \textit{BSs} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
 	
 	En los trabajos desarrollados por \citeA{McNair2004}; y \citeA{Nasser2006}, se aborda la temática de las redes de comunicación celular \textit{4G}. 
 	Para las cuales se pretenden desarrollar nuevas estrategias de decisión para el mecanismo de \textit{handoff} para los dispositivos móviles en la red.
-	Muestra de ello, son las propuestas presentadas por dichos autores, en las que se han desarrollado diferentes funciones con distintos criterios de decisión de para la ejecución de un \textit{handoff vertical}.
+	Muestra de ello, son las propuestas presentadas por dichos autores, en las que se han desarrollado diferentes funciones con distintos criterios de decisión para la ejecución de un \textit{handoff vertical}.
 	
 	En el caso de \citeA{McNair2004}, dicha decisión se basa en criterios ponderados en relación a los tipos de servicio, costo, condiciones de la red, desempeño del sistema, estado de los nodos móviles y preferencias del usuario.
 	Con ello se asenta que entre los objetivos de su trabajo fue el beneficiar el \textit{QoS} en aplicaciones de telefonía celular.
@@ -762,7 +756,7 @@ This document presents an investigation about the developed technological progre
 	Los trabajos anteriores permiten entender que existe la necesidad de mejorar los mecanismos de \textit{handoff} en este tipo de redes, y dejan en claro que los investigadores están tomando medidas en el asunto, buscando y proponiendo alternativas para mejorar o sustituir los mecanismos actuales.
 	
 	Sin embargo, los trabajos antes mencionados atacan la problemática del proceso de \textit{handoff}, buscando reducir el tiempo del mismo y no se preocupan por cómo afecta ello a la aplicación de la red durante dicho proceso.
-	
+			
 	% % % % % Esto es QoS
 	Por ello, en las investigaciones realizadas por \citeA{Kim2010,MinLiu2008} y \citeA{Ramachandran2006}, se describen soluciones haciendo un enfoque hacia el \textit{QoS}.
 	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{QoS}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo, por ejemplo: ancho de banda disponible, retrasos de tiempo, tasa de datos, costo, entre otros.
@@ -931,7 +925,7 @@ This document presents an investigation about the developed technological progre
 	\citeA{Silva2011} a su vez proponen el intercambio de información de las capas de Transporte y la subcapa \textit{MAC} para mejorar aspectos de movilidad en \textit{WSNs}.
 	Con esta unión de capas y el intercambio de mensajes entre los nodos de la red, permiten la creación y uso de mecanismos controlados de \textit{soft handoff} y de \textit{hard handoff}.
 	
-	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas} (\textit{Handoff aware of Data Sending}).
+	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{WSN-HaDas}.
 	Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 	
 	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{WSNs} y su importancia en múltiples áreas: milicia, vigilancia, cuidad de la salud, localización de personal, entre otras.
@@ -970,10 +964,28 @@ This document presents an investigation about the developed technological progre
 	
 	\newpage
 	\section{Protocolo \textit{WSN-HaDaS}}\label{sec:wsnHadas}
-	Aquí se describe el protocolo \textit{WSN-HaDaS}.
+	Esta sección está dedicada a la descripción funcional y estructural del protocolo \textit{WSN-HaDaS}.
+	Este protocolo de \textit{handoff} está diseñado bajo estrategia de capas \textit{crosslayer} y es resultado del trabajo de investigación desarrollado por \citeA{Buenrostro-Mariscal2015}.
+	En este contexto, se presentan a continuación la descripción general del protocolo y dos de sus componentes más relevantes.
 	
 		\subsection{Descripción general}
-		\lipsum[1]		%Texto de relleno (3 párrafos)
+		Las \textit{WSNs} han sido propuestas para la monitorización de signos vitales de pacientes en sus hogares, hospitales o casas de cuidado. 
+		Este escenario requiere movilidad de nodos entre celdas; no obstante, las \textit{WSNs} no están diseñadas para soportar esta característica.
+		\cite{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado \textit{WSN-HaDaS} (del inglés \textit{Handoff aware of Data Sending}, Traspaso consciente del Envío de Datos), el cual opera en la capa de Transporte y la subcapa \textit{MAC} basado en la interacción entre ambas capas.
+		Éste, recopila información relacionada a la calidad del enlace (\textit{LQI}) desde la subcapa \textit{MAC} y la reporta a la capa de Transporte.
+		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un mecanismo de envío de datos (\textit{UDP}) para notificar el inicio o fin del proceso de \textit{handoff}, el mecanismo de envío de datos se vuelve consiente de dicho proceso.
+		De esta manera, se controla el proceso de ejecución de \textit{handoff}, como se muestra en la Figura \ref{fig:hadasArq}.
+		
+		\begin{figure}[hbt]
+			\centering
+			\includegraphics[width=0.9\textwidth,height=8cm]{hadasArq.png}
+			\caption{Arquitectura \textit{crosslayer} del protocolo \textit{WSN-HaDaS}.}
+			\label{fig:hadasArq}
+		\end{figure}		
+		
+		\textit{WSN-HaDaS} se compone de dos procesos pirncipales: El \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Monitorizador Detonador de Traspaso) y el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de Traspaso); los cuales son responsables de la generación de \textit{HWM} (siglas en inglés de \textit{Handoff Warning Message}, Mensaje de Advertencia de Traspaso) y la ejecución del proceso de \textit{handoff}, respectivamente.
+		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
+		Durante sus pruebas demostraron menores tiempos de duración de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
 		\subsection{\textit{MHT}}
 		\lipsum[1]		%Texto de relleno (3 párrafos)
