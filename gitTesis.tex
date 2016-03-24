@@ -20,7 +20,9 @@
 \marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		% izq,der,top,bot
 \usepackage{chngcntr}						% Figure Enumeration - https://www.ctan.org/pkg/chngcntr
 \counterwithout{figure}{chapter}			% Dont mind the chapters for figure counting
-\counterwithout{table}{chapter}				% Dont mind the chapters
+\counterwithout{table}{chapter}				% Dont mind the chapters for table counting
+\counterwithout{equation}{chapter}			% Dont mind the chapters for equation counting
+%\counterwithout{equation}{section}			% Dont mind the section for equation counting
 \usepackage{datetime}						% Para personalizar fechas - https://www.ctan.org/pkg/datetime
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}	% Formato personalizado de fecha Mes, año.
 \graphicspath{ {images/} }					% images folder en local dir
@@ -147,7 +149,7 @@ This document presents an investigation about the developed technological progre
 \onehalfspace							% Inicia espaciado a 1.5
 \pagenumbering{arabic} 	%Reinicia indice en arábigo
 \chapter{Introducción}\label{ch:Introduccion}
-	El presente proyecto de tesis plantea el uso de una \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Network}, Red Inalámbrica de Sensores), dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente.
+	El presente proyecto de tesis plantea el uso de una \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Network}, Red Inalámbrica de Sensores), dentro de la cual se integran dispositivos fijos y MNs (siglas en inglés de \textit{Mobile Nodes}, Nodos Móviles), actuando como \textit{APs} (siglas en inglés de \textit{Access Points}, Puntos de Acceso) a la red y nodos para la recolección de datos, respectivamente.
 	Dentro de las características con las que cuenta una \textit{WSN} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
 	
 	Esto infiere que los miembros, dispositivos o nodos de una \textit{WSN} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
@@ -370,7 +372,7 @@ This document presents an investigation about the developed technological progre
 		
 	Ahora, en el caso de las redes inalámbricas, el <<\textit{handoff}>>, <<\textit{handover}>>, <<traspaso>> o <<transferencia de red>> se refieren al movimiento de un nodo móvil entre dos puntos de acceso, esto es, el proceso de terminar una conexión existente y obtener una nueva conexión \cite{Makaya2008}.
 	Dicho de otra manera: el \textit{handoff} es la transición o traspaso de la señal de transmisión entre diferentes celdas.
-	En un principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} (siglas en ingles de \textit{Access Point},Punto de Acceso) de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
+	En un principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
 	Entonces, \textit{handoff} es el mecanismo mediante el cual una conexión activa entre un nodo o \textit{host} (del inglés, anfitrión) móvil y una terminal o \textit{host} correspondiente es transferida desde un \textit{AP} a la red fija u otra \cite{Pahlavan2000}.
 
 	Estos mecanismos de \textit{handoff} deben cumplir con características de acuerdo a la aplicación o tarea en ejecución, pues existen diferentes requerimientos en aplicaciones de salud de pacientes críticos que en aquellas de vigilancia de territorios; sin embargo, algunas de las características o requerimientos comúnmente establecidos son una baja latencia en la red y una baja pérdida de paquetes, por mencionar algunos.
@@ -984,13 +986,29 @@ This document presents an investigation about the developed technological progre
 		\end{figure}		
 		
 		\textit{WSN-HaDaS} se compone de dos procesos pirncipales: El \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Monitorizador Detonador de Traspaso) y el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de Traspaso); los cuales son responsables de la generación de \textit{HWM} (siglas en inglés de \textit{Handoff Warning Message}, Mensaje de Advertencia de Traspaso) y la ejecución del proceso de \textit{handoff}, respectivamente.
+		
 		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
-		Durante sus pruebas demostraron menores tiempos de duración de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
+		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
 		\subsection{\textit{MHT}}
-		Bla bla bla... Test gitTesisWin! :)
+		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
+		Este proceso utiliza la función \textit{LQI}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{MN}.
+		El resultado de esta medición es reportado por la capa física del \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) a la subcapa \textit{MAC} del mismo nodo como un valor de \textit{LQI}, el cual es usado por el proceso \textit{MHT} para evaluar el disparador de \textit{handoff} a través de un \textit{HWM}.
 		
-		\lipsum[1]		%Texto de relleno (3 párrafos)
+		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes son trasmitidos desde el \textit{MN} hacia el \textit{CH}, el proceso \textit{MHT} es embebido en el \textit{CH} para la monitorización de la calidad de la conexión de los \textit{MNs} dentro de su \textit{cluster} (del inglés, grupo).
+		Esto también con el propósito de reducir el impacto negativo en complejidad, consumo energético y la implementación de los \textit{NMs} (los cuales poseen recursos y capacidad de procesamiento limitados a comparación de los \textit{CHs}).
+		
+		El proceso \textit{MHT} recibe el valor crudo de \textit{LQI} en la capa de Transporte desde la subcapa \textit{MAC}, si las condiciones del \textit{MHT} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{HWM} para notificar al \textit{NM} de la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
+
+		\begin{equation}
+		\label{eq:mhtWhen}
+		\textup{if (\textit{LQI}} \leq  \textup{\textit{thrQLQI}) : entonces enviar \textit{HWM}}
+		\end{equation}
+
+		\begin{equation}
+		\label{eq:mhtHow}
+		\textup{(\textit{$Delay_{HWM}$} + \textit{$Delay_{Delivery}$})} < \textup{\textit{$Time_{Limit}$}}
+		\end{equation}
 		
 		\subsection{\textit{HEP}}
 		\lipsum[1]		%Texto de relleno (3 párrafos)
@@ -1050,7 +1068,7 @@ This document presents an investigation about the developed technological progre
 		
 		El primer rol es el \textit{SN} (iniciales en inglés de \textit{Sink Node}, Nodo Receptor), bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
 		
-		El rol de \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
+		El rol de \textit{CH} se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
 		
 		Un tercer rol es el de \textit{MN} (iniciales en inglés de \textit{Mobile Node}, Nodo Móvil), el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{MN} es el enviar información hacia el \textit{SN}, ello a través de los \textit{CH}.
 		
