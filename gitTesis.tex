@@ -990,6 +990,9 @@ This document presents an investigation about the developed technological progre
 		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
 		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
+		\subsubsection{Consideraciones de Diseño}\label{subsec:Consideraciones}
+		\lipsum[3]
+		
 		\subsection{\textit{MHT}}
 		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
 		Este proceso utiliza la función \textit{LQI}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{MN}.
@@ -1010,10 +1013,26 @@ This document presents an investigation about the developed technological progre
 		\end{equation}
 		
 		Para ejecutar el proceso \textit{MHT}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{LQI}, evitando así desconexiones repentinas del \textit{NM} y problemas del efecto \textit{ping-pong}.
-		Para este ajuste, se definieron tres umbrales para el \textit{LQI}: \textit{soft-threshold LQI} (\textit{thrLQIsoft}), \textit{hard-threshold LQI} (\textit{thrLQIhard}) y \textit{thresholod Quantity of LQI} (\textit{thrQLQI}).
-		La región existente entre \textit{thrLQIsoft} \linebreak y \textit{thrLQIhard} se conoce como \textit{handoff region} y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \linebreak \textit{thrQLQI} y \textit{thrLQIhard}).
+		Para este ajuste, se definieron tres umbrales para el \textit{LQI}: \textit{soft-threshold LQI} (\textit{thrLQIsoft}), \textit{hard-threshold LQI} \linebreak (\textit{thrLQIhard}) y \textit{thresholod Quantity of LQI} (\textit{thrQLQI}).
+		La región existente entre \linebreak \textit{thrLQIsoft} y \textit{thrLQIhard} se conoce como <<Región de \textit{handoff}>> y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \textit{thrQLQI} y \textit{thrLQIhard}).
+		Lo anterior se muestra en la Figura \ref{fig:mhtUmbrales}.
 		
+		\begin{figure}[hbt]
+			\centering
+			\includegraphics[width=0.9\textwidth,height=8cm]{mhtUmbrales.png}
+			\caption{Umbrales y regiones del protocolo \textit{WSN-HaDaS}.}
+			\label{fig:mhtUmbrales}
+		\end{figure}
+				
+		El umbral \textit{thrLQIsoft} indica que las transmisiones del \textit{MN} han entrado a la región de histéresis, por lo que el proceso \textit{MHT} inicia la evaluación del \textit{LQI}.
+		Este umbral evita la ejecución de evaluaciones innecesarias mientras el \textit{LQI} del \textit{MN} no alcanza el umbral establecido.
 		
+		Por su parte, el umbral \textit{thrQLQI} dispara un \textit{HWM}.
+		Ello indica que la zona de protección ha sido alcanzada y que el proceso de \textit{handoff} debe ejecutarse si se satisface la Ecuación \ref{eq:mhtWhen}.
+		Lo anterior permite al \textit{MN} permanecer conectado al \textit{CH} actual y continuar recibiendo \textit{HWMs}.
+		
+		Finalmente, el umbral \textit{thrLQIhard} se ajusta con el objetivo de cumplir con el estándar; el cual establece que de debe cumplirse con un \textit{PER} (siglas en inglés de \textit{Packet Error Rate}, Tasa de Error de Paquetes) máximo a 1\%.
+		El procotolo \textit{WSN-HaDaS} llama a este punto como \textit{Break-point}.
 		
 		\subsection{\textit{HEP}}
 		\lipsum[1]		%Texto de relleno (3 párrafos)
