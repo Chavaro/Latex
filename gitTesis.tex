@@ -998,17 +998,22 @@ This document presents an investigation about the developed technological progre
 		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes son trasmitidos desde el \textit{MN} hacia el \textit{CH}, el proceso \textit{MHT} es embebido en el \textit{CH} para la monitorización de la calidad de la conexión de los \textit{MNs} dentro de su \textit{cluster} (del inglés, grupo).
 		Esto también con el propósito de reducir el impacto negativo en complejidad, consumo energético y la implementación de los \textit{NMs} (los cuales poseen recursos y capacidad de procesamiento limitados a comparación de los \textit{CHs}).
 		
-		El proceso \textit{MHT} recibe el valor crudo de \textit{LQI} en la capa de Transporte desde la subcapa \textit{MAC}, si las condiciones del \textit{MHT} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{HWM} para notificar al \textit{NM} de la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
+		El proceso \textit{MHT} recibe el valor crudo de \textit{LQI} en la capa de Transporte desde la subcapa \textit{MAC}, si las condiciones del \textit{MHT} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{HWM} para notificar al \textit{NM} involucrado sobre la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
 
 		\begin{equation}
 		\label{eq:mhtWhen}
 		\textup{if (\textit{LQI}} \leq  \textup{\textit{thrQLQI}) : entonces enviar \textit{HWM}}
 		\end{equation}
-
 		\begin{equation}
 		\label{eq:mhtHow}
 		\textup{(\textit{$Delay_{HWM}$} + \textit{$Delay_{Delivery}$})} < \textup{\textit{$Time_{Limit}$}}
 		\end{equation}
+		
+		Para ejecutar el proceso \textit{MHT}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{LQI}, evitando así desconexiones repentinas del \textit{NM} y problemas del efecto \textit{ping-pong}.
+		Para este ajuste, se definieron tres umbrales para el \textit{LQI}: \textit{soft-threshold LQI} (\textit{thrLQIsoft}), \textit{hard-threshold LQI} (\textit{thrLQIhard}) y \textit{thresholod Quantity of LQI} (\textit{thrQLQI}).
+		La región existente entre \textit{thrLQIsoft} \linebreak y \textit{thrLQIhard} se conoce como \textit{handoff region} y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \linebreak \textit{thrQLQI} y \textit{thrLQIhard}).
+		
+		
 		
 		\subsection{\textit{HEP}}
 		\lipsum[1]		%Texto de relleno (3 párrafos)
