@@ -432,7 +432,7 @@ This document presents an investigation about the developed technological progre
 			\label{fig:hoTypes}
 		\end{figure}
 					  
-		\subsection{Número de conexiones}
+		\subsection{Número de conexiones}\label{subsec:clasConexiones}
 		Otro tipo de clasificaciones del \textit{handoff} es en función al número de conexiones que un nodo puede mantener o establecer. De acuerdo a \citeA{Nasser2006}, existen tres tipos.
 		
 		\begin{itemize}
@@ -980,7 +980,7 @@ This document presents an investigation about the developed technological progre
 		
 		\begin{figure}[hbt]
 			\centering
-			\includegraphics[width=0.9\textwidth,height=8cm]{hadasArq.png}
+			\includegraphics[width=0.9\textwidth,height=8.5cm]{hadasArq.png}
 			\caption{Arquitectura \textit{crosslayer} del protocolo \textit{WSN-HaDaS}.}
 			\label{fig:hadasArq}
 		\end{figure}		
@@ -990,10 +990,23 @@ This document presents an investigation about the developed technological progre
 		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
 		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
-		\subsubsection{Consideraciones de Diseño}\label{subsec:Consideraciones}
-		\lipsum[3]
+		\subsubsection{Consideraciones de Diseño}
+		Como se mencionó anteriormente, \textit{WSN-HaDaS} se compone de dos procesos: el \textit{MHT} y el \textit{HEP}.
 		
-		\subsection{\textit{MHT}}
+		El \textit{MHT} mide la fuerza de la señal de paquetes de datos transmitidos por los \textit{MNs} con el objetivo de monitorizar la calidad del enlace (\textit{LQI)}), cuando el \textit{LQI} de un \textit{MN} es percibido por el \textit{CH} como inferior a un umbral establecido, éste envía un \textit{HWM} al \textit{MN} (este proceso se explica en la subsección \ref{subsec:mht}); una vez que el \textit{MN} recibe el \textit{HWM}, inicia el \textit{HEP}.
+		
+		El \textit{HEP} incluye un mecanismo de \textit{soft handoff} (explicado en la subsección \ref{subsec:hep}).
+		Un \textit{soft handoff} puro demanda el establecimiento de una nueva conexión de radio sin deshacerse de la conexión previa (\textit{make-before-break}), como se explica en la subsección \ref{subsec:clasConexiones}.
+		
+		Para lograr esto, es necesario contar con múltiples antenas activas de manera simultánea; sin embargo, el estándar \textit{IEEE 802.15.4} no define esta característica.
+		Por dicha razón, el \textit{HEP} ejecuta el \textit{soft handoff} utilizando dos reglas: la primera es notificar el \textit{handoff} al mecanismo que envía los datos antes de desconectarse del \textit{CH} actual; la segunda regla es reducir al mínimo el tiempo de desconexión cuando el \textit{MN} cambia de \textit{cluster}.
+		
+		Esta última regla se logra utilizando una estrategia llamada \textit{Early Discovery} (del inglés, Descubrimiento Temprano); la cual permite al \textit{MN} descubrir nuevos \textit{CHs} antes de romper con la conexión actual.
+		Además, para mejorar el desempeño del \textit{HEP}, \textit{WSN-HaDaS} incorpora un mecanismo de \textit{hard handoff} para cubrir aquellas operaciones de traspaso en las que el mecanismo \textit{soft handoff} no puede ejecutarse.
+		
+		% Agregar información de <<Signaling Messages for WSN-HaDaS
+		
+		\subsection{\textit{MHT}}\label{subsec:mht}
 		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
 		Este proceso utiliza la función \textit{LQI}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{MN}.
 		El resultado de esta medición es reportado por la capa física del \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) a la subcapa \textit{MAC} del mismo nodo como un valor de \textit{LQI}, el cual es usado por el proceso \textit{MHT} para evaluar el disparador de \textit{handoff} a través de un \textit{HWM}.
@@ -1034,7 +1047,7 @@ This document presents an investigation about the developed technological progre
 		Finalmente, el umbral \textit{thrLQIhard} se ajusta con el objetivo de cumplir con el estándar; el cual establece que de debe cumplirse con un \textit{PER} (siglas en inglés de \textit{Packet Error Rate}, Tasa de Error de Paquetes) máximo a 1\%.
 		El procotolo \textit{WSN-HaDaS} llama a este punto como \textit{Break-point}.
 		
-		\subsection{\textit{HEP}}
+		\subsection{\textit{HEP}}\label{subsec:hep}
 		\lipsum[1]		%Texto de relleno (3 párrafos)
 		
 	
