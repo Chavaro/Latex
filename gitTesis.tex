@@ -1004,7 +1004,41 @@ This document presents an investigation about the developed technological progre
 		Esta última regla se logra utilizando una estrategia llamada \textit{Early Discovery} (del inglés, Descubrimiento Temprano); la cual permite al \textit{MN} descubrir nuevos \textit{CHs} antes de romper con la conexión actual.
 		Además, para mejorar el desempeño del \textit{HEP}, \textit{WSN-HaDaS} incorpora un mecanismo de \textit{hard handoff} para cubrir aquellas operaciones de traspaso en las que el mecanismo \textit{soft handoff} no puede ejecutarse.
 		
-		% Agregar información de <<Signaling Messages for WSN-HaDaS
+		Por otro lado, para el manejo del proceso de \textit{handoff} y las sesiones de transmisión de datos se utilizan mensajes de control y datos.
+		\textit{WSN-HaDaS} utiliza el \textit{frame} (del inglés, estructura) definido por el estándar \textit{IEEE 802.15.4} para la construcción de ambos tipos de mensajes, como se aprecia en la Figura \ref{fig:macFrame}.
+		
+		\begin{figure}[hbt]
+			\centering
+			\includegraphics[width=\textwidth,height=7.5cm]{macFrame.png}
+			\caption{Ejemplos de uso del \textit{MAC frame} por \textit{WSN-HaDaS}.}
+			\label{fig:macFrame}
+		\end{figure}
+		
+		El \textit{MAC header} (del inglés, cabecera de MAC) contiene los siguientes campos:
+		\begin{itemize}
+			\item \textit{Frame Control} (del inglés, Control de Estructura): Este campo contiene información relativa al tipo de estructura, modos de direccionamiento, Habilitación de seguridad, entre otros.
+			\item \textit{DSN} (siglas en inglés de \textit{Data Sequence Number}, Número de Secuencia de Datos): Campo que permite evitar el duplicado de paquetes.
+			\item Direccionamiento: Contiene información sobre el origen y destino de los datos en la red.
+			\item \textit{Header} de Seguridad Auxiliar: Este es un campo opcional que solo se habilita si el subcampo <<Habilitación de Seguridad>> del \textit{Frame Control} está habilitado.
+			Contiene tres subcampos especiales: Control de Seguridad, Contador de \textit{frame} e Identificador de Llave.
+		\end{itemize}
+		
+		El \textit{MAC Payload} (del inglés, carga útil de MAC) es un campo e longitud igual a \textit{M bytes} con un valor máximo de 116 \textit{bytes}.
+		\textit{WSN-HaDaS} define para él dos campos:
+		\begin{itemize}
+			\item \textit{Header} de Transporte: Este campo de longitud igual a \textit{n bytes} contiene el Tipo de Comando (longitud de \textit{1 byte}) y la carga útil del comando de tamaño variable de \textit{bytes}.
+			\item Datos de Aplicación: Este campo de longitud igual a \textit{M} - \textit{n bytes} es utilizado para los datos de la aplicación.
+		\end{itemize}
+		
+		Entre los diferentes tipos de comandos que \textit{WSN-HaDaS} utiliza están los siguientes:
+		\begin{itemize}
+			\item Mensaje de Datos: Su tipo de comando es \textit{0xB0}, y es usado en todas las transferencias de mensajes de datos entre los \textit{MNs} y el \textit{SN} (siglas en inglés de \textit{Sink Node}, Nodo de Salida).
+			Los \textit{CHs} utilizan este mensaje para evaluar el \textit{LQI} y poder disparar la notificación de \textit{soft-handoff}.
+			\item \textit{HWM}: Con tipo de comando \textit{0xC0}, es un mensaje enviado por el \textit{CH} para disparar un \textit{soft-handoff} en el \textit{MN}.
+			\item Mensaje de Reanudación de Sesión: Con tipo de comando \textit{0xC1}, este mensaje es enviado por un \textit{MN} para solicitar al \textit{SN} la reanudación de una sesión.
+		\end{itemize}
+		
+		Por último, el \textit{MAC Footer} (del inglés, pie de MAC) contiene una secuencia de verificación de \textit{frame} de 16 \textit{bits}.
 		
 		\subsection{\textit{MHT}}\label{subsec:mht}
 		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
@@ -1103,7 +1137,7 @@ This document presents an investigation about the developed technological progre
 		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{WSN} describe un árbol jerárquico.
 		Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
 		
-		El primer rol es el \textit{SN} (iniciales en inglés de \textit{Sink Node}, Nodo Receptor), bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
+		El primer rol es el \textit{SN}, bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
 		
 		El rol de \textit{CH} se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
 		
