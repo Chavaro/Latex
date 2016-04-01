@@ -975,7 +975,7 @@ This document presents an investigation about the developed technological progre
 		Este escenario requiere movilidad de nodos entre celdas; no obstante, las \textit{WSNs} no están diseñadas para soportar esta característica.
 		\cite{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado \textit{WSN-HaDaS} (del inglés \textit{Handoff aware of Data Sending}, Traspaso consciente del Envío de Datos), el cual opera en la capa de Transporte y la subcapa \textit{MAC} basado en la interacción entre ambas capas.
 		Éste, recopila información relacionada a la calidad del enlace (\textit{LQI}) desde la subcapa \textit{MAC} y la reporta a la capa de Transporte.
-		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un mecanismo de envío de datos (\textit{UDP}) para notificar el inicio o fin del proceso de \textit{handoff}, el mecanismo de envío de datos se vuelve consiente de dicho proceso.
+		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un \textit{MED} (Mecanismo de Envío de Datos) como \textit{UDP} para notificar el inicio o fin del proceso de \textit{handoff}, el \textit{MED} se vuelve consiente de dicho proceso.
 		De esta manera, se controla el proceso de ejecución de \textit{handoff}, como se muestra en la Figura \ref{fig:hadasArq}.
 		
 		\begin{figure}[hbt]
@@ -1026,7 +1026,7 @@ This document presents an investigation about the developed technological progre
 		El \textit{MAC Payload} (del inglés, carga útil de MAC) es un campo e longitud igual a \textit{M bytes} con un valor máximo de 116 \textit{bytes}.
 		\textit{WSN-HaDaS} define para él dos campos:
 		\begin{itemize}
-			\item \textit{Header} de Transporte: Este campo de longitud igual a \textit{n bytes} contiene el Tipo de Comando (longitud de \textit{1 byte}) y la carga útil del comando de tamaño variable de \textit{bytes}.
+			\item \textit{Header} de Transporte: Este campo de longitud igual a \textit{n bytes} contiene el Tipo de Comando (longitud de 1 \textit{byte}) y la carga útil del comando de tamaño variable de \textit{bytes}.
 			\item Datos de Aplicación: Este campo de longitud igual a \textit{M} - \textit{n bytes} es utilizado para los datos de la aplicación.
 		\end{itemize}
 		
@@ -1082,8 +1082,23 @@ This document presents an investigation about the developed technological progre
 		El procotolo \textit{WSN-HaDaS} llama a este punto como \textit{Break-point}.
 		
 		\subsection{\textit{HEP}}\label{subsec:hep}
-		\lipsum[1]		%Texto de relleno (3 párrafos)
+		El algoritmo \textit{HEP} (Figura \ref{fig:hepAlgoritmos}a) tiene tres sub-procesos para la transferencia de un \textit{MN} de un \textit{CH} a otro:
 		
+		\begin{itemize}
+			\item Descubrimiento: En este sub-proceso, el \textit{MN} busca nuevos \textit{CHs} dentro de su área de cobertura.
+			\item Decisión: El \textit{MN} elige al \textit{CH} con la mejor señal de recepción.
+			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH},
+		\end{itemize}
+		
+		\begin{figure}[hbt]
+			\centering
+			\includegraphics[width=\textwidth,height=12cm]{hepAlgoritmos.png}
+			\caption{a) Algoritmo \textit{HEP} b) Algoritmo utilizado cuando el \textit{MN} pierde conexión.}
+			\label{fig:hepAlgoritmos}
+		\end{figure}
+	
+	
+	
 	
 	\newpage
 	\section{Diseño de Protocolo de \textit{Handoff}}\label{sec:Diseno}
