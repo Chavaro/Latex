@@ -1084,21 +1084,31 @@ This document presents an investigation about the developed technological progre
 		\subsection{\textit{HEP}}\label{subsec:hep}
 		El algoritmo \textit{HEP} (Figura \ref{fig:hepAlgoritmos}a) tiene tres sub-procesos para la transferencia de un \textit{MN} de un \textit{CH} a otro:
 		
-		\begin{itemize}
-			\item Descubrimiento: En este sub-proceso, el \textit{MN} busca nuevos \textit{CHs} dentro de su área de cobertura.
-			\item Decisión: El \textit{MN} elige al \textit{CH} con la mejor señal de recepción.
-			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH},
-		\end{itemize}
-		
 		\begin{figure}[hbt]
 			\centering
 			\includegraphics[width=\textwidth,height=12cm]{hepAlgoritmos.png}
 			\caption{a) Algoritmo \textit{HEP} b) Algoritmo utilizado cuando el \textit{MN} pierde conexión.}
 			\label{fig:hepAlgoritmos}
 		\end{figure}
-	
-	
-	
+		
+		\begin{itemize}
+			\item Descubrimiento: En este sub-proceso, el \textit{MN} busca nuevos \textit{CHs} dentro de su área de cobertura.
+			\item Decisión: El \textit{MN} elige al \textit{CH} con la mejor señal de recepción.
+			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH},
+		\end{itemize}
+		
+		Una vez que el \textit{MN} recibe un \textit{HWM}, el proceso \textit{HEP} inicia.
+		Su primer tarea es notificar al \textit{MED} que un proceso de \textit{handoff} ha iniciado.
+		Con ello, el \textit{MED} debe detener su envío de paquetes a la subcapa \textit{MAC} y cambiar el estatus de la bandera de \textit{handoff} a <<encendido>>.
+		
+		Su segunda tarea es seleccionar uno de los mecanismos de \textit{handoff} permitidos y ejecutarlo: \textit{soft handoff} o \textit{hard handoff}.
+		Esto da a \textit{WSN-HaDaS} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
+		
+		\subsubsection{Mecanismo \textit{Hard Handoff}}
+		\lipsum[1]
+		
+		\subsubsection{Mecanismo \textit{Soft Handoff}}
+		\lipsum[1]
 	
 	\newpage
 	\section{Diseño de Protocolo de \textit{Handoff}}\label{sec:Diseno}
