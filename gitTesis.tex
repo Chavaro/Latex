@@ -1095,17 +1095,19 @@ This document presents an investigation about the developed technological progre
 		\begin{itemize}
 			\item Descubrimiento: En este sub-proceso, el \textit{MN} busca nuevos \textit{CHs} dentro de su área de cobertura.
 			\item Decisión: El \textit{MN} elige al \textit{CH} con la mejor señal de recepción.
-			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH},
+			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH}.
 		\end{itemize}
 		
 		Una vez que el \textit{MN} recibe un \textit{HWM}, el proceso \textit{HEP} inicia.
 		Su primer tarea es notificar al \textit{MED} que un proceso de \textit{handoff} ha iniciado.
 		Con ello, el \textit{MED} debe detener su envío de paquetes a la subcapa \textit{MAC} y cambiar el estatus de la bandera de \textit{handoff} a <<encendido>>.
 		
-		Su segunda tarea es seleccionar uno de los mecanismos de \textit{handoff} permitidos y ejecutarlo: \textit{soft handoff} o \textit{hard handoff}.
+		Su segunda tarea es seleccionar uno de los mecanismos de \textit{handoff} permitidos y ejecutarlo: \textit{soft handoff} (descrito en \ref{subsubsec:softhandoff}) o \textit{hard handoff} (descrito en \ref{subsubsec:hardhandoff}).
 		Esto da a \textit{WSN-HaDaS} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
 		
-		\subsubsection{Mecanismo \textit{Hard Handoff}}
+		Finalmente, la última tarea del \textit{HEP} inicia cuando el \textit{MN} se ha asociado a un nuevo \textit{CH}: notificar al \textit{MED} que el mecanismo de \textit{handoff} ha concluido y debe reanudar la transmisión de datos al \textit{SN}, así como actualizar el valor de la bandera de \textit{handoff} a <<apagado>>.
+		
+		\subsubsection{Mecanismo \textit{Hard Handoff}} \label{subsubsec:hardhandoff}
 		El \textit{HEP} considera dos opciones que pueden originar la ejecución de un \textit{hard handoff} (Figura \ref{fig:hepAlgoritmos}):
 		
 		\begin{enumerate}[a)]
@@ -1115,9 +1117,42 @@ This document presents an investigation about the developed technological progre
 			Si \textit{NoAckCont} es mayor que el valor preestablecido de \textit{NoACK}, el \textit{MN} inicia inmediatamente un mecanismo de \textit{hard handoff}.
 		\end{enumerate}
 		
-		\subsubsection{Mecanismo \textit{Soft Handoff}}
-		\lipsum[1]
-	
+		Como se menciona anteriormente, el \textit{HEP} se divide en tres subprocesos, y para la ejecución del mecanismo \textit{hard handoff} éstos se describen a continuación:
+		
+		\begin{itemize}
+			\item Descubrimiento: El \textit{MN} usa el mecanismo \textit{Active Channel Scan} (del inglés, Escaneo de Canal Activo) provisto por el estándar \textit{IEEE 802.15.4} para localizar cualquier coordinador (\textit{CH}) transmitiendo dentro de su área de cobertura y en su mismo canal.
+			\item Decisión: El \textit{MN} elige al \textit{CH} con el mejor \textit{LQI}.
+			\item Asociación: El \textit{MN} utiliza el proceso de <<Asociación>> definido por el estándar \textit{IEEE 802.15.4} para unirse al \textit{cluster} del nuevo \textit{CH}.
+		\end{itemize}
+		
+		\subsubsection{Mecanismo \textit{Soft Handoff}}\label{subsubsec:softhandoff}
+		El mecanismo de \textit{soft handoff} es ejecutado cuando el \textit{MN} posee información suficiente para elegir un nuevo \textit{CH} y la ejecución del \textit{handoff} es sugerida por el \textit{CH} actual mediante un \textit{HWM}.
+		A continuación, se describen los subprocesos del \textit{HEP} para un \textit{soft handoff}.
+		\begin{itemize}
+			\item Descubrimiento: Para este subproceso el \textit{MN} utiliza la estrategia \textit{Early Discovery} (descrita en la sección \ref{subsubsec:earlyDiscovery}) en lugar de realizar un escaneo completo del canal. 
+			Reduciendo con ello los tiempos de ejecución del mecanismo de \textit{handoff}.			
+			\item Decisión: El \textit{MN} elige al mejor \textit{CH} de la lista dentro de su área de cobertura.
+			\item Asociación: El \textit{MN} utiliza el proceso de <<Asociación>> definido por el estándar \textit{IEEE 802.15.4} para unirse al \textit{cluster} del nuevo \textit{CH}.
+		\end{itemize}
+		
+		\subsubsection{\textit{Early Discovery}}\label{subsubsec:earlyDiscovery}
+		\textit{WSN-HaDaS} propone una estrategia de descubrimiento llamada \textit{Early Discovery} (del inglés, Descubrimiento Temprano).
+		Dicha estrategia se basa en la capacidad de los \textit{MN} de escuchar todos los mensajes transmitidos por el medio físico, debido a la naturaleza misma de las radiocomunicaciones.
+		
+		Cualquier dispositivo con un receptor habilitado, trabajando bajo el mismo estándar (\textit{IEEE 802.15.4}), en el mismo canal y dentro del área de cobertura, es capaz de recibir y decodificar las transmisiones de todos los dispositivos que cumplan estas mismas características.
+		
+		Sin embargo, los mensajes que no son relevantes para las capas superiores del dispositivo son filtrados en la subcapa \textit{MAC} mediante el uso de tres distintos filtros, siendo uno de ellos la comparación de direcciones \textit{MAC} tanto <<origen>> como <<destino>> y de identificador de \textit{PAN} (siglas en inglés de \textit{Personal Area Network}, Red de Área Personal) o \textit{PANID}.
+
+		De esta modo, un dispositivo es capaz de recibir transmisiones de otros dispositivos aún sin ser el dispositivo destino.
+		La estrategia \textit{Early Discovery} aprovecha esta capacidad de escuchar todas las transmisiones y, antes de descartar los paquetes que no superan los filtros, recopila información de los \textit{CHs} dentro del área de cobertura.
+		
+		La subcapa \textit{MAC} de los \textit{CHs} también aplica los mismo filtros y responde con un paquete \textit{ACK} cuando las direcciones destino coinciden.
+		De lo contrario, el \textit{CH} asume que el \textit{MN} es un dispositivo nuevo y por ello le envía un mensaje \textit{FCN} (iniciales en inglés de \textit{Foreign Cluster Node}, Nodo Cluster Foráneo) que contiene información sobre sí mismo (dirección \textit{MAC} y \textit{PANID}).
+		Esta acción permite al \textit{MN} construir una lista de nuevos coordinadores con sus respectivas direcciones \textit{MAC}, \textit{PANIDs} y \textit{LQIs}.
+		Esta lista se actualiza cada que un mensaje \textit{FCN} llega al \textit{MN} y se organiza con respecto a los valores de \textit{LQI}.
+		
+		
+			
 	\newpage
 	\section{Diseño de Protocolo de \textit{Handoff}}\label{sec:Diseno}
 	Aquí se describe el proceso del diseño del algoritmo o protocolo de \textit{handoff}.
