@@ -10,6 +10,7 @@
 \usepackage{breakcites}						% Adaptar citas al margen del texto - https://www.ctan.org/pkg/breakcites
 \usepackage{apacite}						% Citar APA c/paréntesis - https://www.ctan.org/pkg/apacite
 \usepackage{lipsum}							% Texto relleno - http://ctan.org/pkg/lipsum
+\usepackage{enumerate}						% Personalización de listas
 %\usepackage{minitoc}						% Mini indice - https://www.ctan.org/pkg/minitoc
 %\usepackage{multicol}						% Permite seccionas en columnas - https://www.ctan.org/pkg/multicol
 \usepackage{multirow}						% Para las tablas
@@ -1105,7 +1106,14 @@ This document presents an investigation about the developed technological progre
 		Esto da a \textit{WSN-HaDaS} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
 		
 		\subsubsection{Mecanismo \textit{Hard Handoff}}
-		\lipsum[1]
+		El \textit{HEP} considera dos opciones que pueden originar la ejecución de un \textit{hard handoff} (Figura \ref{fig:hepAlgoritmos}):
+		
+		\begin{enumerate}[a)]
+			\item El \textit{MN} recibe un \textit{HWM}, y éste no posee información sobre nuevos \textit{CHs}.
+			\item El \textit{MN} pierde conexión con el \textit{CH}, y no se alcanza el umbral de \textit{NoACK}. 
+			El \textit{MN} verifica la entrega exitosa de sus mensajes de \textit{Data Request} (del inglés, Solicitud de Datos) por medio de los mensajes \textit{ACK} (Abreviación en inglés de \textit{Acknowledgement}, Reconocimiento) recibidos del \textit{CH} actual.	
+			Si \textit{NoAckCont} es mayor que el valor preestablecido de \textit{NoACK}, el \textit{MN} inicia inmediatamente un mecanismo de \textit{hard handoff}.
+		\end{enumerate}
 		
 		\subsubsection{Mecanismo \textit{Soft Handoff}}
 		\lipsum[1]
