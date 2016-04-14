@@ -166,11 +166,18 @@ This document presents an investigation about the developed technological progre
 \chapter*{Acrónimos} 							% No agrega la palabra 'Capítulo' ni lo añade al índice	
 \addcontentsline{toc}{chapter}{Acrónimos} 		% Para que aparezca en el índice
 	\begin{acronym}[WPAN]
-		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
-		%\acroplural{WPAN}{Redes Inalámbricas de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Networks}}}
-		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}
+		\acro{AP}{Punto de Acceso\acroforeign{del inglés \textit{Access Point}}}
+		\acrodefplural{AP}{Puntos de Acceso}
+
 		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
 		\acrodefplural{MN}{Nodos Móviles}
+
+		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
+		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal}
+		
+		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}
+		\acrodefplural{WSN}{Redes Inalámbricas de Sensores}	
+		
 	\end{acronym}
 
 % ======== Indices ===================
@@ -195,27 +202,27 @@ This document presents an investigation about the developed technological progre
 \onehalfspace							% Inicia espaciado a 1.5
 \pagenumbering{arabic} 	%Reinicia indice en arábigo
 \chapter{Introducción}\label{ch:Introduccion}
-	El presente proyecto de tesis plantea el uso de una \ac{WSN}, dentro de la cual se integran dispositivos fijos y \acp{MN}, actuando como \textit{APs} (siglas en inglés de \textit{Access Points}, Puntos de Acceso) a la red y nodos para la recolección de datos, respectivamente.
-	Dentro de las características con las que cuenta una \textit{WSN} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
+	El presente proyecto de tesis plantea el uso de una \ac{WSN} dentro de la cual se integran dispositivos fijos y al menos un \ac{MN}, actuando como \ac{AP} a la red y nodo para la recolección de datos, respectivamente.
+	Dentro de las características con las que cuenta una \textit{\ac{WSN}} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
 	
-	Esto infiere que los miembros, dispositivos o nodos de una \textit{WSN} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
-	Por ello, es necesario ofrecer a las \textit{WSN} mecanismos que apoyen y mejoren eficientemente la movilidad en sus dispositivos; ello sin afectar las aplicaciones ni el desempeño general de la red.
+	Esto infiere que los miembros, dispositivos o nodos de una \textit{\ac{WSN}} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
+	Por ello, es necesario ofrecer a las \textit{\acp{WSN}} mecanismos que apoyen y mejoren eficientemente la movilidad en sus dispositivos; ello sin afectar las aplicaciones ni el desempeño general de la red.
 	
-	Debido a dicha movilidad y los beneficios que ello conlleva, las \textit{WSN} han logrado posicionarse en el desarrollo de aplicaciones orientadas al cuidado de la salud \cite{DelosAngelesCosioLeon}, al desarrollar múltiples aplicaciones para el monitoreo de variables que permitan una constante vigilancia del estado de salud de pacientes, siendo en la mayoría adultos mayores.
+	Debido a dicha movilidad y los beneficios que ello conlleva, las \textit{\acp{WSN}} han logrado posicionarse en el desarrollo de aplicaciones orientadas al cuidado de la salud \cite{DelosAngelesCosioLeon}, al desarrollar múltiples aplicaciones para el monitoreo de variables que permitan una constante vigilancia del estado de salud de pacientes, siendo en la mayoría adultos mayores.
 	En el trabajo realizado por \citeA{Virone2006}, se describe y propone una red, en la cual se plantea como objetivo la adquisición de parámetros físicos, siendo algunos de ellos la temperatura y ubicación de los pacientes.
 	
 	Dada la importancia que la movilidad representa para los usuarios, se exige que puedan desplazarse sin restricciones (por parte de la aplicación, red o sistema) dentro de un espacio o área controlada, tal y como puede ser un hospital o casa de cuidados.
-	Sin embargo, en este tipo de escenarios las \textit{WSN} sufren restricciones y limitaciones, sobretodo en aspectos de cobertura debido a que este tipo de redes fueron diseñadas para su aplicaciones en entornos de corto alcance; por ello se utilizan tecnologías de redes inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), por lo que a su vez requiere la instalación (en la mayoría de los casos) de múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios.
-	Otro aspecto a considerar es que los dispositivos móviles tienen la necesidad de poder cambiar su conexión de un punto de acceso a otro cuando se requiera, i.e., al desplazarse por todo el área de cobertura de la \textit{WSN} saliendo del alcance de su punto de acceso a la red; resultando esto en la desconexión del dispositivo móvil de la red debido a que el estándar \textit{IEEE 802.15.4} no cuenta con mecanismos diseñados para iniciar estos procesos de traspasos de red o \textit{handoff} al nuevo punto de acceso por si mismo; no obstante, sí cuenta con herramientas y funciones que pueden utilizarse para permitir el diseño de un mecanismo de \textit{handoff}.
+	Sin embargo, en este tipo de escenarios las \textit{\acp{WSN}} sufren restricciones y limitaciones, sobretodo en aspectos de cobertura debido a que este tipo de redes fueron diseñadas para su aplicaciones en entornos de corto alcance; por ello se utilizan tecnologías de redes inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), por lo que a su vez requiere la instalación (en la mayoría de los casos) de múltiples puntos de acceso en la \textit{\ac{WSN}} para satisfacer las necesidades de cobertura de los usuarios.
+	Otro aspecto a considerar es que los dispositivos móviles tienen la necesidad de poder cambiar su conexión de un punto de acceso a otro cuando se requiera, i.e., al desplazarse por todo el área de cobertura de la \textit{\ac{WSN}} saliendo del alcance de su punto de acceso a la red; resultando esto en la desconexión del dispositivo móvil de la red debido a que el estándar \textit{IEEE 802.15.4} no cuenta con mecanismos diseñados para iniciar estos procesos de traspasos de red o \textit{handoff} al nuevo punto de acceso por si mismo; no obstante, sí cuenta con herramientas y funciones que pueden utilizarse para permitir el diseño de un mecanismo de \textit{handoff}.
 	
 	Este proceso es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, ya que un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino. 
 	Por ejemplo, si el proceso del mecanismo de \textit{handoff} es lento, puede generar altos tiempo de desconexión y si la aplicación no es consciente de la desconexión puede seguir enviando datos que no podrán ser entregados.
 	
 	En la literatura existen varios trabajos que proponen mecanismos para realizar este proceso de \textit{handoff} (los cuales se abordan en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
-	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstos se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} que utilizan \textit{IEEE 802.15.4}. 
-	Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de red OSI (siglas en inglés de \textit{Open System Interconnection},Interconexión de Sistema Abierto) dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
+	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstos se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las \textit{\acp{WSN}} que utilizan \textit{IEEE 802.15.4}. 
+	Además, las propuestas de mecanismos de \textit{handoff} para \textit{\acp{WSN}} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de red OSI (siglas en inglés de \textit{Open System Interconnection}, Interconexión de Sistema Abierto) dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
 	
-	Por ello, en este trabajo se propone un mecanismo para ofrecer un proceso de \textit{handoff} en \textit{WSN} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores del modelo de red para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capa superior. 
+	Por ello, en este trabajo se propone un mecanismo para ofrecer un proceso de \textit{handoff} en \textit{\ac{WSN}} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores del modelo de red para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capa superior. 
 	La propuesta misma y el diseño de la red, se simulan con ayuda del \textit{software NS2} \cite{Ns1989}, por lo que todas las características y métricas a considerar son adecuadamente definidas con el propósito de permitir que su simulación sea lo más cercana a la realidad. 
 	
 
