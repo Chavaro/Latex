@@ -171,6 +171,8 @@ This document presents an investigation about the developed technological progre
 
 		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
 		\acrodefplural{MN}{Nodos Móviles}
+		
+		\acro{OSI}{Interconexión de Sistemas Abiertos\acroforeign{del inglés \textit{Open System Interconnection}}}
 
 		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
 		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal}
@@ -220,12 +222,11 @@ This document presents an investigation about the developed technological progre
 	
 	En la literatura existen varios trabajos que proponen mecanismos para realizar este proceso de \textit{handoff} (los cuales se abordan en el Capítulo \ref{ch:Trabajos}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para nuestro trabajo. 
 	Sin embargo, lo que se puede decir con certeza es que la mayoría de éstos se enfocan a redes celulares o redes inalámbricas tradicionales como las \textit{WiFi}, las cuales difieren de las características técnicas y posibilidades de las \textit{\acp{WSN}} que utilizan \textit{IEEE 802.15.4}. 
-	Además, las propuestas de mecanismos de \textit{handoff} para \textit{\acp{WSN}} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de red OSI (siglas en inglés de \textit{Open System Interconnection}, Interconexión de Sistema Abierto) dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
+	Además, las propuestas de mecanismos de \textit{handoff} para \textit{\acp{WSN}} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño aislado o por capas; i.e., mecanismos que no pueden utilizar información de otras capas del modelo de \ac{OSI} dentro del mecanismo de \textit{handoff}, esto provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}.
 	
 	Por ello, en este trabajo se propone un mecanismo para ofrecer un proceso de \textit{handoff} en \textit{\ac{WSN}} que sea consciente de las condiciones de la red y de las aplicaciones de capas superiores del modelo de red para permitir la movilidad de los nodos sin afectar de sobremanera a la comunicación continua de la red y sus aplicaciones de capa superior. 
 	La propuesta misma y el diseño de la red, se simulan con ayuda del \textit{software NS2} \cite{Ns1989}, por lo que todas las características y métricas a considerar son adecuadamente definidas con el propósito de permitir que su simulación sea lo más cercana a la realidad. 
 	
-
 	\section{Problemática}\label{sec:Problematica}
 		El presente proyecto de tesis plantea el uso de una \textit{WSN} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
 		Sin embargo, para entender de mejor manera el proyecto y entrar en contexto con el mismo, es necesario saber y conocer algunos conceptos en la temática de las redes inalámbricas.
