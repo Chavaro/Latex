@@ -168,17 +168,34 @@ This document presents an investigation about the developed technological progre
 	\begin{acronym}[WPAN]
 		\acro{AP}{Punto de Acceso\acroforeign{del inglés \textit{Access Point}}}
 		\acrodefplural{AP}{Puntos de Acceso}
+		
+		\acro{BER}{Tasa de Error Binario\acroforeign{del inglés \textit{Bit Error Rate}}}
+
+		\acro{BS}{Estación Base\acroforeign{del inglés \textit{Base Station}}}
+		\acrodefplural{BS}{Estaciones Base}
 
 		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
 		\acrodefplural{MN}{Nodos Móviles}
 		
 		\acro{OSI}{Interconexión de Sistemas Abiertos\acroforeign{del inglés \textit{Open System Interconnection}}}
+		
+		\acro{RSSI}{Indicador de Fuerza de Señal Recibida\acroforeign{del inglés \textit{Received Signal Strength Indicator}}}
+
+		\acro{SIR}{Relación Señal a Interferencia\acroforeign{del inglés \textit{Signal-to-Interference Ratio}}}
+
+		\acro{WBAN}{Red Inalámbrica de Área Corporal\acroforeign{del inglés \textit{Wireless Body Area Network}}}
+		\acrodefplural{WBAN}{Redes Inalámbricas de Área Corporal}
 
 		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
 		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal}
 		
 		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}
 		\acrodefplural{WSN}{Redes Inalámbricas de Sensores}	
+		
+		
+
+
+		
 		
 	\end{acronym}
 
@@ -228,7 +245,7 @@ This document presents an investigation about the developed technological progre
 	La propuesta misma y el diseño de la red, se simulan con ayuda del \textit{software NS2} \cite{Ns1989}, por lo que todas las características y métricas a considerar son adecuadamente definidas con el propósito de permitir que su simulación sea lo más cercana a la realidad. 
 	
 	\section{Problemática}\label{sec:Problematica}
-		El presente proyecto de tesis plantea el uso de una \textit{WSN} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
+		El presente proyecto de tesis plantea el uso de una \textit{\ac{WSN}} dentro de la cual se integran dispositivos fijos y móviles, actuando como puntos de acceso a la red y nodos para la recolección de datos, respectivamente. 
 		Sin embargo, para entender de mejor manera el proyecto y entrar en contexto con el mismo, es necesario saber y conocer algunos conceptos en la temática de las redes inalámbricas.
 		
 		De acuerdo a la Real Academia \citeA{Rae2014} una red se define como <<Conjunto de ordenadores o de equipos informáticos conectados entre sí que pueden intercambiar información>>.
@@ -248,7 +265,7 @@ This document presents an investigation about the developed technological progre
 		Para el presente proyecto es importante clasificar a las redes inalámbricas en función a su alcance.
 		
 		Cuando se habla del alcance de una red se hace referencia a la cobertura máxima de la misma, pudiendo tratarse de una distancia desde metros hasta kilómetros.
-		En la Figura \ref{fig:networkRanges} se muestra una clasificación de las redes inalámbricas y se observa claramente que la \textit{WPAN} (siglas en inglés de \textit{Wireless Personal Area Network}, Red Inalámbrica de Área Personal) es la red de menor alcance (alcance menor a 10 metros), aunque algunos autores mencionan que existe un grupo de menor alcance: las \textit{WBAN} (siglas en inglés de \textit{Wireless Body Area Networks}, Redes Inalámbricas de Área Corporal), cuyo alcance y aplicación se limita al cuerpo de una persona \cite{Khan2012}.	
+		En la Figura \ref{fig:networkRanges} se muestra una clasificación de las redes inalámbricas y se observa claramente que la \ac{WPAN} es la red de menor alcance (alcance menor a 10 metros), aunque algunos autores mencionan que existe un grupo de menor alcance: la \ac{WBAN}, cuyo alcance y aplicación se limita al cuerpo de una persona \cite{Khan2012}.	
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.50\textwidth]{networkRanges.png}
@@ -256,25 +273,25 @@ This document presents an investigation about the developed technological progre
 			\label{fig:networkRanges}
 		\end{figure}
 		\newline
-		De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{WPAN} es el IEEE 802.15, cuya frecuencia de operación es 2.4 GHz y su objetivo en particular es el permitir una conexión sin fallas entre los dispositivos de la red y asegurar una transferencia de información continua.
+		De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{\acp{WPAN}} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 \textit{GHz} y su objetivo en particular es el permitir una conexión sin fallas entre los dispositivos de la red y asegurar una transferencia de información continua.
 		
-		Dentro del grupo de las \textit{WPAN} se encuentran las \textit{WSN}, las cuales generalmente consisten en múltiples nodos que integran sensores, procesadores, fuentes de energía y dispositivos que permiten su comunicación con los demás nodos. 
-		Las \textit{WSN} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo, además de la movilidad de sus dispositivos; siendo esta última una de las que más destaca cuando se usan en el entorno de las personas. 
+		Dentro del grupo de las \textit{\acp{WPAN}} se encuentran las \textit{\acp{WSN}}, las cuales generalmente consisten en múltiples nodos que integran sensores, procesadores, fuentes de energía y dispositivos que permiten su comunicación con los demás nodos. 
+		Las \textit{\acp{WSN}} se distinguen por sus múltiples bondades: diseño no intrusivo, bajo consumo de energía, bajo costo, además de la movilidad de sus dispositivos; siendo esta última una de las que más destaca cuando se usan en el entorno de las personas. 
 		
-		Dado que los dispositivos o nodos de una \textit{WSN} son frecuentemente portables y pequeños en tamaño, pueden ser fácilmente integrados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}. 
-		Por ello, las \textit{WSN} son ahora poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
+		Dado que los dispositivos o nodos de una \textit{\acp{WSN}} son frecuentemente portables y pequeños en tamaño, pueden ser fácilmente integrados a entidades móviles, como vehículos, robots o personas \cite{Silva2014}. 
+		Por ello, las \textit{\acp{WSN}} son ahora poderosas herramientas en aplicaciones militares; por ejemplo en la detección de intrusos o vigilancia de perímetros \cite{Garcia-hernandez2007}.
 		
-		Aprovechando su movilidad, las \textit{WSN} también ganaron su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando múltiples de ellas (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
+		Aprovechando su movilidad, las \textit{\acp{WSN}} también ganaron su lugar en el desarrollo de aplicaciones para el cuidado de la salud \cite{DelosAngelesCosioLeon} desarrollando múltiples de ellas (por ejemplo el monitoreo o detección de la ubicación de pacientes) con el objetivo de mantener en constante vigilancia el estado de salud de pacientes, enfocándose en su mayoría hacia el cuidado de los adultos mayores. 
 		
 		En este contexto, \citeA{Virone2006} proponen una red con el propósito de adquirir variables físicas de los pacientes como temperatura y posición. 
-		Del mismo modo, \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{WSN} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
+		Del mismo modo, \citeA{Yan2009} implementan un análisis experimental de una aplicación de \textit{\acp{WSN}} para \textit{e-Health} \cite{Eysenbach2001}, distribuyendo múltiples nodos en un hogar con el objetivo de proveer la información necesaria a los enfermeros, doctores o encargados para el cuidado de los pacientes.
 		
 		Es importante destacar que en estas aplicaciones, muchas veces se busca monitorizar a pacientes móviles (ya sean adultos mayores en casas de cuidado o enfermos mentales que vagan por un hospital psiquiátrico), y quienes se trasladan contínuamente dentro de un espacio o área de monitorización.
-		En este escenario las \textit{WSN} tienen una cobertura limitada debido a que ésta se creó para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la IEEE 802.15.4, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{WSN} para satisfacer las necesidades de cobertura de los usuarios \cite{Buenrostro-Mariscal2015}.
+		En este escenario las \textit{\acp{WSN}} tienen una cobertura limitada debido a que ésta se creó para entornos de corto alcance, por ello utiliza tecnologías inalámbricas de área personal como la \textit{IEEE 802.15.4}, lo cual exige la necesidad de instalar múltiples puntos de acceso en la \textit{\acp{WSN}} para satisfacer las necesidades de cobertura de los usuarios \cite{Buenrostro-Mariscal2015}.
 		
-		Por lo tanto, resulta crucial el proveer a las \textit{WSN} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones, ni el desempeño general de la red.
+		Por lo tanto, resulta crucial el proveer a las \textit{\acp{WSN}} de mecanismos que beneficien y mejoren de manera eficiente la movilidad de sus nodos, sin comprometer la operación de las aplicaciones, ni el desempeño general de la red.
 		
-		Igualmente los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{WSN}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar IEEE 802.15.4 no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
+		Igualmente los dispositivos móviles necesitan cambiarse de un punto de acceso a otro cuando se desplazan por todo el área de la \textit{\acp{WSN}}, esto resulta en la desconexión forzada del dispositivo de la red ya que el estándar \textit{IEEE 802.15.4} no cuenta con un mecanismo diseñado para iniciar un proceso de \textit{handover} o \textit{handoff} (ambos del inglés, traspaso) al nuevo punto de acceso por sí mismo. 
 		Aunque por otro lado, el estándar sí cuenta con funciones y procesos que pueden utilizarse para crear un mecanismo de \textit{handoff}.
 		
 		Este proceso de \textit{handoff} o cambio de red es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, y no asegura que el nodo móvil se libre de problemas de comunicación.
@@ -285,21 +302,21 @@ This document presents an investigation about the developed technological progre
 		Por esta razón, un nodo móvil necesita saber cuándo cambiarse de red, cómo ejecutar el \textit{handoff}, y a cuál punto de acceso dentro de la red es conveniente cambiarse.
 
 		En la literatura existen varios trabajos que proponen mecanismos para realizar este proceso de \textit{handoff} (las cuales se abordan detalladamente en el capítulo \textit{Trabajos Relacionados}); éstos difieren en algunos aspectos de operación y en sus objetivos de aplicación, aportando diferentes soluciones que pueden servir de base para este trabajo de tesis. 
-		Sin embargo, la mayoría de estos trabajos y soluciones están enfocados hacia redes celulares o redes inalámbricas tradicionales, las cuales difieren de las características técnicas y posibilidades de las redes \textit{WSN} las cuales, como se menciona anteriormente, generalmente utilizan \textit{IEEE 802.15.4}. 
+		Sin embargo, la mayoría de estos trabajos y soluciones están enfocados hacia redes celulares o redes inalámbricas tradicionales, las cuales difieren de las características técnicas y posibilidades de las redes \textit{\acp{WSN}} las cuales, como se menciona anteriormente, generalmente utilizan \textit{IEEE 802.15.4}. 
 		
 		Por ejemplo, en el trabajo realizado por \citeA{Gu2010} se desarrolla un mecanismo para la predicción del movimiento de un nodo móvil, para que con ello el sistema pueda inferir hacia dónde se está dirigiendo un nodo.
-		Además de esta predicción, el nodo realiza comparaciones entre la calidad de la señal recibida de la \textit{BS} a la que pertenece actualmente y contra la de otras candidatas a ser su nueva \textit{BS}.
+		Además de esta predicción, el nodo realiza comparaciones entre la calidad de la señal recibida de la \ac{BS} a la que pertenece actualmente y contra la de otras candidatas a ser su nueva \textit{\ac{BS}}.
 		Sin embargo, este mecanismo se desarrollo para redes con tecnología celulares, por lo que es posible incluso que el nodo móvil pertenezca a dos celdas simultáneamente.
 		Esto no es posible en redes que trabajan bajo el estándar \textit{IEEE 802.15.4}.
 		
-		Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{WSN} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño tradicional aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red \textit{OSI} \cite{Yemini1993} dentro del mecanismo de \textit{handoff}), lo cual provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}. 
+		Además, las propuestas de mecanismos de \textit{handoff} para redes \textit{\acp{WSN}} son en su mayoría para redes que no son conscientes de la aplicación y son desarrollados bajo un diseño tradicional aislado o por capas (mecanismos que no pueden utilizar información de otras capas del modelo de red \textit{\ac{OSI}} \cite{Yemini1993} dentro del mecanismo de \textit{handoff}), lo cual provoca una calidad de comunicación limitada y baja optimización de los recursos de la red al utilizar su proceso de \textit{handoff}. 
 		
 		Por ejemplo, de acuerdo a \citeA{MinLiu2008}, los algoritmos tradicionales de \textit{handoff} generalmente basan su mecanismo en una comparación de umbrales entre una o más métricas específicas para tomar la decisión de ejecutar el traspaso de red.
-		Donde algunas de las métricas más comunes son el \textit{RSSI} (siglas en inglés de \textit{Received Signal Strength Indicator}, Indicador de Fuerza de Señal Recibida), \textit{SIR} (siglas en inglés de \textit{Signal-to-Interference Ratio}, Relación Señal a Interferencia) y el BER (siglas en inglés de \textit{Bit Error Rate}, Tasa de Error Binario).
-		
+		Donde algunas de las métricas más comunes son el \ac{RSSI}, la \ac{SIR} y la \ac{BER}.
+				
 		Este tipo de criterios son limitados y no consideran aspectos e información relevante localizada en otras capas que pueden resultar de utilidad para la toma de decisiones de \textit{handoff}. 
 		
-		Lo anterior refleja la problemática a abordar en este trabajo de tesis: instrumentar un mecanismo que permita la movilidad de los nodos en una \textit{WSN}, que cuente con un grado de conciencia o inteligencia en su diseño para ejecutar el \textit{handoff} de forma eficiente (evitando desconexiones y traspasos abruptos e innecesarios entre dispositivos móviles en \textit{WSN}) y que además considere el tipo de aplicación presente en la red, violando el esquema de diseño de protocolos por capas mediante un diseño \textit{crosslayer} en el que interactúan múltiples capas del modelo de red \cite{Srivastava2005}.	
+		Lo anterior refleja la problemática a abordar en este trabajo de tesis: instrumentar un mecanismo que permita la movilidad de los nodos en una \textit{\ac{WSN}}, que cuente con un grado de conciencia o inteligencia en su diseño para ejecutar el \textit{handoff} de forma eficiente (evitando desconexiones y traspasos abruptos e innecesarios entre dispositivos móviles en \textit{\acp{WSN}}) y que además considere el tipo de aplicación presente en la red, violando el esquema de diseño de protocolos por capas mediante un diseño \textit{crosslayer} en el que interactúan múltiples capas del modelo de red \cite{Srivastava2005}.	
 	
 	%Salto de página
 	\newpage
@@ -426,7 +443,7 @@ This document presents an investigation about the developed technological progre
 		
 	Ahora, en el caso de las redes inalámbricas, el <<\textit{handoff}>>, <<\textit{handover}>>, <<traspaso>> o <<transferencia de red>> se refieren al movimiento de un nodo móvil entre dos puntos de acceso, esto es, el proceso de terminar una conexión existente y obtener una nueva conexión \cite{Makaya2008}.
 	Dicho de otra manera: el \textit{handoff} es la transición o traspaso de la señal de transmisión entre diferentes celdas.
-	En un principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} de la red o \textit{BS} (siglas en ingles de \textit{Base Station}, Estación Base). 
+	En un principio, cada terminal móvil (nodo) está, en todo momento, dentro del rango de al menos un \textit{AP} de la red o \textit{BS}. 
 	Entonces, \textit{handoff} es el mecanismo mediante el cual una conexión activa entre un nodo o \textit{host} (del inglés, anfitrión) móvil y una terminal o \textit{host} correspondiente es transferida desde un \textit{AP} a la red fija u otra \cite{Pahlavan2000}.
 
 	Estos mecanismos de \textit{handoff} deben cumplir con características de acuerdo a la aplicación o tarea en ejecución, pues existen diferentes requerimientos en aplicaciones de salud de pacientes críticos que en aquellas de vigilancia de territorios; sin embargo, algunas de las características o requerimientos comúnmente establecidos son una baja latencia en la red y una baja pérdida de paquetes, por mencionar algunos.
