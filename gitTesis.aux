@@ -20,15 +20,21 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\reset@newl@bel
 \select@language{spanish}
 \@writefile{toc}{\select@language{spanish}}
 \@writefile{lof}{\select@language{spanish}}
 \@writefile{lot}{\select@language{spanish}}
 \@writefile{toc}{\contentsline {chapter}{Resumen}{i}{chapter*.1}}
 \@writefile{toc}{\contentsline {chapter}{Abstract}{iii}{chapter*.2}}
-\newlabel{Indice}{{}{vii}{}{chapter*.4}{}}
-\@writefile{toc}{\contentsline {chapter}{Lista de tablas}{xi}{chapter*.5}}
-\@writefile{toc}{\contentsline {chapter}{Lista de figuras}{xiii}{chapter*.6}}
+\@writefile{toc}{\contentsline {chapter}{Acr\'onimos}{ix}{chapter*.5}}
+\newacro{WPAN}[\AC@hyperlink{WPAN}{WPAN}]{Red Inal\'ambrica de \'Area Personal\csdef {ac@WPAN@foreign}{del ingl\'es \textit  {Wireless Personal Area Network}, }}
+\newacro{WSN}[\AC@hyperlink{WSN}{WSN}]{Red Inal\'ambrica de Sensores\csdef {ac@WSN@foreign}{del ingl\'es \textit  {Wireless Sensor Network}, }}
+\newacro{MN}[\AC@hyperlink{MN}{MN}]{Nodo M\'ovil\csdef {ac@MN@foreign}{del ingl\'es \textit  {Mobile Node}, }}
+\newacroplural{MN}{Nodos M\'oviles}
+\newlabel{Indice}{{}{ix}{Acrónimos}{chapter*.5}{}}
+\@writefile{toc}{\contentsline {chapter}{Lista de tablas}{xiii}{chapter*.6}}
+\@writefile{toc}{\contentsline {chapter}{Lista de figuras}{xv}{chapter*.7}}
 \citation{Silva2014}
 \citation{DelosAngelesCosioLeon}
 \citation{Virone2006}
@@ -37,6 +43,12 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{ch:Introduccion}{{1}{1}{Introducción}{chapter.1}{}}
+\undonewlabel{acro:WSN}
+\newlabel{acro:WSN}{{1}{1}{Introducción}{section*.9}{}}
+\acronymused{WSN}
+\undonewlabel{acro:MN}
+\newlabel{acro:MN}{{1}{1}{Introducción}{section*.10}{}}
+\acronymused{MN}
 \citation{Ns1989}
 \citation{Rae2014}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Problem\'atica}{3}{section.1.1}}
@@ -275,7 +287,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Descripci\'on general}{50}{subsection.4.1.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Arquitectura \textit  {crosslayer} del protocolo \textit  {WSN-HaDaS}.}}{51}{figure.4.21}}
 \newlabel{fig:hadasArq}{{21}{51}{Arquitectura \textit {crosslayer} del protocolo \textit {WSN-HaDaS}}{figure.4.21}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Consideraciones de Dise\~no}{51}{section*.8}}
+\@writefile{toc}{\contentsline {subsubsection}{Consideraciones de Dise\~no}{51}{section*.11}}
 \@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Ejemplos de uso del \textit  {MAC frame} por \textit  {WSN-HaDaS}.}}{52}{figure.4.22}}
 \newlabel{fig:macFrame}{{22}{52}{Ejemplos de uso del \textit {MAC frame} por \textit {WSN-HaDaS}}{figure.4.22}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}\textit  {MHT}}{53}{subsection.4.1.2}}
@@ -288,12 +300,12 @@
 \newlabel{subsec:hep}{{4.1.3}{55}{\textit {HEP}}{subsection.4.1.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit  {HEP} b) Algoritmo utilizado cuando el \textit  {MN} pierde conexi\'on.}}{56}{figure.4.24}}
 \newlabel{fig:hepAlgoritmos}{{24}{56}{a) Algoritmo \textit {HEP} b) Algoritmo utilizado cuando el \textit {MN} pierde conexión}{figure.4.24}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard Handoff}}{57}{section*.9}}
-\newlabel{subsubsec:hardhandoff}{{4.1.3}{57}{Mecanismo \textit {Hard Handoff}}{section*.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Soft Handoff}}{57}{section*.10}}
-\newlabel{subsubsec:softhandoff}{{4.1.3}{57}{Mecanismo \textit {Soft Handoff}}{section*.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{58}{section*.11}}
-\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{58}{\textit {Early Discovery}}{section*.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard Handoff}}{57}{section*.12}}
+\newlabel{subsubsec:hardhandoff}{{4.1.3}{57}{Mecanismo \textit {Hard Handoff}}{section*.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Soft Handoff}}{57}{section*.13}}
+\newlabel{subsubsec:softhandoff}{{4.1.3}{57}{Mecanismo \textit {Soft Handoff}}{section*.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{58}{section*.14}}
+\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{58}{\textit {Early Discovery}}{section*.14}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Dise\~no de Protocolo de \textit  {Handoff}}{59}{section.4.2}}
 \newlabel{sec:Diseno}{{4.2}{59}{Diseño de Protocolo de \textit {Handoff}}{section.4.2}{}}
 \citation{OpnetWork2013}
@@ -334,7 +346,7 @@
 \bibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
 \APACbibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
 \@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{69}{appendix.Alph1}}
-\@writefile{toc}{\contentsline {section}{Referencias}{69}{section*.12}}
+\@writefile{toc}{\contentsline {section}{Referencias}{69}{section*.15}}
 \bibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
 \APACbibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
 \bibcite{Akyildiz2010}{\citeauthoryear {Buchli, Sutton,{}\ \BBA{} Beutel}{Buchli\ \BOthers {.}}{{\APACyear {2012}}}}

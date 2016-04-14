@@ -14,9 +14,11 @@
 %\usepackage{minitoc}						% Mini indice - https://www.ctan.org/pkg/minitoc
 %\usepackage{multicol}						% Permite seccionas en columnas - https://www.ctan.org/pkg/multicol
 \usepackage{multirow}						% Para las tablas
-\usepackage{array}
-\usepackage{booktabs}
+\usepackage{array}							% Para tablas
+\usepackage{booktabs}						% Para mejorar uso de tablas
 \raggedbottom								% Evitar destribución de espacios en blanco
+\usepackage{acronym}						% Para la generación de acrónimos - https://ctan.org/pkg/acronym
+\usepackage{etoolbox}						% Provides \AtBeginEnvironment, \patchcmd and \csdef - https://www.ctan.org/pkg/etoolbox
 \usepackage{anysize}						% Margin configuration - https://www.ctan.org/pkg/anysize
 \marginsize{3.0cm}{2.5cm}{3.5cm}{2.5cm}		% izq,der,top,bot
 \usepackage{chngcntr}						% Figure Enumeration - https://www.ctan.org/pkg/chngcntr
@@ -33,6 +35,38 @@
 %\setpapersize{A4}
 %\setmarginsrb{left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
 %\setmarginsrb{3.0cm}{3.5cm}{2.5cm}{2.5cm}{10pt}{1cm}{0pt}{2cm}
+
+% ======== Acronym Patch ==========
+\makeatletter
+\newcommand{\acroforeign}[1]{}
+
+% patch the environment to print the foreign definition:
+\AtBeginEnvironment{acronym}{%
+  \def\acroforeign#1{ (#1)}%
+}
+
+% patch the acronym definition to safe the foreign definition:
+\patchcmd\AC@@acro
+  {\begingroup}
+  {\begingroup\def\acroforeign##1{\csdef{ac@#1@foreign}{##1, }}}
+  {}
+  {}
+
+% renew the first output to include the foreign definition if given:
+\renewcommand*{\@acf}[1]{%
+  \ifAC@footnote
+    \acsfont{\csname ac@#1@foreign\endcsname\AC@acs{#1}}%
+    \footnote{\AC@placelabel{#1}\hskip\z@\AC@acl{#1}{}}%
+  \else
+    \acffont{%
+      \AC@placelabel{#1}\hskip\z@\AC@acl{#1}%
+      \nolinebreak[3] %
+      \acfsfont{(\acsfont{\csname ac@#1@foreign\endcsname\AC@acs{#1}})}%
+    }%
+ \fi
+ \ifAC@starred\else\AC@logged{#1}\fi
+}
+\makeatother
 
 % ======== Document ===============
 \begin{document}
@@ -128,6 +162,17 @@ This document presents an investigation about the developed technological progre
 	\textit{Agradecimientos.}
 \end{flushright}
 
+% ======= Acrónimos ==================
+\chapter*{Acrónimos} 							% No agrega la palabra 'Capítulo' ni lo añade al índice	
+\addcontentsline{toc}{chapter}{Acrónimos} 		% Para que aparezca en el índice
+	\begin{acronym}[WPAN]
+		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
+		%\acroplural{WPAN}{Redes Inalámbricas de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Networks}}}
+		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}
+		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
+		\acrodefplural{MN}{Nodos Móviles}
+	\end{acronym}
+
 % ======== Indices ===================
 \setlength{\parskip}{0cm}						%Anula separación entre párrafos
 \renewcommand\contentsname{Índice}\label{Indice}%Cambiar el título del 'Índice'
@@ -150,7 +195,7 @@ This document presents an investigation about the developed technological progre
 \onehalfspace							% Inicia espaciado a 1.5
 \pagenumbering{arabic} 	%Reinicia indice en arábigo
 \chapter{Introducción}\label{ch:Introduccion}
-	El presente proyecto de tesis plantea el uso de una \textit{WSN} (siglas en inglés de \textit{Wireless Sensor Network}, Red Inalámbrica de Sensores), dentro de la cual se integran dispositivos fijos y MNs (siglas en inglés de \textit{Mobile Nodes}, Nodos Móviles), actuando como \textit{APs} (siglas en inglés de \textit{Access Points}, Puntos de Acceso) a la red y nodos para la recolección de datos, respectivamente.
+	El presente proyecto de tesis plantea el uso de una \ac{WSN}, dentro de la cual se integran dispositivos fijos y \acp{MN}, actuando como \textit{APs} (siglas en inglés de \textit{Access Points}, Puntos de Acceso) a la red y nodos para la recolección de datos, respectivamente.
 	Dentro de las características con las que cuenta una \textit{WSN} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
 	
 	Esto infiere que los miembros, dispositivos o nodos de una \textit{WSN} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
