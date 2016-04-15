@@ -183,6 +183,8 @@ This document presents an investigation about the developed technological progre
 		\acro{BS}{Estación Base\acroforeign{del inglés \textit{Base Station}}}
 		\acrodefplural{BS}{Estaciones Base}
 		
+		\acro{CSI}{Información del Estado del Canal\acroforeign{del inglés \textit{Channel State Information}}}		
+		
 		\acro{FTP}{Protocolo de Transferencia de Archivos\acroforeign{del inglés \textit{File Transfer Protocol}}}
 		
 		\acro{GPRS}{Servicio General de Paquetes vía Radio\acroforeign{del inglés \textit{General Packet Radio Service}}}
@@ -190,8 +192,15 @@ This document presents an investigation about the developed technological progre
 		\acro{GPS}{Sistema de Posicionamiento Global\acroforeign{del inglés \textit{Global Positioning System}}}
 
 		\acro{GUI}{Interfaz General de Usuario\acroforeign{del inglés \textit{General User Interface}}}
+		
+		\acro{IPv6}{Protocolo de \textit{Internet} versión 6\acroforeign{del inglés \textit{Internet Protocol version 6}}}
+		
+		
+		\acro{LQI}{Indicador de Calidad de Enlace\acroforeign{del inglés \textit{Link Quality Indicator}}}
 
 		\acro{MAC}{Control de Acceso al Medio\acroforeign{del inglés \textit{Medium Access Control}}}
+		
+		\acro{MIPv6}{Protocolo de \textit{Internet} Móvil versión 6\acroforeign{del inglés \textit{Mobile Internet Protocol version 6}}}
 
 		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
 		\acrodefplural{MN}{Nodos Móviles}
@@ -207,11 +216,13 @@ This document presents an investigation about the developed technological progre
 
 		\acro{SIR}{Relación Señal a Interferencia\acroforeign{del inglés \textit{Signal-to-Interference Ratio}}}
 
+		\acro{SUIDS}{Síndrome de Repentina Muerte Inesperada de Infante\acroforeign{del inglés \textit{Sudden Unexpected Infant Death Syndrome}}}
+
 		\acro{TCP}{Protocolo de Control de Transmisión\acroforeign{del inglés \textit{Transmission Control Protocol}}}
 
 		\acro{UDP}{Protocolo de Datagramas de Usuario\acroforeign{del inglés \textit{User Datagram Protocol}}}
 		
-		\acro{VoIP}{Voz sobre IP\acroforeign{del inglés \textit{Voice over IP}}}
+		\acro{VoIP}{Voz sobre Protocolo de Internet\acroforeign{del inglés \textit{Voice over Internet Protocol}}}
 
 		\acro{WAN}{Red de Área Amplia\acroforeign{del inglés \textit{Wide Area Network}}}
 
@@ -964,21 +975,21 @@ This document presents an investigation about the developed technological progre
 		\item Aplicación de usuario final: Este último subsistema es el encargado de procesar (Aplicación) y mostrar la información al usuario final (cuidadores o personal médico) mediante una \ac{GUI}.
 	\end{itemize}
 	
-	El poder visualizar el escenario de una \textit{WSN}, aplicada a cuestiones de cuidado o monitoreo de salud, como una composición de subsistemas permite a los diseñadores definir requisitos específicos para cada uno de ellos, así como visualizar posibles debilidades en el sistema \cite{Alemdar2010}.
+	El poder visualizar el escenario de una \textit{\ac{WSN}}, aplicada a cuestiones de cuidado o monitoreo de salud, como una composición de subsistemas permite a los diseñadores definir requisitos específicos para cada uno de ellos, así como visualizar posibles debilidades en el sistema \cite{Alemdar2010}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=14cm,height=8.5cm]{wsnTypical.jpg}
-		\caption{Ejemplo de un escenario simple de \textit{WSN} en aplicaciones de cuidado de la salud.}
+		\caption{Ejemplo de un escenario simple de \textit{\ac{WSN}} en aplicaciones de cuidado de la salud.}
 		\label{fig:wsnTypical}
 	\end{figure}
 	
-	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{WSN}: <<monitorización de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
+	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{\ac{WSN}}: <<monitorización de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
 	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
-	Ademas, enlista una serie de aplicaciones de las \textit{WSN} en salud, entre las que destacan:
+	Ademas, enlista una serie de aplicaciones de las \textit{\acp{WSN}} en salud, entre las que destacan:
 	\begin{itemize}
 		\item Monitoreo de víctimas en catástrofes masivas: Permite mantener informadas a las diferentes agrupaciones de atención a desastres, como la Cruz Roja, sobre nuevos incidentes o zonas que requieren mayor atención.
 		\item Monitoreo del sueño: Se refiere en sí al cuidado de la posición en que se duerme y la frecuencia respiratoria. 
-		Este tipo de aplicaciones se enfocan más hacia los infantes, pues son susceptibles al \textit{SUIDS} (siglas en inglés de \textit{Sudden Unexpected Infant Death Syndrome}, Síndrome de Repentina Muerte Inesperada de Infante) que provoca más de 3,500 muertes de infantes en Estados Unidos al año \cite{CDC2016,Shapiro-Mendoza2006}.
+		Este tipo de aplicaciones se enfocan más hacia los infantes, pues son susceptibles al \ac{SUIDS} que provoca más de 3,500 muertes de infantes en Estados Unidos al año \cite{CDC2016,Shapiro-Mendoza2006}.
 		\item Monitoreo de personal de rescate: Son aplicaciones que permiten monitorizar parámetros vitales del personal de rescate, como bomberos, durante acciones de rescate.
 	\end{itemize}
 	
@@ -1002,30 +1013,30 @@ This document presents an investigation about the developed technological progre
 	Con esto en mente, diversas investigaciones se han desarrollado con el propósito de ofrecer una alternativa para solucionar el problema de falta de mecanismos de \textit{handoff} en \textit{\acp{WSN}}, tanto con diseños tradicionales por capas como con diseños \textit{crosslayer}.
 	
 	% % % % % % % % % % % % HANDOFF TRADICIONAL EN WSN % % % % % % % % % % % %
-	Muestra de ello es la propuesta de \citeA{Bruce2013}, quienes bajo un esquema de diseño tradicional por capas, proponen un mecanismo de \textit{handoff} basado en dos conceptos, la medición del \textit{RSSI} y la criptografía de claves públicas.
+	Muestra de ello es la propuesta de \citeA{Bruce2013}, quienes bajo un esquema de diseño tradicional por capas, proponen un mecanismo de \textit{handoff} basado en dos conceptos, la medición del \textit{\ac{RSSI}} y la criptografía de claves públicas.
 	
-	Por su parte, \citeA{Yun2015} proponen una nueva estrategia de \textit{handoff} utilizando el \textit{LQI} (siglas en inglés de \textit{Link Quality Indicator}, Indicador de Calidad de Enlace) como parámetro de evaluación.
-	Dicha estrategia plantea el escaneo continuo del \textit{LQI} de los paquetes tipo \textit{beacon} (paquetes de datos con información sobre los \textit{APs} o nodos coordinadores) enviados por los nodos coordinadores de la \textit{WSN}, de esta manera el \textit{\ac{MN}} no requiere realizar un escaneo completo al ejecutar un \textit{handoff}, reduciendo significativamente el tiempo de traspaso.
+	Por su parte, \citeA{Yun2015} proponen una nueva estrategia de \textit{handoff} utilizando el \ac{LQI} como parámetro de evaluación.
+	Dicha estrategia plantea el escaneo continuo del \textit{\ac{LQI}} de los paquetes tipo \textit{beacon} (paquetes de datos con información sobre los \textit{APs} o nodos coordinadores) enviados por los nodos coordinadores de la \textit{\ac{WSN}}, de esta manera el \textit{\ac{MN}} no requiere realizar un escaneo completo al ejecutar un \textit{handoff}, reduciendo significativamente el tiempo de traspaso.
 	
-	Una propuesta para el soporte a la movilidad de los dispositivos es el uso de \textit{MIPv6} (siglas en inglés de \textit{Mobile Internet Protocol version 6}, Protocolo de \textit{Internet} Móvil versión 6), que es una integración de \textit{IPv6} sobre \textit{IEEE 802.15.4}.
-	Se toma a \textit{IPv6} como base dado que demuestra ser una opción viable al tener soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{\acp{WSN}} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
-	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{IPv6} en \textit{\acp{WSN}} \cite{Mendo2010}.
+	Una propuesta para el soporte a la movilidad de los dispositivos es el uso del <<\ac{MIPv6}>>, que es una integración del <<\ac{IPv6}>> sobre \textit{IEEE 802.15.4}.
+	Se toma a \textit{\ac{IPv6}} como base dado que demuestra ser una opción viable al tener soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{\acp{WSN}} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
+	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{\ac{IPv6}} en \textit{\acp{WSN}} \cite{Mendo2010}.
 	
 	En este contexto, \citeA{Silva2012} proponen un mecanismo de \textit{handoff} basado en \textit{proxy}.
-	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{WSN} que durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso así como de energía, dada la complejidad de utilizar \textit{MIPv6}.
+	Ello con el objetivo de soportar la movilidad de los dispositivos de la \textit{\ac{WSN}} que durante el proceso de \textit{handoff} consumen demasiado tiempo de traspaso así como de energía, dada la complejidad de utilizar \textit{\ac{MIPv6}}.
 	
 	% % % % % % % % % HANDOFF CROSSLAYER EN WSN % % % % % % % % % %
 	Según \citeA{Mendes2011}, la implementación de estrategias de diseño \textit{crosslayer} para optimización de \textit{\acp{WSN}} generalmente tiene propósitos comunes:
 	\begin{itemize}
 		\item La reducción de consumo energético \cite{Kulkarni2006}
 		\item Una mayor eficiencia en ruteo \cite{Choi2005}
-		\item El proveimiento de \textit{QoS} \cite{Yuan2006}
+		\item El proveimiento de \textit{\ac{QoS}} \cite{Yuan2006}
 		\item La programación óptima \cite{Shu2009}
 	\end{itemize}
 
-	Además, ejemplifica dos interacciones \textit{crosslayer} comunes en \textit{\acp{WSN}}, una para cuestiones de \textit{QoS} y otra para \textit{CSI} (siglas en inglés de \textit{Channel State Information}, Información del Estado del Canal), las cuales se muestran en la Figura \ref{fig:OSIcrosslayerExamples}.
-	En el primer caso, menciona que la interacción común es entre las capas de Aplicación y la subcapa \textit{MAC} ubicada en la capa de Enlace.
-	De esta manera, la subcapa \textit{MAC} puede ejecutar una programación más eficiente de la aplicación en ejecución.
+	Además, ejemplifica dos interacciones \textit{crosslayer} comunes en \textit{\acp{WSN}}, una para cuestiones de \textit{\ac{QoS}} y otra para conocer la \ac{CSI}, las cuales se muestran en la Figura \ref{fig:OSIcrosslayerExamples}.
+	En el primer caso, menciona que la interacción común es entre las capas de Aplicación y la subcapa \textit{\ac{MAC}} ubicada en la capa de Enlace.
+	De esta manera, la subcapa \textit{\ac{MAC}} puede ejecutar una programación más eficiente de la aplicación en ejecución.
 	En el segundo caso, la capa Física otorga información a la capa de Red para que el protocolo de ruteo evite el uso de rutas con canales en mal estado.
 
 	\begin{figure}[H]
@@ -1036,7 +1047,7 @@ This document presents an investigation about the developed technological progre
 	\end{figure}
 
 	\citeA{Melodia2006} ofrecen en su investigación una clasificación similar, donde separan las interacciones de entre capas más comunes en \textit{\acp{WSN}}.
-	Muestran, por ejemplo, que la unión entre las capas Física y Enlace (\textit{MAC}) se realiza para investigaciones relacionadas a cuestiones de energía.
+	Muestran, por ejemplo, que la unión entre las capas Física y Enlace (\textit{\ac{MAC}}) se realiza para investigaciones relacionadas a cuestiones de energía.
 
 	Por otro lado, los mecanismos de \textit{handoff} también se han propuesto bajo estrategias de diseño \textit{crosslayer}.
 	
@@ -1049,7 +1060,7 @@ This document presents an investigation about the developed technological progre
 	Este protocolo opera en las capa de Transporte y la subcapa \textit{MAC}, interactuando con el mecanismo de envío de información \textit{UDP} (siglas en inglés de \textit{User Datagram Protocol}, Protocolo de Datagrama de Usuario), con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 	
 	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{\acp{WSN}} y su importancia en múltiples áreas: milicia, vigilancia, cuidad de la salud, localización de personal, entre otras.
-	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{WSN}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad; puesto que a diferencia de otros estándares, el \textit{IEEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{\acp{WSN}}.
+	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{\ac{WSN}}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad; puesto que a diferencia de otros estándares, el \textit{IEEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{\acp{WSN}}.
 
 \newpage
 \section{Resumen e Inferencias}\label{sec:Inferencias}
@@ -1062,7 +1073,7 @@ This document presents an investigation about the developed technological progre
 		
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
 		
-		\item En su mayoría, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación, así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
+		\item En su mayoría, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{\acp{WSN}} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación, así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
 		
 		\item Dadas las características del protocolo de \textit{handoff crosslayer \ac{WSN-HaDaS}}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
 		
@@ -1294,7 +1305,7 @@ This document presents an investigation about the developed technological progre
 	
 	\begin{enumerate}
 		\item \textbf{¿Qué se quiere simular?}: En esta etapa se plantea un panorama general de lo que se pretende simular, con el objetivo de partir de lo general hacia lo específico.
-		En este caso, la simulación plantea una \textit{WSN} con \textit{\acp{MN}} y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
+		En este caso, la simulación plantea una \textit{\ac{WSN}} con \textit{\acp{MN}} y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
 		\item \textbf{¿Qué se quiere obtener de la simulación?}: De ella, se busca el permitir analizar el efecto del \textit{handoff} en el rendimiento de la red.
 		\item \textbf{¿Qué aspectos se quieren simular?}: Se consideraron a los tiempos de conexión y reconexión como aspectos de simulación relevantes; así como la cantidad de paquetes perdidos y entregados y el retardo promedio de paquetes entregados.
 		Además, se plantea el movimiento de nodos dentro de una misma celda, y a través de múltiples celdas.
@@ -1319,7 +1330,7 @@ This document presents an investigation about the developed technological progre
 				\item Tiempos de conexión/reconexión
 			\end{itemize}	
 		
-		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{WSN} describe un árbol jerárquico.
+		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{\ac{WSN}} describe un árbol jerárquico.
 		Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
 		
 		El primer rol es el \textit{SN}, bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
@@ -1332,7 +1343,7 @@ This document presents an investigation about the developed technological progre
 		Un \textit{MN} normal solo presenta movimiento dentro del alcance de un mismo \textit{CH}; sin embargo un \textit{WN} (iniciales en inglés de \textit{Wild Node}, Nodo Salvaje) es capaz de moverse de un \textit{cluster} a otro.
 		
 		Además, se determinó un tráfico contínuo generado con un tamaño constante. 
-		Ello bajo una \textit{WSN} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
+		Ello bajo una \textit{\ac{WSN}} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
 		
 		\item \textbf{Definir las estadísticas a medir}: Algunas de las estadísticas planteadas para su medición, observación y análisis son las siguientes:
 			\begin{itemize}
