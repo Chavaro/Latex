@@ -193,12 +193,20 @@ This document presents an investigation about the developed technological progre
 
 		\acro{GUI}{Interfaz General de Usuario\acroforeign{del inglés \textit{General User Interface}}}
 		
-		\acro{IPv6}{Protocolo de \textit{Internet} versión 6\acroforeign{del inglés \textit{Internet Protocol version 6}}}
+		\acro{HEP}{Proceso de Ejecución de Traspaso\acroforeign{del inglés \textit{Handoff Execution Process}}}
 		
+		\acro{HWM}{Mensaje de Advertencia de Traspaso\acroforeign{del inglés \textit{Handoff Warning Message}}}
+		\acrodefplural{HWM}{Mensajes de Advertencia de Traspaso}
+		
+		\acro{IPv6}{Protocolo de \textit{Internet} versión 6\acroforeign{del inglés \textit{Internet Protocol version 6}}}
 		
 		\acro{LQI}{Indicador de Calidad de Enlace\acroforeign{del inglés \textit{Link Quality Indicator}}}
 
 		\acro{MAC}{Control de Acceso al Medio\acroforeign{del inglés \textit{Medium Access Control}}}
+		
+		\acro{MED}{Mecanismo de Envío de Datos}
+		
+		\acro{MHT}{Monitorizador Detonador de Traspaso\acroforeign{del inglés \textit{Monitoring Handoff Trigger}}}
 		
 		\acro{MIPv6}{Protocolo de \textit{Internet} Móvil versión 6\acroforeign{del inglés \textit{Mobile Internet Protocol version 6}}}
 
@@ -1094,30 +1102,30 @@ This document presents an investigation about the developed technological progre
 	Finalmente, se destina una sección para la descripción del proceso y la estrategia de implementación de la propuesta en el simulador \textit{NS2}.
 	
 	\newpage
-	\section{Protocolo \textit{WSN-HaDaS}}\label{sec:wsnHadas}
-	Esta sección está dedicada a la descripción funcional y estructural del protocolo \textit{WSN-HaDaS}.
+	\section{Protocolo \textit{\ac{WSN-HaDaS}}}\label{sec:wsnHadas}
+	Esta sección está dedicada a la descripción funcional y estructural del protocolo \textit{\ac{WSN-HaDaS}}.
 	Este protocolo de \textit{handoff} está diseñado bajo estrategia de capas \textit{crosslayer} y es resultado del trabajo de investigación desarrollado por \citeA{Buenrostro-Mariscal2015}.
 	En este contexto, se presentan a continuación la descripción general del protocolo y dos de sus componentes más relevantes.
 	
 		\subsection{Descripción general}
 		Las \textit{\acp{WSN}} han sido propuestas para la monitorización de signos vitales de pacientes en sus hogares, hospitales o casas de cuidado. 
 		Este escenario requiere movilidad de nodos entre celdas; no obstante, las \textit{\acp{WSN}} no están diseñadas para soportar esta característica.
-		\cite{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado \textit{WSN-HaDaS} (del inglés \textit{Handoff aware of Data Sending}, Traspaso consciente del Envío de Datos), el cual opera en la capa de Transporte y la subcapa \textit{MAC} basado en la interacción entre ambas capas.
-		Éste, recopila información relacionada a la calidad del enlace (\textit{LQI}) desde la subcapa \textit{MAC} y la reporta a la capa de Transporte.
-		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un \textit{MED} (Mecanismo de Envío de Datos) como \textit{UDP} para notificar el inicio o fin del proceso de \textit{handoff}, el \textit{MED} se vuelve consiente de dicho proceso.
+		\cite{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado <<\textit{\ac{WSN-HaDaS}}>>, el cual opera en la capa de Transporte y la subcapa \textit{\ac{MAC}} basado en la interacción entre ambas capas.
+		Éste, recopila información relacionada a la calidad del enlace (\textit{\ac{LQI}}) desde la subcapa \textit{\ac{MAC}} y la reporta a la capa de Transporte.
+		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un \ac{MED} como \textit{\ac{UDP}} para notificar el inicio o fin del proceso de \textit{handoff}, el \textit{\ac{MED}} se vuelve consiente de dicho proceso.
 		De esta manera, se controla el proceso de ejecución de \textit{handoff}, como se muestra en la Figura \ref{fig:hadasArq}.
 		
 		\begin{figure}[hbt]
 			\centering
 			\includegraphics[width=0.9\textwidth,height=8.5cm]{hadasArq.png}
-			\caption{Arquitectura \textit{crosslayer} del protocolo \textit{WSN-HaDaS}.}
+			\caption{Arquitectura \textit{crosslayer} del protocolo \textit{\ac{WSN-HaDaS}}.}
 			\label{fig:hadasArq}
 		\end{figure}		
 		
-		\textit{WSN-HaDaS} se compone de dos procesos pirncipales: El \textit{MHT} (siglas en inglés de \textit{Monitoring Handoff Trigger}, Monitorizador Detonador de Traspaso) y el \textit{HEP} (siglas en inglés de \textit{Handoff Execution Process}, Proceso de Ejecución de Traspaso); los cuales son responsables de la generación de \textit{HWM} (siglas en inglés de \textit{Handoff Warning Message}, Mensaje de Advertencia de Traspaso) y la ejecución del proceso de \textit{handoff}, respectivamente.
+		\textit{\ac{WSN-HaDaS}} se compone de dos procesos pirncipales: El \ac{MHT} y el \ac{HEP}; los cuales son responsables de la generación del \ac{HWM} y la ejecución del proceso de \textit{handoff}, respectivamente.
 		
 		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
-		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{MIPv6 Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
+		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{\ac{MIPv6} Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
 		\subsubsection{Consideraciones de Diseño}
 		Como se mencionó anteriormente, \textit{WSN-HaDaS} se compone de dos procesos: el \textit{MHT} y el \textit{HEP}.
