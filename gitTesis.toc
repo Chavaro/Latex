@@ -31,16 +31,16 @@
 \contentsline {chapter}{\numberline {4}Desarrollo de protocolo de \textit {handoff}}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Protocolo \textit {WSN-HaDaS}}{52}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Descripci\'on general}{52}{subsection.4.1.1}
-\contentsline {subsubsection}{Consideraciones de Dise\~no}{52}{section*.46}
+\contentsline {subsubsection}{Consideraciones de Dise\~no}{53}{section*.45}
 \contentsline {subsection}{\numberline {4.1.2}\textit {MHT}}{55}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}\textit {HEP}}{57}{subsection.4.1.3}
-\contentsline {subsubsection}{Mecanismo \textit {Hard Handoff}}{58}{section*.51}
-\contentsline {subsubsection}{Mecanismo \textit {Soft Handoff}}{59}{section*.52}
-\contentsline {subsubsection}{\textit {Early Discovery}}{59}{section*.53}
+\contentsline {subsubsection}{Mecanismo \textit {Hard-handoff}}{59}{section*.50}
+\contentsline {subsubsection}{Mecanismo \textit {soft-handoff}}{59}{section*.53}
+\contentsline {subsubsection}{\textit {Early Discovery}}{60}{section*.54}
 \contentsline {section}{\numberline {4.2}Dise\~no de Protocolo de \textit {Handoff}}{61}{section.4.2}
 \contentsline {section}{\numberline {4.3}Implementaci\'on en Simulador}{62}{section.4.3}
 \contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{65}{chapter.5}
 \contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{67}{chapter.6}
 \contentsline {chapter}{\numberline {A}Anexos}{69}{appendix.Alph1}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{appendix.Alph1}
-\contentsline {section}{Referencias}{71}{section*.54}
+\contentsline {section}{Referencias}{71}{section*.56}
