@@ -223,6 +223,8 @@ This document presents an investigation about the developed technological progre
 		\acro{PAN}{Red de Área Personal\acroforeign{del inglés \textit{Personal Area Network}}}
 		\acrodefplural{PAN}{Redes de Área Personal}
 		
+		\acro{PER}{Tasa de Error de Paquetes\acroforeign{del inglés \textit{Packet Error Rate}}}
+		
 		\acro{QoS}{Calidad de Servicio\acroforeign{del inglés \textit{Quality of Service}}}
 		
 		\acro{RSSI}{Indicador de Fuerza de Señal Recibida\acroforeign{del inglés \textit{Received Signal Strength Indicator}}}
@@ -1186,14 +1188,14 @@ This document presents an investigation about the developed technological progre
 		Por último, el \textit{\ac{MAC} Footer} (del inglés, pie de \textit{\ac{MAC}}) contiene una secuencia de verificación de \textit{frame} de 16 \textit{bits}.
 		
 		\subsection{\textit{MHT}}\label{subsec:mht}
-		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
-		Este proceso utiliza la función \textit{LQI}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{MN}.
-		El resultado de esta medición es reportado por la capa física del \textit{CH} (iniciales en inglés de \textit{Cluster Head}, Cabeza de Grupo) a la subcapa \textit{MAC} del mismo nodo como un valor de \textit{LQI}, el cual es usado por el proceso \textit{MHT} para evaluar el disparador de \textit{handoff} a través de un \textit{HWM}.
+		Los objetivos del proceso \textit{\ac{MHT}} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los \textit{\acp{MN}}.
+		Este proceso utiliza la función \textit{\ac{LQI}}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{\ac{MN}}.
+		El resultado de esta medición es reportado por la capa física del \textit{\ac{CH}} a la subcapa \textit{\ac{MAC}} del mismo nodo como un valor de \textit{\ac{LQI}}, el cual es usado por el proceso \textit{\ac{MHT}} para evaluar el disparador de \textit{handoff} a través de un \textit{\ac{HWM}}.
 		
-		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes son trasmitidos desde el \textit{MN} hacia el \textit{CH}, el proceso \textit{MHT} es embebido en el \textit{CH} para la monitorización de la calidad de la conexión de los \textit{MNs} dentro de su \textit{cluster} (del inglés, grupo).
-		Esto también con el propósito de reducir el impacto negativo en complejidad, consumo energético y la implementación de los \textit{NMs} (los cuales poseen recursos y capacidad de procesamiento limitados a comparación de los \textit{CHs}).
+		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes son trasmitidos desde el \textit{\ac{MN}} hacia el \textit{\ac{CH}}, el proceso \textit{\ac{MHT}} es embebido en el \textit{\ac{CH}} para la monitorización de la calidad de la conexión de los \textit{\acp{MN}} dentro de su \textit{cluster}.
+		Esto también con el propósito de reducir el impacto negativo en complejidad, consumo energético y la implementación de los \textit{\acp{MN}} (los cuales poseen recursos y capacidad de procesamiento limitados a comparación de los \textit{\acp{CH}}).
 		
-		El proceso \textit{MHT} recibe el valor crudo de \textit{LQI} en la capa de Transporte desde la subcapa \textit{MAC}, si las condiciones del \textit{MHT} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{HWM} para notificar al \textit{NM} involucrado sobre la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
+		El proceso \textit{\ac{MHT}} recibe el valor crudo de \textit{\ac{LQI}} en la capa de Transporte desde la subcapa \textit{\ac{MAC}}, si las condiciones del \textit{\ac{MHT}} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{\ac{HWM}} para notificar al \textit{\ac{MN}} involucrado sobre la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
 
 		\begin{equation}
 		\label{eq:mhtWhen}
@@ -1204,8 +1206,8 @@ This document presents an investigation about the developed technological progre
 		\textup{(\textit{$Delay_{HWM}$} + \textit{$Delay_{Delivery}$})} < \textup{\textit{$Time_{Limit}$}}
 		\end{equation}
 		
-		Para ejecutar el proceso \textit{MHT}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{LQI}, evitando así desconexiones repentinas del \textit{NM} y problemas del efecto \textit{ping-pong}.
-		Para este ajuste, se definieron tres umbrales para el \textit{LQI}: \textit{soft-threshold LQI} (\textit{thrLQIsoft}), \textit{hard-threshold LQI} \linebreak (\textit{thrLQIhard}) y \textit{thresholod Quantity of LQI} (\textit{thrQLQI}).
+		Para ejecutar el proceso \textit{\ac{MHT}}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{\ac{LQI}}, evitando así desconexiones repentinas del \textit{\ac{MN}} y problemas del efecto \textit{ping-pong}.
+		Para este ajuste, se definieron tres umbrales para el \textit{\ac{LQI}}: \textit{soft-threshold \ac{LQI}} (\textit{thrLQIsoft}), \textit{hard-threshold \ac{LQI}} \linebreak (\textit{thrLQIhard}) y \textit{thresholod Quantity of \ac{LQI}} (\textit{thrQLQI}).
 		La región existente entre \linebreak \textit{thrLQIsoft} y \textit{thrLQIhard} se conoce como <<Región de \textit{handoff}>> y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \textit{thrQLQI} y \textit{thrLQIhard}).
 		Lo anterior se muestra en la Figura \ref{fig:mhtUmbrales}.
 		
@@ -1216,18 +1218,18 @@ This document presents an investigation about the developed technological progre
 			\label{fig:mhtUmbrales}
 		\end{figure}
 				
-		El umbral \textit{thrLQIsoft} indica que las transmisiones del \textit{MN} han entrado a la región de histéresis, por lo que el proceso \textit{MHT} inicia la evaluación del \textit{LQI}.
-		Este umbral evita la ejecución de evaluaciones innecesarias mientras el \textit{LQI} del \textit{MN} no alcanza el umbral establecido.
+		El umbral \textit{thrLQIsoft} indica que las transmisiones del \textit{\ac{MN}} han entrado a la región de histéresis, por lo que el proceso \textit{\ac{MHT}} inicia la evaluación del \textit{\ac{LQI}}.
+		Este umbral evita la ejecución de evaluaciones innecesarias mientras el \textit{\ac{LQI}} del \textit{\ac{MN}} no alcanza el umbral establecido.
 		
-		Por su parte, el umbral \textit{thrQLQI} dispara un \textit{HWM}.
+		Por su parte, el umbral \textit{thrQLQI} dispara un \textit{\ac{HWM}}.
 		Ello indica que la zona de protección ha sido alcanzada y que el proceso de \textit{handoff} debe ejecutarse si se satisface la Ecuación \ref{eq:mhtWhen}.
-		Lo anterior permite al \textit{MN} permanecer conectado al \textit{CH} actual y continuar recibiendo \textit{HWMs}.
+		Lo anterior permite al \textit{\ac{MN}} permanecer conectado al \textit{\ac{CH}} actual y continuar recibiendo \textit{\acp{HWM}}.
 		
-		Finalmente, el umbral \textit{thrLQIhard} se ajusta con el objetivo de cumplir con el estándar; el cual establece que de debe cumplirse con un \textit{PER} (siglas en inglés de \textit{Packet Error Rate}, Tasa de Error de Paquetes) máximo a 1\%.
-		El procotolo \textit{WSN-HaDaS} llama a este punto como \textit{Break-point}.
+		Finalmente, el umbral \textit{thrLQIhard} se ajusta con el objetivo de cumplir con el estándar; el cual establece que de debe cumplirse con una \ac{PER} máxima de 1\%.
+		El protocolo \textit{\ac{WSN-HaDaS}} llama a este punto como \textit{Break-point}.
 		
 		\subsection{\textit{HEP}}\label{subsec:hep}
-		El algoritmo \textit{HEP} (Figura \ref{fig:hepAlgoritmos}a) tiene tres sub-procesos para la transferencia de un \textit{MN} de un \textit{CH} a otro:
+		El algoritmo \textit{\ac{HEP}} (Figura \ref{fig:hepAlgoritmos}a) tiene tres subprocesos para la transferencia de un \textit{\ac{MN}} de un \textit{\ac{CH}} a otro:
 		
 		\begin{figure}[hbt]
 			\centering
@@ -1237,22 +1239,22 @@ This document presents an investigation about the developed technological progre
 		\end{figure}
 		
 		\begin{itemize}
-			\item Descubrimiento: En este sub-proceso, el \textit{MN} busca nuevos \textit{CHs} dentro de su área de cobertura.
-			\item Decisión: El \textit{MN} elige al \textit{CH} con la mejor señal de recepción.
-			\item Asociación: El \textit{MN} envía un paquete de solicitud de asociación al \textit{CH} para unirse al \textit{cluster} del nuevo \textit{CH}.
+			\item Descubrimiento: En este subproceso, el \textit{\ac{MN}} busca nuevos \textit{\acp{CH}} dentro de su área de cobertura.
+			\item Decisión: El \textit{\ac{MN}} elige al \textit{\ac{CH}} con la mejor señal de recepción.
+			\item Asociación: El \textit{\ac{MN}} envía un paquete de solicitud de asociación al \textit{\ac{CH}} para unirse al \textit{cluster} del nuevo \textit{\ac{CH}}.
 		\end{itemize}
 		
-		Una vez que el \textit{MN} recibe un \textit{HWM}, el proceso \textit{HEP} inicia.
-		Su primer tarea es notificar al \textit{MED} que un proceso de \textit{handoff} ha iniciado.
-		Con ello, el \textit{MED} debe detener su envío de paquetes a la subcapa \textit{MAC} y cambiar el estatus de la bandera de \textit{handoff} a <<encendido>>.
+		Una vez que el \textit{\ac{MN}} recibe un \textit{\ac{HWM}}, el  \textit{\ac{HEP}} inicia.
+		Su primer tarea es notificar al \textit{\ac{MED}} que un proceso de \textit{handoff} ha iniciado.
+		Con ello, el \textit{\ac{MED}} debe detener su envío de paquetes hacia la subcapa \textit{\ac{MAC}} y cambiar el estatus de la bandera de \textit{handoff} a <<encendido>>.
 		
 		Su segunda tarea es seleccionar uno de los mecanismos de \textit{handoff} permitidos y ejecutarlo: \textit{soft handoff} (descrito en \ref{subsubsec:softhandoff}) o \textit{hard handoff} (descrito en \ref{subsubsec:hardhandoff}).
-		Esto da a \textit{WSN-HaDaS} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
+		Esto da a \textit{\ac{WSN-HaDaS}} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
 		
-		Finalmente, la última tarea del \textit{HEP} inicia cuando el \textit{MN} se ha asociado a un nuevo \textit{CH}: notificar al \textit{MED} que el mecanismo de \textit{handoff} ha concluido y debe reanudar la transmisión de datos al \textit{SN}, así como actualizar el valor de la bandera de \textit{handoff} a <<apagado>>.
+		Finalmente, la última tarea del \textit{\ac{HEP}} inicia cuando el \textit{\ac{MN}} se ha asociado a un nuevo \textit{\ac{CH}}: notificar al \textit{\ac{MED}} que el mecanismo de \textit{handoff} ha concluido y debe reanudar la transmisión de datos al \textit{\ac{SN}}, así como actualizar el valor de la bandera de \textit{handoff} a <<apagado>>.
 		
 		\subsubsection{Mecanismo \textit{Hard Handoff}} \label{subsubsec:hardhandoff}
-		El \textit{HEP} considera dos opciones que pueden originar la ejecución de un \textit{hard handoff} (Figura \ref{fig:hepAlgoritmos}):
+		El \textit{\ac{HEP}} considera dos opciones que pueden originar la ejecución de un \textit{hard handoff} (Figura \ref{fig:hepAlgoritmos}):
 		
 		\begin{enumerate}[a)]
 			\item El \textit{MN} recibe un \textit{HWM}, y éste no posee información sobre nuevos \textit{CHs}.
@@ -1261,7 +1263,7 @@ This document presents an investigation about the developed technological progre
 			Si \textit{NoAckCont} es mayor que el valor preestablecido de \textit{NoACK}, el \textit{MN} inicia inmediatamente un mecanismo de \textit{hard handoff}.
 		\end{enumerate}
 		
-		Como se menciona anteriormente, el \textit{HEP} se divide en tres subprocesos, y para la ejecución del mecanismo \textit{hard handoff} éstos se describen a continuación:
+		Como se menciona anteriormente, el \textit{\ac{HEP}} se divide en tres subprocesos, y para la ejecución del mecanismo \textit{hard handoff} éstos se describen a continuación:
 		
 		\begin{itemize}
 			\item Descubrimiento: El \textit{MN} usa el mecanismo \textit{Active Channel Scan} (del inglés, Escaneo de Canal Activo) provisto por el estándar \textit{IEEE 802.15.4} para localizar cualquier coordinador (\textit{CH}) transmitiendo dentro de su área de cobertura y en su mismo canal.
