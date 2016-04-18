@@ -183,7 +183,12 @@ This document presents an investigation about the developed technological progre
 		\acro{BS}{Estación Base\acroforeign{del inglés \textit{Base Station}}}
 		\acrodefplural{BS}{Estaciones Base}
 		
+		\acro{CH}{Jefe de Grupo\acroforeign{del inglés \textit{Cluster Head}}}
+		\acrodefplural{CH}{Jefes de Grupo}
+		
 		\acro{CSI}{Información del Estado del Canal\acroforeign{del inglés \textit{Channel State Information}}}		
+		
+		\acro{DSN}{Número de Secuencia de Datos\acroforeign{del inglés \textit{Data Sequence Number}}}
 		
 		\acro{FTP}{Protocolo de Transferencia de Archivos\acroforeign{del inglés \textit{File Transfer Protocol}}}
 		
@@ -223,6 +228,9 @@ This document presents an investigation about the developed technological progre
 		\acro{RSSI}{Indicador de Fuerza de Señal Recibida\acroforeign{del inglés \textit{Received Signal Strength Indicator}}}
 
 		\acro{SIR}{Relación Señal a Interferencia\acroforeign{del inglés \textit{Signal-to-Interference Ratio}}}
+		
+		\acro{SN}{Nodo Final o Nodo Sumidero\acroforeign{del inglés \textit{Sink Node}}}
+		\acrodefplural{SN}{Nodos Finales}
 
 		\acro{SUIDS}{Síndrome de Repentina Muerte Inesperada de Infante\acroforeign{del inglés \textit{Sudden Unexpected Infant Death Syndrome}}}
 
@@ -826,7 +834,7 @@ This document presents an investigation about the developed technological progre
 	A continuación, se presenta un breve capítulo sobre algunos trabajos relacionados. 
 	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}, mencionando las principales características de dichos trabajos de investigación y resaltando la implementación de diseños \textit{crosslayer} en sus trabajos.
 
-\newpage
+	\newpage
 	\section{Redes Celulares}\label{sec:Celular}
 	El término \textit{handoff} se utilizó primeramente en redes de comunicación celulares y satelitales, con el propósito de permitir movilidad entre los usuarios \cite{Pollini1996}.
 	En las comunicaciones por tecnología celular o satelital, el \textit{handoff} permite al usuario recibir un servicio de comunicación continuo incluso al moverse entre diferentes celdas o área de cobertura de distintos \textit{\acp{AP}}, sin que éste lo note.
@@ -1102,7 +1110,7 @@ This document presents an investigation about the developed technological progre
 	Finalmente, se destina una sección para la descripción del proceso y la estrategia de implementación de la propuesta en el simulador \textit{NS2}.
 	
 	\newpage
-	\section{Protocolo \textit{\ac{WSN-HaDaS}}}\label{sec:wsnHadas}
+	\section{Protocolo \textit{WSN-HaDaS}}\label{sec:wsnHadas}
 	Esta sección está dedicada a la descripción funcional y estructural del protocolo \textit{\ac{WSN-HaDaS}}.
 	Este protocolo de \textit{handoff} está diseñado bajo estrategia de capas \textit{crosslayer} y es resultado del trabajo de investigación desarrollado por \citeA{Buenrostro-Mariscal2015}.
 	En este contexto, se presentan a continuación la descripción general del protocolo y dos de sus componentes más relevantes.
@@ -1128,54 +1136,54 @@ This document presents an investigation about the developed technological progre
 		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{\ac{MIPv6} Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
 		
 		\subsubsection{Consideraciones de Diseño}
-		Como se mencionó anteriormente, \textit{WSN-HaDaS} se compone de dos procesos: el \textit{MHT} y el \textit{HEP}.
+		Como se mencionó anteriormente, \textit{\ac{WSN-HaDaS}} se compone de dos procesos: el \textit{\ac{MHT}} y el \textit{\ac{HEP}}.
 		
-		El \textit{MHT} mide la fuerza de la señal de paquetes de datos transmitidos por los \textit{MNs} con el objetivo de monitorizar la calidad del enlace (\textit{LQI)}), cuando el \textit{LQI} de un \textit{MN} es percibido por el \textit{CH} como inferior a un umbral establecido, éste envía un \textit{HWM} al \textit{MN} (este proceso se explica en la subsección \ref{subsec:mht}); una vez que el \textit{MN} recibe el \textit{HWM}, inicia el \textit{HEP}.
+		El \textit{\ac{MHT}} mide la fuerza de la señal de paquetes de datos transmitidos por los \textit{\acp{MN}} con el objetivo de monitorizar la calidad del enlace (\textit{\ac{LQI}}), cuando el \textit{\ac{LQI}} de un \textit{\ac{MN}} es percibido por el \ac{CH} como inferior a un umbral establecido, éste envía un \textit{\ac{HWM}} al \textit{\ac{MN}} (este proceso se explica en la subsección \ref{subsec:mht}); una vez que el \textit{\ac{MN}} recibe el \textit{\ac{HWM}}, inicia el \textit{\ac{HEP}}.
 		
-		El \textit{HEP} incluye un mecanismo de \textit{soft handoff} (explicado en la subsección \ref{subsec:hep}).
+		El \textit{\ac{HEP}} incluye un mecanismo de \textit{soft handoff} (explicado en la subsección \ref{subsec:hep}).
 		Un \textit{soft handoff} puro demanda el establecimiento de una nueva conexión de radio sin deshacerse de la conexión previa (\textit{make-before-break}), como se explica en la subsección \ref{subsec:clasConexiones}.
 		
 		Para lograr esto, es necesario contar con múltiples antenas activas de manera simultánea; sin embargo, el estándar \textit{IEEE 802.15.4} no define esta característica.
-		Por dicha razón, el \textit{HEP} ejecuta el \textit{soft handoff} utilizando dos reglas: la primera es notificar el \textit{handoff} al mecanismo que envía los datos antes de desconectarse del \textit{CH} actual; la segunda regla es reducir al mínimo el tiempo de desconexión cuando el \textit{MN} cambia de \textit{cluster}.
+		Por dicha razón, el \textit{\ac{HEP}} ejecuta el \textit{soft handoff} utilizando dos reglas: la primera es notificar el \textit{handoff} al mecanismo que envía los datos antes de desconectarse del \textit{\ac{CH}} actual; la segunda regla es reducir al mínimo el tiempo de desconexión cuando el \textit{\ac{MN}} cambia de \textit{cluster} (del inglés, grupo).
 		
-		Esta última regla se logra utilizando una estrategia llamada \textit{Early Discovery} (del inglés, Descubrimiento Temprano); la cual permite al \textit{MN} descubrir nuevos \textit{CHs} antes de romper con la conexión actual.
-		Además, para mejorar el desempeño del \textit{HEP}, \textit{WSN-HaDaS} incorpora un mecanismo de \textit{hard handoff} para cubrir aquellas operaciones de traspaso en las que el mecanismo \textit{soft handoff} no puede ejecutarse.
+		Esta última regla se logra utilizando una estrategia llamada <<\textit{Early Discovery} (del inglés, Descubrimiento Temprano)>>; la cual permite al \textit{\ac{MN}} descubrir nuevos \textit{\acp{CH}} antes de romper con la conexión actual.
+		Además, para mejorar el desempeño del \textit{\ac{HEP}}, \textit{\ac{WSN-HaDaS}} incorpora un mecanismo de \textit{hard handoff} para cubrir aquellas operaciones de traspaso en las que el mecanismo \textit{soft handoff} no puede ejecutarse.
 		
 		Por otro lado, para el manejo del proceso de \textit{handoff} y las sesiones de transmisión de datos se utilizan mensajes de control y datos.
-		\textit{WSN-HaDaS} utiliza el \textit{frame} (del inglés, estructura) definido por el estándar \textit{IEEE 802.15.4} para la construcción de ambos tipos de mensajes, como se aprecia en la Figura \ref{fig:macFrame}.
+		\textit{\ac{WSN-HaDaS}} utiliza el \textit{frame} (del inglés, estructura) definido por el estándar \textit{IEEE 802.15.4} para la construcción de ambos tipos de mensajes, como se aprecia en la Figura \ref{fig:macFrame}.
 		
 		\begin{figure}[hbt]
 			\centering
 			\includegraphics[width=\textwidth,height=7.5cm]{macFrame.png}
-			\caption{Ejemplos de uso del \textit{MAC frame} por \textit{WSN-HaDaS}.}
+			\caption{Ejemplos de uso del \textit{\ac{MAC} frame} por \textit{\ac{WSN-HaDaS}}.}
 			\label{fig:macFrame}
 		\end{figure}
 		
-		El \textit{MAC header} (del inglés, cabecera de MAC) contiene los siguientes campos:
+		El \textit{\ac{MAC} header} (del inglés, cabecera de \ac{MAC}) contiene los siguientes campos:
 		\begin{itemize}
 			\item \textit{Frame Control} (del inglés, Control de Estructura): Este campo contiene información relativa al tipo de estructura, modos de direccionamiento, Habilitación de seguridad, entre otros.
-			\item \textit{DSN} (siglas en inglés de \textit{Data Sequence Number}, Número de Secuencia de Datos): Campo que permite evitar el duplicado de paquetes.
+			\item \ac{DSN}: Campo que permite evitar el duplicado de paquetes.
 			\item Direccionamiento: Contiene información sobre el origen y destino de los datos en la red.
-			\item \textit{Header} de Seguridad Auxiliar: Este es un campo opcional que solo se habilita si el subcampo <<Habilitación de Seguridad>> del \textit{Frame Control} está habilitado.
+			\item \textit{Header} de Seguridad Auxiliar: Este es un campo opcional que sólo se habilita si el subcampo <<Habilitación de Seguridad>> del \textit{Frame Control} está habilitado.
 			Contiene tres subcampos especiales: Control de Seguridad, Contador de \textit{frame} e Identificador de Llave.
 		\end{itemize}
 		
-		El \textit{MAC Payload} (del inglés, carga útil de MAC) es un campo e longitud igual a \textit{M bytes} con un valor máximo de 116 \textit{bytes}.
-		\textit{WSN-HaDaS} define para él dos campos:
+		El \textit{\ac{MAC} Payload} (del inglés, carga útil de \textit{\ac{MAC}}) es un campo e longitud igual a \textit{M bytes} con un valor máximo de 116 \textit{bytes}.
+		\textit{\ac{WSN-HaDaS}} define para él dos campos:
 		\begin{itemize}
 			\item \textit{Header} de Transporte: Este campo de longitud igual a \textit{n bytes} contiene el Tipo de Comando (longitud de 1 \textit{byte}) y la carga útil del comando de tamaño variable de \textit{bytes}.
 			\item Datos de Aplicación: Este campo de longitud igual a \textit{M} - \textit{n bytes} es utilizado para los datos de la aplicación.
 		\end{itemize}
 		
-		Entre los diferentes tipos de comandos que \textit{WSN-HaDaS} utiliza están los siguientes:
+		Entre los diferentes tipos de comandos que \textit{\ac{WSN-HaDaS}} utiliza están los siguientes:
 		\begin{itemize}
-			\item Mensaje de Datos: Su tipo de comando es \textit{0xB0}, y es usado en todas las transferencias de mensajes de datos entre los \textit{MNs} y el \textit{SN} (siglas en inglés de \textit{Sink Node}, Nodo de Salida).
-			Los \textit{CHs} utilizan este mensaje para evaluar el \textit{LQI} y poder disparar la notificación de \textit{soft-handoff}.
-			\item \textit{HWM}: Con tipo de comando \textit{0xC0}, es un mensaje enviado por el \textit{CH} para disparar un \textit{soft-handoff} en el \textit{MN}.
-			\item Mensaje de Reanudación de Sesión: Con tipo de comando \textit{0xC1}, este mensaje es enviado por un \textit{MN} para solicitar al \textit{SN} la reanudación de una sesión.
+			\item Mensaje de Datos: Su tipo de comando es \textit{0xB0}, y es usado en todas las transferencias de mensajes de datos entre los \textit{\acp{MN}} y el \ac{SN}.
+			Los \textit{\acp{CH}} utilizan este mensaje para evaluar el \textit{\ac{LQI}} y poder disparar la notificación de \textit{soft-handoff}.
+			\item \textit{\ac{HWM}}: Con tipo de comando \textit{0xC0}, es un mensaje enviado por el \textit{\ac{CH}} para disparar un \textit{soft-handoff} en el \textit{\ac{MN}}.
+			\item Mensaje de Reanudación de Sesión: Con tipo de comando \textit{0xC1}, este mensaje es enviado por un \textit{\ac{MN}} para solicitar al \textit{\ac{SN}} la reanudación de una sesión.
 		\end{itemize}
 		
-		Por último, el \textit{MAC Footer} (del inglés, pie de MAC) contiene una secuencia de verificación de \textit{frame} de 16 \textit{bits}.
+		Por último, el \textit{\ac{MAC} Footer} (del inglés, pie de \textit{\ac{MAC}}) contiene una secuencia de verificación de \textit{frame} de 16 \textit{bits}.
 		
 		\subsection{\textit{MHT}}\label{subsec:mht}
 		Los objetivos del proceso \textit{MHT} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los MN.
@@ -1224,7 +1232,7 @@ This document presents an investigation about the developed technological progre
 		\begin{figure}[hbt]
 			\centering
 			\includegraphics[width=\textwidth,height=12cm]{hepAlgoritmos.png}
-			\caption{a) Algoritmo \textit{HEP} b) Algoritmo utilizado cuando el \textit{MN} pierde conexión.}
+			\caption{a) Algoritmo \textit{\ac{HEP}} b) Algoritmo utilizado cuando el \textit{\ac{MN}} pierde conexión.}
 			\label{fig:hepAlgoritmos}
 		\end{figure}
 		

@@ -20,7 +20,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\AC@reset@newl@bel
+\reset@newl@bel
 \select@language{spanish}
 \@writefile{toc}{\select@language{spanish}}
 \@writefile{lof}{\select@language{spanish}}
@@ -37,7 +37,10 @@
 \newacro{BER}[\AC@hyperlink{BER}{BER}]{Tasa de Error Binario\csdef {ac@BER@foreign}{del ingl\'es \textit  {Bit Error Rate}, }}
 \newacro{BS}[\AC@hyperlink{BS}{BS}]{Estaci\'on Base\csdef {ac@BS@foreign}{del ingl\'es \textit  {Base Station}, }}
 \newacroplural{BS}{Estaciones Base}
+\newacro{CH}[\AC@hyperlink{CH}{CH}]{Jefe de Grupo\csdef {ac@CH@foreign}{del ingl\'es \textit  {Cluster Head}, }}
+\newacroplural{CH}{Jefes de Grupo}
 \newacro{CSI}[\AC@hyperlink{CSI}{CSI}]{Informaci\'on del Estado del Canal\csdef {ac@CSI@foreign}{del ingl\'es \textit  {Channel State Information}, }}
+\newacro{DSN}[\AC@hyperlink{DSN}{DSN}]{N\'umero de Secuencia de Datos\csdef {ac@DSN@foreign}{del ingl\'es \textit  {Data Sequence Number}, }}
 \newacro{FTP}[\AC@hyperlink{FTP}{FTP}]{Protocolo de Transferencia de Archivos\csdef {ac@FTP@foreign}{del ingl\'es \textit  {File Transfer Protocol}, }}
 \newacro{GPRS}[\AC@hyperlink{GPRS}{GPRS}]{Servicio General de Paquetes v\IeC {\'\i }a Radio\csdef {ac@GPRS@foreign}{del ingl\'es \textit  {General Packet Radio Service}, }}
 \newacro{GPS}[\AC@hyperlink{GPS}{GPS}]{Sistema de Posicionamiento Global\csdef {ac@GPS@foreign}{del ingl\'es \textit  {Global Positioning System}, }}
@@ -59,6 +62,8 @@
 \newacro{QoS}[\AC@hyperlink{QoS}{QoS}]{Calidad de Servicio\csdef {ac@QoS@foreign}{del ingl\'es \textit  {Quality of Service}, }}
 \newacro{RSSI}[\AC@hyperlink{RSSI}{RSSI}]{Indicador de Fuerza de Se\~nal Recibida\csdef {ac@RSSI@foreign}{del ingl\'es \textit  {Received Signal Strength Indicator}, }}
 \newacro{SIR}[\AC@hyperlink{SIR}{SIR}]{Relaci\'on Se\~nal a Interferencia\csdef {ac@SIR@foreign}{del ingl\'es \textit  {Signal-to-Interference Ratio}, }}
+\newacro{SN}[\AC@hyperlink{SN}{SN}]{Nodo Final o Nodo Sumidero\csdef {ac@SN@foreign}{del ingl\'es \textit  {Sink Node}, }}
+\newacroplural{SN}{Nodos Finales}
 \newacro{SUIDS}[\AC@hyperlink{SUIDS}{SUIDS}]{S\IeC {\'\i }ndrome de Repentina Muerte Inesperada de Infante\csdef {ac@SUIDS@foreign}{del ingl\'es \textit  {Sudden Unexpected Infant Death Syndrome}, }}
 \newacro{TCP}[\AC@hyperlink{TCP}{TCP}]{Protocolo de Control de Transmisi\'on\csdef {ac@TCP@foreign}{del ingl\'es \textit  {Transmission Control Protocol}, }}
 \newacro{UDP}[\AC@hyperlink{UDP}{UDP}]{Protocolo de Datagramas de Usuario\csdef {ac@UDP@foreign}{del ingl\'es \textit  {User Datagram Protocol}, }}
@@ -75,25 +80,34 @@
 \newacroplural{WSN}{Redes Inal\'ambricas de Sensores}
 \newacro{WSN-HaDaS}[\AC@hyperlink{WSN-HaDaS}{WSN-HaDaS}]{Traspaso consciente del Env\IeC {\'\i }o de Datos en Redes Inal\'ambricas de Sensores\csdef {ac@WSN-HaDaS@foreign}{del ingl\'es \textit  {Handoff aware of Data Sending in Wireless Sensor Networks}, }}
 \newlabel{Indice}{{}{xi}{Acrónimos}{chapter*.5}{}}
-\AC@undonewlabel{acro:WLAN}
+\undonewlabel{acro:WLAN}
 \newlabel{acro:WLAN}{{}{xiv}{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.7}{}}
 \acronymused{WLAN}
-\AC@undonewlabel{acro:WSN}
+\undonewlabel{acro:WSN}
 \newlabel{acro:WSN}{{}{xiv}{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.8}{}}
 \acronymused{WSN}
-\AC@undonewlabel{acro:WSN-HaDaS}
-\newlabel{acro:WSN-HaDaS}{{}{xiv}{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.9}{}}
-\acronymused{WSN-HaDaS}
 \@writefile{toc}{\contentsline {chapter}{Lista de tablas}{xv}{chapter*.6}}
 \acronymused{WSN}
-\@writefile{toc}{\contentsline {chapter}{Lista de figuras}{xvii}{chapter*.10}}
-\AC@undonewlabel{acro:OSI}
-\newlabel{acro:OSI}{{}{xvii}{\listfigurename }{section*.12}{}}
+\@writefile{toc}{\contentsline {chapter}{Lista de figuras}{xvii}{chapter*.9}}
+\undonewlabel{acro:OSI}
+\newlabel{acro:OSI}{{}{xvii}{\listfigurename }{section*.11}{}}
 \acronymused{OSI}
 \acronymused{OSI}
 \acronymused{WLAN}
 \acronymused{WSN}
+\undonewlabel{acro:WSN-HaDaS}
+\newlabel{acro:WSN-HaDaS}{{}{xviii}{\listfigurename }{section*.12}{}}
 \acronymused{WSN-HaDaS}
+\undonewlabel{acro:MAC}
+\newlabel{acro:MAC}{{}{xviii}{\listfigurename }{section*.13}{}}
+\acronymused{MAC}
+\acronymused{WSN-HaDaS}
+\undonewlabel{acro:HEP}
+\newlabel{acro:HEP}{{}{xviii}{\listfigurename }{section*.14}{}}
+\acronymused{HEP}
+\undonewlabel{acro:MN}
+\newlabel{acro:MN}{{}{xviii}{\listfigurename }{section*.15}{}}
+\acronymused{MN}
 \citation{Silva2014}
 \citation{DelosAngelesCosioLeon}
 \citation{Virone2006}
@@ -103,18 +117,16 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{ch:Introduccion}{{1}{1}{Introducción}{chapter.1}{}}
 \acronymused{WSN}
-\AC@undonewlabel{acro:MN}
-\newlabel{acro:MN}{{1}{1}{Introducción}{section*.13}{}}
 \acronymused{MN}
-\AC@undonewlabel{acro:AP}
-\newlabel{acro:AP}{{1}{1}{Introducción}{section*.14}{}}
+\undonewlabel{acro:AP}
+\newlabel{acro:AP}{{1}{1}{Introducción}{section*.16}{}}
 \acronymused{AP}
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
-\citation{Ns1989}
 \acronymused{WSN}
+\citation{Ns1989}
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
@@ -131,16 +143,17 @@
 \citation{Saranya2014}
 \citation{Silva2014}
 \citation{Garcia-hernandez2007}
-\AC@undonewlabel{acro:WPAN}
-\newlabel{acro:WPAN}{{1.1}{4}{Problemática}{section*.15}{}}
+\undonewlabel{acro:WPAN}
+\newlabel{acro:WPAN}{{1.1}{4}{Problemática}{section*.17}{}}
 \acronymused{WPAN}
-\AC@undonewlabel{acro:WBAN}
-\newlabel{acro:WBAN}{{1.1}{4}{Problemática}{section*.16}{}}
+\undonewlabel{acro:WBAN}
+\newlabel{acro:WBAN}{{1.1}{4}{Problemática}{section*.18}{}}
 \acronymused{WBAN}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Clasificaci\'on de las redes inal\'ambricas en funci\'on de su alcance.}}{4}{figure.1.2}}
 \newlabel{fig:networkRanges}{{2}{4}{Clasificación de las redes inalámbricas en función de su alcance}{figure.1.2}{}}
 \acronymused{WPAN}
 \acronymused{WPAN}
+\acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
@@ -155,16 +168,15 @@
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{WSN}
-\acronymused{WSN}
+\acronymused{MN}
 \citation{Gu2010}
 \acronymused{MN}
 \acronymused{MN}
 \acronymused{MN}
-\acronymused{MN}
 \acronymused{WSN}
 \acronymused{MN}
-\AC@undonewlabel{acro:BS}
-\newlabel{acro:BS}{{1.1}{6}{Problemática}{section*.17}{}}
+\undonewlabel{acro:BS}
+\newlabel{acro:BS}{{1.1}{6}{Problemática}{section*.19}{}}
 \acronymused{BS}
 \acronymused{BS}
 \acronymused{MN}
@@ -173,14 +185,14 @@
 \citation{Srivastava2005}
 \acronymused{WSN}
 \acronymused{OSI}
-\AC@undonewlabel{acro:RSSI}
-\newlabel{acro:RSSI}{{1.1}{7}{Problemática}{section*.18}{}}
+\undonewlabel{acro:RSSI}
+\newlabel{acro:RSSI}{{1.1}{7}{Problemática}{section*.20}{}}
 \acronymused{RSSI}
-\AC@undonewlabel{acro:SIR}
-\newlabel{acro:SIR}{{1.1}{7}{Problemática}{section*.19}{}}
+\undonewlabel{acro:SIR}
+\newlabel{acro:SIR}{{1.1}{7}{Problemática}{section*.21}{}}
 \acronymused{SIR}
-\AC@undonewlabel{acro:BER}
-\newlabel{acro:BER}{{1.1}{7}{Problemática}{section*.20}{}}
+\undonewlabel{acro:BER}
+\newlabel{acro:BER}{{1.1}{7}{Problemática}{section*.22}{}}
 \acronymused{BER}
 \acronymused{WSN}
 \acronymused{WSN}
@@ -205,8 +217,8 @@
 \citation{Buenrostro-Mariscal2015}
 \acronymused{WSN-HaDaS}
 \acronymused{OSI}
-\AC@undonewlabel{acro:WSN-HadaS}
-\newlabel{acro:WSN-HadaS}{{1.3}{10}{Justificación}{section*.21}{}}
+\undonewlabel{acro:WSN-HadaS}
+\newlabel{acro:WSN-HadaS}{{1.3}{10}{Justificación}{section*.23}{}}
 \acronymused{WSN-HadaS}
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}Preguntas de investigaci\'on}{10}{section.1.4}}
 \newlabel{sec:Preguntas}{{1.4}{10}{Preguntas de investigación}{section.1.4}{}}
@@ -270,8 +282,6 @@
 \citation{Nasser2006}
 \citation{Chowdhury2012}
 \citation{Ramachandran2006}
-\AC@undonewlabel{acro:MAC}
-\newlabel{acro:MAC}{{2.2.1}{19}{Redes involucradas}{section*.22}{}}
 \acronymused{MAC}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Clasificaci\'on del \textit  {handoff} seg\'un las redes involucradas.}}{19}{figure.2.7}}
 \newlabel{fig:hoTypes}{{7}{19}{Clasificación del \textit {handoff} según las redes involucradas}{figure.2.7}{}}
@@ -282,6 +292,7 @@
 \acronymused{MN}
 \acronymused{BS}
 \citation{Chowdhury2012}
+\citation{Zdarsky2004}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Mecanismo tipo \textit  {hard handoff}.}}{20}{figure.2.8}}
 \newlabel{fig:hoHard}{{8}{20}{Mecanismo tipo \textit {hard handoff}}{figure.2.8}{}}
 \acronymused{BS}
@@ -291,24 +302,23 @@
 \newlabel{fig:hoSoft}{{9}{20}{Mecanismo tipo \textit {soft handoff}}{figure.2.9}{}}
 \acronymused{MN}
 \acronymused{AP}
-\citation{Zdarsky2004}
-\citation{Pahlavan2000}
-\citation{Pahlavan2000}
 \acronymused{MN}
 \acronymused{AP}
 \acronymused{BS}
+\citation{Pahlavan2000}
+\citation{Pahlavan2000}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Mecanismo tipo \textit  {softer handoff}.}}{21}{figure.2.10}}
 \newlabel{fig:hoSofter}{{10}{21}{Mecanismo tipo \textit {softer handoff}}{figure.2.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Control del \textit  {handoff}}{21}{subsection.2.2.3}}
 \acronymused{MN}
 \acronymused{MN}
 \acronymused{WLAN}
-\citation{Kassar2008}
-\citation{Pahlavan2000}
-\AC@undonewlabel{acro:GPRS}
-\newlabel{acro:GPRS}{{2.2.3}{22}{Control del \textit {handoff}}{section*.23}{}}
+\undonewlabel{acro:GPRS}
+\newlabel{acro:GPRS}{{2.2.3}{21}{Control del \textit {handoff}}{section*.24}{}}
 \acronymused{GPRS}
 \acronymused{MN}
+\citation{Kassar2008}
+\citation{Pahlavan2000}
 \acronymused{MN}
 \acronymused{MN}
 \acronymused{MN}
@@ -408,14 +418,14 @@
 \citation{Sinky2013}
 \citation{Buenrostro-Mariscal2015}
 \acronymused{MAC}
-\AC@undonewlabel{acro:TCP}
-\newlabel{acro:TCP}{{2.5}{32}{Estrategia de diseño \textit {crosslayer}}{section*.24}{}}
+\undonewlabel{acro:TCP}
+\newlabel{acro:TCP}{{2.5}{32}{Estrategia de diseño \textit {crosslayer}}{section*.25}{}}
 \acronymused{TCP}
 \acronymused{TCP}
 \acronymused{WSN-HaDaS}
 \acronymused{MAC}
-\AC@undonewlabel{acro:UDP}
-\newlabel{acro:UDP}{{2.5}{32}{Estrategia de diseño \textit {crosslayer}}{section*.25}{}}
+\undonewlabel{acro:UDP}
+\newlabel{acro:UDP}{{2.5}{32}{Estrategia de diseño \textit {crosslayer}}{section*.26}{}}
 \acronymused{UDP}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Trabajos relacionados}{35}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -431,20 +441,20 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Redes Celulares}{36}{section.3.1}}
 \newlabel{sec:Celular}{{3.1}{36}{Redes Celulares}{section.3.1}{}}
 \acronymused{AP}
-\AC@undonewlabel{acro:WiMax}
-\newlabel{acro:WiMax}{{3.1}{36}{Redes Celulares}{section*.26}{}}
+\undonewlabel{acro:WiMax}
+\newlabel{acro:WiMax}{{3.1}{36}{Redes Celulares}{section*.27}{}}
 \acronymused{WiMax}
-\AC@undonewlabel{acro:3G}
-\newlabel{acro:3G}{{3.1}{36}{Redes Celulares}{section*.27}{}}
+\undonewlabel{acro:3G}
+\newlabel{acro:3G}{{3.1}{36}{Redes Celulares}{section*.28}{}}
 \acronymused{3G}
 \acronymused{MAC}
 \acronymused{BS}
-\AC@undonewlabel{acro:4G}
-\newlabel{acro:4G}{{3.1}{36}{Redes Celulares}{section*.28}{}}
+\undonewlabel{acro:4G}
+\newlabel{acro:4G}{{3.1}{36}{Redes Celulares}{section*.29}{}}
 \acronymused{4G}
 \acronymused{MN}
-\AC@undonewlabel{acro:QoS}
-\newlabel{acro:QoS}{{3.1}{36}{Redes Celulares}{section*.29}{}}
+\undonewlabel{acro:QoS}
+\newlabel{acro:QoS}{{3.1}{36}{Redes Celulares}{section*.30}{}}
 \citation{Nasser2006}
 \citation{Pack2007}
 \citation{Arbaugh2002}
@@ -475,11 +485,11 @@
 \newlabel{fig:hoFases}{{18}{39}{Fases generales de un mecanismo de \textit {handoff}}{figure.3.18}{}}
 \acronymused{WLAN}
 \acronymused{WLAN}
-\AC@undonewlabel{acro:FTP}
-\newlabel{acro:FTP}{{3.2}{39}{\textit {\acp {WLAN}}}{section*.30}{}}
+\undonewlabel{acro:FTP}
+\newlabel{acro:FTP}{{3.2}{39}{\textit {\acp {WLAN}}}{section*.31}{}}
 \acronymused{FTP}
-\AC@undonewlabel{acro:VoIP}
-\newlabel{acro:VoIP}{{3.2}{39}{\textit {\acp {WLAN}}}{section*.31}{}}
+\undonewlabel{acro:VoIP}
+\newlabel{acro:VoIP}{{3.2}{39}{\textit {\acp {WLAN}}}{section*.32}{}}
 \acronymused{VoIP}
 \acronymused{QoS}
 \acronymused{QoS}
@@ -518,20 +528,20 @@
 \acronymused{WSN}
 \newlabel{tabla:wsnAplicaciones}{{1}{42}{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit {\acp {WSN}}}{table.3.1}{}}
 \acronymused{WSN}
-\AC@undonewlabel{acro:GPS}
-\newlabel{acro:GPS}{{1}{42}{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit {\acp {WSN}}}{section*.32}{}}
+\undonewlabel{acro:GPS}
+\newlabel{acro:GPS}{{1}{42}{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit {\acp {WSN}}}{section*.33}{}}
 \acronymused{GPS}
 \acronymused{WSN}
-\AC@undonewlabel{acro:BAN}
-\newlabel{acro:BAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.33}{}}
+\undonewlabel{acro:BAN}
+\newlabel{acro:BAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.34}{}}
 \acronymused{BAN}
-\AC@undonewlabel{acro:PAN}
-\newlabel{acro:PAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.34}{}}
+\undonewlabel{acro:PAN}
+\newlabel{acro:PAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.35}{}}
 \acronymused{PAN}
 \acronymused{BAN}
 \acronymused{PAN}
-\AC@undonewlabel{acro:WAN}
-\newlabel{acro:WAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.35}{}}
+\undonewlabel{acro:WAN}
+\newlabel{acro:WAN}{{3.3}{42}{\textit {\acp {WSN}}}{section*.36}{}}
 \acronymused{WAN}
 \citation{Alemdar2010}
 \citation{Ahmed2012}
@@ -539,8 +549,8 @@
 \acronymused{WAN}
 \acronymused{WSN}
 \acronymused{WAN}
-\AC@undonewlabel{acro:GUI}
-\newlabel{acro:GUI}{{3.3}{43}{\textit {\acp {WSN}}}{section*.36}{}}
+\undonewlabel{acro:GUI}
+\newlabel{acro:GUI}{{3.3}{43}{\textit {\acp {WSN}}}{section*.37}{}}
 \acronymused{GUI}
 \acronymused{WSN}
 \@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Ejemplo de un escenario simple de \textit  {\ac {WSN}} en aplicaciones de cuidado de la salud.}}{43}{figure.3.19}}
@@ -552,8 +562,8 @@
 \citation{Shapiro-Mendoza2006}
 \citation{Arnon2003}
 \citation{Arnon2003}
-\AC@undonewlabel{acro:SUIDS}
-\newlabel{acro:SUIDS}{{3.3}{44}{\textit {\acp {WSN}}}{section*.37}{}}
+\undonewlabel{acro:SUIDS}
+\newlabel{acro:SUIDS}{{3.3}{44}{\textit {\acp {WSN}}}{section*.38}{}}
 \acronymused{SUIDS}
 \citation{Fotouhi2012}
 \citation{Bruce2013}
@@ -566,8 +576,8 @@
 \acronymused{WSN}
 \acronymused{WSN}
 \acronymused{RSSI}
-\AC@undonewlabel{acro:LQI}
-\newlabel{acro:LQI}{{3.3}{45}{\textit {\acp {WSN}}}{section*.38}{}}
+\undonewlabel{acro:LQI}
+\newlabel{acro:LQI}{{3.3}{45}{\textit {\acp {WSN}}}{section*.39}{}}
 \acronymused{LQI}
 \acronymused{LQI}
 \acronymused{WSN}
@@ -579,11 +589,11 @@
 \citation{Yuan2006}
 \citation{Shu2009}
 \acronymused{MN}
-\AC@undonewlabel{acro:MIPv6}
-\newlabel{acro:MIPv6}{{3.3}{46}{\textit {\acp {WSN}}}{section*.39}{}}
+\undonewlabel{acro:MIPv6}
+\newlabel{acro:MIPv6}{{3.3}{46}{\textit {\acp {WSN}}}{section*.40}{}}
 \acronymused{MIPv6}
-\AC@undonewlabel{acro:IPv6}
-\newlabel{acro:IPv6}{{3.3}{46}{\textit {\acp {WSN}}}{section*.40}{}}
+\undonewlabel{acro:IPv6}
+\newlabel{acro:IPv6}{{3.3}{46}{\textit {\acp {WSN}}}{section*.41}{}}
 \acronymused{IPv6}
 \acronymused{IPv6}
 \acronymused{WSN}
@@ -595,8 +605,8 @@
 \acronymused{QoS}
 \acronymused{WSN}
 \acronymused{QoS}
-\AC@undonewlabel{acro:CSI}
-\newlabel{acro:CSI}{{3.3}{46}{\textit {\acp {WSN}}}{section*.41}{}}
+\undonewlabel{acro:CSI}
+\newlabel{acro:CSI}{{3.3}{46}{\textit {\acp {WSN}}}{section*.42}{}}
 \acronymused{CSI}
 \acronymused{MAC}
 \acronymused{MAC}
@@ -636,9 +646,8 @@
 \citation{Buenrostro-Mariscal2015}
 \citation{Buenrostro-Mariscal2015}
 \citation{Mendo2010}
-\acronymused{WSN-HaDaS}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Protocolo \textit  {\ac {WSN-HaDaS}}}{52}{section.4.1}}
-\newlabel{sec:wsnHadas}{{4.1}{52}{Protocolo \textit {\ac {WSN-HaDaS}}}{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Protocolo \textit  {WSN-HaDaS}}{52}{section.4.1}}
+\newlabel{sec:wsnHadas}{{4.1}{52}{Protocolo \textit {WSN-HaDaS}}{section.4.1}{}}
 \acronymused{WSN-HaDaS}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Descripci\'on general}{52}{subsection.4.1.1}}
 \acronymused{WSN}
@@ -647,49 +656,93 @@
 \acronymused{MAC}
 \acronymused{LQI}
 \acronymused{MAC}
-\AC@undonewlabel{acro:MED}
-\newlabel{acro:MED}{{4.1.1}{52}{Descripción general}{section*.42}{}}
+\undonewlabel{acro:MED}
+\newlabel{acro:MED}{{4.1.1}{52}{Descripción general}{section*.43}{}}
 \acronymused{MED}
 \acronymused{UDP}
 \acronymused{MED}
 \acronymused{WSN-HaDaS}
-\AC@undonewlabel{acro:MHT}
-\newlabel{acro:MHT}{{4.1.1}{52}{Descripción general}{section*.43}{}}
+\undonewlabel{acro:MHT}
+\newlabel{acro:MHT}{{4.1.1}{52}{Descripción general}{section*.44}{}}
 \acronymused{MHT}
-\AC@undonewlabel{acro:HEP}
-\newlabel{acro:HEP}{{4.1.1}{52}{Descripción general}{section*.44}{}}
 \acronymused{HEP}
-\AC@undonewlabel{acro:HWM}
+\undonewlabel{acro:HWM}
 \newlabel{acro:HWM}{{4.1.1}{52}{Descripción general}{section*.45}{}}
 \acronymused{HWM}
 \acronymused{MIPv6}
-\AC@undonewlabel{acro:WSN-HADAS}
-\acronymused{WSN-HADAS}
+\@writefile{toc}{\contentsline {subsubsection}{Consideraciones de Dise\~no}{52}{section*.46}}
+\acronymused{WSN-HaDaS}
+\acronymused{MHT}
+\acronymused{HEP}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Arquitectura \textit  {crosslayer} del protocolo \textit  {\ac {WSN-HaDaS}}.}}{53}{figure.4.21}}
 \acronymused{WSN-HaDaS}
 \newlabel{fig:hadasArq}{{21}{53}{Arquitectura \textit {crosslayer} del protocolo \textit {\ac {WSN-HaDaS}}}{figure.4.21}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Consideraciones de Dise\~no}{53}{section*.46}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Ejemplos de uso del \textit  {MAC frame} por \textit  {WSN-HaDaS}.}}{54}{figure.4.22}}
-\newlabel{fig:macFrame}{{22}{54}{Ejemplos de uso del \textit {MAC frame} por \textit {WSN-HaDaS}}{figure.4.22}{}}
-\acronymused{WSN-HADAS}
+\acronymused{MHT}
+\acronymused{MN}
+\acronymused{LQI}
+\acronymused{LQI}
+\acronymused{MN}
+\undonewlabel{acro:CH}
+\newlabel{acro:CH}{{4.1.1}{53}{Consideraciones de Diseño}{section*.47}{}}
+\acronymused{CH}
+\acronymused{HWM}
+\acronymused{MN}
+\acronymused{MN}
+\acronymused{HWM}
+\acronymused{HEP}
+\acronymused{HEP}
+\acronymused{HEP}
+\acronymused{CH}
+\acronymused{MN}
+\acronymused{MN}
+\acronymused{CH}
+\acronymused{HEP}
+\acronymused{WSN-HaDaS}
+\acronymused{WSN-HaDaS}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Ejemplos de uso del \textit  {\ac {MAC} frame} por \textit  {\ac {WSN-HaDaS}}.}}{54}{figure.4.22}}
+\acronymused{MAC}
+\acronymused{WSN-HaDaS}
+\newlabel{fig:macFrame}{{22}{54}{Ejemplos de uso del \textit {\ac {MAC} frame} por \textit {\ac {WSN-HaDaS}}}{figure.4.22}{}}
+\acronymused{MAC}
+\acronymused{MAC}
+\undonewlabel{acro:DSN}
+\newlabel{acro:DSN}{{4.1.1}{54}{Consideraciones de Diseño}{section*.48}{}}
+\acronymused{DSN}
+\acronymused{MAC}
+\acronymused{MAC}
+\acronymused{WSN-HaDaS}
+\acronymused{WSN-HaDaS}
+\acronymused{MN}
+\undonewlabel{acro:SN}
+\newlabel{acro:SN}{{4.1.1}{55}{Consideraciones de Diseño}{section*.49}{}}
+\acronymused{SN}
+\acronymused{CH}
+\acronymused{LQI}
+\acronymused{HWM}
+\acronymused{CH}
+\acronymused{MN}
+\acronymused{MN}
+\acronymused{SN}
+\acronymused{MAC}
+\acronymused{MAC}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}\textit  {MHT}}{55}{subsection.4.1.2}}
 \newlabel{subsec:mht}{{4.1.2}{55}{\textit {MHT}}{subsection.4.1.2}{}}
 \newlabel{eq:mhtWhen}{{1}{56}{\textit {MHT}}{equation.4.1.1}{}}
 \newlabel{eq:mhtHow}{{2}{56}{\textit {MHT}}{equation.4.1.2}{}}
-\acronymused{WSN-HADAS}
 \@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Umbrales y regiones del protocolo \textit  {WSN-HaDaS}.}}{57}{figure.4.23}}
 \newlabel{fig:mhtUmbrales}{{23}{57}{Umbrales y regiones del protocolo \textit {WSN-HaDaS}}{figure.4.23}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}\textit  {HEP}}{57}{subsection.4.1.3}}
 \newlabel{subsec:hep}{{4.1.3}{57}{\textit {HEP}}{subsection.4.1.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit  {HEP} b) Algoritmo utilizado cuando el \textit  {MN} pierde conexi\'on.}}{58}{figure.4.24}}
-\newlabel{fig:hepAlgoritmos}{{24}{58}{a) Algoritmo \textit {HEP} b) Algoritmo utilizado cuando el \textit {MN} pierde conexión}{figure.4.24}{}}
-\acronymused{WSN-HADAS}
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard Handoff}}{59}{section*.48}}
-\newlabel{subsubsec:hardhandoff}{{4.1.3}{59}{Mecanismo \textit {Hard Handoff}}{section*.48}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Soft Handoff}}{59}{section*.49}}
-\newlabel{subsubsec:softhandoff}{{4.1.3}{59}{Mecanismo \textit {Soft Handoff}}{section*.49}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{60}{section*.50}}
-\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{60}{\textit {Early Discovery}}{section*.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit  {\ac {HEP}} b) Algoritmo utilizado cuando el \textit  {\ac {MN}} pierde conexi\'on.}}{58}{figure.4.24}}
+\acronymused{HEP}
+\acronymused{MN}
+\newlabel{fig:hepAlgoritmos}{{24}{58}{a) Algoritmo \textit {\ac {HEP}} b) Algoritmo utilizado cuando el \textit {\ac {MN}} pierde conexión}{figure.4.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard Handoff}}{58}{section*.50}}
+\newlabel{subsubsec:hardhandoff}{{4.1.3}{58}{Mecanismo \textit {Hard Handoff}}{section*.50}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Soft Handoff}}{59}{section*.51}}
+\newlabel{subsubsec:softhandoff}{{4.1.3}{59}{Mecanismo \textit {Soft Handoff}}{section*.51}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{59}{section*.52}}
+\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{59}{\textit {Early Discovery}}{section*.52}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Dise\~no de Protocolo de \textit  {Handoff}}{61}{section.4.2}}
 \newlabel{sec:Diseno}{{4.2}{61}{Diseño de Protocolo de \textit {Handoff}}{section.4.2}{}}
 \citation{OpnetWork2013}
@@ -735,7 +788,7 @@
 \bibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
 \APACbibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
 \@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{appendix.Alph1}}
-\@writefile{toc}{\contentsline {section}{Referencias}{71}{section*.51}}
+\@writefile{toc}{\contentsline {section}{Referencias}{71}{section*.53}}
 \bibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
 \APACbibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
 \bibcite{Akyildiz2010}{\citeauthoryear {Buchli, Sutton,{}\ \BBA{} Beutel}{Buchli\ \BOthers {.}}{{\APACyear {2012}}}}
