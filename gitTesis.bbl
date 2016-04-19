@@ -32,11 +32,11 @@ Ahmad, S\BPBI Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-A.~Ahmed%
+Ahmed%
 , Boulahia%
 \BCBL {}\ \BBA {} Gaiti%
 }{%
-A.~Ahmed%
+Ahmed%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2014}}%
 }]{%
@@ -65,36 +65,6 @@ Ahmed, A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/SURV.2013.082713.00141} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-M.~Ahmed%
-}{%
-M.~Ahmed%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-Ahmed2012}
-\APACinsertmetastar {%
-Ahmed2012}%
-\begin{APACrefauthors}%
-Ahmed, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Wireless Sensor Network: An Emerging Technology}}
-  {{Wireless Sensor Network: An Emerging Technology}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{IOSR Journal of Electronics and Communication
-  Engineering}{2}{4}{01--04}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.iosrjournals.org/iosr-jece/papers/vol2-issue4/A0240104.pdf}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.9790/2834-0240104} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -292,8 +262,8 @@ Braden, R.%
 
 \bibitem [\protect \citeauthoryear {%
 Bruce%
-, {Gi-Hyun Hwang}%
-\BCBL {}\ \BBA {} {Hoon Jae Lee}%
+, Hwang%
+\BCBL {}\ \BBA {} Lee%
 }{%
 Bruce%
 \ \protect \BOthers {.}}{%
@@ -304,8 +274,8 @@ Bruce2013}
 Bruce2013}%
 \begin{APACrefauthors}%
 Bruce, N.%
-, {Gi-Hyun Hwang}%
-\BCBL {}\ \BBA {} {Hoon Jae Lee}.%
+, Hwang, G\BPBI H.%
+\BCBL {}\ \BBA {} Lee, H\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -316,8 +286,8 @@ Bruce, N.%
   authentication protocol for handoff support in e-healthcare systems among
   WSNs}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {2013 International Conference on ICT Convergence (ICTC)}
-  {2013 international conference on ict convergence (ictc)}\ (\BPGS\ 72--77).
+\BIn{} \APACrefbtitle {International Conference on ICT Convergence}
+  {International conference on ict convergence}\ (\BPGS\ 72--77).
 \newblock
 \APACaddressPublisher{}{IEEE}.
 \newblock
@@ -521,43 +491,6 @@ Chen, L\BPBI C\BPBI L.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/VETECF.2007.335} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{Cheng Wei Lee}%
-, {Li Ming Chen}%
-, {Meng Chang Chen}%
-\BCBL {}\ \BBA {} {Yeali Sunny Sun}%
-}{%
-{Cheng Wei Lee}%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2005}}%
-}]{%
-ChengWeiLee2005}
-\APACinsertmetastar {%
-ChengWeiLee2005}%
-\begin{APACrefauthors}%
-{Cheng Wei Lee}%
-, {Li Ming Chen}%
-, {Meng Chang Chen}%
-\BCBL {}\ \BBA {} {Yeali Sunny Sun}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{nov}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
-  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
-  based on mobile IPv6}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{IEEE Journal on Selected Areas in
-  Communications}{23}{11}{2118--2128}.
-\newblock
-\begin{APACrefURL}
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1144,12 +1077,49 @@ Kulkarni, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lee%
+C\BPBI W.~Lee%
+, Chen%
+, Chen%
+\BCBL {}\ \BBA {} Sun%
+}{%
+C\BPBI W.~Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+ChengWeiLee2005}
+\APACinsertmetastar {%
+ChengWeiLee2005}%
+\begin{APACrefauthors}%
+Lee, C\BPBI W.%
+, Chen, L\BPBI M.%
+, Chen, M\BPBI C.%
+\BCBL {}\ \BBA {} Sun, Y\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{nov}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}} {{A framework of handoffs in wireless overlay networks
+  based on mobile IPv6}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Journal on Selected Areas in
+  Communications}{23}{11}{2118--2127}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1525162}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/JSAC.2005.856833} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D\BPBI K.~Lee%
 , Kim%
 , Jeong%
 \BCBL {}\ \BBA {} Kang%
 }{%
-Lee%
+D\BPBI K.~Lee%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
 }]{%
@@ -1525,6 +1495,36 @@ Mishra, A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1145/956981.956990} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Monjur%
+}{%
+Monjur%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Ahmed2012}
+\APACinsertmetastar {%
+Ahmed2012}%
+\begin{APACrefauthors}%
+Monjur, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wireless Sensor Network: An Emerging Technology}}
+  {{Wireless Sensor Network: An Emerging Technology}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IOSR Journal of Electronics and Communication
+  Engineering}{2}{4}{01--04}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.iosrjournals.org/iosr-jece/papers/vol2-issue4/A0240104.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.9790/2834-0240104} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

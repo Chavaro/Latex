@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: gitTesis.aux
 The style file: apacite.bst
@@ -15,38 +15,38 @@ Database file #1: gitTesis.bib.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 86 entries,
             6951 wiz_defined-function locations,
-            1962 strings with 34340 characters,
-and the built_in function-call counts, 182475 in all, are:
-= -- 22319
+            1962 strings with 34322 characters,
+and the built_in function-call counts, 183225 in all, are:
+= -- 22470
 > -- 1610
-< -- 8822
-+ -- 8919
-- -- 194
-* -- 12124
-:= -- 32797
+< -- 8844
++ -- 9029
+- -- 182
+* -- 12162
+:= -- 32885
 add.period$ -- 383
 call.type$ -- 86
 change.case$ -- 1554
 chr.to.int$ -- 0
 cite$ -- 172
-duplicate$ -- 5051
+duplicate$ -- 5093
 empty$ -- 7221
 format.name$ -- 2586
-if$ -- 34537
+if$ -- 34684
 int.to.chr$ -- 0
 int.to.str$ -- 258
 missing$ -- 0
 newline$ -- 2502
 num.names$ -- 690
-pop$ -- 3093
+pop$ -- 3097
 preamble$ -- 1
 purify$ -- 416
 quote$ -- 0
-skip$ -- 11496
+skip$ -- 11520
 stack$ -- 0
-substring$ -- 9828
-swap$ -- 3069
-text.length$ -- 402
+substring$ -- 9964
+swap$ -- 3075
+text.length$ -- 396
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 8224

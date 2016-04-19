@@ -32,7 +32,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {21}{\ignorespaces Arquitectura \textit {crosslayer} del protocolo \textit {\ac {WSN-HaDaS}}.}}{53}{figure.4.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Ejemplos de uso del \textit {\ac {MAC} frame} por \textit {\ac {WSN-HaDaS}}.}}{54}{figure.4.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Umbrales y regiones del protocolo \textit {WSN-HaDaS}.}}{57}{figure.4.23}
+\contentsline {figure}{\numberline {23}{\ignorespaces Umbrales y regiones del protocolo \textit {WSN-HaDaS}.}}{56}{figure.4.23}
 \contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit {\ac {HEP}} b) Algoritmo utilizado cuando el \textit {\ac {MN}} pierde conexi\'on.}}{58}{figure.4.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces Metodolog\IeC {\'\i }a de simulaci\'on.}}{62}{figure.4.25}
 \addvspace {10\p@ }

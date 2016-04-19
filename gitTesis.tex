@@ -187,6 +187,8 @@ This document presents an investigation about the developed technological progre
 		\acro{BS}{Estación Base\acroforeign{del inglés \textit{Base Station}}}
 		\acrodefplural{BS}{Estaciones Base}
 		
+		\acro{CBR}{Tasa Constante de Bits\acroforeign{del inglés \textit{Constant Bit Rate}}}
+
 		\acro{CH}{Jefe de Grupo\acroforeign{del inglés \textit{Cluster Head}}}
 		\acrodefplural{CH}{Jefes de Grupo}
 		
@@ -257,6 +259,9 @@ This document presents an investigation about the developed technological progre
 
 		\acro{WLAN}{Red Inalámbrica de Área Local\acroforeign{del inglés \textit{Wireless Local Area Network}}}
 		\acrodefplural{WLAN}{Redes Inalámbricas de Área Local}
+
+		\acro{WN}{Nodo Salvaje\acroforeign{del inglés \textit{Wild Node}}}
+		\acrodefplural{WN}{Nodos Salvajes}
 
 		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
 		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal}
@@ -533,7 +538,7 @@ This document presents an investigation about the developed technological progre
 	Así como diferentes tecnologías de comunicación poseen mecanismos de \textit{handoff}, así también existen diferentes clasificaciones para estos tipos de mecanismos.
 	Esta clasificación se realiza en función de varios factores; algunos de ellos pueden apreciarse en la Figura \ref{fig:hoClasificacion}, basada en el trabajo de \citeA{Nasser2006}.
 
-	Para los propósitos del presente documento basta con explicar solo algunas de las clasificaciones, de acuerdo a: la tecnología de redes involucrada, número de conexiones involucradas y al control del \textit{handoff}.
+	Para los propósitos del presente documento basta con explicar sólo algunas de las clasificaciones, de acuerdo a: la tecnología de redes involucrada, número de conexiones involucradas y al control del \textit{handoff}.
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=\textwidth,height=6.5cm]{hoClasificacion.png}
@@ -810,7 +815,7 @@ This document presents an investigation about the developed technological progre
 	
 	% % % % % % % % % % % % % % Con esto inicia el cierre de la sección
 	De acuerdo a esta tendencia y a la investigación realizada, es posible aproximarse a la idea de que en un futuro la mayoría (sino todos) de los mecanismos de \textit{handoff} tenderán hacia un diseño \textit{crosslayer} dadas las bondades que éste ofrece.
-	Entre las que destaca el tener una mayor o más amplia visión del entorno, y no solo enfocarse en una capa. 
+	Entre las que destaca el tener una mayor o más amplia visión del entorno, y no sólo enfocarse en una capa. 
 	Sin embargo, es necesario tener en mente algunas preguntas sobre este futuro desarrollo: 
 	\begin{itemize}
 		\item ¿Cuáles serán los diseños \textit{crosslayer} con mayor impacto en el desempeño de la red?
@@ -832,7 +837,7 @@ This document presents an investigation about the developed technological progre
 %		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
 %		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
 %		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-%		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que solo se podrá establecer a lo mucho una sola conexión en todo momento. 
+%		Esto debido a que en la tecnología de red a trabajar sólo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
 %		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
 %	\end{itemize}
 %END_FOLD
@@ -863,19 +868,19 @@ This document presents an investigation about the developed technological progre
 	Con ello se asenta que entre los objetivos de su trabajo fue el beneficiar la <<\ac{QoS}>> en aplicaciones de telefonía celular.
 	
 	Por otro lado, \citeA{Nasser2006} dan importancia mayor a parámetros de red como: costo de servicio, seguridad, consumo de energía, condiciones de la red y desempeño de la red; todo ello con el fin de ofrecer un criterio con mayor alcance y capaz de brindar un \textit{handoff} de mayor eficiencia.
-	En su investigación, también plantea una serie de características que considera deseables en cualquier mecanismo de \textit{handoff}, dichas se muestran en la Figura \ref{fig:hoCaracteristicas} basada en su trabajo.
+	En su investigación, también plantean una serie de características deseables en cualquier mecanismo de \textit{handoff}, y que se muestran en la Figura \ref{fig:hoCaracteristicas} basada en su trabajo.
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=10cm,height=5cm]{hoCaracteristicas.png}
 		\caption{Características deseables de \textit{handoff}.}
 		\label{fig:hoCaracteristicas}
 	\end{figure}
-	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no solo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
+	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no sólo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
 	\section{\textit{\acp{WLAN}}}
 	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
 	Las redes tipo \textit{\ac{WLAN}} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
-	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11 b/g/n}) en sus hogares, e integran a la red sus dispositivos, entre los cuales existen dispositivos móviles; e.g., celulares, \textit{tablets} y \textit{laptops} (Figura \ref{fig:wlanNetwork}).
+	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11 b/g/n}) en sus hogares, e integran a la red sus dispositivos, entre los cuales existen dispositivos móviles, \textit{e.g.}, celulares, \textit{tablets} y \textit{laptops} (ver Figura \ref{fig:wlanNetwork}).
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=10cm,height=6cm]{wlanNetwork.png}
@@ -884,10 +889,9 @@ This document presents an investigation about the developed technological progre
 	\end{figure}
 	
 	Aunado a ello, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
-	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan solo estar dentro de su área de cobertura.
+	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan sólo estar dentro de su área de cobertura.
 	
-	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes; aún mientras cambian de ubicación y se trasladan a lo largo del día.
-	Sin considerar que a diferencia de las redes satelitales y celulares, las \textit{\acp{WLAN}} poseen un menor rango de cobertura.
+	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes, aún mientras cambian de ubicación y se trasladan a lo largo del día, sin considerar que a diferencia de las redes satelitales y celulares, las \textit{\acp{WLAN}} poseen un menor rango de cobertura.
 	Por dicha razón, las \textit{\acp{WLAN}} no se encuentran exentas de la necesidad de mecanismos de \textit{handoff}.
 	Es decir, en cualquier \textit{\ac{WLAN}} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
 	Según \citeA{Pack2007}, el soporte a estos mecanismos y su desarrollo se ha tornado en uno de los principales y más importantes aspectos en la tecnología \textit{\ac{WLAN}}.
@@ -896,12 +900,12 @@ This document presents an investigation about the developed technological progre
 	Con respecto al trabajo anterior, \citeA{Ahmed2014} definen que en general, los procesos de \textit{handoff} consisten de tres etapas principales: Medición e iniciación de \textit{handoff}, Decisión de \textit{handoff} y Ejecución de \textit{handoff}, ellos se explican en la Figura \ref{fig:hoFases}.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth,height=4cm]{hoFases.png}
+		\includegraphics[width=10.5cm,height=4.2cm]{hoFases.jpg}
 		\caption{Fases generales de un mecanismo de \textit{handoff}.}
 		\label{fig:hoFases}
 	\end{figure}
 	 
-	Además de dicha aclaración, en sus trabajos de investigación, \citeA{Ahmed2014}, así como \citeA{Yang2006} proveen al lector sobre conceptos relacionados en la temática del \textit{handoff} en \textit{\acp{WLAN}} en sus respectivas investigaciones; tales como conceptos, clasificaciones, propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
+	Además de dicha aclaración, en sus trabajos de investigación, \citeA{Ahmed2014}, así como \citeA{Yang2006} proveen al lector sobre temas relacionados al \textit{handoff} en \textit{\acp{WLAN}}; tales como conceptos, clasificaciones, propuestas y estrategias de decisión para mecanismos de \textit{handoff}. 
 	Ello busca establecer un esquema que defina qué parámetros deberían considerarse al diseñar mecanismo de \textit{handoff} para redes \textit{\ac{WLAN}}.
 	
 	Agregando a este tema, \citeA{Tsukamoto2007} presentan en su investigación los resultados obtenidos de la realización de múltiples experimentos utilizando el <<\ac{FTP}>> y aplicaciones de <<\ac{VoIP}>> con fines comparativos entre criterios considerando potencia de señal y retransmisión de tramas.
@@ -911,8 +915,8 @@ This document presents an investigation about the developed technological progre
 	Sin embargo, los trabajos antes mencionados atacan la problemática del proceso de \textit{handoff}, buscando reducir el tiempo del mismo y no se preocupan por cómo afecta ello a la aplicación de la red durante dicho proceso.
 			
 	% % % % % Esto es QoS
-	Por ello, en las investigaciones realizadas por \citeA{Kim2010,MinLiu2008} y \citeA{Ramachandran2006}, se describen soluciones haciendo un enfoque hacia el \textit{\ac{QoS}}.
-	En dichos trabajos se hace mención que uno de sus propósitos es el que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{\ac{QoS}}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo, por ejemplo: ancho de banda disponible, retrasos de tiempo, tasa de datos, costo, entre otros.
+	Por ello, en las investigaciones realizadas por \citeA{Kim2010}, \citeA{MinLiu2008} y \citeA{Ramachandran2006}, se describen soluciones haciendo un enfoque hacia el \textit{\ac{QoS}}.
+	En dichos trabajos se hace mención que uno de sus propósitos es que la estrategia del diseño de su algoritmo sea aplicable a cualquier tipo de red que busque mejorar aspectos de \textit{\ac{QoS}}, considerando que el incluir una mayor cantidad de parámetros relativos a este aspecto podrán mejorar significativamente el rendimiento del algoritmo, por ejemplo: ancho de banda disponible, retrasos de tiempo, tasa de datos, costo, entre otros.
 	
 	Una mayor cantidad de parámetros puede resultar en decisiones más inteligentes.
 	\citeA{ChengWeiLee2005} proponen una técnica de \textit{handoff} pendiente del ancho de banda disponible en las \textit{\acp{WLAN}} (utilizando herramientas definidas en el estándar \textit{IEEE 802.11e}), ello se aúna al criterio de \textit{\ac{RSSI}} tradicional en decisiones de \textit{handoff}.
@@ -923,7 +927,7 @@ This document presents an investigation about the developed technological progre
 		 
 	\section{\textit{\acp{WSN}}}
 	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{\acp{WPAN}} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 \textit{GHz}.
-	Aunque los avances en investigación y desarrollo se han enfocado hacia el uso del estándar \textit{IEEE 802.15.4}, por su bajo consumo energético, bajo costo y su baja tasa de datos necesaria para conectar por primera vez aquellos dispositivos sin conexión a la red \cite{Garcia-hernandez2007}.
+	Sin embargo, los avances en investigación y desarrollo se han enfocado hacia el uso del estándar \textit{IEEE 802.15.4}, por su bajo consumo energético, bajo costo y su baja tasa de datos necesaria para conectar por primera vez aquellos dispositivos sin conexión a la red \cite{Garcia-hernandez2007}.
 	
 	Las \textit{\acp{WSN}} están dentro de las \textit{\acp{WPAN}}, y como tal comparten un mismo objetivo: el proveer una conexión a prueba de fallas entre los dispositivos conectados en la red.
 
@@ -932,7 +936,7 @@ This document presents an investigation about the developed technological progre
 
 	En su trabajo de investigación, \citeA{Raja2009} proponen que la movilidad de los nodos se clasifique en dos tipos:
 	\begin{itemize}
-		\item Débil: Se refiere a aquella que presentan los nodos que se integran a la red, salen de ella, o mueren y deben ser reemplazados.
+		\item Débil: Se refiere a aquella que presentan los nodos que se integran a la red, salen de ella, o mueren y deben reemplazarse.
 		\item Fuerte: Se refiere a un desplazamiento físico de los nodos, quienes se mueven a través de la red (por ejemplo, al integrarse a una entidad móvil).
 	\end{itemize}
 
@@ -992,7 +996,7 @@ This document presents an investigation about the developed technological progre
 	\begin{itemize}
 		\item \ac{BAN}: Este subsistema se compone de la red de sensores que los pacientes llevan consigo.
 		\item \ac{PAN}: Este subsistema se compone de la red de sensores ubicados en el escenario para el control del escenario y monitoreo o localización de los pacientes (cámaras, termómetros, barómetros, entre otros).
-		\item \textit{Gateway} (del inglés, Vía de Acceso): Este subsistema es responsable de permitir la conexión entre la \textit{\ac{BAN}} y/o \textit{\ac{PAN}} hacia la \textit{\ac{WAN}}. 
+		\item \textit{Gateway} (del inglés, Puerta de Enlace): Este subsistema es responsable de permitir la conexión entre la \textit{\ac{BAN}} y/o \textit{\ac{PAN}} hacia la \textit{\ac{WAN}}. 
 		Generalmente son \textit{smartphones}, computadoras, o nodos específicos para la tarea.
 		\item \ac{WAN}: Este subsistema permite que la \textit{\ac{WSN}} pueda realizar un monitoreo remoto. 
 		Muchas veces, la \textit{\ac{WAN}} incluye tecnologías de comunicación satelitales.
@@ -1007,7 +1011,7 @@ This document presents an investigation about the developed technological progre
 		\label{fig:wsnTypical}
 	\end{figure}
 	
-	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{\ac{WSN}}: <<monitorización de datos>>, <<comunicación>> y <<procesamiento del problema>> mediante un procesador central.
+	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{\ac{WSN}}: monitorización de datos, comunicación y procesamiento del problema. mediante un procesador central.
 	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
 	Ademas, enlista una serie de aplicaciones de las \textit{\acp{WSN}} en salud, entre las que destacan:
 	\begin{itemize}
@@ -1043,7 +1047,7 @@ This document presents an investigation about the developed technological progre
 	Dicha estrategia plantea el escaneo continuo del \textit{\ac{LQI}} de los paquetes tipo \textit{beacon} (paquetes de datos con información sobre los \textit{APs} o nodos coordinadores) enviados por los nodos coordinadores de la \textit{\ac{WSN}}, de esta manera el \textit{\ac{MN}} no requiere realizar un escaneo completo al ejecutar un \textit{handoff}, reduciendo significativamente el tiempo de traspaso.
 	
 	Una propuesta para el soporte a la movilidad de los dispositivos es el uso del <<\ac{MIPv6}>>, que es una integración del <<\ac{IPv6}>> sobre \textit{IEEE 802.15.4}.
-	Se toma a \textit{\ac{IPv6}} como base dado que demuestra ser una opción viable al tener soporte nativo hacia movilidad; sin embargo, necesita ser adecuado a las características de las \textit{\acp{WSN}} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
+	Se toma a \textit{\ac{IPv6}} como base dado que demuestra ser una opción viable al tener soporte nativo hacia movilidad; sin embargo, necesita adecuarse a las características de las \textit{\acp{WSN}} y comprimir sus cabeceras y direccionamientos de 128 \textit{bits}.
 	Para ello se implementa también \textit{6LowPAN}, una capa de \textit{middleware} para la integración de \textit{\ac{IPv6}} en \textit{\acp{WSN}} \cite{Mendo2010}.
 	
 	En este contexto, \citeA{Silva2012} proponen un mecanismo de \textit{handoff} basado en \textit{proxy}.
@@ -1075,7 +1079,7 @@ This document presents an investigation about the developed technological progre
 
 	Por otro lado, los mecanismos de \textit{handoff} también se han propuesto bajo estrategias de diseño \textit{crosslayer}.
 	
-	Una de estas propuestas fue sugerida por \citeA{Sinky2013}, quienes presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{\ac{TCP}}, con ello proponen aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámetros de \textit{\ac{TCP}} para mejoras la calidad de servicio durante el traspaso de red.
+	Una de estas propuestas la sugirieron \citeA{Sinky2013}, quienes presentan un \textit{handoff} bajo esquema \textit{crosslayer} asistido por \textit{\ac{TCP}}, con ello proponen aliviar problemas de desempeño durante el proceso de \textit{handoff} entre redes que trabajan con desempeños y tasas de información variantes; mediante el ajuste de parámetros de \textit{\ac{TCP}} para mejoras la calidad de servicio durante el traspaso de red.
 	
 	\citeA{Silva2011} a su vez proponen el intercambio de información de las capas de Transporte y la subcapa \textit{\ac{MAC}} para mejorar aspectos de movilidad en \textit{\acp{WSN}}.
 	Con esta unión de capas y el intercambio de mensajes entre los nodos de la red, permiten la creación y uso de mecanismos controlados de \textit{soft-handoff} y de \textit{hard-handoff}.
@@ -1083,8 +1087,8 @@ This document presents an investigation about the developed technological progre
 	Finalmente, en el trabajo realizado por \citeA{Buenrostro-Mariscal2015} se generó un mecanismo de \textit{handoff crosslayer}: el protocolo \textit{\ac{WSN-HaDaS}}.
 	Este protocolo opera en las capa de Transporte y la subcapa \textit{\ac{MAC}}, interactuando con el mecanismo de envío de información \textit{\ac{UDP}}, con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 	
-	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{\acp{WSN}} y su importancia en múltiples áreas: milicia, vigilancia, cuidad de la salud, localización de personal, entre otras.
-	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{\ac{WSN}}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad; puesto que a diferencia de otros estándares, el \textit{IEEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{\acp{WSN}}.
+	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{\acp{WSN}} y su importancia en múltiples áreas: milicia, vigilancia, cuidado de la salud, localización de personal, entre otras.
+	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{\ac{WSN}}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad, puesto que a diferencia de otros estándares, el \textit{IEEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{\acp{WSN}}.
 
 \newpage
 \section{Resumen e Inferencias}\label{sec:Inferencias}
@@ -1097,12 +1101,12 @@ This document presents an investigation about the developed technological progre
 		
 		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
 		
-		\item En su mayoría, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{\acp{WSN}} consideran a la subcapa \textit{\ac{MAC}} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación, así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
+		\item En su mayoría, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{\acp{WSN}} consideran a la subcapa \textit{\ac{MAC}} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación, así como a las capas de Aplicación, a través de los cuales pueden conocerse los requerimientos establecidos.
 		
 		\item Dadas las características del protocolo de \textit{handoff crosslayer \ac{WSN-HaDaS}}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{\ac{UDP}}), resulta un buen candidato como protocolo base.
 		
 		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-		Esto debido a que en la tecnología de red a trabajar solo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples conexiones, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
+		Esto debido a que en la tecnología de red a trabajar sólo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cual no posee la capacidad de múltiples conexiones, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
 		Además, puesto que utiliza información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
 		Finalmente, al considerar el uso de parámetros de la subcapa \textit{\ac{MAC}}, la capa de Transporte y la capa de Aplicación, se clasifica a la propuesta como un mecanismo de \textit{handoff} diseñado bajo estrategia \textit{crosslayer}.
 	\end{itemize}
@@ -1111,34 +1115,34 @@ This document presents an investigation about the developed technological progre
 \chapter{Desarrollo de protocolo de \textit{handoff}}\label{ch:Desarrollo}
 	En este capítulo, se presentan los cimientos, descripción y desarrollo del protocolo propuesto.
 	
-	Tal y como se menciona en capítulos anteriores, este protocolo se basa en la investigación y mecanismo propuesto por \citeA{Buenrostro-Mariscal2015} (\textit{\ac{WSN-HaDaS}}), por lo que se ha destinado una sección a su descripción.
+	Tal y como se menciona en capítulos anteriores, este protocolo se basa en la investigación y mecanismo \textit{\ac{WSN-HaDaS}} propuestos por \citeA{Buenrostro-Mariscal2015}, por lo que se ha destinado una sección a su descripción.
 	
-	Se ha destinado también una sección en la que se describen las propuestas de mejora y las adecuaciones a dicho mecanismo base, las cuales resultan en el nuevo protocolo propuesto por este trabajo de Tesis.
+	Asimismo, en este capítulo se describen las propuestas de mejora y las adecuaciones a dicho mecanismo base, las cuales resultan en el nuevo protocolo propuesto por este trabajo de Tesis.
 	
 	Finalmente, se destina una sección para la descripción del proceso y la estrategia de implementación de la propuesta en el simulador \textit{NS2}.
 	
 	\newpage
 	\section{Protocolo \textit{WSN-HaDaS}}\label{sec:wsnHadas}
-	Esta sección está dedicada a la descripción funcional y estructural del protocolo \textit{\ac{WSN-HaDaS}}.
-	Este protocolo de \textit{handoff} está diseñado bajo estrategia de capas \textit{crosslayer} y es resultado del trabajo de investigación desarrollado por \citeA{Buenrostro-Mariscal2015}.
+	Esta sección se dedica a la descripción funcional y estructural del protocolo \textit{\ac{WSN-HaDaS}}.
+	Este protocolo de \textit{handoff} se diseñó bajo estrategia de capas \textit{crosslayer} y es resultado del trabajo de investigación desarrollado por \citeA{Buenrostro-Mariscal2015}.
 	En este contexto, se presentan a continuación la descripción general del protocolo y dos de sus componentes más relevantes.
 	
 		\subsection{Descripción general}
-		Las \textit{\acp{WSN}} han sido propuestas para la monitorización de signos vitales de pacientes en sus hogares, hospitales o casas de cuidado. 
-		Este escenario requiere movilidad de nodos entre celdas; no obstante, las \textit{\acp{WSN}} no están diseñadas para soportar esta característica.
-		\cite{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado <<\textit{\ac{WSN-HaDaS}}>>, el cual opera en la capa de Transporte y la subcapa \textit{\ac{MAC}} basado en la interacción entre ambas capas.
+		Las \textit{\acp{WSN}} se propusieron para la monitorización de signos vitales de pacientes en sus hogares, hospitales o casas de cuidado. 
+		Este escenario requiere movilidad de nodos entre celdas; no obstante, las \textit{\acp{WSN}} no se diseñaron para soportar esta característica.
+		\citeA{Buenrostro-Mariscal2015}, proponen un protocolo \textit{crosslayer} para administrar el \textit{handoff} llamado <<\textit{\ac{WSN-HaDaS}}>>, el cual opera en la capa de Transporte y la subcapa \textit{\ac{MAC}} basado en la interacción entre ambas capas.
 		Éste, recopila información relacionada a la calidad del enlace (\textit{\ac{LQI}}) desde la subcapa \textit{\ac{MAC}} y la reporta a la capa de Transporte.
-		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un <<\ac{MED}>> como \textit{\ac{UDP}} para notificar el inicio o fin del proceso de \textit{handoff}, el \textit{\ac{MED}} se vuelve consiente de dicho proceso.
+		La colaboración de la capa de Transporte permite mejorar la entrega de datos cuando ocurre un \textit{handoff}, y dado que este protocolo interactúa con un <<\ac{MED}>> como \textit{\ac{UDP}} para notificar el inicio o fin del proceso de \textit{handoff}, el \textit{\ac{MED}} se vuelve consciente de dicho proceso.
 		De esta manera, se controla el proceso de ejecución de \textit{handoff}, como se muestra en la Figura \ref{fig:hadasArq}.
 		
 		\begin{figure}[hbt]
 			\centering
-			\includegraphics[width=0.9\textwidth,height=8.5cm]{hadasArq.png}
+			\includegraphics[width=10cm,height=7cm]{hadasArq.jpg}
 			\caption{Arquitectura \textit{crosslayer} del protocolo \textit{\ac{WSN-HaDaS}}.}
 			\label{fig:hadasArq}
 		\end{figure}		
 		
-		\textit{\ac{WSN-HaDaS}} se compone de dos procesos pirncipales: El <<\ac{MHT}>> y el <<\ac{HEP}>>; los cuales son responsables de la generación del <<\ac{HWM}>> y la ejecución del proceso de \textit{handoff}, respectivamente.
+		\textit{\ac{WSN-HaDaS}} se compone de dos procesos principales: El <<\ac{MHT}>> y el <<\ac{HEP}>>, los cuales son responsables de la generación del <<\ac{HWM}>> y la ejecución del proceso de \textit{handoff}, respectivamente.
 		
 		Como método de evaluación de este mecanismo, los autores utilizaron un campo de pruebas físico en un entorno real en interiores, buscando obtener resultados prácticos.
 		Durante sus pruebas demostraron menores tiempos de ejecución de \textit{handoff} con respecto al protocolo \textit{\ac{MIPv6} Soft-Handoff}, resultado del trabajo de \citeA{Mendo2010}.
@@ -1154,25 +1158,25 @@ This document presents an investigation about the developed technological progre
 		Para lograr esto, es necesario contar con múltiples antenas activas de manera simultánea; sin embargo, el estándar \textit{IEEE 802.15.4} no define esta característica.
 		Por dicha razón, el \textit{\ac{HEP}} ejecuta el \textit{soft-handoff} utilizando dos reglas: la primera es notificar el \textit{handoff} al mecanismo que envía los datos antes de desconectarse del \textit{\ac{CH}} actual; la segunda regla es reducir al mínimo el tiempo de desconexión cuando el \textit{\ac{MN}} cambia de \textit{cluster} (del inglés, grupo).
 		
-		Esta última regla se logra utilizando una estrategia llamada <<\textit{Early Discovery} (del inglés, Descubrimiento Temprano)>>; la cual permite al \textit{\ac{MN}} descubrir nuevos \textit{\acp{CH}} antes de romper con la conexión actual.
+		Esta última regla se logra utilizando una estrategia llamada <<\textit{Early Discovery} (del inglés, Descubrimiento Temprano)>>; que permite al \textit{\ac{MN}} descubrir nuevos \textit{\acp{CH}} antes de romper con la conexión actual.
 		Además, para mejorar el desempeño del \textit{\ac{HEP}}, \textit{\ac{WSN-HaDaS}} incorpora un mecanismo de \textit{hard-handoff} para cubrir aquellas operaciones de traspaso en las que el mecanismo \textit{soft-handoff} no puede ejecutarse.
 		
 		Por otro lado, para el manejo del proceso de \textit{handoff} y las sesiones de transmisión de datos se utilizan mensajes de control y datos.
-		\textit{\ac{WSN-HaDaS}} utiliza el \textit{frame} (del inglés, estructura) definido por el estándar \textit{IEEE 802.15.4} para la construcción de ambos tipos de mensajes, como se aprecia en la Figura \ref{fig:macFrame}.
+		\textit{\ac{WSN-HaDaS}} utiliza el \textit{frame} (del inglés, estructura) definido por el estándar \textit{IEEE 802.15.4} para la construcción de ambos tipos de mensajes, como se aprecia en la Figura \ref{fig:macFrame} basada en el trabajo del autor..
 		
 		\begin{figure}[hbt]
 			\centering
-			\includegraphics[width=\textwidth,height=7.5cm]{macFrame.png}
+			\includegraphics[width=14cm,height=7cm]{macFrame.png}
 			\caption{Ejemplos de uso del \textit{\ac{MAC} frame} por \textit{\ac{WSN-HaDaS}}.}
 			\label{fig:macFrame}
 		\end{figure}
 		
 		El <<\textit{\ac{MAC} header}>> (del inglés, cabecera de \ac{MAC}) contiene los siguientes campos:
 		\begin{itemize}
-			\item \textit{Frame Control} (del inglés, Control de Estructura): Este campo contiene información relativa al tipo de estructura, modos de direccionamiento, Habilitación de seguridad, entre otros.
+			\item \textit{Frame Control} (del inglés, Control de Estructura): Este campo contiene información relativa al tipo de estructura, modos de direccionamiento, habilitación de seguridad, entre otros.
 			\item \ac{DSN}: Campo que permite evitar el duplicado de paquetes.
 			\item Direccionamiento: Contiene información sobre el origen y destino de los datos en la red.
-			\item \textit{Header} de Seguridad Auxiliar: Este es un campo opcional que sólo se habilita si el subcampo <<Habilitación de Seguridad>> del \textit{Frame Control} está habilitado.
+			\item \textit{Header} de Seguridad Auxiliar: Este es un campo opcional que sólo se activa si el subcampo <<Habilitación de Seguridad>> del \textit{Frame Control} está habilitado.
 			Contiene tres subcampos especiales: Control de Seguridad, Contador de \textit{frame} e Identificador de Llave.
 		\end{itemize}
 		
@@ -1185,10 +1189,10 @@ This document presents an investigation about the developed technological progre
 		
 		Entre los diferentes tipos de comandos que \textit{\ac{WSN-HaDaS}} utiliza están los siguientes:
 		\begin{itemize}
-			\item Mensaje de Datos: Su tipo de comando es \textit{0xB0}, y es usado en todas las transferencias de mensajes de datos entre los \textit{\acp{MN}} y el <<\ac{SN}>>.
+			\item Mensaje de Datos: Su tipo de comando es \textit{0xB0}, y se usa en todas las transferencias de mensajes de datos entre los \textit{\acp{MN}} y el <<\ac{SN}>>.
 			Los \textit{\acp{CH}} utilizan este mensaje para evaluar el \textit{\ac{LQI}} y poder disparar la notificación de \textit{soft-handoff}.
 			\item \textit{\ac{HWM}}: Con tipo de comando \textit{0xC0}, es un mensaje enviado por el \textit{\ac{CH}} para disparar un \textit{soft-handoff} en el \textit{\ac{MN}}.
-			\item Mensaje de Reanudación de Sesión: Con tipo de comando \textit{0xC1}, este mensaje es enviado por un \textit{\ac{MN}} para solicitar al \textit{\ac{SN}} la reanudación de una sesión.
+			\item Mensaje de Reanudación de Sesión: Con tipo de comando \textit{0xC1}, este mensaje se envía por un \textit{\ac{MN}} para solicitar al \textit{\ac{SN}} la reanudación de una sesión.
 		\end{itemize}
 		
 		Por último, el \textit{\ac{MAC} Footer} (del inglés, pie de \textit{\ac{MAC}}) contiene una secuencia de verificación de \textit{frame} de 16 \textit{bits}.
@@ -1196,12 +1200,12 @@ This document presents an investigation about the developed technological progre
 		\subsection{\textit{MHT}}\label{subsec:mht}
 		Los objetivos del proceso \textit{\ac{MHT}} son definir cuándo y cómo disparar la notificación de \textit{handoff} a los \textit{\acp{MN}}.
 		Este proceso utiliza la función \textit{\ac{LQI}}, definida en el estándar \textit{IEEE 802.15.4} para medir la fuerza de la señal de los paquetes recibidos y con ello evaluar la calidad del enlace a un \textit{\ac{MN}}.
-		El resultado de esta medición es reportado por la capa física del \textit{\ac{CH}} a la subcapa \textit{\ac{MAC}} del mismo nodo como un valor de \textit{\ac{LQI}}, el cual es usado por el proceso \textit{\ac{MHT}} para evaluar el disparador de \textit{handoff} a través de un \textit{\ac{HWM}}.
+		El resultado de esta medición se reporta por la capa física del \textit{\ac{CH}} a la subcapa \textit{\ac{MAC}} del mismo nodo como un valor de \textit{\ac{LQI}}, que se usa por el proceso \textit{\ac{MHT}} para evaluar el disparador de \textit{handoff} a través de un \textit{\ac{HWM}}.
 		
-		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes son trasmitidos desde el \textit{\ac{MN}} hacia el \textit{\ac{CH}}, el proceso \textit{\ac{MHT}} es embebido en el \textit{\ac{CH}} para la monitorización de la calidad de la conexión de los \textit{\acp{MN}} dentro de su \textit{cluster}.
+		Considerando este contexto, y el hecho de que la mayor cantidad de paquetes se trasmiten desde el \textit{\ac{MN}} hacia el \textit{\ac{CH}}, el proceso \textit{\ac{MHT}} es embebido en el \textit{\ac{CH}} para la monitorización de la calidad de la conexión de los \textit{\acp{MN}} dentro de su \textit{cluster}.
 		Esto también con el propósito de reducir el impacto negativo en complejidad, consumo energético y la implementación de los \textit{\acp{MN}} (los cuales poseen recursos y capacidad de procesamiento limitados a comparación de los \textit{\acp{CH}}).
 		
-		El proceso \textit{\ac{MHT}} recibe el valor crudo de \textit{\ac{LQI}} en la capa de Transporte desde la subcapa \textit{\ac{MAC}}, si las condiciones del \textit{\ac{MHT}} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{\ac{HWM}} para notificar al \textit{\ac{MN}} involucrado sobre la medición correspondiente, el cual debe ser enviado de acuerdo a la Ecuación \ref{eq:mhtHow}.
+		El proceso \textit{\ac{MHT}} recibe el valor crudo de \textit{\ac{LQI}} en la capa de Transporte desde la subcapa \textit{\ac{MAC}}, si las condiciones del \textit{\ac{MHT}} se cumplen (Ecuación \ref{eq:mhtWhen}), se construye un \textit{\ac{HWM}} para notificar al \textit{\ac{MN}} involucrado sobre la medición correspondiente, el cual debe enviarse de acuerdo a la Ecuación \ref{eq:mhtHow}.
 
 		\begin{equation}
 		\label{eq:mhtWhen}
@@ -1215,11 +1219,11 @@ This document presents an investigation about the developed technological progre
 		Para ejecutar el proceso \textit{\ac{MHT}}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{\ac{LQI}}, evitando así desconexiones repentinas del \textit{\ac{MN}} y problemas del efecto \textit{ping-pong}.
 		Para este ajuste, se definieron tres umbrales para el \textit{\ac{LQI}}: \textit{soft-threshold \ac{LQI}} (\textit{thrLQIsoft}), \textit{hard-threshold \ac{LQI}} \linebreak (\textit{thrLQIhard}) y \textit{thresholod Quantity of \ac{LQI}} (\textit{thrQLQI}).
 		La región existente entre \linebreak \textit{thrLQIsoft} y \textit{thrLQIhard} se conoce como <<Región de \textit{handoff}>> y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \textit{thrQLQI} y \textit{thrLQIhard}).
-		Lo anterior se muestra en la Figura \ref{fig:mhtUmbrales}.
+		Lo anterior se muestra en la Figura \ref{fig:mhtUmbrales}, basada en el trabajo del autor.
 		
 		\begin{figure}[hbt]
 			\centering
-			\includegraphics[width=0.9\textwidth,height=8cm]{mhtUmbrales.png}
+			\includegraphics[width=10cm,height=6cm]{mhtUmbrales.png}
 			\caption{Umbrales y regiones del protocolo \textit{WSN-HaDaS}.}
 			\label{fig:mhtUmbrales}
 		\end{figure}
@@ -1228,22 +1232,15 @@ This document presents an investigation about the developed technological progre
 		Este umbral evita la ejecución de evaluaciones innecesarias mientras el \textit{\ac{LQI}} del \textit{\ac{MN}} no alcanza el umbral establecido.
 		
 		Por su parte, el umbral \textit{thrQLQI} dispara un \textit{\ac{HWM}}.
-		Ello indica que la zona de protección ha sido alcanzada y que el proceso de \textit{handoff} debe ejecutarse si se satisface la Ecuación \ref{eq:mhtWhen}.
+		Ello indica que la zona de protección se alcanzó alcanzada y que el proceso de \textit{handoff} debe ejecutarse si se satisface la Ecuación \ref{eq:mhtWhen}.
 		Lo anterior permite al \textit{\ac{MN}} permanecer conectado al \textit{\ac{CH}} actual y continuar recibiendo \textit{\acp{HWM}}.
 		
 		Finalmente, el umbral \textit{thrLQIhard} se ajusta con el objetivo de cumplir con el estándar; el cual establece que de debe cumplirse con una <<\ac{PER}>> máxima de 1\%.
 		El protocolo \textit{\ac{WSN-HaDaS}} llama a este punto como \textit{Break-point}.
 		
 		\subsection{\textit{HEP}}\label{subsec:hep}
-		El algoritmo \textit{\ac{HEP}} (Figura \ref{fig:hepAlgoritmos}a) tiene tres subprocesos para la transferencia de un \textit{\ac{MN}} de un \textit{\ac{CH}} a otro:
-		
-		\begin{figure}[hbt]
-			\centering
-			\includegraphics[width=\textwidth,height=12cm]{hepAlgoritmos.png}
-			\caption{a) Algoritmo \textit{\ac{HEP}} b) Algoritmo utilizado cuando el \textit{\ac{MN}} pierde conexión.}
-			\label{fig:hepAlgoritmos}
-		\end{figure}
-		
+		El algoritmo \textit{\ac{HEP}} (ver Figura \ref{fig:hepAlgoritmos}a, basada en el trabajo del autor) tiene tres subprocesos para la transferencia de un \textit{\ac{MN}} de un \textit{\ac{CH}} a otro:
+				
 		\begin{itemize}
 			\item Descubrimiento: En este subproceso, el \textit{\ac{MN}} busca nuevos \textit{\acp{CH}} dentro de su área de cobertura.
 			\item Decisión: El \textit{\ac{MN}} elige al \textit{\ac{CH}} con la mejor señal de recepción.
@@ -1258,6 +1255,13 @@ This document presents an investigation about the developed technological progre
 		Esto da a \textit{\ac{WSN-HaDaS}} la capacidad de reaccionar de manera acorde según el evento de conexión/desconexión presentado.
 		
 		Finalmente, la última tarea del \textit{\ac{HEP}} inicia cuando el \textit{\ac{MN}} se ha asociado a un nuevo \textit{\ac{CH}}: notificar al \textit{\ac{MED}} que el mecanismo de \textit{handoff} ha concluido y debe reanudar la transmisión de datos al \textit{\ac{SN}}, así como actualizar el valor de la bandera de \textit{handoff} a <<apagado>>.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth,height=14cm]{hepAlgoritmos.png}
+			\caption{a) Algoritmo \textit{\ac{HEP}} b) Algoritmo utilizado cuando el \textit{\ac{MN}} pierde conexión.}
+			\label{fig:hepAlgoritmos}
+		\end{figure}
 		
 		\subsubsection{Mecanismo \textit{Hard-handoff}} \label{subsubsec:hardhandoff}
 		El \textit{\ac{HEP}} considera dos opciones que pueden originar la ejecución de un \textit{hard-handoff} (Figura \ref{fig:hepAlgoritmos}):
@@ -1327,7 +1331,7 @@ This document presents an investigation about the developed technological progre
 	
 	\begin{enumerate}
 		\item \textbf{¿Qué se quiere simular?}: En esta etapa se plantea un panorama general de lo que se pretende simular, con el objetivo de partir de lo general hacia lo específico.
-		En este caso, la simulación plantea una \textit{\ac{WSN}} con \textit{\acp{MN}} y fijos trabajando bajo el estándar IEEE 802.15.4, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{WSN-HaDaS} y la propuesta de este trabajo.	
+		En este caso, la simulación plantea una \textit{\ac{WSN}} con \textit{\acp{MN}} y nodos fijos trabajando bajo el estándar \textit{IEEE 802.15.4}, con propósitos de observación y análisis de efecto de \textit{handoff}, utilizando el protocolo \textit{\ac{WSN-HaDaS}} y la propuesta de este trabajo.	
 		\item \textbf{¿Qué se quiere obtener de la simulación?}: De ella, se busca el permitir analizar el efecto del \textit{handoff} en el rendimiento de la red.
 		\item \textbf{¿Qué aspectos se quieren simular?}: Se consideraron a los tiempos de conexión y reconexión como aspectos de simulación relevantes; así como la cantidad de paquetes perdidos y entregados y el retardo promedio de paquetes entregados.
 		Además, se plantea el movimiento de nodos dentro de una misma celda, y a través de múltiples celdas.
@@ -1355,17 +1359,17 @@ This document presents an investigation about the developed technological progre
 		\item \textbf{Definir \textit{testbed} o topología a simular}: La topología definida para la simulación de la \textit{\ac{WSN}} describe un árbol jerárquico.
 		Esto es, dentro de la red existen diferentes roles que puede tomar un nodo.
 		
-		El primer rol es el \textit{SN}, bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
+		El primer rol es el \textit{\ac{SN}}, bajo este rol el nodo no presenta movimiento sino que se mantiene estático en su posición inicial, siendo su principal tarea el recibir la información proveniente de los demás nodos.
 		
-		El rol de \textit{CH} se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{SN}. Los nodos bajo este rol no presentan movimiento.
+		El rol de \textit{\ac{CH}} se encarga de la recepción de información de los nodos miembros de su \textit{cluster} o grupo. y su posterior envío hacia en \textit{\ac{SN}}. Los nodos bajo este rol no presentan movimiento.
 		
-		Un tercer rol es el de \textit{\ac{MN}}, el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{MN} es el enviar información hacia el \textit{SN}, ello a través de los \textit{CH}.
+		Un tercer rol es el de \textit{\ac{MN}}, el cual posee como característica principal la facultad de desplazarse dentro de la red (incluso tal vez, fuera de ella). Otra de las funciones del \textit{\ac{MN}} es el enviar información hacia el \textit{\ac{SN}}, ello a través de los \textit{\ac{CH}}.
 		
-		De este rol puede desprenderse un subrol, dado que no todos los \textit{MN} se mueven a través de las celdas. 
-		Un \textit{MN} normal solo presenta movimiento dentro del alcance de un mismo \textit{CH}; sin embargo un \textit{WN} (iniciales en inglés de \textit{Wild Node}, Nodo Salvaje) es capaz de moverse de un \textit{cluster} a otro.
+		De este rol puede desprenderse un subrol, dado que no todos los \textit{\ac{MN}} se mueven a través de las celdas. 
+		Un \textit{\ac{MN}} normal sólo presenta movimiento dentro del alcance de un mismo \textit{\ac{CH}}; sin embargo un <<\ac{WN}>> es capaz de moverse de un \textit{cluster} a otro.
 		
-		Además, se determinó un tráfico contínuo generado con un tamaño constante. 
-		Ello bajo una \textit{\ac{WSN}} utilizando ya sea \textit{TCP} o \textit{UDP}, con \textit{CBR} (iniciales en inglés de \textit{Constant Bit Rate}, Tasa Constante de Bits) como aplicación.
+		Además, se determinó un tráfico continuo generado con un tamaño constante. 
+		Ello bajo una \textit{\ac{WSN}} utilizando ya sea \textit{\ac{TCP}} o \textit{\ac{UDP}}, con una <<\ac{CBR}>> como aplicación.
 		
 		\item \textbf{Definir las estadísticas a medir}: Algunas de las estadísticas planteadas para su medición, observación y análisis son las siguientes:
 			\begin{itemize}

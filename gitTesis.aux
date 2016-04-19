@@ -39,6 +39,7 @@
 \newacro{BER}[\AC@hyperlink{BER}{BER}]{Tasa de Error Binario\csdef {ac@BER@foreign}{del ingl\'es \textit  {Bit Error Rate}, }}
 \newacro{BS}[\AC@hyperlink{BS}{BS}]{Estaci\'on Base\csdef {ac@BS@foreign}{del ingl\'es \textit  {Base Station}, }}
 \newacroplural{BS}{Estaciones Base}
+\newacro{CBR}[\AC@hyperlink{CBR}{CBR}]{Tasa Constante de Bits\csdef {ac@CBR@foreign}{del ingl\'es \textit  {Constant Bit Rate}, }}
 \newacro{CH}[\AC@hyperlink{CH}{CH}]{Jefe de Grupo\csdef {ac@CH@foreign}{del ingl\'es \textit  {Cluster Head}, }}
 \newacroplural{CH}{Jefes de Grupo}
 \newacro{CSI}[\AC@hyperlink{CSI}{CSI}]{Informaci\'on del Estado del Canal\csdef {ac@CSI@foreign}{del ingl\'es \textit  {Channel State Information}, }}
@@ -78,6 +79,8 @@
 \newacro{WiMax}[\AC@hyperlink{WiMax}{WiMax}]{Interoperabilidad Mundial para Acceso por Microondas\csdef {ac@WiMax@foreign}{del ingl\'es \textit  {Worldwide Interoperability for Microwave Access}, }}
 \newacro{WLAN}[\AC@hyperlink{WLAN}{WLAN}]{Red Inal\'ambrica de \'Area Local\csdef {ac@WLAN@foreign}{del ingl\'es \textit  {Wireless Local Area Network}, }}
 \newacroplural{WLAN}{Redes Inal\'ambricas de \'Area Local}
+\newacro{WN}[\AC@hyperlink{WN}{WN}]{Nodo Salvaje\csdef {ac@WN@foreign}{del ingl\'es \textit  {Wild Node}, }}
+\newacroplural{WN}{Nodos Salvajes}
 \newacro{WPAN}[\AC@hyperlink{WPAN}{WPAN}]{Red Inal\'ambrica de \'Area Personal\csdef {ac@WPAN@foreign}{del ingl\'es \textit  {Wireless Personal Area Network}, }}
 \newacroplural{WPAN}{Redes Inal\'ambricas de \'Area Personal}
 \newacro{WSN}[\AC@hyperlink{WSN}{WSN}]{Red Inal\'ambrica de Sensores\csdef {ac@WSN@foreign}{del ingl\'es \textit  {Wireless Sensor Network}, }}
@@ -760,6 +763,8 @@
 \acronymused{LQI}
 \acronymused{LQI}
 \acronymused{LQI}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Umbrales y regiones del protocolo \textit  {WSN-HaDaS}.}}{56}{figure.4.23}}
+\newlabel{fig:mhtUmbrales}{{23}{56}{Umbrales y regiones del protocolo \textit {WSN-HaDaS}}{figure.4.23}{}}
 \acronymused{MN}
 \acronymused{MHT}
 \acronymused{LQI}
@@ -770,9 +775,7 @@
 \acronymused{CH}
 \acronymused{HWM}
 \undonewlabel{acro:PER}
-\newlabel{acro:PER}{{4.1.2}{56}{\textit {MHT}}{section*.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Umbrales y regiones del protocolo \textit  {WSN-HaDaS}.}}{57}{figure.4.23}}
-\newlabel{fig:mhtUmbrales}{{23}{57}{Umbrales y regiones del protocolo \textit {WSN-HaDaS}}{figure.4.23}{}}
+\newlabel{acro:PER}{{4.1.2}{57}{\textit {MHT}}{section*.49}{}}
 \acronymused{PER}
 \acronymused{WSN-HaDaS}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}\textit  {HEP}}{57}{subsection.4.1.3}}
@@ -793,18 +796,18 @@
 \acronymused{MED}
 \acronymused{MED}
 \acronymused{MAC}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit  {\ac {HEP}} b) Algoritmo utilizado cuando el \textit  {\ac {MN}} pierde conexi\'on.}}{58}{figure.4.24}}
-\acronymused{HEP}
-\acronymused{MN}
-\newlabel{fig:hepAlgoritmos}{{24}{58}{a) Algoritmo \textit {\ac {HEP}} b) Algoritmo utilizado cuando el \textit {\ac {MN}} pierde conexión}{figure.4.24}{}}
 \acronymused{WSN-HaDaS}
 \acronymused{HEP}
 \acronymused{MN}
 \acronymused{CH}
 \acronymused{MED}
 \acronymused{SN}
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard-handoff}}{59}{section*.50}}
-\newlabel{subsubsec:hardhandoff}{{4.1.3}{59}{Mecanismo \textit {Hard-handoff}}{section*.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces a) Algoritmo \textit  {\ac {HEP}} b) Algoritmo utilizado cuando el \textit  {\ac {MN}} pierde conexi\'on.}}{58}{figure.4.24}}
+\acronymused{HEP}
+\acronymused{MN}
+\newlabel{fig:hepAlgoritmos}{{24}{58}{a) Algoritmo \textit {\ac {HEP}} b) Algoritmo utilizado cuando el \textit {\ac {MN}} pierde conexión}{figure.4.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo \textit  {Hard-handoff}}{58}{section*.50}}
+\newlabel{subsubsec:hardhandoff}{{4.1.3}{58}{Mecanismo \textit {Hard-handoff}}{section*.50}{}}
 \acronymused{HEP}
 \acronymused{MN}
 \acronymused{HWM}
@@ -840,8 +843,8 @@
 \acronymused{CH}
 \acronymused{MN}
 \acronymused{CH}
-\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{60}{section*.54}}
-\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{60}{\textit {Early Discovery}}{section*.54}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\textit  {Early Discovery}}{59}{section*.54}}
+\newlabel{subsubsec:earlyDiscovery}{{4.1.3}{59}{\textit {Early Discovery}}{section*.54}{}}
 \acronymused{WSN-HaDaS}
 \acronymused{MN}
 \acronymused{MAC}
@@ -873,9 +876,27 @@
 \newlabel{fig:simPlaneacion}{{25}{62}{Metodología de simulación}{figure.4.25}{}}
 \acronymused{WSN}
 \acronymused{MN}
+\acronymused{WSN-HaDaS}
 \acronymused{WSN}
+\acronymused{SN}
+\acronymused{CH}
+\acronymused{SN}
 \acronymused{MN}
+\acronymused{MN}
+\acronymused{SN}
+\acronymused{CH}
+\acronymused{MN}
+\acronymused{MN}
+\acronymused{CH}
+\undonewlabel{acro:WN}
+\newlabel{acro:WN}{{5}{64}{Implementación en Simulador}{section*.56}{}}
+\acronymused{WN}
 \acronymused{WSN}
+\acronymused{TCP}
+\acronymused{UDP}
+\undonewlabel{acro:CBR}
+\newlabel{acro:CBR}{{5}{64}{Implementación en Simulador}{section*.57}{}}
+\acronymused{CBR}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Evaluaci\'on y an\'alisis de resultados}{65}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -892,10 +913,8 @@
 \bibdata{gitTesis.bib}
 \bibcite{Ahmad2007}{\citeauthoryear {Ahmad, Akbar,{}\ \BBA{} Qadir}{Ahmad\ \BOthers {.}}{{\APACyear {2007}}}}
 \APACbibcite{Ahmad2007}{\citeauthoryear {Ahmad, Akbar,{}\ \BBA{} Qadir}{Ahmad\ \BOthers {.}}{{\APACyear {2007}}}}
-\bibcite{Ahmed2014}{\citeauthoryear {A.\unhbox \voidb@x \penalty \@M \ Ahmed, Boulahia,{}\ \BBA{} Gaiti}{A.\unhbox \voidb@x \penalty \@M \ Ahmed\ \BOthers {.}}{{\APACyear {2014}}}}
-\APACbibcite{Ahmed2014}{\citeauthoryear {A.\unhbox \voidb@x \penalty \@M \ Ahmed, Boulahia,{}\ \BBA{} Gaiti}{A.\unhbox \voidb@x \penalty \@M \ Ahmed\ \BOthers {.}}{{\APACyear {2014}}}}
-\bibcite{Ahmed2012}{\citeauthoryear {M.\unhbox \voidb@x \penalty \@M \ Ahmed}{M.\unhbox \voidb@x \penalty \@M \ Ahmed}{{\APACyear {2012}}}}
-\APACbibcite{Ahmed2012}{\citeauthoryear {M.\unhbox \voidb@x \penalty \@M \ Ahmed}{M.\unhbox \voidb@x \penalty \@M \ Ahmed}{{\APACyear {2012}}}}
+\bibcite{Ahmed2014}{\citeauthoryear {Ahmed, Boulahia,{}\ \BBA{} Gaiti}{Ahmed\ \BOthers {.}}{{\APACyear {2014}}}}
+\APACbibcite{Ahmed2014}{\citeauthoryear {Ahmed, Boulahia,{}\ \BBA{} Gaiti}{Ahmed\ \BOthers {.}}{{\APACyear {2014}}}}
 \bibcite{Alemdar2010}{\citeauthoryear {Alemdar\ \BBA{} Ersoy}{Alemdar\ \BBA{} Ersoy}{{\APACyear {2010}}}}
 \APACbibcite{Alemdar2010}{\citeauthoryear {Alemdar\ \BBA{} Ersoy}{Alemdar\ \BBA{} Ersoy}{{\APACyear {2010}}}}
 \bibcite{Arnon2003}{\citeauthoryear {Arnon, Bhastekar, Kedar,{}\ \BBA{} Tauber}{Arnon\ \BOthers {.}}{{\APACyear {2003}}}}
@@ -908,10 +927,10 @@
 \APACbibcite{Bisnik2005}{\citeauthoryear {Bisnik}{Bisnik}{{\APACyear {2005}}}}
 \bibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
 \APACbibcite{Braden2003}{\citeauthoryear {Braden, Faber,{}\ \BBA{} Handley}{Braden\ \BOthers {.}}{{\APACyear {2003}}}}
+\bibcite{Bruce2013}{\citeauthoryear {Bruce, Hwang,{}\ \BBA{} Lee}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
+\APACbibcite{Bruce2013}{\citeauthoryear {Bruce, Hwang,{}\ \BBA{} Lee}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
 \@writefile{toc}{\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{appendix.Alph1}}
-\@writefile{toc}{\contentsline {section}{Referencias}{71}{section*.56}}
-\bibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
-\APACbibcite{Bruce2013}{\citeauthoryear {Bruce, {Gi-Hyun Hwang},{}\ \BBA{} {Hoon Jae Lee}}{Bruce\ \BOthers {.}}{{\APACyear {2013}}}}
+\@writefile{toc}{\contentsline {section}{Referencias}{71}{section*.58}}
 \bibcite{Akyildiz2010}{\citeauthoryear {Buchli, Sutton,{}\ \BBA{} Beutel}{Buchli\ \BOthers {.}}{{\APACyear {2012}}}}
 \APACbibcite{Akyildiz2010}{\citeauthoryear {Buchli, Sutton,{}\ \BBA{} Beutel}{Buchli\ \BOthers {.}}{{\APACyear {2012}}}}
 \bibcite{Buenrostro-Mariscal2014}{\citeauthoryear {Buenrostro-Mariscal}{Buenrostro-Mariscal}{{\APACyear {2014}}}}
@@ -924,8 +943,6 @@
 \APACbibcite{CDC2016}{\citeauthoryear {CDC}{CDC}{{\APACyear {2016}}}}
 \bibcite{Chen2007}{\citeauthoryear {Chen, Cai, Sofia,{}\ \BBA{} Huang}{Chen\ \BOthers {.}}{{\APACyear {2007}}}}
 \APACbibcite{Chen2007}{\citeauthoryear {Chen, Cai, Sofia,{}\ \BBA{} Huang}{Chen\ \BOthers {.}}{{\APACyear {2007}}}}
-\bibcite{ChengWeiLee2005}{\citeauthoryear {{Cheng Wei Lee}, {Li Ming Chen}, {Meng Chang Chen},{}\ \BBA{} {Yeali Sunny Sun}}{{Cheng Wei Lee}\ \BOthers {.}}{{\APACyear {2005}}}}
-\APACbibcite{ChengWeiLee2005}{\citeauthoryear {{Cheng Wei Lee}, {Li Ming Chen}, {Meng Chang Chen},{}\ \BBA{} {Yeali Sunny Sun}}{{Cheng Wei Lee}\ \BOthers {.}}{{\APACyear {2005}}}}
 \bibcite{Choi2005}{\citeauthoryear {Choi, Kim, Baek,{}\ \BBA{} Kwon}{Choi\ \BOthers {.}}{{\APACyear {2005}}}}
 \APACbibcite{Choi2005}{\citeauthoryear {Choi, Kim, Baek,{}\ \BBA{} Kwon}{Choi\ \BOthers {.}}{{\APACyear {2005}}}}
 \bibcite{Chowdhury2012}{\citeauthoryear {Chowdhury\ \BBA{} Gregory}{Chowdhury\ \BBA{} Gregory}{{\APACyear {2012}}}}
@@ -962,8 +979,10 @@
 \APACbibcite{Khan2012}{\citeauthoryear {Khan\ \BBA{} Yuce}{Khan\ \BBA{} Yuce}{{\APACyear {2012}}}}
 \bibcite{Kulkarni2006}{\citeauthoryear {Kulkarni, Iyer,{}\ \BBA{} Rosenberg}{Kulkarni\ \BOthers {.}}{{\APACyear {2006}}}}
 \APACbibcite{Kulkarni2006}{\citeauthoryear {Kulkarni, Iyer,{}\ \BBA{} Rosenberg}{Kulkarni\ \BOthers {.}}{{\APACyear {2006}}}}
-\bibcite{Lee2011}{\citeauthoryear {Lee, Kim, Jeong,{}\ \BBA{} Kang}{Lee\ \BOthers {.}}{{\APACyear {2011}}}}
-\APACbibcite{Lee2011}{\citeauthoryear {Lee, Kim, Jeong,{}\ \BBA{} Kang}{Lee\ \BOthers {.}}{{\APACyear {2011}}}}
+\bibcite{ChengWeiLee2005}{\citeauthoryear {C\BPBI  W.\unhbox \voidb@x \penalty \@M \ Lee, Chen, Chen,{}\ \BBA{} Sun}{C\BPBI  W.\unhbox \voidb@x \penalty \@M \ Lee\ \BOthers {.}}{{\APACyear {2005}}}}
+\APACbibcite{ChengWeiLee2005}{\citeauthoryear {C\BPBI  W.\unhbox \voidb@x \penalty \@M \ Lee, Chen, Chen,{}\ \BBA{} Sun}{C\BPBI  W.\unhbox \voidb@x \penalty \@M \ Lee\ \BOthers {.}}{{\APACyear {2005}}}}
+\bibcite{Lee2011}{\citeauthoryear {D\BPBI  K.\unhbox \voidb@x \penalty \@M \ Lee, Kim, Jeong,{}\ \BBA{} Kang}{D\BPBI  K.\unhbox \voidb@x \penalty \@M \ Lee\ \BOthers {.}}{{\APACyear {2011}}}}
+\APACbibcite{Lee2011}{\citeauthoryear {D\BPBI  K.\unhbox \voidb@x \penalty \@M \ Lee, Kim, Jeong,{}\ \BBA{} Kang}{D\BPBI  K.\unhbox \voidb@x \penalty \@M \ Lee\ \BOthers {.}}{{\APACyear {2011}}}}
 \bibcite{DelosAngelesCosioLeon}{\citeauthoryear {Leon, Hipolito,{}\ \BBA{} Garcia}{Leon\ \BOthers {.}}{{\APACyear {2009}}}}
 \APACbibcite{DelosAngelesCosioLeon}{\citeauthoryear {Leon, Hipolito,{}\ \BBA{} Garcia}{Leon\ \BOthers {.}}{{\APACyear {2009}}}}
 \bibcite{Liu2015}{\citeauthoryear {Lin\ \BBA{} Lee}{Lin\ \BBA{} Lee}{{\APACyear {2010}}}}
@@ -984,6 +1003,8 @@
 \APACbibcite{Mendo2010}{\citeauthoryear {Mendo, Silva,{}\ \BBA{} Boavi}{Mendo\ \BOthers {.}}{{\APACyear {2010}}}}
 \bibcite{Arbaugh2002}{\citeauthoryear {Mishra, Shin,{}\ \BBA{} Arbaugh}{Mishra\ \BOthers {.}}{{\APACyear {2003}}}}
 \APACbibcite{Arbaugh2002}{\citeauthoryear {Mishra, Shin,{}\ \BBA{} Arbaugh}{Mishra\ \BOthers {.}}{{\APACyear {2003}}}}
+\bibcite{Ahmed2012}{\citeauthoryear {Monjur}{Monjur}{{\APACyear {2012}}}}
+\APACbibcite{Ahmed2012}{\citeauthoryear {Monjur}{Monjur}{{\APACyear {2012}}}}
 \bibcite{Nasser2006}{\citeauthoryear {Nasser, Hasswa,{}\ \BBA{} Hassanein}{Nasser\ \BOthers {.}}{{\APACyear {2006}}}}
 \APACbibcite{Nasser2006}{\citeauthoryear {Nasser, Hasswa,{}\ \BBA{} Hassanein}{Nasser\ \BOthers {.}}{{\APACyear {2006}}}}
 \bibcite{OpnetWork2013}{\citeauthoryear {OpnetWork}{OpnetWork}{{\APACyear {2013}}}}
