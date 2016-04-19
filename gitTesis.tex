@@ -305,7 +305,11 @@ This document presents an investigation about the developed technological progre
 %END_FOLD
 
 \chapter{Introducción}\label{ch:Introduccion}
-	El uso de las <<\acfp{WSN}>> se ha convertido en un paradigma para la recolección de datos de forma remota y representan el siguiente paso en las comunicaciones inalámbricas portables \cite{Lorincz2004}, debido...
+	El uso de las <<\acfp{WSN}>> se ha convertido en un paradigma para la recolección de datos de forma remota y representan el siguiente paso en las comunicaciones inalámbricas portables \cite{Lorincz2004}, puesto que ofrecen múltiples ventajas sobre las redes tradicionales de comunicación como: bajo costo de implementación, mínimo mantenimiento, fácil despliegue, bajo consumo de energía, dispositivos de tamaño reducido, movilidad, entre otras.
+	Estas características vuelven ideales a las \textit{\acp{WSN}} para un amplio número de aplicaciones, \textit{e.g.} militares, industriales, vigilancia y de salud.
+	El uso de las \textit{\acp{WSN}} en el entorno de las personas para la vigilancia de la salud es una de las aplicaciones más tratadas por los investigadores del área, donde la portabilidad y la movilidad son dos características de suma importancia en su desarrollo \cite{Buenrostro-Mariscal2014,Gutierrez2004}.
+	Este tipo de aplicaciones permiten la monitorización de signos vitales de manera remota y constante, lo cual mantiene una continua vigilancia sobre el estado de salud de pacientes.
+	En este tipo de escenarios, la movilidad y portabilidad es crucial para no limitar el desplazamiento e independencia de los usuarios mientra se recolectan los signos vitales de ellos.
 
 %BEGIN_FOLD	% % % Introducción Abril 19,2016
 %	El presente proyecto de tesis plantea el uso de una <<\ac{WSN}>> dentro de la cual se integran dispositivos fijos y al menos un <<\ac{MN}>>, actuando como <<\ac{AP}>> a la red y nodo para la recolección de datos, respectivamente.
@@ -319,8 +323,12 @@ This document presents an investigation about the developed technological progre
 %	
 %	Dada la importancia que la movilidad representa para los usuarios, se exige que puedan desplazarse sin restricciones (por parte de la aplicación, red o sistema) dentro de un espacio o área controlada, tal y como puede ser un hospital o casa de cuidados.
 %END_FOLD
-	Sin embargo, en este tipo de escenarios las \textit{\acp{WSN}} sufren restricciones y limitaciones, sobretodo en aspectos de cobertura debido a que este tipo de redes fueron diseñadas para su aplicaciones en entornos de corto alcance; por ello se utilizan tecnologías de redes inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), por lo que a su vez requiere la instalación (en la mayoría de los casos) de múltiples puntos de acceso en la \textit{\ac{WSN}} para satisfacer las necesidades de cobertura de los usuarios.
-	Otro aspecto a considerar es que los dispositivos móviles tienen la necesidad de poder cambiar su conexión de un punto de acceso a otro cuando se requiera, i.e., al desplazarse por todo el área de cobertura de la \textit{\ac{WSN}} saliendo del alcance de su punto de acceso a la red; resultando esto en la desconexión del dispositivo móvil de la red debido a que el estándar \textit{IEEE 802.15.4} no cuenta con mecanismos diseñados para iniciar estos procesos de traspasos de red o \textit{handoff} al nuevo punto de acceso por si mismo; no obstante, sí cuenta con herramientas y funciones que pueden utilizarse para permitir el diseño de un mecanismo de \textit{handoff}.
+	Sin embargo, en este tipo de escenarios las \textit{\acp{WSN}} sufren restricciones y retos para su implementación, sobretodo en aspectos de cobertura debido a que este tipo de redes fueron diseñadas para operar en entornos de corto alcance (10 mts a la redonda, \cite{Man2006});
+
+	\textbf{AQUI}
+	
+	, por lo que a su vez requiere la instalación (en la mayoría de los casos) de múltiples puntos de acceso en la \textit{\ac{WSN}} para satisfacer las necesidades de cobertura de los usuarios.
+	Otro aspecto a considerar es que los dispositivos móviles tienen la necesidad de poder cambiar su conexión de un punto de acceso a otro cuando se requiera, \textit{i.e.}, al desplazarse por todo el área de cobertura de la \textit{\ac{WSN}} saliendo del alcance de su punto de acceso a la red; resultando esto en la desconexión del dispositivo móvil de la red debido a que el estándar \textit{IEEE 802.15.4} no cuenta con mecanismos diseñados para iniciar estos procesos de traspasos de red o \textit{handoff} al nuevo punto de acceso por si mismo; no obstante, sí cuenta con herramientas y funciones que pueden utilizarse para permitir el diseño de un mecanismo de \textit{handoff}.
 	
 	Este proceso es un punto crítico en la continuidad y el éxito de las aplicaciones de monitorización, ya que un \textit{handoff} deficiente puede resultar en la pérdida de información recolectada o el retraso en su entrega al destino. 
 	Por ejemplo, si el proceso del mecanismo de \textit{handoff} es lento, puede generar altos tiempo de desconexión y si la aplicación no es consciente de la desconexión puede seguir enviando datos que no podrán ser entregados.

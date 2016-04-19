@@ -923,6 +923,38 @@ Gu, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gutierrez%
+, Callaway%
+\BCBL {}\ \BBA {} Barrett%
+}{%
+Gutierrez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Gutierrez2004}
+\APACinsertmetastar {%
+Gutierrez2004}%
+\begin{APACrefauthors}%
+Gutierrez, J\BPBI A.%
+, Callaway, E\BPBI H.%
+\BCBL {}\ \BBA {} Barrett, R\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {{Low-rate wireless personal area networks: enabling wireless
+  sensors with IEEE 802.15.4}} {{Low-rate wireless personal area networks:
+  enabling wireless sensors with IEEE 802.15.4}}.
+\newblock
+\APACaddressPublisher{}{IEEE Standards Association}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.wiley.com/WileyCDA/WileyTitle/productCd-073816285X.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hoflinger%
 \ \protect \BOthers {.}}{%
 Hoflinger%
