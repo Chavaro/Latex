@@ -52,6 +52,13 @@
   {\begingroup\def\acroforeign##1{\csdef{ac@#1@foreign}{##1, }}}
   {}
   {}
+  
+% Testing - patch the acronym definition to safe the foreign definition:
+\patchcmd\AC@@acrodefplurali
+  {\begingroup}
+  {\begingroup\def\acroforeign##1{\csdef{ac@#1@foreign}{##1, }}}
+  {}
+  {}
 
 % renew the first output to include the foreign definition if given:
 \renewcommand*{\@acf}[1]{%
@@ -177,20 +184,20 @@ This document presents an investigation about the developed technological progre
 		\acro{ACS}{Escaneo de Canal Activo\acroforeign{del inglés \textit{Active Channel Scan}}}
 		
 		\acro{AP}{Punto de Acceso\acroforeign{del inglés \textit{Access Point}}}
-		\acrodefplural{AP}{Puntos de Acceso}
+		\acrodefplural{AP}{Puntos de Acceso\acroforeign{del inglés \textit{Access Points}}}
 		
 		\acro{BAN}{Red de Área Corporal\acroforeign{del inglés \textit{Body Area Network}}}
-		\acrodefplural{BAN}{Redes de Área Corporal}
+		\acrodefplural{BAN}{Redes de Área Corporal\acroforeign{del inglés \textit{Body Area Networks}}}
 		
 		\acro{BER}{Tasa de Error Binario\acroforeign{del inglés \textit{Bit Error Rate}}}
 
 		\acro{BS}{Estación Base\acroforeign{del inglés \textit{Base Station}}}
-		\acrodefplural{BS}{Estaciones Base}
+		\acrodefplural{BS}{Estaciones Base\acroforeign{del inglés \textit{Base Stations}}}
 		
 		\acro{CBR}{Tasa Constante de Bits\acroforeign{del inglés \textit{Constant Bit Rate}}}
 
 		\acro{CH}{Jefe de Grupo\acroforeign{del inglés \textit{Cluster Head}}}
-		\acrodefplural{CH}{Jefes de Grupo}
+		\acrodefplural{CH}{Jefes de Grupo\acroforeign{del inglés \textit{Cluster Heads}}}
 		
 		\acro{CSI}{Información del Estado del Canal\acroforeign{del inglés \textit{Channel State Information}}}		
 		
@@ -209,7 +216,7 @@ This document presents an investigation about the developed technological progre
 		\acro{HEP}{Proceso de Ejecución de Traspaso\acroforeign{del inglés \textit{Handoff Execution Process}}}
 		
 		\acro{HWM}{Mensaje de Advertencia de Traspaso\acroforeign{del inglés \textit{Handoff Warning Message}}}
-		\acrodefplural{HWM}{Mensajes de Advertencia de Traspaso}
+		\acrodefplural{HWM}{Mensajes de Advertencia de Traspaso\acroforeign{del inglés \textit{Handoff Warning Messages}}}
 		
 		\acro{IPv6}{Protocolo de \textit{Internet} versión 6\acroforeign{del inglés \textit{Internet Protocol version 6}}}
 		
@@ -224,7 +231,7 @@ This document presents an investigation about the developed technological progre
 		\acro{MIPv6}{Protocolo de \textit{Internet} Móvil versión 6\acroforeign{del inglés \textit{Mobile Internet Protocol version 6}}}
 
 		\acro{MN}{Nodo Móvil\acroforeign{del inglés \textit{Mobile Node}}}
-		\acrodefplural{MN}{Nodos Móviles}
+		\acrodefplural{MN}{Nodos Móviles\acroforeign{del inglés \textit{Mobile Nodes}}}
 		
 		\acro{OSI}{Interconexión de Sistemas Abiertos\acroforeign{del inglés \textit{Open System Interconnection}}}
 		
@@ -240,7 +247,7 @@ This document presents an investigation about the developed technological progre
 		\acro{SIR}{Relación Señal a Interferencia\acroforeign{del inglés \textit{Signal-to-Interference Ratio}}}
 		
 		\acro{SN}{Nodo Final o Nodo Sumidero\acroforeign{del inglés \textit{Sink Node}}}
-		\acrodefplural{SN}{Nodos Finales}
+		\acrodefplural{SN}{Nodos Finales\acroforeign{del inglés \textit{Sink Nodes}}}
 
 		\acro{SUIDS}{Síndrome de Muerte Inesperada Súbita de Infante\acroforeign{del inglés \textit{Sudden Unexpected Infant Death Syndrome}}}
 
@@ -253,21 +260,21 @@ This document presents an investigation about the developed technological progre
 		\acro{WAN}{Red de Área Amplia\acroforeign{del inglés \textit{Wide Area Network}}}
 
 		\acro{WBAN}{Red Inalámbrica de Área Corporal\acroforeign{del inglés \textit{Wireless Body Area Network}}}
-		\acrodefplural{WBAN}{Redes Inalámbricas de Área Corporal}
+		\acrodefplural{WBAN}{Redes Inalámbricas de Área Corporal\acroforeign{del inglés \textit{Wireless Body Area Networks}}}
 		
 		\acro{WiMax}{Interoperabilidad Mundial para Acceso por Microondas\acroforeign{del inglés \textit{Worldwide Interoperability for Microwave Access}}}
 
 		\acro{WLAN}{Red Inalámbrica de Área Local\acroforeign{del inglés \textit{Wireless Local Area Network}}}
-		\acrodefplural{WLAN}{Redes Inalámbricas de Área Local}
+		\acrodefplural{WLAN}{Redes Inalámbricas de Área Local\acroforeign{del inglés \textit{Wireless Local Area Networks}}}
 
 		\acro{WN}{Nodo Salvaje\acroforeign{del inglés \textit{Wild Node}}}
-		\acrodefplural{WN}{Nodos Salvajes}
+		\acrodefplural{WN}{Nodos Salvajes\acroforeign{del inglés\textit{Wild Nodes}}}
 
 		\acro{WPAN}{Red Inalámbrica de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Network}}}
-		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal}
+		\acrodefplural{WPAN}{Redes Inalámbricas de Área Personal\acroforeign{del inglés \textit{Wireless Personal Area Networks}}}
 		
-		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}
-		\acrodefplural{WSN}{Redes Inalámbricas de Sensores}	
+		\acro{WSN}{Red Inalámbrica de Sensores\acroforeign{del inglés \textit{Wireless Sensor Network}}}	
+		\acrodefplural{WSN}{Redes Inalámbricas de Sensores\acroforeign{del inglés \textit{Wireless Sensor Networks}}}	
 		
 		\acro{WSN-HaDaS}{Traspaso consciente del Envío de Datos en Redes Inalámbricas de Sensores\acroforeign{del inglés \textit{Handoff aware of Data Sending in Wireless Sensor Networks}}}
 		
@@ -298,16 +305,20 @@ This document presents an investigation about the developed technological progre
 %END_FOLD
 
 \chapter{Introducción}\label{ch:Introduccion}
-	El presente proyecto de tesis plantea el uso de una <<\ac{WSN}>> dentro de la cual se integran dispositivos fijos y al menos un <<\ac{MN}>>, actuando como <<\ac{AP}>> a la red y nodo para la recolección de datos, respectivamente.
-	Dentro de las características con las que cuenta una \textit{\ac{WSN}} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
-	
-	Esto infiere que los miembros, dispositivos o nodos de una \textit{\ac{WSN}} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
-	Por ello, es necesario ofrecer a las \textit{\acp{WSN}} mecanismos que apoyen y mejoren eficientemente la movilidad en sus dispositivos; ello sin afectar las aplicaciones ni el desempeño general de la red.
-	
-	Debido a dicha movilidad y los beneficios que ello conlleva, las \textit{\acp{WSN}} han logrado posicionarse en el desarrollo de aplicaciones orientadas al cuidado de la salud \cite{DelosAngelesCosioLeon}, al desarrollar múltiples aplicaciones para el monitoreo de variables que permitan una constante vigilancia del estado de salud de pacientes, siendo en la mayoría adultos mayores.
-	En el trabajo realizado por \citeA{Virone2006}, se describe y propone una red, en la cual se plantea como objetivo la adquisición de parámetros físicos, siendo algunos de ellos la temperatura y ubicación de los pacientes.
-	
-	Dada la importancia que la movilidad representa para los usuarios, se exige que puedan desplazarse sin restricciones (por parte de la aplicación, red o sistema) dentro de un espacio o área controlada, tal y como puede ser un hospital o casa de cuidados.
+	El uso de las <<\acfp{WSN}>> se ha convertido en un paradigma para la recolección de datos de forma remota y representan el siguiente paso en las comunicaciones inalámbricas portables \cite{Lorincz2004}, debido...
+
+%BEGIN_FOLD	% % % Introducción Abril 19,2016
+%	El presente proyecto de tesis plantea el uso de una <<\ac{WSN}>> dentro de la cual se integran dispositivos fijos y al menos un <<\ac{MN}>>, actuando como <<\ac{AP}>> a la red y nodo para la recolección de datos, respectivamente.
+%	Dentro de las características con las que cuenta una \textit{\ac{WSN}} destacan su diseño no intrusivo, sus reducidos consumo de energía y costo de implementación, además de permitir la movilidad de sus dispositivos de red; siendo ésta una de las características más importantes al implementarse este tipo de redes en aplicaciones que incluyen a personas.
+%	
+%	Esto infiere que los miembros, dispositivos o nodos de una \textit{\ac{WSN}} son, en general, de tamaño reducido y portables, pudiendo acoplarse fácilmente a usuarios móviles \cite{Silva2014}.
+%	Por ello, es necesario ofrecer a las \textit{\acp{WSN}} mecanismos que apoyen y mejoren eficientemente la movilidad en sus dispositivos; ello sin afectar las aplicaciones ni el desempeño general de la red.
+%	
+%	Debido a dicha movilidad y los beneficios que ello conlleva, las \textit{\acp{WSN}} han logrado posicionarse en el desarrollo de aplicaciones orientadas al cuidado de la salud \cite{DelosAngelesCosioLeon}, al desarrollar múltiples aplicaciones para el monitoreo de variables que permitan una constante vigilancia del estado de salud de pacientes, siendo en la mayoría adultos mayores.
+%	En el trabajo realizado por \citeA{Virone2006}, se describe y propone una red, en la cual se plantea como objetivo la adquisición de parámetros físicos, siendo algunos de ellos la temperatura y ubicación de los pacientes.
+%	
+%	Dada la importancia que la movilidad representa para los usuarios, se exige que puedan desplazarse sin restricciones (por parte de la aplicación, red o sistema) dentro de un espacio o área controlada, tal y como puede ser un hospital o casa de cuidados.
+%END_FOLD
 	Sin embargo, en este tipo de escenarios las \textit{\acp{WSN}} sufren restricciones y limitaciones, sobretodo en aspectos de cobertura debido a que este tipo de redes fueron diseñadas para su aplicaciones en entornos de corto alcance; por ello se utilizan tecnologías de redes inalámbricas de área personal como la \textit{IEEE 802.15.4} (10 mts a la redonda, \cite{Man2006}), por lo que a su vez requiere la instalación (en la mayoría de los casos) de múltiples puntos de acceso en la \textit{\ac{WSN}} para satisfacer las necesidades de cobertura de los usuarios.
 	Otro aspecto a considerar es que los dispositivos móviles tienen la necesidad de poder cambiar su conexión de un punto de acceso a otro cuando se requiera, i.e., al desplazarse por todo el área de cobertura de la \textit{\ac{WSN}} saliendo del alcance de su punto de acceso a la red; resultando esto en la desconexión del dispositivo móvil de la red debido a que el estándar \textit{IEEE 802.15.4} no cuenta con mecanismos diseñados para iniciar estos procesos de traspasos de red o \textit{handoff} al nuevo punto de acceso por si mismo; no obstante, sí cuenta con herramientas y funciones que pueden utilizarse para permitir el diseño de un mecanismo de \textit{handoff}.
 	
@@ -494,7 +505,7 @@ This document presents an investigation about the developed technological progre
 
 		El Capítulo \ref{ch:Introduccion} da introducción al trabajo de tesis, mencionando la problemática, objetivos, justificación, preguntas de investigación, limitaciones y suposiciones, y finalmente la metodología del proyecto.
 		
-		El Capítulo \ref{ch:Esquema} comprende una introducción a conceptos como el \textit{handoff}, las \textit{\ac{WSN}} y el diseño \textit{crosslayer}; temas e información relacionada a la problemática a resolver y objetivos propuestos. 
+		El Capítulo \ref{ch:Esquema} comprende una introducción a conceptos como el \textit{handoff}, las \textit{\acp{WSN}} y el diseño \textit{crosslayer}; temas e información relacionada a la problemática a resolver y objetivos propuestos. 
 		Esto con el propósito de desarrollar un marco teórico concreto y claro que sustente este proyecto de tesis.
 		
 		En el Capítulo \ref{ch:Trabajos} se detallan distintos trabajos e investigaciones relacionadas al área de enfoque de este trabajo de Tesis, así como descripciones sobre sus similitudes y diferencias. 
