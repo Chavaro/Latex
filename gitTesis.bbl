@@ -655,55 +655,6 @@ Edirisinghe, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Espa{\~{n}}ola%
-}{%
-Espa{\~{n}}ola%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-Rae2014}
-\APACinsertmetastar {%
-Rae2014}%
-\begin{APACrefauthors}%
-Espa{\~{n}}ola, R\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Diccionario de la lengua espa{\~{n}}ola}} {{Diccionario
-  de la lengua espa{\~{n}}ola}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Barcelona: Espa{\~{n}}a Libros}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Eysenbach%
-}{%
-Eysenbach%
-}{%
-{\protect \APACyear {2001}}%
-}]{%
-Eysenbach2001}
-\APACinsertmetastar {%
-Eysenbach2001}%
-\begin{APACrefauthors}%
-Eysenbach, G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2001}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{What is e-health?}} {{What is e-health?}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Medical Internet Research}{3}{2}{1--5}.
-\newblock
-\begin{APACrefURL} \url{http://www.jmir.org/2001/2/e20/} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2196/jmir.3.2.e20} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Fotouhi%
 , Zuniga%
 , Alves%
@@ -1049,33 +1000,6 @@ Kassar, M.%
 \APACjournalVolNumPages{Computer Communications}{31}{10}{2607--2620}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.comcom.2008.01.044} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khan%
-\ \BBA {} Yuce%
-}{%
-Khan%
-\ \BBA {} Yuce%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-Khan2012}
-\APACinsertmetastar {%
-Khan2012}%
-\begin{APACrefauthors}%
-Khan, J\BPBI Y.%
-\BCBT {}\ \BBA {} Yuce, M\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Wireless Body Area Network(WBAN) for Medical
-  Applications}} {{Wireless Body Area Network(WBAN) for Medical
-  Applications}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Medical Systems}{36}{3}{1441--1457}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2160,26 +2084,6 @@ Silva, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Simulator%
-}{%
-Simulator%
-}{%
-{\protect \APACyear {1989}}%
-}]{%
-Ns1989}
-\APACinsertmetastar {%
-Ns1989}%
-\begin{APACrefauthors}%
-Simulator, N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1989}{}{}.
-\newblock
-\APACrefbtitle {ns-2.} {ns-2.}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Sinky%
 \ \BBA {} Hamdaoui%
 }{%
@@ -2516,44 +2420,6 @@ Villar, H\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Virone%
-\ \protect \BOthers {.}}{%
-Virone%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
-}]{%
-Virone2006}
-\APACinsertmetastar {%
-Virone2006}%
-\begin{APACrefauthors}%
-Virone, G.%
-, Wood, a.%
-, Selavo, L.%
-, Cao, Q.%
-, Fang, L.%
-, Doan, T.%
-\BDBL {}Stankovic, J\BPBI a.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{An Advanced Wireless Sensor Network for Health
-  Monitoring}} {{An Advanced Wireless Sensor Network for Health
-  Monitoring}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Transdisciplinary Conference on Distributed Diagnosis
-  and Home Healthcare (D2H2)} {Transdisciplinary conference on distributed
-  diagnosis and home healthcare (d2h2)}\ (\BPGS\ 2--5).
-\newblock
-\begin{APACrefURL}
-  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.64.7346{\&}rep=rep1{\&}type=pdf}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1.1.64.7346} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Wang%
 \ \BBA {} Abu-Rgheff%
 }{%
@@ -2656,38 +2522,6 @@ Wu, B.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/ChinaCom.2011.6158280} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Yan%
-, Xu%
-\BCBL {}\ \BBA {} Gidlund%
-}{%
-Yan%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2009}}%
-}]{%
-Yan2009}
-\APACinsertmetastar {%
-Yan2009}%
-\begin{APACrefauthors}%
-Yan, H\BPBI Y\BPBI H.%
-, Xu, Y\BPBI X\BPBI Y.%
-\BCBL {}\ \BBA {} Gidlund, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Experimental e-Health Applications in Wireless Sensor
-  Networks}} {{Experimental e-Health Applications in Wireless Sensor
-  Networks}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {2009 WRI International Conference on Communications and
-  Mobile Computing} {2009 wri international conference on communications and
-  mobile computing}\ (\BVOL~1, \BPGS\ 563--567).
-\newblock
-\begin{APACrefDOI} \doi{10.1109/CMC.2009.206} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
