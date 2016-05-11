@@ -845,39 +845,46 @@ This document presents an investigation about the developed technological progre
 	Este protocolo opera en las capa de Transporte y la subcapa \textit{\ac{MAC}}, interactuando con un mecanismo de envío de información llamado <<\ac{UDP}>>, con ello posee la ventaja de ser capaz de detener o reactivar el envío de datos pues le es posible notificar al momento sobre el inicio o fin de un proceso de \textit{handoff}.
 	
 	\subsubsection{Retos en el diseño \textit{Crosslayer}}
-	Al igual que las anteriores, diversas investigaciones se han desarrollado en los últimos años, buscando evidenciar que el desarrollo de protocolos de comunicación trabajando en cooperación entre las capas del modelo de red, presenta grandes ventajas a comparación del modelo tradicional.	
+	Un protocolo bajo diseño \textit{crosslayer} es definido como un <<protocolo que rompe la premisa de independencias del modelo tradicional de capas>>.
+	A partir de  ?esto se entiende que los protocolos de diferentes capas no adyacentes pueden tener una comunicación directa y/o compartir parámetros entre ellos \cite{Srivastava2005}.
+	
+	Esta interacción \textit{crosslayer} propone ser una alternativa viable para el diseño de arquitecturas de protocolos para redes inalámbricas como las \textit{\acp{WSN}}; sin embargo, estas ventajas conllevan a su vez algunos retos a considerar:
+	
+	\begin{itemize}
+		\item \textit{Dificultad de implementación}: El diseño de soluciones bajo el esquema \textit{crosslayer} debe mantener cambios mínimos en los protocolos ya existentes en cada capa, puesto que cualquier modificación puede ocasionar una descoordinación de los protocolos de cada capa.
+
+		\item \textit{Interoperabilidad}: El diseño \textit{crosslayer} debe mantener la modularidad de la arquitectura de capas.
+		
+		\item \textit{Capas Involucradas}: La cantidad de capas integradas al modelo \textit{crosslayer} debe ser mínima para alcanzar objetivos de optimización.
+	\end{itemize}
+	
+	Esto demuestra que para conseguir las ventajas de un diseño\textit{crosslayer} en comparación al diseño tradicional, la solución debe diseñarse e implementarse cuidadosamente.
+	Aunque, si bien es cierto que el diseñar por capas reduce la complejidad del diseño mismo, es mejor permitir que las capas trabajen en sintonía y coordinación con los objetivos del servicio para lograr mejores resultados y eficientar los recursos disponibles.
+	
+	Diversas investigaciones se han desarrollado en los últimos años buscando evidenciar que el desarrollo de protocolos de comunicación trabajando en cooperación entre las capas del modelo de red, presenta grandes ventajas a comparación del modelo tradicional por capas.	
 	
 	De acuerdo a esta tendencia y a la investigación realizada, es posible aproximarse a la idea de que en un futuro la mayoría (sino todos) de los mecanismos de \textit{handoff} tenderán hacia un diseño \textit{crosslayer} dadas las bondades que éste ofrece.
 	Entre las que destaca el tener una mayor o más amplia visión del entorno, y no sólo enfocarse en una capa. 
 	Sin embargo, es necesario tener en mente algunas preguntas sobre este futuro desarrollo: 
 	\begin{itemize}
 		\item ¿Cuáles serán los diseños \textit{crosslayer} con mayor impacto en el desempeño de la red?
+		
 		\item ¿En cuáles de ellos habrá que enfocar el desarrollo? 
+		
 		\item ¿Cómo se permitirá la coexistencia de diferentes diseños \textit{crosslayer}?
+		
 		\item ¿Cuáles capas y qué parámetros ofrecen una mejor conciencia del entorno y permiten un eficiente mecanismo de \textit{handoff}?
 	\end{itemize}
 	
 	Esta última cuestión define el área de oportunidad que este proyecto busca aprovechar, por lo que es necesario ahondar la investigación en el tema y propulsar el desarrollo de propuestas, con el fin de definir estas variables y un mejor diseño \textit{crosslayer}.
 	
-	%BEGIN_FOLD
-%	\section{Resumen e Inferencias}\label{sec:Inferencias}
-%	Durante la investigación y estudio del Esquema de Fundamentos antes mostrado, se realizó una lectura y análisis de los múltiples trabajos de investigación encontrados: artículos, tesis de doctorado, libros, publicaciones en congresos, entre otras; y fue posible producir las siguientes conclusiones:
-%	
-%	\begin{itemize}
-%		\item En general, los avances realizados en mecanismos de \textit{handoff} buscan mejorar aspectos relacionados al \textit{QoS} (siglas en ingles de \textit{Quality of Service}, Calidad de Servicio).
-%		\item La latencia, \textit{throughput end-to-end} y la tasa de entrega de paquetes son, en general, las principales métricas a beneficiar con los mecanismos propuestos.
-%		\item Modificar un mecanismo base de un diseño tradicional a uno \textit{crosslayer}, en general otorga mayores ventajas que desventajas en términos de eficiencia.
-%		\item En general, los mecanismos de \textit{handoff crosslayer} propuestos para \textit{WSN} consideran a la subcapa \textit{MAC} como integrante esencial del criterio puesto que permite analizar la situación actual del medio de comunicación; así como a las capas de Aplicación, dado que permiten conocer los requerimientos establecidos.
-%		\item Dadas las características del protocolo de \textit{handoff crosslayer WSN-HaDaS}, así como su implementación dentro de un mecanismo estándar de comunicación (\textit{UDP}), resulta un buen candidato como protocolo base.
-%		\item De acuerdo a las clasificaciones y tipos de mecanismos \textit{handoff} analizados, la propuesta de este trabajo de investigación se encuentra dentro de los mecanismos de \textit{handoff} horizontal y tipo \textit{hard} (\textit{break-before-make}).
-%		Esto debido a que en la tecnología de red a trabajar sólo existirán miembros trabajando bajo el estándar \textit{IEEE 802.15.4}, el cuál no posee la capacidad de múltiples antenas, por lo que sólo se podrá establecer a lo mucho una sola conexión en todo momento. 
-%		Y finalmente, puesto que al utilizar información de los paquetes transmitidos entre la red para la toma de decisiones del mecanismo de \textit{handoff}, se clasifica como un tipo \textit{asistido-por-móvil}.
-%	\end{itemize}
-%END_FOLD
+	Esta sección permite concluir que debe evitarse el uso de múltiples capas sin consideración de los objetivos de optimización.
+	Este proyecto propone el uso de interacción \textit{crosslayer} que pueda operar dentro de la pila de protocolos existentes; esto es, que permita el uso de protocolos por capas (como \textit{\ac{UDP}} y el estándar \textit{IEEE 802.15.4}) dentro del diseño.
+	Así como el uso de las capas de Transporte y la subcapa \textit{\ac{MAC}} para la solución de los objetivos.
 
 \newpage
 \chapter{Trabajos relacionados}\label{ch:Trabajos}
-	A continuación, se presenta un breve capítulo sobre algunos trabajos relacionados. 
+	A continuación, se presenta un capítulo sobre algunos trabajos relacionados. 
 	Clasificados de acuerdo a la tecnología de red en la cual se ha implementado o enfocado el caso de uso del mecanismo de \textit{handoff}, mencionando las principales características de dichos trabajos de investigación y resaltando la implementación de diseños \textit{crosslayer} en sus trabajos.
 
 	\newpage
@@ -889,7 +896,7 @@ This document presents an investigation about the developed technological progre
 	En la investigación de \citeA{Carneiro2004}, se menciona que con el objetivo de hacer frente a los problemas de bajo rendimiento en los enlaces inalámbricas y terminales móviles, se necesita una arquitectura de protocolo que considere interacciones entre capas (\textit{crosslayer}).
 	
 	Siguiendo este contexto, \citeA{Jo2008} implementan una estrategia \textit{crosslayer} para un \textit{handoff} vertical entre las tecnologías <<\ac{WiMax}>> y de <<\ac{3G}>>.
-	Esta estrategia plantea una unión de la segunda y tercer capa, reordenando y combinando los mensajes de señalización.
+	Esta estrategia plantea una unión de las capas de Enlace y Red, reordenando y combinando los mensajes de señalización.
 
 	Además, en la investigación realizada por \citeA{Chen2007} se propone una combinación de estas dos mismas capas y mediante una transmisión de mensajes de control \textit{\ac{MAC}} entre las \textit{\acp{BS}} y los dispositivos móviles, han simulado y obtenido una reducción en tiempos de ejecución de los procesos de \textit{handoff} en la red.
 	
@@ -911,21 +918,22 @@ This document presents an investigation about the developed technological progre
 	Esto refleja la necesidad de aumentar el panorama de visión de los mecanismos de \textit{handoff} al considerar aspectos no sólo de red como tal, sino también de aspectos referentes a las aplicaciones de la red en tecnologías de comunicación celular mediante una estrategia de diseño \textit{crosslayer}.
 		
 	\section{\textit{\acp{WLAN}}}
-	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
-	Las redes tipo \textit{\ac{WLAN}} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
-	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11 b/g/n}) en sus hogares, e integran a la red sus dispositivos, entre los cuales existen dispositivos móviles, \textit{e.g.}, celulares, \textit{tablets} y \textit{laptops} (ver Figura \ref{fig:wlanNetwork}).
-	\begin{figure}[ht]
-		\centering
-		\includegraphics[width=10cm,height=6cm]{wlanNetwork.png}
-		\caption{Ejemplo de red doméstica \textit{\ac{WLAN}} (\textit{WiFi}, en este caso).}
-		\label{fig:wlanNetwork}
-	\end{figure}
-	
-	Aunado a ello, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
-	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan sólo estar dentro de su área de cobertura.
-	
-	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes, aún mientras cambian de ubicación y se trasladan a lo largo del día, sin considerar que a diferencia de las redes satelitales y celulares, las \textit{\acp{WLAN}} poseen un menor rango de cobertura.
-	Por dicha razón, las \textit{\acp{WLAN}} no se encuentran exentas de la necesidad de mecanismos de \textit{handoff}.
+%	En la actualidad, el acceso a \textit{Internet} es más una necesidad que un lujo dada la gran cantidad de información accesible. 
+%	Las redes tipo \textit{\ac{WLAN}} han tenido una gran aceptación y avances en su desarrollo a causa de dicha necesidad.
+%	Cada día, una mayor cantidad de usuarios instalan redes \textit{WiFi} (\textit{IEEE 802.11 b/g/n}) en sus hogares, e integran a la red sus dispositivos, entre los cuales existen dispositivos móviles, \textit{e.g.}, celulares, \textit{tablets} y \textit{laptops} (ver Figura \ref{fig:wlanNetwork}).
+%	\begin{figure}[ht]
+%		\centering
+%		\includegraphics[width=10cm,height=6cm]{wlanNetwork.png}
+%		\caption{Ejemplo de red doméstica \textit{\ac{WLAN}} (\textit{WiFi}, en este caso).}
+%		\label{fig:wlanNetwork}
+%	\end{figure}
+%	
+%	Aunado a ello, el gobierno instala este mismo tipo de redes en lugares públicos como parques, bibliotecas, centros comerciales o gubernamentales, con el objetivo de satisfacer y atender las necesidades de la población.
+%	De esta manera, los usuarios pueden acceder a cualquiera de estas redes con tan sólo estar dentro de su área de cobertura.
+%	
+%	Sin embargo, estos mismos usuarios exigen cada día una mayor calidad en el desempeño de las redes, aún mientras cambian de ubicación y se trasladan a lo largo del día, sin considerar que a diferencia de las redes satelitales y celulares, las \textit{\acp{WLAN}} poseen un menor rango de cobertura.
+	%Por dicha razón, 
+	Las \textit{\acp{WLAN}} no se encuentran exentas de la necesidad de mecanismos de \textit{handoff}.
 	Es decir, en cualquier \textit{\ac{WLAN}} también existe el problema de \textit{handoff}, puesto que puede existir movilidad entre los dispositivos de la red. 
 	Según \citeA{Pack2007}, el soporte a estos mecanismos y su desarrollo se ha tornado en uno de los principales y más importantes aspectos en la tecnología \textit{\ac{WLAN}}.
 	Al respecto, \citeA{Arbaugh2002} definen que, a diferencia de la tecnología celular, el proceso de \textit{handoff} en redes tipo \textit{\ac{WLAN}} (específicamente menciona las redes \textit{IEEE 802.11}) puede dividirse en dos pasos: el descubrimiento y la reautenticación.
@@ -959,10 +967,10 @@ This document presents an investigation about the developed technological progre
 	Dadas las investigaciones y trabajos mencionados, se deja en claro que en redes \textit{\ac{WLAN}} también existe la necesidad de mejorar el desempeño y conciencia del entorno de los mecanismos de \textit{handoff}, buscando además afectar de manera mínima aspectos de \textit{\ac{QoS}} de la red.
 		 
 	\section{\textit{\acp{WSN}}}
-	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{\acp{WPAN}} es el \textit{IEEE 802.15}, cuya frecuencia de operación es 2.4 \textit{GHz}.
+	De acuerdo a \citeA{Saranya2014}, el estándar para las \textit{\acp{WPAN}} es el \textit{IEEE 802.15}. %, cuya frecuencia de operación es 2.4 \textit{GHz}.
 	Sin embargo, los avances en investigación y desarrollo se han enfocado hacia el uso del estándar \textit{IEEE 802.15.4}, por su bajo consumo energético, bajo costo y su baja tasa de datos necesaria para conectar por primera vez aquellos dispositivos sin conexión a la red \cite{Garcia-hernandez2007}.
 	
-	Las \textit{\acp{WSN}} están dentro de las \textit{\acp{WPAN}}, y como tal comparten un mismo objetivo: el proveer una conexión a prueba de fallas entre los dispositivos conectados en la red.
+	%Las \textit{\acp{WSN}} están dentro de las \textit{\acp{WPAN}}, y como tal comparten un mismo objetivo: el proveer una conexión a prueba de fallas entre los dispositivos conectados en la red.
 
 	A diferencia de otro tipos de redes, las \textit{\acp{WSN}} generalmente se constituyen de dispositivos con limitantes en recursos (energía y procesamiento, por ejemplo); sin embargo, cuentan con la característica de ser comúnmente pequeños en tamaño y la capacidad de ser móviles, por lo que es posible integrarlos o incorporarlos a entidades móviles como robots o pacientes que requieren atención constante.
 	Dicha característica representa una de sus mayores ventajas \cite{Silva2014}.
@@ -980,69 +988,74 @@ This document presents an investigation about the developed technological progre
 		\item Controlado: El movimiento del \textit{\ac{MN}} se controla por una entidad externa en tiempo real.
 	\end{itemize}
 	
-	Debe dejarse en claro la importancia que las \textit{\acp{WSN}} han adquirido dada su versatilidad en múltiples aplicaciones, algunas de ellas pueden observarse en la Tabla \ref{tabla:wsnAplicaciones}, basada en el trabajo de investigación de \citeA{Garcia-hernandez2007}.
-	
-	\begin{table}[h]
-		\begin{center}
-			\caption{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit{\acp{WSN}}.}
-			\label{tabla:wsnAplicaciones}
-			\small
-				\begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\arraybackslash}m{11.5cm} }
-					\hline
-					\textbf{Aplicaciones} & \textbf{Motes, Sensores de Polvo Inteligentes y Redes de Sensores Inalámbricas}\\
-					\hline \hline
-					En general & 
-					Monitoreo de entornos interiores/exteriores, seguridad y seguimiento, salud y monitoreo del bienestar, monitoreo de energía, localización de inventario, automatización de industrias y procesos, y monitoreo estructural y sísmico. 
-					\\ \hline
-									
-					Para monitoreo industrial y de vibraciones & 
-					Telemetría de planta, mediciones de cumplimiento y calidad, supervisión de superposición, diagnóstico de máquinas, monitoreo de desempeño de aguas residuales y tanques, monitoreo de línea eléctrica y monitoreo de desempeño automotriz.
-					\\ \hline
-					
-					Para pruebas y mediciones & 
-					Medición de vibraciones y vida de máquinas, prueba/calificación de productos, e investigación científica. Hay varias categorías de productos con sensores: Acelerómetros, sensores de vibración, sensores de inercia, sensores de inclinación/ángulo, sensores magnéticos, accesorios de adquisición de datos y adquisición de datos inalámbricos y distribuidos.
-					\\ \hline
-					
-					Para inalámbricas avanzadas &
-					Tamaño pequeño, bajo costo, no-intrusivos, inatendidos, inalámbricos, procesamiento y comunicaciones a bordo, reprogramado dinámico, desarrollo de densas \textit{\acp{WSN}} y salto de mensajes.
-					\\ \hline
-					
-					Tarjetas de sensores disponibles & 
-					Luminosidad y Temperatura, Aceleración/Vibración, Acústica, Megnetómetro, Monitoreo Climático y \ac{GPS}.
-					\\ \hline		
-				\end{tabular}
-		\end{center}
-	\end{table}
-	\normalsize
-	
+%BEGIN_FOLD	
+%	Debe dejarse en claro la importancia que las \textit{\acp{WSN}} han adquirido dada su versatilidad en múltiples aplicaciones, algunas de ellas pueden observarse en la Tabla \ref{tabla:wsnAplicaciones}, basada en el trabajo de investigación de \citeA{Garcia-hernandez2007}.
+
+%	\begin{table}[h]
+%		\begin{center}
+%			\caption{Algunas aplicaciones con motes, sensores de polvo inteligentes y \textit{\acp{WSN}}.}
+%			\label{tabla:wsnAplicaciones}
+%			\small
+%				\begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\arraybackslash}m{11.5cm} }
+%					\hline
+%					\textbf{Aplicaciones} & \textbf{Motes, Sensores de Polvo Inteligentes y Redes de Sensores Inalámbricas}\\
+%					\hline \hline
+%					En general & 
+%					Monitoreo de entornos interiores/exteriores, seguridad y seguimiento, salud y monitoreo del bienestar, monitoreo de energía, localización de inventario, automatización de industrias y procesos, y monitoreo estructural y sísmico. 
+%					\\ \hline
+%									
+%					Para monitoreo industrial y de vibraciones & 
+%					Telemetría de planta, mediciones de cumplimiento y calidad, supervisión de superposición, diagnóstico de máquinas, monitoreo de desempeño de aguas residuales y tanques, monitoreo de línea eléctrica y monitoreo de desempeño automotriz.
+%					\\ \hline
+%					
+%					Para pruebas y mediciones & 
+%					Medición de vibraciones y vida de máquinas, prueba/calificación de productos, e investigación científica. Hay varias categorías de productos con sensores: Acelerómetros, sensores de vibración, sensores de inercia, sensores de inclinación/ángulo, sensores magnéticos, accesorios de adquisición de datos y adquisición de datos inalámbricos y distribuidos.
+%					\\ \hline
+%					
+%					Para inalámbricas avanzadas &
+%					Tamaño pequeño, bajo costo, no-intrusivos, inatendidos, inalámbricos, procesamiento y comunicaciones a bordo, reprogramado dinámico, desarrollo de densas \textit{\acp{WSN}} y salto de mensajes.
+%					\\ \hline
+%					
+%					Tarjetas de sensores disponibles & 
+%					Luminosidad y Temperatura, Aceleración/Vibración, Acústica, Megnetómetro, Monitoreo Climático y \ac{GPS}.
+%					\\ \hline		
+%				\end{tabular}
+%		\end{center}
+%	\end{table}
+%	\normalsize
+%END_FOLD
+
 	El problema es que los estándares actuales no dan un soporte eficiente a la movilidad, y esto plantea obstáculos considerables para su uso en \textit{\acp{WSN}}, especialmente si se trata de aplicaciones críticas que requieren un alto nivel de confiabilidad y desempeño, según detallan \citeA{Silva2012} en su trabajo de investigación.
 	
 	También \citeA{Bruce2013} apoyan esta idea argumentando que el soporte hacia la confiabilidad de comunicaciones en tiempo real para \textit{\acp{WSN}} en aplicaciones de salud (\textit{e-Health}) no es práctico con el uso de los protocolos contemporáneos en \textit{\acp{WSN}} con movilidad en sus nodos, ya que ellos no permiten lograr los requerimientos en confiabilidad bajo esta movilidad.
 	Sin embargo, ello no ha detenido el uso de \textit{\acp{WSN}} en aplicaciones enfocadas hacia el cuidado de la salud. 
 	
-	Las aplicaciones médicas de las \textit{\acp{WSN}} buscan mejorar los servicios actuales de monitoreo y cuidado de la salud, especialmente aquellos para adultos mayores, niños y enfermos crónicos.
-	Estos sistemas ofrecen varias ventajas en su implementación, siendo una de las más importantes la capacidad de un monitoreo remoto.
-	Con la monitorización remota es posible identificar condiciones de emergencia y con ello permitir una vida más sencilla e independiente a pacientes que de otra manera necesitarían una persona a su cuidado constante \cite{Alemdar2010}.
-	
-	En la Figura \ref{fig:wsnTypical} puede verse un escenario típico de una \textit{\ac{WSN}} en aplicaciones enfocadas hacia el monitoreo o cuidado de la salud.
-	Dicha figura, muestra que el escenario generalmente se compone de cinco subsistemas:
-	\begin{itemize}
-		\item \ac{BAN}: Este subsistema se compone de la red de sensores que los pacientes llevan consigo.
-		\item \ac{PAN}: Este subsistema se compone de la red de sensores ubicados en el escenario para el control del escenario y monitoreo o localización de los pacientes (cámaras, termómetros, barómetros, entre otros).
-		\item \textit{Gateway} (del inglés, Puerta de Enlace): Este subsistema es responsable de permitir la conexión entre la \textit{\ac{BAN}} y/o \textit{\ac{PAN}} hacia la \textit{\ac{WAN}}. 
-		Generalmente son \textit{smartphones}, computadoras, o nodos específicos para la tarea.
-		\item \ac{WAN}: Este subsistema permite que la \textit{\ac{WSN}} pueda realizar un monitoreo remoto. 
-		Muchas veces, la \textit{\ac{WAN}} incluye tecnologías de comunicación satelitales.
-		\item Aplicación de usuario final: Este último subsistema es el encargado de procesar (Aplicación) y mostrar la información al usuario final (cuidadores o personal médico) mediante una \ac{GUI}.
-	\end{itemize}
-	
-	El poder visualizar el escenario de una \textit{\ac{WSN}}, aplicada a cuestiones de cuidado o monitoreo de salud, como una composición de subsistemas permite a los diseñadores definir requisitos específicos para cada uno de ellos, así como visualizar posibles debilidades en el sistema \cite{Alemdar2010}.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=14cm,height=8.5cm]{wsnTypical.jpg}
-		\caption{Ejemplo de un escenario simple de \textit{\ac{WSN}} en aplicaciones de cuidado de la salud.}
-		\label{fig:wsnTypical}
-	\end{figure}
+% % % % % % % Esto es para concepto no para trabajo relacionado! % % % % % % % % % % %
+%	Las aplicaciones médicas de las \textit{\acp{WSN}} buscan mejorar los servicios actuales de monitoreo y cuidado de la salud, especialmente aquellos para adultos mayores, niños y enfermos crónicos.
+%	Estos sistemas ofrecen varias ventajas en su implementación, siendo una de las más importantes la capacidad de un monitoreo remoto.
+%	Con la monitorización remota es posible identificar condiciones de emergencia y con ello permitir una vida más sencilla e independiente a pacientes que de otra manera necesitarían una persona a su cuidado constante \cite{Alemdar2010}.
+
+%BEGIN_FOLD
+%	En la Figura \ref{fig:wsnTypical} puede verse un escenario típico de una \textit{\ac{WSN}} en aplicaciones enfocadas hacia el monitoreo o cuidado de la salud.
+%	Dicha figura, muestra que el escenario generalmente se compone de cinco subsistemas:
+%	\begin{itemize}
+%		\item \ac{BAN}: Este subsistema se compone de la red de sensores que los pacientes llevan consigo.
+%		\item \ac{PAN}: Este subsistema se compone de la red de sensores ubicados en el escenario para el control del escenario y monitoreo o localización de los pacientes (cámaras, termómetros, barómetros, entre otros).
+%		\item \textit{Gateway} (del inglés, Puerta de Enlace): Este subsistema es responsable de permitir la conexión entre la \textit{\ac{BAN}} y/o \textit{\ac{PAN}} hacia la \textit{\ac{WAN}}. 
+%		Generalmente son \textit{smartphones}, computadoras, o nodos específicos para la tarea.
+%		\item \ac{WAN}: Este subsistema permite que la \textit{\ac{WSN}} pueda realizar un monitoreo remoto. 
+%		Muchas veces, la \textit{\ac{WAN}} incluye tecnologías de comunicación satelitales.
+%		\item Aplicación de usuario final: Este último subsistema es el encargado de procesar (Aplicación) y mostrar la información al usuario final (cuidadores o personal médico) mediante una \ac{GUI}.
+%	\end{itemize}
+%	
+%	El poder visualizar el escenario de una \textit{\ac{WSN}}, aplicada a cuestiones de cuidado o monitoreo de salud, como una composición de subsistemas permite a los diseñadores definir requisitos específicos para cada uno de ellos, así como visualizar posibles debilidades en el sistema \cite{Alemdar2010}.
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=14cm,height=8.5cm]{wsnTypical.jpg}
+%		\caption{Ejemplo de un escenario simple de \textit{\ac{WSN}} en aplicaciones de cuidado de la salud.}
+%		\label{fig:wsnTypical}
+%	\end{figure}
+%END_FOLD
 	
 	De acuerdo con \citeA{Ahmed2012}, existen tres funciones básicas de una \textit{\ac{WSN}}: monitorización de datos, comunicación y procesamiento del problema. mediante un procesador central.
 	Aunque también especifica que la función de <<procesamiento del problema>> en aplicaciones de salud es generalmente realizada por personal médico.
@@ -1122,6 +1135,7 @@ This document presents an investigation about the developed technological progre
 	
 	Entonces, de acuerdo a lo anterior, se resalta la vasta aplicación de las \textit{\acp{WSN}} y su importancia en múltiples áreas: milicia, vigilancia, cuidado de la salud, localización de personal, entre otras.
 	Ello a su vez comprueba que, debido a la movilidad de los nodos o motes en la \textit{\ac{WSN}}, es necesario el desarrollo e implementación de nuevas estrategias que den soporte a dicha movilidad, puesto que a diferencia de otros estándares, el \textit{IEEE 802.15.4} no da soporte a esta característica aún siendo el estándar por defecto en la \textit{\acp{WSN}}.
+	Una nueva estrategia es la incorporación de mecanismos de \textit{handoff} en \textit{\acp{WSN}} que permitan la reconexión automática de los \textit{\acp{MN}} cuando se requiere 
 
 \newpage
 \section{Resumen e Inferencias}\label{sec:Inferencias}
@@ -1252,6 +1266,8 @@ This document presents an investigation about the developed technological progre
 		Para ejecutar el proceso \textit{\ac{MHT}}, primero deben ajustarse los valores de las regiones de umbral e histéresis para evaluar el valor de \textit{\ac{LQI}}, evitando así desconexiones repentinas del \textit{\ac{MN}} y problemas del efecto \textit{ping-pong}.
 		Para este ajuste, se definieron tres umbrales para el \textit{\ac{LQI}}: \textit{soft-threshold \ac{LQI}} (\textit{thrLQIsoft}), \textit{hard-threshold \ac{LQI}} \linebreak (\textit{thrLQIhard}) y \textit{thresholod Quantity of \ac{LQI}} (\textit{thrQLQI}).
 		La región existente entre \linebreak \textit{thrLQIsoft} y \textit{thrLQIhard} se conoce como <<Región de \textit{handoff}>> y comprende dos zonas: la <<zona de Histéresis>> (desde \textit{thrLQIsoft} hasta \textit{thrQLQI}), y la <<zona de Protección>> (entre \textit{thrQLQI} y \textit{thrLQIhard}).
+		La zona de Histéresis permite evaluar el \textit{\ac{LQI}} de los paquetes recibidos y analizar si el \textit{\ac{MN}} transmisor del paquete se está alejando o no del \textit{\ac{CH}}.
+		La zona de Protección determina el tiempo disponible para el envío del \textit{\ac{HWM}}.
 		Lo anterior se muestra en la Figura \ref{fig:mhtUmbrales}, basada en el trabajo del autor.
 		
 		\begin{figure}[hbt]
